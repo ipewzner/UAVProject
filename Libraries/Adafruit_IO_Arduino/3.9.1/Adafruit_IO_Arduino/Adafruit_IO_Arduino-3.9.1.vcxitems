@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding ="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <PropertyGroup Label="Globals" >
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{11addb35-6041-4996-959f-cf21db323af0}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\AdafruitIO.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Dashboard.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Data.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Feed.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Group.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Time.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\AdafruitIO_Block.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\ChartBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\GaugeBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\MapBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\MomentaryBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\SliderBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\StreamBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\TextBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\blocks\ToggleBlock.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\util\AdafruitIO_Board.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_ESP32.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_ESP8266.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_MKR1000.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_WICED.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Dashboard.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Data.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Definitions.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Ethernet.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Feed.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_FONA.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Group.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_MQTT.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_Time.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\AdafruitIO_WiFi.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\AdafruitIO_Block.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\ChartBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\ColorBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\GaugeBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\ImageBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\MapBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\MomentaryBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\SliderBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\StreamBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\TextBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\blocks\ToggleBlock.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\util\AdafruitIO_Board.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_AIRLIFT.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_ESP32.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_ESP8266.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_MKR1000.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_WICED.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_WICED_SSL.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\wifi\AdafruitIO_WINC1500.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Jenkinsfile" />
+<None Include="$(MSBuildThisFileDirectory)LICENSE" />
+<None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+</Project>
