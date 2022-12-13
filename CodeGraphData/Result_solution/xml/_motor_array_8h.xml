@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_motor_array_8h" kind="file">
+    <compoundname>MotorArray.h</compoundname>
+    <includes refid="_motor_8h" local="yes">Motor.h</includes>
+    <includedby refid="logic_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h</includedby>
+    <includedby refid="_motor_array_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp</includedby>
+    <incdepgraph>
+      <node id="784">
+        <label>WString.h</label>
+      </node>
+      <node id="782">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</label>
+        <link refid="MotorArray.h"/>
+        <childnode refid="783" relation="include">
+        </childnode>
+      </node>
+      <node id="786">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="785">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="783">
+        <label>Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="790">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp</label>
+        <link refid="_motor_array_8cpp"/>
+      </node>
+      <node id="787">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</label>
+        <link refid="MotorArray.h"/>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h</label>
+        <link refid="logic_8h"/>
+        <childnode refid="789" relation="include">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.cpp</label>
+        <link refid="logic_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_motor_array" prot="public">MotorArray</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>MotorArray.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MOTORARRAY_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_MOTORARRAY_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_motor_8h" kindref="compound">Motor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_motor_array" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_motor_array" kindref="compound">MotorArray</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motor" kindref="compound">Motor</ref>**<sp/><ref refid="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" kindref="member">arr</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" kindref="member">arrSize</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_array_1afcf1d19e923ebed6e6fa47551a8d496c" kindref="member">addMotor</ref>(<ref refid="class_motor" kindref="compound">Motor</ref>*<sp/>motor);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_motor_array_1a816ae99f40be1dca2f7716597e564b30" kindref="member">initAll</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motor_array_1a8368a0155e79dcf35d7f42a0f890e9a6" kindref="member">MotorArray</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_motor_array_1a6a867a2ce1ca58d583c2361d9783526e" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_motor_array_1ac886b2b11b75c5f7f6badccd32e9e424" kindref="member">asciiResultAll</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/><ref refid="class_motor_array_1ae6a349f2fe1c8710e901d14cd8b124bf" kindref="member">jsonResultAll</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_servo___e_s_p32" kind="class" prot="public">
+    <compoundname>Servo_ESP32</compoundname>
+    <includes refid="_servo___e_s_p32_8h" local="no">Servo_ESP32.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::MIN_ANGLE</definition>
+        <argsstring></argsstring>
+        <name>MIN_ANGLE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="41" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::MAX_ANGLE</definition>
+        <argsstring></argsstring>
+        <name>MAX_ANGLE</name>
+        <initializer>= 180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="42" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::MIN_PULSE_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MIN_PULSE_WIDTH</name>
+        <initializer>= 544</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="44" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::MAX_PULSE_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MAX_PULSE_WIDTH</name>
+        <initializer>= 2400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="45" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::MAX_COMPARE</definition>
+        <argsstring></argsstring>
+        <name>MAX_COMPARE</name>
+        <initializer>= ((1 &lt;&lt; 16) - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="46" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" compoundref="_servo___e_s_p32_8h" startline="179" endline="179">_dutyToUs</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" compoundref="_servo___e_s_p32_8h" startline="178" endline="178">_usToDuty</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1ae92ff9b440a2e70962673251ccc0c235" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::TAU_MSEC</definition>
+        <argsstring></argsstring>
+        <name>TAU_MSEC</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="48" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::TAU_USEC</definition>
+        <argsstring></argsstring>
+        <name>TAU_USEC</name>
+        <initializer>= (<ref refid="class_servo___e_s_p32_1ae92ff9b440a2e70962673251ccc0c235" kindref="member">TAU_MSEC</ref> * 1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="49" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" compoundref="_servo___e_s_p32_8h" startline="179" endline="179">_dutyToUs</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" compoundref="_servo___e_s_p32_8h" startline="178" endline="178">_usToDuty</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1af3a63fa7097959c009c6ff3582ed4b29" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::CHANNEL_MAX_NUM</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_MAX_NUM</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="51" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::channel_next_free</definition>
+        <argsstring></argsstring>
+        <name>channel_next_free</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="183" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="183" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" compoundref="_servo___e_s_p32_8cpp" startline="72" endline="82">detach</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::CHANNEL_NOT_ATTACHED</definition>
+        <argsstring></argsstring>
+        <name>CHANNEL_NOT_ATTACHED</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="54" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Servo_ESP32::PIN_NOT_ATTACHED</definition>
+        <argsstring></argsstring>
+        <name>PIN_NOT_ATTACHED</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="57" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" compoundref="_servo___e_s_p32_8cpp" startline="110" endline="110">attached</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_pin</definition>
+        <argsstring></argsstring>
+        <name>_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="185" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" compoundref="_servo___e_s_p32_8cpp" startline="110" endline="110">attached</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1aeb1186e8214acc32a0185d52704bc040" compoundref="_servo___e_s_p32_8cpp" startline="112" endline="112">attachedPin</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" compoundref="_servo___e_s_p32_8cpp" startline="72" endline="82">detach</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_pulseWidthDuty</definition>
+        <argsstring></argsstring>
+        <name>_pulseWidthDuty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="186" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_channel</definition>
+        <argsstring></argsstring>
+        <name>_channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="187" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="187" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" compoundref="_servo___e_s_p32_8cpp" startline="72" endline="82">detach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" compoundref="_servo___e_s_p32_8cpp" startline="102" endline="108">readMicroseconds</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a0a129986f1b41306c79a32024faae460" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_min</definition>
+        <argsstring></argsstring>
+        <name>_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="188" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1ab6876b8c61867249a6b2cbee55363c59" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_max</definition>
+        <argsstring></argsstring>
+        <name>_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="188" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_minPulseWidth</definition>
+        <argsstring></argsstring>
+        <name>_minPulseWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="189" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="189" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" compoundref="_servo___e_s_p32_8h" startline="181" endline="181">_angleToUs</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" compoundref="_servo___e_s_p32_8h" startline="180" endline="180">_usToAngle</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_maxPulseWidth</definition>
+        <argsstring></argsstring>
+        <name>_maxPulseWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="189" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="189" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" compoundref="_servo___e_s_p32_8h" startline="181" endline="181">_angleToUs</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" compoundref="_servo___e_s_p32_8h" startline="180" endline="180">_usToAngle</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_minAngle</definition>
+        <argsstring></argsstring>
+        <name>_minAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="190" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="190" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" compoundref="_servo___e_s_p32_8h" startline="181" endline="181">_angleToUs</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" compoundref="_servo___e_s_p32_8h" startline="180" endline="180">_usToAngle</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" compoundref="_servo___e_s_p32_8cpp" startline="84" endline="87">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Servo_ESP32::_maxAngle</definition>
+        <argsstring></argsstring>
+        <name>_maxAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="190" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="190" bodyend="-1"/>
+        <referencedby refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" compoundref="_servo___e_s_p32_8h" startline="181" endline="181">_angleToUs</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" compoundref="_servo___e_s_p32_8h" startline="180" endline="180">_usToAngle</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">attach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" compoundref="_servo___e_s_p32_8cpp" startline="84" endline="87">write</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_servo___e_s_p32_1a8edd92713bb6e8fc2ab5ceceb1acf3d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Servo_ESP32::Servo_ESP32</definition>
+        <argsstring>()</argsstring>
+        <name>Servo_ESP32</name>
+        <briefdescription>
+<para>Construct a new Servo instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>The new instance will not be attached to any pin. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="64" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="38" bodyend="40"/>
+        <references refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" compoundref="_servo___e_s_p32_8cpp" startline="114" endline="122">_resetFields</references>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1ae1815343314ce0c40ad8154a400c5116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Servo_ESP32::~Servo_ESP32</definition>
+        <argsstring>()</argsstring>
+        <name>~Servo_ESP32</name>
+        <briefdescription>
+<para>Destruct a Servo instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call _() and <ref refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" kindref="member">detach()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="71" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="42" bodyend="44"/>
+        <references refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" compoundref="_servo___e_s_p32_8cpp" startline="72" endline="82">detach</references>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Servo_ESP32::attach</definition>
+        <argsstring>(int pin, int channel=CHANNEL_NOT_ATTACHED, int minAngle=MIN_ANGLE, int maxAngle=MAX_ANGLE, int minPulseWidth=MIN_PULSE_WIDTH, int maxPulseWidth=MAX_PULSE_WIDTH)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>int</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+          <defval><ref refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" kindref="member">CHANNEL_NOT_ATTACHED</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minAngle</declname>
+          <defval><ref refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" kindref="member">MIN_ANGLE</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxAngle</declname>
+          <defval><ref refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" kindref="member">MAX_ANGLE</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minPulseWidth</declname>
+          <defval><ref refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" kindref="member">MIN_PULSE_WIDTH</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxPulseWidth</declname>
+          <defval><ref refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" kindref="member">MAX_PULSE_WIDTH</ref></defval>
+        </param>
+        <briefdescription>
+<para>Associate this instance with a servomotor whose input is connected to pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin connected to the servo pulse wave input. This pin must be capable of PWM output (all ESP32 pins).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel which is set to ESP32 Arduino function ledcSetup(). Channel must be number between 0 - 15. It is possible to use automatic channel setup with constant Servo::CHANNEL_NOT_ATTACHED.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target angle (in degrees) associated with minPulseWidth. Defaults to MIN_ANGLE = 0.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target angle (in degrees) associated with maxPulseWidth. Defaults to MAX_ANGLE = 180.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minPulseWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum pulse width to write to pin, in microseconds. This will be associated with a minAngle degree angle. Defaults to MIN_PULSE_WIDTH = 544.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxPulseWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum pulse width to write to pin, in microseconds. This will be associated with a maxAngle degree angle. Defaults to MAX_PULSE_WIDTH = 2400.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+May set pinMode(pin, PWM).</para><para><simplesect kind="return"><para>true if successful, false when pin doesn&apos;t support PWM. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="107" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="46" bodyend="69"/>
+        <references refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" compoundref="_servo___e_s_p32_8h" startline="187">_channel</references>
+        <references refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" compoundref="_servo___e_s_p32_8h" startline="190">_maxAngle</references>
+        <references refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" compoundref="_servo___e_s_p32_8h" startline="189">_maxPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" compoundref="_servo___e_s_p32_8h" startline="190">_minAngle</references>
+        <references refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" compoundref="_servo___e_s_p32_8h" startline="189">_minPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" compoundref="_servo___e_s_p32_8h" startline="185">_pin</references>
+        <references refid="class_servo___e_s_p32_1af3a63fa7097959c009c6ff3582ed4b29" compoundref="_servo___e_s_p32_8h" startline="51">CHANNEL_MAX_NUM</references>
+        <references refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" compoundref="_servo___e_s_p32_8h" startline="183">channel_next_free</references>
+        <references refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" compoundref="_servo___e_s_p32_8h" startline="54">CHANNEL_NOT_ATTACHED</references>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">ServoMotor::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Servo_ESP32::detach</definition>
+        <argsstring>()</argsstring>
+        <name>detach</name>
+        <briefdescription>
+<para>Stop driving the servo pulse train. </para>        </briefdescription>
+        <detaileddescription>
+<para>If not currently attached to a motor, this function has no effect.</para><para><simplesect kind="return"><para>true if this call did anything, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="118" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="72" bodyend="82"/>
+        <references refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" compoundref="_servo___e_s_p32_8h" startline="187">_channel</references>
+        <references refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" compoundref="_servo___e_s_p32_8h" startline="185">_pin</references>
+        <references refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" compoundref="_servo___e_s_p32_8cpp" startline="110" endline="110">attached</references>
+        <references refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" compoundref="_servo___e_s_p32_8h" startline="183">channel_next_free</references>
+        <referencedby refid="class_servo___e_s_p32_1ae1815343314ce0c40ad8154a400c5116" compoundref="_servo___e_s_p32_8cpp" startline="42" endline="44">~Servo_ESP32</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo_ESP32::write</definition>
+        <argsstring>(int degrees)</argsstring>
+        <name>write</name>
+        <param>
+          <type>int</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+<para>Set the servomotor target angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target angle, in degrees. If the target angle is outside the range specified at <ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">attach()</ref> time, it will be clamped to lie in that range.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Servo::attach() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="129" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="84" bodyend="87"/>
+        <references refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" compoundref="_servo___e_s_p32_8h" startline="181" endline="181">_angleToUs</references>
+        <references refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" compoundref="_servo___e_s_p32_8h" startline="190">_maxAngle</references>
+        <references refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" compoundref="_servo___e_s_p32_8h" startline="190">_minAngle</references>
+        <references refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</references>
+        <referencedby refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" compoundref="_servo_motor_8cpp" startline="27" endline="34">ServoMotor::move</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo_ESP32::writeMicroseconds</definition>
+        <argsstring>(int pulseUs)</argsstring>
+        <name>writeMicroseconds</name>
+        <param>
+          <type>int</type>
+          <declname>pulseUs</declname>
+        </param>
+        <briefdescription>
+<para>Set the pulse width, in microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulseWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pulse width to send to the servomotor, in microseconds. If outside of the range specified at <ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">attach()</ref> time, it is clamped to lie in that range.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Servo::attach() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="141" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="89" bodyend="96"/>
+        <references refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" compoundref="_servo___e_s_p32_8h" startline="187">_channel</references>
+        <references refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" compoundref="_servo___e_s_p32_8h" startline="189">_maxPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" compoundref="_servo___e_s_p32_8h" startline="189">_minPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" compoundref="_servo___e_s_p32_8h" startline="186">_pulseWidthDuty</references>
+        <references refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" compoundref="_servo___e_s_p32_8h" startline="178" endline="178">_usToDuty</references>
+        <references refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" compoundref="_servo___e_s_p32_8cpp" startline="110" endline="110">attached</references>
+        <referencedby refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" compoundref="_servo___e_s_p32_8cpp" startline="84" endline="87">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the servomotor&apos;s target angle, in degrees. This will lie inside the range specified at <ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">attach()</ref> time.</para><para><simplesect kind="see"><para>Servo::attach() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="149" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="98" bodyend="100"/>
+        <references refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" compoundref="_servo___e_s_p32_8h" startline="180" endline="180">_usToAngle</references>
+        <references refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" compoundref="_servo___e_s_p32_8cpp" startline="102" endline="108">readMicroseconds</references>
+        <referencedby refid="class_servo_motor_1a62f250e043340bae6bd8f940ac071424" compoundref="_servo_motor_8cpp" startline="36" endline="38">ServoMotor::get_currentPosition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::readMicroseconds</definition>
+        <argsstring>()</argsstring>
+        <name>readMicroseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current pulse width, in microseconds. This will lie within the range specified at <ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">attach()</ref> time.</para><para><simplesect kind="see"><para>Servo::attach() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="157" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="102" bodyend="108"/>
+        <references refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" compoundref="_servo___e_s_p32_8h" startline="187">_channel</references>
+        <references refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" compoundref="_servo___e_s_p32_8h" startline="179" endline="179">_dutyToUs</references>
+        <references refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" compoundref="_servo___e_s_p32_8cpp" startline="110" endline="110">attached</references>
+        <referencedby refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" compoundref="_servo___e_s_p32_8cpp" startline="98" endline="100">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Servo_ESP32::attached</definition>
+        <argsstring>() const </argsstring>
+        <name>attached</name>
+        <briefdescription>
+<para>Check if this instance is attached to a servo. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if this instance is attached to a servo, false otherwise. </para></simplesect>
+<simplesect kind="see"><para>Servo::attachedPin() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="164" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="110" bodyend="110"/>
+        <references refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" compoundref="_servo___e_s_p32_8h" startline="185">_pin</references>
+        <references refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" compoundref="_servo___e_s_p32_8h" startline="57">PIN_NOT_ATTACHED</references>
+        <referencedby refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" compoundref="_servo___e_s_p32_8cpp" startline="72" endline="82">detach</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" compoundref="_servo___e_s_p32_8cpp" startline="102" endline="108">readMicroseconds</referencedby>
+        <referencedby refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1aeb1186e8214acc32a0185d52704bc040" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::attachedPin</definition>
+        <argsstring>() const </argsstring>
+        <name>attachedPin</name>
+        <briefdescription>
+<para>Get the pin this instance is attached to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pin number if currently attached to a pin, PIN_NOT_ATTACHED otherwise. </para></simplesect>
+<simplesect kind="see"><para>Servo::attach() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="172" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="112" bodyend="112"/>
+        <references refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" compoundref="_servo___e_s_p32_8h" startline="185">_pin</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo_ESP32::_resetFields</definition>
+        <argsstring>(void)</argsstring>
+        <name>_resetFields</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="176" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp" bodystart="114" bodyend="122"/>
+        <references refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" compoundref="_servo___e_s_p32_8h" startline="187">_channel</references>
+        <references refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" compoundref="_servo___e_s_p32_8h" startline="190">_maxAngle</references>
+        <references refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" compoundref="_servo___e_s_p32_8h" startline="189">_maxPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" compoundref="_servo___e_s_p32_8h" startline="190">_minAngle</references>
+        <references refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" compoundref="_servo___e_s_p32_8h" startline="189">_minPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" compoundref="_servo___e_s_p32_8h" startline="185">_pin</references>
+        <references refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" compoundref="_servo___e_s_p32_8h" startline="186">_pulseWidthDuty</references>
+        <references refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" compoundref="_servo___e_s_p32_8h" startline="54">CHANNEL_NOT_ATTACHED</references>
+        <references refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" compoundref="_servo___e_s_p32_8h" startline="42">MAX_ANGLE</references>
+        <references refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" compoundref="_servo___e_s_p32_8h" startline="45">MAX_PULSE_WIDTH</references>
+        <references refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" compoundref="_servo___e_s_p32_8h" startline="41">MIN_ANGLE</references>
+        <references refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" compoundref="_servo___e_s_p32_8h" startline="44">MIN_PULSE_WIDTH</references>
+        <references refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" compoundref="_servo___e_s_p32_8h" startline="57">PIN_NOT_ATTACHED</references>
+        <referencedby refid="class_servo___e_s_p32_1a8edd92713bb6e8fc2ab5ceceb1acf3d6" compoundref="_servo___e_s_p32_8cpp" startline="38" endline="40">Servo_ESP32</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::_usToDuty</definition>
+        <argsstring>(int us)</argsstring>
+        <name>_usToDuty</name>
+        <param>
+          <type>int</type>
+          <declname>us</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="178" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="178" bodyend="178"/>
+        <references refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" compoundref="_servo___e_s_p32_8h" startline="46">MAX_COMPARE</references>
+        <references refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" compoundref="_servo___e_s_p32_8h" startline="49">TAU_USEC</references>
+        <referencedby refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" compoundref="_servo___e_s_p32_8cpp" startline="89" endline="96">writeMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::_dutyToUs</definition>
+        <argsstring>(int duty)</argsstring>
+        <name>_dutyToUs</name>
+        <param>
+          <type>int</type>
+          <declname>duty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="179" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="179" bodyend="179"/>
+        <references refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" compoundref="_servo___e_s_p32_8h" startline="46">MAX_COMPARE</references>
+        <references refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" compoundref="_servo___e_s_p32_8h" startline="49">TAU_USEC</references>
+        <referencedby refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" compoundref="_servo___e_s_p32_8cpp" startline="102" endline="108">readMicroseconds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::_usToAngle</definition>
+        <argsstring>(int us)</argsstring>
+        <name>_usToAngle</name>
+        <param>
+          <type>int</type>
+          <declname>us</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="180" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="180" bodyend="180"/>
+        <references refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" compoundref="_servo___e_s_p32_8h" startline="190">_maxAngle</references>
+        <references refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" compoundref="_servo___e_s_p32_8h" startline="189">_maxPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" compoundref="_servo___e_s_p32_8h" startline="190">_minAngle</references>
+        <references refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" compoundref="_servo___e_s_p32_8h" startline="189">_minPulseWidth</references>
+        <referencedby refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" compoundref="_servo___e_s_p32_8cpp" startline="98" endline="100">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo_ESP32::_angleToUs</definition>
+        <argsstring>(int angle)</argsstring>
+        <name>_angleToUs</name>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="181" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="181" bodyend="181"/>
+        <references refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" compoundref="_servo___e_s_p32_8h" startline="190">_maxAngle</references>
+        <references refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" compoundref="_servo___e_s_p32_8h" startline="189">_maxPulseWidth</references>
+        <references refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" compoundref="_servo___e_s_p32_8h" startline="190">_minAngle</references>
+        <references refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" compoundref="_servo___e_s_p32_8h" startline="189">_minPulseWidth</references>
+        <referencedby refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" compoundref="_servo___e_s_p32_8cpp" startline="84" endline="87">write</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" line="37" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h" bodystart="37" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_angleToUs</name></member>
+      <member refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_channel</name></member>
+      <member refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_dutyToUs</name></member>
+      <member refid="class_servo___e_s_p32_1ab6876b8c61867249a6b2cbee55363c59" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_max</name></member>
+      <member refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_maxAngle</name></member>
+      <member refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_maxPulseWidth</name></member>
+      <member refid="class_servo___e_s_p32_1a0a129986f1b41306c79a32024faae460" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_min</name></member>
+      <member refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_minAngle</name></member>
+      <member refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_minPulseWidth</name></member>
+      <member refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_pin</name></member>
+      <member refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_pulseWidthDuty</name></member>
+      <member refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_resetFields</name></member>
+      <member refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_usToAngle</name></member>
+      <member refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>_usToDuty</name></member>
+      <member refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>attach</name></member>
+      <member refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>attached</name></member>
+      <member refid="class_servo___e_s_p32_1aeb1186e8214acc32a0185d52704bc040" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>attachedPin</name></member>
+      <member refid="class_servo___e_s_p32_1af3a63fa7097959c009c6ff3582ed4b29" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>CHANNEL_MAX_NUM</name></member>
+      <member refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>channel_next_free</name></member>
+      <member refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>CHANNEL_NOT_ATTACHED</name></member>
+      <member refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>detach</name></member>
+      <member refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>MAX_ANGLE</name></member>
+      <member refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>MAX_COMPARE</name></member>
+      <member refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>MAX_PULSE_WIDTH</name></member>
+      <member refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>MIN_ANGLE</name></member>
+      <member refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>MIN_PULSE_WIDTH</name></member>
+      <member refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>PIN_NOT_ATTACHED</name></member>
+      <member refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>read</name></member>
+      <member refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>readMicroseconds</name></member>
+      <member refid="class_servo___e_s_p32_1a8edd92713bb6e8fc2ab5ceceb1acf3d6" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>Servo_ESP32</name></member>
+      <member refid="class_servo___e_s_p32_1ae92ff9b440a2e70962673251ccc0c235" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>TAU_MSEC</name></member>
+      <member refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" prot="private" virt="non-virtual"><scope>Servo_ESP32</scope><name>TAU_USEC</name></member>
+      <member refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>write</name></member>
+      <member refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>writeMicroseconds</name></member>
+      <member refid="class_servo___e_s_p32_1ae1815343314ce0c40ad8154a400c5116" prot="public" virt="non-virtual"><scope>Servo_ESP32</scope><name>~Servo_ESP32</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

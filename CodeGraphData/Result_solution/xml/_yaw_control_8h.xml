@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_yaw_control_8h" kind="file">
+    <compoundname>YawControl.h</compoundname>
+    <includes local="yes">arduino.h</includes>
+    <includes refid="_p_i_d__v1_8h" local="no">PID_v1.h</includes>
+    <includedby refid="_yaw_control_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.cpp</includedby>
+    <incdepgraph>
+      <node id="920">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h</label>
+        <link refid="YawControl.h"/>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+      </node>
+      <node id="922">
+        <label>PID_v1.h</label>
+        <link refid="_p_i_d__v1_8h"/>
+      </node>
+      <node id="921">
+        <label>arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="923">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h</label>
+        <link refid="YawControl.h"/>
+        <childnode refid="924" relation="include">
+        </childnode>
+      </node>
+      <node id="924">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.cpp</label>
+        <link refid="_yaw_control_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_yaw_control" prot="public">YawControl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>YawControl.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_YAWCONTROL_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_YAWCONTROL_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARDUINO)<sp/>&amp;&amp;<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_p_i_d__v1_8h" kindref="compound">PID_v1.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_yaw_control" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_yaw_control" kindref="compound">YawControl</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="class_yaw_control_1a8093b1d32053e8f59c09b78880bedd85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_yaw_control_1ad8a416a8b8073558db20d0ff5ef91dca" kindref="member">input</ref>,<sp/>*<sp/><ref refid="class_yaw_control_1ad3e681d91fb51c75f11ace973c7a4ad7" kindref="member">output</ref>,<sp/>*<sp/><ref refid="class_yaw_control_1a8093b1d32053e8f59c09b78880bedd85" kindref="member">setpoint</ref>,<sp/><ref refid="class_yaw_control_1a7b7b9ed6077deec298df2369ed18e3db" kindref="member">kp</ref>,<sp/><ref refid="class_yaw_control_1a880a50394593ea08de868cdf4c59c957" kindref="member">ki</ref>,<sp/><ref refid="class_yaw_control_1ab87669046abf039385371758afe430a0" kindref="member">kd</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_yaw_control_1a20d1940f72057828b1de69d95cd8f986" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a20d1940f72057828b1de69d95cd8f986" kindref="member">pOn</ref>,<sp/><ref refid="class_yaw_control_1a10ea3f55385cd5147dd40188e7052324" kindref="member">controllerDirection</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_yaw_control_1aa41467693352b1799eb976b169585630" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1aa41467693352b1799eb976b169585630" kindref="member">desireAngle</ref>,<sp/><ref refid="class_yaw_control_1a8e99d64af1af977635e2002285312d55" kindref="member">currentAngle</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" kindref="member">YawControl</ref>(</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_yaw_control_1ad8a416a8b8073558db20d0ff5ef91dca" kindref="member">input</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_yaw_control_1ad3e681d91fb51c75f11ace973c7a4ad7" kindref="member">output</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="class_yaw_control_1a8093b1d32053e8f59c09b78880bedd85" kindref="member">setpoint</ref>,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a7b7b9ed6077deec298df2369ed18e3db" kindref="member">kp</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a880a50394593ea08de868cdf4c59c957" kindref="member">ki</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1ab87669046abf039385371758afe430a0" kindref="member">kd</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a20d1940f72057828b1de69d95cd8f986" kindref="member">pOn</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a10ea3f55385cd5147dd40188e7052324" kindref="member">controllerDirection</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="class_yaw_control_1a5cb81cb5d393a4e699d8ef3e439f0508" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_p_i_d" kindref="compound">PID</ref>*<sp/><ref refid="class_yaw_control_1a5cb81cb5d393a4e699d8ef3e439f0508" kindref="member">pid</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a9e0187695308163234a9f3b2c99bac44" kindref="member">Compute</ref>();<sp/></highlight><highlight class="comment">//it<sp/>should<sp/>be<sp/>called<sp/>every<sp/>time<sp/>loop()<sp/>cycles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_yaw_control_1a8b6a87bf53357f91887956156a6b5d8b" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h"/>
+  </compounddef>
+</doxygen>

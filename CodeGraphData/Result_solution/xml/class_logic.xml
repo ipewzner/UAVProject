@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_logic" kind="class" prot="public">
+    <compoundname>Logic</compoundname>
+    <includes refid="logic_8h" local="no">logic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_logic_1aad09cf0d497b80e9ca2f1a4df3b0aaf2" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* Logic::ypr</definition>
+        <argsstring></argsstring>
+        <name>ypr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1a304135b3a4f1c687bb0eebfe45e793ed" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Logic::joystic1X</definition>
+        <argsstring></argsstring>
+        <name>joystic1X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" compoundref="logic_8cpp" startline="8" endline="14">Logic</referencedby>
+        <referencedby refid="class_logic_1aa8ba372b42e3eb63b1e57a007e85d747" compoundref="logic_8cpp" startline="17" endline="38">updateJoystic</referencedby>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">updateMotors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1a08f9648edf5add5161530b8052e2370b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Logic::joystic1Y</definition>
+        <argsstring></argsstring>
+        <name>joystic1Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" compoundref="logic_8cpp" startline="8" endline="14">Logic</referencedby>
+        <referencedby refid="class_logic_1aa8ba372b42e3eb63b1e57a007e85d747" compoundref="logic_8cpp" startline="17" endline="38">updateJoystic</referencedby>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">updateMotors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1a97aaffb6a66b74ac5e2ace3913704d63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Logic::joystic2X</definition>
+        <argsstring></argsstring>
+        <name>joystic2X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" compoundref="logic_8cpp" startline="8" endline="14">Logic</referencedby>
+        <referencedby refid="class_logic_1aa8ba372b42e3eb63b1e57a007e85d747" compoundref="logic_8cpp" startline="17" endline="38">updateJoystic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1a2c7824df75f553f84e45d88bdb130e69" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Logic::joystic2Y</definition>
+        <argsstring></argsstring>
+        <name>joystic2Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" compoundref="logic_8cpp" startline="8" endline="14">Logic</referencedby>
+        <referencedby refid="class_logic_1aa8ba372b42e3eb63b1e57a007e85d747" compoundref="logic_8cpp" startline="17" endline="38">updateJoystic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1a0096f319cf3e3bac2a6c4c8abfd090d0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_motor_array" kindref="compound">MotorArray</ref> *</type>
+        <definition>MotorArray* Logic::motors</definition>
+        <argsstring></argsstring>
+        <name>motors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="21" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" compoundref="logic_8cpp" startline="8" endline="14">Logic</referencedby>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">updateMotors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1a65d385dcb9e0bd0cc45b57579d5587c4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Logic::desireState[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>desireState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="24" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">updateMotors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_logic_1aa065751d669fd8cd117cc4c58c669bad" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Logic::currentState[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>currentState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="24" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">updateMotors</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Logic::Logic</definition>
+        <argsstring>(MotorArray *motors)</argsstring>
+        <name>Logic</name>
+        <param>
+          <type><ref refid="class_motor_array" kindref="compound">MotorArray</ref> *</type>
+          <declname>motors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.cpp" bodystart="8" bodyend="14"/>
+        <references refid="class_logic_1a304135b3a4f1c687bb0eebfe45e793ed" compoundref="logic_8h" startline="19">joystic1X</references>
+        <references refid="class_logic_1a08f9648edf5add5161530b8052e2370b" compoundref="logic_8h" startline="19">joystic1Y</references>
+        <references refid="class_logic_1a97aaffb6a66b74ac5e2ace3913704d63" compoundref="logic_8h" startline="20">joystic2X</references>
+        <references refid="class_logic_1a2c7824df75f553f84e45d88bdb130e69" compoundref="logic_8h" startline="20">joystic2Y</references>
+        <references refid="class_logic_1a0096f319cf3e3bac2a6c4c8abfd090d0" compoundref="logic_8h" startline="21">motors</references>
+      </memberdef>
+      <memberdef kind="function" id="class_logic_1aa8ba372b42e3eb63b1e57a007e85d747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logic::updateJoystic</definition>
+        <argsstring>(int joy1X, int joy1Y, int joy2X, int joy2Y)</argsstring>
+        <name>updateJoystic</name>
+        <param>
+          <type>int</type>
+          <declname>joy1X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>joy1Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>joy2X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>joy2Y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="26" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.cpp" bodystart="17" bodyend="38"/>
+        <references refid="class_logic_1a304135b3a4f1c687bb0eebfe45e793ed" compoundref="logic_8h" startline="19">joystic1X</references>
+        <references refid="class_logic_1a08f9648edf5add5161530b8052e2370b" compoundref="logic_8h" startline="19">joystic1Y</references>
+        <references refid="class_logic_1a97aaffb6a66b74ac5e2ace3913704d63" compoundref="logic_8h" startline="20">joystic2X</references>
+        <references refid="class_logic_1a2c7824df75f553f84e45d88bdb130e69" compoundref="logic_8h" startline="20">joystic2Y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Logic::updateMotors</definition>
+        <argsstring>()</argsstring>
+        <name>updateMotors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="27" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.cpp" bodystart="40" bodyend="53"/>
+        <references refid="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" compoundref="_motor_array_8h" startline="10">MotorArray::arr</references>
+        <references refid="class_logic_1aa065751d669fd8cd117cc4c58c669bad" compoundref="logic_8h" startline="24">currentState</references>
+        <references refid="class_logic_1a65d385dcb9e0bd0cc45b57579d5587c4" compoundref="logic_8h" startline="24">desireState</references>
+        <references refid="class_logic_1a304135b3a4f1c687bb0eebfe45e793ed" compoundref="logic_8h" startline="19">joystic1X</references>
+        <references refid="class_logic_1a08f9648edf5add5161530b8052e2370b" compoundref="logic_8h" startline="19">joystic1Y</references>
+        <references refid="class_logic_1a0096f319cf3e3bac2a6c4c8abfd090d0" compoundref="logic_8h" startline="21">motors</references>
+        <references refid="class_motor_1a90ba8644422d8e273eaa6bb772d25b4f">Motor::move</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="131">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+      </node>
+      <node id="130">
+        <label>MotorArray</label>
+        <link refid="class_motor_array"/>
+        <childnode refid="131" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+      <node id="129">
+        <label>Logic</label>
+        <link refid="class_logic"/>
+        <childnode refid="130" relation="usage">
+          <edgelabel>motors</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h" bodystart="14" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_logic_1aa065751d669fd8cd117cc4c58c669bad" prot="public" virt="non-virtual"><scope>Logic</scope><name>currentState</name></member>
+      <member refid="class_logic_1a65d385dcb9e0bd0cc45b57579d5587c4" prot="public" virt="non-virtual"><scope>Logic</scope><name>desireState</name></member>
+      <member refid="class_logic_1a304135b3a4f1c687bb0eebfe45e793ed" prot="public" virt="non-virtual"><scope>Logic</scope><name>joystic1X</name></member>
+      <member refid="class_logic_1a08f9648edf5add5161530b8052e2370b" prot="public" virt="non-virtual"><scope>Logic</scope><name>joystic1Y</name></member>
+      <member refid="class_logic_1a97aaffb6a66b74ac5e2ace3913704d63" prot="public" virt="non-virtual"><scope>Logic</scope><name>joystic2X</name></member>
+      <member refid="class_logic_1a2c7824df75f553f84e45d88bdb130e69" prot="public" virt="non-virtual"><scope>Logic</scope><name>joystic2Y</name></member>
+      <member refid="class_logic_1ac909bb33672c4aab7814aba1dbedbb58" prot="public" virt="non-virtual"><scope>Logic</scope><name>Logic</name></member>
+      <member refid="class_logic_1a0096f319cf3e3bac2a6c4c8abfd090d0" prot="public" virt="non-virtual"><scope>Logic</scope><name>motors</name></member>
+      <member refid="class_logic_1aa8ba372b42e3eb63b1e57a007e85d747" prot="public" virt="non-virtual"><scope>Logic</scope><name>updateJoystic</name></member>
+      <member refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" prot="public" virt="non-virtual"><scope>Logic</scope><name>updateMotors</name></member>
+      <member refid="class_logic_1aad09cf0d497b80e9ca2f1a4df3b0aaf2" prot="public" virt="non-virtual"><scope>Logic</scope><name>ypr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

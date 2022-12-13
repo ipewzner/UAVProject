@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classstd_1_1atomic" kind="class" prot="public">
+    <compoundname>std::atomic</compoundname>
+    <includes refid="ghostl_8h" local="no">ghostl.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstd_1_1atomic_1af09d007fc48855bf04ca90e87a845529" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T std::atomic&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="42" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classstd_1_1atomic_1ae346b9e8fdab01035ee0fe4887eca752" compoundref="ghostl_8h" startline="45" endline="45">std::atomic&lt; bool &gt;::atomic</referencedby>
+        <referencedby refid="classstd_1_1atomic_1a42b814248794e50dcfa7f7ed81dba19d" compoundref="ghostl_8h" startline="47" endline="47">std::atomic&lt; bool &gt;::load</referencedby>
+        <referencedby refid="classstd_1_1atomic_1ac6187f3882863f0e3f65a7fbb8b04121" compoundref="ghostl_8h" startline="46" endline="46">std::atomic&lt; bool &gt;::store</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstd_1_1atomic_1af07c335e1d77793174f1d43bf9f64f5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>std::atomic&lt; T &gt;::atomic</definition>
+        <argsstring>()</argsstring>
+        <name>atomic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="44" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1atomic_1ae346b9e8fdab01035ee0fe4887eca752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>std::atomic&lt; T &gt;::atomic</definition>
+        <argsstring>(T desired)</argsstring>
+        <name>atomic</name>
+        <param>
+          <type>T</type>
+          <declname>desired</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="45" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1atomic_1ac6187f3882863f0e3f65a7fbb8b04121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void std::atomic&lt; T &gt;::store</definition>
+        <argsstring>(T desired, std::memory_order=std::memory_order_seq_cst) volatilenoexcept</argsstring>
+        <name>store</name>
+        <param>
+          <type>T</type>
+          <declname>desired</declname>
+        </param>
+        <param>
+          <type>std::memory_order</type>
+          <defval>std::memory_order_seq_cst</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="46" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="46" bodyend="46"/>
+        <referencedby refid="classcircular__queue_1ab4f5704abe6d2fe7fe94b50f39452430" compoundref="circular__queue_8h" startline="53" endline="57">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::circular_queue</referencedby>
+        <referencedby refid="classcircular__queue_1a961986265ab3694a8d89af177b88ece1" compoundref="circular__queue_8h" startline="103" endline="106">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::flush</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" compoundref="_multi_delegate_8h" startline="370" endline="401">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_impl_1ab3aff0e0f6284db66880c41f90688f6f" compoundref="_multi_delegate_8h" startline="410" endline="441">delegate::detail::MultiDelegateImpl&lt; Delegate, void, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01void_07_p_8_8_8_08_00_01_i_s_q_u_e977e230ef1939d4be6845cd824f88d38_1a3d17ec47e4ba685367a15a3aec8a45df" compoundref="_multi_delegate_8h" startline="466" endline="495">delegate::detail::MultiDelegate&lt; Delegate, void(P...), ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01void_07_08_00_01_i_s_q_u_e_u_e_00_be7da3c18d87902b0a9838703ad4f54e_1a703a30674a4de2b48931fcf40beb50a4" compoundref="_multi_delegate_8h" startline="504" endline="533">delegate::detail::MultiDelegate&lt; Delegate, void(), ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classcircular__queue_1a569283df73394877677e5d41d1bffb52" compoundref="circular__queue_8h" startline="74" endline="80">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::operator=</referencedby>
+        <referencedby refid="classcircular__queue_1af5b15190c1f45f7c67b247cf852260c1" compoundref="circular__queue_8h" startline="156" endline="168">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::push</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">SoftwareSerial::rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1atomic_1a42b814248794e50dcfa7f7ed81dba19d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T std::atomic&lt; T &gt;::load</definition>
+        <argsstring>(std::memory_order=std::memory_order_seq_cst) const volatilenoexcept</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::memory_order</type>
+          <defval>std::memory_order_seq_cst</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="47" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="47" bodyend="47"/>
+        <referencedby refid="classcircular__queue_1ab9d0457843bfc5bdcc61dd0eb693170b" compoundref="circular__queue_8h" startline="111" endline="116">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::available</referencedby>
+        <referencedby refid="classcircular__queue_1a8e2bf3c05ce90c21485ab0b93d830c08" compoundref="circular__queue_8h" startline="121" endline="126">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::available_for_push</referencedby>
+        <referencedby refid="classcircular__queue_1a961986265ab3694a8d89af177b88ece1" compoundref="circular__queue_8h" startline="103" endline="106">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::flush</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" compoundref="_multi_delegate_8h" startline="370" endline="401">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_impl_1ab3aff0e0f6284db66880c41f90688f6f" compoundref="_multi_delegate_8h" startline="410" endline="441">delegate::detail::MultiDelegateImpl&lt; Delegate, void, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01void_07_p_8_8_8_08_00_01_i_s_q_u_e977e230ef1939d4be6845cd824f88d38_1a3d17ec47e4ba685367a15a3aec8a45df" compoundref="_multi_delegate_8h" startline="466" endline="495">delegate::detail::MultiDelegate&lt; Delegate, void(P...), ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01void_07_08_00_01_i_s_q_u_e_u_e_00_be7da3c18d87902b0a9838703ad4f54e_1a703a30674a4de2b48931fcf40beb50a4" compoundref="_multi_delegate_8h" startline="504" endline="533">delegate::detail::MultiDelegate&lt; Delegate, void(), ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+        <referencedby refid="classcircular__queue_1ae07e1052629eee24e6e169c12cb69b86" compoundref="circular__queue_8h" startline="133" endline="138">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::peek</referencedby>
+        <referencedby refid="classcircular__queue_1af5b15190c1f45f7c67b247cf852260c1" compoundref="circular__queue_8h" startline="156" endline="168">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::push</referencedby>
+        <referencedby refid="classcircular__queue_1add28c28f9800b72678261eb6cb7bc21e" compoundref="circular__queue_8h" startline="144" endline="149">circular_queue&lt; uint32_t, SoftwareSerial * &gt;::pushpeek</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">SoftwareSerial::rxBits</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>T</label>
+      </node>
+      <node id="5">
+        <label>std::atomic&lt; T &gt;</label>
+        <link refid="classstd_1_1atomic"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="40" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="40" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classstd_1_1atomic_1af07c335e1d77793174f1d43bf9f64f5e" prot="public" virt="non-virtual"><scope>std::atomic</scope><name>atomic</name></member>
+      <member refid="classstd_1_1atomic_1ae346b9e8fdab01035ee0fe4887eca752" prot="public" virt="non-virtual"><scope>std::atomic</scope><name>atomic</name></member>
+      <member refid="classstd_1_1atomic_1a42b814248794e50dcfa7f7ed81dba19d" prot="public" virt="non-virtual"><scope>std::atomic</scope><name>load</name></member>
+      <member refid="classstd_1_1atomic_1ac6187f3882863f0e3f65a7fbb8b04121" prot="public" virt="non-virtual"><scope>std::atomic</scope><name>store</name></member>
+      <member refid="classstd_1_1atomic_1af09d007fc48855bf04ca90e87a845529" prot="private" virt="non-virtual"><scope>std::atomic</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

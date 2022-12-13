@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_b_m_p_8cpp" kind="file">
+    <compoundname>BMP.cpp</compoundname>
+    <includes refid="_b_m_p_8h" local="yes">BMP.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayFunctions.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Collection/CollectionData.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Namespace.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Configuration.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/preprocessor.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/version.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/assert.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stddef.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayIterator.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/SlotFunctions.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantData.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Memory/MemoryPool.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Memory/Alignment.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/mpl/max.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/StringAdapters.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/conditional.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_array.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_class.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/declval.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_const.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_enum.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_same.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_cv.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_pointer.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/make_void.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/JsonString.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/RamString.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/IsString.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/String.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Misc/SafeBoolIdiom.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/ArduinoString.hpp</includes>
+    <includes local="no">C:/Users/ipewz/AppData/Local/arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/FlashString.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/pgmspace.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantSlot.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/integer.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdint.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/limits.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantContent.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/Float.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/Integer.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Misc/SerializedValue.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/convertNumber.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantRef.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Misc/Visitable.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/Converter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantFunctions.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/attributes.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/StoragePolicy.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantOperators.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/arithmeticCompare.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantTag.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantShortcuts.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayShortcuts.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectShortcuts.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectFunctions.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectIterator.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/Pair.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ElementProxy.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantTo.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectRef.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayRef.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/JsonSerializer.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/TextFormatter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/EscapeSequence.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/FloatParts.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/FloatTraits.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/alias_cast.hpp</includes>
+    <includes local="yes">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/math.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/static_array.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/pgmspace_generic.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/CountingDecorator.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/measure.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/DummyWriter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/serialize.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writer.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/StaticStringWriter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/ArduinoStringWriter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/PrintWriter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/Visitor.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/parseNumber.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/ctype.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/deserialize.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/DeserializationError.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Filter.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/NestingLimit.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Reader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/IteratorReader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/RamReader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/VariantReader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/ArduinoStreamReader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/ArduinoStringReader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/FlashReader.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StringStorage/StringStorage.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StringStorage/StringCopier.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StringStorage/StringMover.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/Latch.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/Utf16.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/Utf8.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/MsgPack/endianess.hpp</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/MsgPack/ieee754.hpp</includes>
+    <incdepgraph>
+      <node id="535">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantShortcuts.hpp</label>
+      </node>
+      <node id="576">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/VariantReader.hpp</label>
+      </node>
+      <node id="584">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/Utf16.hpp</label>
+      </node>
+      <node id="523">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/Integer.hpp</label>
+      </node>
+      <node id="539">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectIterator.hpp</label>
+      </node>
+      <node id="474">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/version.hpp</label>
+      </node>
+      <node id="465">
+        <label>WString.h</label>
+      </node>
+      <node id="559">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/measure.hpp</label>
+      </node>
+      <node id="551">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/EscapeSequence.hpp</label>
+      </node>
+      <node id="586">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/MsgPack/endianess.hpp</label>
+      </node>
+      <node id="493">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp</label>
+      </node>
+      <node id="548">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayRef.hpp</label>
+      </node>
+      <node id="498">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp</label>
+      </node>
+      <node id="483">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/StringAdapters.hpp</label>
+      </node>
+      <node id="480">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Memory/MemoryPool.hpp</label>
+      </node>
+      <node id="534">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantTag.hpp</label>
+      </node>
+      <node id="491">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/declval.hpp</label>
+      </node>
+      <node id="581">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StringStorage/StringCopier.hpp</label>
+      </node>
+      <node id="484">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits.hpp</label>
+      </node>
+      <node id="540">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/Pair.hpp</label>
+      </node>
+      <node id="503">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp</label>
+      </node>
+      <node id="494">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_enum.hpp</label>
+      </node>
+      <node id="574">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/IteratorReader.hpp</label>
+      </node>
+      <node id="558">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/CountingDecorator.hpp</label>
+      </node>
+      <node id="507">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/JsonString.hpp</label>
+      </node>
+      <node id="522">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/Float.hpp</label>
+      </node>
+      <node id="489">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp</label>
+      </node>
+      <node id="488">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_array.hpp</label>
+      </node>
+      <node id="496">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_same.hpp</label>
+      </node>
+      <node id="505">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp</label>
+      </node>
+      <node id="565">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/PrintWriter.hpp</label>
+      </node>
+      <node id="514">
+        <label>C:/Users/ipewz/AppData/Local/arduino15/packages/esp32/hardware/esp32/1.0.6/cores/esp32/Arduino.h</label>
+      </node>
+      <node id="526">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantRef.hpp</label>
+      </node>
+      <node id="499">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_pointer.hpp</label>
+      </node>
+      <node id="557">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/pgmspace_generic.hpp</label>
+      </node>
+      <node id="543">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ElementProxy.hpp</label>
+      </node>
+      <node id="585">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/Utf8.hpp</label>
+      </node>
+      <node id="472">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Configuration.hpp</label>
+      </node>
+      <node id="569">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/deserialize.hpp</label>
+      </node>
+      <node id="553">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/FloatTraits.hpp</label>
+      </node>
+      <node id="502">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp</label>
+      </node>
+      <node id="563">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/StaticStringWriter.hpp</label>
+      </node>
+      <node id="528">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/Converter.hpp</label>
+      </node>
+      <node id="516">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/pgmspace.hpp</label>
+      </node>
+      <node id="513">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/ArduinoString.hpp</label>
+      </node>
+      <node id="582">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StringStorage/StringMover.hpp</label>
+      </node>
+      <node id="556">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/static_array.hpp</label>
+      </node>
+      <node id="463">
+        <label>BMP.h</label>
+        <link refid="_b_m_p_8h"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/IsString.hpp</label>
+      </node>
+      <node id="462">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp</label>
+        <link refid="BMP.cpp"/>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+        <childnode refid="546" relation="include">
+        </childnode>
+        <childnode refid="547" relation="include">
+        </childnode>
+        <childnode refid="548" relation="include">
+        </childnode>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantContent.hpp</label>
+      </node>
+      <node id="500">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp</label>
+      </node>
+      <node id="477">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayIterator.hpp</label>
+      </node>
+      <node id="511">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/String.hpp</label>
+      </node>
+      <node id="562">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writer.hpp</label>
+      </node>
+      <node id="542">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp</label>
+      </node>
+      <node id="490">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_class.hpp</label>
+      </node>
+      <node id="555">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/math.hpp</label>
+      </node>
+      <node id="564">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/ArduinoStringWriter.hpp</label>
+      </node>
+      <node id="497">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_cv.hpp</label>
+      </node>
+      <node id="570">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/DeserializationError.hpp</label>
+      </node>
+      <node id="575">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/RamReader.hpp</label>
+      </node>
+      <node id="550">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/TextFormatter.hpp</label>
+      </node>
+      <node id="545">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp</label>
+      </node>
+      <node id="567">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/parseNumber.hpp</label>
+      </node>
+      <node id="529">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantFunctions.hpp</label>
+      </node>
+      <node id="536">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayShortcuts.hpp</label>
+      </node>
+      <node id="577">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/ArduinoStreamReader.hpp</label>
+      </node>
+      <node id="560">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/Writers/DummyWriter.hpp</label>
+      </node>
+      <node id="549">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/JsonSerializer.hpp</label>
+      </node>
+      <node id="479">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantData.hpp</label>
+      </node>
+      <node id="566">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/Visitor.hpp</label>
+      </node>
+      <node id="467">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="578">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/ArduinoStringReader.hpp</label>
+      </node>
+      <node id="531">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/StoragePolicy.hpp</label>
+      </node>
+      <node id="561">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Serialization/serialize.hpp</label>
+      </node>
+      <node id="547">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h</label>
+      </node>
+      <node id="482">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/mpl/max.hpp</label>
+      </node>
+      <node id="473">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/preprocessor.hpp</label>
+      </node>
+      <node id="533">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/arithmeticCompare.hpp</label>
+      </node>
+      <node id="471">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Namespace.hpp</label>
+      </node>
+      <node id="524">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Misc/SerializedValue.hpp</label>
+      </node>
+      <node id="466">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="464">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h</label>
+      </node>
+      <node id="485">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/conditional.hpp</label>
+      </node>
+      <node id="478">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/SlotFunctions.hpp</label>
+      </node>
+      <node id="520">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/limits.hpp</label>
+      </node>
+      <node id="568">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/ctype.hpp</label>
+      </node>
+      <node id="537">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectShortcuts.hpp</label>
+      </node>
+      <node id="470">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Collection/CollectionData.hpp</label>
+      </node>
+      <node id="554">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/alias_cast.hpp</label>
+      </node>
+      <node id="538">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectFunctions.hpp</label>
+      </node>
+      <node id="517">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantSlot.hpp</label>
+      </node>
+      <node id="487">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp</label>
+      </node>
+      <node id="527">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Misc/Visitable.hpp</label>
+      </node>
+      <node id="506">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp</label>
+      </node>
+      <node id="504">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/make_void.hpp</label>
+      </node>
+      <node id="512">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Misc/SafeBoolIdiom.hpp</label>
+      </node>
+      <node id="552">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/FloatParts.hpp</label>
+      </node>
+      <node id="508">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/RamString.hpp</label>
+      </node>
+      <node id="530">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/attributes.hpp</label>
+      </node>
+      <node id="486">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp</label>
+      </node>
+      <node id="532">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantOperators.hpp</label>
+      </node>
+      <node id="541">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Document/BasicJsonDocument.hpp</label>
+      </node>
+      <node id="573">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Reader.hpp</label>
+      </node>
+      <node id="544">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Variant/VariantTo.hpp</label>
+      </node>
+      <node id="518">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/integer.hpp</label>
+      </node>
+      <node id="579">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Readers/FlashReader.hpp</label>
+      </node>
+      <node id="572">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/NestingLimit.hpp</label>
+      </node>
+      <node id="469">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Array/ArrayFunctions.hpp</label>
+      </node>
+      <node id="475">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/assert.hpp</label>
+      </node>
+      <node id="580">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/StringStorage/StringStorage.hpp</label>
+      </node>
+      <node id="501">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp</label>
+      </node>
+      <node id="515">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Strings/Adapters/FlashString.hpp</label>
+      </node>
+      <node id="571">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Deserialization/Filter.hpp</label>
+      </node>
+      <node id="583">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Json/Latch.hpp</label>
+      </node>
+      <node id="468">
+        <label>Adafruit_BMP280.h</label>
+      </node>
+      <node id="587">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/MsgPack/ieee754.hpp</label>
+      </node>
+      <node id="519">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdint.h</label>
+      </node>
+      <node id="492">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_const.hpp</label>
+      </node>
+      <node id="495">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp</label>
+      </node>
+      <node id="546">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Object/ObjectRef.hpp</label>
+      </node>
+      <node id="525">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Numbers/convertNumber.hpp</label>
+      </node>
+      <node id="476">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stddef.h</label>
+      </node>
+      <node id="481">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson/Memory/Alignment.hpp</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_m_p_8h" kindref="compound">BMP.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" refkind="member"><highlight class="normal"><ref refid="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" kindref="member">BMP::BMP</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i2c_address)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/><ref refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;i2c_address<sp/>=<sp/><ref refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" kindref="member">i2c_address</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" kindref="member">BMP::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.begin(<ref refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" kindref="member">i2c_address</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(!bmp.begin())<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>find<sp/>a<sp/>valid<sp/>BMP280<sp/>sensor,<sp/>check<sp/>wiring<sp/>or<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;try<sp/>a<sp/>different<sp/>address!&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>delay(10);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Default<sp/>settings<sp/>from<sp/>datasheet.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.setSampling(<ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">Adafruit_BMP280::MODE_NORMAL</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operating<sp/>Mode.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Adafruit_BMP280::SAMPLING_X2,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Temp.<sp/>oversampling<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Adafruit_BMP280::SAMPLING_X16,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pressure<sp/>oversampling<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Adafruit_BMP280::FILTER_X16,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Filtering.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Adafruit_BMP280::STANDBY_MS_500);<sp/></highlight><highlight class="comment">/*<sp/>Standby<sp/>time.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" refkind="member"><highlight class="normal">String<sp/><ref refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" kindref="member">BMP::asciiResult</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>String(<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readTemperature())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>String(<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readPressure())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>String(<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readAltitude(<ref refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" kindref="member">ALTITUDE_CONST</ref>))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" refkind="member"><highlight class="normal">String<sp/><ref refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" kindref="member">BMP::toString</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\n******************<sp/>BMP<sp/>*******************&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nTemperature<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readTemperature())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>*C&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nPressure<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readPressure())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Pa&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nApprox<sp/>altitude<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readAltitude(<ref refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" kindref="member">ALTITUDE_CONST</ref>))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>m&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n******************<sp/>BMP<sp/>END<sp/>*******************&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753" refkind="member"><highlight class="normal">DynamicJsonDocument<sp/><ref refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753" kindref="member">BMP::jsonResult</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/>json(1024);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//json.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;temp&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readTemperature();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;pres&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readPressure();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;alt&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>.readAltitude(<ref refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" kindref="member">ALTITUDE_CONST</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>json.shrinkToFit();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//serializeJson(json,<sp/>Serial);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4" kind="class" prot="public">
+    <compoundname>delegate::detail::Delegate&lt; void, R &gt;</compoundname>
+    <basecompoundref refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4" prot="private" virt="non-virtual">delegate::detail::DelegateImpl&lt; void, R &gt;</basecompoundref>
+    <includes refid="_delegate_8h" local="no">Delegate.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad07af6b625aa35f1611820d0af6f3918" prot="public" static="no">
+        <type>R(</type>
+        <definition>using delegate::detail::Delegate&lt; void, R &gt;::target_type =  R(</definition>
+        <argsstring>)</argsstring>
+        <name>target_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="1995" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="1995" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a90bb3ef084c19ea0b65de61f945b11c0" prot="protected" static="no">
+        <type><ref refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad07af6b625aa35f1611820d0af6f3918" kindref="member">target_type</ref> *</type>
+        <definition>using delegate::detail::Delegate&lt; void, R &gt;::FunPtr =  target_type*</definition>
+        <argsstring></argsstring>
+        <name>FunPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="1997" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="1997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1affe6420f0a7b729bfef1b46f540cbc20" prot="protected" static="no">
+        <type>std::function&lt; <ref refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad07af6b625aa35f1611820d0af6f3918" kindref="member">target_type</ref> &gt;</type>
+        <definition>using delegate::detail::Delegate&lt; void, R &gt;::FunctionType =  std::function&lt;target_type&gt;</definition>
+        <argsstring></argsstring>
+        <name>FunctionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="1999" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="1999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad400c3165f286f6b12062c6bba0e85af" prot="protected" static="no">
+        <type>R(*)(void *)</type>
+        <definition>using delegate::detail::Delegate&lt; void, R &gt;::FunVPPtr =  R(*)(void*)</definition>
+        <argsstring></argsstring>
+        <name>FunVPPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2001" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2001" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a6f09a0cd85e62b9f9bde704993a611db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::operator FunVPPtr</definition>
+        <argsstring>() const </argsstring>
+        <name>operator FunVPPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2007" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2007" bodyend="2007"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1abd6d78f5580114f91ef7ee143646b3d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::operator FunctionType</definition>
+        <argsstring>()</argsstring>
+        <name>operator FunctionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2009" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2009" bodyend="2009"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a9c4da3de17ad5e5006d0af1de1714d2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::Delegate</definition>
+        <argsstring>()</argsstring>
+        <name>Delegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2012" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2012" bodyend="2012"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a115bcb7f716af07e0940112914f8302a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::Delegate</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>Delegate</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2014" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2014" bodyend="2014"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1afc8a694ee3a3eecc71ee7963c045092e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::Delegate</definition>
+        <argsstring>(const Delegate &amp;del)</argsstring>
+        <name>Delegate</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2016" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2016" bodyend="2017"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a41edc18a5d46a5e3ebcc4bf9cac26982" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::Delegate</definition>
+        <argsstring>(Delegate &amp;&amp;del)</argsstring>
+        <name>Delegate</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;&amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2019" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2019" bodyend="2020"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1aa66945bbac566ded57add5e2e52cf39e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::Delegate</definition>
+        <argsstring>(FunPtr fn)</argsstring>
+        <name>Delegate</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ad58edba290c87219270d2dfd3cc3f8f9" kindref="member">FunPtr</ref></type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2022" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2022" bodyend="2022"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ac5ae895000cbaa7079f62c409f2b7276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>delegate::detail::Delegate&lt; void, R &gt;::Delegate</definition>
+        <argsstring>(F functional)</argsstring>
+        <name>Delegate</name>
+        <param>
+          <type>F</type>
+          <declname>functional</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2024" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2024" bodyend="2024"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a40d0bee3c4b5a6ffb6e00cd6622389ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+        <definition>Delegate&amp; delegate::detail::Delegate&lt; void, R &gt;::operator=</definition>
+        <argsstring>(const Delegate &amp;del)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2026" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2026" bodyend="2029"/>
+        <references refid="classdelegate_1_1detail_1_1_delegate_impl_1ac2886a828a3924607320d3be56951c92" compoundref="_delegate_8h" startline="949" endline="986">delegate::detail::DelegateImpl&lt; A, R &gt;::operator=</references>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a527139a4ca401143ba6afa5a4a1639b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+        <definition>Delegate&amp; delegate::detail::Delegate&lt; void, R &gt;::operator=</definition>
+        <argsstring>(Delegate &amp;&amp;del)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;&amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2031" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2031" bodyend="2034"/>
+        <references refid="classdelegate_1_1detail_1_1_delegate_impl_1ac2886a828a3924607320d3be56951c92" compoundref="_delegate_8h" startline="949" endline="986">delegate::detail::DelegateImpl&lt; A, R &gt;::operator=</references>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad993fcbb3693db5dea57078f547b6ffc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+        <definition>Delegate&amp; delegate::detail::Delegate&lt; void, R &gt;::operator=</definition>
+        <argsstring>(FunPtr fn)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ad58edba290c87219270d2dfd3cc3f8f9" kindref="member">FunPtr</ref></type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2036" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2036" bodyend="2039"/>
+        <references refid="classdelegate_1_1detail_1_1_delegate_impl_1ac2886a828a3924607320d3be56951c92" compoundref="_delegate_8h" startline="949" endline="986">delegate::detail::DelegateImpl&lt; A, R &gt;::operator=</references>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a5b2d4d4fd6439484f64fb9c9b609806e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;IRAM_ATTR</type>
+        <definition>Delegate&amp; IRAM_ATTR delegate::detail::Delegate&lt; void, R &gt;::operator=</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="2041" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="2041" bodyend="2044"/>
+        <references refid="classdelegate_1_1detail_1_1_delegate_impl_1ac2886a828a3924607320d3be56951c92" compoundref="_delegate_8h" startline="949" endline="986">delegate::detail::DelegateImpl&lt; A, R &gt;::operator=</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="87">
+        <label>delegate::detail::DelegateImpl&lt; void, R &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4"/>
+      </node>
+      <node id="86">
+        <label>delegate::detail::Delegate&lt; void, R &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4"/>
+        <childnode refid="87" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="89">
+        <label>delegate::detail::DelegateImpl&lt; void, R &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4"/>
+        <childnode refid="89" relation="usage">
+          <edgelabel>kind</edgelabel>
+          <edgelabel>@14</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>delegate::detail::Delegate&lt; void, R &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4"/>
+        <childnode refid="89" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="1993" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="1992" bodyend="2045"/>
+    <listofallmembers>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ae1c69059ad95e18295d448034c790948" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>arg</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a9c4da3de17ad5e5006d0af1de1714d2c" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>Delegate</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a115bcb7f716af07e0940112914f8302a" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>Delegate</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1afc8a694ee3a3eecc71ee7963c045092e" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>Delegate</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a41edc18a5d46a5e3ebcc4bf9cac26982" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>Delegate</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1aa66945bbac566ded57add5e2e52cf39e" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>Delegate</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ac5ae895000cbaa7079f62c409f2b7276" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>Delegate</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a7ececcdb3f1d02bd08b5f871a04ad02a" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>DelegateImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a1617f9258af9f680db90d84e16b062c3" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>DelegateImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a9af025b9c6dc562b0dec01ed01506c96" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>DelegateImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ac382d426e8954d6232c37ca09d4c8281" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>DelegateImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a13fa960c8379d3ea41882654a90cccfe" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>DelegateImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a974719cefab7125fa58b5c13e98d978f" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>DelegateImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1af72cc43c8c0ad3d081cb24dbd37aee16" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>fn</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a0065cd8adc16764937b9284f9d22e333a3234a3dcbca6b8a14957e16f98199679" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>FP</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a0065cd8adc16764937b9284f9d22e333a102ad73a6a008a2ad3b7668d466df97d" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>FUNC</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ad980a41e07b86dc6dd860aa2f91ad6f0" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>functional</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1affe6420f0a7b729bfef1b46f540cbc20" prot="protected" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>FunctionType</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a90bb3ef084c19ea0b65de61f945b11c0" prot="protected" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>FunPtr</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad400c3165f286f6b12062c6bba0e85af" prot="protected" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>FunVPPtr</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a0e5c01df2bca78f9c9849f8579112356" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>kind</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a939d0b77ee0776f28887d0a2f1b0b262" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator bool</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1abd6d78f5580114f91ef7ee143646b3d3" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator FunctionType</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a0fc062617c48b47a45849b740c1ea734" prot="private" virt="non-virtual" ambiguityscope="delegate::detail::DelegateImpl&lt; void, R &gt;::"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator FunctionType</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a6f09a0cd85e62b9f9bde704993a611db" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator FunVPPtr</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1af9b8f7b656b942376a1e38600a7914e9" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator()</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a40d0bee3c4b5a6ffb6e00cd6622389ce" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a527139a4ca401143ba6afa5a4a1639b6" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad993fcbb3693db5dea57078f547b6ffc" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1a5b2d4d4fd6439484f64fb9c9b609806e" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1a3a20c52312ef07c40b5297be2e46dd05" prot="private" virt="non-virtual" ambiguityscope="delegate::detail::DelegateImpl&lt; void, R &gt;::"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ae8684592d6cd53c9393c1c8f5e8d7d34" prot="private" virt="non-virtual" ambiguityscope="delegate::detail::DelegateImpl&lt; void, R &gt;::"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4_1ad07af6b625aa35f1611820d0af6f3918" prot="public" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>target_type</name></member>
+      <member refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4_1ab66e40d97d1b69ab3cc2b0091041784d" prot="private" virt="non-virtual"><scope>delegate::detail::Delegate&lt; void, R &gt;</scope><name>~DelegateImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

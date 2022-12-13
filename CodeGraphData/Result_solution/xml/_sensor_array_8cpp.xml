@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_sensor_array_8cpp" kind="file">
+    <compoundname>SensorArray.cpp</compoundname>
+    <includes refid="_sensor_array_8h" local="yes">SensorArray.h</includes>
+    <incdepgraph>
+      <node id="856">
+        <label>MPU6050_6Axis_MotionApps20.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8h"/>
+        <childnode refid="857" relation="include">
+        </childnode>
+      </node>
+      <node id="852">
+        <label>WString.h</label>
+      </node>
+      <node id="857">
+        <label>MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="858" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+      </node>
+      <node id="862">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="861">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="867">
+        <label>BMP.h</label>
+        <link refid="_b_m_p_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+      </node>
+      <node id="863">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="849">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="SensorArray.cpp"/>
+        <childnode refid="850" relation="include">
+        </childnode>
+      </node>
+      <node id="855">
+        <label>MPU.h</label>
+        <link refid="_m_p_u_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+      </node>
+      <node id="866">
+        <label>pgmspace.h</label>
+      </node>
+      <node id="860">
+        <label>Wire.h</label>
+        <link refid="_wire_8h"/>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+      </node>
+      <node id="850">
+        <label>SensorArray.h</label>
+        <link refid="_sensor_array_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+      </node>
+      <node id="854">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="858">
+        <label>I2Cdev.h</label>
+        <link refid="_i2_cdev_8h"/>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="860" relation="include">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="851">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="852" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="854" relation="include">
+        </childnode>
+      </node>
+      <node id="859">
+        <label>Arduino.h</label>
+      </node>
+      <node id="865">
+        <label>helper_3dmath.h</label>
+        <link refid="helper__3dmath_8h"/>
+      </node>
+      <node id="868">
+        <label>Adafruit_BMP280.h</label>
+      </node>
+      <node id="864">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sensor_array_8h" kindref="compound">SensorArray.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_sensor_array_1a0acd7cd3df437ed32d0b6859845c9ed3" refkind="member"><highlight class="normal"><ref refid="class_sensor_array_1a0acd7cd3df437ed32d0b6859845c9ed3" kindref="member">SensorArray::SensorArray</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" kindref="member">SensorArray::addSensor</ref>(<ref refid="class_sensor" kindref="compound">Sensor</ref>*<sp/>sensor)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref><sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref>**<sp/>temp<sp/>=<sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref><sp/>*<sp/>[<ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>[i]<sp/>=<sp/>temp[i];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>[<ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>]<sp/>=<sp/>sensor;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arrSize++;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref><sp/>*<sp/>[<ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>[<ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>]<sp/>=<sp/>sensor;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>++;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" kindref="member">SensorArray::initAll</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" kindref="member">length</ref>();<sp/>i++){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>[i]-&gt;init())<sp/>result<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" kindref="member">SensorArray::length</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" refkind="member"><highlight class="normal">String<sp/><ref refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" kindref="member">SensorArray::asciiResultAll</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>[i]-&gt;<ref refid="class_sensor_1a990933ca2756162944964b4ee310a7f9" kindref="member">asciiResult</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" refkind="member"><highlight class="normal">DynamicJsonDocument<sp/><ref refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" kindref="member">SensorArray::jsonResultAll</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/>json(1024);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//json.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>json[<ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>[i]-&gt;<ref refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" kindref="member">name</ref>]<sp/>=<sp/>arr[i]-&gt;jsonResult();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Serial.print(&quot;\nsss\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//serializeJson(json,Serial);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>json.shrinkToFit();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//serializeJson(json,<sp/>Serial);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp"/>
+  </compounddef>
+</doxygen>

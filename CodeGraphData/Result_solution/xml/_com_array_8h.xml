@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_com_array_8h" kind="file">
+    <compoundname>ComArray.h</compoundname>
+    <includes refid="_communication_8h" local="yes">Communication.h</includes>
+    <includedby refid="_com_array_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp</includedby>
+    <incdepgraph>
+      <node id="605">
+        <label>Communication.h</label>
+        <link refid="_communication_8h"/>
+        <childnode refid="606" relation="include">
+        </childnode>
+      </node>
+      <node id="604">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h</label>
+        <link refid="ComArray.h"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="606">
+        <label>ArduinoJson.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="608">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp</label>
+        <link refid="_com_array_8cpp"/>
+      </node>
+      <node id="607">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h</label>
+        <link refid="ComArray.h"/>
+        <childnode refid="608" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_com_array" prot="public">ComArray</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>ComArray.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_COMARRAY_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_COMARRAY_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_communication_8h" kindref="compound">Communication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_com_array" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_com_array" kindref="compound">ComArray</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_communication" kindref="compound">Communication</ref>**<sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" kindref="member">addCom</ref>(<ref refid="class_communication" kindref="compound">Communication</ref>*<sp/>com);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1a5e1d11e1518bd727ce5b66103b6b507b" kindref="member">initAll</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_com_array_1ae84e9edbe1214088d33a3c5ec3a4c05a" kindref="member">ComArray</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" kindref="member">length</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TO_DO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_com_array_1a2058efd8814bd46b0034ae71a01cc5bc" kindref="member">asciiResultAll</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/><ref refid="class_com_array_1a2e2acbbfc685ddb8befcec48639e5780" kindref="member">jsonResultAll</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h"/>
+  </compounddef>
+</doxygen>

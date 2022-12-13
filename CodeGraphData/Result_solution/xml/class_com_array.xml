@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_com_array" kind="class" prot="public">
+    <compoundname>ComArray</compoundname>
+    <includes refid="_com_array_8h" local="no">ComArray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_communication" kindref="compound">Communication</ref> **</type>
+        <definition>Communication** ComArray::arr</definition>
+        <argsstring></argsstring>
+        <name>arr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="10" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" compoundref="_com_array_8cpp" startline="12" endline="31">addCom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t ComArray::arrSize</definition>
+        <argsstring></argsstring>
+        <name>arrSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" compoundref="_com_array_8cpp" startline="12" endline="31">addCom</referencedby>
+        <referencedby refid="class_com_array_1ae84e9edbe1214088d33a3c5ec3a4c05a" compoundref="_com_array_8cpp" startline="8" endline="10">ComArray</referencedby>
+        <referencedby refid="class_com_array_1a2e2acbbfc685ddb8befcec48639e5780" compoundref="_com_array_8cpp" startline="58" endline="68">jsonResultAll</referencedby>
+        <referencedby refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" compoundref="_com_array_8cpp" startline="43" endline="45">length</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComArray::addCom</definition>
+        <argsstring>(Communication *com)</argsstring>
+        <name>addCom</name>
+        <param>
+          <type><ref refid="class_communication" kindref="compound">Communication</ref> *</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp" bodystart="12" bodyend="31"/>
+        <references refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" compoundref="_com_array_8h" startline="10">arr</references>
+        <references refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" compoundref="_com_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_com_array_1a5e1d11e1518bd727ce5b66103b6b507b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ComArray::initAll</definition>
+        <argsstring>()</argsstring>
+        <name>initAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp" bodystart="33" bodyend="41"/>
+        <references refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" compoundref="_com_array_8cpp" startline="43" endline="45">length</references>
+      </memberdef>
+      <memberdef kind="function" id="class_com_array_1ae84e9edbe1214088d33a3c5ec3a4c05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ComArray::ComArray</definition>
+        <argsstring>()</argsstring>
+        <name>ComArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="14" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp" bodystart="8" bodyend="10"/>
+        <references refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" compoundref="_com_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ComArray::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp" bodystart="43" bodyend="45"/>
+        <references refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" compoundref="_com_array_8h" startline="11">arrSize</references>
+        <referencedby refid="class_com_array_1a5e1d11e1518bd727ce5b66103b6b507b" compoundref="_com_array_8cpp" startline="33" endline="41">initAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_com_array_1a2058efd8814bd46b0034ae71a01cc5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String ComArray::asciiResultAll</definition>
+        <argsstring>()</argsstring>
+        <name>asciiResultAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_com_array_1a2e2acbbfc685ddb8befcec48639e5780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>DynamicJsonDocument ComArray::jsonResultAll</definition>
+        <argsstring>()</argsstring>
+        <name>jsonResultAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp" bodystart="58" bodyend="68"/>
+        <references refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" compoundref="_com_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="36">
+        <label>Communication</label>
+        <link refid="class_communication"/>
+      </node>
+      <node id="35">
+        <label>ComArray</label>
+        <link refid="class_com_array"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" line="8" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" prot="public" virt="non-virtual"><scope>ComArray</scope><name>addCom</name></member>
+      <member refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" prot="public" virt="non-virtual"><scope>ComArray</scope><name>arr</name></member>
+      <member refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" prot="public" virt="non-virtual"><scope>ComArray</scope><name>arrSize</name></member>
+      <member refid="class_com_array_1a2058efd8814bd46b0034ae71a01cc5bc" prot="public" virt="non-virtual"><scope>ComArray</scope><name>asciiResultAll</name></member>
+      <member refid="class_com_array_1ae84e9edbe1214088d33a3c5ec3a4c05a" prot="public" virt="non-virtual"><scope>ComArray</scope><name>ComArray</name></member>
+      <member refid="class_com_array_1a5e1d11e1518bd727ce5b66103b6b507b" prot="public" virt="non-virtual"><scope>ComArray</scope><name>initAll</name></member>
+      <member refid="class_com_array_1a2e2acbbfc685ddb8befcec48639e5780" prot="public" virt="non-virtual"><scope>ComArray</scope><name>jsonResultAll</name></member>
+      <member refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" prot="public" virt="non-virtual"><scope>ComArray</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_5c642b1316bd2b3035ceaeb042280980" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/UAVProject</compoundname>
+    <innerdir refid="dir_0525b533cf1ca32b18f0227a009b9742">C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm</innerdir>
+    <innerfile refid="_alttude_controler_8cpp">AlttudeControler.cpp</innerfile>
+    <innerfile refid="_alttude_controler_8h">AlttudeControler.h</innerfile>
+    <innerfile refid="_b_m_p_8cpp">BMP.cpp</innerfile>
+    <innerfile refid="_b_m_p_8h">BMP.h</innerfile>
+    <innerfile refid="_com_array_8cpp">ComArray.cpp</innerfile>
+    <innerfile refid="_com_array_8h">ComArray.h</innerfile>
+    <innerfile refid="_communication_8cpp">Communication.cpp</innerfile>
+    <innerfile refid="_communication_8h">Communication.h</innerfile>
+    <innerfile refid="_config_8cpp">Config.cpp</innerfile>
+    <innerfile refid="_config_8h">Config.h</innerfile>
+    <innerfile refid="_controler_8cpp">Controler.cpp</innerfile>
+    <innerfile refid="_controler_8h">Controler.h</innerfile>
+    <innerfile refid="_controler_array_8cpp">ControlerArray.cpp</innerfile>
+    <innerfile refid="_controler_array_8h">ControlerArray.h</innerfile>
+    <innerfile refid="_controler_interface_8cpp">ControlerInterface.cpp</innerfile>
+    <innerfile refid="_controler_interface_8h">ControlerInterface.h</innerfile>
+    <innerfile refid="logic_8cpp">logic.cpp</innerfile>
+    <innerfile refid="logic_8h">logic.h</innerfile>
+    <innerfile refid="_lora_8cpp">Lora.cpp</innerfile>
+    <innerfile refid="_lora_8h">Lora.h</innerfile>
+    <innerfile refid="_mini_joystick_8cpp">MiniJoystick.cpp</innerfile>
+    <innerfile refid="_mini_joystick_8h">MiniJoystick.h</innerfile>
+    <innerfile refid="_motor_8cpp">Motor.cpp</innerfile>
+    <innerfile refid="_motor_8h">Motor.h</innerfile>
+    <innerfile refid="_motor_array_8cpp">MotorArray.cpp</innerfile>
+    <innerfile refid="_motor_array_8h">MotorArray.h</innerfile>
+    <innerfile refid="_m_p_u_8cpp">MPU.cpp</innerfile>
+    <innerfile refid="_m_p_u_8h">MPU.h</innerfile>
+    <innerfile refid="_sensor_8cpp">Sensor.cpp</innerfile>
+    <innerfile refid="_sensor_8h">Sensor.h</innerfile>
+    <innerfile refid="_sensor_array_8cpp">SensorArray.cpp</innerfile>
+    <innerfile refid="_sensor_array_8h">SensorArray.h</innerfile>
+    <innerfile refid="_servo_motor_8cpp">ServoMotor.cpp</innerfile>
+    <innerfile refid="_servo_motor_8h">ServoMotor.h</innerfile>
+    <innerfile refid="_web_gui_8cpp">WebGui.cpp</innerfile>
+    <innerfile refid="_web_gui_8h">WebGui.h</innerfile>
+    <innerfile refid="_yaw_control_8cpp">YawControl.cpp</innerfile>
+    <innerfile refid="_yaw_control_8h">YawControl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/"/>
+  </compounddef>
+</doxygen>

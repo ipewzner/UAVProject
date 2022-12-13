@@ -1,0 +1,788 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_e_b_y_t_e_8cpp" kind="file">
+    <compoundname>EBYTE.cpp</compoundname>
+    <includes refid="_e_b_y_t_e_8h" local="no">EBYTE.h</includes>
+    <includes local="no">Stream.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>EBYTE.h</label>
+        <link refid="_e_b_y_t_e_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Stream.h</label>
+      </node>
+      <node id="0">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp</label>
+        <link refid="EBYTE.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>The<sp/>MIT<sp/>License<sp/>(MIT)</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>2019<sp/>Kris<sp/>Kasrpzak</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy<sp/>of</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,<sp/>FITNESS</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>On<sp/>a<sp/>personal<sp/>note,<sp/>if<sp/>you<sp/>develop<sp/>an<sp/>application<sp/>or<sp/>product<sp/>using<sp/>this<sp/>library<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>and<sp/>make<sp/>millions<sp/>of<sp/>dollars,<sp/>I&apos;m<sp/>happy<sp/>for<sp/>you!</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>Code<sp/>by<sp/>Kris<sp/>Kasprzak<sp/>kris.kasprzak@yahoo.com</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>intended<sp/>to<sp/>be<sp/>used<sp/>with<sp/>EBYTE<sp/>transcievers,<sp/>small<sp/>wireless<sp/>units<sp/>for<sp/>MCU&apos;s<sp/>such<sp/>as</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>Teensy<sp/>and<sp/>Arduino.<sp/>This<sp/>library<sp/>let&apos;s<sp/>users<sp/>program<sp/>the<sp/>operating<sp/>parameters<sp/>and<sp/>both<sp/>send<sp/>and<sp/>recieve<sp/>data.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>This<sp/>company<sp/>makes<sp/>several<sp/>modules<sp/>with<sp/>different<sp/>capabilities,<sp/>but<sp/>most<sp/>#defines<sp/>here<sp/>should<sp/>be<sp/>compatible<sp/>with<sp/>them</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>All<sp/>constants<sp/>were<sp/>extracted<sp/>from<sp/>several<sp/>data<sp/>sheets<sp/>and<sp/>listed<sp/>in<sp/>binary<sp/>as<sp/>that&apos;s<sp/>how<sp/>the<sp/>data<sp/>sheet<sp/>represented<sp/>each<sp/>setting</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Hopefully,<sp/>any<sp/>changes<sp/>or<sp/>additions<sp/>to<sp/>constants<sp/>can<sp/>be<sp/>a<sp/>matter<sp/>of<sp/>copying<sp/>the<sp/>data<sp/>sheet<sp/>constants<sp/>directly<sp/>into<sp/>these<sp/>#defines</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>Usage<sp/>of<sp/>this<sp/>library<sp/>consumes<sp/>around<sp/>970<sp/>bytes</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>Revision<sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>1.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3/6/2019<sp/><sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Initial<sp/>creation</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>2.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3/2/2020<sp/><sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Added<sp/>all<sp/>functions<sp/>to<sp/>build<sp/>the<sp/>options<sp/>bit<sp/>(FEC,<sp/>Pullup,<sp/>and<sp/>TransmissionMode</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>3.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3/27/2020<sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Added<sp/>more<sp/>Get<sp/>functions</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>4.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6/23/2020<sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Added<sp/>private<sp/>method<sp/>to<sp/>clear<sp/>the<sp/>buffer<sp/>to<sp/>ensure<sp/>read<sp/>methods<sp/>would<sp/>not<sp/>be<sp/>filled<sp/>with<sp/>buffered<sp/>data</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>5.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12/4/2020<sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moved<sp/>Reset<sp/>to<sp/>public,<sp/>added<sp/>Clear<sp/>to<sp/>SetMode<sp/>to<sp/>avoid<sp/>buffer<sp/>corruption<sp/>during<sp/>programming</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_e_b_y_t_e_8h" kindref="compound">EBYTE.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Stream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">create<sp/>the<sp/>transciever<sp/>object</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" refkind="member"><highlight class="normal"><ref refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" kindref="member">EBYTE::EBYTE</ref>(Stream<sp/>*s,<sp/>uint8_t<sp/>PIN_M0,<sp/>uint8_t<sp/>PIN_M1,<sp/>uint8_t<sp/>PIN_AUX)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref><sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref><sp/>=<sp/>PIN_M0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref><sp/>=<sp/>PIN_M1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" kindref="member">_AUX</ref><sp/>=<sp/>PIN_AUX;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">Initialize<sp/>the<sp/>unit--basicall<sp/>this<sp/>reads<sp/>the<sp/>modules<sp/>parameters<sp/>and<sp/>stores<sp/>the<sp/>parameters</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">for<sp/>potential<sp/>future<sp/>module<sp/>programming</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" kindref="member">EBYTE::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ok<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" kindref="member">_AUX</ref>,<sp/>INPUT);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>first<sp/>get<sp/>the<sp/>module<sp/>data<sp/>(must<sp/>be<sp/>called<sp/>first<sp/>for<sp/>some<sp/>odd<sp/>reason</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ok<sp/>=<sp/><ref refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" kindref="member">ReadModelData</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ok)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>get<sp/>parameters<sp/>to<sp/>put<sp/>unit<sp/>defaults<sp/>into<sp/>the<sp/>class<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>ok<sp/>=<sp/><ref refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" kindref="member">ReadParameters</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ok)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">Method<sp/>to<sp/>indicate<sp/>availability</highlight></codeline>
+<codeline lineno="98"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" kindref="member">EBYTE::available</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;available();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">Method<sp/>to<sp/>indicate<sp/>availability</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" kindref="member">EBYTE::flush</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;flush();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="117"><highlight class="comment">Method<sp/>to<sp/>write<sp/>a<sp/>single<sp/>byte...not<sp/>sure<sp/>how<sp/>useful<sp/>this<sp/>really<sp/>is.<sp/>If<sp/>you<sp/>need<sp/>to<sp/>send<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="comment">more<sp/>that<sp/>one<sp/>byte,<sp/>put<sp/>the<sp/>data<sp/>into<sp/>a<sp/>data<sp/>structure<sp/>and<sp/>send<sp/>it<sp/>in<sp/>a<sp/>big<sp/>chunk</highlight></codeline>
+<codeline lineno="119"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="class_e_b_y_t_e_1a22ecdb9610bb9a8d431bf29b34050fa8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a22ecdb9610bb9a8d431bf29b34050fa8" kindref="member">EBYTE::SendByte</ref>(<sp/>uint8_t<sp/>TheByte)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(TheByte);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">Method<sp/>to<sp/>get<sp/>a<sp/>single<sp/>byte...not<sp/>sure<sp/>how<sp/>useful<sp/>this<sp/>really<sp/>is.<sp/>If<sp/>you<sp/>need<sp/>to<sp/>get<sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="comment">more<sp/>that<sp/>one<sp/>byte,<sp/>put<sp/>the<sp/>data<sp/>into<sp/>a<sp/>data<sp/>structure<sp/>and<sp/>send/receive<sp/>it<sp/>in<sp/>a<sp/>big<sp/>chunk</highlight></codeline>
+<codeline lineno="131"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="class_e_b_y_t_e_1a314ddeb6fcba2b0d9570c3e9e86d44b7" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a314ddeb6fcba2b0d9570c3e9e86d44b7" kindref="member">EBYTE::GetByte</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;read();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="141"><highlight class="comment">Method<sp/>to<sp/>send<sp/>a<sp/>chunk<sp/>of<sp/>data<sp/>provided<sp/>data<sp/>is<sp/>in<sp/>a<sp/>struct--my<sp/>personal<sp/>favorite<sp/>as<sp/>you<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="comment">need<sp/>not<sp/>parse<sp/>or<sp/>worry<sp/>about<sp/>sprintf()<sp/>inability<sp/>to<sp/>handle<sp/>floats</highlight></codeline>
+<codeline lineno="143"><highlight class="comment">TTP:<sp/>put<sp/>your<sp/>structure<sp/>definition<sp/>into<sp/>a<sp/>.h<sp/>file<sp/>and<sp/>include<sp/>in<sp/>both<sp/>the<sp/>sender<sp/>and<sp/>reciever</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">sketches</highlight></codeline>
+<codeline lineno="145"><highlight class="comment">NOTE:<sp/>of<sp/>your<sp/>sender<sp/>and<sp/>receiver<sp/>MCU&apos;s<sp/>are<sp/>different<sp/>(Teensy<sp/>and<sp/>Arduino)<sp/>caution<sp/>on<sp/>the<sp/>data</highlight></codeline>
+<codeline lineno="146"><highlight class="comment">types<sp/>each<sp/>handle<sp/>ints<sp/>floats<sp/>differently</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" kindref="member">EBYTE::SendStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*TheStructure,<sp/>uint16_t<sp/>size_)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" kindref="member">_buf</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write((uint8_t<sp/>*)<sp/>TheStructure,<sp/>size_);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(1000);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" kindref="member">_buf</ref><sp/>==<sp/>size_);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="162"><highlight class="comment">Method<sp/>to<sp/>get<sp/>a<sp/>chunk<sp/>of<sp/>data<sp/>provided<sp/>data<sp/>is<sp/>in<sp/>a<sp/>struct--my<sp/>personal<sp/>favorite<sp/>as<sp/>you<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="comment">need<sp/>not<sp/>parse<sp/>or<sp/>worry<sp/>about<sp/>sprintf()<sp/>inability<sp/>to<sp/>handle<sp/>floats</highlight></codeline>
+<codeline lineno="164"><highlight class="comment">TTP:<sp/>put<sp/>your<sp/>structure<sp/>definition<sp/>into<sp/>a<sp/>.h<sp/>file<sp/>and<sp/>include<sp/>in<sp/>both<sp/>the<sp/>sender<sp/>and<sp/>reciever</highlight></codeline>
+<codeline lineno="165"><highlight class="comment">sketches</highlight></codeline>
+<codeline lineno="166"><highlight class="comment">NOTE:<sp/>of<sp/>your<sp/>sender<sp/>and<sp/>receiver<sp/>MCU&apos;s<sp/>are<sp/>different<sp/>(Teensy<sp/>and<sp/>Arduino)<sp/>caution<sp/>on<sp/>the<sp/>data</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">types<sp/>each<sp/>handle<sp/>ints<sp/>floats<sp/>differently</highlight></codeline>
+<codeline lineno="168"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" kindref="member">EBYTE::GetStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*TheStructure,<sp/>uint16_t<sp/>size_)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" kindref="member">_buf</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;readBytes((uint8_t<sp/>*)<sp/>TheStructure,<sp/>size_);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(1000);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" kindref="member">_buf</ref><sp/>==<sp/>size_);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">Utility<sp/>method<sp/>to<sp/>wait<sp/>until<sp/>module<sp/>is<sp/>doen<sp/>tranmitting</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">a<sp/>timeout<sp/>is<sp/>provided<sp/>to<sp/>avoid<sp/>an<sp/>infinite<sp/>loop</highlight></codeline>
+<codeline lineno="184"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">EBYTE::CompleteTask</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>timeout)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>darn<sp/>sure<sp/>millis()<sp/>is<sp/>not<sp/>about<sp/>to<sp/>reach<sp/>max<sp/>data<sp/>type<sp/>limit<sp/>and<sp/>start<sp/>over</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)<sp/>(t<sp/>+<sp/>timeout))<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>AUX<sp/>pin<sp/>was<sp/>supplied<sp/>and<sp/>look<sp/>for<sp/>HIGH<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>note<sp/>you<sp/>can<sp/>omit<sp/>using<sp/>AUX<sp/>if<sp/>no<sp/>pins<sp/>are<sp/>available,<sp/>but<sp/>you<sp/>will<sp/>have<sp/>to<sp/>use<sp/>delay()<sp/>to<sp/>let<sp/>module<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" kindref="member">_AUX</ref><sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(digitalRead(<ref refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" kindref="member">_AUX</ref>)<sp/>==<sp/>LOW)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((millis()<sp/>-<sp/>t)<sp/>&gt;<sp/>timeout){</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>you<sp/>can&apos;t<sp/>use<sp/>aux<sp/>pin,<sp/>use<sp/>4K7<sp/>pullup<sp/>with<sp/>Arduino</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>you<sp/>may<sp/>need<sp/>to<sp/>adjust<sp/>this<sp/>value<sp/>if<sp/>transmissions<sp/>fail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delay(1000);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>per<sp/>data<sp/>sheet<sp/>control<sp/>after<sp/>aux<sp/>goes<sp/>high<sp/>is<sp/>2ms<sp/>so<sp/>delay<sp/>for<sp/>at<sp/>least<sp/>that<sp/>long)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>some<sp/>MCU<sp/>are<sp/>slow<sp/>so<sp/>give<sp/>50<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(<ref refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" kindref="member">PIN_RECOVER</ref>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="221"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>mode<sp/>(program,<sp/>normal,<sp/>etc.)</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">EBYTE::SetMode</ref>(uint8_t<sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data<sp/>sheet<sp/>claims<sp/>module<sp/>needs<sp/>some<sp/>extra<sp/>time<sp/>after<sp/>mode<sp/>setting<sp/>(2ms)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>most<sp/>of<sp/>my<sp/>projects<sp/>uses<sp/>10<sp/>ms,<sp/>but<sp/>40ms<sp/>is<sp/>safer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(<ref refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" kindref="member">PIN_RECOVER</ref>);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="_e_b_y_t_e_8h_1ad9a9dc64ee46933fe243d07d0d131595" kindref="member">MODE_WAKEUP</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="_e_b_y_t_e_8h_1a14b50778265f2afbc79489fa3f21c7ec" kindref="member">MODE_POWERDOWN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" kindref="member">MODE_PROGRAM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data<sp/>sheet<sp/>says<sp/>2ms<sp/>later<sp/>control<sp/>is<sp/>returned,<sp/>let&apos;s<sp/>give<sp/>just<sp/>a<sp/>bit<sp/>more<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>these<sp/>modules<sp/>can<sp/>take<sp/>time<sp/>to<sp/>activate<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(<ref refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" kindref="member">PIN_RECOVER</ref>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>out<sp/>any<sp/>junk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>added<sp/>rev<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i&apos;ve<sp/>had<sp/>some<sp/>issues<sp/>where<sp/>after<sp/>programming,<sp/>the<sp/>returned<sp/>model<sp/>is<sp/>0,<sp/>and<sp/>all<sp/>settings<sp/>appear<sp/>to<sp/>be<sp/>corrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i<sp/>imagine<sp/>the<sp/>issue<sp/>is<sp/>due<sp/>to<sp/>the<sp/>internal<sp/>buffer<sp/>full<sp/>of<sp/>junk,<sp/>hence<sp/>clearing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset()<sp/>*MAY*<sp/>work<sp/>but<sp/>this<sp/>seems<sp/>better.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" kindref="member">ClearBuffer</ref>();</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>aux<sp/>pin<sp/>goes<sp/>back<sp/>low</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(4000);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/>i&apos;ve<sp/>asked<sp/>EBYTE<sp/>what&apos;s<sp/>supposed<sp/>to<sp/>happen--got<sp/>an<sp/>unclear<sp/>answer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>my<sp/>testing<sp/>indicates<sp/>it<sp/>clears<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/>I<sp/>use<sp/>this<sp/>when<sp/>needing<sp/>to<sp/>restart<sp/>the<sp/>EBYTE<sp/>after<sp/>programming<sp/>while<sp/>data<sp/>is<sp/>still<sp/>streaming<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>let<sp/>the<sp/>unit<sp/>start<sp/>reading<sp/>from<sp/>a<sp/>cleared<sp/>internal<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>does<sp/>NOT<sp/>return<sp/>the<sp/>ebyte<sp/>back<sp/>to<sp/>factory<sp/>defaults</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>your<sp/>unit<sp/>gets<sp/>corrupt<sp/>or<sp/>you<sp/>need<sp/>to<sp/>restore<sp/>values,<sp/>you<sp/>will<sp/>have<sp/>to<sp/>do<sp/>brute<sp/>force</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//<sp/>example<sp/>for<sp/>and<sp/>E44-915</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//<sp/>look<sp/>at<sp/>the<sp/>data<sp/>sheet<sp/>for<sp/>default<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Trans.SetAddressH(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Trans.SetAddressL(0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Trans.SetSpeed(0b00011100);<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Trans.SetChannel(1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Trans.SetOptions(0b01000100);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Trans.SaveParameters(PERMANENT);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" kindref="member">EBYTE::Reset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" kindref="member">MODE_PROGRAM</ref>);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC4);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC4);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC4);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(4000);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="class_e_b_y_t_e_1a443d1f6643b71366e0dec3f056e12c45" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a443d1f6643b71366e0dec3f056e12c45" kindref="member">EBYTE::SetSpeed</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="304" refid="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" kindref="member">EBYTE::SetOptions</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307" refid="class_e_b_y_t_e_1af975acecae0b9182071c33727c2ac712" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1af975acecae0b9182071c33727c2ac712" kindref="member">EBYTE::GetSpeed</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310" refid="class_e_b_y_t_e_1aa9be626fe2910c94443c4744597048aa" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1aa9be626fe2910c94443c4744597048aa" kindref="member">EBYTE::GetOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="315"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>high<sp/>bit<sp/>of<sp/>the<sp/>address</highlight></codeline>
+<codeline lineno="316"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" kindref="member">EBYTE::SetAddressH</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="class_e_b_y_t_e_1a63722f74c5a73be271e0ff0de82dbab5" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a63722f74c5a73be271e0ff0de82dbab5" kindref="member">EBYTE::GetAddressH</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref>;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="328"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>lo<sp/>bit<sp/>of<sp/>the<sp/>address</highlight></codeline>
+<codeline lineno="329"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" kindref="member">EBYTE::SetAddressL</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="class_e_b_y_t_e_1a1c282416df68b5a9729aa94264bc81c5" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a1c282416df68b5a9729aa94264bc81c5" kindref="member">EBYTE::GetAddressL</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="342"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>channel</highlight></codeline>
+<codeline lineno="343"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" kindref="member">EBYTE::SetChannel</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="348" refid="class_e_b_y_t_e_1afca840e33fff6bdab42725aee065dcdd" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1afca840e33fff6bdab42725aee065dcdd" kindref="member">EBYTE::GetChannel</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref>;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="354"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>air<sp/>data<sp/>rate</highlight></codeline>
+<codeline lineno="355"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" kindref="member">EBYTE::SetAirDataRate</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" kindref="member">BuildSpeedByte</ref>();</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364" refid="class_e_b_y_t_e_1a919f678b72d54104a225c1a89f44f417" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a919f678b72d54104a225c1a89f44f417" kindref="member">EBYTE::GetAirDataRate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref>;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="370"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>parity<sp/>bit</highlight></codeline>
+<codeline lineno="371"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374" refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" kindref="member">EBYTE::SetParityBit</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" kindref="member">BuildSpeedByte</ref>();</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="378" refid="class_e_b_y_t_e_1a73a189a4b1e89848d2e1cceaaf8378d5" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a73a189a4b1e89848d2e1cceaaf8378d5" kindref="member">EBYTE::GetParityBit</ref>(<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref>;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="383"><highlight class="comment">method<sp/>to<sp/>set<sp/>the<sp/>options<sp/>bits</highlight></codeline>
+<codeline lineno="384"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386" refid="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" kindref="member">EBYTE::SetTransmissionMode</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">BuildOptionByte</ref>();</highlight></codeline>
+<codeline lineno="389"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="390" refid="class_e_b_y_t_e_1a3a327b276c27f4e81031daf21e547d5b" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a3a327b276c27f4e81031daf21e547d5b" kindref="member">EBYTE::GetTransmissionMode</ref>(<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref>;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394" refid="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" kindref="member">EBYTE::SetPullupMode</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">BuildOptionByte</ref>();</highlight></codeline>
+<codeline lineno="397"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="398" refid="class_e_b_y_t_e_1ad10e32fc59a1e01604a6eae18be11976" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1ad10e32fc59a1e01604a6eae18be11976" kindref="member">EBYTE::GetPullupMode</ref>(<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref>;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" kindref="member">EBYTE::SetWORTIming</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">BuildOptionByte</ref>();</highlight></codeline>
+<codeline lineno="405"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="406" refid="class_e_b_y_t_e_1aff3e4fd2ca4000d4a732f1f335fa3eee" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1aff3e4fd2ca4000d4a732f1f335fa3eee" kindref="member">EBYTE::GetWORTIming</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref>;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410" refid="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" kindref="member">EBYTE::SetFECMode</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">BuildOptionByte</ref>();</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="414" refid="class_e_b_y_t_e_1a2978cb453904344bd90365bdc6079b67" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a2978cb453904344bd90365bdc6079b67" kindref="member">EBYTE::GetFECMode</ref>(<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref>;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418" refid="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" kindref="member">EBYTE::SetTransmitPower</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">BuildOptionByte</ref>();</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425" refid="class_e_b_y_t_e_1a0848d00c34fe71c6b59efb852e843c6b" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a0848d00c34fe71c6b59efb852e843c6b" kindref="member">EBYTE::GetTransmitPower</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref>;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="432"><highlight class="comment">method<sp/>to<sp/>compute<sp/>the<sp/>address<sp/>based<sp/>on<sp/>high<sp/>and<sp/>low<sp/>bits</highlight></codeline>
+<codeline lineno="433"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435" refid="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" kindref="member">EBYTE::SetAddress</ref>(uint16_t<sp/>Val)<sp/>{</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref><sp/>=<sp/>((Val<sp/>&amp;<sp/>0xFFFF)<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref><sp/>=<sp/>(Val<sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="442"><highlight class="comment">method<sp/>to<sp/>get<sp/>the<sp/>address<sp/>which<sp/>is<sp/>a<sp/>collection<sp/>of<sp/>hi<sp/>and<sp/>lo<sp/>bytes</highlight></codeline>
+<codeline lineno="443"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446" refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" kindref="member">EBYTE::GetAddress</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref><sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(<ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref><sp/>);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="451"><highlight class="comment">set<sp/>the<sp/>UART<sp/>baud<sp/>rate</highlight></codeline>
+<codeline lineno="452"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454" refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" kindref="member">EBYTE::SetUARTBaudRate</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref><sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" kindref="member">BuildSpeedByte</ref>();</highlight></codeline>
+<codeline lineno="457"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459" refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" kindref="member">EBYTE::GetUARTBaudRate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref>;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="464"><highlight class="comment">method<sp/>to<sp/>build<sp/>the<sp/>byte<sp/>for<sp/>programming<sp/>(notice<sp/>it&apos;s<sp/>a<sp/>collection<sp/>of<sp/>a<sp/>few<sp/>variables)</highlight></codeline>
+<codeline lineno="465"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466" refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" kindref="member">EBYTE::BuildSpeedByte</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>=<sp/>((<ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref><sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>6)<sp/>|<sp/>((<ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref><sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>3)<sp/>|<sp/>(<ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref><sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="473"><highlight class="comment">method<sp/>to<sp/>build<sp/>the<sp/>option<sp/>byte<sp/>for<sp/>programming<sp/>(notice<sp/>it&apos;s<sp/>a<sp/>collection<sp/>of<sp/>a<sp/>few<sp/>variables)</highlight></codeline>
+<codeline lineno="474"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476" refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">EBYTE::BuildOptionByte</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>=<sp/>((<ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref><sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>7)<sp/>|<sp/>((<ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref><sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>6)<sp/>|<sp/>((<ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref><sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>3)<sp/>|<sp/>((<ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref><sp/>&amp;<sp/>0xFF)<sp/>&lt;&lt;<sp/>2)<sp/>|<sp/>(<ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref>&amp;0b11);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482" refid="class_e_b_y_t_e_1af589e946c750cef704973915e817cb77" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1af589e946c750cef704973915e817cb77" kindref="member">EBYTE::GetAux</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>digitalRead(<ref refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" kindref="member">_AUX</ref>);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="488"><highlight class="comment">method<sp/>to<sp/>save<sp/>parameters<sp/>to<sp/>the<sp/>module</highlight></codeline>
+<codeline lineno="489"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491" refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" kindref="member">EBYTE::SaveParameters</ref>(uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" kindref="member">MODE_PROGRAM</ref>);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ClearBuffer();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="498"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.print(&quot;val:<sp/>&quot;);</highlight></codeline>
+<codeline lineno="499"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.println(val);</highlight></codeline>
+<codeline lineno="500"><highlight class="comment"></highlight></codeline>
+<codeline lineno="501"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.print(&quot;_AddressHigh:<sp/>&quot;);</highlight></codeline>
+<codeline lineno="502"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.println(_AddressHigh);</highlight></codeline>
+<codeline lineno="503"><highlight class="comment"></highlight></codeline>
+<codeline lineno="504"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.print(&quot;_AddressLow:<sp/>&quot;);</highlight></codeline>
+<codeline lineno="505"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.println(_AddressLow);</highlight></codeline>
+<codeline lineno="506"><highlight class="comment"></highlight></codeline>
+<codeline lineno="507"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.print(&quot;_Speed:<sp/>&quot;);</highlight></codeline>
+<codeline lineno="508"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.println(_Speed);</highlight></codeline>
+<codeline lineno="509"><highlight class="comment"></highlight></codeline>
+<codeline lineno="510"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.print(&quot;_Channel:<sp/>&quot;);</highlight></codeline>
+<codeline lineno="511"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.println(_Channel);</highlight></codeline>
+<codeline lineno="512"><highlight class="comment"></highlight></codeline>
+<codeline lineno="513"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.print(&quot;_Options:<sp/>&quot;);</highlight></codeline>
+<codeline lineno="514"><highlight class="comment"><sp/><sp/><sp/><sp/>Serial.println(_Options);</highlight></codeline>
+<codeline lineno="515"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(val);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(<ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref>);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(<ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>);</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref>);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(<ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref>);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref>);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(<ref refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" kindref="member">PIN_RECOVER</ref>);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(4000);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="532"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="535"><highlight class="comment">method<sp/>to<sp/>print<sp/>parameters,<sp/>this<sp/>can<sp/>be<sp/>called<sp/>anytime<sp/>after<sp/>init(),<sp/>because<sp/>init<sp/>gets<sp/>parameters</highlight></codeline>
+<codeline lineno="536"><highlight class="comment">and<sp/>any<sp/>method<sp/>updates<sp/>the<sp/>variables</highlight></codeline>
+<codeline lineno="537"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539" refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" kindref="member">EBYTE::PrintParameters</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>&amp;<sp/>0XC0)<sp/>&gt;&gt;<sp/>6;</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>&amp;<sp/>0X38)<sp/>&gt;&gt;<sp/>3;</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>&amp;<sp/>0X07;</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X80)<sp/>&gt;&gt;<sp/>7;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X40)<sp/>&gt;&gt;<sp/>6;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X38)<sp/>&gt;&gt;<sp/>3;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X07)<sp/>&gt;&gt;<sp/>2;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X03);</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;----------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Model<sp/>no.:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" kindref="member">_Model</ref>,<sp/>HEX);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Version<sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" kindref="member">_Version</ref>,<sp/>HEX);</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Features<sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" kindref="member">_Features</ref>,<sp/>HEX);</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Mode<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" kindref="member">_Save</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" kindref="member">_Save</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" kindref="member">_Save</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;AddH<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;AddL<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Sped<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Chan<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Optn<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Addr<sp/>(HEX/DEC/BIN):<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" kindref="member">GetAddress</ref>(),<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" kindref="member">GetAddress</ref>(),<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" kindref="member">GetAddress</ref>(),<sp/>BIN);</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;SpeedParityBit<sp/>(HEX/DEC/BIN)<sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;SpeedUARTDataRate<sp/>(HEX/DEC/BIN)<sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;SpeedAirDataRate<sp/>(HEX/DEC/BIN)<sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;OptionTrans<sp/>(HEX/DEC/BIN)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;OptionPullup<sp/>(HEX/DEC/BIN)<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;OptionWakeup<sp/>(HEX/DEC/BIN)<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;OptionFEC<sp/>(HEX/DEC/BIN)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;OptionPower<sp/>(HEX/DEC/BIN)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref>,<sp/>HEX);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.print(<ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref>,<sp/>DEC);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">));<sp/><sp/>Serial.println(<ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref>,<sp/>BIN);</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;----------------------------------------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="578"><highlight class="comment">method<sp/>to<sp/>read<sp/>parameters,<sp/></highlight></codeline>
+<codeline lineno="579"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581" refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" kindref="member">EBYTE::ReadParameters</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[3]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[4]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[5]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" kindref="member">MODE_PROGRAM</ref>);</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC1);</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC1);</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC1);</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;readBytes((uint8_t*)&amp;<ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>,<sp/>(uint8_t)<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>));</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" kindref="member">_Save</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0];</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[1];</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[2];</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[3];</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[4];</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[5];</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab43053f18483b402afd81007bfa56bf8" kindref="member">_Address</ref><sp/>=<sp/><sp/>(<ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref><sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(<ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>&amp;<sp/>0XC0)<sp/>&gt;&gt;<sp/>6;</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>&amp;<sp/>0X38)<sp/>&gt;&gt;<sp/>3;</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref><sp/>&amp;<sp/>0X07;</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X80)<sp/>&gt;&gt;<sp/>7;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X40)<sp/>&gt;&gt;<sp/>6;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X38)<sp/>&gt;&gt;<sp/>3;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X07)<sp/>&gt;&gt;<sp/>2;</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref><sp/>=<sp/>(<ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref><sp/>&amp;<sp/>0X03);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0xC0<sp/>!=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0]){</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="627"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630" refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" kindref="member">EBYTE::ReadModelData</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[3]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[4]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[5]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" kindref="member">MODE_PROGRAM</ref>);</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC3);</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC3);</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC3);</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;readBytes((uint8_t*)&amp;<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>,<sp/>(uint8_t)<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>));</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" kindref="member">_Save</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0];<sp/></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" kindref="member">_Model</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[1];</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" kindref="member">_Version</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[2];</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" kindref="member">_Features</ref><sp/>=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[3];<sp/></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0xC3<sp/>!=<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0])<sp/>{</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>5;<sp/>i++){</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;trying:<sp/>&quot;</highlight><highlight class="normal">);<sp/>Serial.println(i);</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[3]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[4]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[5]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delay(100);</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC3);</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC3);</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"></highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;write(0xC3);</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;readBytes((uint8_t*)&amp;<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>,<sp/>(uint8_t)<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>));</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0xC3<sp/>==<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[0]){</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(<ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(1000);</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>found;</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="694"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="697"><highlight class="comment">method<sp/>to<sp/>get<sp/>module<sp/>model<sp/>and<sp/>E50-TTL-100<sp/>will<sp/>return<sp/>50</highlight></codeline>
+<codeline lineno="698"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700" refid="class_e_b_y_t_e_1a9bb6f8d416d128e3043536588813fa1e" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a9bb6f8d416d128e3043536588813fa1e" kindref="member">EBYTE::GetModel</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" kindref="member">_Model</ref>;</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="704"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="706"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="707"><highlight class="comment">method<sp/>to<sp/>get<sp/>module<sp/>version<sp/>(undocumented<sp/>as<sp/>to<sp/>the<sp/>value)</highlight></codeline>
+<codeline lineno="708"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight></codeline>
+<codeline lineno="710" refid="class_e_b_y_t_e_1a1cbc2717761e576b55df078c0feb24ab" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1a1cbc2717761e576b55df078c0feb24ab" kindref="member">EBYTE::GetVersion</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" kindref="member">_Version</ref>;</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="714"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="717"><highlight class="comment">method<sp/>to<sp/>get<sp/>module<sp/>version<sp/>(undocumented<sp/>as<sp/>to<sp/>the<sp/>value)</highlight></codeline>
+<codeline lineno="718"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="720"><highlight class="normal"></highlight></codeline>
+<codeline lineno="721" refid="class_e_b_y_t_e_1aaa628f5dbc8550888d923c399bd7bdde" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_e_b_y_t_e_1aaa628f5dbc8550888d923c399bd7bdde" kindref="member">EBYTE::GetFeatures</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" kindref="member">_Features</ref>;</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"></highlight></codeline>
+<codeline lineno="727"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="728"><highlight class="comment">method<sp/>to<sp/>clear<sp/>the<sp/>serial<sp/>buffer</highlight></codeline>
+<codeline lineno="729"><highlight class="comment"></highlight></codeline>
+<codeline lineno="730"><highlight class="comment">without<sp/>clearing<sp/>the<sp/>buffer,<sp/>i<sp/>find<sp/>getting<sp/>the<sp/>parameters<sp/>very<sp/>unreliable<sp/>after<sp/>programming.</highlight></codeline>
+<codeline lineno="731"><highlight class="comment">i<sp/>suspect<sp/>stuff<sp/>in<sp/>the<sp/>buffer<sp/>affects<sp/>rogramming<sp/></highlight></codeline>
+<codeline lineno="732"><highlight class="comment">hence,<sp/>let&apos;s<sp/>clean<sp/>it<sp/>out</highlight></codeline>
+<codeline lineno="733"><highlight class="comment">this<sp/>is<sp/>called<sp/>as<sp/>part<sp/>of<sp/>the<sp/>setmode</highlight></codeline>
+<codeline lineno="734"><highlight class="comment"></highlight></codeline>
+<codeline lineno="735"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="736" refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" kindref="member">EBYTE::ClearBuffer</ref>(){</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>amt<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;available())<sp/>{</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>-&gt;read();</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((millis()<sp/>-<sp/>amt)<sp/>&gt;<sp/>5000)<sp/>{</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;runaway&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp"/>
+  </compounddef>
+</doxygen>

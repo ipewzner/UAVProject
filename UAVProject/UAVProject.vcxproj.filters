@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Misc Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>xml;json;txt;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\sensors">
+      <UniqueIdentifier>{a52a05a6-7eef-4e42-82f3-cc0bf756f4b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\motors">
+      <UniqueIdentifier>{f53ed36e-d57b-49f7-80ea-89e416c550d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\communication">
+      <UniqueIdentifier>{cd1d1df6-44a5-412c-b39a-7055801b32b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\controls">
+      <UniqueIdentifier>{dfe7dcfd-bc83-4fc7-95e9-e0c464fb8699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sensors">
+      <UniqueIdentifier>{25e00540-027c-4cd3-a386-c0b868e5d487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\controls">
+      <UniqueIdentifier>{f0f0a6e1-a81a-497b-8b97-542e82837628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\communication">
+      <UniqueIdentifier>{d7c7cbce-672a-4f34-a861-f5d9df5b5215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\motors">
+      <UniqueIdentifier>{11928a15-1018-41ba-9650-147a81c8b7a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UAVProject.ino" />
+    <None Include="src\arduino folders read me.txt">
+      <Filter>Misc Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.UAVProject.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPU.h">
+      <Filter>Header Files\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="BMP.h">
+      <Filter>Header Files\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Sensor.h">
+      <Filter>Header Files\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorArray.h">
+      <Filter>Header Files\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniJoystick.h">
+      <Filter>Header Files\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Motor.h">
+      <Filter>Header Files\motors</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorArray.h">
+      <Filter>Header Files\motors</Filter>
+    </ClInclude>
+    <ClInclude Include="ServoMotor.h">
+      <Filter>Header Files\motors</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication.h">
+      <Filter>Header Files\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="ComArray.h">
+      <Filter>Header Files\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="Lora.h">
+      <Filter>Header Files\communication</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlerArray.h">
+      <Filter>Header Files\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controler.h">
+      <Filter>Header Files\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlerInterface.h">
+      <Filter>Header Files\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="WebGui.h">
+      <Filter>Header Files\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="YawControl.h">
+      <Filter>Header Files\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="logic.h">
+      <Filter>Header Files\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="AlttudeControler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgStruct.h">
+      <Filter>Header Files\communication</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication.cpp">
+      <Filter>Source Files\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="ComArray.cpp">
+      <Filter>Source Files\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="BMP.cpp">
+      <Filter>Source Files\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Controler.cpp">
+      <Filter>Source Files\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlerArray.cpp">
+      <Filter>Source Files\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlerInterface.cpp">
+      <Filter>Source Files\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="logic.cpp">
+      <Filter>Source Files\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Lora.cpp">
+      <Filter>Source Files\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniJoystick.cpp">
+      <Filter>Source Files\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="MPU.cpp">
+      <Filter>Source Files\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorArray.cpp">
+      <Filter>Source Files\motors</Filter>
+    </ClCompile>
+    <ClCompile Include="Motor.cpp">
+      <Filter>Source Files\motors</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensor.cpp">
+      <Filter>Source Files\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorArray.cpp">
+      <Filter>Source Files\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="ServoMotor.cpp">
+      <Filter>Source Files\motors</Filter>
+    </ClCompile>
+    <ClCompile Include="WebGui.cpp">
+      <Filter>Source Files\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="YawControl.cpp">
+      <Filter>Source Files\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="AlttudeControler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgStruct.cpp">
+      <Filter>Source Files\communication</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

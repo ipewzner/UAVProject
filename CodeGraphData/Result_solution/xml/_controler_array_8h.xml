@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_controler_array_8h" kind="file">
+    <compoundname>ControlerArray.h</compoundname>
+    <includes local="yes">arduino.h</includes>
+    <includedby refid="_controler_array_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.cpp</includedby>
+    <incdepgraph>
+      <node id="657">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h</label>
+        <link refid="ControlerArray.h"/>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="659">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h</label>
+        <link refid="ControlerArray.h"/>
+        <childnode refid="660" relation="include">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.cpp</label>
+        <link refid="_controler_array_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_controler_array_class" prot="public">ControlerArrayClass</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_controler_array_8h_1ab1e7411139b0973371e2c0c65222363e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_controler_array_class" kindref="compound">ControlerArrayClass</ref></type>
+        <definition>ControlerArrayClass ControlerArray</definition>
+        <argsstring></argsstring>
+        <name>ControlerArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h" line="21" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>ControlerArray.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CONTROLERARRAY_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CONTROLERARRAY_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARDUINO)<sp/>&amp;&amp;<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_controler_array_class" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_controler_array_class" kindref="compound">ControlerArrayClass</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controler_array_class_1a396a00c5f68376a1e0d2a60fea7c57fd" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_controler_array_class" kindref="compound">ControlerArrayClass</ref><sp/><ref refid="_controler_array_8h_1ab1e7411139b0973371e2c0c65222363e" kindref="member">ControlerArray</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h"/>
+  </compounddef>
+</doxygen>

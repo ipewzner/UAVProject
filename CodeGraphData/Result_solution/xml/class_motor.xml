@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_motor" kind="class" prot="public" abstract="yes">
+    <compoundname>Motor</compoundname>
+    <derivedcompoundref refid="class_servo_motor" prot="public" virt="non-virtual">ServoMotor</derivedcompoundref>
+    <includes refid="_motor_8h" local="no">Motor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Motor::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" compoundref="_servo_motor_8cpp" startline="19" endline="25">ServoMotor::ServoMotor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Motor::motorNumber</definition>
+        <argsstring>()</argsstring>
+        <name>motorNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" bodystart="13" bodyend="17"/>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">ServoMotor::init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_motor_1ab94ecfd1c8f65ac58655b5ba3f74107d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Motor::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f">init</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a90ba8644422d8e273eaa6bb772d25b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Motor::move</definition>
+        <argsstring>(size_t)=0</argsstring>
+        <name>move</name>
+        <reimplementedby refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c">move</reimplementedby>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" line="20" column="1"/>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">Logic::updateMotors</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="142">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+      </node>
+      <node id="143">
+        <label>ServoMotor</label>
+        <link refid="class_servo_motor"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h" bodystart="10" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_motor_1ab94ecfd1c8f65ac58655b5ba3f74107d" prot="public" virt="pure-virtual"><scope>Motor</scope><name>init</name></member>
+      <member refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" prot="public" virt="non-virtual"><scope>Motor</scope><name>motorNumber</name></member>
+      <member refid="class_motor_1a90ba8644422d8e273eaa6bb772d25b4f" prot="public" virt="pure-virtual"><scope>Motor</scope><name>move</name></member>
+      <member refid="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" prot="public" virt="non-virtual"><scope>Motor</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

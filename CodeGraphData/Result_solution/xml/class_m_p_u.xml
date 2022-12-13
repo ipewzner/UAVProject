@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_m_p_u" kind="class" prot="public">
+    <compoundname>MPU</compoundname>
+    <basecompoundref refid="class_sensor" prot="public" virt="non-virtual">Sensor</basecompoundref>
+    <includes refid="_m_p_u_8h" local="no">MPU.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" prot="private" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t MPU::sda</definition>
+        <argsstring></argsstring>
+        <name>sda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">init</referencedby>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" prot="private" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t MPU::scl</definition>
+        <argsstring></argsstring>
+        <name>scl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">init</referencedby>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1aa5ddcf0aae7d1b5cbc1932e9ce15f073" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MPU::dmpReady</definition>
+        <argsstring></argsstring>
+        <name>dmpReady</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a70f98065df64ae6a79ee84f7f8b460ad" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU::mpuIntStatus</definition>
+        <argsstring></argsstring>
+        <name>mpuIntStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="21" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU::devStatus</definition>
+        <argsstring></argsstring>
+        <name>devStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="22" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a297d80d2a757fbebc2bf9255e168be02" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MPU::packetSize</definition>
+        <argsstring></argsstring>
+        <name>packetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="23" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a8eaa78f21b13a9c684586713a8a5a1af" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MPU::fifoCount</definition>
+        <argsstring></argsstring>
+        <name>fifoCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="24" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU::fifoBuffer[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>fifoBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="25" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" compoundref="_m_p_u_8cpp" startline="8" endline="15">get_ypr</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" prot="private" static="no" mutable="no">
+        <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+        <definition>Quaternion* MPU::q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="28" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" compoundref="_m_p_u_8cpp" startline="8" endline="15">get_ypr</referencedby>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" prot="private" static="no" mutable="no">
+        <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+        <definition>VectorInt16* MPU::aa</definition>
+        <argsstring></argsstring>
+        <name>aa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="29" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1ae6fb782bf71dc133421c7383dec792bd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+        <definition>VectorInt16* MPU::gy</definition>
+        <argsstring></argsstring>
+        <name>gy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="30" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" prot="private" static="no" mutable="no">
+        <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+        <definition>VectorInt16* MPU::aaReal</definition>
+        <argsstring></argsstring>
+        <name>aaReal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="31" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" compoundref="_m_p_u_8cpp" startline="79" endline="97">jsonResult</referencedby>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+        <definition>VectorInt16* MPU::aaWorld</definition>
+        <argsstring></argsstring>
+        <name>aaWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="32" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" prot="private" static="no" mutable="no">
+        <type><ref refid="class_vector_float" kindref="compound">VectorFloat</ref> *</type>
+        <definition>VectorFloat* MPU::gravity</definition>
+        <argsstring></argsstring>
+        <name>gravity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="33" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" compoundref="_m_p_u_8cpp" startline="8" endline="15">get_ypr</referencedby>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1ada1ab0eeffb1b51f7336977dcc26e5c5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU::euler[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>euler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="34" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MPU::ypr[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>ypr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="35" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" compoundref="_m_p_u_8cpp" startline="8" endline="15">get_ypr</referencedby>
+        <referencedby refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" compoundref="_m_p_u_8cpp" startline="17" endline="24">get_yprInDagree</referencedby>
+        <referencedby refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" compoundref="_m_p_u_8cpp" startline="79" endline="97">jsonResult</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u_1a3fa93c48ee3fa8a24fa582090f2b5df9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MPU::offset[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="36" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" prot="public" static="no" mutable="no">
+        <type><ref refid="_m_p_u6050_8h_1a04e8a8a93dcb88860d9dff0f6d37ae21" kindref="member">MPU6050</ref> *</type>
+        <definition>MPU6050* MPU::mpu</definition>
+        <argsstring></argsstring>
+        <name>mpu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="39" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a202a867d7622a49961eb1f7efe3f55ee" compoundref="_m_p_u_8cpp" startline="3" endline="6">get_temp</referencedby>
+        <referencedby refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" compoundref="_m_p_u_8cpp" startline="8" endline="15">get_ypr</referencedby>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">init</referencedby>
+        <referencedby refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" compoundref="_m_p_u_8cpp" startline="79" endline="97">jsonResult</referencedby>
+        <referencedby refid="class_m_p_u_1a64e3a6d612386bc7a0f648cc4ae309ef" compoundref="_m_p_u_8cpp" startline="58" endline="77">resetAxis</referencedby>
+        <referencedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MPU::MPU</definition>
+        <argsstring>(char *name, size_t sda, size_t scl)</argsstring>
+        <name>MPU</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>sda</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>scl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="41" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="99" bodyend="115"/>
+        <references refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" compoundref="_m_p_u_8h" startline="29">aa</references>
+        <references refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" compoundref="_m_p_u_8h" startline="31">aaReal</references>
+        <references refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" compoundref="_m_p_u_8h" startline="32">aaWorld</references>
+        <references refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" compoundref="_m_p_u_8h" startline="33">gravity</references>
+        <references refid="class_m_p_u_1ae6fb782bf71dc133421c7383dec792bd" compoundref="_m_p_u_8h" startline="30">gy</references>
+        <references refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" compoundref="_sensor_8h" startline="12">Sensor::name</references>
+        <references refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" compoundref="_m_p_u_8h" startline="28">q</references>
+        <references refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" compoundref="_m_p_u_8h" startline="18">scl</references>
+        <references refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" compoundref="_m_p_u_8h" startline="18">sda</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool MPU::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="class_sensor_1a42681155fbb4e23d371f50a379ebf351">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="42" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="117" bodyend="176"/>
+        <references refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" compoundref="_wire_8cpp" startline="72" endline="118">TwoWire::begin</references>
+        <references refid="class_m_p_u6050___base_1ac5e7263a43ce3e623bdff14e4faad03a" compoundref="_m_p_u6050_8cpp" startline="3299" endline="3308">MPU6050_Base::CalibrateAccel</references>
+        <references refid="class_m_p_u6050___base_1aeec4affbb9e30e7a81ad1daa6f976e7b" compoundref="_m_p_u6050_8cpp" startline="3285" endline="3294">MPU6050_Base::CalibrateGyro</references>
+        <references refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" compoundref="_m_p_u_8h" startline="22">devStatus</references>
+        <references refid="class_m_p_u_1aa5ddcf0aae7d1b5cbc1932e9ce15f073" compoundref="_m_p_u_8h" startline="20">dmpReady</references>
+        <references refid="class_m_p_u6050___base_1a2cdcd93cacec3e69129ae8e3aecbe93b" compoundref="_m_p_u6050_8cpp" startline="57" endline="62">MPU6050_Base::initialize</references>
+        <references refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" compoundref="_m_p_u_8h" startline="39">mpu</references>
+        <references refid="class_m_p_u_1a297d80d2a757fbebc2bf9255e168be02" compoundref="_m_p_u_8h" startline="23">packetSize</references>
+        <references refid="class_m_p_u6050___base_1a54438d0baf4b657bff9fe9c52390dc3c" compoundref="_m_p_u6050_8cpp" startline="3374" endline="3395">MPU6050_Base::PrintActiveOffsets</references>
+        <references refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" compoundref="_m_p_u_8h" startline="18">scl</references>
+        <references refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" compoundref="_m_p_u_8h" startline="18">sda</references>
+        <references refid="class_two_wire_1a0ab75123574d32fc130252d073009414" compoundref="_wire_8cpp" startline="130" endline="133">TwoWire::setClock</references>
+        <references refid="class_m_p_u6050___base_1a50389f06417a9543aa8996594f034df3" compoundref="_m_p_u6050_8cpp" startline="3037" endline="3039">MPU6050_Base::setDMPEnabled</references>
+        <references refid="class_m_p_u6050___base_1aa74a241aaaecbbbabe5ae6157ce10d75" compoundref="_m_p_u6050_8cpp" startline="2917" endline="2920">MPU6050_Base::setXAccelOffset</references>
+        <references refid="class_m_p_u6050___base_1a5aa9f43262708f5edaa1de18daff1526" compoundref="_m_p_u6050_8cpp" startline="2952" endline="2954">MPU6050_Base::setXGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1afb06fd307cfe6db11746e3b458200bfb" compoundref="_m_p_u6050_8cpp" startline="2929" endline="2932">MPU6050_Base::setYAccelOffset</references>
+        <references refid="class_m_p_u6050___base_1ad2be43f6343839b5a07605dac9546499" compoundref="_m_p_u6050_8cpp" startline="2962" endline="2964">MPU6050_Base::setYGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1a822a611b1252259113f3dcd9bc40b334" compoundref="_m_p_u6050_8cpp" startline="2941" endline="2944">MPU6050_Base::setZAccelOffset</references>
+        <references refid="class_m_p_u6050___base_1a56cb0dfeb269c5601a26f885d7254301" compoundref="_m_p_u6050_8cpp" startline="2972" endline="2974">MPU6050_Base::setZGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1a2e844af20858ef83ef38b0444311d62c" compoundref="_m_p_u6050_8cpp" startline="68" endline="70">MPU6050_Base::testConnection</references>
+        <references refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" compoundref="_wire_8cpp" startline="381">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String MPU::asciiResult</definition>
+        <argsstring>()</argsstring>
+        <name>asciiResult</name>
+        <reimplements refid="class_sensor_1a990933ca2756162944964b4ee310a7f9">asciiResult</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="43" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="54" bodyend="56"/>
+        <references refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" compoundref="_m_p_u_8cpp" startline="26" endline="52">toString</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String MPU::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_sensor_1a97c1e3f398570ff28aeb5f9234a6fe58">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="44" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="26" bodyend="52"/>
+        <references refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" compoundref="_m_p_u_8h" startline="29">aa</references>
+        <references refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" compoundref="_m_p_u_8h" startline="31">aaReal</references>
+        <references refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" compoundref="_m_p_u_8h" startline="32">aaWorld</references>
+        <references refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" compoundref="_m_p_u_8h" startline="25">fifoBuffer</references>
+        <references refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" compoundref="_m_p_u6050_8cpp" startline="1875" endline="1878">MPU6050_Base::getTemperature</references>
+        <references refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" compoundref="_m_p_u_8h" startline="33">gravity</references>
+        <references refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" compoundref="_m_p_u_8h" startline="39">mpu</references>
+        <references refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" compoundref="_m_p_u_8h" startline="28">q</references>
+        <references refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" compoundref="helper__3dmath_8h" startline="94">VectorInt16::x</references>
+        <references refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" compoundref="helper__3dmath_8h" startline="95">VectorInt16::y</references>
+        <references refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" compoundref="_m_p_u_8h" startline="35">ypr</references>
+        <references refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" compoundref="helper__3dmath_8h" startline="96">VectorInt16::z</references>
+        <referencedby refid="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675" compoundref="_m_p_u_8cpp" startline="54" endline="56">asciiResult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>DynamicJsonDocument MPU::jsonResult</definition>
+        <argsstring>()</argsstring>
+        <name>jsonResult</name>
+        <reimplements refid="class_sensor_1abe9626a7ffd5294bb75f1b7728e9582d">jsonResult</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="45" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="79" bodyend="97"/>
+        <references refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" compoundref="_m_p_u_8h" startline="31">aaReal</references>
+        <references refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" compoundref="_m_p_u6050_8cpp" startline="1875" endline="1878">MPU6050_Base::getTemperature</references>
+        <references refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" compoundref="_m_p_u_8h" startline="39">mpu</references>
+        <references refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" compoundref="helper__3dmath_8h" startline="94">VectorInt16::x</references>
+        <references refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" compoundref="helper__3dmath_8h" startline="95">VectorInt16::y</references>
+        <references refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" compoundref="_m_p_u_8h" startline="35">ypr</references>
+        <references refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" compoundref="helper__3dmath_8h" startline="96">VectorInt16::z</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * MPU::get_ypr</definition>
+        <argsstring>()</argsstring>
+        <name>get_ypr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="47" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="8" bodyend="15"/>
+        <references refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" compoundref="_m_p_u_8h" startline="25">fifoBuffer</references>
+        <references refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" compoundref="_m_p_u_8h" startline="33">gravity</references>
+        <references refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" compoundref="_m_p_u_8h" startline="39">mpu</references>
+        <references refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" compoundref="_m_p_u_8h" startline="28">q</references>
+        <references refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" compoundref="_m_p_u_8h" startline="35">ypr</references>
+        <referencedby refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" compoundref="_m_p_u_8cpp" startline="17" endline="24">get_yprInDagree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxyz_float" kindref="compound">xyzFloat</ref></type>
+        <definition>xyzFloat MPU::get_yprInDagree</definition>
+        <argsstring>()</argsstring>
+        <name>get_yprInDagree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="48" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="17" bodyend="24"/>
+        <references refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" compoundref="_m_p_u_8cpp" startline="8" endline="15">get_ypr</references>
+        <references refid="structxyz_float_1adebd5335cb7aba85879e518dc384083f" compoundref="_m_p_u_8h" startline="12">xyzFloat::x</references>
+        <references refid="structxyz_float_1abdc0113ef110d4485040ce2cf7910b9c" compoundref="_m_p_u_8h" startline="12">xyzFloat::y</references>
+        <references refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" compoundref="_m_p_u_8h" startline="35">ypr</references>
+        <references refid="structxyz_float_1a34a823925b61dfb9147ddc48a3688d8e" compoundref="_m_p_u_8h" startline="12">xyzFloat::z</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a202a867d7622a49961eb1f7efe3f55ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float MPU::get_temp</definition>
+        <argsstring>()</argsstring>
+        <name>get_temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="49" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" compoundref="_m_p_u6050_8cpp" startline="1875" endline="1878">MPU6050_Base::getTemperature</references>
+        <references refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" compoundref="_m_p_u_8h" startline="39">mpu</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u_1a64e3a6d612386bc7a0f648cc4ae309ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU::resetAxis</definition>
+        <argsstring>(size_t axis)</argsstring>
+        <name>resetAxis</name>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="51" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp" bodystart="58" bodyend="77"/>
+        <references refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" compoundref="_m_p_u_8h" startline="39">mpu</references>
+        <references refid="class_m_p_u6050___base_1a5aa9f43262708f5edaa1de18daff1526" compoundref="_m_p_u6050_8cpp" startline="2952" endline="2954">MPU6050_Base::setXGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1ad2be43f6343839b5a07605dac9546499" compoundref="_m_p_u6050_8cpp" startline="2962" endline="2964">MPU6050_Base::setYGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1a56cb0dfeb269c5601a26f885d7254301" compoundref="_m_p_u6050_8cpp" startline="2972" endline="2974">MPU6050_Base::setZGyroOffset</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="149">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+      <node id="148">
+        <label>MPU</label>
+        <link refid="class_m_p_u"/>
+        <childnode refid="149" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="151">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+      <node id="155">
+        <label>VectorInt16</label>
+        <link refid="class_vector_int16"/>
+      </node>
+      <node id="153">
+        <label>MPU6050_Base</label>
+        <link refid="class_m_p_u6050___base"/>
+      </node>
+      <node id="154">
+        <label>VectorFloat</label>
+        <link refid="class_vector_float"/>
+      </node>
+      <node id="152">
+        <label>Quaternion</label>
+        <link refid="class_quaternion"/>
+      </node>
+      <node id="150">
+        <label>MPU</label>
+        <link refid="class_m_p_u"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+        <childnode refid="152" relation="usage">
+          <edgelabel>q</edgelabel>
+        </childnode>
+        <childnode refid="153" relation="usage">
+          <edgelabel>mpu</edgelabel>
+        </childnode>
+        <childnode refid="154" relation="usage">
+          <edgelabel>gravity</edgelabel>
+        </childnode>
+        <childnode refid="155" relation="usage">
+          <edgelabel>aa</edgelabel>
+          <edgelabel>aaWorld</edgelabel>
+          <edgelabel>gy</edgelabel>
+          <edgelabel>aaReal</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="16" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="15" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" prot="private" virt="non-virtual"><scope>MPU</scope><name>aa</name></member>
+      <member refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" prot="private" virt="non-virtual"><scope>MPU</scope><name>aaReal</name></member>
+      <member refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" prot="private" virt="non-virtual"><scope>MPU</scope><name>aaWorld</name></member>
+      <member refid="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675" prot="public" virt="virtual"><scope>MPU</scope><name>asciiResult</name></member>
+      <member refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" prot="private" virt="non-virtual"><scope>MPU</scope><name>devStatus</name></member>
+      <member refid="class_m_p_u_1aa5ddcf0aae7d1b5cbc1932e9ce15f073" prot="private" virt="non-virtual"><scope>MPU</scope><name>dmpReady</name></member>
+      <member refid="class_m_p_u_1ada1ab0eeffb1b51f7336977dcc26e5c5" prot="private" virt="non-virtual"><scope>MPU</scope><name>euler</name></member>
+      <member refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" prot="private" virt="non-virtual"><scope>MPU</scope><name>fifoBuffer</name></member>
+      <member refid="class_m_p_u_1a8eaa78f21b13a9c684586713a8a5a1af" prot="private" virt="non-virtual"><scope>MPU</scope><name>fifoCount</name></member>
+      <member refid="class_m_p_u_1a202a867d7622a49961eb1f7efe3f55ee" prot="public" virt="non-virtual"><scope>MPU</scope><name>get_temp</name></member>
+      <member refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" prot="public" virt="non-virtual"><scope>MPU</scope><name>get_ypr</name></member>
+      <member refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" prot="public" virt="non-virtual"><scope>MPU</scope><name>get_yprInDagree</name></member>
+      <member refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" prot="private" virt="non-virtual"><scope>MPU</scope><name>gravity</name></member>
+      <member refid="class_m_p_u_1ae6fb782bf71dc133421c7383dec792bd" prot="private" virt="non-virtual"><scope>MPU</scope><name>gy</name></member>
+      <member refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" prot="public" virt="virtual"><scope>MPU</scope><name>init</name></member>
+      <member refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" prot="public" virt="virtual"><scope>MPU</scope><name>jsonResult</name></member>
+      <member refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" prot="public" virt="non-virtual"><scope>MPU</scope><name>mpu</name></member>
+      <member refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" prot="public" virt="non-virtual"><scope>MPU</scope><name>MPU</name></member>
+      <member refid="class_m_p_u_1a70f98065df64ae6a79ee84f7f8b460ad" prot="private" virt="non-virtual"><scope>MPU</scope><name>mpuIntStatus</name></member>
+      <member refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" prot="public" virt="non-virtual"><scope>MPU</scope><name>name</name></member>
+      <member refid="class_m_p_u_1a3fa93c48ee3fa8a24fa582090f2b5df9" prot="private" virt="non-virtual"><scope>MPU</scope><name>offset</name></member>
+      <member refid="class_m_p_u_1a297d80d2a757fbebc2bf9255e168be02" prot="private" virt="non-virtual"><scope>MPU</scope><name>packetSize</name></member>
+      <member refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" prot="private" virt="non-virtual"><scope>MPU</scope><name>q</name></member>
+      <member refid="class_m_p_u_1a64e3a6d612386bc7a0f648cc4ae309ef" prot="public" virt="non-virtual"><scope>MPU</scope><name>resetAxis</name></member>
+      <member refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" prot="private" virt="non-virtual"><scope>MPU</scope><name>scl</name></member>
+      <member refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" prot="private" virt="non-virtual"><scope>MPU</scope><name>sda</name></member>
+      <member refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" prot="public" virt="virtual"><scope>MPU</scope><name>toString</name></member>
+      <member refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" prot="private" virt="non-virtual"><scope>MPU</scope><name>ypr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

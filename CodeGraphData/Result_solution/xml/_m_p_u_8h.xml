@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_m_p_u_8h" kind="file">
+    <compoundname>MPU.h</compoundname>
+    <includes refid="_sensor_8h" local="yes">Sensor.h</includes>
+    <includes refid="_m_p_u6050__6_axis___motion_apps20_8h" local="no">MPU6050_6Axis_MotionApps20.h</includes>
+    <includedby refid="_m_p_u_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp</includedby>
+    <includedby refid="_sensor_array_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</includedby>
+    <incdepgraph>
+      <node id="814">
+        <label>MPU6050_6Axis_MotionApps20.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8h"/>
+        <childnode refid="815" relation="include">
+        </childnode>
+      </node>
+      <node id="811">
+        <label>WString.h</label>
+      </node>
+      <node id="815">
+        <label>MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="816" relation="include">
+        </childnode>
+        <childnode refid="823" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="820">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="819">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="821">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="809">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</label>
+        <link refid="MPU.h"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="814" relation="include">
+        </childnode>
+      </node>
+      <node id="824">
+        <label>pgmspace.h</label>
+      </node>
+      <node id="818">
+        <label>Wire.h</label>
+        <link refid="_wire_8h"/>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
+        <childnode refid="822" relation="include">
+        </childnode>
+      </node>
+      <node id="813">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="816">
+        <label>I2Cdev.h</label>
+        <link refid="_i2_cdev_8h"/>
+        <childnode refid="817" relation="include">
+        </childnode>
+        <childnode refid="818" relation="include">
+        </childnode>
+      </node>
+      <node id="812">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="810">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+      </node>
+      <node id="817">
+        <label>Arduino.h</label>
+      </node>
+      <node id="823">
+        <label>helper_3dmath.h</label>
+        <link refid="helper__3dmath_8h"/>
+      </node>
+      <node id="822">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="828">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="_sensor_array_8cpp"/>
+      </node>
+      <node id="825">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</label>
+        <link refid="MPU.h"/>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="_sensor_array_8h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="826">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp</label>
+        <link refid="_m_p_u_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structxyz_float" prot="public">xyzFloat</innerclass>
+    <innerclass refid="class_m_p_u" prot="public">MPU</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>MPU.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MPU_h</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_MPU_h</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sensor_8h" kindref="compound">Sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_m_p_u6050__6_axis___motion_apps20_8h" kindref="compound">MPU6050_6Axis_MotionApps20.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="11" refid="structxyz_float" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structxyz_float" kindref="compound">xyzFloat</ref><sp/>{</highlight></codeline>
+<codeline lineno="12" refid="structxyz_float_1a34a823925b61dfb9147ddc48a3688d8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structxyz_float_1adebd5335cb7aba85879e518dc384083f" kindref="member">x</ref>,<sp/><ref refid="structxyz_float_1abdc0113ef110d4485040ce2cf7910b9c" kindref="member">y</ref>,<sp/><ref refid="structxyz_float_1a34a823925b61dfb9147ddc48a3688d8e" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};<sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_m_p_u" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_p_u" kindref="compound">MPU</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" kindref="member">sda</ref>,<sp/><ref refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" kindref="member">scl</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPU<sp/>control/status<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_m_p_u_1aa5ddcf0aae7d1b5cbc1932e9ce15f073" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1aa5ddcf0aae7d1b5cbc1932e9ce15f073" kindref="member">dmpReady</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>true<sp/>if<sp/>DMP<sp/>init<sp/>was<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_m_p_u_1a70f98065df64ae6a79ee84f7f8b460ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u_1a70f98065df64ae6a79ee84f7f8b460ad" kindref="member">mpuIntStatus</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>holds<sp/>actual<sp/>interrupt<sp/>status<sp/>byte<sp/>from<sp/>MPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" kindref="member">devStatus</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>status<sp/>after<sp/>each<sp/>device<sp/>operation<sp/>(0<sp/>=<sp/>success,<sp/>!0<sp/>=<sp/>error)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_m_p_u_1a297d80d2a757fbebc2bf9255e168be02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_m_p_u_1a297d80d2a757fbebc2bf9255e168be02" kindref="member">packetSize</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>expected<sp/>DMP<sp/>packet<sp/>size<sp/>(default<sp/>is<sp/>42<sp/>bytes)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_m_p_u_1a8eaa78f21b13a9c684586713a8a5a1af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_m_p_u_1a8eaa78f21b13a9c684586713a8a5a1af" kindref="member">fifoCount</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>count<sp/>of<sp/>all<sp/>bytes<sp/>currently<sp/>in<sp/>FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" kindref="member">fifoBuffer</ref>[64];<sp/></highlight><highlight class="comment">//<sp/>FIFO<sp/>storage<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>orientation/motion<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref>*<sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[w,<sp/>x,<sp/>y,<sp/>z]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quaternion<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>*<sp/><ref refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" kindref="member">aa</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[x,<sp/>y,<sp/>z]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accel<sp/>sensor<sp/>measurements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_m_p_u_1ae6fb782bf71dc133421c7383dec792bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>*<sp/><ref refid="class_m_p_u_1ae6fb782bf71dc133421c7383dec792bd" kindref="member">gy</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[x,<sp/>y,<sp/>z]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gyro<sp/>sensor<sp/>measurements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>*<sp/><ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[x,<sp/>y,<sp/>z]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gravity-free<sp/>accel<sp/>sensor<sp/>measurements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>*<sp/><ref refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" kindref="member">aaWorld</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[x,<sp/>y,<sp/>z]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>world-frame<sp/>accel<sp/>sensor<sp/>measurements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref>*<sp/><ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[x,<sp/>y,<sp/>z]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gravity<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_m_p_u_1ada1ab0eeffb1b51f7336977dcc26e5c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1ada1ab0eeffb1b51f7336977dcc26e5c5" kindref="member">euler</ref>[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[psi,<sp/>theta,<sp/>phi]<sp/><sp/><sp/><sp/>Euler<sp/>angle<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>[yaw,<sp/>pitch,<sp/>roll]<sp/><sp/><sp/>yaw/pitch/roll<sp/>container<sp/>and<sp/>gravity<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_m_p_u_1a3fa93c48ee3fa8a24fa582090f2b5df9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a3fa93c48ee3fa8a24fa582090f2b5df9" kindref="member">offset</ref>[3];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u6050___base" kindref="compound">MPU6050</ref>*<sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" kindref="member">MPU</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" kindref="member">sda</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" kindref="member">scl</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675" kindref="member">asciiResult</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/><ref refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" kindref="member">jsonResult</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" kindref="member">get_ypr</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxyz_float" kindref="compound">xyzFloat</ref><sp/><ref refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" kindref="member">get_yprInDagree</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a202a867d7622a49961eb1f7efe3f55ee" kindref="member">get_temp</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a64e3a6d612386bc7a0f648cc4ae309ef" kindref="member">resetAxis</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>axis);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h"/>
+  </compounddef>
+</doxygen>

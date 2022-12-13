@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_servo___e_s_p32_8h" kind="file">
+    <compoundname>Servo_ESP32.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="_servo_motor_8h" local="no">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</includedby>
+    <includedby refid="_servo___e_s_p32_8cpp" local="no">C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp</includedby>
+    <incdepgraph>
+      <node id="21">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h</label>
+        <link refid="Servo_ESP32.h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="23">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h</label>
+        <link refid="Servo_ESP32.h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</label>
+        <link refid="_servo_motor_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp</label>
+        <link refid="_servo_motor_8cpp"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp</label>
+        <link refid="_servo___e_s_p32_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_servo___e_s_p32" prot="public">Servo_ESP32</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>Arduino<sp/>srl<sp/>-<sp/>www.arduino.org</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Base<sp/>on<sp/>lib<sp/>for<sp/>stm32f4<sp/>(d2a4a47):<sp/>https://github.com/arduino-libraries/Servo/blob/master/src/stm32f4/ServoTimers.h</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>2017<sp/>Jul<sp/>5:<sp/>Edited<sp/>by<sp/>Jaroslav<sp/>Páral<sp/>(jarekparal)<sp/>-<sp/>paral@robotikabrno.cz</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_servo___e_s_p32" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_servo___e_s_p32" kindref="compound">Servo_ESP32</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>min/max<sp/>pulse<sp/>widths<sp/>(in<sp/>microseconds)<sp/>and<sp/>angles<sp/>(in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>degrees).<sp/><sp/>Values<sp/>chosen<sp/>for<sp/>Arduino<sp/>compatibility.<sp/><sp/>These<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>are<sp/>part<sp/>of<sp/>the<sp/>public<sp/>API;<sp/>DO<sp/>NOT<sp/>CHANGE<sp/>THEM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" kindref="member">MIN_ANGLE</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42" refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" kindref="member">MAX_ANGLE</ref><sp/>=<sp/>180;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" kindref="member">MIN_PULSE_WIDTH</ref><sp/>=<sp/>544;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>shortest<sp/>pulse<sp/>sent<sp/>to<sp/>a<sp/>servo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" kindref="member">MAX_PULSE_WIDTH</ref><sp/>=<sp/>2400;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>longest<sp/>pulse<sp/>sent<sp/>to<sp/>a<sp/>servo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" kindref="member">MAX_COMPARE</ref><sp/>=<sp/>((1<sp/>&lt;&lt;<sp/>16)<sp/>-<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>65535</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="class_servo___e_s_p32_1ae92ff9b440a2e70962673251ccc0c235" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ae92ff9b440a2e70962673251ccc0c235" kindref="member">TAU_MSEC</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="49" refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" kindref="member">TAU_USEC</ref><sp/>=<sp/>(<ref refid="class_servo___e_s_p32_1ae92ff9b440a2e70962673251ccc0c235" kindref="member">TAU_MSEC</ref><sp/>*<sp/>1000);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_servo___e_s_p32_1af3a63fa7097959c009c6ff3582ed4b29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1af3a63fa7097959c009c6ff3582ed4b29" kindref="member">CHANNEL_MAX_NUM</ref><sp/>=<sp/>16;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" kindref="member">CHANNEL_NOT_ATTACHED</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pin<sp/>number<sp/>of<sp/>unattached<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" kindref="member">PIN_NOT_ATTACHED</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a8edd92713bb6e8fc2ab5ceceb1acf3d6" kindref="member">Servo_ESP32</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1ae1815343314ce0c40ad8154a400c5116" kindref="member">~Servo_ESP32</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">attach</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel<sp/>=<sp/><ref refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" kindref="member">CHANNEL_NOT_ATTACHED</ref>,<sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minAngle<sp/>=<sp/><ref refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" kindref="member">MIN_ANGLE</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxAngle<sp/>=<sp/><ref refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" kindref="member">MAX_ANGLE</ref>,<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minPulseWidth<sp/>=<sp/><ref refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" kindref="member">MIN_PULSE_WIDTH</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxPulseWidth<sp/>=<sp/><ref refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" kindref="member">MAX_PULSE_WIDTH</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" kindref="member">detach</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" kindref="member">write</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degrees);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" kindref="member">writeMicroseconds</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pulseUs);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" kindref="member">readMicroseconds</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" kindref="member">attached</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aeb1186e8214acc32a0185d52704bc040" kindref="member">attachedPin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" kindref="member">_resetFields</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" kindref="member">_usToDuty</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>us)<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map(us,<sp/>0,<sp/><ref refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" kindref="member">TAU_USEC</ref>,<sp/>0,<sp/><ref refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" kindref="member">MAX_COMPARE</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="179" refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" kindref="member">_dutyToUs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duty)<sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map(duty,<sp/>0,<sp/><ref refid="class_servo___e_s_p32_1abe5844ff36cc6fdedefc28ab3f219237" kindref="member">MAX_COMPARE</ref>,<sp/>0,<sp/><ref refid="class_servo___e_s_p32_1a751df00520dc0b6430e62f74c8e7ec98" kindref="member">TAU_USEC</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="180" refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" kindref="member">_usToAngle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>us)<sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map(us,<sp/><ref refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" kindref="member">_minPulseWidth</ref>,<sp/><ref refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" kindref="member">_maxPulseWidth</ref>,<sp/><ref refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" kindref="member">_minAngle</ref>,<sp/><ref refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" kindref="member">_maxAngle</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="181" refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" kindref="member">_angleToUs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map(angle,<sp/><ref refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" kindref="member">_minAngle</ref>,<sp/><ref refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" kindref="member">_maxAngle</ref>,<sp/><ref refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" kindref="member">_minPulseWidth</ref>,<sp/><ref refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" kindref="member">_maxPulseWidth</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">channel_next_free</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref>;</highlight></codeline>
+<codeline lineno="186" refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" kindref="member">_pulseWidthDuty</ref>;</highlight></codeline>
+<codeline lineno="187" refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref>;</highlight></codeline>
+<codeline lineno="188" refid="class_servo___e_s_p32_1a0a129986f1b41306c79a32024faae460" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a0a129986f1b41306c79a32024faae460" kindref="member">_min</ref>,<sp/><ref refid="class_servo___e_s_p32_1ab6876b8c61867249a6b2cbee55363c59" kindref="member">_max</ref>;</highlight></codeline>
+<codeline lineno="189" refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" kindref="member">_minPulseWidth</ref>,<sp/><ref refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" kindref="member">_maxPulseWidth</ref>;</highlight></codeline>
+<codeline lineno="190" refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" kindref="member">_minAngle</ref>,<sp/><ref refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" kindref="member">_maxAngle</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.h"/>
+  </compounddef>
+</doxygen>

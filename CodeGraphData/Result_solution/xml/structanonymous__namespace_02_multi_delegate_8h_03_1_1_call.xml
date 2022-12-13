@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call" kind="struct" prot="public">
+    <compoundname>anonymous_namespace{MultiDelegate.h}::Call</compoundname>
+    <includes refid="_multi_delegate_8h" local="no">MultiDelegate.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="class_delegate" kindref="compound">Delegate</ref></type>
+      </param>
+      <param>
+        <type>typename R</type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>ISQUEUE</declname>
+        <defname>ISQUEUE</defname>
+        <defval>false</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_1a2867263f2dc690d4433f88f32ab9cfbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>R</type>
+        <definition>static R anonymous_namespace{MultiDelegate.h}::Call&lt; Delegate, R, ISQUEUE &gt;::execute</definition>
+        <argsstring>(Delegate &amp;del)</argsstring>
+        <name>execute</name>
+        <param>
+          <type><ref refid="class_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="73" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="72" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="71" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_1a2867263f2dc690d4433f88f32ab9cfbb" prot="public" virt="non-virtual"><scope>anonymous_namespace{MultiDelegate.h}::Call</scope><name>execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

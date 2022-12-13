@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_35a67575645a638a0def830ff7035db6" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src</compoundname>
+    <innerfile refid="_servo___e_s_p32_8cpp">Servo_ESP32.cpp</innerfile>
+    <innerfile refid="_servo___e_s_p32_8h">Servo_ESP32.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/"/>
+  </compounddef>
+</doxygen>

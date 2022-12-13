@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_multi_delegate" kind="class" prot="public">
+    <compoundname>MultiDelegate</compoundname>
+    <basecompoundref refid="classdelegate_1_1detail_1_1_multi_delegate" prot="public" virt="non-virtual">delegate::detail::MultiDelegate&lt; Delegate, Delegate::target_type, ISQUEUE, QUEUE_CAPACITY &gt;</basecompoundref>
+    <includes refid="_multi_delegate_8h" local="no">MultiDelegate.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="class_delegate" kindref="compound">Delegate</ref></type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>ISQUEUE</declname>
+        <defname>ISQUEUE</defname>
+        <defval>false</defval>
+      </param>
+      <param>
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <declname>QUEUE_CAPACITY</declname>
+        <defname>QUEUE_CAPACITY</defname>
+        <defval>32</defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_multi_delegate" kindref="compound">MultiDelegate</ref> class template can be specialized to either a queue or an event multiplexer. It is designed to be used with <ref refid="class_delegate" kindref="compound">Delegate</ref>, the efficient runtime wrapper for C function ptr and C++ std::function. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_delegate" kindref="compound">Delegate</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the concrete type that <ref refid="class_multi_delegate" kindref="compound">MultiDelegate</ref> bases the queue or event multiplexer on. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ISQUEUE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>modifies the generated <ref refid="class_multi_delegate" kindref="compound">MultiDelegate</ref> class in subtle ways. In queue mode (ISQUEUE == true), the value of QUEUE_CAPACITY enforces the maximum number of simultaneous items the queue can contain. This is exploited to minimize the use of new and delete by reusing already allocated items, thus reducing heap fragmentation. In event multiplexer mode (ISQUEUE = false), new and delete are used for allocation of the event handler items. If the result type of the function call operator of <ref refid="class_delegate" kindref="compound">Delegate</ref> is void, calling a <ref refid="class_multi_delegate" kindref="compound">MultiDelegate</ref> queue removes each item after calling it; a Multidelegate event multiplexer keeps event handlers until explicitly removed. If the result type of the function call operator of <ref refid="class_delegate" kindref="compound">Delegate</ref> is non-void, in a <ref refid="class_multi_delegate" kindref="compound">MultiDelegate</ref> queue the type-conversion to bool of that result determines if the item is immediately removed or kept after each call: if true is returned, the item is removed. A Multidelegate event multiplexer keeps event handlers until they are explicitly removed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>QUEUE_CAPACITY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is only used if ISQUEUE == true. Then, it sets the maximum capacity that the queue dynamically allocates from the heap. Unused items are not returned to the heap, but are managed by the <ref refid="class_multi_delegate" kindref="compound">MultiDelegate</ref> instance during its own lifetime for efficiency. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="176">
+        <label>delegate::detail::MultiDelegate&lt; Delegate, Delegate::target_type, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate"/>
+      </node>
+      <node id="175">
+        <label>MultiDelegate&lt; Delegate, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="class_multi_delegate"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="178">
+        <label>delegate::detail::MultiDelegate&lt; Delegate, Delegate::target_type, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate"/>
+      </node>
+      <node id="177">
+        <label>MultiDelegate&lt; Delegate, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="class_multi_delegate"/>
+        <childnode refid="178" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="562" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="561" bodyend="565"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

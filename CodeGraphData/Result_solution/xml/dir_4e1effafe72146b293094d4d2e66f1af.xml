@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_4e1effafe72146b293094d4d2e66f1af" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0</compoundname>
+    <innerdir refid="dir_41115704844eaf581f710f790627da4a">C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_m_p_u6050__6_axis___motion_apps612_8h" kind="file">
+    <compoundname>MPU6050_6Axis_MotionApps612.h</compoundname>
+    <includes refid="_m_p_u6050_8h" local="yes">MPU6050.h</includes>
+    <includedby refid="_m_p_u6050__6_axis___motion_apps612_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.cpp</includedby>
+    <incdepgraph>
+      <node id="253">
+        <label>MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="257">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="259">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="262">
+        <label>pgmspace.h</label>
+      </node>
+      <node id="256">
+        <label>Wire.h</label>
+        <link refid="_wire_8h"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>I2Cdev.h</label>
+        <link refid="_i2_cdev_8h"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>Arduino.h</label>
+      </node>
+      <node id="261">
+        <label>helper_3dmath.h</label>
+        <link refid="helper__3dmath_8h"/>
+      </node>
+      <node id="252">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h</label>
+        <link refid="MPU6050_6Axis_MotionApps612.h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="264">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.cpp</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps612_8cpp"/>
+      </node>
+      <node id="263">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h</label>
+        <link refid="MPU6050_6Axis_MotionApps612.h"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_p_u6050__6_axis___motion_apps612" prot="public">MPU6050_6Axis_MotionApps612</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_p_u6050__6_axis___motion_apps612_8h_1a509bc1eac389aabe87ae64e31b4ff29a" prot="public" static="no">
+        <name>I2CDEVLIB_MPU6050_TYPEDEF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h" line="42" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_m_p_u6050__6_axis___motion_apps612_8h_1a466a5ec846ec3242a06cca91a283fcdf" prot="public" static="no">
+        <type><ref refid="class_m_p_u6050__6_axis___motion_apps612" kindref="compound">MPU6050_6Axis_MotionApps612</ref></type>
+        <definition>typedef MPU6050_6Axis_MotionApps612 MPU6050</definition>
+        <argsstring></argsstring>
+        <name>MPU6050</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h" line="151" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>I2Cdev<sp/>library<sp/>collection<sp/>-<sp/>MPU6050<sp/>I2C<sp/>device<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Based<sp/>on<sp/>InvenSense<sp/>MPU-6050<sp/>register<sp/>map<sp/>document<sp/>rev.<sp/>2.0,<sp/>5/19/2011<sp/>(RM-MPU-6000A-00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>10/3/2011<sp/>by<sp/>Jeff<sp/>Rowberg<sp/>&lt;jeff@rowberg.net&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Updates<sp/>should<sp/>(hopefully)<sp/>always<sp/>be<sp/>available<sp/>at<sp/>https://github.com/jrowberg/i2cdevlib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Changelog:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>2021/09/27<sp/>-<sp/>split<sp/>implementations<sp/>out<sp/>of<sp/>header<sp/>files,<sp/>finally</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>...<sp/>-<sp/>ongoing<sp/>debug<sp/>release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE:<sp/>THIS<sp/>IS<sp/>ONLY<sp/>A<sp/>PARIAL<sp/>RELEASE.<sp/>THIS<sp/>DEVICE<sp/>CLASS<sp/>IS<sp/>CURRENTLY<sp/>UNDERGOING<sp/>ACTIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DEVELOPMENT<sp/>AND<sp/>IS<sp/>STILL<sp/>MISSING<sp/>SOME<sp/>IMPORTANT<sp/>FEATURES.<sp/>PLEASE<sp/>KEEP<sp/>THIS<sp/>IN<sp/>MIND<sp/>IF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>YOU<sp/>DECIDE<sp/>TO<sp/>USE<sp/>THIS<sp/>PARTICULAR<sp/>CODE<sp/>FOR<sp/>ANYTHING.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>============================================</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">I2Cdev<sp/>device<sp/>library<sp/>code<sp/>is<sp/>placed<sp/>under<sp/>the<sp/>MIT<sp/>license</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">Copyright<sp/>(c)<sp/>2012<sp/>Jeff<sp/>Rowberg</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">===============================================</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MPU6050_6AXIS_MOTIONAPPS612_H_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_MPU6050_6AXIS_MOTIONAPPS612_H_</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>take<sp/>ownership<sp/>of<sp/>the<sp/>&quot;MPU6050&quot;<sp/>typedef</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_m_p_u6050__6_axis___motion_apps612_8h_1a509bc1eac389aabe87ae64e31b4ff29a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2CDEVLIB_MPU6050_TYPEDEF</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_p_u6050_8h" kindref="compound">MPU6050.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_m_p_u6050__6_axis___motion_apps612" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_p_u6050__6_axis___motion_apps612" kindref="compound">MPU6050_6Axis_MotionApps612</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u6050___base" kindref="compound">MPU6050_Base</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="class_m_p_u6050__6_axis___motion_apps612_1ad97b8317288328cb5478418876a008c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ad97b8317288328cb5478418876a008c7" kindref="member">MPU6050_6Axis_MotionApps612</ref>(uint8_t<sp/>address=<ref refid="_m_p_u6050_8h_1ae5cf60bf2cbc13d21384c215c4f05149" kindref="member">MPU6050_DEFAULT_ADDRESS</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="class_m_p_u6050___base_1a96a025e46d564a841ebab6eb5913bcfb" kindref="member">wireObj</ref>=0)<sp/>:<sp/><ref refid="class_m_p_u6050___base" kindref="compound">MPU6050_Base</ref>(address,<sp/><ref refid="class_m_p_u6050___base_1a96a025e46d564a841ebab6eb5913bcfb" kindref="member">wireObj</ref>)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3219324080976d12688cef227e926ecf" kindref="member">dmpInitialize</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a9c0e92c11f4dcb323cc1cf8cae635612" kindref="member">dmpPacketAvailable</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3aceafc98a300a251de64159089c501e" kindref="member">dmpSetFIFORate</ref>(uint8_t<sp/>fifoRate);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a135bd730963684151805d0a99d25b966" kindref="member">dmpGetFIFORate</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a792ee3a012de98b2fa1b11482597c321" kindref="member">dmpGetSampleStepSizeMS</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ac09d8e7d19e9c6383d392b9f9feaabef" kindref="member">dmpGetSampleFrequency</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a68879a7ccd3b18e5700971bce8c93e72" kindref="member">dmpDecodeTemperature</ref>(int8_t<sp/>tempReg);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>callbacks<sp/>after<sp/>a<sp/>packet<sp/>of<sp/>FIFO<sp/>data<sp/>is<sp/>processed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//uint8_t<sp/>dmpRegisterFIFORateProcess(inv_obj_func<sp/>func,<sp/>int16_t<sp/>priority);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//uint8_t<sp/>dmpUnregisterFIFORateProcess(inv_obj_func<sp/>func);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ae01ed837a3ddbf737ffa4987cfc6fefb" kindref="member">dmpRunFIFORateProcesses</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>FIFO<sp/>for<sp/>various<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aaa56be1fc5557be9ce986ea07b7c0053" kindref="member">dmpSendQuaternion</ref>(uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ac67d54c63a1c957a2b07b6d97dec8fcf" kindref="member">dmpSendGyro</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a0ea3026ed8841ca066e124e5820f7b4f" kindref="member">dmpSendAccel</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a338388c1ce3ef534f56f43670969bfb8" kindref="member">dmpSendLinearAccel</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a7a9bb1af1099f06e8f69ca859051be4d" kindref="member">dmpSendLinearAccelInWorld</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab102720853bc4259e906dfba42eee23d" kindref="member">dmpSendControlData</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a6f178a919d3a77ec284954c817efa936" kindref="member">dmpSendSensorData</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab788016a101f4d747a3ec4a1c93e7cef" kindref="member">dmpSendExternalSensorData</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3cf8f529580a10f85e61aec7c0f46d25" kindref="member">dmpSendGravity</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1adcf0527e164656fa0e3017283e202c6d" kindref="member">dmpSendPacketNumber</ref>(uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ae0cf5c7574e3803831c3c29e0e5e580c" kindref="member">dmpSendQuantizedAccel</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a1447ed18597320c06f1c00c7c11827d9" kindref="member">dmpSendEIS</ref>(uint_fast16_t<sp/>elements,<sp/>uint_fast16_t<sp/>accuracy);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>Fixed<sp/>Point<sp/>data<sp/>from<sp/>FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aff422cde3c9dc619cefc2d51f9cda9a8" kindref="member">dmpGetAccel</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aff422cde3c9dc619cefc2d51f9cda9a8" kindref="member">dmpGetAccel</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aff422cde3c9dc619cefc2d51f9cda9a8" kindref="member">dmpGetAccel</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aded5c009118de72f3e5847fbcbbf8fe9" kindref="member">dmpGetQuaternion</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aded5c009118de72f3e5847fbcbbf8fe9" kindref="member">dmpGetQuaternion</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aded5c009118de72f3e5847fbcbbf8fe9" kindref="member">dmpGetQuaternion</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a8fef5bbc0fc3bcbda6b902687cc5f7f2" kindref="member">dmpGet6AxisQuaternion</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a8fef5bbc0fc3bcbda6b902687cc5f7f2" kindref="member">dmpGet6AxisQuaternion</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a8fef5bbc0fc3bcbda6b902687cc5f7f2" kindref="member">dmpGet6AxisQuaternion</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a4c49ca3dca116d268554318e89b64514" kindref="member">dmpGetRelativeQuaternion</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a4c49ca3dca116d268554318e89b64514" kindref="member">dmpGetRelativeQuaternion</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a4c49ca3dca116d268554318e89b64514" kindref="member">dmpGetRelativeQuaternion</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1acc0f8416ac42c2ba7fc5ab3959c358f3" kindref="member">dmpGetGyro</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1acc0f8416ac42c2ba7fc5ab3959c358f3" kindref="member">dmpGetGyro</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1acc0f8416ac42c2ba7fc5ab3959c358f3" kindref="member">dmpGetGyro</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ad4f7349b6e5536a9bb4965a3981896d1" kindref="member">dmpSetLinearAccelFilterCoefficient</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>coef);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3f8187ca3f9e2b9d65d26caa3c105457" kindref="member">dmpGetLinearAccel</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3f8187ca3f9e2b9d65d26caa3c105457" kindref="member">dmpGetLinearAccel</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3f8187ca3f9e2b9d65d26caa3c105457" kindref="member">dmpGetLinearAccel</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3f8187ca3f9e2b9d65d26caa3c105457" kindref="member">dmpGetLinearAccel</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*vRaw,<sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/>*gravity);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a9db4f513391204c6144d74e1ea8a77e0" kindref="member">dmpGetLinearAccelInWorld</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a9db4f513391204c6144d74e1ea8a77e0" kindref="member">dmpGetLinearAccelInWorld</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a9db4f513391204c6144d74e1ea8a77e0" kindref="member">dmpGetLinearAccelInWorld</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a9db4f513391204c6144d74e1ea8a77e0" kindref="member">dmpGetLinearAccelInWorld</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*vReal,<sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a602d219777d70617d27146a9384a7d6e" kindref="member">dmpGetGyroAndAccelSensor</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a602d219777d70617d27146a9384a7d6e" kindref="member">dmpGetGyroAndAccelSensor</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a602d219777d70617d27146a9384a7d6e" kindref="member">dmpGetGyroAndAccelSensor</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*g,<sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab8253fb60d5f7abedb1feda9c37cc8fc" kindref="member">dmpGetGyroSensor</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab8253fb60d5f7abedb1feda9c37cc8fc" kindref="member">dmpGetGyroSensor</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab8253fb60d5f7abedb1feda9c37cc8fc" kindref="member">dmpGetGyroSensor</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a27259642023e3a7bba76b232f77f9d63" kindref="member">dmpGetControlData</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aef229ab15d209e523dbd4b6230454067" kindref="member">dmpGetTemperature</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a825c03b7ecb4b4e3bd5428633e11a123" kindref="member">dmpGetGravity</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a825c03b7ecb4b4e3bd5428633e11a123" kindref="member">dmpGetGravity</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a825c03b7ecb4b4e3bd5428633e11a123" kindref="member">dmpGetGravity</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a825c03b7ecb4b4e3bd5428633e11a123" kindref="member">dmpGetGravity</ref>(<ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/>*v,<sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab2ba742ca7a661f3be88b64519c7fdfc" kindref="member">dmpGetUnquantizedAccel</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab2ba742ca7a661f3be88b64519c7fdfc" kindref="member">dmpGetUnquantizedAccel</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ab2ba742ca7a661f3be88b64519c7fdfc" kindref="member">dmpGetUnquantizedAccel</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1addf2eb4bd139e74599bf2a0a825003dd" kindref="member">dmpGetQuantizedAccel</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1addf2eb4bd139e74599bf2a0a825003dd" kindref="member">dmpGetQuantizedAccel</ref>(int16_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1addf2eb4bd139e74599bf2a0a825003dd" kindref="member">dmpGetQuantizedAccel</ref>(<ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>*v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1aa25b8c774af2ebc5be55d07ff2575810" kindref="member">dmpGetExternalSensorData</ref>(int32_t<sp/>*data,<sp/>uint16_t<sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a15ade5d1e4429df9ea2e3ad15366ffdb" kindref="member">dmpGetEIS</ref>(int32_t<sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a50417f1dbc3cb1a1fb0636d94ab587e3" kindref="member">dmpGetEuler</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*data,<sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a7e1a5709c59e1d6ac8888578adcbf5ce" kindref="member">dmpGetYawPitchRoll</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*data,<sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q,<sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/>*gravity);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>Floating<sp/>Point<sp/>data<sp/>from<sp/>FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a641f879dacadfd8632920ebe2905dd93" kindref="member">dmpGetAccelFloat</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a836d050497ec6553846608639c3fe8b1" kindref="member">dmpGetQuaternionFloat</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>packet=0);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ad88a9cde0795b859ed435476ecc988b2" kindref="member">dmpProcessFIFOPacket</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dmpData);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1af7a25c6ff85b51a2ca03463f7420d1f9" kindref="member">dmpReadAndProcessFIFOPacket</ref>(uint8_t<sp/>numPackets,<sp/>uint8_t<sp/>*processed=NULL);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a9b62f91129198e1452afdcfa214f8569" kindref="member">dmpSetFIFOProcessedCallback</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*func)<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ad19d3eeb6ea6eb0ba7de8b31e331910e" kindref="member">dmpInitFIFOParam</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a2102c438a8719ce6aef5bdde8538db38" kindref="member">dmpCloseFIFO</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a0fcd0cd1ee150880479cd6c76afc9550" kindref="member">dmpSetGyroDataSource</ref>(uint8_t<sp/>source);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1acf81350b29e7f94a3b9b076a8c06d137" kindref="member">dmpDecodeQuantizedAccel</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1ac1335024e3acf0d30979d946828adb3b" kindref="member">dmpGetGyroSumOfSquare</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a546d3165f3a95a810ee2a2d59a0c0ce6" kindref="member">dmpGetAccelSumOfSquare</ref>();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a45cac10becac3c00223c1d7d29bc4f0e" kindref="member">dmpOverrideQuaternion</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>*q);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a7872769aad23faf5b12545ecf7701964" kindref="member">dmpGetFIFOPacketSize</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a3ba8e8d3eb93be029b5898d22efa53eb" kindref="member">dmpGetCurrentFIFOPacket</ref>(uint8_t<sp/>*data);<sp/></highlight><highlight class="comment">//<sp/>overflow<sp/>proof</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="147" refid="class_m_p_u6050__6_axis___motion_apps612_1a2ac9a3716e96f540cff065155caeff1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="class_m_p_u6050__6_axis___motion_apps612_1a2ac9a3716e96f540cff065155caeff1d" kindref="member">dmpPacketBuffer</ref>;</highlight></codeline>
+<codeline lineno="148" refid="class_m_p_u6050__6_axis___motion_apps612_1a59db7845fde871056fd393c2d13e5ce1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612_1a59db7845fde871056fd393c2d13e5ce1" kindref="member">dmpPacketSize</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="_m_p_u6050__6_axis___motion_apps612_8h_1a466a5ec846ec3242a06cca91a283fcdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u6050__6_axis___motion_apps612" kindref="compound">MPU6050_6Axis_MotionApps612</ref><sp/><ref refid="_m_p_u6050__6_axis___motion_apps612_8h_1a466a5ec846ec3242a06cca91a283fcdf" kindref="member">MPU6050</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_MPU6050_6AXIS_MOTIONAPPS612_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h"/>
+  </compounddef>
+</doxygen>

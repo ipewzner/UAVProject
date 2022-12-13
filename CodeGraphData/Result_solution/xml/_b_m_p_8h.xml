@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_b_m_p_8h" kind="file">
+    <compoundname>BMP.h</compoundname>
+    <includes refid="_sensor_8h" local="yes">Sensor.h</includes>
+    <includes local="no">Adafruit_BMP280.h</includes>
+    <includedby refid="_b_m_p_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp</includedby>
+    <includedby refid="_sensor_array_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</includedby>
+    <incdepgraph>
+      <node id="591">
+        <label>WString.h</label>
+      </node>
+      <node id="589">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h</label>
+        <link refid="BMP.h"/>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="592">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="590">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>Adafruit_BMP280.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="595">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h</label>
+        <link refid="BMP.h"/>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp</label>
+        <link refid="_b_m_p_8cpp"/>
+      </node>
+      <node id="598">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="_sensor_array_8cpp"/>
+      </node>
+      <node id="597">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="_sensor_array_8h"/>
+        <childnode refid="598" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_b_m_p" prot="public">BMP</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>BMP.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODE_NORMAL</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_BMP_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BMP_h</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sensor_8h" kindref="compound">Sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Adafruit_BMP280.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//bmp280<sp/>sense:<sp/>humidity,<sp/>temperature,<sp/>pressure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_b_m_p" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_b_m_p" kindref="compound">BMP</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" kindref="member">BMP</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" kindref="member">i2c_address</ref>);</highlight></codeline>
+<codeline lineno="16" refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" kindref="member">i2c_address</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Adafruit_BMP280<sp/><ref refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" kindref="member">bmp</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" kindref="member">asciiResult</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/><ref refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753" kindref="member">jsonResult</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h"/>
+  </compounddef>
+</doxygen>

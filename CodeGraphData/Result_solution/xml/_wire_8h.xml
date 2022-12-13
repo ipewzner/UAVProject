@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_wire_8h" kind="file">
+    <compoundname>Wire.h</compoundname>
+    <includes local="no">esp32-hal.h</includes>
+    <includes local="yes">freertos/FreeRTOS.h</includes>
+    <includes local="yes">freertos/queue.h</includes>
+    <includes local="yes">Stream.h</includes>
+    <includedby refid="_adafruit___i2_c_device_8h" local="no">C:/Users/ipewz/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_I2CDevice.h</includedby>
+    <includedby refid="_i2_cdev_8h" local="no">C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h</includedby>
+    <includedby refid="_wire_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp</includedby>
+    <incdepgraph>
+      <node id="316">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="315">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="317">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="314">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h</label>
+        <link refid="Wire.h"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="328">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps20.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8h"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp</label>
+        <link refid="_m_p_u6050__9_axis___motion_apps41_8cpp"/>
+      </node>
+      <node id="322">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h</label>
+        <link refid="_b_m_p_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp</label>
+        <link refid="_b_m_p_8cpp"/>
+      </node>
+      <node id="334">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.cpp</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps612_8cpp"/>
+      </node>
+      <node id="335">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h</label>
+        <link refid="_m_p_u6050__9_axis___motion_apps41_8h"/>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="_sensor_array_8cpp"/>
+      </node>
+      <node id="329">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</label>
+        <link refid="_m_p_u_8h"/>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h</label>
+        <link refid="Wire.h"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="_sensor_array_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp</label>
+        <link refid="_i2_cdev_8cpp"/>
+      </node>
+      <node id="326">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h</label>
+        <link refid="_i2_cdev_8h"/>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/Adafruit_BMP280_Library/Adafruit_BMP280.h</label>
+        <link refid="_adafruit___b_m_p280_8h"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp</label>
+        <link refid="_m_p_u_8cpp"/>
+      </node>
+      <node id="338">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp</label>
+        <link refid="_wire_8cpp"/>
+      </node>
+      <node id="320">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/Adafruit_BusIO/Adafruit_I2CDevice.h</label>
+        <link refid="_adafruit___i2_c_device_8h"/>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps612_8h"/>
+        <childnode refid="334" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps20.cpp</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8cpp"/>
+      </node>
+      <node id="332">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050.cpp</label>
+        <link refid="_m_p_u6050_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_two_wire" prot="public">TwoWire</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_wire_8h_1af499b079e735a127271a116bf11d071c" prot="public" static="no">
+        <name>STICKBREAKER</name>
+        <initializer>&apos;V1.1.0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="33" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" prot="public" static="no">
+        <name>I2C_BUFFER_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="34" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">TwoWire::requestFrom</referencedby>
+        <referencedby refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">TwoWire::write</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_wire_8h_1a74f06aba9607d06652c39cd95cd45756" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* user_onRequest)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>user_onRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="35" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_wire_8h_1a1ed9c4fec964d1a04c15a9942899257f" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* user_onReceive)(uint8_t *, int)</definition>
+        <argsstring>)(uint8_t *, int)</argsstring>
+        <name>user_onReceive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="36" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_wire_8h_1a35bd3de386d23ba02c35f820303db472" prot="public" static="no" mutable="no">
+        <type><ref refid="class_two_wire" kindref="compound">TwoWire</ref></type>
+        <definition>TwoWire Wire</definition>
+        <argsstring></argsstring>
+        <name>Wire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="140" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="381" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">MPU::init</referencedby>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+        <referencedby refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" compoundref="_i2_cdev_8cpp" startline="590" endline="648">I2Cdev::writeBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" compoundref="_i2_cdev_8cpp" startline="657" endline="719">I2Cdev::writeWords</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_wire_8h_1a7e022c5f80cca7f1e29fc670b9bc40a5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_two_wire" kindref="compound">TwoWire</ref></type>
+        <definition>TwoWire Wire1</definition>
+        <argsstring></argsstring>
+        <name>Wire1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="141" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>TwoWire.h<sp/>-<sp/>TWI/I2C<sp/>library<sp/>for<sp/>Arduino<sp/>&amp;<sp/>Wiring</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>2006<sp/>Nicholas<sp/>Zambetti.<sp/><sp/>All<sp/>right<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>Modified<sp/>2012<sp/>by<sp/>Todd<sp/>Krein<sp/>(todd@krein.org)<sp/>to<sp/>implement<sp/>repeated<sp/>starts</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>Modified<sp/>December<sp/>2014<sp/>by<sp/>Ivan<sp/>Grokhotkov<sp/>(ivan@esp8266.com)<sp/>-<sp/>esp8266<sp/>support</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>Modified<sp/>April<sp/>2015<sp/>by<sp/>Hrsto<sp/>Gochkov<sp/>(ficeto@ficeto.com)<sp/>-<sp/>alternative<sp/>esp8266<sp/>support</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>Modified<sp/>November<sp/>2017<sp/>by<sp/>Chuck<sp/>Todd<sp/>&lt;stickbreaker<sp/>on<sp/>GitHub&gt;<sp/>to<sp/>use<sp/>ISR<sp/>and<sp/>increase<sp/>stability.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TwoWire_h</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TwoWire_h</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;esp32-hal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;freertos/FreeRTOS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;freertos/queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Stream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_wire_8h_1af499b079e735a127271a116bf11d071c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STICKBREAKER<sp/>&apos;V1.1.0&apos;</highlight></codeline>
+<codeline lineno="34" refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_BUFFER_LENGTH<sp/>128</highlight></codeline>
+<codeline lineno="35" refid="_wire_8h_1a74f06aba9607d06652c39cd95cd45756" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*<ref refid="_wire_8h_1a74f06aba9607d06652c39cd95cd45756" kindref="member">user_onRequest</ref>)(void);</highlight></codeline>
+<codeline lineno="36" refid="_wire_8h_1a1ed9c4fec964d1a04c15a9942899257f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*<ref refid="_wire_8h_1a1ed9c4fec964d1a04c15a9942899257f" kindref="member">user_onReceive</ref>)(uint8_t*,<sp/>int);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_two_wire" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_two_wire" kindref="compound">TwoWire</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Stream</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" kindref="member">num</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref>;</highlight></codeline>
+<codeline lineno="44" refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_t<sp/>*<sp/><ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" kindref="member">rxBuffer</ref>[<ref refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" kindref="member">I2C_BUFFER_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="47" refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref>;</highlight></codeline>
+<codeline lineno="48" refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref>;</highlight></codeline>
+<codeline lineno="49" refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref>;<sp/></highlight><highlight class="comment">//@stickBreaker</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" kindref="member">txBuffer</ref>[<ref refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" kindref="member">I2C_BUFFER_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="52" refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref>;</highlight></codeline>
+<codeline lineno="53" refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref>;</highlight></codeline>
+<codeline lineno="54" refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" kindref="member">txAddress</ref>;</highlight></codeline>
+<codeline lineno="55" refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" kindref="member">txQueued</ref>;<sp/></highlight><highlight class="comment">//@stickbreaker</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" kindref="member">transmitting</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>slave<sp/>Mode,<sp/>not<sp/>yet<sp/>Stickbreaker</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>user_onRequest<sp/>uReq[2];</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>user_onReceive<sp/>uRcv[2];</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>onRequestService(void);</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>onReceiveService(uint8_t*,<sp/>int);</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_err_t<sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref>;<sp/></highlight><highlight class="comment">//<sp/>@stickBreaker<sp/>from<sp/>esp32-hal-i2c.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" kindref="member">_timeOutMillis</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1aece155ae8f00b175902cfa9b07b06c40" kindref="member">TwoWire</ref>(uint8_t<sp/>bus_num);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" kindref="member">~TwoWire</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//call<sp/>setPins()<sp/>first,<sp/>so<sp/>that<sp/>begin()<sp/>can<sp/>be<sp/>called<sp/>without<sp/>arguments<sp/>from<sp/>libraries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" kindref="member">setPins</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>=-1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref>=-1,<sp/>uint32_t<sp/>frequency=0);<sp/></highlight><highlight class="comment">//<sp/>returns<sp/>true,<sp/>if<sp/>successful<sp/>init<sp/>of<sp/>i2c<sp/>bus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calling<sp/>will<sp/>attemp<sp/>to<sp/>recover<sp/>hung<sp/>bus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a0ab75123574d32fc130252d073009414" kindref="member">setClock</ref>(uint32_t<sp/>frequency);<sp/></highlight><highlight class="comment">//<sp/>change<sp/>bus<sp/>clock<sp/>without<sp/>initing<sp/>hardware</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a86f0aedd9e13524b9cf44b1dcfad0d05" kindref="member">getClock</ref>();<sp/></highlight><highlight class="comment">//<sp/>current<sp/>bus<sp/>clock<sp/>rate<sp/>in<sp/>hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a92bb9dc18d2dc7f5f06ebf605dededa7" kindref="member">setTimeOut</ref>(uint16_t<sp/>timeOutMillis);<sp/></highlight><highlight class="comment">//<sp/>default<sp/>timeout<sp/>of<sp/>i2c<sp/>transactions<sp/>is<sp/>50ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_two_wire_1a31c5d086052617b8df91f0d6d607b2ae" kindref="member">getTimeOut</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1a748a7a4dbaf85933b0a7391c1aa48a7d" kindref="member">lastError</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="class_two_wire_1a15cfa2221f118f881925c3d422d3b909" kindref="member">getErrorText</ref>(uint8_t<sp/>err);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//@stickBreaker<sp/>for<sp/>big<sp/>blocks<sp/>and<sp/>ISR<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_err_t<sp/><ref refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" kindref="member">writeTransmission</ref>(uint16_t<sp/>address,<sp/>uint8_t*<sp/>buff,<sp/>uint16_t<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_err_t<sp/><ref refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" kindref="member">readTransmission</ref>(uint16_t<sp/>address,<sp/>uint8_t*<sp/>buff,<sp/>uint16_t<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>uint32_t<sp/>*readCount=NULL);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">beginTransmission</ref>(uint16_t<sp/>address);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">beginTransmission</ref>(uint8_t<sp/>address);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">beginTransmission</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>address);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" kindref="member">endTransmission</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" kindref="member">endTransmission</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>size,<sp/>uint8_t<sp/>sendStop);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>size);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(uint8_t<sp/>address,<sp/>uint8_t<sp/>size,<sp/>uint8_t<sp/>sendStop);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(uint8_t<sp/>address,<sp/>uint8_t<sp/>size);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sendStop);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>(uint8_t);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" kindref="member">available</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" kindref="member">read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" kindref="member">peek</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" kindref="member">flush</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="class_two_wire_1a1ba732d94673122f6a73c85a8d04382b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a1ba732d94673122f6a73c85a8d04382b" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>s)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>((uint8_t*)<sp/>s,<sp/>strlen(s));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116" refid="class_two_wire_1a0c9d09ead8fcddf2a84781fe77d3c975" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a0c9d09ead8fcddf2a84781fe77d3c975" kindref="member">write</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>((uint8_t)n);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120" refid="class_two_wire_1a55a9894186458e43852f6fb7c59bb066" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a55a9894186458e43852f6fb7c59bb066" kindref="member">write</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>((uint8_t)n);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124" refid="class_two_wire_1afdb917746ee37f72e7452b4782e9527b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1afdb917746ee37f72e7452b4782e9527b" kindref="member">write</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>((uint8_t)n);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128" refid="class_two_wire_1a8ec34b0d2a75e8b2751eb9f4332bd7c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a8ec34b0d2a75e8b2751eb9f4332bd7c3" kindref="member">write</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>((uint8_t)n);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a860d97eb825c6fdca388f2f0577cc34a" kindref="member">onReceive</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a224bf8799dda398fc0db223801852ca5" kindref="member">onRequest</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_two_wire_1a6339bf1ac5bfb7488e448ab8ca00959b" kindref="member">setDebugFlags</ref>(<sp/>uint32_t<sp/>setBits,<sp/>uint32_t<sp/>resetBits);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1ae53caa52b5273b35e69c90836e7fb9b0" kindref="member">busy</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_two_wire" kindref="compound">TwoWire</ref><sp/><ref refid="_wire_8h_1a35bd3de386d23ba02c35f820303db472" kindref="member">Wire</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_two_wire" kindref="compound">TwoWire</ref><sp/><ref refid="_wire_8h_1a7e022c5f80cca7f1e29fc670b9bc40a5" kindref="member">Wire1</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="145"><highlight class="comment">V1.1.0<sp/>08JAN2019<sp/>Support<sp/>CPU<sp/>Clock<sp/>frequency<sp/>changes</highlight></codeline>
+<codeline lineno="146"><highlight class="comment">V1.0.2<sp/>30NOV2018<sp/>stop<sp/>returning<sp/>I2C_ERROR_CONTINUE<sp/>on<sp/>ReSTART<sp/>operations,<sp/>regain<sp/>compatibility<sp/>with<sp/>Arduino<sp/>libs</highlight></codeline>
+<codeline lineno="147"><highlight class="comment">V1.0.1<sp/>02AUG2018<sp/>First<sp/>Fix<sp/>after<sp/>release,<sp/>Correct<sp/>ReSTART<sp/>handling,<sp/>change<sp/>Debug<sp/>control,<sp/>change<sp/>begin()</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/><sp/>to<sp/>a<sp/>function,<sp/>this<sp/>allow<sp/>reporting<sp/>if<sp/>bus<sp/>cannot<sp/>be<sp/>initialized,<sp/>Wire.begin()<sp/>can<sp/>be<sp/>used<sp/>to<sp/>recover</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/><sp/>a<sp/>hung<sp/>bus<sp/>busy<sp/>condition.</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">V0.2.2<sp/>13APR2018<sp/>preserve<sp/>custom<sp/>SCL,SDA,Frequency<sp/>when<sp/>no<sp/>parameters<sp/>passed<sp/>to<sp/>begin()</highlight></codeline>
+<codeline lineno="151"><highlight class="comment">V0.2.1<sp/>15MAR2018<sp/>Hardware<sp/>reset,<sp/>Glitch<sp/>prevention,<sp/>adding<sp/>destructor<sp/>for<sp/>second<sp/>i2c<sp/>testing</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h"/>
+  </compounddef>
+</doxygen>

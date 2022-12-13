@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_vector_float" kind="class" prot="public">
+    <compoundname>VectorFloat</compoundname>
+    <includes refid="helper__3dmath_8h" local="no">helper_3dmath.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_vector_float_1a2d8e5159f045ca977769d168af75320c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VectorFloat::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="161" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="161" bodyend="-1"/>
+        <referencedby refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" compoundref="helper__3dmath_8h" startline="177" endline="179">getMagnitude</referencedby>
+        <referencedby refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" compoundref="helper__3dmath_8h" startline="188" endline="192">getNormalized</referencedby>
+        <referencedby refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" compoundref="helper__3dmath_8h" startline="209" endline="213">getRotated</referencedby>
+        <referencedby refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" compoundref="helper__3dmath_8h" startline="181" endline="186">normalize</referencedby>
+        <referencedby refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" compoundref="helper__3dmath_8h" startline="194" endline="207">rotate</referencedby>
+        <referencedby refid="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" compoundref="helper__3dmath_8h" startline="165" endline="169">VectorFloat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VectorFloat::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="162" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="162" bodyend="-1"/>
+        <referencedby refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" compoundref="helper__3dmath_8h" startline="177" endline="179">getMagnitude</referencedby>
+        <referencedby refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" compoundref="helper__3dmath_8h" startline="188" endline="192">getNormalized</referencedby>
+        <referencedby refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" compoundref="helper__3dmath_8h" startline="209" endline="213">getRotated</referencedby>
+        <referencedby refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" compoundref="helper__3dmath_8h" startline="181" endline="186">normalize</referencedby>
+        <referencedby refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" compoundref="helper__3dmath_8h" startline="194" endline="207">rotate</referencedby>
+        <referencedby refid="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" compoundref="helper__3dmath_8h" startline="165" endline="169">VectorFloat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_vector_float_1a54b8e4234e3b48e106d090570755f107" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VectorFloat::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="163" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a1a694de246c614ab330070177c6f9344" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="828" endline="843">MPU6050_9Axis_MotionApps41::dmpGetYawPitchRoll</referencedby>
+        <referencedby refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" compoundref="helper__3dmath_8h" startline="177" endline="179">getMagnitude</referencedby>
+        <referencedby refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" compoundref="helper__3dmath_8h" startline="188" endline="192">getNormalized</referencedby>
+        <referencedby refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" compoundref="helper__3dmath_8h" startline="209" endline="213">getRotated</referencedby>
+        <referencedby refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" compoundref="helper__3dmath_8h" startline="181" endline="186">normalize</referencedby>
+        <referencedby refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" compoundref="helper__3dmath_8h" startline="194" endline="207">rotate</referencedby>
+        <referencedby refid="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" compoundref="helper__3dmath_8h" startline="165" endline="169">VectorFloat</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>VectorFloat::VectorFloat</definition>
+        <argsstring>()</argsstring>
+        <name>VectorFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="165" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="165" bodyend="169"/>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_float_1a3b12ed03e28bded4316275882433e5aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>VectorFloat::VectorFloat</definition>
+        <argsstring>(float nx, float ny, float nz)</argsstring>
+        <name>VectorFloat</name>
+        <param>
+          <type>float</type>
+          <declname>nx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ny</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>nz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="171" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="171" bodyend="175"/>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float VectorFloat::getMagnitude</definition>
+        <argsstring>()</argsstring>
+        <name>getMagnitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="177" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="177" bodyend="179"/>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+        <referencedby refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" compoundref="helper__3dmath_8h" startline="181" endline="186">normalize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void VectorFloat::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="181" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="181" bodyend="186"/>
+        <references refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" compoundref="helper__3dmath_8h" startline="177" endline="179">getMagnitude</references>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+        <referencedby refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" compoundref="helper__3dmath_8h" startline="188" endline="192">getNormalized</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_vector_float" kindref="compound">VectorFloat</ref></type>
+        <definition>VectorFloat VectorFloat::getNormalized</definition>
+        <argsstring>()</argsstring>
+        <name>getNormalized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="188" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="188" bodyend="192"/>
+        <references refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" compoundref="helper__3dmath_8h" startline="181" endline="186">normalize</references>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void VectorFloat::rotate</definition>
+        <argsstring>(Quaternion *q)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="194" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="194" bodyend="207"/>
+        <references refid="class_quaternion_1a3ff8405ed92a3ca16de656e6c83b4028" compoundref="helper__3dmath_8h" startline="56" endline="67">Quaternion::getProduct</references>
+        <references refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" compoundref="helper__3dmath_8h" startline="38">Quaternion::x</references>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" compoundref="helper__3dmath_8h" startline="39">Quaternion::y</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" compoundref="helper__3dmath_8h" startline="40">Quaternion::z</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+        <referencedby refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" compoundref="helper__3dmath_8h" startline="209" endline="213">getRotated</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_vector_float" kindref="compound">VectorFloat</ref></type>
+        <definition>VectorFloat VectorFloat::getRotated</definition>
+        <argsstring>(Quaternion *q)</argsstring>
+        <name>getRotated</name>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="209" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="209" bodyend="213"/>
+        <references refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" compoundref="helper__3dmath_8h" startline="194" endline="207">rotate</references>
+        <references refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" compoundref="helper__3dmath_8h" startline="161">x</references>
+        <references refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" compoundref="helper__3dmath_8h" startline="162">y</references>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">z</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" line="159" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h" bodystart="159" bodyend="214"/>
+    <listofallmembers>
+      <member refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>getMagnitude</name></member>
+      <member refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>getNormalized</name></member>
+      <member refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>getRotated</name></member>
+      <member refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>normalize</name></member>
+      <member refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>rotate</name></member>
+      <member refid="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>VectorFloat</name></member>
+      <member refid="class_vector_float_1a3b12ed03e28bded4316275882433e5aa" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>VectorFloat</name></member>
+      <member refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>x</name></member>
+      <member refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>y</name></member>
+      <member refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" prot="public" virt="non-virtual"><scope>VectorFloat</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

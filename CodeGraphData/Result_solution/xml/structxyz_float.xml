@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structxyz_float" kind="struct" prot="public">
+    <compoundname>xyzFloat</compoundname>
+    <includes refid="_m_p_u_8h" local="no">MPU.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxyz_float_1adebd5335cb7aba85879e518dc384083f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float xyzFloat::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" compoundref="_m_p_u_8cpp" startline="17" endline="24">MPU::get_yprInDagree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structxyz_float_1abdc0113ef110d4485040ce2cf7910b9c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float xyzFloat::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" compoundref="_m_p_u_8cpp" startline="17" endline="24">MPU::get_yprInDagree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structxyz_float_1a34a823925b61dfb9147ddc48a3688d8e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float xyzFloat::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" compoundref="_m_p_u_8cpp" startline="17" endline="24">MPU::get_yprInDagree</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h" bodystart="11" bodyend="13"/>
+    <listofallmembers>
+      <member refid="structxyz_float_1adebd5335cb7aba85879e518dc384083f" prot="public" virt="non-virtual"><scope>xyzFloat</scope><name>x</name></member>
+      <member refid="structxyz_float_1abdc0113ef110d4485040ce2cf7910b9c" prot="public" virt="non-virtual"><scope>xyzFloat</scope><name>y</name></member>
+      <member refid="structxyz_float_1a34a823925b61dfb9147ddc48a3688d8e" prot="public" virt="non-virtual"><scope>xyzFloat</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

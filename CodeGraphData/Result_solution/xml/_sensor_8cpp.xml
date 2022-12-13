@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_sensor_8cpp" kind="file">
+    <compoundname>Sensor.cpp</compoundname>
+    <includes refid="_sensor_8h" local="yes">Sensor.h</includes>
+    <incdepgraph>
+      <node id="831">
+        <label>WString.h</label>
+      </node>
+      <node id="833">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="832">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="830">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="831" relation="include">
+        </childnode>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.cpp</label>
+        <link refid="Sensor.cpp"/>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sensor_8h" kindref="compound">Sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.cpp"/>
+  </compounddef>
+</doxygen>

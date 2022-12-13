@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_p_3_01_delegate_00_01void_00_01_i_s_q_u_e_u_e_00_01_p_8_8_8_4" kind="struct" prot="public">
+    <compoundname>anonymous_namespace{MultiDelegate.h}::CallP&lt; Delegate, void, ISQUEUE, P...&gt;</compoundname>
+    <includes refid="_multi_delegate_8h" local="no">MultiDelegate.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="class_delegate" kindref="compound">Delegate</ref></type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>ISQUEUE</declname>
+        <defname>ISQUEUE</defname>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>P</declname>
+        <defname>P</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_p_3_01_delegate_00_01void_00_01_i_s_q_u_e_u_e_00_01_p_8_8_8_4_1ae75016d3e04163522e3cba1b34e5d984" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool anonymous_namespace{MultiDelegate.h}::CallP&lt; Delegate, void, ISQUEUE, P...&gt;::execute</definition>
+        <argsstring>(Delegate &amp;del, P...args)</argsstring>
+        <name>execute</name>
+        <param>
+          <type><ref refid="class_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <param>
+          <type>P...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="63" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="62" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="61" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_p_3_01_delegate_00_01void_00_01_i_s_q_u_e_u_e_00_01_p_8_8_8_4_1ae75016d3e04163522e3cba1b34e5d984" prot="public" virt="non-virtual"><scope>anonymous_namespace{MultiDelegate.h}::CallP&lt; Delegate, void, ISQUEUE, P...&gt;</scope><name>execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

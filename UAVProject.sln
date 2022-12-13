@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UAVProject", "UAVProject\UAVProject.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wire-1.0.1", "Libraries\Wire\1.0.1\Wire\Wire-1.0.1.vcxitems", "{94B40C1A-E45B-4EBD-8D5A-AB216E53A330}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "espsoftwareserial-main-6.14.1", "Libraries\espsoftwareserial-main\6.14.1\espsoftwareserial-main\espsoftwareserial-main-6.14.1.vcxitems", "{485D0BBF-EF4E-4299-824E-0C860EA6675E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "I2Cdev-0.0.0", "Libraries\I2Cdev\0.0.0\I2Cdev\I2Cdev-0.0.0.vcxitems", "{C3CD1085-3828-41BE-98EF-E2E238E4D45B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MPU6050-0.0.0", "Libraries\MPU6050\0.0.0\MPU6050\MPU6050-0.0.0.vcxitems", "{0E706D00-56FE-4F7F-9711-B7A006A298C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ESP32-Arduino-Servo-Library-master-1.0.1", "Libraries\ESP32-Arduino-Servo-Library-master\1.0.1\ESP32-Arduino-Servo-Library-master\ESP32-Arduino-Servo-Library-master-1.0.1.vcxitems", "{46B0B62C-39BA-44F4-BC9E-EFF8086875BE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PID-1.2.0", "Libraries\PID\1.2.0\PID\PID-1.2.0.vcxitems", "{F13C0F69-3AAE-4F9F-B902-FF749824443A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EBYTE-master-5.0", "Libraries\EBYTE-master\5.0\EBYTE-master\EBYTE-master-5.0.vcxitems", "{A60DDF10-F599-4DFE-BD5D-5116C1405D0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Adafruit_BMP280_Library-2.4.2", "Libraries\Adafruit_BMP280_Library\2.4.2\Adafruit_BMP280_Library\Adafruit_BMP280_Library-2.4.2.vcxitems", "{DDDC2884-689A-45B9-967E-43975C4B163E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13E153DA-2823-40FA-A9F6-EA1CE3EA3CCC}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Libraries\MPU6050\0.0.0\MPU6050\MPU6050-0.0.0.vcxitems*{0e706d00-56fe-4f7f-9711-b7a006a298c7}*SharedItemsImports = 9
+		Libraries\ESP32-Arduino-Servo-Library-master\1.0.1\ESP32-Arduino-Servo-Library-master\ESP32-Arduino-Servo-Library-master-1.0.1.vcxitems*{46b0b62c-39ba-44f4-bc9e-eff8086875be}*SharedItemsImports = 9
+		Libraries\espsoftwareserial-main\6.14.1\espsoftwareserial-main\espsoftwareserial-main-6.14.1.vcxitems*{485d0bbf-ef4e-4299-824e-0c860ea6675e}*SharedItemsImports = 9
+		Libraries\Wire\1.0.1\Wire\Wire-1.0.1.vcxitems*{94b40c1a-e45b-4ebd-8d5a-ab216e53a330}*SharedItemsImports = 9
+		Libraries\EBYTE-master\5.0\EBYTE-master\EBYTE-master-5.0.vcxitems*{a60ddf10-f599-4dfe-bd5d-5116c1405d0a}*SharedItemsImports = 9
+		Libraries\I2Cdev\0.0.0\I2Cdev\I2Cdev-0.0.0.vcxitems*{c3cd1085-3828-41be-98ef-e2e238e4d45b}*SharedItemsImports = 9
+		Libraries\Adafruit_BMP280_Library\2.4.2\Adafruit_BMP280_Library\Adafruit_BMP280_Library-2.4.2.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\EBYTE-master\5.0\EBYTE-master\EBYTE-master-5.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\ESP32-Arduino-Servo-Library-master\1.0.1\ESP32-Arduino-Servo-Library-master\ESP32-Arduino-Servo-Library-master-1.0.1.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\espsoftwareserial-main\6.14.1\espsoftwareserial-main\espsoftwareserial-main-6.14.1.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\I2Cdev\0.0.0\I2Cdev\I2Cdev-0.0.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\MPU6050\0.0.0\MPU6050\MPU6050-0.0.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\PID\1.2.0\PID\PID-1.2.0.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\Wire\1.0.1\Wire\Wire-1.0.1.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Libraries\Adafruit_BMP280_Library\2.4.2\Adafruit_BMP280_Library\Adafruit_BMP280_Library-2.4.2.vcxitems*{dddc2884-689a-45b9-967e-43975c4b163e}*SharedItemsImports = 9
+		Libraries\PID\1.2.0\PID\PID-1.2.0.vcxitems*{f13c0f69-3aae-4f9f-b902-ff749824443a}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal

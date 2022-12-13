@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kind="class" prot="public">
+    <compoundname>delegate::detail::MultiDelegatePImpl</compoundname>
+    <includes refid="_multi_delegate_8h" local="no">MultiDelegate.h</includes>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator" prot="public">delegate::detail::MultiDelegatePImpl::iterator</innerclass>
+    <innerclass refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t" prot="protected">delegate::detail::MultiDelegatePImpl::Node_t</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Delegate</declname>
+        <defname>Delegate</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>R</declname>
+        <defname>R</defname>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>ISQUEUE</declname>
+        <defname>ISQUEUE</defname>
+        <defval>false</defval>
+      </param>
+      <param>
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <declname>QUEUE_CAPACITY</declname>
+        <defname>QUEUE_CAPACITY</defname>
+        <defval>32</defval>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>P</declname>
+        <defname>P</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aa27befbb93e31d60f4388ff1a69c3400" prot="protected" static="no" mutable="no">
+        <type><ref refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t" kindref="compound">Node_t</ref> *</type>
+        <definition>Node_t* delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="182" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="182" bodyend="-1"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56f4055d96ba68b441bf25a6788c2c46" compoundref="_multi_delegate_8h" startline="289" endline="319">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::add</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" compoundref="_multi_delegate_8h" startline="321" endline="348">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::erase</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" compoundref="_multi_delegate_8h" startline="109" endline="119">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::MultiDelegatePImpl</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1af384f76ebf0f247a8b02d3300a458870" compoundref="_multi_delegate_8h" startline="365" endline="368">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator bool</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" compoundref="_multi_delegate_8h" startline="131" endline="142">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a52286b8915d7936483822b0495ebd37f" prot="protected" static="no" mutable="no">
+        <type><ref refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t" kindref="compound">Node_t</ref> *</type>
+        <definition>Node_t* delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="183" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="183" bodyend="-1"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56f4055d96ba68b441bf25a6788c2c46" compoundref="_multi_delegate_8h" startline="289" endline="319">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::add</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" compoundref="_multi_delegate_8h" startline="321" endline="348">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::erase</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" compoundref="_multi_delegate_8h" startline="109" endline="119">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::MultiDelegatePImpl</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" compoundref="_multi_delegate_8h" startline="131" endline="142">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a01922e92bbb12e37fd7096e42e813596" prot="protected" static="no" mutable="no">
+        <type><ref refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t" kindref="compound">Node_t</ref> *</type>
+        <definition>Node_t* delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::unused</definition>
+        <argsstring></argsstring>
+        <name>unused</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="184" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a07f9513c257e6296168dea5cfb351fe7" compoundref="_multi_delegate_8h" startline="190" endline="211">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::get_node_unsafe</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" compoundref="_multi_delegate_8h" startline="109" endline="119">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::MultiDelegatePImpl</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" compoundref="_multi_delegate_8h" startline="131" endline="142">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator=</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6830e221ed95f45f4e5142d2e06e6ed8" compoundref="_multi_delegate_8h" startline="213" endline="218">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::recycle_node_unsafe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6082b6b777a64009280b5b59667db0e6" prot="protected" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::nodeCount</definition>
+        <argsstring></argsstring>
+        <name>nodeCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="185" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a07f9513c257e6296168dea5cfb351fe7" compoundref="_multi_delegate_8h" startline="190" endline="211">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::get_node_unsafe</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" compoundref="_multi_delegate_8h" startline="109" endline="119">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::MultiDelegatePImpl</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" compoundref="_multi_delegate_8h" startline="131" endline="142">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a9d1ba7e86f2fc8b6691d290f623dfde5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::MultiDelegatePImpl</definition>
+        <argsstring>()=default</argsstring>
+        <name>MultiDelegatePImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a61fa2e8a92617c3b6595e17b24e9a38b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::~MultiDelegatePImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~MultiDelegatePImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="101" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a9b0b2c13de71a413bc3b79f2ccb4ac08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::MultiDelegatePImpl</definition>
+        <argsstring>(const MultiDelegatePImpl &amp;)=delete</argsstring>
+        <name>MultiDelegatePImpl</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a15d654cfdf5dc0068d90e29958308a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        <definition>MultiDelegatePImpl&amp; delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator=</definition>
+        <argsstring>(const MultiDelegatePImpl &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::MultiDelegatePImpl</definition>
+        <argsstring>(MultiDelegatePImpl &amp;&amp;md)</argsstring>
+        <name>MultiDelegatePImpl</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;&amp;</type>
+          <declname>md</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="109" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="109" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a500f1b1c99047f9166de2593daaf1a13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::MultiDelegatePImpl</definition>
+        <argsstring>(const Delegate &amp;del)</argsstring>
+        <name>MultiDelegatePImpl</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="121" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a2ed3381e6d95e9736b5a186dbeef6e8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::MultiDelegatePImpl</definition>
+        <argsstring>(Delegate &amp;&amp;del)</argsstring>
+        <name>MultiDelegatePImpl</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;&amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="126" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        <definition>MultiDelegatePImpl&amp; delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator=</definition>
+        <argsstring>(MultiDelegatePImpl &amp;&amp;md)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;&amp;</type>
+          <declname>md</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="131" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="131" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a060da3076fe955a077b04520e91f7751" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        <definition>MultiDelegatePImpl&amp; delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator=</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="144" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="144" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aae0d4572f249d0e3ddce77af3af498cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        <definition>MultiDelegatePImpl&amp; delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator+=</definition>
+        <argsstring>(const Delegate &amp;del)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="159" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a1dd6b660da18774be7700da4cd25904a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" kindref="compound">MultiDelegatePImpl</ref> &amp;</type>
+        <definition>MultiDelegatePImpl&amp; delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator+=</definition>
+        <argsstring>(Delegate &amp;&amp;del)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;&amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="165" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a2bc816c53c58a20100e2d1165589306d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="275" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="275" bodyend="278"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a7e4adb2ae87c41b872e992f27fe54b76" compoundref="_multi_delegate_8h" startline="350" endline="363">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::erase</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" compoundref="_multi_delegate_8h" startline="370" endline="401">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a59dbf54afaa01e3a7188dacb977e5dd3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="279" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="279" bodyend="282"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" compoundref="_multi_delegate_8h" startline="321" endline="348">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::erase</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ae348056e8bf6c5109d5f382bd90040f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> *IRAM_ATTR</type>
+        <definition>const Delegate* IRAM_ATTR delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::add</definition>
+        <argsstring>(const Delegate &amp;del)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="284" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="284" bodyend="287"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ae348056e8bf6c5109d5f382bd90040f2" compoundref="_multi_delegate_8h" startline="284" endline="287">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::add</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a500f1b1c99047f9166de2593daaf1a13" compoundref="_multi_delegate_8h" startline="121" endline="124">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::MultiDelegatePImpl</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aae0d4572f249d0e3ddce77af3af498cb" compoundref="_multi_delegate_8h" startline="159" endline="163">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator+=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56f4055d96ba68b441bf25a6788c2c46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> *IRAM_ATTR</type>
+        <definition>const Delegate* IRAM_ATTR delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::add</definition>
+        <argsstring>(Delegate &amp;&amp;del)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> &amp;&amp;</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="289" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="289" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::erase</definition>
+        <argsstring>(iterator it)</argsstring>
+        <name>erase</name>
+        <param>
+          <type><ref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator" kindref="compound">iterator</ref></type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="321" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="321" bodyend="348"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a7e4adb2ae87c41b872e992f27fe54b76" compoundref="_multi_delegate_8h" startline="350" endline="363">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::erase</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" compoundref="_multi_delegate_8h" startline="370" endline="401">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a7e4adb2ae87c41b872e992f27fe54b76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::erase</definition>
+        <argsstring>(const Delegate *const del)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>const <ref refid="classdelegate_1_1detail_1_1_delegate" kindref="compound">Delegate</ref> *const</type>
+          <declname>del</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="350" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="350" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1af384f76ebf0f247a8b02d3300a458870" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator bool</definition>
+        <argsstring>() const </argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="365" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>R</type>
+        <definition>R delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::operator()</definition>
+        <argsstring>(P...args)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>P...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="370" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="370" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a07f9513c257e6296168dea5cfb351fe7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t" kindref="compound">Node_t</ref> *IRAM_ATTR</type>
+        <definition>Node_t* IRAM_ATTR delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::get_node_unsafe</definition>
+        <argsstring>()</argsstring>
+        <name>get_node_unsafe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="190" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="190" bodyend="211"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56f4055d96ba68b441bf25a6788c2c46" compoundref="_multi_delegate_8h" startline="289" endline="319">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::add</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6830e221ed95f45f4e5142d2e06e6ed8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::recycle_node_unsafe</definition>
+        <argsstring>(Node_t *node)</argsstring>
+        <name>recycle_node_unsafe</name>
+        <param>
+          <type><ref refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t" kindref="compound">Node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="213" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="213" bodyend="218"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" compoundref="_multi_delegate_8h" startline="321" endline="348">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::erase</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="234">
+        <label>A</label>
+      </node>
+      <node id="235">
+        <label>R</label>
+      </node>
+      <node id="231">
+        <label>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::Node_t</label>
+        <link refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t"/>
+        <childnode refid="232" relation="usage">
+          <edgelabel>mDelegate</edgelabel>
+        </childnode>
+        <childnode refid="231" relation="usage">
+          <edgelabel>mNext</edgelabel>
+        </childnode>
+      </node>
+      <node id="233">
+        <label>delegate::detail::DelegatePImpl&lt; A, R, P...&gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate_p_impl"/>
+        <childnode refid="234" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="235" relation="usage">
+          <edgelabel>fnA</edgelabel>
+        </childnode>
+      </node>
+      <node id="232">
+        <label>delegate::detail::Delegate&lt; A, R, P &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate"/>
+        <childnode refid="233" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl"/>
+        <childnode refid="231" relation="usage">
+          <edgelabel>unused</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>first</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="98" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="97" bodyend="402"/>
+    <listofallmembers>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ae348056e8bf6c5109d5f382bd90040f2" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>add</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56f4055d96ba68b441bf25a6788c2c46" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>add</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a2bc816c53c58a20100e2d1165589306d" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>begin</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a59dbf54afaa01e3a7188dacb977e5dd3" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>end</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>erase</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a7e4adb2ae87c41b872e992f27fe54b76" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>erase</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aa27befbb93e31d60f4388ff1a69c3400" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>first</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a07f9513c257e6296168dea5cfb351fe7" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>get_node_unsafe</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a52286b8915d7936483822b0495ebd37f" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>last</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a9d1ba7e86f2fc8b6691d290f623dfde5" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a9b0b2c13de71a413bc3b79f2ccb4ac08" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a500f1b1c99047f9166de2593daaf1a13" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a2ed3381e6d95e9736b5a186dbeef6e8a" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6082b6b777a64009280b5b59667db0e6" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>nodeCount</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1af384f76ebf0f247a8b02d3300a458870" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator bool</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator()</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aae0d4572f249d0e3ddce77af3af498cb" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator+=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a1dd6b660da18774be7700da4cd25904a" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator+=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a15d654cfdf5dc0068d90e29958308a41" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a060da3076fe955a077b04520e91f7751" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6830e221ed95f45f4e5142d2e06e6ed8" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>recycle_node_unsafe</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a01922e92bbb12e37fd7096e42e813596" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>unused</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a61fa2e8a92617c3b6595e17b24e9a38b" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegatePImpl</scope><name>~MultiDelegatePImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

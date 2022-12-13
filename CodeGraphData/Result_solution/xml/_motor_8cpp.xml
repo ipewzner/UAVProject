@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_motor_8cpp" kind="file">
+    <compoundname>Motor.cpp</compoundname>
+    <includes refid="_motor_8h" local="yes">Motor.h</includes>
+    <incdepgraph>
+      <node id="759">
+        <label>WString.h</label>
+      </node>
+      <node id="761">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="760">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="758">
+        <label>Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.cpp</label>
+        <link refid="Motor.cpp"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_motor_8h" kindref="compound">Motor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.cpp"/>
+  </compounddef>
+</doxygen>

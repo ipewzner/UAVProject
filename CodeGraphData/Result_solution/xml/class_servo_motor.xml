@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_servo_motor" kind="class" prot="public">
+    <compoundname>ServoMotor</compoundname>
+    <basecompoundref refid="class_motor" prot="public" virt="non-virtual">Motor</basecompoundref>
+    <includes refid="_servo_motor_8h" local="no">ServoMotor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" prot="public" static="no" mutable="no">
+        <type><ref refid="class_servo___e_s_p32" kindref="compound">Servo_ESP32</ref></type>
+        <definition>Servo_ESP32 ServoMotor::servo</definition>
+        <argsstring></argsstring>
+        <name>servo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="10" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_servo_motor_1a62f250e043340bae6bd8f940ac071424" compoundref="_servo_motor_8cpp" startline="36" endline="38">get_currentPosition</referencedby>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">init</referencedby>
+        <referencedby refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" compoundref="_servo_motor_8cpp" startline="27" endline="34">move</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_motor_1ab440d0c3ab7bbe6b2c9b8b61801ba059" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t ServoMotor::signelPin</definition>
+        <argsstring></argsstring>
+        <name>signelPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">init</referencedby>
+        <referencedby refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" compoundref="_servo_motor_8cpp" startline="19" endline="25">ServoMotor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t ServoMotor::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">init</referencedby>
+        <referencedby refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" compoundref="_servo_motor_8cpp" startline="27" endline="34">move</referencedby>
+        <referencedby refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" compoundref="_servo_motor_8cpp" startline="19" endline="25">ServoMotor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t ServoMotor::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">init</referencedby>
+        <referencedby refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" compoundref="_servo_motor_8cpp" startline="27" endline="34">move</referencedby>
+        <referencedby refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" compoundref="_servo_motor_8cpp" startline="19" endline="25">ServoMotor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_motor_1ae58e9929ba8bc2d947f5f610a1e88907" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ServoMotor::servoNum</definition>
+        <argsstring></argsstring>
+        <name>servoNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" compoundref="_servo_motor_8cpp" startline="7" endline="17">init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ServoMotor::ServoMotor</definition>
+        <argsstring>(char *name, size_t signelPin, size_t min=0, size_t max=180)</argsstring>
+        <name>ServoMotor</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>signelPin</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>min</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>max</declname>
+          <defval>180</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp" bodystart="19" bodyend="25"/>
+        <references refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" compoundref="_servo_motor_8h" startline="11">max</references>
+        <references refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" compoundref="_servo_motor_8h" startline="11">min</references>
+        <references refid="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" compoundref="_motor_8h" startline="18">Motor::name</references>
+        <references refid="class_servo_motor_1ab440d0c3ab7bbe6b2c9b8b61801ba059" compoundref="_servo_motor_8h" startline="11">signelPin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ServoMotor::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="class_motor_1ab94ecfd1c8f65ac58655b5ba3f74107d">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="14" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp" bodystart="7" bodyend="17"/>
+        <references refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" compoundref="_servo___e_s_p32_8cpp" startline="46" endline="69">Servo_ESP32::attach</references>
+        <references refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" compoundref="_servo_motor_8h" startline="11">max</references>
+        <references refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" compoundref="_servo_motor_8h" startline="11">min</references>
+        <references refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" compoundref="_motor_8h" startline="13" endline="17">Motor::motorNumber</references>
+        <references refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" compoundref="_servo_motor_8h" startline="10">servo</references>
+        <references refid="class_servo_motor_1ae58e9929ba8bc2d947f5f610a1e88907" compoundref="_servo_motor_8h" startline="12">servoNum</references>
+        <references refid="class_servo_motor_1ab440d0c3ab7bbe6b2c9b8b61801ba059" compoundref="_servo_motor_8h" startline="11">signelPin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ServoMotor::move</definition>
+        <argsstring>(size_t deg)</argsstring>
+        <name>move</name>
+        <reimplements refid="class_motor_1a90ba8644422d8e273eaa6bb772d25b4f">move</reimplements>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>deg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp" bodystart="27" bodyend="34"/>
+        <references refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" compoundref="_servo_motor_8h" startline="11">max</references>
+        <references refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" compoundref="_servo_motor_8h" startline="11">min</references>
+        <references refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" compoundref="_servo_motor_8h" startline="10">servo</references>
+        <references refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" compoundref="_servo___e_s_p32_8cpp" startline="84" endline="87">Servo_ESP32::write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_motor_1a62f250e043340bae6bd8f940ac071424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ServoMotor::get_currentPosition</definition>
+        <argsstring>()</argsstring>
+        <name>get_currentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="16" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp" bodystart="36" bodyend="38"/>
+        <references refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" compoundref="_servo___e_s_p32_8cpp" startline="98" endline="100">Servo_ESP32::read</references>
+        <references refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" compoundref="_servo_motor_8h" startline="10">servo</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="258">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+      </node>
+      <node id="257">
+        <label>ServoMotor</label>
+        <link refid="class_servo_motor"/>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="260">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+      </node>
+      <node id="259">
+        <label>ServoMotor</label>
+        <link refid="class_servo_motor"/>
+        <childnode refid="260" relation="public-inheritance">
+        </childnode>
+        <childnode refid="261" relation="usage">
+          <edgelabel>servo</edgelabel>
+        </childnode>
+      </node>
+      <node id="261">
+        <label>Servo_ESP32</label>
+        <link refid="class_servo___e_s_p32"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" line="8" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_servo_motor_1a62f250e043340bae6bd8f940ac071424" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>get_currentPosition</name></member>
+      <member refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" prot="public" virt="virtual"><scope>ServoMotor</scope><name>init</name></member>
+      <member refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>max</name></member>
+      <member refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>min</name></member>
+      <member refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>motorNumber</name></member>
+      <member refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" prot="public" virt="virtual"><scope>ServoMotor</scope><name>move</name></member>
+      <member refid="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>name</name></member>
+      <member refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>servo</name></member>
+      <member refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>ServoMotor</name></member>
+      <member refid="class_servo_motor_1ae58e9929ba8bc2d947f5f610a1e88907" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>servoNum</name></member>
+      <member refid="class_servo_motor_1ab440d0c3ab7bbe6b2c9b8b61801ba059" prot="public" virt="non-virtual"><scope>ServoMotor</scope><name>signelPin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

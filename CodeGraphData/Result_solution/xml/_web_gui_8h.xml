@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_web_gui_8h" kind="file">
+    <compoundname>WebGui.h</compoundname>
+    <includedby refid="_web_gui_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/WebGui.cpp</includedby>
+    <invincdepgraph>
+      <node id="913">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/WebGui.h</label>
+        <link refid="WebGui.h"/>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="914">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/WebGui.cpp</label>
+        <link refid="_web_gui_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>WebGui.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">#ifndef<sp/>_WEBGUI_h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">#define<sp/>_WEBGUI_h</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">#include<sp/>&quot;Config.h&quot;</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">#include<sp/>&quot;ControlerInterface.h&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">#include<sp/>&lt;ESPAsyncWebServer.h&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">#include<sp/>&lt;SPIFFS.h&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">#include<sp/>&lt;WebSocketsServer.h&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">#include<sp/>&lt;ESPmDNS.h&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">#include<sp/>&lt;WiFi.h&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">#include<sp/>&lt;WiFiClient.h&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">#include<sp/>&lt;WiFiAP.h&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">class<sp/>WebGui<sp/>:public<sp/>ControlerInterface</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">public:</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>AsyncWebServer*<sp/>server;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>WebSocketsServer*<sp/>webSocket;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>everyLoop();<sp/>//put<sp/>me<sp/>in<sp/>loop</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>init();</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>show(DynamicJsonDocument<sp/>json);</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">};</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">#endif</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/WebGui.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,742 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_p_i_d" kind="class" prot="public">
+    <compoundname>PID</compoundname>
+    <derivedcompoundref refid="class_alttude_controler" prot="public" virt="non-virtual">AlttudeControler</derivedcompoundref>
+    <includes refid="_p_i_d__v1_8h" local="no">PID_v1.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_p_i_d_1ae17c110340266ddabea05cfbf28cee06" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::dispKp</definition>
+        <argsstring></argsstring>
+        <name>dispKp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="66" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" compoundref="_p_i_d__v1_8cpp" startline="219" endline="219">GetKp</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a7beb970d37564d923a5a1776cefdd600" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::dispKi</definition>
+        <argsstring></argsstring>
+        <name>dispKi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="67" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" compoundref="_p_i_d__v1_8cpp" startline="220" endline="220">GetKi</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a1592fdceb0d76a640e640d6050d8b89c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::dispKd</definition>
+        <argsstring></argsstring>
+        <name>dispKd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="68" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" compoundref="_p_i_d__v1_8cpp" startline="221" endline="221">GetKd</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::kp</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="70" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="203" endline="212">SetControllerDirection</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::ki</definition>
+        <argsstring></argsstring>
+        <name>ki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="71" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="203" endline="212">SetControllerDirection</referencedby>
+        <referencedby refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" compoundref="_p_i_d__v1_8cpp" startline="134" endline="144">SetSampleTime</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="72" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="203" endline="212">SetControllerDirection</referencedby>
+        <referencedby refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" compoundref="_p_i_d__v1_8cpp" startline="134" endline="144">SetSampleTime</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PID::controllerDirection</definition>
+        <argsstring></argsstring>
+        <name>controllerDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="74" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" compoundref="_p_i_d__v1_8cpp" startline="223" endline="223">GetDirection</referencedby>
+        <referencedby refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="203" endline="212">SetControllerDirection</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a6e4f2ff57fcb62a766fa9c0768a9ea99" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PID::pOn</definition>
+        <argsstring></argsstring>
+        <name>pOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="75" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* PID::myInput</definition>
+        <argsstring></argsstring>
+        <name>myInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="77" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</referencedby>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* PID::myOutput</definition>
+        <argsstring></argsstring>
+        <name>myOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="78" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</referencedby>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+        <referencedby refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="154" endline="168">SetOutputLimits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a1e15f064cf0cd4d199e2919b48cf3e69" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* PID::mySetpoint</definition>
+        <argsstring></argsstring>
+        <name>mySetpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="79" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1afcb8eb131062be169f29fcc0733e7433" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long PID::lastTime</definition>
+        <argsstring></argsstring>
+        <name>lastTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="82" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a8c8989f2189e4edd8885b45959b0694f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::outputSum</definition>
+        <argsstring></argsstring>
+        <name>outputSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="83" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</referencedby>
+        <referencedby refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="154" endline="168">SetOutputLimits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1af5e573ec3778a93ac616a2ce3ef64420" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::lastInput</definition>
+        <argsstring></argsstring>
+        <name>lastInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="83" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a0dd517a3300badb571656b35f621947d" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long PID::SampleTime</definition>
+        <argsstring></argsstring>
+        <name>SampleTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="85" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+        <referencedby refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" compoundref="_p_i_d__v1_8cpp" startline="134" endline="144">SetSampleTime</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::outMin</definition>
+        <argsstring></argsstring>
+        <name>outMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="86" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</referencedby>
+        <referencedby refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="154" endline="168">SetOutputLimits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::outMax</definition>
+        <argsstring></argsstring>
+        <name>outMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="86" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</referencedby>
+        <referencedby refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="154" endline="168">SetOutputLimits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PID::inAuto</definition>
+        <argsstring></argsstring>
+        <name>inAuto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="87" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" compoundref="_p_i_d__v1_8cpp" startline="222" endline="222">GetMode</referencedby>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+        <referencedby refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="203" endline="212">SetControllerDirection</referencedby>
+        <referencedby refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" compoundref="_p_i_d__v1_8cpp" startline="175" endline="183">SetMode</referencedby>
+        <referencedby refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="154" endline="168">SetOutputLimits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1af52034b0d6931256f071827d3bc54335" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PID::pOnE</definition>
+        <argsstring></argsstring>
+        <name>pOnE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="87" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">Compute</referencedby>
+        <referencedby refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" compoundref="_p_i_d__v1_8cpp" startline="102" endline="122">SetTunings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PID::PID</definition>
+        <argsstring>(double *, double *, double *, double, double, double, int, int)</argsstring>
+        <name>PID</name>
+        <param>
+          <type>double *</type>
+          <defname>Input</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>Output</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>Setpoint</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Ki</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kd</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>POn</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ControllerDirection</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="20" bodyend="37"/>
+        <references refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" compoundref="_p_i_d__v1_8h" startline="87">inAuto</references>
+        <references refid="class_p_i_d_1afcb8eb131062be169f29fcc0733e7433" compoundref="_p_i_d__v1_8h" startline="82">lastTime</references>
+        <references refid="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" compoundref="_p_i_d__v1_8h" startline="77">myInput</references>
+        <references refid="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" compoundref="_p_i_d__v1_8h" startline="78">myOutput</references>
+        <references refid="class_p_i_d_1a1e15f064cf0cd4d199e2919b48cf3e69" compoundref="_p_i_d__v1_8h" startline="79">mySetpoint</references>
+        <references refid="class_p_i_d_1a0dd517a3300badb571656b35f621947d" compoundref="_p_i_d__v1_8h" startline="85">SampleTime</references>
+        <references refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="203" endline="212">SetControllerDirection</references>
+        <references refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="154" endline="168">SetOutputLimits</references>
+        <references refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" compoundref="_p_i_d__v1_8cpp" startline="127" endline="129">SetTunings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PID::PID</definition>
+        <argsstring>(double *, double *, double *, double, double, double, int)</argsstring>
+        <name>PID</name>
+        <param>
+          <type>double *</type>
+          <defname>Input</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>Output</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>Setpoint</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Ki</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kd</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ControllerDirection</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="24" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetMode</definition>
+        <argsstring>(int Mode)</argsstring>
+        <name>SetMode</name>
+        <param>
+          <type>int</type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="27" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="175" bodyend="183"/>
+        <references refid="_p_i_d__v1_8h_1a3851a1a8ddec9eacd2e30a8a19bb8cc8" compoundref="_p_i_d__v1_8h" startline="12">AUTOMATIC</references>
+        <references refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" compoundref="_p_i_d__v1_8h" startline="87">inAuto</references>
+        <references refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" compoundref="_p_i_d__v1_8cpp" startline="189" endline="195">Initialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PID::Compute</definition>
+        <argsstring>()</argsstring>
+        <name>Compute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="29" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="58" bodyend="95"/>
+        <references refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" compoundref="_p_i_d__v1_8h" startline="87">inAuto</references>
+        <references refid="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" compoundref="_p_i_d__v1_8h" startline="72">kd</references>
+        <references refid="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" compoundref="_p_i_d__v1_8h" startline="71">ki</references>
+        <references refid="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" compoundref="_p_i_d__v1_8h" startline="70">kp</references>
+        <references refid="class_p_i_d_1af5e573ec3778a93ac616a2ce3ef64420" compoundref="_p_i_d__v1_8h" startline="83">lastInput</references>
+        <references refid="class_p_i_d_1afcb8eb131062be169f29fcc0733e7433" compoundref="_p_i_d__v1_8h" startline="82">lastTime</references>
+        <references refid="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" compoundref="_p_i_d__v1_8h" startline="77">myInput</references>
+        <references refid="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" compoundref="_p_i_d__v1_8h" startline="78">myOutput</references>
+        <references refid="class_p_i_d_1a1e15f064cf0cd4d199e2919b48cf3e69" compoundref="_p_i_d__v1_8h" startline="79">mySetpoint</references>
+        <references refid="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" compoundref="_p_i_d__v1_8h" startline="86">outMax</references>
+        <references refid="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" compoundref="_p_i_d__v1_8h" startline="86">outMin</references>
+        <references refid="class_p_i_d_1a8c8989f2189e4edd8885b45959b0694f" compoundref="_p_i_d__v1_8h" startline="83">outputSum</references>
+        <references refid="class_p_i_d_1af52034b0d6931256f071827d3bc54335" compoundref="_p_i_d__v1_8h" startline="87">pOnE</references>
+        <references refid="class_p_i_d_1a0dd517a3300badb571656b35f621947d" compoundref="_p_i_d__v1_8h" startline="85">SampleTime</references>
+        <referencedby refid="class_yaw_control_1a9e0187695308163234a9f3b2c99bac44" compoundref="_yaw_control_8cpp" startline="37" endline="39">YawControl::Compute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetOutputLimits</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>SetOutputLimits</name>
+        <param>
+          <type>double</type>
+          <defname>Min</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Max</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="34" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="154" bodyend="168"/>
+        <references refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" compoundref="_p_i_d__v1_8h" startline="87">inAuto</references>
+        <references refid="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" compoundref="_p_i_d__v1_8h" startline="78">myOutput</references>
+        <references refid="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" compoundref="_p_i_d__v1_8h" startline="86">outMax</references>
+        <references refid="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" compoundref="_p_i_d__v1_8h" startline="86">outMin</references>
+        <references refid="class_p_i_d_1a8c8989f2189e4edd8885b45959b0694f" compoundref="_p_i_d__v1_8h" startline="83">outputSum</references>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetTunings</definition>
+        <argsstring>(double, double, double)</argsstring>
+        <name>SetTunings</name>
+        <param>
+          <type>double</type>
+          <defname>Kp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Ki</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kd</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="41" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="127" bodyend="129"/>
+        <references refid="class_p_i_d_1a6e4f2ff57fcb62a766fa9c0768a9ea99" compoundref="_p_i_d__v1_8h" startline="75">pOn</references>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetTunings</definition>
+        <argsstring>(double, double, double, int)</argsstring>
+        <name>SetTunings</name>
+        <param>
+          <type>double</type>
+          <defname>Kp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Ki</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kd</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>POn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="44" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="102" bodyend="122"/>
+        <references refid="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" compoundref="_p_i_d__v1_8h" startline="74">controllerDirection</references>
+        <references refid="class_p_i_d_1a1592fdceb0d76a640e640d6050d8b89c" compoundref="_p_i_d__v1_8h" startline="68">dispKd</references>
+        <references refid="class_p_i_d_1a7beb970d37564d923a5a1776cefdd600" compoundref="_p_i_d__v1_8h" startline="67">dispKi</references>
+        <references refid="class_p_i_d_1ae17c110340266ddabea05cfbf28cee06" compoundref="_p_i_d__v1_8h" startline="66">dispKp</references>
+        <references refid="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" compoundref="_p_i_d__v1_8h" startline="72">kd</references>
+        <references refid="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" compoundref="_p_i_d__v1_8h" startline="71">ki</references>
+        <references refid="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" compoundref="_p_i_d__v1_8h" startline="70">kp</references>
+        <references refid="_p_i_d__v1_8h_1a67dee8f794e9ba4f57e1df4644947b5a" compoundref="_p_i_d__v1_8h" startline="17">P_ON_E</references>
+        <references refid="class_p_i_d_1a6e4f2ff57fcb62a766fa9c0768a9ea99" compoundref="_p_i_d__v1_8h" startline="75">pOn</references>
+        <references refid="class_p_i_d_1af52034b0d6931256f071827d3bc54335" compoundref="_p_i_d__v1_8h" startline="87">pOnE</references>
+        <references refid="_p_i_d__v1_8h_1a00548cec6d104932bf79a65bac1c47e8" compoundref="_p_i_d__v1_8h" startline="15">REVERSE</references>
+        <references refid="class_p_i_d_1a0dd517a3300badb571656b35f621947d" compoundref="_p_i_d__v1_8h" startline="85">SampleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetControllerDirection</definition>
+        <argsstring>(int)</argsstring>
+        <name>SetControllerDirection</name>
+        <param>
+          <type>int</type>
+          <defname>Direction</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="47" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="203" bodyend="212"/>
+        <references refid="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" compoundref="_p_i_d__v1_8h" startline="74">controllerDirection</references>
+        <references refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" compoundref="_p_i_d__v1_8h" startline="87">inAuto</references>
+        <references refid="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" compoundref="_p_i_d__v1_8h" startline="72">kd</references>
+        <references refid="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" compoundref="_p_i_d__v1_8h" startline="71">ki</references>
+        <references refid="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" compoundref="_p_i_d__v1_8h" startline="70">kp</references>
+        <referencedby refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" compoundref="_p_i_d__v1_8cpp" startline="20" endline="37">PID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetSampleTime</definition>
+        <argsstring>(int)</argsstring>
+        <name>SetSampleTime</name>
+        <param>
+          <type>int</type>
+          <defname>NewSampleTime</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="51" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="134" bodyend="144"/>
+        <references refid="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" compoundref="_p_i_d__v1_8h" startline="72">kd</references>
+        <references refid="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" compoundref="_p_i_d__v1_8h" startline="71">ki</references>
+        <references refid="class_p_i_d_1a0dd517a3300badb571656b35f621947d" compoundref="_p_i_d__v1_8h" startline="85">SampleTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PID::GetKp</definition>
+        <argsstring>()</argsstring>
+        <name>GetKp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="57" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="219" bodyend="219"/>
+        <references refid="class_p_i_d_1ae17c110340266ddabea05cfbf28cee06" compoundref="_p_i_d__v1_8h" startline="66">dispKp</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PID::GetKi</definition>
+        <argsstring>()</argsstring>
+        <name>GetKi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="58" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="220" bodyend="220"/>
+        <references refid="class_p_i_d_1a7beb970d37564d923a5a1776cefdd600" compoundref="_p_i_d__v1_8h" startline="67">dispKi</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PID::GetKd</definition>
+        <argsstring>()</argsstring>
+        <name>GetKd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="59" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="221" bodyend="221"/>
+        <references refid="class_p_i_d_1a1592fdceb0d76a640e640d6050d8b89c" compoundref="_p_i_d__v1_8h" startline="68">dispKd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PID::GetMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="60" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="222" bodyend="222"/>
+        <references refid="_p_i_d__v1_8h_1a3851a1a8ddec9eacd2e30a8a19bb8cc8" compoundref="_p_i_d__v1_8h" startline="12">AUTOMATIC</references>
+        <references refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" compoundref="_p_i_d__v1_8h" startline="87">inAuto</references>
+        <references refid="_p_i_d__v1_8h_1a8187a9af791c0a44ba67edd9cf266961" compoundref="_p_i_d__v1_8h" startline="13">MANUAL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PID::GetDirection</definition>
+        <argsstring>()</argsstring>
+        <name>GetDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="61" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="223" bodyend="223"/>
+        <references refid="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" compoundref="_p_i_d__v1_8h" startline="74">controllerDirection</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="64" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.cpp" bodystart="189" bodyend="195"/>
+        <references refid="class_p_i_d_1af5e573ec3778a93ac616a2ce3ef64420" compoundref="_p_i_d__v1_8h" startline="83">lastInput</references>
+        <references refid="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" compoundref="_p_i_d__v1_8h" startline="77">myInput</references>
+        <references refid="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" compoundref="_p_i_d__v1_8h" startline="78">myOutput</references>
+        <references refid="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" compoundref="_p_i_d__v1_8h" startline="86">outMax</references>
+        <references refid="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" compoundref="_p_i_d__v1_8h" startline="86">outMin</references>
+        <references refid="class_p_i_d_1a8c8989f2189e4edd8885b45959b0694f" compoundref="_p_i_d__v1_8h" startline="83">outputSum</references>
+        <referencedby refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" compoundref="_p_i_d__v1_8cpp" startline="175" endline="183">SetMode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="243">
+        <label>AlttudeControler</label>
+        <link refid="class_alttude_controler"/>
+        <childnode refid="242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>PID</label>
+        <link refid="class_p_i_d"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" line="6" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/PID/1.2.0/PID/PID_v1.h" bodystart="5" bodyend="88"/>
+    <listofallmembers>
+      <member refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" prot="public" virt="non-virtual"><scope>PID</scope><name>Compute</name></member>
+      <member refid="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" prot="private" virt="non-virtual"><scope>PID</scope><name>controllerDirection</name></member>
+      <member refid="class_p_i_d_1a1592fdceb0d76a640e640d6050d8b89c" prot="private" virt="non-virtual"><scope>PID</scope><name>dispKd</name></member>
+      <member refid="class_p_i_d_1a7beb970d37564d923a5a1776cefdd600" prot="private" virt="non-virtual"><scope>PID</scope><name>dispKi</name></member>
+      <member refid="class_p_i_d_1ae17c110340266ddabea05cfbf28cee06" prot="private" virt="non-virtual"><scope>PID</scope><name>dispKp</name></member>
+      <member refid="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" prot="public" virt="non-virtual"><scope>PID</scope><name>GetDirection</name></member>
+      <member refid="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" prot="public" virt="non-virtual"><scope>PID</scope><name>GetKd</name></member>
+      <member refid="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" prot="public" virt="non-virtual"><scope>PID</scope><name>GetKi</name></member>
+      <member refid="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" prot="public" virt="non-virtual"><scope>PID</scope><name>GetKp</name></member>
+      <member refid="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" prot="public" virt="non-virtual"><scope>PID</scope><name>GetMode</name></member>
+      <member refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" prot="private" virt="non-virtual"><scope>PID</scope><name>inAuto</name></member>
+      <member refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" prot="private" virt="non-virtual"><scope>PID</scope><name>Initialize</name></member>
+      <member refid="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" prot="private" virt="non-virtual"><scope>PID</scope><name>kd</name></member>
+      <member refid="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" prot="private" virt="non-virtual"><scope>PID</scope><name>ki</name></member>
+      <member refid="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" prot="private" virt="non-virtual"><scope>PID</scope><name>kp</name></member>
+      <member refid="class_p_i_d_1af5e573ec3778a93ac616a2ce3ef64420" prot="private" virt="non-virtual"><scope>PID</scope><name>lastInput</name></member>
+      <member refid="class_p_i_d_1afcb8eb131062be169f29fcc0733e7433" prot="private" virt="non-virtual"><scope>PID</scope><name>lastTime</name></member>
+      <member refid="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" prot="private" virt="non-virtual"><scope>PID</scope><name>myInput</name></member>
+      <member refid="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" prot="private" virt="non-virtual"><scope>PID</scope><name>myOutput</name></member>
+      <member refid="class_p_i_d_1a1e15f064cf0cd4d199e2919b48cf3e69" prot="private" virt="non-virtual"><scope>PID</scope><name>mySetpoint</name></member>
+      <member refid="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" prot="private" virt="non-virtual"><scope>PID</scope><name>outMax</name></member>
+      <member refid="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" prot="private" virt="non-virtual"><scope>PID</scope><name>outMin</name></member>
+      <member refid="class_p_i_d_1a8c8989f2189e4edd8885b45959b0694f" prot="private" virt="non-virtual"><scope>PID</scope><name>outputSum</name></member>
+      <member refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" prot="public" virt="non-virtual"><scope>PID</scope><name>PID</name></member>
+      <member refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" prot="public" virt="non-virtual"><scope>PID</scope><name>PID</name></member>
+      <member refid="class_p_i_d_1a6e4f2ff57fcb62a766fa9c0768a9ea99" prot="private" virt="non-virtual"><scope>PID</scope><name>pOn</name></member>
+      <member refid="class_p_i_d_1af52034b0d6931256f071827d3bc54335" prot="private" virt="non-virtual"><scope>PID</scope><name>pOnE</name></member>
+      <member refid="class_p_i_d_1a0dd517a3300badb571656b35f621947d" prot="private" virt="non-virtual"><scope>PID</scope><name>SampleTime</name></member>
+      <member refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" prot="public" virt="non-virtual"><scope>PID</scope><name>SetControllerDirection</name></member>
+      <member refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" prot="public" virt="non-virtual"><scope>PID</scope><name>SetMode</name></member>
+      <member refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" prot="public" virt="non-virtual"><scope>PID</scope><name>SetOutputLimits</name></member>
+      <member refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" prot="public" virt="non-virtual"><scope>PID</scope><name>SetSampleTime</name></member>
+      <member refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" prot="public" virt="non-virtual"><scope>PID</scope><name>SetTunings</name></member>
+      <member refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" prot="public" virt="non-virtual"><scope>PID</scope><name>SetTunings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

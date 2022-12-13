@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacedelegate_1_1detail" kind="namespace">
+    <compoundname>delegate::detail</compoundname>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_p_impl" prot="public">delegate::detail::DelegatePImpl</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_p_impl_3_01void_00_01_r_00_01_p_8_8_8_4" prot="public">delegate::detail::DelegatePImpl&lt; void, R, P...&gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_impl" prot="public">delegate::detail::DelegateImpl</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4" prot="public">delegate::detail::DelegateImpl&lt; void, R &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate" prot="public">delegate::detail::Delegate</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_3_01_a_01_5_00_01_r_00_01_p_8_8_8_4" prot="public">delegate::detail::Delegate&lt; A *, R, P...&gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_00_01_p_8_8_8_4" prot="public">delegate::detail::Delegate&lt; void, R, P...&gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_3_01_a_00_01_r_01_4" prot="public">delegate::detail::Delegate&lt; A, R &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_3_01_a_01_5_00_01_r_01_4" prot="public">delegate::detail::Delegate&lt; A *, R &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_delegate_3_01void_00_01_r_01_4" prot="public">delegate::detail::Delegate&lt; void, R &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" prot="public">delegate::detail::MultiDelegatePImpl</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_impl" prot="public">delegate::detail::MultiDelegateImpl</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate" prot="public">delegate::detail::MultiDelegate</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01_r_07_p_8_8_8_08_00_01_i_s_q_u_e_uca5908e0a8f0a8785bc37b46584aa5b7" prot="public">delegate::detail::MultiDelegate&lt; Delegate, R(P...), ISQUEUE, QUEUE_CAPACITY &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01_r_07_08_00_01_i_s_q_u_e_u_e_00_01f4d0d6c348447e0c221bc72f5d5ee8eb" prot="public">delegate::detail::MultiDelegate&lt; Delegate, R(), ISQUEUE, QUEUE_CAPACITY &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01void_07_p_8_8_8_08_00_01_i_s_q_u_e977e230ef1939d4be6845cd824f88d38" prot="public">delegate::detail::MultiDelegate&lt; Delegate, void(P...), ISQUEUE, QUEUE_CAPACITY &gt;</innerclass>
+    <innerclass refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01void_07_08_00_01_i_s_q_u_e_u_e_00_be7da3c18d87902b0a9838703ad4f54e" prot="public">delegate::detail::MultiDelegate&lt; Delegate, void(), ISQUEUE, QUEUE_CAPACITY &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="53" column="1"/>
+  </compounddef>
+</doxygen>

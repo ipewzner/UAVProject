@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_sensor_array_8h" kind="file">
+    <compoundname>SensorArray.h</compoundname>
+    <includes refid="_sensor_8h" local="yes">Sensor.h</includes>
+    <includes refid="_m_p_u_8h" local="yes">MPU.h</includes>
+    <includes refid="_b_m_p_8h" local="yes">BMP.h</includes>
+    <includedby refid="_sensor_array_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</includedby>
+    <incdepgraph>
+      <node id="876">
+        <label>MPU6050_6Axis_MotionApps20.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8h"/>
+        <childnode refid="877" relation="include">
+        </childnode>
+      </node>
+      <node id="872">
+        <label>WString.h</label>
+      </node>
+      <node id="877">
+        <label>MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+      </node>
+      <node id="882">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="881">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="887">
+        <label>BMP.h</label>
+        <link refid="_b_m_p_8h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="875">
+        <label>MPU.h</label>
+        <link refid="_m_p_u_8h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+      </node>
+      <node id="886">
+        <label>pgmspace.h</label>
+      </node>
+      <node id="880">
+        <label>Wire.h</label>
+        <link refid="_wire_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+      </node>
+      <node id="870">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="SensorArray.h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="878">
+        <label>I2Cdev.h</label>
+        <link refid="_i2_cdev_8h"/>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+      <node id="873">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="871">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+      </node>
+      <node id="879">
+        <label>Arduino.h</label>
+      </node>
+      <node id="885">
+        <label>helper_3dmath.h</label>
+        <link refid="helper__3dmath_8h"/>
+      </node>
+      <node id="888">
+        <label>Adafruit_BMP280.h</label>
+      </node>
+      <node id="884">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="890">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="_sensor_array_8cpp"/>
+      </node>
+      <node id="889">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="SensorArray.h"/>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_sensor_array" prot="public">SensorArray</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SensorArray.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SENSORARRAY_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SENSORARRAY_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sensor_8h" kindref="compound">Sensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_p_u_8h" kindref="compound">MPU.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_m_p_8h" kindref="compound">BMP.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_sensor_array" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_sensor_array" kindref="compound">SensorArray</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor" kindref="compound">Sensor</ref>**<sp/><ref refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" kindref="member">arr</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" kindref="member">arrSize</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" kindref="member">addSensor</ref>(<ref refid="class_sensor" kindref="compound">Sensor</ref>*<sp/>sensor);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" kindref="member">initAll</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sensor_array_1a0acd7cd3df437ed32d0b6859845c9ed3" kindref="member">SensorArray</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" kindref="member">length</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TO_DO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" kindref="member">asciiResultAll</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/><ref refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" kindref="member">jsonResultAll</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h"/>
+  </compounddef>
+</doxygen>

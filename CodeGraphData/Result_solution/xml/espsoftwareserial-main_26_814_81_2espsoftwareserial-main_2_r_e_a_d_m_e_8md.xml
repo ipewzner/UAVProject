@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="espsoftwareserial-main_26_814_81_2espsoftwareserial-main_2_r_e_a_d_m_e_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#<sp/>EspSoftwareSerial</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Implementation<sp/>of<sp/>the<sp/>Arduino<sp/>software<sp/>serial<sp/>library<sp/>for<sp/>the<sp/>ESP8266<sp/>/<sp/>ESP32<sp/>family</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">This<sp/>fork<sp/>implements<sp/>interrupt<sp/>service<sp/>routine<sp/>best<sp/>practice.</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">In<sp/>the<sp/>receive<sp/>interrupt,<sp/>instead<sp/>of<sp/>blocking<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>whole<sp/>bytes</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">at<sp/>a<sp/>time<sp/>-<sp/>voiding<sp/>any<sp/>near-realtime<sp/>behavior<sp/>of<sp/>the<sp/>CPU<sp/>-<sp/>only<sp/>level</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">change<sp/>and<sp/>timestamp<sp/>are<sp/>recorded.<sp/>The<sp/>more<sp/>time<sp/>consuming<sp/>phase</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">detection<sp/>and<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref><sp/>assembly<sp/>are<sp/>done<sp/>in<sp/>the<sp/>main<sp/>code.</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">Except<sp/>at<sp/>high<sp/>bitrates,<sp/>depending<sp/>on<sp/>other<sp/>ongoing<sp/>activity,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="_8_u_a_v_project_8vsarduino_8h_1aeab54da5ac84f3441a91cb982b2276bc" kindref="member">interrupts</ref><sp/>in<sp/>particular,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>software<sp/>serial<sp/>adapter</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">supports<sp/>full<sp/>duplex<sp/>receive<sp/>and<sp/>send.<sp/>At<sp/>high<sp/>bitrates<sp/>(115200bps)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">send<sp/>bit<sp/>timing<sp/>can<sp/>be<sp/>improved<sp/>at<sp/>the<sp/>expense<sp/>of<sp/>blocking<sp/>concurrent</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">full<sp/>duplex<sp/>receives,<sp/>with<sp/>the<sp/>`<ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>::enableIntTx(false)`<sp/>function<sp/>call.</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">The<sp/>same<sp/>functionality<sp/>is<sp/>given<sp/>as<sp/>the<sp/>corresponding<sp/>AVR<sp/>library<sp/>but</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">several<sp/>instances<sp/>can<sp/>be<sp/>active<sp/>at<sp/>the<sp/>same<sp/>time.<sp/>Speed<sp/>up<sp/>to<sp/>115200<sp/>baud</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">is<sp/>supported.<sp/>Besides<sp/>a<sp/>constructor<sp/>compatible<sp/>to<sp/>the<sp/>AVR<sp/><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref><sp/>class,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">and<sp/>updated<sp/>constructor<sp/>that<sp/>takes<sp/>no<sp/>arguments<sp/>exists,<sp/>instead<sp/>the<sp/>`begin()`</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">function<sp/>can<sp/>handle<sp/>the<sp/>pin<sp/>assignments<sp/>and<sp/>logic<sp/>inversion.</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">It<sp/>also<sp/>has<sp/>optional<sp/>input<sp/>buffer<sp/>capacity<sp/>arguments<sp/>for<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref><sp/>buffer<sp/>and<sp/>ISR<sp/>bit<sp/>buffer.</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">This<sp/>way,<sp/>it<sp/>is<sp/>a<sp/>better<sp/>drop-in<sp/>replacement<sp/>for<sp/>the<sp/>hardware<sp/>serial<sp/>APIs<sp/>on<sp/>the<sp/>ESP<sp/>MCUs.</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">Please<sp/>note<sp/>that<sp/>due<sp/>to<sp/>the<sp/>fact<sp/>that<sp/>the<sp/>ESPs<sp/>always<sp/>have<sp/>other<sp/>activities</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">ongoing,<sp/>there<sp/>will<sp/>be<sp/>some<sp/>inexactness<sp/>in<sp/>interrupt<sp/>timings.<sp/>This<sp/>may</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">lead<sp/>to<sp/>inevitable,<sp/>but<sp/>few,<sp/>bit<sp/>errors<sp/>when<sp/>having<sp/>heavy<sp/>data<sp/>traffic</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">at<sp/>high<sp/>baud<sp/>rates.</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">This<sp/>library<sp/>supports<sp/>ESP8266,<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a14f2b1b49eab3cb4df00458634091d56" kindref="member">ESP32</ref>,<sp/>ESP32-S2<sp/>and<sp/>ESP32-C3<sp/>devices.</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Resource<sp/>optimization</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">The<sp/>memory<sp/>footprint<sp/>can<sp/>be<sp/>optimized<sp/>to<sp/>just<sp/>fit<sp/>the<sp/>amount<sp/>of<sp/>expected</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">incoming<sp/>asynchronous<sp/>data.</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">For<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>the<sp/>`<ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>`<sp/>constructor<sp/>provides<sp/>two<sp/>arguments.<sp/>First,<sp/>the</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">octet<sp/>buffer<sp/>capacity<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>assembled<sp/>received<sp/>octets<sp/>can<sp/>be<sp/>set.<sp/>Read<sp/>calls<sp/>are</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">satisfied<sp/>from<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>buffer,<sp/>freeing<sp/>it<sp/>in<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">.</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">Second,<sp/>the<sp/>signal<sp/>edge<sp/>detection<sp/>buffer<sp/>of<sp/>32bit<sp/>fields<sp/>can<sp/>be<sp/>resized.</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">One<sp/>octet<sp/>may<sp/>require<sp/>up<sp/>to<sp/>to<sp/>10<sp/>fields,<sp/>but<sp/>fewer<sp/>may<sp/>be<sp/>needed,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">depending<sp/>on<sp/>the<sp/>bit<sp/>pattern.<sp/>Any<sp/>read<sp/>or<sp/>write<sp/>calls<sp/>check<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>buffer</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">to<sp/>assemble<sp/>received<sp/>octets,<sp/>thus<sp/>promoting<sp/>completed<sp/>octets<sp/>to<sp/>the<sp/>octet</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">buffer,<sp/>freeing<sp/>fields<sp/>in<sp/>the<sp/>edge<sp/>detection<sp/>buffer.</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">Look<sp/>at<sp/>the<sp/>swsertest.ino<sp/>example.<sp/>There,<sp/>on<sp/>reset,<sp/>ASCII<sp/>characters<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>to<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">are<sp/>sent.<sp/>This<sp/>happens<sp/>not<sp/>as<sp/>a<sp/>block<sp/>write,<sp/>but<sp/>in<sp/>a<sp/>single<sp/>write<sp/>call<sp/>per</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">character.<sp/>As<sp/>the<sp/>example<sp/>uses<sp/>a<sp/>local<sp/>loopback<sp/>wire,<sp/>every<sp/>outgoing<sp/>bit<sp/>is</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">immediately<sp/>received<sp/>back.<sp/>Therefore,<sp/>any<sp/>single<sp/>write<sp/>call<sp/>causes<sp/>up<sp/>to</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">10<sp/>fields<sp/>-<sp/>depending<sp/>on<sp/>the<sp/>exact<sp/>bit<sp/>pattern<sp/>-<sp/>to<sp/>be<sp/>occupied<sp/>in<sp/>the<sp/>signal</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">edge<sp/>detection<sp/>buffer.<sp/>In<sp/>turn,<sp/>as<sp/>explained<sp/>before,<sp/>each<sp/>single<sp/>write<sp/>call</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">also<sp/>causes<sp/>received<sp/>bit<sp/>assembly<sp/>to<sp/>be<sp/>performed,<sp/>promoting<sp/>these<sp/>bits<sp/>from</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">the<sp/>signal<sp/>edge<sp/>detection<sp/>buffer<sp/>to<sp/>the<sp/>octet<sp/>buffer<sp/>as<sp/>soon<sp/>as<sp/>possible.</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">Explaining<sp/>by<sp/>way<sp/>of<sp/>contrast,<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>during<sp/>a<sp/>a<sp/>single<sp/>write<sp/>call,<sp/>perhaps<sp/>because</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">of<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>block<sp/>writing,<sp/>more<sp/>than<sp/>a<sp/>single<sp/>octet<sp/>is<sp/>received,<sp/>there<sp/>will<sp/>be<sp/>a</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">need<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>more<sp/>than<sp/>10<sp/>fields<sp/>in<sp/>the<sp/>signal<sp/>edge<sp/>detection<sp/>buffer.</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">The<sp/>necessary<sp/>capacity<sp/>of<sp/>the<sp/>octet<sp/>buffer<sp/>only<sp/>depends<sp/>on<sp/>the<sp/>amount<sp/>of<sp/>incoming</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">data<sp/>until<sp/>the<sp/>next<sp/>read<sp/>call.</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">For<sp/>the<sp/>swsertest.ino<sp/>example,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>results<sp/>in<sp/>the<sp/>following<sp/>optimized</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">constructor<sp/>arguments<sp/>to<sp/>spend<sp/>only<sp/>the<sp/>minimum<sp/>RAM<sp/>on<sp/>buffers<sp/>required:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">The<sp/>octet<sp/>buffer<sp/>capacity<sp/>(`bufCapacity`)<sp/>is<sp/>95<sp/>(93<sp/>characters<sp/>net<sp/>plus<sp/>two<sp/>tolerance).</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">The<sp/>signal<sp/>edge<sp/>detection<sp/>buffer<sp/>capacity<sp/>(`isrBufCapacity`)<sp/>is<sp/>11,<sp/>as<sp/>each</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">single<sp/>octet<sp/>can<sp/>have<sp/>up<sp/>to<sp/>11<sp/>bits<sp/>on<sp/>the<sp/>wire,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">which<sp/>are<sp/>immediately<sp/>received<sp/>during<sp/>the<sp/>write,<sp/>and<sp/>each</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">write<sp/>call<sp/>causes<sp/>the<sp/>signal<sp/>edge<sp/>detection<sp/>to<sp/>promote<sp/>the<sp/>previously<sp/>sent<sp/>and</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">received<sp/>bits<sp/>to<sp/>the<sp/>octet<sp/>buffer.</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">In<sp/>a<sp/>more<sp/>generalized<sp/>scenario,<sp/>calculate<sp/>the<sp/>bits<sp/>(use<sp/>message<sp/>size<sp/>in<sp/>octets</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">times<sp/>10)<sp/>that<sp/>may<sp/>be<sp/>asynchronously<sp/>received<sp/>to<sp/>determine<sp/>the<sp/>value<sp/>for</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">`isrBufCapacity`<sp/>in<sp/>the<sp/>constructor.<sp/>Also<sp/>use<sp/>the<sp/>number<sp/>of<sp/>received<sp/>octets</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">that<sp/>must<sp/>be<sp/>buffered<sp/>for<sp/>reading<sp/>as<sp/>the<sp/>value<sp/>of<sp/>`bufCapacity`.</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">The<sp/>more<sp/>frequently<sp/>your<sp/>code<sp/>calls<sp/>write<sp/>or<sp/>read<sp/>functions,<sp/>the<sp/>greater<sp/>the</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">chances<sp/>are<sp/>that<sp/>you<sp/>can<sp/>reduce<sp/>the<sp/>`isrBufCapacity`<sp/>footprint<sp/>without<sp/>losing<sp/>data,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">and<sp/>each<sp/>time<sp/>you<sp/>call<sp/>read<sp/>to<sp/>fetch<sp/>from<sp/>the<sp/>octet<sp/>buffer,<sp/>you<sp/>reduce<sp/>the</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">need<sp/>for<sp/>space<sp/>there.</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>SoftwareSerialConfig<sp/>and<sp/>parity</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal">The<sp/>configuration<sp/>of<sp/>the<sp/>data<sp/>stream<sp/>is<sp/>done<sp/>via<sp/>a<sp/>`<ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref>`</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">argument<sp/>to<sp/>`begin()`.<sp/>Word<sp/>lengths<sp/>can<sp/>be<sp/>set<sp/>to<sp/>between<sp/>5<sp/>and<sp/>8<sp/>bits,<sp/>parity</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">can<sp/>be<sp/>N(one),<sp/>O(dd)<sp/>or<sp/>E(ven)<sp/>and<sp/>1<sp/>or<sp/>2<sp/>stop<sp/>bits<sp/>can<sp/>be<sp/>used.<sp/>The<sp/>default<sp/>is</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">`<ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" kindref="member">SWSERIAL_8N1</ref>`<sp/>using<sp/>8<sp/>bits,<sp/>no<sp/>parity<sp/>and<sp/>1<sp/>stop<sp/>bit<sp/>but<sp/>any<sp/>combination<sp/>can</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">be<sp/>used,<sp/>e.g.<sp/>`<ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ab30c3a965c3884d9f418191690c022ba" kindref="member">SWSERIAL_7E2</ref>`.<sp/>If<sp/>using<sp/>EVEN<sp/>or<sp/>ODD<sp/>parity,<sp/>any<sp/>parity<sp/>errors</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">can<sp/>be<sp/>detected<sp/>with<sp/>the<sp/>`readParity()`<sp/>and<sp/>`parityEven()`<sp/>or<sp/>`parityOdd()`</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">functions<sp/>respectively.<sp/>Note<sp/>that<sp/>the<sp/>result<sp/>of<sp/>`readParity()`<sp/>always<sp/>applies</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">to<sp/>the<sp/>preceding<sp/>`read()`<sp/>or<sp/>`peek()`<sp/>call,<sp/>and<sp/>is<sp/>undefined<sp/>if<sp/>they<sp/>report</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">no<sp/>data<sp/>or<sp/>an<sp/>error.</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">To<sp/>allow<sp/>flexible<sp/>9-bit<sp/>and<sp/>data/addressing<sp/>protocols,<sp/>the<sp/>additional<sp/>parity</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">modes<sp/>MARK<sp/>and<sp/><ref refid="_config_8h_1a5ff6e798033f03e74730e99f01936f84" kindref="member">SPACE</ref><sp/>are<sp/>also<sp/>available.<sp/>Furthermore,<sp/>the<sp/>parity<sp/>mode<sp/>can<sp/>be</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">individually<sp/>set<sp/>in<sp/>each<sp/>call<sp/>to<sp/>`write()`.</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">This<sp/>allows<sp/>a<sp/>simple<sp/>implementation<sp/>of<sp/>protocols<sp/>where<sp/>the<sp/>parity<sp/>bit<sp/>is<sp/>used<sp/>to</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">distinguish<sp/>between<sp/>data<sp/>and<sp/>addresses/commands<sp/>(&quot;9-bit&quot;<sp/>protocols).<sp/>First<sp/>set</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">up<sp/><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref><sp/>with<sp/>parity<sp/>mode<sp/><ref refid="_config_8h_1a5ff6e798033f03e74730e99f01936f84" kindref="member">SPACE</ref>,<sp/>e.g.<sp/>`<ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae7e89d2ef85523724c834780bacb7094" kindref="member">SWSERIAL_8S1</ref>`.<sp/>This<sp/>will<sp/>add<sp/>a</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">parity<sp/>bit<sp/>to<sp/>every<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref><sp/>sent,<sp/>setting<sp/>it<sp/>to<sp/>logical<sp/>zero<sp/>(SPACE<sp/>parity).</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">To<sp/>detect<sp/>incoming<sp/>bytes<sp/>with<sp/>the<sp/>parity<sp/>bit<sp/>set<sp/>(MARK<sp/>parity),<sp/>use<sp/>the</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">`readParity()`<sp/>function.<sp/>To<sp/>send<sp/>a<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref><sp/>with<sp/>the<sp/>parity<sp/>bit<sp/>set,<sp/>just<sp/>add</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">`MARK`<sp/>as<sp/>the<sp/>second<sp/>argument<sp/>when<sp/>writing,<sp/>e.g.<sp/>`write(ch,<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" kindref="member">SWSERIAL_PARITY_MARK</ref>)`.</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Checking<sp/>for<sp/>correct<sp/>pin<sp/>selection<sp/>/<sp/>configuration<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal">In<sp/>general,<sp/>most<sp/>pins<sp/>on<sp/>the<sp/>ESP8266<sp/>and<sp/>ESP32<sp/>devices<sp/>can<sp/>be<sp/>used<sp/>by<sp/><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>,<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">however<sp/>each<sp/>device<sp/>has<sp/>a<sp/>number<sp/>of<sp/>pins<sp/>that<sp/>have<sp/>special<sp/>functions<sp/>or<sp/>require<sp/>careful</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">handling<sp/>to<sp/>prevent<sp/>undesirable<sp/>situations,<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>example<sp/>they<sp/>are<sp/>connected<sp/>to<sp/>the<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">on-board<sp/>SPI<sp/>flash<sp/>memory<sp/>or<sp/>they<sp/>are<sp/>used<sp/>to<sp/>determine<sp/>boot<sp/>and<sp/>programming<sp/>modes<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">after<sp/>powerup<sp/>or<sp/>brownouts.<sp/>These<sp/>pins<sp/>are<sp/>not<sp/>able<sp/>to<sp/>be<sp/>configured<sp/>by<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>library.</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">The<sp/>exact<sp/>list<sp/></highlight><highlight class="keywordflow">for<sp/>each</highlight><highlight class="normal"><sp/>device<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">[ESP32<sp/>data<sp/>sheet](https:</highlight><highlight class="comment">//www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">in<sp/>sections<sp/>2.2<sp/>(Pin<sp/>Descriptions)<sp/>and<sp/>2.4<sp/>(Strapping<sp/>pins).<sp/>There<sp/>is<sp/>a<sp/>discussion</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">dedicated<sp/>to<sp/>the<sp/>use<sp/>of<sp/>GPIO12<sp/>in<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">[note<sp/>about<sp/>GPIO12](https:</highlight><highlight class="comment">//github.com/espressif/esp-idf/tree/release/v3.2/examples/storage/sd_card#note-about-gpio12).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">Refer<sp/>to<sp/>the<sp/>`isValidGPIOpin()`,<sp/>`isValidRxGPIOpin()`<sp/>and<sp/>`isValidTxGPIOpin()`</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">functions<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>the<sp/>GPIO<sp/>restrictions<sp/>enforced<sp/>by<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>library<sp/>by<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">.</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">The<sp/>easiest<sp/>and<sp/>safest<sp/>method<sp/>is<sp/>to<sp/>test<sp/>the<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>returned<sp/>at<sp/>runtime,<sp/>to<sp/>see<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">it<sp/>is<sp/>valid.<sp/>For<sp/>example:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_software_serial_8h" kindref="compound">SoftwareSerial.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MYPORT_TX<sp/>12</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MYPORT_RX<sp/>13</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">SoftwareSerial<sp/>myPort;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">[...]</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">Serial.begin(115200);<sp/></highlight><highlight class="comment">//<sp/>Standard<sp/>hardware<sp/>serial<sp/>port</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">myPort.<ref refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" kindref="member">begin</ref>(38400,<sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" kindref="member">SWSERIAL_8N1</ref>,<sp/>MYPORT_RX,<sp/>MYPORT_TX,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!myPort)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>object<sp/>did<sp/>not<sp/>initialize,<sp/>then<sp/>its<sp/>configuration<sp/>is<sp/>invalid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Invalid<sp/>SoftwareSerial<sp/>pin<sp/>configuration,<sp/>check<sp/>config&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>continue<sp/>with<sp/>invalid<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>delay<sp/>(1000);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">[...]</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Using<sp/>and<sp/>updating<sp/>EspSoftwareSerial<sp/>in<sp/>the<sp/>esp8266com/esp8266<sp/>Arduino<sp/>build<sp/>environment</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">EspSoftwareSerial<sp/>is<sp/>both<sp/>part<sp/>of<sp/>the<sp/>BSP<sp/>download<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ESP8266<sp/>in<sp/>Arduino,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">and<sp/>it<sp/>is<sp/>set<sp/>up<sp/>as<sp/>a<sp/>Git<sp/>submodule<sp/>in<sp/>the<sp/>esp8266<sp/>source<sp/>tree,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">specifically<sp/>in<sp/>`.../esp8266/libraries/SoftwareSerial`<sp/>when<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>a<sp/>Github</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">repository<sp/>clone<sp/>in<sp/>your<sp/>Arduino<sp/>sketchbook<sp/>hardware<sp/>directory.</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">This<sp/>supersedes<sp/>any<sp/>version<sp/>of<sp/>EspSoftwareSerial<sp/>installed<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>instance<sp/>via</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">the<sp/>Arduino<sp/>library<sp/>manager,<sp/>it<sp/>is<sp/>not<sp/>required<sp/>to<sp/>install<sp/>EspSoftwareSerial</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>the<sp/>ESP8266<sp/>separately<sp/>at<sp/>all,<sp/>but<sp/>doing<sp/>so<sp/>has<sp/>ill<sp/>effect.</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">The<sp/>responsible<sp/>maintainer<sp/>of<sp/>the<sp/>esp8266<sp/>repository<sp/>has<sp/>kindly<sp/>shared<sp/>the</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">following<sp/>command<sp/>line<sp/>instructions<sp/>to<sp/>use,<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>one<sp/>wishes<sp/>to<sp/>manually</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">update<sp/>EspSoftwareSerial<sp/>to<sp/>a<sp/>newer<sp/>release<sp/>than<sp/>pulled<sp/>in<sp/>via<sp/>the<sp/>ESP8266<sp/>Arduino<sp/>BSP:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">To<sp/>update<sp/>esp8266/arduino<sp/>SoftwareSerial<sp/>submodule<sp/>to<sp/>lastest<sp/>master:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">Clean<sp/>it<sp/>(optional):</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">```shell</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">$<sp/>rm<sp/>-rf<sp/>libraries/SoftwareSerial</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">$<sp/>git<sp/>submodule<sp/>update<sp/>--init</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">Now<sp/>update<sp/>it:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">```shell</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">$<sp/>cd<sp/>libraries/SoftwareSerial</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">$<sp/>git<sp/>checkout<sp/>master</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">$<sp/>git<sp/>pull</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_m_p_u6050__9_axis___motion_apps41" kind="class" prot="public">
+    <compoundname>MPU6050_9Axis_MotionApps41</compoundname>
+    <basecompoundref refid="class_m_p_u6050___base" prot="public" virt="non-virtual">MPU6050_Base</basecompoundref>
+    <includes refid="_m_p_u6050__9_axis___motion_apps41_8h" local="no">MPU6050_9Axis_MotionApps41.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* MPU6050_9Axis_MotionApps41::dmpPacketBuffer</definition>
+        <argsstring></argsstring>
+        <name>dmpPacketBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="147" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a694b85c15a6a27a29c1553a8fc464b07" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="685" endline="692">dmpGetAccel</referencedby>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1aa6700ba5e011b7747ebc0ac79bee43ef" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="742" endline="749">dmpGetGyro</referencedby>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a656a4862183b731ae27c314569d2dc64" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="758" endline="765">dmpGetMag</referencedby>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1ac6c387924963a7179f2f2d45d61c4f1a" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="709" endline="717">dmpGetQuaternion</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_m_p_u6050__9_axis___motion_apps41_1af3b3af491014f6a12e64c99412270dbd" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t MPU6050_9Axis_MotionApps41::dmpPacketSize</definition>
+        <argsstring></argsstring>
+        <name>dmpPacketSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="148" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a47d3a9f37cd1bde4e8a2c03537b1e092" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="885" endline="887">dmpGetFIFOPacketSize</referencedby>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="337" endline="656">dmpInitialize</referencedby>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a44d1c70bfec0f01316f0e60faf31dd19" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="860" endline="874">dmpReadAndProcessFIFOPacket</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a3e534d7619c06914b5db84d2c8e068c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MPU6050_9Axis_MotionApps41::MPU6050_9Axis_MotionApps41</definition>
+        <argsstring>(uint8_t address=MPU6050_DEFAULT_ADDRESS, void *wireObj=0)</argsstring>
+        <name>MPU6050_9Axis_MotionApps41</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+          <defval><ref refid="_m_p_u6050_8h_1ae5cf60bf2cbc13d21384c215c4f05149" kindref="member">MPU6050_DEFAULT_ADDRESS</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="48" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpInitialize</definition>
+        <argsstring>()</argsstring>
+        <name>dmpInitialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="50" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="337" bodyend="656"/>
+        <references refid="class_m_p_u6050___base_1a805b1206d26394a97b7396e6e85e321f" compoundref="_m_p_u6050_8h" startline="839">MPU6050_Base::buffer</references>
+        <references refid="_m_p_u6050__9_axis___motion_apps41_8cpp_1af6551f0b4c3964c3128f808e7bf987c7" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="97">DEBUG_PRINT</references>
+        <references refid="_m_p_u6050__9_axis___motion_apps41_8cpp_1a40c71ee610c953dd0e914ece23dde8a5" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="98">DEBUG_PRINTF</references>
+        <references refid="_m_p_u6050__9_axis___motion_apps41_8cpp_1a8e30ff0704664fcb13dabf0c4dc5c8f5" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="99">DEBUG_PRINTLN</references>
+        <references refid="_m_p_u6050__9_axis___motion_apps41_8cpp_1ad1937eefa9a7b6d3c9034dd9e62ab114" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="100">DEBUG_PRINTLNF</references>
+        <references refid="class_m_p_u6050___base_1a85cbc944479b8c5a6d34d0d2a13206ef" compoundref="_m_p_u6050_8h" startline="837">MPU6050_Base::devAddr</references>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1af3b3af491014f6a12e64c99412270dbd" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="148">dmpPacketSize</references>
+        <references refid="class_m_p_u6050___base_1ac4b73cd8841a5eee523426748a551632" compoundref="_m_p_u6050_8cpp" startline="2741" endline="2747">MPU6050_Base::getFIFOBytes</references>
+        <references refid="class_m_p_u6050___base_1abff5ac2dfd585ab7a8f4592caf6b5442" compoundref="_m_p_u6050_8cpp" startline="2705" endline="2708">MPU6050_Base::getFIFOCount</references>
+        <references refid="class_m_p_u6050___base_1aad0e68c98c81b6d37ab6665fbbfab2b4" compoundref="_m_p_u6050_8cpp" startline="1680" endline="1683">MPU6050_Base::getIntStatus</references>
+        <references refid="class_m_p_u6050___base_1aa8cad4f41afeff461917abd44baa6374" compoundref="_m_p_u6050_8cpp" startline="2845" endline="2848">MPU6050_Base::getOTPBankValid</references>
+        <references refid="class_m_p_u6050___base_1aeabcf4f53941756293f8c2c8a9e03fb0" compoundref="_m_p_u6050_8cpp" startline="2948" endline="2951">MPU6050_Base::getXGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1a82f11a6474f10b1ec9b827d306329e00" compoundref="_m_p_u6050_8cpp" startline="2958" endline="2961">MPU6050_Base::getYGyroOffset</references>
+        <references refid="class_m_p_u6050___base_1ac99f50622a272dc28212b9bb1d36b32d" compoundref="_m_p_u6050_8cpp" startline="2968" endline="2971">MPU6050_Base::getZGyroOffset</references>
+        <references refid="_m_p_u6050_8h_1aad6073e7b00f8752e3b6faf1947fc964" compoundref="_m_p_u6050_8h" startline="407">MPU6050_CLOCK_PLL_ZGYRO</references>
+        <references refid="_m_p_u6050_8h_1a15fc642e77fceab2590b0f52b30b5b64" compoundref="_m_p_u6050_8h" startline="224">MPU6050_DLPF_BW_42</references>
+        <references refid="_m_p_u6050__9_axis___motion_apps41_8cpp_1a46b28dbcdbf39e66ec0ecc073a7345d4" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="103">MPU6050_DMP_CODE_SIZE</references>
+        <references refid="_m_p_u6050__9_axis___motion_apps41_8cpp_1afa62d211d77172f56da13321845e8410" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="104">MPU6050_DMP_CONFIG_SIZE</references>
+        <references refid="_m_p_u6050_8h_1a2bb1b06ca1e5e300716ab7470052460e" compoundref="_m_p_u6050_8h" startline="213">MPU6050_EXT_SYNC_TEMP_OUT_L</references>
+        <references refid="_m_p_u6050_8h_1a51162889c2f7d3ada6d181110cabb8ab" compoundref="_m_p_u6050_8h" startline="235">MPU6050_GYRO_FS_2000</references>
+        <references refid="_m_p_u6050_8h_1a484dc2c64005652ff208840ddc8c1cff" compoundref="_m_p_u6050_8h" startline="345">MPU6050_INTERRUPT_DMP_INT_BIT</references>
+        <references refid="_m_p_u6050_8h_1a9d13e0ea2a96e5d234b7efa3de74d6bf" compoundref="_m_p_u6050_8h" startline="342">MPU6050_INTERRUPT_FIFO_OFLOW_BIT</references>
+        <references refid="_m_p_u6050_8h_1a48b7d7b24a70b247e373bc5965a5dcc7" compoundref="_m_p_u6050_8h" startline="89">MPU6050_RA_ACCEL_CONFIG</references>
+        <references refid="_m_p_u6050_8h_1a95960b2c82d00341b6174272e2fb3e07" compoundref="_m_p_u6050_8h" startline="163">MPU6050_RA_I2C_MST_DELAY_CTRL</references>
+        <references refid="_m_p_u6050_8h_1a423463fce914683217f05e3ca686364c" compoundref="_m_p_u6050_8h" startline="98">MPU6050_RA_I2C_SLV0_ADDR</references>
+        <references refid="_m_p_u6050_8h_1a70ce4d71982a1e3fb2be9b71f40da786" compoundref="_m_p_u6050_8h" startline="100">MPU6050_RA_I2C_SLV0_CTRL</references>
+        <references refid="_m_p_u6050_8h_1ae9fc1bc0eb0c568846328de91127ca80" compoundref="_m_p_u6050_8h" startline="99">MPU6050_RA_I2C_SLV0_REG</references>
+        <references refid="_m_p_u6050_8h_1ab9bd1737877e24c981423c9b63f64d3a" compoundref="_m_p_u6050_8h" startline="104">MPU6050_RA_I2C_SLV2_ADDR</references>
+        <references refid="_m_p_u6050_8h_1a85020a23b62a5ea0c88137038f65767e" compoundref="_m_p_u6050_8h" startline="106">MPU6050_RA_I2C_SLV2_CTRL</references>
+        <references refid="_m_p_u6050_8h_1a1f192825e93dd8bdfbe8cefdb30786ac" compoundref="_m_p_u6050_8h" startline="161">MPU6050_RA_I2C_SLV2_DO</references>
+        <references refid="_m_p_u6050_8h_1a9ed25cb09399d6700cd0255b17ad7a47" compoundref="_m_p_u6050_8h" startline="105">MPU6050_RA_I2C_SLV2_REG</references>
+        <references refid="_m_p_u6050_8h_1a2b6fbfceb145ba1c8b19f51475fd7a5d" compoundref="_m_p_u6050_8h" startline="113">MPU6050_RA_I2C_SLV4_CTRL</references>
+        <references refid="_m_p_u6050_8h_1a82344e1daef2bac2e0d938319528be6c" compoundref="_m_p_u6050_8h" startline="116">MPU6050_RA_INT_PIN_CFG</references>
+        <references refid="_m_p_u6050_8h_1aace6ce286da4d5f8c8f5ba6f80688e13" compoundref="_m_p_u6050_8h" startline="168">MPU6050_RA_PWR_MGMT_2</references>
+        <references refid="_m_p_u6050_8h_1acd4c638a6f677a42ecb9a3d7612d087a" compoundref="_m_p_u6050_8h" startline="166">MPU6050_RA_USER_CTRL</references>
+        <references refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" compoundref="_i2_cdev_8cpp" startline="186" endline="188">I2Cdev::readByte</references>
+        <references refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</references>
+        <references refid="class_m_p_u6050___base_1a1930d8ee4f5e4b5cdfe23f4f267e69db" compoundref="_m_p_u6050_8cpp" startline="3068" endline="3098">MPU6050_Base::readMemoryBlock</references>
+        <references refid="class_m_p_u6050___base_1abc0ae36b66fc64df8694bb18019f0114" compoundref="_m_p_u6050_8cpp" startline="3061" endline="3064">MPU6050_Base::readMemoryByte</references>
+        <references refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" compoundref="_i2_cdev_8h" startline="154">I2Cdev::readTimeout</references>
+        <references refid="class_m_p_u6050___base_1a6bb19fc65efc973e4b96529b7153d81c" compoundref="_m_p_u6050_8cpp" startline="2423" endline="2425">MPU6050_Base::reset</references>
+        <references refid="class_m_p_u6050___base_1a90a4ce81f7ef13a3f0badaa414d64f10" compoundref="_m_p_u6050_8cpp" startline="2388" endline="2390">MPU6050_Base::resetFIFO</references>
+        <references refid="class_m_p_u6050___base_1a02fc458c263401a22c8737be1c0ef2bb" compoundref="_m_p_u6050_8cpp" startline="2540" endline="2542">MPU6050_Base::setClockSource</references>
+        <references refid="class_m_p_u6050___base_1aa54aa824bd2e7a24ee9908029f05b849" compoundref="_m_p_u6050_8cpp" startline="211" endline="213">MPU6050_Base::setDLPFMode</references>
+        <references refid="class_m_p_u6050___base_1afe501313698bd6e45869c056753b3034" compoundref="_m_p_u6050_8cpp" startline="3264" endline="3266">MPU6050_Base::setDMPConfig1</references>
+        <references refid="class_m_p_u6050___base_1a0d593051500f29b27890782fb9cf02ba" compoundref="_m_p_u6050_8cpp" startline="3274" endline="3276">MPU6050_Base::setDMPConfig2</references>
+        <references refid="class_m_p_u6050___base_1a50389f06417a9543aa8996594f034df3" compoundref="_m_p_u6050_8cpp" startline="3037" endline="3039">MPU6050_Base::setDMPEnabled</references>
+        <references refid="class_m_p_u6050___base_1ae6b4822ab3b3c0ad6a2a2cf64c33c25f" compoundref="_m_p_u6050_8cpp" startline="168" endline="170">MPU6050_Base::setExternalFrameSync</references>
+        <references refid="class_m_p_u6050___base_1a474156fdc22301b8147c0eca1ca2737a" compoundref="_m_p_u6050_8cpp" startline="246" endline="248">MPU6050_Base::setFullScaleGyroRange</references>
+        <references refid="class_m_p_u6050___base_1ac4bcfc51ad4004d4923202d1f093167c" compoundref="_m_p_u6050_8cpp" startline="1551" endline="1553">MPU6050_Base::setIntEnabled</references>
+        <references refid="class_m_p_u6050___base_1a28a48af89336c9dc8ea4242efdcc450f" compoundref="_m_p_u6050_8cpp" startline="3046" endline="3051">MPU6050_Base::setMemoryBank</references>
+        <references refid="class_m_p_u6050___base_1a010f2977db5b023fdca05fd7f5533bf1" compoundref="_m_p_u6050_8cpp" startline="3055" endline="3057">MPU6050_Base::setMemoryStartAddress</references>
+        <references refid="class_m_p_u6050___base_1ad84a5c4a80aaf6127d5d7ad33f0854e0" compoundref="_m_p_u6050_8cpp" startline="554" endline="556">MPU6050_Base::setMotionDetectionDuration</references>
+        <references refid="class_m_p_u6050___base_1ad7cac8dd9d3abef325127a33f085e0bf" compoundref="_m_p_u6050_8cpp" startline="524" endline="526">MPU6050_Base::setMotionDetectionThreshold</references>
+        <references refid="class_m_p_u6050___base_1ac1db5782c0696833d4554b83fe8beb49" compoundref="_m_p_u6050_8cpp" startline="2849" endline="2851">MPU6050_Base::setOTPBankValid</references>
+        <references refid="class_m_p_u6050___base_1a9d157266fc4f1ccb2e351de5ad43e5ef" compoundref="_m_p_u6050_8cpp" startline="126" endline="128">MPU6050_Base::setRate</references>
+        <references refid="class_m_p_u6050___base_1a50329f23a59a73e2c4b32211c2a1da98" compoundref="_m_p_u6050_8cpp" startline="2447" endline="2449">MPU6050_Base::setSleepEnabled</references>
+        <references refid="class_m_p_u6050___base_1a75bdfac21c78916b15d6b1742b8d2ef7" compoundref="_m_p_u6050_8cpp" startline="2856" endline="2858">MPU6050_Base::setXGyroOffsetTC</references>
+        <references refid="class_m_p_u6050___base_1a90506688c48e079fab832100a8d97d04" compoundref="_m_p_u6050_8cpp" startline="2866" endline="2868">MPU6050_Base::setYGyroOffsetTC</references>
+        <references refid="class_m_p_u6050___base_1ab795e17ef51683756cf27a1645a62b9a" compoundref="_m_p_u6050_8cpp" startline="625" endline="627">MPU6050_Base::setZeroMotionDetectionDuration</references>
+        <references refid="class_m_p_u6050___base_1a4aac435f4c354c904ef8c4fec11deebb" compoundref="_m_p_u6050_8cpp" startline="594" endline="596">MPU6050_Base::setZeroMotionDetectionThreshold</references>
+        <references refid="class_m_p_u6050___base_1ad68e4d3c1b7ddb308a4514f27cb89921" compoundref="_m_p_u6050_8cpp" startline="2876" endline="2878">MPU6050_Base::setZGyroOffsetTC</references>
+        <references refid="class_m_p_u6050___base_1a96a025e46d564a841ebab6eb5913bcfb" compoundref="_m_p_u6050_8h" startline="838">MPU6050_Base::wireObj</references>
+        <references refid="class_i2_cdev_1a7ea9bb95cfb21c7953f1c1cd8eedbb29" compoundref="_i2_cdev_8cpp" startline="569" endline="571">I2Cdev::writeByte</references>
+        <references refid="class_m_p_u6050___base_1a04f4591647809e810002567272628340" compoundref="_m_p_u6050_8cpp" startline="3099" endline="3174">MPU6050_Base::writeMemoryBlock</references>
+        <references refid="class_m_p_u6050___base_1aee7d6e18c60fd3fd226f312d3769fcce" compoundref="_m_p_u6050_8cpp" startline="3254" endline="3256">MPU6050_Base::writeProgDMPConfigurationSet</references>
+        <references refid="class_m_p_u6050___base_1a3a29ba0a8ea60b4aba959e012e22d740" compoundref="_m_p_u6050_8cpp" startline="3175" endline="3177">MPU6050_Base::writeProgMemoryBlock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1abb71b224cd0bf4caaf7dd42f0e57b585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MPU6050_9Axis_MotionApps41::dmpPacketAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>dmpPacketAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="51" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="658" bodyend="660"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a47d3a9f37cd1bde4e8a2c03537b1e092" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="885" endline="887">dmpGetFIFOPacketSize</references>
+        <references refid="class_m_p_u6050___base_1abff5ac2dfd585ab7a8f4592caf6b5442" compoundref="_m_p_u6050_8cpp" startline="2705" endline="2708">MPU6050_Base::getFIFOCount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a71a7c4f656045c8be6414a373c52aee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSetFIFORate</definition>
+        <argsstring>(uint8_t fifoRate)</argsstring>
+        <name>dmpSetFIFORate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>fifoRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ae41890220d929f90ed7d0158fcc53713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetFIFORate</definition>
+        <argsstring>()</argsstring>
+        <name>dmpGetFIFORate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a983e8b290af185b5be1e7bbe3bfd28da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetSampleStepSizeMS</definition>
+        <argsstring>()</argsstring>
+        <name>dmpGetSampleStepSizeMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a66cbfd3310d19daec230f4a0054637ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetSampleFrequency</definition>
+        <argsstring>()</argsstring>
+        <name>dmpGetSampleFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a532d48b5396121591c252e01b5c08d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t MPU6050_9Axis_MotionApps41::dmpDecodeTemperature</definition>
+        <argsstring>(int8_t tempReg)</argsstring>
+        <name>dmpDecodeTemperature</name>
+        <param>
+          <type>int8_t</type>
+          <declname>tempReg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a1f4bfbf188dd5340cfa101da2b1f313f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpRunFIFORateProcesses</definition>
+        <argsstring>()</argsstring>
+        <name>dmpRunFIFORateProcesses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ae600b4ea1742252e204aa0c27f1c266a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendQuaternion</definition>
+        <argsstring>(uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendQuaternion</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a1b164991d930e106ba1c21f776328197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendGyro</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendGyro</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a83124fa7f0a94650c814c7c63ce8ac91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendAccel</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendAccel</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a0b2d61ded5a6cb852fd3fbd19951e3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendLinearAccel</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendLinearAccel</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a12fbf9de90e3f6e7d307eaa6c9a38084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendLinearAccelInWorld</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendLinearAccelInWorld</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a1f2508cadbb811684ddae43a49c48e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendControlData</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendControlData</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a5a0369347cb018db293bf4c2f6416dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendSensorData</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendSensorData</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a175e55aae537570d146b70cb80aaa3aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendExternalSensorData</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendExternalSensorData</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a04685c62d53666f14fd71a01a2d33b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendGravity</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendGravity</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a4fefec34a894f56ca61cc2ca65b16a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendPacketNumber</definition>
+        <argsstring>(uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendPacketNumber</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ab0d205d5b9bb6e88570327985219d9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendQuantizedAccel</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendQuantizedAccel</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a0cd77b9d48c9dde04e511743f315d36c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSendEIS</definition>
+        <argsstring>(uint_fast16_t elements, uint_fast16_t accuracy)</argsstring>
+        <name>dmpSendEIS</name>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>uint_fast16_t</type>
+          <declname>accuracy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a694b85c15a6a27a29c1553a8fc464b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetAccel</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetAccel</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="79" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="685" bodyend="692"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a5e36244080c949f0c9813dfd15f986fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetAccel</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetAccel</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="80" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="693" bodyend="700"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1acb15c65d67462a26dffd99d843e9614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetAccel</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetAccel</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="81" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="701" bodyend="708"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ac6c387924963a7179f2f2d45d61c4f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuaternion</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuaternion</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="82" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="709" bodyend="717"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1af8f2889efcb0def4647933215052b573" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="788" endline="797">dmpGetGravity</referencedby>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a940030ace205a6ba22cab94a2f9af3d3" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="727" endline="739">dmpGetQuaternion</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1af914b234b169d93dec057072cbe8597a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuaternion</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuaternion</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="83" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="718" bodyend="726"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a940030ace205a6ba22cab94a2f9af3d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuaternion</definition>
+        <argsstring>(Quaternion *q, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuaternion</name>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="84" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="727" bodyend="739"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1ac6c387924963a7179f2f2d45d61c4f1a" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="709" endline="717">dmpGetQuaternion</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1af87cdf39941e1dd2b150bdde32ce672c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGet6AxisQuaternion</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGet6AxisQuaternion</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a5b4968d09902fdc23c2bacace79690b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGet6AxisQuaternion</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGet6AxisQuaternion</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ac0f45ba1c7b0edb94d469d2d8d2a6d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGet6AxisQuaternion</definition>
+        <argsstring>(Quaternion *q, const uint8_t *packet=0)</argsstring>
+        <name>dmpGet6AxisQuaternion</name>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a614605c507158c701997f0357cb35a34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetRelativeQuaternion</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetRelativeQuaternion</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a879d54b2f30682b6c23ae6b4db1fa3fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetRelativeQuaternion</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetRelativeQuaternion</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1afdefa3a09b0fc765b3a6fc14cee1db67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetRelativeQuaternion</definition>
+        <argsstring>(Quaternion *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetRelativeQuaternion</name>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1aa6700ba5e011b7747ebc0ac79bee43ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyro</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyro</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="91" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="742" bodyend="749"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ad36f071082de443233f02433ac91e393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyro</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyro</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="92" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="750" bodyend="757"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1acfcac78883c39f28b5f9303e62d17643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyro</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyro</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a656a4862183b731ae27c314569d2dc64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetMag</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetMag</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="94" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="758" bodyend="765"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="147">dmpPacketBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1aa8d577341c78f560b0c4f2042cb3f51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSetLinearAccelFilterCoefficient</definition>
+        <argsstring>(float coef)</argsstring>
+        <name>dmpSetLinearAccelFilterCoefficient</name>
+        <param>
+          <type>float</type>
+          <declname>coef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a5d2b90fc61ec4dde3740cb28fb0785a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccel</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetLinearAccel</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a72f352530a9f112fe7358f597bfde173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccel</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetLinearAccel</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a652ffdadba2f9f671e49c87079815015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccel</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetLinearAccel</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1abe8fdde0f764c9f870b467e9e52543ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccel</definition>
+        <argsstring>(VectorInt16 *v, VectorInt16 *vRaw, VectorFloat *gravity)</argsstring>
+        <name>dmpGetLinearAccel</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>vRaw</declname>
+        </param>
+        <param>
+          <type><ref refid="class_vector_float" kindref="compound">VectorFloat</ref> *</type>
+          <declname>gravity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="99" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="768" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a4429d25f0e17b82e74692078e0e330bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccelInWorld</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetLinearAccelInWorld</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a86076f77c2961cb223dda8c86dafac48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccelInWorld</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetLinearAccelInWorld</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1acac476241e7079c3e376412c34347da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccelInWorld</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetLinearAccelInWorld</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a61b47271d84af19868c2a0a261e7a5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetLinearAccelInWorld</definition>
+        <argsstring>(VectorInt16 *v, VectorInt16 *vReal, Quaternion *q)</argsstring>
+        <name>dmpGetLinearAccelInWorld</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>vReal</declname>
+        </param>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="103" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="776" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a02dfede701745f980f5bf3cc27e9556a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyroAndAccelSensor</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyroAndAccelSensor</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1aab3da2e89d93ff9521351103bd85fd28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyroAndAccelSensor</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyroAndAccelSensor</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ae95afba2e5c7c7686b3b86ee2b4858ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyroAndAccelSensor</definition>
+        <argsstring>(VectorInt16 *g, VectorInt16 *a, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyroAndAccelSensor</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a86ad54d43b49f89261aa7aca50eb59fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyroSensor</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyroSensor</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a9ef863ea56c9b48c8c45a6a2df99377e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyroSensor</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyroSensor</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a7c5a28a3b0ee59b182d50a747e6bcaf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGyroSensor</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGyroSensor</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ad05d83c5cd3df55cedee8825cb587d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetControlData</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetControlData</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a3d8132fab0afab7b54877628398a18e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetTemperature</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetTemperature</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a59f783d816a884dd8e7646e2cf9e1d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGravity</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGravity</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1af8f2889efcb0def4647933215052b573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGravity</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGravity</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="113" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="788" bodyend="797"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1ac6c387924963a7179f2f2d45d61c4f1a" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="709" endline="717">dmpGetQuaternion</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ac72f4b4747f5c965bc8c30a81297bd1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGravity</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetGravity</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ab370c07c03c37084c1272f4e017b8ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetGravity</definition>
+        <argsstring>(VectorFloat *v, Quaternion *q)</argsstring>
+        <name>dmpGetGravity</name>
+        <param>
+          <type><ref refid="class_vector_float" kindref="compound">VectorFloat</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="115" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="799" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a11e16e3ac3f2b7965988500aeb580656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetUnquantizedAccel</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetUnquantizedAccel</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a579384958dd3a9264af915255c8fa9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetUnquantizedAccel</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetUnquantizedAccel</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1aaeb4bf2cf354a07c1f73577479e49ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetUnquantizedAccel</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetUnquantizedAccel</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1acaf0953da2437f123ab3b3a1382c4e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuantizedAccel</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuantizedAccel</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a7718fa8bbeb45c058529b3f868b1dc63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuantizedAccel</definition>
+        <argsstring>(int16_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuantizedAccel</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a009cd5f487fc4ed056c812d43ff2a093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuantizedAccel</definition>
+        <argsstring>(VectorInt16 *v, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuantizedAccel</name>
+        <param>
+          <type><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ac01b85dea418c1400f8e1d488a6599d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetExternalSensorData</definition>
+        <argsstring>(int32_t *data, uint16_t size, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetExternalSensorData</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a383ae63a995772dcb648157f9aeec214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetEIS</definition>
+        <argsstring>(int32_t *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetEIS</name>
+        <param>
+          <type>int32_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ae627d330a58bc47611cc01d547a1fabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetEuler</definition>
+        <argsstring>(float *data, Quaternion *q)</argsstring>
+        <name>dmpGetEuler</name>
+        <param>
+          <type>float *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="125" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="810" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a1a694de246c614ab330070177c6f9344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetYawPitchRoll</definition>
+        <argsstring>(float *data, Quaternion *q, VectorFloat *gravity)</argsstring>
+        <name>dmpGetYawPitchRoll</name>
+        <param>
+          <type>float *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_quaternion" kindref="compound">Quaternion</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="class_vector_float" kindref="compound">VectorFloat</ref> *</type>
+          <declname>gravity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="126" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="828" bodyend="843"/>
+        <references refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" compoundref="helper__3dmath_8h" startline="163">VectorFloat::z</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a98eaf82f26de304c33050d80b36162b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetAccelFloat</definition>
+        <argsstring>(float *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetAccelFloat</name>
+        <param>
+          <type>float *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a244abb860f984ee8979f7a873900b9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpGetQuaternionFloat</definition>
+        <argsstring>(float *data, const uint8_t *packet=0)</argsstring>
+        <name>dmpGetQuaternionFloat</name>
+        <param>
+          <type>float *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>packet</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ae562d5b0fe32a7ab15c4b00368ad549a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpProcessFIFOPacket</definition>
+        <argsstring>(const unsigned char *dmpData)</argsstring>
+        <name>dmpProcessFIFOPacket</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>dmpData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="132" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="849" bodyend="859"/>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a44d1c70bfec0f01316f0e60faf31dd19" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="860" endline="874">dmpReadAndProcessFIFOPacket</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a44d1c70bfec0f01316f0e60faf31dd19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpReadAndProcessFIFOPacket</definition>
+        <argsstring>(uint8_t numPackets, uint8_t *processed=NULL)</argsstring>
+        <name>dmpReadAndProcessFIFOPacket</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>numPackets</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>processed</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="133" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="860" bodyend="874"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1af3b3af491014f6a12e64c99412270dbd" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="148">dmpPacketSize</references>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1ae562d5b0fe32a7ab15c4b00368ad549a" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="849" endline="859">dmpProcessFIFOPacket</references>
+        <references refid="class_m_p_u6050___base_1ac4b73cd8841a5eee523426748a551632" compoundref="_m_p_u6050_8cpp" startline="2741" endline="2747">MPU6050_Base::getFIFOBytes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ab4f54e3d4be94196e6fef193276a448e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSetFIFOProcessedCallback</definition>
+        <argsstring>(void(*func)(void))</argsstring>
+        <name>dmpSetFIFOProcessedCallback</name>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ac40ac5b86bd81b5befc8af1f78c4a9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpInitFIFOParam</definition>
+        <argsstring>()</argsstring>
+        <name>dmpInitFIFOParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a2b185f26ad21cc6a0b8723ea3bb833fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpCloseFIFO</definition>
+        <argsstring>()</argsstring>
+        <name>dmpCloseFIFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1ae22874cdb8d0e956934c4b3938ff5680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpSetGyroDataSource</definition>
+        <argsstring>(uint8_t source)</argsstring>
+        <name>dmpSetGyroDataSource</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a57437c2c09f31605fa0f0265f27b8f45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MPU6050_9Axis_MotionApps41::dmpDecodeQuantizedAccel</definition>
+        <argsstring>()</argsstring>
+        <name>dmpDecodeQuantizedAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a35fa5d5476d8cb9043fcd9f75201b3e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU6050_9Axis_MotionApps41::dmpGetGyroSumOfSquare</definition>
+        <argsstring>()</argsstring>
+        <name>dmpGetGyroSumOfSquare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a80d382b8f2ff96ee08460cea7f5969d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t MPU6050_9Axis_MotionApps41::dmpGetAccelSumOfSquare</definition>
+        <argsstring>()</argsstring>
+        <name>dmpGetAccelSumOfSquare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a8a0a54912a58a16ddbbaeb7c6a6d9768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MPU6050_9Axis_MotionApps41::dmpOverrideQuaternion</definition>
+        <argsstring>(long *q)</argsstring>
+        <name>dmpOverrideQuaternion</name>
+        <param>
+          <type>long *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_p_u6050__9_axis___motion_apps41_1a47d3a9f37cd1bde4e8a2c03537b1e092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t MPU6050_9Axis_MotionApps41::dmpGetFIFOPacketSize</definition>
+        <argsstring>()</argsstring>
+        <name>dmpGetFIFOPacketSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="144" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp" bodystart="885" bodyend="887"/>
+        <references refid="class_m_p_u6050__9_axis___motion_apps41_1af3b3af491014f6a12e64c99412270dbd" compoundref="_m_p_u6050__9_axis___motion_apps41_8h" startline="148">dmpPacketSize</references>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1abb71b224cd0bf4caaf7dd42f0e57b585" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="658" endline="660">dmpPacketAvailable</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="165">
+        <label>MPU6050_Base</label>
+        <link refid="class_m_p_u6050___base"/>
+      </node>
+      <node id="164">
+        <label>MPU6050_9Axis_MotionApps41</label>
+        <link refid="class_m_p_u6050__9_axis___motion_apps41"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="167">
+        <label>MPU6050_Base</label>
+        <link refid="class_m_p_u6050___base"/>
+      </node>
+      <node id="166">
+        <label>MPU6050_9Axis_MotionApps41</label>
+        <link refid="class_m_p_u6050__9_axis___motion_apps41"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" line="46" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h" bodystart="46" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_m_p_u6050___base_1a805b1206d26394a97b7396e6e85e321f" prot="protected" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>buffer</name></member>
+      <member refid="class_m_p_u6050___base_1ac5e7263a43ce3e623bdff14e4faad03a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>CalibrateAccel</name></member>
+      <member refid="class_m_p_u6050___base_1aeec4affbb9e30e7a81ad1daa6f976e7b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>CalibrateGyro</name></member>
+      <member refid="class_m_p_u6050___base_1a85cbc944479b8c5a6d34d0d2a13206ef" prot="protected" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>devAddr</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a2b185f26ad21cc6a0b8723ea3bb833fe" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpCloseFIFO</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a57437c2c09f31605fa0f0265f27b8f45" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpDecodeQuantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a532d48b5396121591c252e01b5c08d1b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpDecodeTemperature</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1af87cdf39941e1dd2b150bdde32ce672c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGet6AxisQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a5b4968d09902fdc23c2bacace79690b0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGet6AxisQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ac0f45ba1c7b0edb94d469d2d8d2a6d1a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGet6AxisQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a694b85c15a6a27a29c1553a8fc464b07" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a5e36244080c949f0c9813dfd15f986fb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1acb15c65d67462a26dffd99d843e9614b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a98eaf82f26de304c33050d80b36162b5" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetAccelFloat</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a80d382b8f2ff96ee08460cea7f5969d0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetAccelSumOfSquare</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ad05d83c5cd3df55cedee8825cb587d9e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetControlData</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a383ae63a995772dcb648157f9aeec214" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetEIS</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ae627d330a58bc47611cc01d547a1fabc" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetEuler</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ac01b85dea418c1400f8e1d488a6599d7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetExternalSensorData</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a47d3a9f37cd1bde4e8a2c03537b1e092" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetFIFOPacketSize</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ae41890220d929f90ed7d0158fcc53713" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetFIFORate</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a59f783d816a884dd8e7646e2cf9e1d26" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGravity</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1af8f2889efcb0def4647933215052b573" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGravity</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ac72f4b4747f5c965bc8c30a81297bd1a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGravity</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ab370c07c03c37084c1272f4e017b8ef0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGravity</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1aa6700ba5e011b7747ebc0ac79bee43ef" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyro</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ad36f071082de443233f02433ac91e393" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyro</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1acfcac78883c39f28b5f9303e62d17643" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyro</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a02dfede701745f980f5bf3cc27e9556a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroAndAccelSensor</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1aab3da2e89d93ff9521351103bd85fd28" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroAndAccelSensor</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ae95afba2e5c7c7686b3b86ee2b4858ef" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroAndAccelSensor</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a86ad54d43b49f89261aa7aca50eb59fb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroSensor</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a9ef863ea56c9b48c8c45a6a2df99377e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroSensor</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a7c5a28a3b0ee59b182d50a747e6bcaf1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroSensor</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a35fa5d5476d8cb9043fcd9f75201b3e4" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetGyroSumOfSquare</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a5d2b90fc61ec4dde3740cb28fb0785a2" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a72f352530a9f112fe7358f597bfde173" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a652ffdadba2f9f671e49c87079815015" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1abe8fdde0f764c9f870b467e9e52543ec" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a4429d25f0e17b82e74692078e0e330bc" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccelInWorld</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a86076f77c2961cb223dda8c86dafac48" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccelInWorld</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1acac476241e7079c3e376412c34347da7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccelInWorld</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a61b47271d84af19868c2a0a261e7a5d8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetLinearAccelInWorld</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a656a4862183b731ae27c314569d2dc64" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetMag</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1acaf0953da2437f123ab3b3a1382c4e87" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a7718fa8bbeb45c058529b3f868b1dc63" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a009cd5f487fc4ed056c812d43ff2a093" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ac6c387924963a7179f2f2d45d61c4f1a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1af914b234b169d93dec057072cbe8597a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a940030ace205a6ba22cab94a2f9af3d3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a244abb860f984ee8979f7a873900b9ae" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetQuaternionFloat</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a614605c507158c701997f0357cb35a34" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetRelativeQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a879d54b2f30682b6c23ae6b4db1fa3fe" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetRelativeQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1afdefa3a09b0fc765b3a6fc14cee1db67" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetRelativeQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a66cbfd3310d19daec230f4a0054637ec" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetSampleFrequency</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a983e8b290af185b5be1e7bbe3bfd28da" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetSampleStepSizeMS</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a3d8132fab0afab7b54877628398a18e6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetTemperature</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a11e16e3ac3f2b7965988500aeb580656" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetUnquantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a579384958dd3a9264af915255c8fa9af" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetUnquantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1aaeb4bf2cf354a07c1f73577479e49ca5" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetUnquantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a1a694de246c614ab330070177c6f9344" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpGetYawPitchRoll</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ac40ac5b86bd81b5befc8af1f78c4a9af" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpInitFIFOParam</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpInitialize</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a8a0a54912a58a16ddbbaeb7c6a6d9768" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpOverrideQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1abb71b224cd0bf4caaf7dd42f0e57b585" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpPacketAvailable</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a8ff6393dffc6fcd20702d43b5f063a60" prot="private" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpPacketBuffer</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1af3b3af491014f6a12e64c99412270dbd" prot="private" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpPacketSize</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ae562d5b0fe32a7ab15c4b00368ad549a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpProcessFIFOPacket</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a44d1c70bfec0f01316f0e60faf31dd19" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpReadAndProcessFIFOPacket</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a1f4bfbf188dd5340cfa101da2b1f313f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpRunFIFORateProcesses</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a83124fa7f0a94650c814c7c63ce8ac91" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a1f2508cadbb811684ddae43a49c48e98" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendControlData</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a0cd77b9d48c9dde04e511743f315d36c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendEIS</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a175e55aae537570d146b70cb80aaa3aa" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendExternalSensorData</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a04685c62d53666f14fd71a01a2d33b0a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendGravity</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a1b164991d930e106ba1c21f776328197" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendGyro</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a0b2d61ded5a6cb852fd3fbd19951e3d1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendLinearAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a12fbf9de90e3f6e7d307eaa6c9a38084" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendLinearAccelInWorld</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a4fefec34a894f56ca61cc2ca65b16a11" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendPacketNumber</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ab0d205d5b9bb6e88570327985219d9b1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendQuantizedAccel</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ae600b4ea1742252e204aa0c27f1c266a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendQuaternion</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a5a0369347cb018db293bf4c2f6416dce" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSendSensorData</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ab4f54e3d4be94196e6fef193276a448e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSetFIFOProcessedCallback</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a71a7c4f656045c8be6414a373c52aee5" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSetFIFORate</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1ae22874cdb8d0e956934c4b3938ff5680" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSetGyroDataSource</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1aa8d577341c78f560b0c4f2042cb3f51b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>dmpSetLinearAccelFilterCoefficient</name></member>
+      <member refid="class_m_p_u6050___base_1a2d443e5449e4154a2d01301766b38026" prot="protected" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>fifoTimeout</name></member>
+      <member refid="class_m_p_u6050___base_1a6ec9b8da462c8054daf923c3794f29b8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAcceleration</name></member>
+      <member refid="class_m_p_u6050___base_1a89b74c15a4f64481fd9831faa16f7ec3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelerationX</name></member>
+      <member refid="class_m_p_u6050___base_1ac9aac1ad74674fc79b7ba1566295a46d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelerationY</name></member>
+      <member refid="class_m_p_u6050___base_1a1dddf9124365ee8d7d6ddaedf54e3b60" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelerationZ</name></member>
+      <member refid="class_m_p_u6050___base_1af5d64293afe95a515ac1be53c0f92dc7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelerometerPowerOnDelay</name></member>
+      <member refid="class_m_p_u6050___base_1a150635ee46ebf4b4a8a4529fe3a98502" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a9964a19a5e7e1e5eb905dcece95d90f0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelXSelfTest</name></member>
+      <member refid="class_m_p_u6050___base_1ac729f439b1197e73e9b4d2e72a58e9c0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelXSelfTestFactoryTrim</name></member>
+      <member refid="class_m_p_u6050___base_1a0076c2df31e70b23a71264785f38a1ec" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelYSelfTest</name></member>
+      <member refid="class_m_p_u6050___base_1a975eb5413990322b882b5b24c235e8fd" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelYSelfTestFactoryTrim</name></member>
+      <member refid="class_m_p_u6050___base_1a9a8c683cdba5a8f3c3d0258e5ac3c197" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelZSelfTest</name></member>
+      <member refid="class_m_p_u6050___base_1a466616c9b52824a22809cdcfb7aea509" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAccelZSelfTestFactoryTrim</name></member>
+      <member refid="class_m_p_u6050___base_1ad52eb66dcc93b649efb3efb2bdad2907" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getAuxVDDIOLevel</name></member>
+      <member refid="class_m_p_u6050___base_1ad7040350ce6bea1a01946f518965d971" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getClockOutputEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1af5331efc9b24ee8e14ab8e710bf81e64" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getClockSource</name></member>
+      <member refid="class_m_p_u6050___base_1a2047ae9950bd3509632a67dee9eaa0be" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>GetCurrentFIFOPacket</name></member>
+      <member refid="class_m_p_u6050___base_1a484615e93874a73b8a6e579bdff6d311" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDeviceID</name></member>
+      <member refid="class_m_p_u6050___base_1a21ad2c3666b42f2686513f5b3d6dc6db" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDHPFMode</name></member>
+      <member refid="class_m_p_u6050___base_1a1dd595fbd87eae82d928f6125f185780" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDLPFMode</name></member>
+      <member refid="class_m_p_u6050___base_1a16895f743dfc37978e2b30e24eb65991" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPConfig1</name></member>
+      <member refid="class_m_p_u6050___base_1af794215bbab4bb0bdb4f48506672df07" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPConfig2</name></member>
+      <member refid="class_m_p_u6050___base_1ae7e9932409d3d64c93897a3bca5b74f3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a47f7e02a056c35226104c6eb4fe6affa" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPInt0Status</name></member>
+      <member refid="class_m_p_u6050___base_1afcc637b3a18f20ac4ff04d92e1d2f23a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPInt1Status</name></member>
+      <member refid="class_m_p_u6050___base_1afe735d3e9ee27822d892abeb4275de65" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPInt2Status</name></member>
+      <member refid="class_m_p_u6050___base_1aa2e5eefa24ff4a16bdff81895dd0f163" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPInt3Status</name></member>
+      <member refid="class_m_p_u6050___base_1a63977a7f2d43832dd381137e6d6a75cd" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPInt4Status</name></member>
+      <member refid="class_m_p_u6050___base_1a397235e4c99d2c4d4385205bc95aea7b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getDMPInt5Status</name></member>
+      <member refid="class_m_p_u6050___base_1a450de30a267445051d4d440738e5765b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getExternalFrameSync</name></member>
+      <member refid="class_m_p_u6050___base_1a1344417176077bc6b596e4d75ca1b4a9" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getExternalSensorByte</name></member>
+      <member refid="class_m_p_u6050___base_1a11648581a9f6e6cb7e32ebbd04f1233f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getExternalSensorDWord</name></member>
+      <member refid="class_m_p_u6050___base_1abeba49738e39e465bcfd992f07aea884" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getExternalSensorWord</name></member>
+      <member refid="class_m_p_u6050___base_1a064e3e722f775e354cebcd9fb17097b2" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getExternalShadowDelayEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa42c59e74fdfd3f55fd7fd3cdd13b0d3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFIFOByte</name></member>
+      <member refid="class_m_p_u6050___base_1ac4b73cd8841a5eee523426748a551632" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFIFOBytes</name></member>
+      <member refid="class_m_p_u6050___base_1abff5ac2dfd585ab7a8f4592caf6b5442" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFIFOCount</name></member>
+      <member refid="class_m_p_u6050___base_1a58da0f214e6c06e633b0e9acce93346e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a4d98191faafc693108f4dc84b9daf103" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFIFOTimeout</name></member>
+      <member refid="class_m_p_u6050___base_1a34a9a58c07cff2bcc7cf3263c6da2ba0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFreefallDetectionCounterDecrement</name></member>
+      <member refid="class_m_p_u6050___base_1ae53aa26f00f1e985f9e7930d830cf0e8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFreefallDetectionDuration</name></member>
+      <member refid="class_m_p_u6050___base_1aca2ab255139d5d2ef6307e7217a9e02b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFreefallDetectionThreshold</name></member>
+      <member refid="class_m_p_u6050___base_1ab975994147e72ab2ee15c968c973d719" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFSyncInterruptEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa8bcb877ff31311b2d985b40eab983bb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFSyncInterruptLevel</name></member>
+      <member refid="class_m_p_u6050___base_1a643813563b76ecea7f5536ff73a23bfb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFullScaleAccelRange</name></member>
+      <member refid="class_m_p_u6050___base_1a461e9146da2e5f90b54e6d84fb373c4c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getFullScaleGyroRange</name></member>
+      <member refid="class_m_p_u6050___base_1a71af18fd332324af0671f63bb0a48270" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getGyroXSelfTestFactoryTrim</name></member>
+      <member refid="class_m_p_u6050___base_1ad9adb76187704bed8bfa691c39d5099c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getGyroYSelfTestFactoryTrim</name></member>
+      <member refid="class_m_p_u6050___base_1ac6e219da2fa79c5f6c48afd3c1347b5c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getGyroZSelfTestFactoryTrim</name></member>
+      <member refid="class_m_p_u6050___base_1a23f6b6a78865dcd6d84b94e3b2708f00" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getI2CBypassEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ab88ee1825b7dcc01901c0ecbf583bc91" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getI2CMasterModeEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6e0b47b54ca1720bfcc4a8d5a1cffaa8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntDataReadyEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a67d40bc7099ec3619db3b4526bdf0d49" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntDataReadyStatus</name></member>
+      <member refid="class_m_p_u6050___base_1a381e47064ecdaa9ff94f7bcc48239755" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntDMPEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a9bc9392c8a9a07b85358d947cb1d72db" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntDMPStatus</name></member>
+      <member refid="class_m_p_u6050___base_1a928215df8e265367dd77247aee24a3e1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac57dee1529ce758c983ee8644561dad0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getInterruptDrive</name></member>
+      <member refid="class_m_p_u6050___base_1a3b39d01c86f96f97a6eb6b5278801224" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getInterruptLatch</name></member>
+      <member refid="class_m_p_u6050___base_1af9e7c20ff60440d9beb05a830b6bb2bb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getInterruptLatchClear</name></member>
+      <member refid="class_m_p_u6050___base_1acfd2de7779ce42d43ed61a77257a94b3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getInterruptMode</name></member>
+      <member refid="class_m_p_u6050___base_1a170498f44fd63381d44e51e4a1551a1d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntFIFOBufferOverflowEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a48aa51bb3e653f11eb1bc6d5a76921f3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntFIFOBufferOverflowStatus</name></member>
+      <member refid="class_m_p_u6050___base_1a6ece9e6261a5bfc45a3dbcb1ac9798c0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntFreefallEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1abcbc04ca985b03a79fb53e50058eaeb8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntFreefallStatus</name></member>
+      <member refid="class_m_p_u6050___base_1a1e0c579c22f7eaf9d56ef164c8bd2556" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntI2CMasterEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a9164f8e85c400f666f303a5ca6b05946" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntI2CMasterStatus</name></member>
+      <member refid="class_m_p_u6050___base_1a1603e574ff44de32573286844e681477" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntMotionEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6aa99d730360bdf354a8c6708dcf8fe6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntMotionStatus</name></member>
+      <member refid="class_m_p_u6050___base_1af04aa47d7ab7a364da445081a780ff76" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntPLLReadyEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a8dbc2e4561a21e188660be4df7898f85" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntPLLReadyStatus</name></member>
+      <member refid="class_m_p_u6050___base_1aad0e68c98c81b6d37ab6665fbbfab2b4" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntStatus</name></member>
+      <member refid="class_m_p_u6050___base_1ade787d55d26ad10a43b6fa9017aef873" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntZeroMotionEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a5ef0c40d83fdd948379ad8ec66687470" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getIntZeroMotionStatus</name></member>
+      <member refid="class_m_p_u6050___base_1ae20d15b2908dd2cd760835328c6a8c98" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getLostArbitration</name></member>
+      <member refid="class_m_p_u6050___base_1aa2350ee9f9bfcbd6e15a357b41c68536" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMasterClockSpeed</name></member>
+      <member refid="class_m_p_u6050___base_1ae081a74b1c19f2646b8b191562325c52" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMotion6</name></member>
+      <member refid="class_m_p_u6050___base_1ac345c8922dd704509d0544df1def18be" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMotion9</name></member>
+      <member refid="class_m_p_u6050___base_1a4a63b4087bfeeceda6b3e47c1e54f5bd" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMotionDetectionCounterDecrement</name></member>
+      <member refid="class_m_p_u6050___base_1ab5e3570b249244da3ee6527a9080079c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMotionDetectionDuration</name></member>
+      <member refid="class_m_p_u6050___base_1a85931700e3ea367262db14f2f7351821" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMotionDetectionThreshold</name></member>
+      <member refid="class_m_p_u6050___base_1a51635729ed217e1d00cfe6e90a5a8a93" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMotionStatus</name></member>
+      <member refid="class_m_p_u6050___base_1a268b4d2850fc294449b9b904939938f6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getMultiMasterEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa8cad4f41afeff461917abd44baa6374" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getOTPBankValid</name></member>
+      <member refid="class_m_p_u6050___base_1ad7ee1489ebb68706afe8788b28adffa0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getPassthroughStatus</name></member>
+      <member refid="class_m_p_u6050___base_1aacc348dc7b93f7c9c312bb2132c03891" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getRate</name></member>
+      <member refid="class_m_p_u6050___base_1a0fcb7070d7226123a6b1a8eb44ace472" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getRotation</name></member>
+      <member refid="class_m_p_u6050___base_1ae17bc0281ec927cb7c2dc8174884f12c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getRotationX</name></member>
+      <member refid="class_m_p_u6050___base_1a873b0e9a0765c437044de9d0841b4775" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getRotationY</name></member>
+      <member refid="class_m_p_u6050___base_1aec4a0cc9cb9227cbff616cd81fe03a07" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getRotationZ</name></member>
+      <member refid="class_m_p_u6050___base_1a436aff5782b4c1cc335606b82129939b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlate4InputByte</name></member>
+      <member refid="class_m_p_u6050___base_1aff738cbfaa0678d0afe932c39b9ea6a2" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave0FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1abe00a06ccc62b4949da08cf69be6bac6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave0Nack</name></member>
+      <member refid="class_m_p_u6050___base_1addc2c6416614d80c040d1d15907c33b3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave1FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a58cf85bf8bccd5396f503db7abb7d134" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave1Nack</name></member>
+      <member refid="class_m_p_u6050___base_1a688f856384eb8deb8ae6cb4c9ba4dc32" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave2FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a703e5ae3f92e51d6fdbf432bf1832f4d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave2Nack</name></member>
+      <member refid="class_m_p_u6050___base_1ad222061f5e93f17c9ec76ca4bdeccf77" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave3FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a1ffeb647fa03ead5cf0331617e9caf49" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave3Nack</name></member>
+      <member refid="class_m_p_u6050___base_1a4fd536262c1bb6e4493478a72edd3a2e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4Address</name></member>
+      <member refid="class_m_p_u6050___base_1ad1259bd75d052a91f2e512fd87e7c371" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4Enabled</name></member>
+      <member refid="class_m_p_u6050___base_1a50da61398f202cbf05fe5bdc4673d82c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4InterruptEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a036d36fffbc2fcb1d768b587c168bd47" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4IsDone</name></member>
+      <member refid="class_m_p_u6050___base_1a2eb282f172a850855da2779fd66c3292" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4MasterDelay</name></member>
+      <member refid="class_m_p_u6050___base_1a87d99d20886499f9484ba3e9f0a7082f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4Nack</name></member>
+      <member refid="class_m_p_u6050___base_1a5a5c3e9453d37e3ffe1bd132ffee1313" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4Register</name></member>
+      <member refid="class_m_p_u6050___base_1a9b68179218893e9ac2da60012f311454" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlave4WriteMode</name></member>
+      <member refid="class_m_p_u6050___base_1a80b775815043814e2d56b4839b586988" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveAddress</name></member>
+      <member refid="class_m_p_u6050___base_1ad945c2371ded3ca2d30af926cb6d2913" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveDataLength</name></member>
+      <member refid="class_m_p_u6050___base_1a9885b0dc2b4fe2b1bf0fedc96ca0ad7c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveDelayEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aae1b3405c4f9ca185fcaced79c474809" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa2acec1122f28b2158f40e1e82ef5a85" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveReadWriteTransitionEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aad44b9e3b98043db3d45fb98d4e0ef0e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveRegister</name></member>
+      <member refid="class_m_p_u6050___base_1a3656bea0341568d1903a45022bce207b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveWordByteSwap</name></member>
+      <member refid="class_m_p_u6050___base_1a15e22b9048761bc921fd04d18ae6a2e9" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveWordGroupOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a8d27530934a11b23acdd61a125cccad6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSlaveWriteMode</name></member>
+      <member refid="class_m_p_u6050___base_1a1c72cdb74d7e3e61f691a66fd996a7d7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getSleepEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aae237c28bb7122acf77e1062c6bd661f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getStandbyXAccelEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aff9433cc85b07475b67073ff4f4a44a3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getStandbyXGyroEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac9d9c86666b690a3691fa2d7fcede162" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getStandbyYAccelEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a29611bbea926eba60ef26dbba01b4d32" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getStandbyYGyroEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a07a073f1c721b14faf9d5e6b016a7217" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getStandbyZAccelEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aefe0eaa850df754c502a755aa31d950f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getStandbyZGyroEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getTemperature</name></member>
+      <member refid="class_m_p_u6050___base_1a282584a7bb0dc7f52148ea392857d06e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getTempFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1abe206c4ce1bd885e303e4496fe9903a1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getTempSensorEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1afd5d5556401f1745db4e6649476b2922" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getWaitForExternalSensorEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a70b6093c18c33a0bd9360fb8b322e8c2" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getWakeCycleEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a0edc058effd88a7529857769d5f80dbd" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getWakeFrequency</name></member>
+      <member refid="class_m_p_u6050___base_1a4a3168947eb225142cf9e83c904cb7af" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXAccelOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a520d9bd072a899ef582ca169107b9a74" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXFineGain</name></member>
+      <member refid="class_m_p_u6050___base_1a58d92f77dd19dc9282b068917360566c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXGyroFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aeabcf4f53941756293f8c2c8a9e03fb0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXGyroOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a5fa559bbf0d22438398cc1924a5677be" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXGyroOffsetTC</name></member>
+      <member refid="class_m_p_u6050___base_1ab4f0157c7e59b9ac228f9cdf41844ce3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXNegMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1a96ffc9693bd08bd6861d7ad798f61089" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getXPosMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1a0ccaf7a622a28c2147f200744c8f3d9f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYAccelOffset</name></member>
+      <member refid="class_m_p_u6050___base_1aa2677616646aa5ed0d7ae347bb8fca3f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYFineGain</name></member>
+      <member refid="class_m_p_u6050___base_1a1ea13d07ff700d4fd9cfc0b7bfa97a2f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYGyroFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a82f11a6474f10b1ec9b827d306329e00" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYGyroOffset</name></member>
+      <member refid="class_m_p_u6050___base_1ae6e65bf3ed446d0315795dff852f40c6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYGyroOffsetTC</name></member>
+      <member refid="class_m_p_u6050___base_1ad81ee06f456cb5e38527506f9bae0f8b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYNegMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1af36febbcdc6e2a824770bdee5cfc3ceb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getYPosMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1a1ca50c098e438320f6c54522471dc341" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZAccelOffset</name></member>
+      <member refid="class_m_p_u6050___base_1aef532b35b7de01a02f21a7511424acd8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZeroMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1a2d125670ee0ec3e3e6688cbe637972b4" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZeroMotionDetectionDuration</name></member>
+      <member refid="class_m_p_u6050___base_1a1bf7e99ae57a102eddb828172fc492fa" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZeroMotionDetectionThreshold</name></member>
+      <member refid="class_m_p_u6050___base_1aef52f703ff623e05a7e6893192196c0e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZFineGain</name></member>
+      <member refid="class_m_p_u6050___base_1a23bb9d1e7b02d9d15fa402b9c9802ddc" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZGyroFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac99f50622a272dc28212b9bb1d36b32d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZGyroOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a34a99c1c89a1900a03368e81bad60a89" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZGyroOffsetTC</name></member>
+      <member refid="class_m_p_u6050___base_1a903756943e159225c5a2e237ddaea49b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZNegMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1ae1118180cb00c34c2020d3b194e2eca5" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>getZPosMotionDetected</name></member>
+      <member refid="class_m_p_u6050___base_1a2cdcd93cacec3e69129ae8e3aecbe93b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>initialize</name></member>
+      <member refid="class_m_p_u6050__9_axis___motion_apps41_1a3e534d7619c06914b5db84d2c8e068c7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>MPU6050_9Axis_MotionApps41</name></member>
+      <member refid="class_m_p_u6050___base_1a23bbb6c7226e78d7b6580560363e760e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>MPU6050_Base</name></member>
+      <member refid="class_m_p_u6050___base_1aedddb3408760a50cc68a0c19892fe999" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>PID</name></member>
+      <member refid="class_m_p_u6050___base_1a54438d0baf4b657bff9fe9c52390dc3c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>PrintActiveOffsets</name></member>
+      <member refid="class_m_p_u6050___base_1a1930d8ee4f5e4b5cdfe23f4f267e69db" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>readMemoryBlock</name></member>
+      <member refid="class_m_p_u6050___base_1abc0ae36b66fc64df8694bb18019f0114" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>readMemoryByte</name></member>
+      <member refid="class_m_p_u6050___base_1a6bb19fc65efc973e4b96529b7153d81c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>reset</name></member>
+      <member refid="class_m_p_u6050___base_1a4c09cdf5f8435e2c9821e1988bc9d7ba" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetAccelerometerPath</name></member>
+      <member refid="class_m_p_u6050___base_1a69faefa1534ba46d2de83e4ff427ff12" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetDMP</name></member>
+      <member refid="class_m_p_u6050___base_1a90a4ce81f7ef13a3f0badaa414d64f10" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetFIFO</name></member>
+      <member refid="class_m_p_u6050___base_1a9c64a8800eec919c0ea4e1ba6316af89" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetGyroscopePath</name></member>
+      <member refid="class_m_p_u6050___base_1a8f2f365e03e3a0953a487b65d2054a77" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetI2CMaster</name></member>
+      <member refid="class_m_p_u6050___base_1a128ce040d90f3ba200496933fdda0eac" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetSensors</name></member>
+      <member refid="class_m_p_u6050___base_1ae3e020015312b27fc389d23cc89407ff" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>resetTemperaturePath</name></member>
+      <member refid="class_m_p_u6050___base_1a2b6fc26bae0ada7f6974c92729c0e893" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setAccelerometerPowerOnDelay</name></member>
+      <member refid="class_m_p_u6050___base_1afa2556435fdb2073b4937681adf3e450" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setAccelFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a11ab02fd99e3b89d63bf05d0838aa937" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setAccelXSelfTest</name></member>
+      <member refid="class_m_p_u6050___base_1a5ef99a8fe213a167f1bff306144e42cc" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setAccelYSelfTest</name></member>
+      <member refid="class_m_p_u6050___base_1aa4ad1ea53cdf1b54854d38b1e709a265" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setAccelZSelfTest</name></member>
+      <member refid="class_m_p_u6050___base_1ac4fbb98e39a92a175ba33a0bbf7e5320" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setAuxVDDIOLevel</name></member>
+      <member refid="class_m_p_u6050___base_1a4322aab1419a627cbfa7ab8f5e77075d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setClockOutputEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a02fc458c263401a22c8737be1c0ef2bb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setClockSource</name></member>
+      <member refid="class_m_p_u6050___base_1a4243ca4a58b4e0177c97c1a1002e1cfc" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setDeviceID</name></member>
+      <member refid="class_m_p_u6050___base_1a8117916e5c4af07a9665c7081a761cc6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setDHPFMode</name></member>
+      <member refid="class_m_p_u6050___base_1aa54aa824bd2e7a24ee9908029f05b849" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setDLPFMode</name></member>
+      <member refid="class_m_p_u6050___base_1afe501313698bd6e45869c056753b3034" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setDMPConfig1</name></member>
+      <member refid="class_m_p_u6050___base_1a0d593051500f29b27890782fb9cf02ba" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setDMPConfig2</name></member>
+      <member refid="class_m_p_u6050___base_1a50389f06417a9543aa8996594f034df3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setDMPEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ae6b4822ab3b3c0ad6a2a2cf64c33c25f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setExternalFrameSync</name></member>
+      <member refid="class_m_p_u6050___base_1afe60ececbc797ee4295f71a11e6f929b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setExternalShadowDelayEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ab0310c1d8de3175363732fe53afa01c9" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFIFOByte</name></member>
+      <member refid="class_m_p_u6050___base_1af552017976a6b77a13a42cf0bad87bbb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aee93e1099ae839a2c8fc04b0daf1e1cb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFIFOTimeout</name></member>
+      <member refid="class_m_p_u6050___base_1a23c342e41fc377e94e79f0e912eabc6a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFreefallDetectionCounterDecrement</name></member>
+      <member refid="class_m_p_u6050___base_1ad0f4da74813e940627ae5e5a47ee10f4" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFreefallDetectionDuration</name></member>
+      <member refid="class_m_p_u6050___base_1a7cf8652b0d0204b45cc18e0ab31aa8a7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFreefallDetectionThreshold</name></member>
+      <member refid="class_m_p_u6050___base_1a07377d94ccec30198bd32e408d892aaa" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFSyncInterruptEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6ce135f54ffac09348f0a34cc063414e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFSyncInterruptLevel</name></member>
+      <member refid="class_m_p_u6050___base_1a411f9306662e91e716e17419c2bc59d1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFullScaleAccelRange</name></member>
+      <member refid="class_m_p_u6050___base_1a474156fdc22301b8147c0eca1ca2737a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setFullScaleGyroRange</name></member>
+      <member refid="class_m_p_u6050___base_1a78a625e871e7f6cab9efe7b4b8253b45" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setI2CBypassEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a1cad7275068fac2e4b5d9a14835b60d9" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setI2CMasterModeEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ae0185900633130e0a6018d9b5b277c23" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntDataReadyEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1adc894aa0829618539f022f19f67f35e6" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntDMPEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac4bcfc51ad4004d4923202d1f093167c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac071c26927e128f0c8108c26f0dd6ca2" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setInterruptDrive</name></member>
+      <member refid="class_m_p_u6050___base_1a8b4d24c2f48703b03df5fdf536630114" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setInterruptLatch</name></member>
+      <member refid="class_m_p_u6050___base_1ad58e7b763846f3f1374f677f894c591b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setInterruptLatchClear</name></member>
+      <member refid="class_m_p_u6050___base_1ae60338d86e2b0a0c3f7b88ccb4b8ddd9" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setInterruptMode</name></member>
+      <member refid="class_m_p_u6050___base_1a85b7fa233105fe44e106ac702735ff30" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntFIFOBufferOverflowEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aaf3db292200588a7b53d361c8fdb0d95" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntFreefallEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa08825832581c5375314a73a4ccc2a3e" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntI2CMasterEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6f841a18476ea8f256e396c35c4bc72a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntMotionEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a18bbda2f99af616f14a8ef4f1e8262a5" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntPLLReadyEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a031f96ee8e743be4f23cf203d48a8098" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setIntZeroMotionEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6a36cf96ee8b3d75483233277487a7ce" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMasterClockSpeed</name></member>
+      <member refid="class_m_p_u6050___base_1a28a48af89336c9dc8ea4242efdcc450f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMemoryBank</name></member>
+      <member refid="class_m_p_u6050___base_1a010f2977db5b023fdca05fd7f5533bf1" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMemoryStartAddress</name></member>
+      <member refid="class_m_p_u6050___base_1a866399657f6d8a11514324bbadc602aa" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMotionDetectionCounterDecrement</name></member>
+      <member refid="class_m_p_u6050___base_1ad84a5c4a80aaf6127d5d7ad33f0854e0" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMotionDetectionDuration</name></member>
+      <member refid="class_m_p_u6050___base_1ad7cac8dd9d3abef325127a33f085e0bf" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMotionDetectionThreshold</name></member>
+      <member refid="class_m_p_u6050___base_1aabf62641ad552e12f1554e3e34ea9b59" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setMultiMasterEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac1db5782c0696833d4554b83fe8beb49" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setOTPBankValid</name></member>
+      <member refid="class_m_p_u6050___base_1a9d157266fc4f1ccb2e351de5ad43e5ef" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setRate</name></member>
+      <member refid="class_m_p_u6050___base_1a6a37bb04e52f38dd539bb456b90ed607" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave0FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ae95aedd4d7f38f1b9920ed7f3192a61a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave1FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a217b8f731737b612f86dab00a4e1b8ec" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave2FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ae1248aa09e1915d935998cb459305f9c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave3FIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ac92eab02cdfbbcb71cb7030549e74a16" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4Address</name></member>
+      <member refid="class_m_p_u6050___base_1ab59782e1a8c6754e6bd889cf0197ce5d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4Enabled</name></member>
+      <member refid="class_m_p_u6050___base_1a8a4343015c979a09e987dd9f45308f6c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4InterruptEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a1ef550c5ec6b25baca3e268f3321ad83" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4MasterDelay</name></member>
+      <member refid="class_m_p_u6050___base_1a7667427cfa99a48a1150abfa64bf452a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4OutputByte</name></member>
+      <member refid="class_m_p_u6050___base_1a8a9a7e3d17557bfc443f2068c0576f6c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4Register</name></member>
+      <member refid="class_m_p_u6050___base_1a23415c254d9b484e53cef6e1356b63e8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlave4WriteMode</name></member>
+      <member refid="class_m_p_u6050___base_1a39d36bc5f09bc33e57a669e01b6ccaf4" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveAddress</name></member>
+      <member refid="class_m_p_u6050___base_1aed64cfe3e9ebd1053279d8f77853ef04" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveDataLength</name></member>
+      <member refid="class_m_p_u6050___base_1a11c74c2512e85aa9e50b779b35aca5ec" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveDelayEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ae68556ce72fd9f25551decd19cddbc2b" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a32de83f4d3531caa5a7200ae68ca7739" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveOutputByte</name></member>
+      <member refid="class_m_p_u6050___base_1ae4cadc8a948270ed4374ed7dd71c36c8" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveReadWriteTransitionEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6959ab134eec2286e6473f2ac8941065" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveRegister</name></member>
+      <member refid="class_m_p_u6050___base_1a0759a118dc3cb51e55cf211f53d28d11" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveWordByteSwap</name></member>
+      <member refid="class_m_p_u6050___base_1aea3beb0cf4c68e6bb38e2020b2073cbd" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveWordGroupOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a4d4e389f4324fd073a1188c2e48c8b55" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSlaveWriteMode</name></member>
+      <member refid="class_m_p_u6050___base_1a50329f23a59a73e2c4b32211c2a1da98" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setSleepEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a752aaa71f38e973a75f6e2d563dfa38f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setStandbyXAccelEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a7faffb72cb1ae115fded0ca9549acc42" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setStandbyXGyroEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a351a986730f039ae3053741bd64a889c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setStandbyYAccelEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ab01ff2c9015f652656d5802848bac45f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setStandbyYGyroEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a1ae758ba07bc6568eb6f732e74d18e0d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setStandbyZAccelEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a6afe290d7d42efb1aa9c35763605a515" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setStandbyZGyroEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a23c2880f63666cbf5438b8d4e7af748f" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setTempFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a149ec0399d564298e15908c542768fdd" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setTempSensorEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1aa212743b4ac5520aeb0e4ef378a43490" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setWaitForExternalSensorEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a885f90e5898d6ea60f084431899df754" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setWakeCycleEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a36f9271de59968ac6636e415e4cde1bb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setWakeFrequency</name></member>
+      <member refid="class_m_p_u6050___base_1aa74a241aaaecbbbabe5ae6157ce10d75" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setXAccelOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a26896a1b1d781eca8bf6bab629feeac7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setXFineGain</name></member>
+      <member refid="class_m_p_u6050___base_1a8d0de79eb95a996a7d7ad521dbc9512d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setXGyroFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a5aa9f43262708f5edaa1de18daff1526" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setXGyroOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a75bdfac21c78916b15d6b1742b8d2ef7" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setXGyroOffsetTC</name></member>
+      <member refid="class_m_p_u6050___base_1afb06fd307cfe6db11746e3b458200bfb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setYAccelOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a30654931d36ee0326c2f12360bde5012" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setYFineGain</name></member>
+      <member refid="class_m_p_u6050___base_1ae3c65d87f7d4b792a59894f9e4d82592" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setYGyroFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1ad2be43f6343839b5a07605dac9546499" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setYGyroOffset</name></member>
+      <member refid="class_m_p_u6050___base_1a90506688c48e079fab832100a8d97d04" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setYGyroOffsetTC</name></member>
+      <member refid="class_m_p_u6050___base_1a822a611b1252259113f3dcd9bc40b334" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZAccelOffset</name></member>
+      <member refid="class_m_p_u6050___base_1ab795e17ef51683756cf27a1645a62b9a" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZeroMotionDetectionDuration</name></member>
+      <member refid="class_m_p_u6050___base_1a4aac435f4c354c904ef8c4fec11deebb" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZeroMotionDetectionThreshold</name></member>
+      <member refid="class_m_p_u6050___base_1a822e81809f942f45ca978ca3250217b3" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZFineGain</name></member>
+      <member refid="class_m_p_u6050___base_1a027a47b586fbae66b01450f93d6e9288" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZGyroFIFOEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a56cb0dfeb269c5601a26f885d7254301" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZGyroOffset</name></member>
+      <member refid="class_m_p_u6050___base_1ad68e4d3c1b7ddb308a4514f27cb89921" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>setZGyroOffsetTC</name></member>
+      <member refid="class_m_p_u6050___base_1a5a4bdd690bb700bfd99858149cb1a41d" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>switchSPIEnabled</name></member>
+      <member refid="class_m_p_u6050___base_1a2e844af20858ef83ef38b0444311d62c" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>testConnection</name></member>
+      <member refid="class_m_p_u6050___base_1a96a025e46d564a841ebab6eb5913bcfb" prot="protected" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>wireObj</name></member>
+      <member refid="class_m_p_u6050___base_1ab9d002775fdd3fa72170d1ec94af8005" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>writeDMPConfigurationSet</name></member>
+      <member refid="class_m_p_u6050___base_1a04f4591647809e810002567272628340" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>writeMemoryBlock</name></member>
+      <member refid="class_m_p_u6050___base_1a1a05c57dd0eb54be35ee5d5535d4c2be" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>writeMemoryByte</name></member>
+      <member refid="class_m_p_u6050___base_1aee7d6e18c60fd3fd226f312d3769fcce" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>writeProgDMPConfigurationSet</name></member>
+      <member refid="class_m_p_u6050___base_1a3a29ba0a8ea60b4aba959e012e22d740" prot="public" virt="non-virtual"><scope>MPU6050_9Axis_MotionApps41</scope><name>writeProgMemoryBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

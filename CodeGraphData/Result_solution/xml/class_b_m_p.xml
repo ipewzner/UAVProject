@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_b_m_p" kind="class" prot="public">
+    <compoundname>BMP</compoundname>
+    <basecompoundref refid="class_sensor" prot="public" virt="non-virtual">Sensor</basecompoundref>
+    <includes refid="_b_m_p_8h" local="no">BMP.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t BMP::i2c_address</definition>
+        <argsstring></argsstring>
+        <name>i2c_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="16" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" compoundref="_b_m_p_8cpp" startline="3" endline="7">BMP</referencedby>
+        <referencedby refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" compoundref="_b_m_p_8cpp" startline="9" endline="24">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" prot="public" static="no" mutable="no">
+        <type>Adafruit_BMP280</type>
+        <definition>Adafruit_BMP280 BMP::bmp</definition>
+        <argsstring></argsstring>
+        <name>bmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" compoundref="_b_m_p_8cpp" startline="26" endline="32">asciiResult</referencedby>
+        <referencedby refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" compoundref="_b_m_p_8cpp" startline="9" endline="24">init</referencedby>
+        <referencedby refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753" compoundref="_b_m_p_8cpp" startline="43" endline="55">jsonResult</referencedby>
+        <referencedby refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" compoundref="_b_m_p_8cpp" startline="34" endline="41">toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BMP::BMP</definition>
+        <argsstring>(char *name, size_t i2c_address)</argsstring>
+        <name>BMP</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>i2c_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp" bodystart="3" bodyend="7"/>
+        <references refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" compoundref="_b_m_p_8h" startline="16">i2c_address</references>
+        <references refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" compoundref="_sensor_8h" startline="12">Sensor::name</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool BMP::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="class_sensor_1a42681155fbb4e23d371f50a379ebf351">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp" bodystart="9" bodyend="24"/>
+        <references refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" compoundref="_b_m_p_8h" startline="17">bmp</references>
+        <references refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" compoundref="_b_m_p_8h" startline="16">i2c_address</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String BMP::asciiResult</definition>
+        <argsstring>()</argsstring>
+        <name>asciiResult</name>
+        <reimplements refid="class_sensor_1a990933ca2756162944964b4ee310a7f9">asciiResult</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp" bodystart="26" bodyend="32"/>
+        <references refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" compoundref="_config_8h" startline="21">ALTITUDE_CONST</references>
+        <references refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" compoundref="_b_m_p_8h" startline="17">bmp</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String BMP::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_sensor_1a97c1e3f398570ff28aeb5f9234a6fe58">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp" bodystart="34" bodyend="41"/>
+        <references refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" compoundref="_config_8h" startline="21">ALTITUDE_CONST</references>
+        <references refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" compoundref="_b_m_p_8h" startline="17">bmp</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_m_p_1a40fa5647751168ac452023a2293dc753" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>DynamicJsonDocument BMP::jsonResult</definition>
+        <argsstring>()</argsstring>
+        <name>jsonResult</name>
+        <reimplements refid="class_sensor_1abe9626a7ffd5294bb75f1b7728e9582d">jsonResult</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="21" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp" bodystart="43" bodyend="55"/>
+        <references refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" compoundref="_config_8h" startline="21">ALTITUDE_CONST</references>
+        <references refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" compoundref="_b_m_p_8h" startline="17">bmp</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>BMP</label>
+        <link refid="class_b_m_p"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>BMP</label>
+        <link refid="class_b_m_p"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h" bodystart="12" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" prot="public" virt="virtual"><scope>BMP</scope><name>asciiResult</name></member>
+      <member refid="class_b_m_p_1ad82443c503ca30c05d2d1a55cc8806a7" prot="public" virt="non-virtual"><scope>BMP</scope><name>bmp</name></member>
+      <member refid="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" prot="public" virt="non-virtual"><scope>BMP</scope><name>BMP</name></member>
+      <member refid="class_b_m_p_1ac2be37128dee5e6a5413a7261b78e159" prot="public" virt="non-virtual"><scope>BMP</scope><name>i2c_address</name></member>
+      <member refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" prot="public" virt="virtual"><scope>BMP</scope><name>init</name></member>
+      <member refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753" prot="public" virt="virtual"><scope>BMP</scope><name>jsonResult</name></member>
+      <member refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" prot="public" virt="non-virtual"><scope>BMP</scope><name>name</name></member>
+      <member refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" prot="public" virt="virtual"><scope>BMP</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_e_b_y_t_e" kind="class" prot="public">
+    <compoundname>EBYTE</compoundname>
+    <includes refid="_e_b_y_t_e_8h" local="no">EBYTE.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" prot="private" static="no" mutable="no">
+        <type>Stream *</type>
+        <definition>Stream* EBYTE::_s</definition>
+        <argsstring></argsstring>
+        <name>_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="284" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="284" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" compoundref="_e_b_y_t_e_8cpp" startline="100" endline="104">available</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" compoundref="_e_b_y_t_e_8cpp" startline="736" endline="748">ClearBuffer</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" compoundref="_e_b_y_t_e_8cpp" startline="51" endline="61">EBYTE</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" compoundref="_e_b_y_t_e_8cpp" startline="110" endline="114">flush</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a314ddeb6fcba2b0d9570c3e9e86d44b7" compoundref="_e_b_y_t_e_8cpp" startline="133" endline="137">GetByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" compoundref="_e_b_y_t_e_8cpp" startline="171" endline="178">GetStruct</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" compoundref="_e_b_y_t_e_8cpp" startline="285" endline="298">Reset</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a22ecdb9610bb9a8d431bf29b34050fa8" compoundref="_e_b_y_t_e_8cpp" startline="121" endline="125">SendByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" compoundref="_e_b_y_t_e_8cpp" startline="149" endline="158">SendStruct</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1ae3632bb7c19bda3b18e52545b992fbb5" prot="private" static="no" mutable="no">
+        <type>Stream *</type>
+        <definition>Stream* EBYTE::_TD</definition>
+        <argsstring></argsstring>
+        <name>_TD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="285" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t EBYTE::_M0</definition>
+        <argsstring></argsstring>
+        <name>_M0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="288" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="288" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" compoundref="_e_b_y_t_e_8cpp" startline="51" endline="61">EBYTE</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">init</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t EBYTE::_M1</definition>
+        <argsstring></argsstring>
+        <name>_M1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="289" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="289" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" compoundref="_e_b_y_t_e_8cpp" startline="51" endline="61">EBYTE</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">init</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t EBYTE::_AUX</definition>
+        <argsstring></argsstring>
+        <name>_AUX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="290" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="290" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" compoundref="_e_b_y_t_e_8cpp" startline="51" endline="61">EBYTE</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af589e946c750cef704973915e817cb77" compoundref="_e_b_y_t_e_8cpp" startline="482" endline="484">GetAux</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Params[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>_Params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="294" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="294" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Save</definition>
+        <argsstring></argsstring>
+        <name>_Save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="300" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="300" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_AddressHigh</definition>
+        <argsstring></argsstring>
+        <name>_AddressHigh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="301" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="301" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" compoundref="_e_b_y_t_e_8cpp" startline="446" endline="448">GetAddress</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a63722f74c5a73be271e0ff0de82dbab5" compoundref="_e_b_y_t_e_8cpp" startline="323" endline="325">GetAddressH</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" compoundref="_e_b_y_t_e_8cpp" startline="435" endline="438">SetAddress</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" compoundref="_e_b_y_t_e_8cpp" startline="319" endline="321">SetAddressH</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_AddressLow</definition>
+        <argsstring></argsstring>
+        <name>_AddressLow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="302" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="302" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" compoundref="_e_b_y_t_e_8cpp" startline="446" endline="448">GetAddress</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a1c282416df68b5a9729aa94264bc81c5" compoundref="_e_b_y_t_e_8cpp" startline="336" endline="338">GetAddressL</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" compoundref="_e_b_y_t_e_8cpp" startline="435" endline="438">SetAddress</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" compoundref="_e_b_y_t_e_8cpp" startline="331" endline="333">SetAddressL</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Speed</definition>
+        <argsstring></argsstring>
+        <name>_Speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="303" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="303" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af975acecae0b9182071c33727c2ac712" compoundref="_e_b_y_t_e_8cpp" startline="307" endline="309">GetSpeed</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a443d1f6643b71366e0dec3f056e12c45" compoundref="_e_b_y_t_e_8cpp" startline="301" endline="303">SetSpeed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Channel</definition>
+        <argsstring></argsstring>
+        <name>_Channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="304" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="304" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1afca840e33fff6bdab42725aee065dcdd" compoundref="_e_b_y_t_e_8cpp" startline="348" endline="350">GetChannel</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" compoundref="_e_b_y_t_e_8cpp" startline="345" endline="347">SetChannel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Options</definition>
+        <argsstring></argsstring>
+        <name>_Options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="305" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="305" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1aa9be626fe2910c94443c4744597048aa" compoundref="_e_b_y_t_e_8cpp" startline="310" endline="312">GetOptions</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" compoundref="_e_b_y_t_e_8cpp" startline="304" endline="306">SetOptions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_ParityBit</definition>
+        <argsstring></argsstring>
+        <name>_ParityBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="309" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="309" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a73a189a4b1e89848d2e1cceaaf8378d5" compoundref="_e_b_y_t_e_8cpp" startline="378" endline="380">GetParityBit</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" compoundref="_e_b_y_t_e_8cpp" startline="374" endline="377">SetParityBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_UARTDataRate</definition>
+        <argsstring></argsstring>
+        <name>_UARTDataRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="310" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="310" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" compoundref="_e_b_y_t_e_8cpp" startline="459" endline="461">GetUARTBaudRate</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" compoundref="_e_b_y_t_e_8cpp" startline="454" endline="457">SetUARTBaudRate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_AirDataRate</definition>
+        <argsstring></argsstring>
+        <name>_AirDataRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="311" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="311" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a919f678b72d54104a225c1a89f44f417" compoundref="_e_b_y_t_e_8cpp" startline="364" endline="366">GetAirDataRate</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" compoundref="_e_b_y_t_e_8cpp" startline="357" endline="362">SetAirDataRate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_OptionTrans</definition>
+        <argsstring></argsstring>
+        <name>_OptionTrans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="312" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="312" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a3a327b276c27f4e81031daf21e547d5b" compoundref="_e_b_y_t_e_8cpp" startline="390" endline="392">GetTransmissionMode</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" compoundref="_e_b_y_t_e_8cpp" startline="386" endline="389">SetTransmissionMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_OptionPullup</definition>
+        <argsstring></argsstring>
+        <name>_OptionPullup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="313" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="313" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad10e32fc59a1e01604a6eae18be11976" compoundref="_e_b_y_t_e_8cpp" startline="398" endline="400">GetPullupMode</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" compoundref="_e_b_y_t_e_8cpp" startline="394" endline="397">SetPullupMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_OptionWakeup</definition>
+        <argsstring></argsstring>
+        <name>_OptionWakeup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="314" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="314" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1aff3e4fd2ca4000d4a732f1f335fa3eee" compoundref="_e_b_y_t_e_8cpp" startline="406" endline="408">GetWORTIming</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" compoundref="_e_b_y_t_e_8cpp" startline="402" endline="405">SetWORTIming</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_OptionFEC</definition>
+        <argsstring></argsstring>
+        <name>_OptionFEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="315" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="315" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a2978cb453904344bd90365bdc6079b67" compoundref="_e_b_y_t_e_8cpp" startline="414" endline="416">GetFECMode</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" compoundref="_e_b_y_t_e_8cpp" startline="410" endline="413">SetFECMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_OptionPower</definition>
+        <argsstring></argsstring>
+        <name>_OptionPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="316" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="316" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a0848d00c34fe71c6b59efb852e843c6b" compoundref="_e_b_y_t_e_8cpp" startline="425" endline="427">GetTransmitPower</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" compoundref="_e_b_y_t_e_8cpp" startline="418" endline="423">SetTransmitPower</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1ab43053f18483b402afd81007bfa56bf8" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t EBYTE::_Address</definition>
+        <argsstring></argsstring>
+        <name>_Address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="317" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="317" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Model</definition>
+        <argsstring></argsstring>
+        <name>_Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="318" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="318" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a9bb6f8d416d128e3043536588813fa1e" compoundref="_e_b_y_t_e_8cpp" startline="700" endline="704">GetModel</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Version</definition>
+        <argsstring></argsstring>
+        <name>_Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="319" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="319" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a1cbc2717761e576b55df078c0feb24ab" compoundref="_e_b_y_t_e_8cpp" startline="710" endline="714">GetVersion</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_Features</definition>
+        <argsstring></argsstring>
+        <name>_Features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="320" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="320" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1aaa628f5dbc8550888d923c399bd7bdde" compoundref="_e_b_y_t_e_8cpp" startline="721" endline="725">GetFeatures</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::_buf</definition>
+        <argsstring></argsstring>
+        <name>_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="321" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="321" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" compoundref="_e_b_y_t_e_8cpp" startline="171" endline="178">GetStruct</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" compoundref="_e_b_y_t_e_8cpp" startline="149" endline="158">SendStruct</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EBYTE::EBYTE</definition>
+        <argsstring>(Stream *s, uint8_t PIN_M0=4, uint8_t PIN_M1=5, uint8_t PIN_AUX=6)</argsstring>
+        <name>EBYTE</name>
+        <param>
+          <type>Stream *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PIN_M0</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PIN_M1</declname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>PIN_AUX</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="183" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="51" bodyend="61"/>
+        <references refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" compoundref="_e_b_y_t_e_8h" startline="290">_AUX</references>
+        <references refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" compoundref="_e_b_y_t_e_8h" startline="288">_M0</references>
+        <references refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" compoundref="_e_b_y_t_e_8h" startline="289">_M1</references>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="192" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="68" bodyend="93"/>
+        <references refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" compoundref="_e_b_y_t_e_8h" startline="290">_AUX</references>
+        <references refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" compoundref="_e_b_y_t_e_8h" startline="288">_M0</references>
+        <references refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" compoundref="_e_b_y_t_e_8h" startline="289">_M1</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+        <references refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</references>
+        <references refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</references>
+        <references refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetMode</definition>
+        <argsstring>(uint8_t mode=MODE_NORMAL)</argsstring>
+        <name>SetMode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+          <defval><ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="195" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="224" bodyend="265"/>
+        <references refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" compoundref="_e_b_y_t_e_8h" startline="288">_M0</references>
+        <references refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" compoundref="_e_b_y_t_e_8h" startline="289">_M1</references>
+        <references refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" compoundref="_e_b_y_t_e_8cpp" startline="736" endline="748">ClearBuffer</references>
+        <references refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+        <references refid="_e_b_y_t_e_8h_1a14b50778265f2afbc79489fa3f21c7ec" compoundref="_e_b_y_t_e_8h" startline="93">MODE_POWERDOWN</references>
+        <references refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" compoundref="_e_b_y_t_e_8h" startline="94">MODE_PROGRAM</references>
+        <references refid="_e_b_y_t_e_8h_1ad9a9dc64ee46933fe243d07d0d131595" compoundref="_e_b_y_t_e_8h" startline="92">MODE_WAKEUP</references>
+        <references refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" compoundref="_e_b_y_t_e_8h" startline="85">PIN_RECOVER</references>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">init</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" compoundref="_e_b_y_t_e_8cpp" startline="285" endline="298">Reset</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetAddress</definition>
+        <argsstring>(uint16_t val=0)</argsstring>
+        <name>SetAddress</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="196" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="435" bodyend="438"/>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetAddressH</definition>
+        <argsstring>(uint8_t val=0)</argsstring>
+        <name>SetAddressH</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="197" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="319" bodyend="321"/>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetAddressL</definition>
+        <argsstring>(uint8_t val=0)</argsstring>
+        <name>SetAddressL</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="198" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="331" bodyend="333"/>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetAirDataRate</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetAirDataRate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="199" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="357" bodyend="362"/>
+        <references refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" compoundref="_e_b_y_t_e_8h" startline="311">_AirDataRate</references>
+        <references refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetUARTBaudRate</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetUARTBaudRate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="200" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="454" bodyend="457"/>
+        <references refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" compoundref="_e_b_y_t_e_8h" startline="310">_UARTDataRate</references>
+        <references refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a443d1f6643b71366e0dec3f056e12c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetSpeed</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetSpeed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="201" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="301" bodyend="303"/>
+        <references refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" compoundref="_e_b_y_t_e_8h" startline="303">_Speed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetOptions</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetOptions</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="202" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="304" bodyend="306"/>
+        <references refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" compoundref="_e_b_y_t_e_8h" startline="305">_Options</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetChannel</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetChannel</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="203" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="345" bodyend="347"/>
+        <references refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" compoundref="_e_b_y_t_e_8h" startline="304">_Channel</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetParityBit</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetParityBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="204" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="374" bodyend="377"/>
+        <references refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" compoundref="_e_b_y_t_e_8h" startline="309">_ParityBit</references>
+        <references refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" compoundref="_e_b_y_t_e_8cpp" startline="466" endline="469">BuildSpeedByte</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetTransmissionMode</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetTransmissionMode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="207" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="386" bodyend="389"/>
+        <references refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" compoundref="_e_b_y_t_e_8h" startline="312">_OptionTrans</references>
+        <references refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetPullupMode</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetPullupMode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="208" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="394" bodyend="397"/>
+        <references refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" compoundref="_e_b_y_t_e_8h" startline="313">_OptionPullup</references>
+        <references refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetWORTIming</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetWORTIming</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="209" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="402" bodyend="405"/>
+        <references refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" compoundref="_e_b_y_t_e_8h" startline="314">_OptionWakeup</references>
+        <references refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetFECMode</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetFECMode</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="210" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="410" bodyend="413"/>
+        <references refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" compoundref="_e_b_y_t_e_8h" startline="315">_OptionFEC</references>
+        <references refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SetTransmitPower</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>SetTransmitPower</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="211" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="418" bodyend="423"/>
+        <references refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" compoundref="_e_b_y_t_e_8h" startline="316">_OptionPower</references>
+        <references refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" compoundref="_e_b_y_t_e_8cpp" startline="476" endline="479">BuildOptionByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1af589e946c750cef704973915e817cb77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::GetAux</definition>
+        <argsstring>()</argsstring>
+        <name>GetAux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="213" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="482" bodyend="484"/>
+        <references refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" compoundref="_e_b_y_t_e_8h" startline="290">_AUX</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::available</definition>
+        <argsstring>()</argsstring>
+        <name>available</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="215" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="100" bodyend="104"/>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <referencedby refid="class_lora_1a97ff403fd6884d2d82f6cdc55c99829f" compoundref="_lora_8cpp" startline="76" endline="78">Lora::available</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="216" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="110" bodyend="114"/>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <referencedby refid="class_lora_1a5ecdb3bc91fac48a4c21ec9a05cf8d6f" compoundref="_lora_8cpp" startline="80" endline="82">Lora::flush</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t EBYTE::GetAddress</definition>
+        <argsstring>()</argsstring>
+        <name>GetAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="218" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="446" bodyend="448"/>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+        <referencedby refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" compoundref="_e_b_y_t_e_8cpp" startline="539" endline="575">PrintParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a9bb6f8d416d128e3043536588813fa1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetModel</definition>
+        <argsstring>()</argsstring>
+        <name>GetModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="221" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="700" bodyend="704"/>
+        <references refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" compoundref="_e_b_y_t_e_8h" startline="318">_Model</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a1cbc2717761e576b55df078c0feb24ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetVersion</definition>
+        <argsstring>()</argsstring>
+        <name>GetVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="222" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="710" bodyend="714"/>
+        <references refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" compoundref="_e_b_y_t_e_8h" startline="319">_Version</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aaa628f5dbc8550888d923c399bd7bdde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>GetFeatures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="223" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="721" bodyend="725"/>
+        <references refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" compoundref="_e_b_y_t_e_8h" startline="320">_Features</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a63722f74c5a73be271e0ff0de82dbab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetAddressH</definition>
+        <argsstring>()</argsstring>
+        <name>GetAddressH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="225" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="323" bodyend="325"/>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a1c282416df68b5a9729aa94264bc81c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetAddressL</definition>
+        <argsstring>()</argsstring>
+        <name>GetAddressL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="226" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="336" bodyend="338"/>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a919f678b72d54104a225c1a89f44f417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetAirDataRate</definition>
+        <argsstring>()</argsstring>
+        <name>GetAirDataRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="227" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="364" bodyend="366"/>
+        <references refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" compoundref="_e_b_y_t_e_8h" startline="311">_AirDataRate</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetUARTBaudRate</definition>
+        <argsstring>()</argsstring>
+        <name>GetUARTBaudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="228" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="459" bodyend="461"/>
+        <references refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" compoundref="_e_b_y_t_e_8h" startline="310">_UARTDataRate</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1afca840e33fff6bdab42725aee065dcdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetChannel</definition>
+        <argsstring>()</argsstring>
+        <name>GetChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="229" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="348" bodyend="350"/>
+        <references refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" compoundref="_e_b_y_t_e_8h" startline="304">_Channel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a73a189a4b1e89848d2e1cceaaf8378d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetParityBit</definition>
+        <argsstring>()</argsstring>
+        <name>GetParityBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="230" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="378" bodyend="380"/>
+        <references refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" compoundref="_e_b_y_t_e_8h" startline="309">_ParityBit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a3a327b276c27f4e81031daf21e547d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetTransmissionMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetTransmissionMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="231" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="390" bodyend="392"/>
+        <references refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" compoundref="_e_b_y_t_e_8h" startline="312">_OptionTrans</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ad10e32fc59a1e01604a6eae18be11976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetPullupMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetPullupMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="232" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="398" bodyend="400"/>
+        <references refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" compoundref="_e_b_y_t_e_8h" startline="313">_OptionPullup</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aff3e4fd2ca4000d4a732f1f335fa3eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetWORTIming</definition>
+        <argsstring>()</argsstring>
+        <name>GetWORTIming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="233" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="406" bodyend="408"/>
+        <references refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" compoundref="_e_b_y_t_e_8h" startline="314">_OptionWakeup</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a2978cb453904344bd90365bdc6079b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetFECMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetFECMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="234" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="414" bodyend="416"/>
+        <references refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" compoundref="_e_b_y_t_e_8h" startline="315">_OptionFEC</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a0848d00c34fe71c6b59efb852e843c6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetTransmitPower</definition>
+        <argsstring>()</argsstring>
+        <name>GetTransmitPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="235" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="425" bodyend="427"/>
+        <references refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" compoundref="_e_b_y_t_e_8h" startline="316">_OptionPower</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aa9be626fe2910c94443c4744597048aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetOptions</definition>
+        <argsstring>()</argsstring>
+        <name>GetOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="238" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="310" bodyend="312"/>
+        <references refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" compoundref="_e_b_y_t_e_8h" startline="305">_Options</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1af975acecae0b9182071c33727c2ac712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>GetSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="239" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="307" bodyend="309"/>
+        <references refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" compoundref="_e_b_y_t_e_8h" startline="303">_Speed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a314ddeb6fcba2b0d9570c3e9e86d44b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t EBYTE::GetByte</definition>
+        <argsstring>()</argsstring>
+        <name>GetByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="243" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="133" bodyend="137"/>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::GetStruct</definition>
+        <argsstring>(const void *TheStructure, uint16_t size_)</argsstring>
+        <name>GetStruct</name>
+        <param>
+          <type>const void *</type>
+          <declname>TheStructure</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="244" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="171" bodyend="178"/>
+        <references refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" compoundref="_e_b_y_t_e_8h" startline="321">_buf</references>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <references refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</references>
+        <referencedby refid="class_lora_1a2bccb912fc456f6d8f79fac05347e4dd" compoundref="_lora_8cpp" startline="71" endline="74">Lora::GetStruct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a22ecdb9610bb9a8d431bf29b34050fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SendByte</definition>
+        <argsstring>(uint8_t TheByte)</argsstring>
+        <name>SendByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>TheByte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="247" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="121" bodyend="125"/>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::SendStruct</definition>
+        <argsstring>(const void *TheStructure, uint16_t size_)</argsstring>
+        <name>SendStruct</name>
+        <param>
+          <type>const void *</type>
+          <declname>TheStructure</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="248" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="149" bodyend="158"/>
+        <references refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" compoundref="_e_b_y_t_e_8h" startline="321">_buf</references>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <references refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</references>
+        <referencedby refid="class_lora_1a675e5dfa837495b12b38ec49f75609b1" compoundref="_lora_8cpp" startline="66" endline="69">Lora::SendStruct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::PrintParameters</definition>
+        <argsstring>()</argsstring>
+        <name>PrintParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="251" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="539" bodyend="575"/>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+        <references refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" compoundref="_e_b_y_t_e_8h" startline="311">_AirDataRate</references>
+        <references refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" compoundref="_e_b_y_t_e_8h" startline="304">_Channel</references>
+        <references refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" compoundref="_e_b_y_t_e_8h" startline="320">_Features</references>
+        <references refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" compoundref="_e_b_y_t_e_8h" startline="318">_Model</references>
+        <references refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" compoundref="_e_b_y_t_e_8h" startline="315">_OptionFEC</references>
+        <references refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" compoundref="_e_b_y_t_e_8h" startline="316">_OptionPower</references>
+        <references refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" compoundref="_e_b_y_t_e_8h" startline="313">_OptionPullup</references>
+        <references refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" compoundref="_e_b_y_t_e_8h" startline="305">_Options</references>
+        <references refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" compoundref="_e_b_y_t_e_8h" startline="312">_OptionTrans</references>
+        <references refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" compoundref="_e_b_y_t_e_8h" startline="314">_OptionWakeup</references>
+        <references refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" compoundref="_e_b_y_t_e_8h" startline="309">_ParityBit</references>
+        <references refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" compoundref="_e_b_y_t_e_8h" startline="300">_Save</references>
+        <references refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" compoundref="_e_b_y_t_e_8h" startline="303">_Speed</references>
+        <references refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" compoundref="_e_b_y_t_e_8h" startline="310">_UARTDataRate</references>
+        <references refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" compoundref="_e_b_y_t_e_8h" startline="319">_Version</references>
+        <references refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" compoundref="_e_b_y_t_e_8cpp" startline="446" endline="448">GetAddress</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::SaveParameters</definition>
+        <argsstring>(uint8_t val=PERMANENT)</argsstring>
+        <name>SaveParameters</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+          <defval><ref refid="_e_b_y_t_e_8h_1aa772670dfaa589fabd502d5c0402cf18" kindref="member">PERMANENT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="256" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="491" bodyend="532"/>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+        <references refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" compoundref="_e_b_y_t_e_8h" startline="304">_Channel</references>
+        <references refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" compoundref="_e_b_y_t_e_8h" startline="305">_Options</references>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <references refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" compoundref="_e_b_y_t_e_8h" startline="303">_Speed</references>
+        <references refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+        <references refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" compoundref="_e_b_y_t_e_8h" startline="94">MODE_PROGRAM</references>
+        <references refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" compoundref="_e_b_y_t_e_8h" startline="85">PIN_RECOVER</references>
+        <references refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</references>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="261" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="285" bodyend="298"/>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <references refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+        <references refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" compoundref="_e_b_y_t_e_8h" startline="94">MODE_PROGRAM</references>
+        <references refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</references>
+        <referencedby refid="class_lora_1a4646d5b39ddc44c0afc84b48ab7af5ec" compoundref="_lora_8cpp" startline="85" endline="87">Lora::reset</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::ReadParameters</definition>
+        <argsstring>()</argsstring>
+        <name>ReadParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="268" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="581" bodyend="627"/>
+        <references refid="class_e_b_y_t_e_1ab43053f18483b402afd81007bfa56bf8" compoundref="_e_b_y_t_e_8h" startline="317">_Address</references>
+        <references refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" compoundref="_e_b_y_t_e_8h" startline="301">_AddressHigh</references>
+        <references refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" compoundref="_e_b_y_t_e_8h" startline="302">_AddressLow</references>
+        <references refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" compoundref="_e_b_y_t_e_8h" startline="311">_AirDataRate</references>
+        <references refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" compoundref="_e_b_y_t_e_8h" startline="304">_Channel</references>
+        <references refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" compoundref="_e_b_y_t_e_8h" startline="315">_OptionFEC</references>
+        <references refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" compoundref="_e_b_y_t_e_8h" startline="316">_OptionPower</references>
+        <references refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" compoundref="_e_b_y_t_e_8h" startline="313">_OptionPullup</references>
+        <references refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" compoundref="_e_b_y_t_e_8h" startline="305">_Options</references>
+        <references refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" compoundref="_e_b_y_t_e_8h" startline="312">_OptionTrans</references>
+        <references refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" compoundref="_e_b_y_t_e_8h" startline="314">_OptionWakeup</references>
+        <references refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" compoundref="_e_b_y_t_e_8h" startline="294">_Params</references>
+        <references refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" compoundref="_e_b_y_t_e_8h" startline="309">_ParityBit</references>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <references refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" compoundref="_e_b_y_t_e_8h" startline="300">_Save</references>
+        <references refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" compoundref="_e_b_y_t_e_8h" startline="303">_Speed</references>
+        <references refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" compoundref="_e_b_y_t_e_8h" startline="310">_UARTDataRate</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+        <references refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" compoundref="_e_b_y_t_e_8h" startline="94">MODE_PROGRAM</references>
+        <references refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</references>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::CompleteTask</definition>
+        <argsstring>(unsigned long timeout=0)</argsstring>
+        <name>CompleteTask</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>timeout</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="271" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="186" bodyend="218"/>
+        <references refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" compoundref="_e_b_y_t_e_8h" startline="290">_AUX</references>
+        <references refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" compoundref="_e_b_y_t_e_8h" startline="85">PIN_RECOVER</references>
+        <referencedby refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" compoundref="_e_b_y_t_e_8cpp" startline="171" endline="178">GetStruct</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" compoundref="_e_b_y_t_e_8cpp" startline="285" endline="298">Reset</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" compoundref="_e_b_y_t_e_8cpp" startline="149" endline="158">SendStruct</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::BuildSpeedByte</definition>
+        <argsstring>()</argsstring>
+        <name>BuildSpeedByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="274" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="466" bodyend="469"/>
+        <references refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" compoundref="_e_b_y_t_e_8h" startline="311">_AirDataRate</references>
+        <references refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" compoundref="_e_b_y_t_e_8h" startline="309">_ParityBit</references>
+        <references refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" compoundref="_e_b_y_t_e_8h" startline="303">_Speed</references>
+        <references refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" compoundref="_e_b_y_t_e_8h" startline="310">_UARTDataRate</references>
+        <referencedby refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" compoundref="_e_b_y_t_e_8cpp" startline="357" endline="362">SetAirDataRate</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" compoundref="_e_b_y_t_e_8cpp" startline="374" endline="377">SetParityBit</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" compoundref="_e_b_y_t_e_8cpp" startline="454" endline="457">SetUARTBaudRate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::BuildOptionByte</definition>
+        <argsstring>()</argsstring>
+        <name>BuildOptionByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="277" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="476" bodyend="479"/>
+        <references refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" compoundref="_e_b_y_t_e_8h" startline="315">_OptionFEC</references>
+        <references refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" compoundref="_e_b_y_t_e_8h" startline="316">_OptionPower</references>
+        <references refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" compoundref="_e_b_y_t_e_8h" startline="313">_OptionPullup</references>
+        <references refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" compoundref="_e_b_y_t_e_8h" startline="305">_Options</references>
+        <references refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" compoundref="_e_b_y_t_e_8h" startline="312">_OptionTrans</references>
+        <references refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" compoundref="_e_b_y_t_e_8h" startline="314">_OptionWakeup</references>
+        <referencedby refid="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" compoundref="_e_b_y_t_e_8cpp" startline="410" endline="413">SetFECMode</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" compoundref="_e_b_y_t_e_8cpp" startline="394" endline="397">SetPullupMode</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" compoundref="_e_b_y_t_e_8cpp" startline="386" endline="389">SetTransmissionMode</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" compoundref="_e_b_y_t_e_8cpp" startline="418" endline="423">SetTransmitPower</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" compoundref="_e_b_y_t_e_8cpp" startline="402" endline="405">SetWORTIming</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EBYTE::ReadModelData</definition>
+        <argsstring>()</argsstring>
+        <name>ReadModelData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="281" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="630" bodyend="694"/>
+        <references refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" compoundref="_e_b_y_t_e_8h" startline="320">_Features</references>
+        <references refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" compoundref="_e_b_y_t_e_8h" startline="318">_Model</references>
+        <references refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" compoundref="_e_b_y_t_e_8h" startline="294">_Params</references>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <references refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" compoundref="_e_b_y_t_e_8h" startline="300">_Save</references>
+        <references refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" compoundref="_e_b_y_t_e_8h" startline="319">_Version</references>
+        <references refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">CompleteTask</references>
+        <references refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" compoundref="_e_b_y_t_e_8h" startline="91">MODE_NORMAL</references>
+        <references refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" compoundref="_e_b_y_t_e_8h" startline="94">MODE_PROGRAM</references>
+        <references refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</references>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EBYTE::ClearBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>ClearBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="282" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp" bodystart="736" bodyend="748"/>
+        <references refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" compoundref="_e_b_y_t_e_8h" startline="284">_s</references>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">SetMode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="179" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="179" bodyend="323"/>
+    <listofallmembers>
+      <member refid="class_e_b_y_t_e_1ab43053f18483b402afd81007bfa56bf8" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Address</name></member>
+      <member refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_AddressHigh</name></member>
+      <member refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_AddressLow</name></member>
+      <member refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_AirDataRate</name></member>
+      <member refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_AUX</name></member>
+      <member refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_buf</name></member>
+      <member refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Channel</name></member>
+      <member refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Features</name></member>
+      <member refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_M0</name></member>
+      <member refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_M1</name></member>
+      <member refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Model</name></member>
+      <member refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_OptionFEC</name></member>
+      <member refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_OptionPower</name></member>
+      <member refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_OptionPullup</name></member>
+      <member refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Options</name></member>
+      <member refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_OptionTrans</name></member>
+      <member refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_OptionWakeup</name></member>
+      <member refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Params</name></member>
+      <member refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_ParityBit</name></member>
+      <member refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_s</name></member>
+      <member refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Save</name></member>
+      <member refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Speed</name></member>
+      <member refid="class_e_b_y_t_e_1ae3632bb7c19bda3b18e52545b992fbb5" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_TD</name></member>
+      <member refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_UARTDataRate</name></member>
+      <member refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>_Version</name></member>
+      <member refid="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>available</name></member>
+      <member refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" prot="protected" virt="non-virtual"><scope>EBYTE</scope><name>BuildOptionByte</name></member>
+      <member refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" prot="protected" virt="non-virtual"><scope>EBYTE</scope><name>BuildSpeedByte</name></member>
+      <member refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>ClearBuffer</name></member>
+      <member refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" prot="protected" virt="non-virtual"><scope>EBYTE</scope><name>CompleteTask</name></member>
+      <member refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>EBYTE</name></member>
+      <member refid="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>flush</name></member>
+      <member refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetAddress</name></member>
+      <member refid="class_e_b_y_t_e_1a63722f74c5a73be271e0ff0de82dbab5" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetAddressH</name></member>
+      <member refid="class_e_b_y_t_e_1a1c282416df68b5a9729aa94264bc81c5" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetAddressL</name></member>
+      <member refid="class_e_b_y_t_e_1a919f678b72d54104a225c1a89f44f417" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetAirDataRate</name></member>
+      <member refid="class_e_b_y_t_e_1af589e946c750cef704973915e817cb77" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetAux</name></member>
+      <member refid="class_e_b_y_t_e_1a314ddeb6fcba2b0d9570c3e9e86d44b7" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetByte</name></member>
+      <member refid="class_e_b_y_t_e_1afca840e33fff6bdab42725aee065dcdd" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetChannel</name></member>
+      <member refid="class_e_b_y_t_e_1aaa628f5dbc8550888d923c399bd7bdde" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetFeatures</name></member>
+      <member refid="class_e_b_y_t_e_1a2978cb453904344bd90365bdc6079b67" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetFECMode</name></member>
+      <member refid="class_e_b_y_t_e_1a9bb6f8d416d128e3043536588813fa1e" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetModel</name></member>
+      <member refid="class_e_b_y_t_e_1aa9be626fe2910c94443c4744597048aa" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetOptions</name></member>
+      <member refid="class_e_b_y_t_e_1a73a189a4b1e89848d2e1cceaaf8378d5" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetParityBit</name></member>
+      <member refid="class_e_b_y_t_e_1ad10e32fc59a1e01604a6eae18be11976" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetPullupMode</name></member>
+      <member refid="class_e_b_y_t_e_1af975acecae0b9182071c33727c2ac712" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetSpeed</name></member>
+      <member refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetStruct</name></member>
+      <member refid="class_e_b_y_t_e_1a3a327b276c27f4e81031daf21e547d5b" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetTransmissionMode</name></member>
+      <member refid="class_e_b_y_t_e_1a0848d00c34fe71c6b59efb852e843c6b" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetTransmitPower</name></member>
+      <member refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetUARTBaudRate</name></member>
+      <member refid="class_e_b_y_t_e_1a1cbc2717761e576b55df078c0feb24ab" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetVersion</name></member>
+      <member refid="class_e_b_y_t_e_1aff3e4fd2ca4000d4a732f1f335fa3eee" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>GetWORTIming</name></member>
+      <member refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>init</name></member>
+      <member refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>PrintParameters</name></member>
+      <member refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" prot="private" virt="non-virtual"><scope>EBYTE</scope><name>ReadModelData</name></member>
+      <member refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" prot="protected" virt="non-virtual"><scope>EBYTE</scope><name>ReadParameters</name></member>
+      <member refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>Reset</name></member>
+      <member refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SaveParameters</name></member>
+      <member refid="class_e_b_y_t_e_1a22ecdb9610bb9a8d431bf29b34050fa8" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SendByte</name></member>
+      <member refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SendStruct</name></member>
+      <member refid="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetAddress</name></member>
+      <member refid="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetAddressH</name></member>
+      <member refid="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetAddressL</name></member>
+      <member refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetAirDataRate</name></member>
+      <member refid="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetChannel</name></member>
+      <member refid="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetFECMode</name></member>
+      <member refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetMode</name></member>
+      <member refid="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetOptions</name></member>
+      <member refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetParityBit</name></member>
+      <member refid="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetPullupMode</name></member>
+      <member refid="class_e_b_y_t_e_1a443d1f6643b71366e0dec3f056e12c45" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetSpeed</name></member>
+      <member refid="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetTransmissionMode</name></member>
+      <member refid="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetTransmitPower</name></member>
+      <member refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetUARTBaudRate</name></member>
+      <member refid="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" prot="public" virt="non-virtual"><scope>EBYTE</scope><name>SetWORTIming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

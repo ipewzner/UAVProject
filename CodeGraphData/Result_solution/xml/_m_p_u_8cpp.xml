@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_m_p_u_8cpp" kind="file">
+    <compoundname>MPU.cpp</compoundname>
+    <includes refid="_m_p_u_8h" local="yes">mpu.h</includes>
+    <incdepgraph>
+      <node id="797">
+        <label>MPU6050_6Axis_MotionApps20.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8h"/>
+        <childnode refid="798" relation="include">
+        </childnode>
+      </node>
+      <node id="794">
+        <label>WString.h</label>
+      </node>
+      <node id="798">
+        <label>MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="799" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+      </node>
+      <node id="803">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="802">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="804">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="792">
+        <label>mpu.h</label>
+        <link refid="_m_p_u_8h"/>
+        <childnode refid="793" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+      </node>
+      <node id="807">
+        <label>pgmspace.h</label>
+      </node>
+      <node id="801">
+        <label>Wire.h</label>
+        <link refid="_wire_8h"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+      </node>
+      <node id="796">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="799">
+        <label>I2Cdev.h</label>
+        <link refid="_i2_cdev_8h"/>
+        <childnode refid="800" relation="include">
+        </childnode>
+        <childnode refid="801" relation="include">
+        </childnode>
+      </node>
+      <node id="795">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="793">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>Arduino.h</label>
+      </node>
+      <node id="791">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp</label>
+        <link refid="MPU.cpp"/>
+        <childnode refid="792" relation="include">
+        </childnode>
+      </node>
+      <node id="806">
+        <label>helper_3dmath.h</label>
+        <link refid="helper__3dmath_8h"/>
+      </node>
+      <node id="805">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_p_u_8h" kindref="compound">mpu.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_m_p_u_1a202a867d7622a49961eb1f7efe3f55ee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a202a867d7622a49961eb1f7efe3f55ee" kindref="member">MPU::get_temp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/><sp/>mpu-&gt;getTemperature();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">(<ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" kindref="member">getTemperature</ref>()<sp/>+<sp/>521)<sp/>/<sp/>340<sp/>+<sp/>35.0);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" kindref="member">MPU::get_ypr</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetCurrentFIFOPacket(<ref refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" kindref="member">fifoBuffer</ref>))<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>Latest<sp/>packet<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetQuaternion(<ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>,<sp/><ref refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" kindref="member">fifoBuffer</ref>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetGravity(<ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref>,<sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetYawPitchRoll(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>,<sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>,<sp/><ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" refkind="member"><highlight class="normal"><ref refid="structxyz_float" kindref="compound">xyzFloat</ref><sp/><ref refid="class_m_p_u_1a8c45e05c4df2b9fd761e39bd446dd862" kindref="member">MPU::get_yprInDagree</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1a73686a5d6967165961b95d43ea8e79e6" kindref="member">get_ypr</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structxyz_float" kindref="compound">xyzFloat</ref><sp/>result;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="structxyz_float_1adebd5335cb7aba85879e518dc384083f" kindref="member">x</ref><sp/>=<sp/><ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[0]<sp/>*<sp/>180<sp/>/<sp/>M_PI;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="structxyz_float_1abdc0113ef110d4485040ce2cf7910b9c" kindref="member">y</ref><sp/>=<sp/><ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[1]<sp/>*<sp/>180<sp/>/<sp/>M_PI;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="structxyz_float_1a34a823925b61dfb9147ddc48a3688d8e" kindref="member">z</ref><sp/>=<sp/><ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[2]<sp/>*<sp/>180<sp/>/<sp/>M_PI;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>result;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" refkind="member"><highlight class="normal">String<sp/><ref refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" kindref="member">MPU::toString</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetCurrentFIFOPacket(<ref refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" kindref="member">fifoBuffer</ref>))<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>Latest<sp/>packet<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetQuaternion(<ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>,<sp/><ref refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" kindref="member">fifoBuffer</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetGravity(<ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref>,<sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetYawPitchRoll(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>,<sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>,<sp/><ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetAccel(<ref refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" kindref="member">aa</ref>,<sp/><ref refid="class_m_p_u_1af25b2269913bce6434daf3f8ac95521e" kindref="member">fifoBuffer</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetLinearAccel(<ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>,<sp/><ref refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" kindref="member">aa</ref>,<sp/><ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetLinearAccelInWorld(<ref refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" kindref="member">aaWorld</ref>,<sp/><ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>,<sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" kindref="member">getTemperature</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\n******************<sp/>MPU<sp/>*******************&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>display<sp/>real<sp/>acceleration,<sp/>adjusted<sp/>to<sp/>remove<sp/>gravity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nareal)<sp/>x:<sp/>&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>-&gt;<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>)+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y:<sp/>&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>-&gt;<ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>)+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>z:<sp/>&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>-&gt;<ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//result<sp/>+=<sp/>&quot;\nGyroscope<sp/>data<sp/>in<sp/>degrees/s:<sp/>\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=</highlight><highlight class="stringliteral">&quot;\nypr)<sp/>x:&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[0]<sp/>*<sp/>180<sp/>/<sp/>M_PI)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y:<sp/>&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[1]<sp/>*<sp/>180<sp/>/<sp/>M_PI)+</highlight><highlight class="stringliteral">&quot;,z:<sp/>&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[2]<sp/>*<sp/>180<sp/>/<sp/>M_PI);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>display<sp/>initial<sp/>world-frame<sp/>acceleration,<sp/>adjusted<sp/>to<sp/>remove<sp/>gravity<sp/>and<sp/>rotated<sp/>based<sp/>on<sp/>known<sp/>orientation<sp/>from<sp/>quaternion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\naworld)<sp/>x:<sp/>&quot;</highlight><highlight class="normal">+String(<ref refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" kindref="member">aaWorld</ref>-&gt;<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>y:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" kindref="member">aaWorld</ref>-&gt;<ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>z:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" kindref="member">aaWorld</ref>-&gt;<ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nTemperature<sp/>in<sp/>°C:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(temp);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n****************<sp/>MPU<sp/>END******************&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675" refkind="member"><highlight class="normal">String<sp/><ref refid="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675" kindref="member">MPU::asciiResult</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_m_p_u_1a64e3a6d612386bc7a0f648cc4ae309ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a64e3a6d612386bc7a0f648cc4ae309ef" kindref="member">MPU::resetAxis</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>axis)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(axis)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mpu.setXGyroOffset(offset[0]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a5aa9f43262708f5edaa1de18daff1526" kindref="member">setXGyroOffset</ref>(0);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mpu.setYGyroOffset(offset[1]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1ad2be43f6343839b5a07605dac9546499" kindref="member">setYGyroOffset</ref>(0);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mpu.setZGyroOffset(offset[2]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a56cb0dfeb269c5601a26f885d7254301" kindref="member">setZGyroOffset</ref>(0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" refkind="member"><highlight class="normal">DynamicJsonDocument<sp/><ref refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf" kindref="member">MPU::jsonResult</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/>json(1024);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//json.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;g&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>-&gt;<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;g&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>-&gt;<ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;g&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;z&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref>-&gt;<ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;gyr&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">]<sp/>=<sp/>(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[0]<sp/>*<sp/>180<sp/>/<sp/>M_PI);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;gyr&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">]<sp/>=<sp/>(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[1]<sp/>*<sp/>180<sp/>/<sp/>M_PI);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;gyr&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;z&quot;</highlight><highlight class="normal">]<sp/>=<sp/>(<ref refid="class_m_p_u_1adae1c7d204bdac95cde0a21049bd033b" kindref="member">ypr</ref>[2]<sp/>*<sp/>180<sp/>/<sp/>M_PI);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;temp&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" kindref="member">getTemperature</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>json.shrinkToFit();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//serializeJson(json,<sp/>Serial);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" refkind="member"><highlight class="normal"><ref refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" kindref="member">MPU::MPU</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sda,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>scl)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/><ref refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;sda<sp/>=<sp/><ref refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" kindref="member">sda</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;scl<sp/>=<sp/><ref refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" kindref="member">scl</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1aaf64b317d5a145817b00974b14d88923" kindref="member">q</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ad7274b8e0f2e900abf95f159f7609708" kindref="member">aa</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ae6fb782bf71dc133421c7383dec792bd" kindref="member">gy</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1a2e92f65e53a6833f3a935ea854fdc505" kindref="member">aaReal</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab8c46c1e248308238c64179e69e49ccd" kindref="member">aaWorld</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1a49474304e868e5ffc147c67dc4e9e086" kindref="member">gravity</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//this-&gt;offset[0]<sp/>=<sp/>offsetX;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//this-&gt;offset[1]<sp/>=<sp/>offsetY;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//this-&gt;offset[2]<sp/>=<sp/>offsetZ;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;MPU<sp/>c-tor<sp/>end&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" kindref="member">MPU::init</ref>()<sp/>{<sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;MPU<sp/>init&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>join<sp/>I2C<sp/>bus<sp/>(I2Cdev<sp/>library<sp/>doesn&apos;t<sp/>do<sp/>this<sp/>automatically)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" kindref="member">Wire</ref>.availableForWrite())<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" kindref="member">Wire</ref>.<ref refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" kindref="member">begin</ref>(<ref refid="class_m_p_u_1a4b8a3ba9fc96de9679058f1e496fd379" kindref="member">sda</ref>,<sp/><ref refid="class_m_p_u_1a2ad19268b43eda51659a691d08067ebe" kindref="member">scl</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" kindref="member">Wire</ref>.<ref refid="class_two_wire_1a0ab75123574d32fc130252d073009414" kindref="member">setClock</ref>(400000);<sp/></highlight><highlight class="comment">//<sp/>400kHz<sp/>I2C<sp/>clock.<sp/>Comment<sp/>this<sp/>line<sp/>if<sp/>having<sp/>compilation<sp/>difficulties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="_m_p_u6050_8h_1a04e8a8a93dcb88860d9dff0f6d37ae21" kindref="member">MPU6050</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Initializing<sp/>I2C<sp/>devices...&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a2cdcd93cacec3e69129ae8e3aecbe93b" kindref="member">initialize</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verify<sp/>connection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Testing<sp/>device<sp/>connections...&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(<ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a2e844af20858ef83ef38b0444311d62c" kindref="member">testConnection</ref>()<sp/>?<sp/>F(</highlight><highlight class="stringliteral">&quot;MPU6050<sp/>connection<sp/>successful&quot;</highlight><highlight class="normal">)<sp/>:<sp/>F(</highlight><highlight class="stringliteral">&quot;MPU6050<sp/>connection<sp/>failed&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>and<sp/>configure<sp/>the<sp/>DMP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Initializing<sp/>DMP...&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" kindref="member">devStatus</ref><sp/>=<sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpInitialize();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>supply<sp/>your<sp/>own<sp/>gyro<sp/>offsets<sp/>here,<sp/>scaled<sp/>for<sp/>min<sp/>sensitivity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a5aa9f43262708f5edaa1de18daff1526" kindref="member">setXGyroOffset</ref>(51);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1ad2be43f6343839b5a07605dac9546499" kindref="member">setYGyroOffset</ref>(8);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a56cb0dfeb269c5601a26f885d7254301" kindref="member">setZGyroOffset</ref>(21);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1aa74a241aaaecbbbabe5ae6157ce10d75" kindref="member">setXAccelOffset</ref>(1150);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1afb06fd307cfe6db11746e3b458200bfb" kindref="member">setYAccelOffset</ref>(-50);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a822a611b1252259113f3dcd9bc40b334" kindref="member">setZAccelOffset</ref>(1060);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>sure<sp/>it<sp/>worked<sp/>(returns<sp/>0<sp/>if<sp/>so)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" kindref="member">devStatus</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calibration<sp/>Time:<sp/>generate<sp/>offsets<sp/>and<sp/>calibrate<sp/>our<sp/>MPU6050</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1ac5e7263a43ce3e623bdff14e4faad03a" kindref="member">CalibrateAccel</ref>(6);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1aeec4affbb9e30e7a81ad1daa6f976e7b" kindref="member">CalibrateGyro</ref>(6);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a54438d0baf4b657bff9fe9c52390dc3c" kindref="member">PrintActiveOffsets</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>turn<sp/>on<sp/>the<sp/>DMP,<sp/>now<sp/>that<sp/>it&apos;s<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Enabling<sp/>DMP...&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;<ref refid="class_m_p_u6050___base_1a50389f06417a9543aa8996594f034df3" kindref="member">setDMPEnabled</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>our<sp/>DMP<sp/>Ready<sp/>flag<sp/>so<sp/>the<sp/>main<sp/>loop()<sp/>function<sp/>knows<sp/>it&apos;s<sp/>okay<sp/>to<sp/>use<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Serial.println(F(&quot;DMP<sp/>ready!<sp/>Waiting<sp/>for<sp/>first<sp/>interrupt...&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1aa5ddcf0aae7d1b5cbc1932e9ce15f073" kindref="member">dmpReady</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>expected<sp/>DMP<sp/>packet<sp/>size<sp/>for<sp/>later<sp/>comparison</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_m_p_u_1a297d80d2a757fbebc2bf9255e168be02" kindref="member">packetSize</ref><sp/>=<sp/><ref refid="class_m_p_u_1ab496e08d1caf0bb1a6ed6da2e0c4e3e7" kindref="member">mpu</ref>-&gt;dmpGetFIFOPacketSize();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ERROR!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>=<sp/>initial<sp/>memory<sp/>load<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/>=<sp/>DMP<sp/>configuration<sp/>updates<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(if<sp/>it&apos;s<sp/>going<sp/>to<sp/>break,<sp/>usually<sp/>the<sp/>code<sp/>will<sp/>be<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;DMP<sp/>Initialization<sp/>failed<sp/>(code<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(<ref refid="class_m_p_u_1a3d022026b39078d81fe6315cdd0c66ea" kindref="member">devStatus</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;MPU<sp/>init<sp/>end&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp"/>
+  </compounddef>
+</doxygen>

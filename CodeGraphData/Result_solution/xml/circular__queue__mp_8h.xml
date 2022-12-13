@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="circular__queue__mp_8h" kind="file">
+    <compoundname>circular_queue_mp.h</compoundname>
+    <includes refid="circular__queue_8h" local="yes">circular_queue.h</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/chrono</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/limits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/ratio</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdint.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/type_traits</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/time.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/utility</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xtimec.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/system_error</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/__msvc_system_error_abi.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cerrno</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/errno.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cstdlib</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdexcept</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/exception</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xstring</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/iosfwd</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xmemory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xcall_once.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xerrc.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/atomic</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/thread</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/memory</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/process.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/tuple</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xthreads.h</includes>
+    <incdepgraph>
+      <node id="45">
+        <label>atomic</label>
+      </node>
+      <node id="50">
+        <label>functional</label>
+      </node>
+      <node id="78">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/memory</label>
+      </node>
+      <node id="61">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xtimec.h</label>
+      </node>
+      <node id="79">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/process.h</label>
+      </node>
+      <node id="72">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/iosfwd</label>
+      </node>
+      <node id="74">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xcall_once.h</label>
+      </node>
+      <node id="54">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/chrono</label>
+      </node>
+      <node id="75">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xerrc.h</label>
+      </node>
+      <node id="60">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/utility</label>
+      </node>
+      <node id="68">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cstdlib</label>
+      </node>
+      <node id="49">
+        <label>esp_attr.h</label>
+      </node>
+      <node id="70">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/exception</label>
+      </node>
+      <node id="81">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xthreads.h</label>
+      </node>
+      <node id="73">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xmemory</label>
+      </node>
+      <node id="42">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h</label>
+        <link refid="circular_queue_mp.h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/type_traits</label>
+      </node>
+      <node id="77">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/thread</label>
+      </node>
+      <node id="67">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/errno.h</label>
+      </node>
+      <node id="62">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h</label>
+      </node>
+      <node id="59">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/time.h</label>
+      </node>
+      <node id="64">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals.h</label>
+      </node>
+      <node id="71">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xstring</label>
+      </node>
+      <node id="63">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/system_error</label>
+      </node>
+      <node id="76">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/atomic</label>
+      </node>
+      <node id="66">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cerrno</label>
+      </node>
+      <node id="65">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/__msvc_system_error_abi.hpp</label>
+      </node>
+      <node id="53">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals_core.h</label>
+      </node>
+      <node id="44">
+        <label>Arduino.h</label>
+      </node>
+      <node id="51">
+        <label>cstddef</label>
+      </node>
+      <node id="52">
+        <label>mutex</label>
+      </node>
+      <node id="80">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/tuple</label>
+      </node>
+      <node id="55">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/limits</label>
+      </node>
+      <node id="69">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdexcept</label>
+      </node>
+      <node id="56">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/ratio</label>
+      </node>
+      <node id="47">
+        <label>algorithm</label>
+      </node>
+      <node id="48">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdint.h</label>
+      </node>
+      <node id="46">
+        <label>memory</label>
+      </node>
+      <node id="43">
+        <label>circular_queue.h</label>
+        <link refid="circular__queue_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcircular__queue__mp" prot="public">circular_queue_mp</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">circular_queue_mp.h<sp/>-<sp/>Implementation<sp/>of<sp/>a<sp/>lock-free<sp/>circular<sp/>queue<sp/>for<sp/>EspSoftwareSerial.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(c)<sp/>2019<sp/>Dirk<sp/>O.<sp/>Kaar.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__circular_queue_mp_h</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__circular_queue_mp_h</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="circular__queue_8h" kindref="compound">circular_queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;interrupts.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ForEachArg<sp/>=<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>&gt;</highlight></codeline>
+<codeline lineno="38" refid="classcircular__queue__mp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcircular__queue__mp" kindref="compound">circular_queue_mp</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt;T,<sp/>ForEachArg&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcircular__queue__mp_1ab801cfdc260aaa7dfd673544c93e844b" kindref="member">circular_queue_mp</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42" refid="classcircular__queue__mp_1a5e7be99506b1445a35137acda7235782" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcircular__queue__mp_1a5e7be99506b1445a35137acda7235782" kindref="member">circular_queue_mp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue_1a037616d4044ab603b335af80233337ac" kindref="member">capacity</ref>)<sp/>:<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt;T,<sp/>ForEachArg&gt;(capacity)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="44" refid="classcircular__queue__mp_1a6e84144c1d445eeccfa195fd7b7d3c65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcircular__queue__mp_1a6e84144c1d445eeccfa195fd7b7d3c65" kindref="member">circular_queue_mp</ref>(<ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;</ref>&amp;&amp;<sp/>cq)<sp/>:<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt;T,<sp/>ForEachArg&gt;(std::move(cq))</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::operator</ref>=;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::capacity</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::flush</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::available</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::available_for_push</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::peek</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::pop</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::pop_n</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::for_each</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::for_each_rev_requeue</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classcircular__queue__mp_1af12ecc181b998c937fa6b11379da2878" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue__mp_1af12ecc181b998c937fa6b11379da2878" kindref="member">capacity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>cap)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>esp8266::InterruptLock<sp/>lock;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(<ref refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" kindref="member">m_pushMtx</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue_1a037616d4044ab603b335af80233337ac" kindref="member">circular_queue&lt;T, ForEachArg&gt;::capacity</ref>(cap);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IRAM_ATTR<sp/><ref refid="classcircular__queue__mp_1a73116069a8c6750d61026cff5b404258" kindref="member">push</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classcircular__queue__mp_1a1bb45a1e07b90b2f4ee531fbcc192bb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IRAM_ATTR<sp/><ref refid="classcircular__queue__mp_1a1bb45a1e07b90b2f4ee531fbcc192bb3" kindref="member">push</ref>(T&amp;&amp;<sp/>val)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>esp8266::InterruptLock<sp/>lock;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(<ref refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" kindref="member">m_pushMtx</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue_1af5b15190c1f45f7c67b247cf852260c1" kindref="member">circular_queue&lt;T, ForEachArg&gt;::push</ref>(std::move(val));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classcircular__queue__mp_1aa6088d52da8e07a40698948a72f01ad3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IRAM_ATTR<sp/><ref refid="classcircular__queue__mp_1aa6088d52da8e07a40698948a72f01ad3" kindref="member">push</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>val)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>esp8266::InterruptLock<sp/>lock;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(<ref refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" kindref="member">m_pushMtx</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue_1af5b15190c1f45f7c67b247cf852260c1" kindref="member">circular_queue&lt;T, ForEachArg&gt;::push</ref>(val);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classcircular__queue__mp_1a55371c8f4d47d1b57a7a17f27fd8f0be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue__mp_1a55371c8f4d47d1b57a7a17f27fd8f0be" kindref="member">push_n</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>esp8266::InterruptLock<sp/>lock;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(<ref refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" kindref="member">m_pushMtx</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue_1a08c00615e438bb04e0b5efe853044e43" kindref="member">circular_queue&lt;T, ForEachArg&gt;::push_n</ref>(buffer,<sp/>size);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="classcircular__queue__mp_1a7c37e00fb91213c56fd931d430f7750d" kindref="member">pop_requeue</ref>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue__mp_1a6464ac2b7dd8d35adc6464d92a07b9f0" kindref="member">for_each_requeue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_delegate" kindref="compound">Delegate</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(T&amp;),<sp/>ForEachArg&gt;&amp;<sp/>fun);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="143" refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/><ref refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" kindref="member">m_pushMtx</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ForEachArg<sp/>&gt;</highlight></codeline>
+<codeline lineno="148" refid="classcircular__queue__mp_1a7c37e00fb91213c56fd931d430f7750d" refkind="member"><highlight class="normal">T&amp;<sp/><ref refid="classcircular__queue__mp_1a7c37e00fb91213c56fd931d430f7750d" kindref="member">circular_queue_mp&lt;T, ForEachArg&gt;::pop_requeue</ref>()</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>esp8266::InterruptLock<sp/>lock;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(m_pushMtx);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>outPos<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_outPos</ref>.load(std::memory_order_acquire);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>inPos<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_inPos</ref>.load(std::memory_order_relaxed);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_acquire);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inPos<sp/>==<sp/>outPos)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::defaultValue</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/>val<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_buffer</ref>[inPos]<sp/>=<sp/>std::move(<ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_buffer</ref>[outPos]);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>bufSize<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_bufSize</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_release);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_outPos</ref>.store((outPos<sp/>+<sp/>1)<sp/>%<sp/>bufSize,<sp/>std::memory_order_relaxed);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_inPos</ref>.store((inPos<sp/>+<sp/>1)<sp/>%<sp/>bufSize,<sp/>std::memory_order_release);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ForEachArg<sp/>&gt;</highlight></codeline>
+<codeline lineno="168" refid="classcircular__queue__mp_1a6464ac2b7dd8d35adc6464d92a07b9f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcircular__queue__mp_1a6464ac2b7dd8d35adc6464d92a07b9f0" kindref="member">circular_queue_mp&lt;T, ForEachArg&gt;::for_each_requeue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_delegate" kindref="compound">Delegate</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(T&amp;),<sp/>ForEachArg&gt;&amp;<sp/>fun)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>inPos0<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_inPos</ref>.load(std::memory_order_acquire);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>outPos<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_outPos</ref>.load(std::memory_order_relaxed);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_acquire);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(outPos<sp/>==<sp/>inPos0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T&amp;&amp;<sp/>val<sp/>=<sp/>std::move(<ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_buffer</ref>[outPos]);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fun(val))</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>esp8266::InterruptLock<sp/>lock;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard&lt;std::mutex&gt;<sp/>lock(m_pushMtx);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_release);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>inPos<sp/>=<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_inPos</ref>.load(std::memory_order_relaxed);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_acquire);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_buffer</ref>[inPos]<sp/>=<sp/>std::move(val);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_release);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_inPos</ref>.store((inPos<sp/>+<sp/>1)<sp/>%<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_bufSize</ref>,<sp/>std::memory_order_release);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic_thread_fence(std::memory_order_release);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outPos<sp/>=<sp/>(outPos<sp/>+<sp/>1)<sp/>%<sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_bufSize</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcircular__queue" kindref="compound">circular_queue&lt;T, ForEachArg&gt;::m_outPos</ref>.store(outPos,<sp/>std::memory_order_release);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(outPos<sp/>!=<sp/>inPos0);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__circular_queue_mp_h</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1963 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_serial" kind="class" prot="public">
+    <compoundname>SoftwareSerial</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Stream</basecompoundref>
+    <includes refid="_software_serial_8h" local="no">SoftwareSerial.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_serial_1a0e7debf800fe99699948f5e29677e127" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t SoftwareSerial::m_rxPin</definition>
+        <argsstring></argsstring>
+        <name>m_rxPin</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="237" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="237" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" compoundref="_software_serial_8h" startline="189" endline="191">operator bool</referencedby>
+        <referencedby refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</referencedby>
+        <referencedby refid="class_software_serial_1a9395625c3341ceedfc669f14ce43f8f1" compoundref="_software_serial_8cpp" startline="38" endline="45">SoftwareSerial</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t SoftwareSerial::m_txPin</definition>
+        <argsstring></argsstring>
+        <name>m_txPin</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="238" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="238" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" compoundref="_software_serial_8cpp" startline="193" endline="205">enableTx</referencedby>
+        <referencedby refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" compoundref="_software_serial_8h" startline="189" endline="191">operator bool</referencedby>
+        <referencedby refid="class_software_serial_1a9395625c3341ceedfc669f14ce43f8f1" compoundref="_software_serial_8cpp" startline="38" endline="45">SoftwareSerial</referencedby>
+        <referencedby refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" compoundref="_software_serial_8cpp" startline="310" endline="325">writePeriod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a62a65ba498a777fa7cf4d3a5dd266acf" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t SoftwareSerial::m_txEnablePin</definition>
+        <argsstring></argsstring>
+        <name>m_txEnablePin</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="239" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="239" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a3fb0b021f92334d824c1b4af0283d763" compoundref="_software_serial_8cpp" startline="172" endline="182">setTransmitEnablePin</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SoftwareSerial::m_dataBits</definition>
+        <argsstring></argsstring>
+        <name>m_dataBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="240" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="240" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_oneWire</definition>
+        <argsstring></argsstring>
+        <name>m_oneWire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="241" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="241" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" compoundref="_software_serial_8cpp" startline="193" endline="205">enableTx</referencedby>
+        <referencedby refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" compoundref="_software_serial_8h" startline="189" endline="191">operator bool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_rxValid</definition>
+        <argsstring></argsstring>
+        <name>m_rxValid</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="242" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="242" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" compoundref="_software_serial_8cpp" startline="276" endline="284">available</referencedby>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" compoundref="_software_serial_8cpp" startline="427" endline="435">flush</referencedby>
+        <referencedby refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" compoundref="_software_serial_8h" startline="189" endline="191">operator bool</referencedby>
+        <referencedby refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" compoundref="_software_serial_8cpp" startline="443" endline="452">peek</referencedby>
+        <referencedby refid="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" compoundref="_software_serial_8cpp" startline="595" endline="602">perform_work</referencedby>
+        <referencedby refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</referencedby>
+        <referencedby refid="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" compoundref="_software_serial_8cpp" startline="262" endline="274">readBytes</referencedby>
+        <referencedby refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_rxEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_rxEnabled</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="243" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="243" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a7b3fb4a8f57d2b5f2233f841d71ef80f" compoundref="_software_serial_8h" startline="201" endline="201">isListening</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_txValid</definition>
+        <argsstring></argsstring>
+        <name>m_txValid</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="244" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="244" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1ab779fe0b59b09a2c8feee691f8ee136f" compoundref="_software_serial_8h" startline="136" endline="140">availableForWrite</referencedby>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" compoundref="_software_serial_8cpp" startline="193" endline="205">enableTx</referencedby>
+        <referencedby refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" compoundref="_software_serial_8cpp" startline="155" endline="166">end</referencedby>
+        <referencedby refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" compoundref="_software_serial_8h" startline="189" endline="191">operator bool</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a2bba95a3b99ec6ad7dae75ef67c3bff9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_txEnableValid</definition>
+        <argsstring></argsstring>
+        <name>m_txEnableValid</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="245" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="245" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a3fb0b021f92334d824c1b4af0283d763" compoundref="_software_serial_8cpp" startline="172" endline="182">setTransmitEnablePin</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1aa46ced1af836d38c30a548adbee64938" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_invert</definition>
+        <argsstring></argsstring>
+        <name>m_invert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="246" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="246" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" compoundref="_software_serial_8cpp" startline="193" endline="205">enableTx</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+        <referencedby refid="class_software_serial_1a9395625c3341ceedfc669f14ce43f8f1" compoundref="_software_serial_8cpp" startline="38" endline="45">SoftwareSerial</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+        <referencedby refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" compoundref="_software_serial_8cpp" startline="310" endline="325">writePeriod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SoftwareSerial::m_pduBits</definition>
+        <argsstring></argsstring>
+        <name>m_pduBits</name>
+        <briefdescription>
+<para>PDU bits include data, parity and stop bits; the start bit is not counted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="248" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="248" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_intTxEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_intTxEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="249" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="249" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1ac5e03ef4dd10fe0fc87bb542bb2180b7" compoundref="_software_serial_8cpp" startline="184" endline="186">enableIntTx</referencedby>
+        <referencedby refid="class_software_serial_1aa674926759b375f43af50b40625284b9" compoundref="_software_serial_8cpp" startline="286" endline="308">preciseDelay</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_rxGPIOPullupEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_rxGPIOPullupEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="250" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="250" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a1287e30c4f8970484432156dab15215d" compoundref="_software_serial_8cpp" startline="188" endline="191">enableRxGPIOPullup</referencedby>
+        <referencedby refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</referencedby>
+        <referencedby refid="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" compoundref="_software_serial_8cpp" startline="33" endline="36">SoftwareSerial</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" prot="private" static="no" mutable="no">
+        <type><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref></type>
+        <definition>SoftwareSerialParity SoftwareSerial::m_parityMode</definition>
+        <argsstring></argsstring>
+        <name>m_parityMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="251" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="251" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+        <referencedby refid="class_software_serial_1a377c493d0cb1699170f436612e9fb8c1" compoundref="_software_serial_8cpp" startline="335" endline="337">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a323f264255634ce1c4e6b334e157757f" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SoftwareSerial::m_stopBits</definition>
+        <argsstring></argsstring>
+        <name>m_stopBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="252" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="252" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_lastReadParity</definition>
+        <argsstring></argsstring>
+        <name>m_lastReadParity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="253" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="253" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" compoundref="_software_serial_8cpp" startline="443" endline="452">peek</referencedby>
+        <referencedby refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</referencedby>
+        <referencedby refid="class_software_serial_1ab6a650ec8523cd8c06afc167056ac43a" compoundref="_software_serial_8h" startline="144" endline="147">readParity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_overflow</definition>
+        <argsstring></argsstring>
+        <name>m_overflow</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="254" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="254" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1ac6d4d5dfbe05515bf23766e2c8abfd46" compoundref="_software_serial_8cpp" startline="437" endline="441">overflow</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1af3224f037c8e82442a37759e224d9682" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SoftwareSerial::m_bitCycles</definition>
+        <argsstring></argsstring>
+        <name>m_bitCycles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="255" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="255" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1ad78e846e05c88a7ad7b7733c5bb652c1" compoundref="_software_serial_8cpp" startline="168" endline="170">baudRate</referencedby>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SoftwareSerial::m_parityInPos</definition>
+        <argsstring></argsstring>
+        <name>m_parityInPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="256" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="256" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" compoundref="_software_serial_8cpp" startline="427" endline="435">flush</referencedby>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a955a750826c5b5d3087694cc3b120564" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SoftwareSerial::m_parityOutPos</definition>
+        <argsstring></argsstring>
+        <name>m_parityOutPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="257" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="257" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" compoundref="_software_serial_8cpp" startline="427" endline="435">flush</referencedby>
+        <referencedby refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" compoundref="_software_serial_8cpp" startline="443" endline="452">peek</referencedby>
+        <referencedby refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t SoftwareSerial::m_rxCurBit</definition>
+        <argsstring></argsstring>
+        <name>m_rxCurBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="258" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="258" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1ab9654d8cb91c4f46d281d38c1f6521ec" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SoftwareSerial::m_rxCurByte</definition>
+        <argsstring></argsstring>
+        <name>m_rxCurByte</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="259" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="259" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt; uint8_t &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;circular_queue&lt;uint8_t&gt; &gt; SoftwareSerial::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="260" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="260" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" compoundref="_software_serial_8cpp" startline="276" endline="284">available</referencedby>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" compoundref="_software_serial_8cpp" startline="155" endline="166">end</referencedby>
+        <referencedby refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" compoundref="_software_serial_8cpp" startline="427" endline="435">flush</referencedby>
+        <referencedby refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" compoundref="_software_serial_8cpp" startline="443" endline="452">peek</referencedby>
+        <referencedby refid="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" compoundref="_software_serial_8cpp" startline="595" endline="602">perform_work</referencedby>
+        <referencedby refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</referencedby>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt; uint8_t &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;circular_queue&lt;uint8_t&gt; &gt; SoftwareSerial::m_parityBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_parityBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="261" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="261" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" compoundref="_software_serial_8cpp" startline="155" endline="166">end</referencedby>
+        <referencedby refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" compoundref="_software_serial_8cpp" startline="427" endline="435">flush</referencedby>
+        <referencedby refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" compoundref="_software_serial_8cpp" startline="443" endline="452">peek</referencedby>
+        <referencedby refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</referencedby>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1ac441727d6145bcedfe4c976428bc972a" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SoftwareSerial::m_periodStart</definition>
+        <argsstring></argsstring>
+        <name>m_periodStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="262" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="262" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1aa674926759b375f43af50b40625284b9" compoundref="_software_serial_8cpp" startline="286" endline="308">preciseDelay</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a370797e59a98478f296f5ea382332743" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SoftwareSerial::m_periodDuration</definition>
+        <argsstring></argsstring>
+        <name>m_periodDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="263" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="263" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1aa674926759b375f43af50b40625284b9" compoundref="_software_serial_8cpp" startline="286" endline="308">preciseDelay</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+        <referencedby refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" compoundref="_software_serial_8cpp" startline="310" endline="325">writePeriod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1aa4cfb19906a25b1f8cc5400d2d3aa761" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SoftwareSerial::m_savedPS</definition>
+        <argsstring></argsstring>
+        <name>m_savedPS</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="264" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="264" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1aa674926759b375f43af50b40625284b9" compoundref="_software_serial_8cpp" startline="286" endline="308">preciseDelay</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt; uint32_t, <ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> * &gt; &gt;</type>
+        <definition>std::unique_ptr&lt;circular_queue&lt;uint32_t, SoftwareSerial*&gt; &gt; SoftwareSerial::m_isrBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_isrBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="267" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="267" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" compoundref="_software_serial_8cpp" startline="155" endline="166">end</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a93346dd3cdab14198650857ca385a4e7" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_delegate" kindref="compound">Delegate</ref>&lt; void(uint32_t &amp;&amp;), <ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> * &gt;</type>
+        <definition>const Delegate&lt;void(uint32_t&amp;&amp;), SoftwareSerial*&gt; SoftwareSerial::m_isrBufferForEachDel</definition>
+        <argsstring></argsstring>
+        <name>m_isrBufferForEachDel</name>
+        <initializer>= { [](<ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>* self, uint32_t&amp;&amp; isrCycle) { self-&gt;<ref refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" kindref="member">rxBits</ref>(isrCycle); }, this }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="268" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="268" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" prot="private" static="no" mutable="no">
+        <type><ref refid="classstd_1_1atomic" kindref="compound">std::atomic</ref>&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; SoftwareSerial::m_isrOverflow</definition>
+        <argsstring></argsstring>
+        <name>m_isrOverflow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="269" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="269" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+        <referencedby refid="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" compoundref="_software_serial_8cpp" startline="33" endline="36">SoftwareSerial</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t SoftwareSerial::m_isrLastCycle</definition>
+        <argsstring></argsstring>
+        <name>m_isrLastCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="270" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="270" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+        <referencedby refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a7229b30bcaacc05306bba4659df95582" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::m_rxCurParity</definition>
+        <argsstring></argsstring>
+        <name>m_rxCurParity</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="271" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="271" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" compoundref="_software_serial_8cpp" startline="482" endline="557">rxBits</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_serial_1a3729e009ea01d21540e014c34620a5d2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_delegate" kindref="compound">Delegate</ref>&lt; void(int <ref refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" kindref="member">available</ref>), void * &gt;</type>
+        <definition>Delegate&lt;void(int available), void*&gt; SoftwareSerial::receiveHandler</definition>
+        <argsstring></argsstring>
+        <name>receiveHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="272" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="272" bodyend="-1"/>
+        <referencedby refid="class_software_serial_1a403524f9df5f05696966c8df94a2300f" compoundref="_software_serial_8cpp" startline="591" endline="593">onReceive</referencedby>
+        <referencedby refid="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" compoundref="_software_serial_8cpp" startline="595" endline="602">perform_work</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareSerial::SoftwareSerial</definition>
+        <argsstring>()</argsstring>
+        <name>SoftwareSerial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="89" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="33" bodyend="36"/>
+        <references refid="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" compoundref="_software_serial_8h" startline="269">m_isrOverflow</references>
+        <references refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" compoundref="_software_serial_8h" startline="250">m_rxGPIOPullupEnabled</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a9395625c3341ceedfc669f14ce43f8f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareSerial::SoftwareSerial</definition>
+        <argsstring>(int8_t rxPin, int8_t txPin=-1, bool invert=false)</argsstring>
+        <name>SoftwareSerial</name>
+        <param>
+          <type>int8_t</type>
+          <declname>rxPin</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>txPin</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>invert</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ctor to set defaults for pins. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rxPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the GPIO pin used for RX </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>-1 for onewire protocol, GPIO pin used for twowire TX </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="93" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="38" bodyend="45"/>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" compoundref="_software_serial_8h" startline="269">m_isrOverflow</references>
+        <references refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" compoundref="_software_serial_8h" startline="250">m_rxGPIOPullupEnabled</references>
+        <references refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" compoundref="_software_serial_8h" startline="237">m_rxPin</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a75bb44db9aa85a3dd4a4cde6ee40ab7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareSerial::SoftwareSerial</definition>
+        <argsstring>(const SoftwareSerial &amp;)=delete</argsstring>
+        <name>SoftwareSerial</name>
+        <param>
+          <type>const <ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1abdee11648577391667716e426d6e2024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> &amp;</type>
+        <definition>SoftwareSerial&amp; SoftwareSerial::operator=</definition>
+        <argsstring>(const SoftwareSerial &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1af6b8fff282e09a6cecc5df669ae71ee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SoftwareSerial::~SoftwareSerial</definition>
+        <argsstring>()</argsstring>
+        <name>~SoftwareSerial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="96" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="47" bodyend="49"/>
+        <references refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" compoundref="_software_serial_8cpp" startline="155" endline="166">end</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::begin</definition>
+        <argsstring>(uint32_t baud, SoftwareSerialConfig config, int8_t rxPin, int8_t txPin, bool invert, int bufCapacity=64, int isrBufCapacity=0)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>rxPin</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>txPin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>invert</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufCapacity</declname>
+          <defval>64</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>isrBufCapacity</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure the <ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> object for use. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TX/RX bitrate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sets databits, parity, and stop bit count </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rxPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>-1 or default: either no RX pin, or keeps the rxPin set in the ctor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>txPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>-1 or default: either no TX pin (onewire), or keeps the txPin set in the ctor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: uses invert line level logic </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufCapacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the capacity for the received bytes buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isrBufCapacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0: derived from bufCapacity. The capacity of the internal asynchronous bit receive buffer, a suggested size is bufCapacity times the sum of start, data, parity and stop bit count. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="107" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="118" bodyend="153"/>
+        <references refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</references>
+        <references refid="class_software_serial_1ad908ffa7f2ad1f23d840c659a8c72004" compoundref="_software_serial_8cpp" startline="81" endline="87">isValidRxGPIOpin</references>
+        <references refid="class_software_serial_1aa28371fec8665a898c103eb4f23bf4d8" compoundref="_software_serial_8cpp" startline="89" endline="101">isValidTxGPIOpin</references>
+        <references refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" compoundref="_software_serial_8h" startline="255">m_bitCycles</references>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" compoundref="_software_serial_8h" startline="240">m_dataBits</references>
+        <references refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" compoundref="_software_serial_8h" startline="249">m_intTxEnabled</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" compoundref="_software_serial_8h" startline="267">m_isrBuffer</references>
+        <references refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" compoundref="_software_serial_8h" startline="241">m_oneWire</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" compoundref="_software_serial_8h" startline="256">m_parityInPos</references>
+        <references refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" compoundref="_software_serial_8h" startline="251">m_parityMode</references>
+        <references refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" compoundref="_software_serial_8h" startline="257">m_parityOutPos</references>
+        <references refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" compoundref="_software_serial_8h" startline="248">m_pduBits</references>
+        <references refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" compoundref="_software_serial_8h" startline="243">m_rxEnabled</references>
+        <references refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" compoundref="_software_serial_8h" startline="237">m_rxPin</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a323f264255634ce1c4e6b334e157757f" compoundref="_software_serial_8h" startline="252">m_stopBits</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+        <references refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" compoundref="_software_serial_8h" startline="244">m_txValid</references>
+        <references refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</references>
+        <referencedby refid="class_software_serial_1ab3173af7812b41c17d4aa90538ce3cf2" compoundref="_software_serial_8h" startline="110" endline="113">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ab3173af7812b41c17d4aa90538ce3cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::begin</definition>
+        <argsstring>(uint32_t baud, SoftwareSerialConfig config, int8_t rxPin, int8_t txPin)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>rxPin</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>txPin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="110" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="110" bodyend="113"/>
+        <references refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1af1c320d1f02058b6656ee98a93dc5032" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::begin</definition>
+        <argsstring>(uint32_t baud, SoftwareSerialConfig config, int8_t rxPin)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref></type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>rxPin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="114" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="114" bodyend="117"/>
+        <references refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a21a9d392987aebad5fd8c0ec0f950d1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::begin</definition>
+        <argsstring>(uint32_t baud, SoftwareSerialConfig config=SWSERIAL_8N1)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>baud</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref></type>
+          <declname>config</declname>
+          <defval><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" kindref="member">SWSERIAL_8N1</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="118" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="118" bodyend="120"/>
+        <references refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" compoundref="_software_serial_8h" startline="237">m_rxPin</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ad78e846e05c88a7ad7b7733c5bb652c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t SoftwareSerial::baudRate</definition>
+        <argsstring>()</argsstring>
+        <name>baudRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="122" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="168" bodyend="170"/>
+        <references refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" compoundref="_software_serial_8h" startline="255">m_bitCycles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a3fb0b021f92334d824c1b4af0283d763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::setTransmitEnablePin</definition>
+        <argsstring>(int8_t txEnablePin)</argsstring>
+        <name>setTransmitEnablePin</name>
+        <param>
+          <type>int8_t</type>
+          <declname>txEnablePin</declname>
+        </param>
+        <briefdescription>
+<para>Transmit control pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="124" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="172" bodyend="182"/>
+        <references refid="class_software_serial_1aa28371fec8665a898c103eb4f23bf4d8" compoundref="_software_serial_8cpp" startline="89" endline="101">isValidTxGPIOpin</references>
+        <references refid="class_software_serial_1a62a65ba498a777fa7cf4d3a5dd266acf" compoundref="_software_serial_8h" startline="239">m_txEnablePin</references>
+        <references refid="class_software_serial_1a2bba95a3b99ec6ad7dae75ef67c3bff9" compoundref="_software_serial_8h" startline="245">m_txEnableValid</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ac5e03ef4dd10fe0fc87bb542bb2180b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::enableIntTx</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>enableIntTx</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+<para>Enable (default) or disable interrupts during tx. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="126" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="184" bodyend="186"/>
+        <references refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" compoundref="_software_serial_8h" startline="249">m_intTxEnabled</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a1287e30c4f8970484432156dab15215d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::enableRxGPIOPullup</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>enableRxGPIOPullup</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+<para>Enable (default) or disable internal rx GPIO pullup. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="128" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="188" bodyend="191"/>
+        <references refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" compoundref="_software_serial_8h" startline="250">m_rxGPIOPullupEnabled</references>
+        <references refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ac6d4d5dfbe05515bf23766e2c8abfd46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::overflow</definition>
+        <argsstring>()</argsstring>
+        <name>overflow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="130" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="437" bodyend="441"/>
+        <references refid="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" compoundref="_software_serial_8h" startline="254">m_overflow</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SoftwareSerial::available</definition>
+        <argsstring>() override</argsstring>
+        <name>available</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="132" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="276" bodyend="284"/>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ab779fe0b59b09a2c8feee691f8ee136f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SoftwareSerial::availableForWrite</definition>
+        <argsstring>()</argsstring>
+        <name>availableForWrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="136" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="136" bodyend="140"/>
+        <references refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" compoundref="_software_serial_8h" startline="244">m_txValid</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SoftwareSerial::peek</definition>
+        <argsstring>() override</argsstring>
+        <name>peek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="141" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="443" bodyend="452"/>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" compoundref="_software_serial_8h" startline="253">m_lastReadParity</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" compoundref="_software_serial_8h" startline="257">m_parityOutPos</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SoftwareSerial::read</definition>
+        <argsstring>() override</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="142" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="225" bodyend="243"/>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" compoundref="_software_serial_8h" startline="253">m_lastReadParity</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" compoundref="_software_serial_8h" startline="257">m_parityOutPos</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</references>
+        <referencedby refid="class_software_serial_1a351ced2163ef24a66290ff00d3f0ec36" compoundref="_software_serial_8h" startline="167" endline="169">read</referencedby>
+        <referencedby refid="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" compoundref="_software_serial_8cpp" startline="262" endline="274">readBytes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ab6a650ec8523cd8c06afc167056ac43a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::readParity</definition>
+        <argsstring>()</argsstring>
+        <name>readParity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The verbatim parity bit associated with the last successful <ref refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" kindref="member">read()</ref> or <ref refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" kindref="member">peek()</ref> call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="144" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="144" bodyend="147"/>
+        <references refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" compoundref="_software_serial_8h" startline="253">m_lastReadParity</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a66fbae42082cb3e5279795b9ed3c78a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SoftwareSerial::read</definition>
+        <argsstring>(uint8_t *buffer, size_t size)</argsstring>
+        <name>read</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>The read(buffer, size) functions are non-blocking, the same as readBytes but without timeout. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="161" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="245" bodyend="260"/>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" compoundref="_software_serial_8h" startline="257">m_parityOutPos</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a351ced2163ef24a66290ff00d3f0ec36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SoftwareSerial::read</definition>
+        <argsstring>(char *buffer, size_t size)</argsstring>
+        <name>read</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>The read(buffer, size) functions are non-blocking, the same as readBytes but without timeout. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="167" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="167" bodyend="169"/>
+        <references refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::readBytes</definition>
+        <argsstring>(uint8_t *buffer, size_t size) override</argsstring>
+        <name>readBytes</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bytes read into buffer, up to size. Times out if the limit set through Stream::setTimeout() is reached. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="172" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="262" bodyend="274"/>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</references>
+        <referencedby refid="class_software_serial_1a7ea8a4d3b72d40f560877f10310cafb0" compoundref="_software_serial_8h" startline="175" endline="177">readBytes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a7ea8a4d3b72d40f560877f10310cafb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::readBytes</definition>
+        <argsstring>(char *buffer, size_t size) override</argsstring>
+        <name>readBytes</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bytes read into buffer, up to size. Times out if the limit set through Stream::setTimeout() is reached. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="175" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="175" bodyend="177"/>
+        <references refid="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" compoundref="_software_serial_8cpp" startline="262" endline="274">readBytes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::flush</definition>
+        <argsstring>() override</argsstring>
+        <name>flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="178" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="427" bodyend="435"/>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" compoundref="_software_serial_8h" startline="256">m_parityInPos</references>
+        <references refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" compoundref="_software_serial_8h" startline="257">m_parityOutPos</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::write</definition>
+        <argsstring>(uint8_t byte) override</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>byte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="179" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="327" bodyend="329"/>
+        <referencedby refid="class_software_serial_1a6551f852082e655e54207e3b20a6a733" compoundref="_software_serial_8cpp" startline="331" endline="333">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a6551f852082e655e54207e3b20a6a733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::write</definition>
+        <argsstring>(uint8_t byte, SoftwareSerialParity parity)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>byte</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref></type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="180" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="331" bodyend="333"/>
+        <references refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" compoundref="_software_serial_8cpp" startline="327" endline="329">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a377c493d0cb1699170f436612e9fb8c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::write</definition>
+        <argsstring>(const uint8_t *buffer, size_t size) override</argsstring>
+        <name>write</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="181" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="335" bodyend="337"/>
+        <references refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" compoundref="_software_serial_8h" startline="251">m_parityMode</references>
+        <references refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" compoundref="_software_serial_8cpp" startline="327" endline="329">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a67b073817dd371ec65394f250673ee88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::write</definition>
+        <argsstring>(const char *buffer, size_t size)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="182" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="182" bodyend="184"/>
+        <references refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" compoundref="_software_serial_8cpp" startline="327" endline="329">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t IRAM_ATTR SoftwareSerial::write</definition>
+        <argsstring>(const uint8_t *buffer, size_t size, SoftwareSerialParity parity)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref></type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="185" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="339" bodyend="425"/>
+        <references refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" compoundref="_software_serial_8h" startline="255">m_bitCycles</references>
+        <references refid="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" compoundref="_software_serial_8h" startline="240">m_dataBits</references>
+        <references refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" compoundref="_software_serial_8h" startline="249">m_intTxEnabled</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" compoundref="_software_serial_8h" startline="251">m_parityMode</references>
+        <references refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" compoundref="_software_serial_8h" startline="248">m_pduBits</references>
+        <references refid="class_software_serial_1a370797e59a98478f296f5ea382332743" compoundref="_software_serial_8h" startline="263">m_periodDuration</references>
+        <references refid="class_software_serial_1ac441727d6145bcedfe4c976428bc972a" compoundref="_software_serial_8h" startline="262">m_periodStart</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1aa4cfb19906a25b1f8cc5400d2d3aa761" compoundref="_software_serial_8h" startline="264">m_savedPS</references>
+        <references refid="class_software_serial_1a62a65ba498a777fa7cf4d3a5dd266acf" compoundref="_software_serial_8h" startline="239">m_txEnablePin</references>
+        <references refid="class_software_serial_1a2bba95a3b99ec6ad7dae75ef67c3bff9" compoundref="_software_serial_8h" startline="245">m_txEnableValid</references>
+        <references refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" compoundref="_software_serial_8h" startline="244">m_txValid</references>
+        <references refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</references>
+        <references refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea4279a22b73523fb6a318fe9d5e69da69" compoundref="_software_serial_8h" startline="32">SWSERIAL_PARITY_EVEN</references>
+        <references refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" compoundref="_software_serial_8h" startline="34">SWSERIAL_PARITY_MARK</references>
+        <references refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eaf04d20adcfe86c4595cbef37b654f753" compoundref="_software_serial_8h" startline="33">SWSERIAL_PARITY_ODD</references>
+        <references refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea759e4e69fc87e8a57da062fa33d89d29" compoundref="_software_serial_8h" startline="35">SWSERIAL_PARITY_SPACE</references>
+        <references refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" compoundref="_software_serial_8cpp" startline="310" endline="325">writePeriod</references>
+        <references refid="_software_serial_8cpp_1a66927e14222fee5df65712b17884d9e4" compoundref="_software_serial_8cpp" startline="27">xt_rsil</references>
+        <references refid="_software_serial_8cpp_1a11b62e3dfd23945d78bffd3e8b79abaf" compoundref="_software_serial_8cpp" startline="28">xt_wsr_ps</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a1c233cdb8ee3b989a39c2c9562ba2f46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SoftwareSerial::write</definition>
+        <argsstring>(const char *buffer, size_t size, SoftwareSerialParity parity)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref></type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="186" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="186" bodyend="188"/>
+        <references refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" compoundref="_software_serial_8cpp" startline="327" endline="329">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareSerial::operator bool</definition>
+        <argsstring>() const </argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="189" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="189" bodyend="191"/>
+        <references refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" compoundref="_software_serial_8h" startline="241">m_oneWire</references>
+        <references refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" compoundref="_software_serial_8h" startline="237">m_rxPin</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+        <references refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" compoundref="_software_serial_8h" startline="244">m_txValid</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::enableRx</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>enableRx</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+<para>Disable or enable interrupts on the rx pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="194" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="207" bodyend="223"/>
+        <references refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" compoundref="_software_serial_8h" startline="255">m_bitCycles</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" compoundref="_software_serial_8h" startline="270">m_isrLastCycle</references>
+        <references refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" compoundref="_software_serial_8h" startline="248">m_pduBits</references>
+        <references refid="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" compoundref="_software_serial_8h" startline="258">m_rxCurBit</references>
+        <references refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" compoundref="_software_serial_8h" startline="243">m_rxEnabled</references>
+        <references refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" compoundref="_software_serial_8h" startline="237">m_rxPin</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a133928510810889b4eae833991ef886b" compoundref="_software_serial_8cpp" startline="559" endline="566">rxBitISR</references>
+        <references refid="class_software_serial_1abd66e04e2830904e8fe7771da25e7e1d" compoundref="_software_serial_8cpp" startline="568" endline="589">rxBitSyncISR</references>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" compoundref="_software_serial_8cpp" startline="193" endline="205">enableTx</referencedby>
+        <referencedby refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" compoundref="_software_serial_8cpp" startline="155" endline="166">end</referencedby>
+        <referencedby refid="class_software_serial_1ad235539ef28939836bd0bde9387eb8fc" compoundref="_software_serial_8h" startline="199" endline="199">listen</referencedby>
+        <referencedby refid="class_software_serial_1a1c87a6b43c176c104f28e2c2eec2841e" compoundref="_software_serial_8h" startline="202" endline="202">stopListening</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::enableTx</definition>
+        <argsstring>(bool on)</argsstring>
+        <name>enableTx</name>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+<para>One wire control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="196" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="193" bodyend="205"/>
+        <references refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" compoundref="_software_serial_8h" startline="241">m_oneWire</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+        <references refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" compoundref="_software_serial_8h" startline="244">m_txValid</references>
+        <references refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ad235539ef28939836bd0bde9387eb8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::listen</definition>
+        <argsstring>()</argsstring>
+        <name>listen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="199" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="199" bodyend="199"/>
+        <references refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="200" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="155" bodyend="166"/>
+        <references refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</references>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" compoundref="_software_serial_8h" startline="267">m_isrBuffer</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" compoundref="_software_serial_8h" startline="244">m_txValid</references>
+        <referencedby refid="class_software_serial_1af6b8fff282e09a6cecc5df669ae71ee7" compoundref="_software_serial_8cpp" startline="47" endline="49">~SoftwareSerial</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a7b3fb4a8f57d2b5f2233f841d71ef80f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::isListening</definition>
+        <argsstring>()</argsstring>
+        <name>isListening</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="201" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="201" bodyend="201"/>
+        <references refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" compoundref="_software_serial_8h" startline="243">m_rxEnabled</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a1c87a6b43c176c104f28e2c2eec2841e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::stopListening</definition>
+        <argsstring>()</argsstring>
+        <name>stopListening</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="202" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="202" bodyend="202"/>
+        <references refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a403524f9df5f05696966c8df94a2300f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::onReceive</definition>
+        <argsstring>(Delegate&lt; void(int available), void * &gt; handler)</argsstring>
+        <name>onReceive</name>
+        <param>
+          <type><ref refid="class_delegate" kindref="compound">Delegate</ref>&lt; void(int <ref refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" kindref="member">available</ref>), void * &gt;</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Set an event handler for received data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="205" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="591" bodyend="593"/>
+        <references refid="class_software_serial_1a3729e009ea01d21540e014c34620a5d2" compoundref="_software_serial_8h" startline="272">receiveHandler</references>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::perform_work</definition>
+        <argsstring>()</argsstring>
+        <name>perform_work</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run the internal processing and event engine. Can be iteratively called from loop, or otherwise scheduled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="209" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="595" bodyend="602"/>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <references refid="class_software_serial_1a3729e009ea01d21540e014c34620a5d2" compoundref="_software_serial_8h" startline="272">receiveHandler</references>
+        <references refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" compoundref="_software_serial_8cpp" startline="454" endline="480">rxBits</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_software_serial_1a87e224129a214d0cade7557295f1074e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SoftwareSerial::parityEven</definition>
+        <argsstring>(uint8_t byte)</argsstring>
+        <name>parityEven</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>byte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The calculated bit for even parity of the parameter byte </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="149" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="149" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1adf8bb5671c79d4a3602f3dc881e3170a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SoftwareSerial::parityOdd</definition>
+        <argsstring>(uint8_t byte)</argsstring>
+        <name>parityOdd</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>byte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The calculated bit for odd parity of the parameter byte </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="155" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="155" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_software_serial_1aa674926759b375f43af50b40625284b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IRAM_ATTR SoftwareSerial::preciseDelay</definition>
+        <argsstring>(bool sync)</argsstring>
+        <name>preciseDelay</name>
+        <param>
+          <type>bool</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="216" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="286" bodyend="308"/>
+        <references refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" compoundref="_software_serial_8h" startline="249">m_intTxEnabled</references>
+        <references refid="class_software_serial_1a370797e59a98478f296f5ea382332743" compoundref="_software_serial_8h" startline="263">m_periodDuration</references>
+        <references refid="class_software_serial_1ac441727d6145bcedfe4c976428bc972a" compoundref="_software_serial_8h" startline="262">m_periodStart</references>
+        <references refid="class_software_serial_1aa4cfb19906a25b1f8cc5400d2d3aa761" compoundref="_software_serial_8h" startline="264">m_savedPS</references>
+        <references refid="_software_serial_8cpp_1a66927e14222fee5df65712b17884d9e4" compoundref="_software_serial_8cpp" startline="27">xt_rsil</references>
+        <references refid="_software_serial_8cpp_1a11b62e3dfd23945d78bffd3e8b79abaf" compoundref="_software_serial_8cpp" startline="28">xt_wsr_ps</references>
+        <referencedby refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" compoundref="_software_serial_8cpp" startline="310" endline="325">writePeriod</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IRAM_ATTR SoftwareSerial::writePeriod</definition>
+        <argsstring>(uint32_t dutyCycle, uint32_t offCycle, bool withStopBit)</argsstring>
+        <name>writePeriod</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>dutyCycle</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offCycle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withStopBit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="220" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="310" bodyend="325"/>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a370797e59a98478f296f5ea382332743" compoundref="_software_serial_8h" startline="263">m_periodDuration</references>
+        <references refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" compoundref="_software_serial_8h" startline="238">m_txPin</references>
+        <references refid="class_software_serial_1aa674926759b375f43af50b40625284b9" compoundref="_software_serial_8cpp" startline="286" endline="308">preciseDelay</references>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a2f4df40ea13d89ac519eaeaf1b55be45" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::isValidGPIOpin</definition>
+        <argsstring>(int8_t pin)</argsstring>
+        <name>isValidGPIOpin</name>
+        <param>
+          <type>int8_t</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="222" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="51" bodyend="79"/>
+        <referencedby refid="class_software_serial_1ad908ffa7f2ad1f23d840c659a8c72004" compoundref="_software_serial_8cpp" startline="81" endline="87">isValidRxGPIOpin</referencedby>
+        <referencedby refid="class_software_serial_1aa28371fec8665a898c103eb4f23bf4d8" compoundref="_software_serial_8cpp" startline="89" endline="101">isValidTxGPIOpin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ad908ffa7f2ad1f23d840c659a8c72004" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::isValidRxGPIOpin</definition>
+        <argsstring>(int8_t pin)</argsstring>
+        <name>isValidRxGPIOpin</name>
+        <param>
+          <type>int8_t</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="223" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="81" bodyend="87"/>
+        <references refid="class_software_serial_1a2f4df40ea13d89ac519eaeaf1b55be45" compoundref="_software_serial_8cpp" startline="51" endline="79">isValidGPIOpin</references>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1aa28371fec8665a898c103eb4f23bf4d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::isValidTxGPIOpin</definition>
+        <argsstring>(int8_t pin)</argsstring>
+        <name>isValidTxGPIOpin</name>
+        <param>
+          <type>int8_t</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="224" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="89" bodyend="101"/>
+        <references refid="class_software_serial_1a2f4df40ea13d89ac519eaeaf1b55be45" compoundref="_software_serial_8cpp" startline="51" endline="79">isValidGPIOpin</references>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a3fb0b021f92334d824c1b4af0283d763" compoundref="_software_serial_8cpp" startline="172" endline="182">setTransmitEnablePin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ac0f144a493b514e632972cc95d5ce30a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareSerial::hasRxGPIOPullUp</definition>
+        <argsstring>(int8_t pin)</argsstring>
+        <name>hasRxGPIOPullUp</name>
+        <param>
+          <type>int8_t</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="226" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="103" bodyend="110"/>
+        <referencedby refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" compoundref="_software_serial_8cpp" startline="112" endline="116">setRxGPIOPullUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1ac238cd1330d260018c92ee88ff793388" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::setRxGPIOPullUp</definition>
+        <argsstring>()</argsstring>
+        <name>setRxGPIOPullUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="228" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="112" bodyend="116"/>
+        <references refid="class_software_serial_1ac0f144a493b514e632972cc95d5ce30a" compoundref="_software_serial_8cpp" startline="103" endline="110">hasRxGPIOPullUp</references>
+        <references refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" compoundref="_software_serial_8h" startline="250">m_rxGPIOPullupEnabled</references>
+        <references refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" compoundref="_software_serial_8h" startline="237">m_rxPin</references>
+        <references refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" compoundref="_software_serial_8h" startline="242">m_rxValid</references>
+        <referencedby refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" compoundref="_software_serial_8cpp" startline="118" endline="153">begin</referencedby>
+        <referencedby refid="class_software_serial_1a1287e30c4f8970484432156dab15215d" compoundref="_software_serial_8cpp" startline="188" endline="191">enableRxGPIOPullup</referencedby>
+        <referencedby refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" compoundref="_software_serial_8cpp" startline="193" endline="205">enableTx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1a623072eac9e17926d8f40f825703b12d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::rxBits</definition>
+        <argsstring>()</argsstring>
+        <name>rxBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="230" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="454" bodyend="480"/>
+        <references refid="classstd_1_1atomic_1a42b814248794e50dcfa7f7ed81dba19d" compoundref="ghostl_8h" startline="47" endline="47">std::atomic&lt; T &gt;::load</references>
+        <references refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" compoundref="_software_serial_8h" startline="255">m_bitCycles</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" compoundref="_software_serial_8h" startline="267">m_isrBuffer</references>
+        <references refid="class_software_serial_1a93346dd3cdab14198650857ca385a4e7" compoundref="_software_serial_8h" startline="268">m_isrBufferForEachDel</references>
+        <references refid="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" compoundref="_software_serial_8h" startline="270">m_isrLastCycle</references>
+        <references refid="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" compoundref="_software_serial_8h" startline="269">m_isrOverflow</references>
+        <references refid="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" compoundref="_software_serial_8h" startline="254">m_overflow</references>
+        <references refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" compoundref="_software_serial_8h" startline="248">m_pduBits</references>
+        <references refid="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" compoundref="_software_serial_8h" startline="258">m_rxCurBit</references>
+        <references refid="class_software_serial_1a323f264255634ce1c4e6b334e157757f" compoundref="_software_serial_8h" startline="252">m_stopBits</references>
+        <references refid="classstd_1_1atomic_1ac6187f3882863f0e3f65a7fbb8b04121" compoundref="ghostl_8h" startline="46" endline="46">std::atomic&lt; T &gt;::store</references>
+        <referencedby refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" compoundref="_software_serial_8cpp" startline="276" endline="284">available</referencedby>
+        <referencedby refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" compoundref="_software_serial_8cpp" startline="443" endline="452">peek</referencedby>
+        <referencedby refid="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" compoundref="_software_serial_8cpp" startline="595" endline="602">perform_work</referencedby>
+        <referencedby refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" compoundref="_software_serial_8cpp" startline="225" endline="243">read</referencedby>
+        <referencedby refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" compoundref="_software_serial_8cpp" startline="339" endline="425">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1aa94449265bf416821f66af79bae5b487" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareSerial::rxBits</definition>
+        <argsstring>(const uint32_t &amp;isrCycle)</argsstring>
+        <name>rxBits</name>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>isrCycle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="231" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="482" bodyend="557"/>
+        <references refid="_software_serial_8cpp_1a598154fbc2ca9d498197580a562d42a0" compoundref="_software_serial_8cpp" startline="31">BYTE_ALL_BITS_SET</references>
+        <references refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" compoundref="_software_serial_8h" startline="255">m_bitCycles</references>
+        <references refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" compoundref="_software_serial_8h" startline="260">m_buffer</references>
+        <references refid="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" compoundref="_software_serial_8h" startline="240">m_dataBits</references>
+        <references refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" compoundref="_software_serial_8h" startline="246">m_invert</references>
+        <references refid="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" compoundref="_software_serial_8h" startline="270">m_isrLastCycle</references>
+        <references refid="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" compoundref="_software_serial_8h" startline="254">m_overflow</references>
+        <references refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" compoundref="_software_serial_8h" startline="261">m_parityBuffer</references>
+        <references refid="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" compoundref="_software_serial_8h" startline="256">m_parityInPos</references>
+        <references refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" compoundref="_software_serial_8h" startline="251">m_parityMode</references>
+        <references refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" compoundref="_software_serial_8h" startline="248">m_pduBits</references>
+        <references refid="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" compoundref="_software_serial_8h" startline="258">m_rxCurBit</references>
+        <references refid="class_software_serial_1ab9654d8cb91c4f46d281d38c1f6521ec" compoundref="_software_serial_8h" startline="259">m_rxCurByte</references>
+        <references refid="class_software_serial_1a7229b30bcaacc05306bba4659df95582" compoundref="_software_serial_8h" startline="271">m_rxCurParity</references>
+        <references refid="class_software_serial_1a323f264255634ce1c4e6b334e157757f" compoundref="_software_serial_8h" startline="252">m_stopBits</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_software_serial_1a133928510810889b4eae833991ef886b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IRAM_ATTR SoftwareSerial::rxBitISR</definition>
+        <argsstring>(SoftwareSerial *self)</argsstring>
+        <name>rxBitISR</name>
+        <param>
+          <type><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="233" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="559" bodyend="566"/>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_software_serial_1abd66e04e2830904e8fe7771da25e7e1d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IRAM_ATTR SoftwareSerial::rxBitSyncISR</definition>
+        <argsstring>(SoftwareSerial *self)</argsstring>
+        <name>rxBitSyncISR</name>
+        <param>
+          <type><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="234" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp" bodystart="568" bodyend="589"/>
+        <referencedby refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" compoundref="_software_serial_8cpp" startline="207" endline="223">enableRx</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is compatible with the corresponding AVR one, however, the constructor takes no arguments, for compatibility with the HardwareSerial class. Instead, the <ref refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" kindref="member">begin()</ref> function handles pin assignments and logic inversion. It also has optional input buffer capacity arguments for byte buffer and ISR bit buffer. Bitrates up to at least 115200 can be used. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="263">
+        <label>Stream</label>
+      </node>
+      <node id="262">
+        <label>SoftwareSerial</label>
+        <link refid="class_software_serial"/>
+        <childnode refid="263" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="266">
+        <label>Delegate&lt; void(int available), void * &gt;</label>
+        <link refid="class_delegate"/>
+      </node>
+      <node id="272">
+        <label>Delegate&lt; void(uint32_t &amp;&amp;), SoftwareSerial * &gt;</label>
+        <link refid="class_delegate"/>
+      </node>
+      <node id="275">
+        <label>std::unique_ptr&lt; uint8_t[]&gt;</label>
+      </node>
+      <node id="267">
+        <label>std::atomic&lt; bool &gt;</label>
+        <link refid="classstd_1_1atomic"/>
+      </node>
+      <node id="269">
+        <label>circular_queue&lt; uint32_t, SoftwareSerial * &gt;</label>
+        <link refid="classcircular__queue"/>
+        <childnode refid="270" relation="usage">
+          <edgelabel>m_outPos</edgelabel>
+          <edgelabel>m_inPos</edgelabel>
+        </childnode>
+        <childnode refid="271" relation="usage">
+          <edgelabel>m_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="271">
+        <label>std::unique_ptr&lt; uint32_t[]&gt;</label>
+      </node>
+      <node id="274">
+        <label>circular_queue&lt; uint8_t &gt;</label>
+        <link refid="classcircular__queue"/>
+        <childnode refid="270" relation="usage">
+          <edgelabel>m_outPos</edgelabel>
+          <edgelabel>m_inPos</edgelabel>
+        </childnode>
+        <childnode refid="275" relation="usage">
+          <edgelabel>m_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="273">
+        <label>std::unique_ptr&lt; circular_queue&lt; uint8_t &gt; &gt;</label>
+        <childnode refid="274" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="268">
+        <label>std::unique_ptr&lt; circular_queue&lt; uint32_t, SoftwareSerial * &gt; &gt;</label>
+        <childnode refid="269" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="270">
+        <label>std::atomic&lt; size_t &gt;</label>
+        <link refid="classstd_1_1atomic"/>
+      </node>
+      <node id="265">
+        <label>Stream</label>
+      </node>
+      <node id="264">
+        <label>SoftwareSerial</label>
+        <link refid="class_software_serial"/>
+        <childnode refid="265" relation="public-inheritance">
+        </childnode>
+        <childnode refid="266" relation="usage">
+          <edgelabel>receiveHandler</edgelabel>
+        </childnode>
+        <childnode refid="267" relation="usage">
+          <edgelabel>m_isrOverflow</edgelabel>
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>m_isrBuffer</edgelabel>
+        </childnode>
+        <childnode refid="272" relation="usage">
+          <edgelabel>m_isrBufferForEachDel</edgelabel>
+        </childnode>
+        <childnode refid="273" relation="usage">
+          <edgelabel>m_parityBuffer</edgelabel>
+          <edgelabel>m_buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="87" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="87" bodyend="273"/>
+    <listofallmembers>
+      <member refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>available</name></member>
+      <member refid="class_software_serial_1ab779fe0b59b09a2c8feee691f8ee136f" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>availableForWrite</name></member>
+      <member refid="class_software_serial_1ad78e846e05c88a7ad7b7733c5bb652c1" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>baudRate</name></member>
+      <member refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>begin</name></member>
+      <member refid="class_software_serial_1ab3173af7812b41c17d4aa90538ce3cf2" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>begin</name></member>
+      <member refid="class_software_serial_1af1c320d1f02058b6656ee98a93dc5032" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>begin</name></member>
+      <member refid="class_software_serial_1a21a9d392987aebad5fd8c0ec0f950d1e" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>begin</name></member>
+      <member refid="class_software_serial_1ac5e03ef4dd10fe0fc87bb542bb2180b7" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>enableIntTx</name></member>
+      <member refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>enableRx</name></member>
+      <member refid="class_software_serial_1a1287e30c4f8970484432156dab15215d" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>enableRxGPIOPullup</name></member>
+      <member refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>enableTx</name></member>
+      <member refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>end</name></member>
+      <member refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>flush</name></member>
+      <member refid="class_software_serial_1ac0f144a493b514e632972cc95d5ce30a" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>hasRxGPIOPullUp</name></member>
+      <member refid="class_software_serial_1a7b3fb4a8f57d2b5f2233f841d71ef80f" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>isListening</name></member>
+      <member refid="class_software_serial_1a2f4df40ea13d89ac519eaeaf1b55be45" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>isValidGPIOpin</name></member>
+      <member refid="class_software_serial_1ad908ffa7f2ad1f23d840c659a8c72004" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>isValidRxGPIOpin</name></member>
+      <member refid="class_software_serial_1aa28371fec8665a898c103eb4f23bf4d8" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>isValidTxGPIOpin</name></member>
+      <member refid="class_software_serial_1ad235539ef28939836bd0bde9387eb8fc" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>listen</name></member>
+      <member refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_bitCycles</name></member>
+      <member refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_buffer</name></member>
+      <member refid="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_dataBits</name></member>
+      <member refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_intTxEnabled</name></member>
+      <member refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_invert</name></member>
+      <member refid="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_isrBuffer</name></member>
+      <member refid="class_software_serial_1a93346dd3cdab14198650857ca385a4e7" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_isrBufferForEachDel</name></member>
+      <member refid="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_isrLastCycle</name></member>
+      <member refid="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_isrOverflow</name></member>
+      <member refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_lastReadParity</name></member>
+      <member refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_oneWire</name></member>
+      <member refid="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_overflow</name></member>
+      <member refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_parityBuffer</name></member>
+      <member refid="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_parityInPos</name></member>
+      <member refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_parityMode</name></member>
+      <member refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_parityOutPos</name></member>
+      <member refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_pduBits</name></member>
+      <member refid="class_software_serial_1a370797e59a98478f296f5ea382332743" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_periodDuration</name></member>
+      <member refid="class_software_serial_1ac441727d6145bcedfe4c976428bc972a" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_periodStart</name></member>
+      <member refid="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxCurBit</name></member>
+      <member refid="class_software_serial_1ab9654d8cb91c4f46d281d38c1f6521ec" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxCurByte</name></member>
+      <member refid="class_software_serial_1a7229b30bcaacc05306bba4659df95582" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxCurParity</name></member>
+      <member refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxEnabled</name></member>
+      <member refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxGPIOPullupEnabled</name></member>
+      <member refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxPin</name></member>
+      <member refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_rxValid</name></member>
+      <member refid="class_software_serial_1aa4cfb19906a25b1f8cc5400d2d3aa761" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_savedPS</name></member>
+      <member refid="class_software_serial_1a323f264255634ce1c4e6b334e157757f" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_stopBits</name></member>
+      <member refid="class_software_serial_1a62a65ba498a777fa7cf4d3a5dd266acf" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_txEnablePin</name></member>
+      <member refid="class_software_serial_1a2bba95a3b99ec6ad7dae75ef67c3bff9" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_txEnableValid</name></member>
+      <member refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_txPin</name></member>
+      <member refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>m_txValid</name></member>
+      <member refid="class_software_serial_1a403524f9df5f05696966c8df94a2300f" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>onReceive</name></member>
+      <member refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>operator bool</name></member>
+      <member refid="class_software_serial_1abdee11648577391667716e426d6e2024" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>operator=</name></member>
+      <member refid="class_software_serial_1ac6d4d5dfbe05515bf23766e2c8abfd46" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>overflow</name></member>
+      <member refid="class_software_serial_1a87e224129a214d0cade7557295f1074e" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>parityEven</name></member>
+      <member refid="class_software_serial_1adf8bb5671c79d4a3602f3dc881e3170a" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>parityOdd</name></member>
+      <member refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>peek</name></member>
+      <member refid="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>perform_work</name></member>
+      <member refid="class_software_serial_1aa674926759b375f43af50b40625284b9" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>preciseDelay</name></member>
+      <member refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>read</name></member>
+      <member refid="class_software_serial_1a66fbae42082cb3e5279795b9ed3c78a4" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>read</name></member>
+      <member refid="class_software_serial_1a351ced2163ef24a66290ff00d3f0ec36" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>read</name></member>
+      <member refid="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>readBytes</name></member>
+      <member refid="class_software_serial_1a7ea8a4d3b72d40f560877f10310cafb0" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>readBytes</name></member>
+      <member refid="class_software_serial_1ab6a650ec8523cd8c06afc167056ac43a" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>readParity</name></member>
+      <member refid="class_software_serial_1a3729e009ea01d21540e014c34620a5d2" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>receiveHandler</name></member>
+      <member refid="class_software_serial_1a133928510810889b4eae833991ef886b" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>rxBitISR</name></member>
+      <member refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>rxBits</name></member>
+      <member refid="class_software_serial_1aa94449265bf416821f66af79bae5b487" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>rxBits</name></member>
+      <member refid="class_software_serial_1abd66e04e2830904e8fe7771da25e7e1d" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>rxBitSyncISR</name></member>
+      <member refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>setRxGPIOPullUp</name></member>
+      <member refid="class_software_serial_1a3fb0b021f92334d824c1b4af0283d763" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>setTransmitEnablePin</name></member>
+      <member refid="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>SoftwareSerial</name></member>
+      <member refid="class_software_serial_1a9395625c3341ceedfc669f14ce43f8f1" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>SoftwareSerial</name></member>
+      <member refid="class_software_serial_1a75bb44db9aa85a3dd4a4cde6ee40ab7d" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>SoftwareSerial</name></member>
+      <member refid="class_software_serial_1a1c87a6b43c176c104f28e2c2eec2841e" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>stopListening</name></member>
+      <member refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>write</name></member>
+      <member refid="class_software_serial_1a6551f852082e655e54207e3b20a6a733" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>write</name></member>
+      <member refid="class_software_serial_1a377c493d0cb1699170f436612e9fb8c1" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>write</name></member>
+      <member refid="class_software_serial_1a67b073817dd371ec65394f250673ee88" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>write</name></member>
+      <member refid="class_software_serial_1a496dc4a5268201657d0a80ab7444867f" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>write</name></member>
+      <member refid="class_software_serial_1a1c233cdb8ee3b989a39c2c9562ba2f46" prot="public" virt="non-virtual"><scope>SoftwareSerial</scope><name>write</name></member>
+      <member refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" prot="private" virt="non-virtual"><scope>SoftwareSerial</scope><name>writePeriod</name></member>
+      <member refid="class_software_serial_1af6b8fff282e09a6cecc5df669ae71ee7" prot="public" virt="virtual"><scope>SoftwareSerial</scope><name>~SoftwareSerial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

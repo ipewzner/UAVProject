@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_communication" kind="class" prot="public" abstract="yes">
+    <compoundname>Communication</compoundname>
+    <derivedcompoundref refid="class_lora" prot="public" virt="non-virtual">Lora</derivedcompoundref>
+    <includes refid="_communication_8h" local="no">Communication.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_communication_1a0be9374587814b0f168d41ba6cd2557b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Communication::SendStruct</definition>
+        <argsstring>(const void *, uint16_t)=0</argsstring>
+        <name>SendStruct</name>
+        <reimplementedby refid="class_lora_1a675e5dfa837495b12b38ec49f75609b1">SendStruct</reimplementedby>
+        <param>
+          <type>const void *</type>
+        </param>
+        <param>
+          <type>uint16_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1a1e7bb379b1e5440053fd18c2c8a9f8b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Communication::GetStruct</definition>
+        <argsstring>(const void *, uint16_t)=0</argsstring>
+        <name>GetStruct</name>
+        <reimplementedby refid="class_lora_1a2bccb912fc456f6d8f79fac05347e4dd">GetStruct</reimplementedby>
+        <param>
+          <type>const void *</type>
+        </param>
+        <param>
+          <type>uint16_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1a70d2e5c576848d40cc266bd97e895964" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Communication::available</definition>
+        <argsstring>()=0</argsstring>
+        <name>available</name>
+        <reimplementedby refid="class_lora_1a97ff403fd6884d2d82f6cdc55c99829f">available</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1ac2dd9fceb984de572506287770357205" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Communication::flush</definition>
+        <argsstring>()=0</argsstring>
+        <name>flush</name>
+        <reimplementedby refid="class_lora_1a5ecdb3bc91fac48a4c21ec9a05cf8d6f">flush</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1aa40b77748cf1be2794397cd93d7f79b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Communication::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="class_lora_1a4646d5b39ddc44c0afc84b48ab7af5ec">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" line="19" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>Communication</label>
+        <link refid="class_communication"/>
+      </node>
+      <node id="38">
+        <label>Lora</label>
+        <link refid="class_lora"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" line="9" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_communication_1a70d2e5c576848d40cc266bd97e895964" prot="public" virt="pure-virtual"><scope>Communication</scope><name>available</name></member>
+      <member refid="class_communication_1ac2dd9fceb984de572506287770357205" prot="public" virt="pure-virtual"><scope>Communication</scope><name>flush</name></member>
+      <member refid="class_communication_1a1e7bb379b1e5440053fd18c2c8a9f8b6" prot="public" virt="pure-virtual"><scope>Communication</scope><name>GetStruct</name></member>
+      <member refid="class_communication_1aa40b77748cf1be2794397cd93d7f79b8" prot="public" virt="pure-virtual"><scope>Communication</scope><name>reset</name></member>
+      <member refid="class_communication_1a0be9374587814b0f168d41ba6cd2557b" prot="public" virt="pure-virtual"><scope>Communication</scope><name>SendStruct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

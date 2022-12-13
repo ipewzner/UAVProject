@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_sensor" kind="class" prot="public" abstract="yes">
+    <compoundname>Sensor</compoundname>
+    <derivedcompoundref refid="class_b_m_p" prot="public" virt="non-virtual">BMP</derivedcompoundref>
+    <derivedcompoundref refid="class_mini_joystick" prot="public" virt="non-virtual">MiniJoystick</derivedcompoundref>
+    <derivedcompoundref refid="class_m_p_u" prot="public" virt="non-virtual">MPU</derivedcompoundref>
+    <includes refid="_sensor_8h" local="no">Sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Sensor::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_b_m_p_1a6093c8f7a2cb8f4250ea5d234b822a4d" compoundref="_b_m_p_8cpp" startline="3" endline="7">BMP::BMP</referencedby>
+        <referencedby refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" compoundref="_sensor_array_8cpp" startline="48" endline="62">SensorArray::jsonResultAll</referencedby>
+        <referencedby refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" compoundref="_mini_joystick_8cpp" startline="7" endline="20">MiniJoystick::MiniJoystick</referencedby>
+        <referencedby refid="class_m_p_u_1ab00dc776e79b69dffa32cf6d2b9a4857" compoundref="_m_p_u_8cpp" startline="99" endline="115">MPU::MPU</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sensor_1a42681155fbb4e23d371f50a379ebf351" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Sensor::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2">init</reimplementedby>
+        <reimplementedby refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5">init</reimplementedby>
+        <reimplementedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06">init</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a990933ca2756162944964b4ee310a7f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>String</type>
+        <definition>virtual String Sensor::asciiResult</definition>
+        <argsstring>()=0</argsstring>
+        <name>asciiResult</name>
+        <reimplementedby refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540">asciiResult</reimplementedby>
+        <reimplementedby refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e">asciiResult</reimplementedby>
+        <reimplementedby refid="class_m_p_u_1a63378ddf98efdb53a45e5010d4caf675">asciiResult</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" line="14" column="1"/>
+        <referencedby refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" compoundref="_sensor_array_8cpp" startline="39" endline="46">SensorArray::asciiResultAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1abe9626a7ffd5294bb75f1b7728e9582d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>virtual DynamicJsonDocument Sensor::jsonResult</definition>
+        <argsstring>()=0</argsstring>
+        <name>jsonResult</name>
+        <reimplementedby refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753">jsonResult</reimplementedby>
+        <reimplementedby refid="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519">jsonResult</reimplementedby>
+        <reimplementedby refid="class_m_p_u_1a7422bdd9ca2a4ed012d5e8291416dfaf">jsonResult</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_1a97c1e3f398570ff28aeb5f9234a6fe58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>virtual String Sensor::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01">toString</reimplementedby>
+        <reimplementedby refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850">toString</reimplementedby>
+        <reimplementedby refid="class_m_p_u_1ac7ef4f04f4808d78f56a47598e866450">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" line="16" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="248">
+        <label>BMP</label>
+        <link refid="class_b_m_p"/>
+        <childnode refid="247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+      <node id="250">
+        <label>MPU</label>
+        <link refid="class_m_p_u"/>
+        <childnode refid="247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>MiniJoystick</label>
+        <link refid="class_mini_joystick"/>
+        <childnode refid="247" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" line="10" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h" bodystart="9" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_sensor_1a990933ca2756162944964b4ee310a7f9" prot="public" virt="pure-virtual"><scope>Sensor</scope><name>asciiResult</name></member>
+      <member refid="class_sensor_1a42681155fbb4e23d371f50a379ebf351" prot="public" virt="pure-virtual"><scope>Sensor</scope><name>init</name></member>
+      <member refid="class_sensor_1abe9626a7ffd5294bb75f1b7728e9582d" prot="public" virt="pure-virtual"><scope>Sensor</scope><name>jsonResult</name></member>
+      <member refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" prot="public" virt="non-virtual"><scope>Sensor</scope><name>name</name></member>
+      <member refid="class_sensor_1a97c1e3f398570ff28aeb5f9234a6fe58" prot="public" virt="virtual"><scope>Sensor</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

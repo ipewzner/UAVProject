@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespaceanonymous__namespace_02_delegate_8h_03" kind="namespace">
+    <compoundname>anonymous_namespace{Delegate.h}</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceanonymous__namespace_02_delegate_8h_03_1aaecd69677ca8942dfa8fb26406073ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>P</declname>
+            <defname>P</defname>
+          </param>
+        </templateparamlist>
+        <type>R IRAM_ATTR</type>
+        <definition>R IRAM_ATTR anonymous_namespace{Delegate.h}::vPtrToFunPtrExec</definition>
+        <argsstring>(void *fn, P...args)</argsstring>
+        <name>vPtrToFunPtrExec</name>
+        <param>
+          <type>void *</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>P...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="42" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" bodystart="42" bodyend="46"/>
+        <referencedby refid="classdelegate_1_1detail_1_1_delegate_p_impl_1ad7bcc8760e8b59734514ce7fecbd90dc" compoundref="_delegate_8h" startline="279" endline="296">delegate::detail::DelegatePImpl&lt; A *, R, P...&gt;::operator FunVPPtr</referencedby>
+        <referencedby refid="classdelegate_1_1detail_1_1_delegate_p_impl_3_01void_00_01_r_00_01_p_8_8_8_4_1acd6bb027e6a3b09e01417792a1e18f3d" compoundref="_delegate_8h" startline="708" endline="721">delegate::detail::DelegatePImpl&lt; void, R, P...&gt;::operator FunVPPtr</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/Delegate.h" line="39" column="1"/>
+  </compounddef>
+</doxygen>

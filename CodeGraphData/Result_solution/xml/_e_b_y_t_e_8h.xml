@@ -1,0 +1,960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_e_b_y_t_e_8h" kind="file">
+    <compoundname>EBYTE.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="_lora_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</includedby>
+    <includedby refid="_e_b_y_t_e_8cpp" local="no">C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>Arduino.h</label>
+      </node>
+      <node id="5">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h</label>
+        <link refid="EBYTE.h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</label>
+        <link refid="_lora_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h</label>
+        <link refid="EBYTE.h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp</label>
+        <link refid="_lora_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.cpp</label>
+        <link refid="_e_b_y_t_e_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_e_b_y_t_e" prot="public">EBYTE</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" prot="public" static="no">
+        <name>PIN_RECOVER</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="85" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" compoundref="_e_b_y_t_e_8cpp" startline="186" endline="218">EBYTE::CompleteTask</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">EBYTE::SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">EBYTE::SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" prot="public" static="no">
+        <name>MODE_NORMAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="91" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_b_m_p_1ac97eabc38177e73a44c935fe2bdce0c2" compoundref="_b_m_p_8cpp" startline="9" endline="24">BMP::init</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" compoundref="_e_b_y_t_e_8cpp" startline="68" endline="93">EBYTE::init</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">EBYTE::ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">EBYTE::ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" compoundref="_e_b_y_t_e_8cpp" startline="285" endline="298">EBYTE::Reset</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">EBYTE::SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">EBYTE::SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ad9a9dc64ee46933fe243d07d0d131595" prot="public" static="no">
+        <name>MODE_WAKEUP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="92" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">EBYTE::SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a14b50778265f2afbc79489fa3f21c7ec" prot="public" static="no">
+        <name>MODE_POWERDOWN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="93" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">EBYTE::SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" prot="public" static="no">
+        <name>MODE_PROGRAM</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="94" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" compoundref="_e_b_y_t_e_8cpp" startline="630" endline="694">EBYTE::ReadModelData</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" compoundref="_e_b_y_t_e_8cpp" startline="581" endline="627">EBYTE::ReadParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" compoundref="_e_b_y_t_e_8cpp" startline="285" endline="298">EBYTE::Reset</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" compoundref="_e_b_y_t_e_8cpp" startline="491" endline="532">EBYTE::SaveParameters</referencedby>
+        <referencedby refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" compoundref="_e_b_y_t_e_8cpp" startline="224" endline="265">EBYTE::SetMode</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1aa772670dfaa589fabd502d5c0402cf18" prot="public" static="no">
+        <name>PERMANENT</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="97" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a95fae3691448bf07f68f607d1878d3a5" prot="public" static="no">
+        <name>TEMPORARY</name>
+        <initializer>0xC2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="98" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1addb222c37b265b7d36c596938e13065d" prot="public" static="no">
+        <name>PB_8N1</name>
+        <initializer>0b00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="101" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ac69b8de7d06123e0503719dfca0a1e98" prot="public" static="no">
+        <name>PB_8O1</name>
+        <initializer>0b01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="102" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a22390e9e383fb04ac84cae5654ddeb64" prot="public" static="no">
+        <name>PB_8E1</name>
+        <initializer>0b11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="103" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a4abec793844b297686894e46029534ee" prot="public" static="no">
+        <name>UDR_1200</name>
+        <initializer>0b000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="107" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1af1dbcd0071760501315c10686cbea93d" prot="public" static="no">
+        <name>UDR_2400</name>
+        <initializer>0b001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="108" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a5e12b08e891da2af8b82a213d3cda8f9" prot="public" static="no">
+        <name>UDR_4800</name>
+        <initializer>0b010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="109" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a24e36cc074aed15d8548f21c490ece54" prot="public" static="no">
+        <name>UDR_9600</name>
+        <initializer>0b011</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="110" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1affbcbdea3725e7531acb12c3bfb8ebca" prot="public" static="no">
+        <name>UDR_19200</name>
+        <initializer>0b100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="111" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1aa142758447cb320e1b743a3877574c03" prot="public" static="no">
+        <name>UDR_38400</name>
+        <initializer>0b101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="112" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a1e835b901a76cc1684e97980c0f67af9" prot="public" static="no">
+        <name>UDR_57600</name>
+        <initializer>0b110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="113" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a3625db700d57ae52f1c9dc8799fcf5b8" prot="public" static="no">
+        <name>UDR_115200</name>
+        <initializer>0b111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="114" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a6a62ba5b464e2d70dc72590279a1e432" prot="public" static="no">
+        <name>ADR_300</name>
+        <initializer>0b000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="118" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a1fb8ed5e99f56117a2d02d1ad2efa17a" prot="public" static="no">
+        <name>ADR_1200</name>
+        <initializer>0b001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="119" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a951edc1718aff35a9ca87d6c145e1101" prot="public" static="no">
+        <name>ADR_2400</name>
+        <initializer>0b010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="120" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a275cb2286aa6e2ea8bac6007775cbfc9" prot="public" static="no">
+        <name>ADR_4800</name>
+        <initializer>0b011</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="121" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ada701dd29dd578b6d6ca9a67ff166f4d" prot="public" static="no">
+        <name>ADR_9600</name>
+        <initializer>0b100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="122" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a8e748388cd156ce98fda35815c3022e7" prot="public" static="no">
+        <name>ADR_19200</name>
+        <initializer>0b101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="123" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" compoundref="_lora_8cpp" startline="4" endline="42">Lora::Lora</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a295ef77e0e1dbb85c996ef013542ed47" prot="public" static="no">
+        <name>ADR_1K</name>
+        <initializer>0b000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="126" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1aaee34ba3455e4f6c511ccea95c3d3c3d" prot="public" static="no">
+        <name>ADR_2K</name>
+        <initializer>0b001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="127" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1aebcc94db38785687934c6ac42a8d43da" prot="public" static="no">
+        <name>ADR_5K</name>
+        <initializer>0b010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="128" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1af03c287e02e19da8d47da1b29e26a1d7" prot="public" static="no">
+        <name>ADR_8K</name>
+        <initializer>0b011</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="129" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ac08113912b21cc392cb3af8eed9e276d" prot="public" static="no">
+        <name>ADR_10K</name>
+        <initializer>0b100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="130" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a151a8a6ec2702f870eccddcef94f4207" prot="public" static="no">
+        <name>ADR_15K</name>
+        <initializer>0b101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="131" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a39c343d5170fce950fc8ac9c1616adb1" prot="public" static="no">
+        <name>ADR_20K</name>
+        <initializer>0b110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="132" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ae4cbb5f0aada10e27d5a76d7c652c94e" prot="public" static="no">
+        <name>ADR_25K</name>
+        <initializer>0b111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="133" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a56142fab28e1fff725aa5a0391990132" prot="public" static="no">
+        <name>OPT_FMDISABLE</name>
+        <initializer>0b0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="137" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ab0783c7cff666cd720d6711e4ac65752" prot="public" static="no">
+        <name>OPT_FMENABLE</name>
+        <initializer>0b1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="138" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a583415c31027dae0a4d57a121063fede" prot="public" static="no">
+        <name>OPT_IOOPENDRAIN</name>
+        <initializer>0b0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="139" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1abb1cb52548fe8a0c8b1e6396fb3212c8" prot="public" static="no">
+        <name>OPT_IOPUSHPULL</name>
+        <initializer>0b1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="140" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a04ee4abd12fc62bc7eb0d48f6203e2c2" prot="public" static="no">
+        <name>OPT_WAKEUP250</name>
+        <initializer>0b000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="141" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1af952734d123af09967fcab71f02996c8" prot="public" static="no">
+        <name>OPT_WAKEUP500</name>
+        <initializer>0b001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="142" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a2451bf1d530d1185f8420ae2a0569ed9" prot="public" static="no">
+        <name>OPT_WAKEUP750</name>
+        <initializer>0b010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="143" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a49bf26efbc7c036ed0b6c900de9361dd" prot="public" static="no">
+        <name>OPT_WAKEUP1000</name>
+        <initializer>0b011</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="144" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a5c88dc3f725ec6e82cc540da628f45f2" prot="public" static="no">
+        <name>OPT_WAKEUP1250</name>
+        <initializer>0b100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="145" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1aa3004d05e0ce1f03d5ed8c13013822d2" prot="public" static="no">
+        <name>OPT_WAKEUP1500</name>
+        <initializer>0b101</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="146" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a1855ca2d526dcd3b7f8c4adfec5e29fe" prot="public" static="no">
+        <name>OPT_WAKEUP1750</name>
+        <initializer>0b110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="147" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1af9830a783948e6ef2c4f723fc9841d69" prot="public" static="no">
+        <name>OPT_WAKEUP2000</name>
+        <initializer>0b111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="148" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a5f9f9b86c91460a2216c3b178077caa0" prot="public" static="no">
+        <name>OPT_FECDISABLE</name>
+        <initializer>0b0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="149" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ad2813b20f23f53ded45c2a5a2b08f455" prot="public" static="no">
+        <name>OPT_FECENABLE</name>
+        <initializer>0b1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="150" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1aaaa9c4e85f075f759c010ff5fbd03234" prot="public" static="no">
+        <name>OPT_TP20</name>
+        <initializer>0b00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="169" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a9d7500496265c1629eaf792c55ccbde4" prot="public" static="no">
+        <name>OPT_TP17</name>
+        <initializer>0b01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="170" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a85c6d2b6f1b92d2b6e57b645954d38b8" prot="public" static="no">
+        <name>OPT_TP14</name>
+        <initializer>0b10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="171" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1a9be60cceea02afc2fb21d521077e172f" prot="public" static="no">
+        <name>OPT_TP11</name>
+        <initializer>0b11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="172" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_e_b_y_t_e_8h_1ab399b7743ca01c1179c86f32d3af1e29" prot="public" static="no">
+        <name>OPT_TP10</name>
+        <initializer>0b11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" line="173" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>The<sp/>MIT<sp/>License<sp/>(MIT)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>2019<sp/>Kris<sp/>Kasrpzak</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy<sp/>of</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,<sp/>FITNESS</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>On<sp/>a<sp/>personal<sp/>note,<sp/>if<sp/>you<sp/>develop<sp/>an<sp/>application<sp/>or<sp/>product<sp/>using<sp/>this<sp/>library<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>and<sp/>make<sp/>millions<sp/>of<sp/>dollars,<sp/>I&apos;m<sp/>happy<sp/>for<sp/>you!</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>Code<sp/>by<sp/>Kris<sp/>Kasprzak<sp/>kris.kasprzak@yahoo.com</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>intended<sp/>to<sp/>be<sp/>used<sp/>with<sp/>EBYTE<sp/>transcievers,<sp/>small<sp/>wireless<sp/>units<sp/>for<sp/>MCU&apos;s<sp/>such<sp/>as</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>Teensy<sp/>and<sp/>Arduino.<sp/>This<sp/>library<sp/>let&apos;s<sp/>users<sp/>program<sp/>the<sp/>operating<sp/>parameters<sp/>and<sp/>both<sp/>send<sp/>and<sp/>recieve<sp/>data.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>This<sp/>company<sp/>makes<sp/>several<sp/>modules<sp/>with<sp/>different<sp/>capabilities,<sp/>but<sp/>most<sp/>#defines<sp/>here<sp/>should<sp/>be<sp/>compatible<sp/>with<sp/>them</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>All<sp/>constants<sp/>were<sp/>extracted<sp/>from<sp/>several<sp/>data<sp/>sheets<sp/>and<sp/>listed<sp/>in<sp/>binary<sp/>as<sp/>that&apos;s<sp/>how<sp/>the<sp/>data<sp/>sheet<sp/>represented<sp/>each<sp/>setting</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>Hopefully,<sp/>any<sp/>changes<sp/>or<sp/>additions<sp/>to<sp/>constants<sp/>can<sp/>be<sp/>a<sp/>matter<sp/>of<sp/>copying<sp/>the<sp/>data<sp/>sheet<sp/>constants<sp/>directly<sp/>into<sp/>these<sp/>#defines</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>Usage<sp/>of<sp/>this<sp/>library<sp/>consumes<sp/>around<sp/>970<sp/>bytes</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>Revision<sp/><sp/><sp/><sp/><sp/><sp/>Data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/>1.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3/6/2019<sp/><sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Initial<sp/>creation</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>2.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3/2/2020<sp/><sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Added<sp/>all<sp/>functions<sp/>to<sp/>build<sp/>the<sp/>options<sp/>bit<sp/>(FEC,<sp/>Pullup,<sp/>and<sp/>TransmissionMode</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>3.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3/27/2020<sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Added<sp/>more<sp/>Get<sp/>functions</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>4.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6/23/2020<sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Added<sp/>private<sp/>method<sp/>to<sp/>clear<sp/>the<sp/>buffer<sp/>to<sp/>ensure<sp/>read<sp/>methods<sp/>would<sp/>not<sp/>be<sp/>filled<sp/>with<sp/>buffered<sp/>data</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/>5.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12/4/2020<sp/><sp/><sp/>Kasprzak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moved<sp/>Reset<sp/>to<sp/>public,<sp/>added<sp/>Clear<sp/>to<sp/>SetMode<sp/>to<sp/>avoid<sp/>buffer<sp/>corruption<sp/>during<sp/>programming</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/>Module<sp/>connection</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/>Module<sp/><sp/><sp/><sp/>MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/>MO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Any<sp/>digital<sp/>pin*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pin<sp/>to<sp/>control<sp/>working/program<sp/>modes</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/>M1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Any<sp/>digital<sp/>pin*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pin<sp/>to<sp/>control<sp/>working/program<sp/>modes</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/>Rx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Any<sp/>digital<sp/>pin<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pin<sp/>to<sp/>MCU<sp/>TX<sp/>pin<sp/>(module<sp/>transmits<sp/>to<sp/>MCU,<sp/>hence<sp/>MCU<sp/>must<sp/>recieve<sp/>data<sp/>from<sp/>module</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/>Tx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Any<sp/>digital<sp/>pin<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pin<sp/>to<sp/>MCU<sp/>RX<sp/>pin<sp/>(module<sp/>transmits<sp/>to<sp/>MCU,<sp/>hence<sp/>MCU<sp/>must<sp/>recieve<sp/>data<sp/>from<sp/>module</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/>AUX<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Any<sp/>digital<sp/>pin<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pin<sp/>to<sp/>indicate<sp/>when<sp/>an<sp/>operation<sp/>is<sp/>complete<sp/>(low<sp/>is<sp/>busy,<sp/>high<sp/>is<sp/>done)</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/>Vcc<sp/><sp/><sp/><sp/><sp/><sp/><sp/>+3v3<sp/>or<sp/>5V0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/>Vcc<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ground<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ground<sp/>must<sp/>be<sp/>common<sp/>to<sp/>module<sp/>and<sp/>MCU<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/>notes:</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/>*<sp/>caution<sp/>in<sp/>connecting<sp/>to<sp/>Arduino<sp/>pin<sp/>0<sp/>and<sp/>1<sp/>as<sp/>those<sp/>pins<sp/>are<sp/>for<sp/>USB<sp/>connection<sp/>to<sp/>PC</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/>you<sp/>may<sp/>need<sp/>a<sp/>4K7<sp/>pullup<sp/>to<sp/>Rx<sp/>and<sp/>AUX<sp/>pins<sp/>(possibly<sp/>Tx)<sp/>if<sp/>using<sp/>and<sp/>Arduino</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/>Module<sp/>source</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/>http://www.ebyte.com/en/</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/>example<sp/>module<sp/>this<sp/>library<sp/>is<sp/>intended<sp/>to<sp/>be<sp/>used<sp/>with</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/>http://www.ebyte.com/en/product-view-news.aspx?id=174</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/>Code<sp/>usage</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/>1.<sp/>Create<sp/>a<sp/>serial<sp/>object</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/>2.<sp/>Create<sp/>EBYTE<sp/>object<sp/>that<sp/>uses<sp/>the<sp/>serail<sp/>object</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/>3.<sp/>begin<sp/>the<sp/>serial<sp/>object</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/>4.<sp/>init<sp/>the<sp/>EBYTE<sp/>object</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/>5.<sp/>set<sp/>parameters<sp/>(optional<sp/>but<sp/>required<sp/>if<sp/>sender<sp/>and<sp/>reciever<sp/>are<sp/>different)</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/>6.<sp/>send<sp/>or<sp/>listen<sp/>to<sp/>sent<sp/>data</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>you<sp/>seem<sp/>to<sp/>get<sp/>&quot;corrupt<sp/>settings<sp/>add<sp/>this<sp/>line<sp/>to<sp/>your<sp/>.ino</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment">if<sp/>modules<sp/>don&apos;t<sp/>seem<sp/>to<sp/>save<sp/>or<sp/>read<sp/>parameters,<sp/>it&apos;s<sp/>probably<sp/>due<sp/>to<sp/>slow<sp/>pin<sp/>changing<sp/>times</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">in<sp/>the<sp/>module.<sp/>I<sp/>see<sp/>this<sp/>happen<sp/>rarely.<sp/>You<sp/>will<sp/>have<sp/>to<sp/>adjust<sp/>this<sp/>value</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">when<sp/>settin<sp/>M0<sp/>an<sp/>M1<sp/>there<sp/>is<sp/>gererally<sp/>a<sp/>short<sp/>time<sp/>for<sp/>the<sp/>transceiver<sp/>modules</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">to<sp/>react.<sp/>The<sp/>data<sp/>sheet<sp/>says<sp/>2<sp/>ms,<sp/>but<sp/>more<sp/>time<sp/>is<sp/>generally<sp/>needed.<sp/>I&apos;m<sp/>using</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">50<sp/>ms<sp/>below<sp/>and<sp/>maybe<sp/>too<sp/>long,<sp/>but<sp/>it<sp/>seems<sp/>to<sp/>work<sp/>in<sp/>most<sp/>cases.<sp/>Increase<sp/>this<sp/>value</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">if<sp/>your<sp/>unit<sp/>will<sp/>not<sp/>return<sp/>parameter<sp/>settings.</highlight></codeline>
+<codeline lineno="83"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_e_b_y_t_e_8h_1acaed7138983fdf46753b3eff05c8c588" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_RECOVER<sp/>50<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modes<sp/>NORMAL<sp/>send<sp/>and<sp/>recieve<sp/>for<sp/>example</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_NORMAL<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>can<sp/>send<sp/>and<sp/>recieve</highlight></codeline>
+<codeline lineno="92" refid="_e_b_y_t_e_8h_1ad9a9dc64ee46933fe243d07d0d131595" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MODE_WAKEUP<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>sends<sp/>a<sp/>preamble<sp/>to<sp/>waken<sp/>receiver</highlight></codeline>
+<codeline lineno="93" refid="_e_b_y_t_e_8h_1a14b50778265f2afbc79489fa3f21c7ec" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MODE_POWERDOWN<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>can&apos;t<sp/>transmit<sp/>but<sp/>receive<sp/>works<sp/>only<sp/>in<sp/>wake<sp/>up<sp/>mode</highlight></codeline>
+<codeline lineno="94" refid="_e_b_y_t_e_8h_1ae52122633567e99792826c1892adde0e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MODE_PROGRAM<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>for<sp/>programming</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/>options<sp/>to<sp/>save<sp/>change<sp/>permanently<sp/>or<sp/>temp<sp/>(power<sp/>down<sp/>and<sp/>restart<sp/>will<sp/>restore<sp/>settings<sp/>to<sp/>last<sp/>saved<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_e_b_y_t_e_8h_1aa772670dfaa589fabd502d5c0402cf18" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERMANENT<sp/>0xC0</highlight></codeline>
+<codeline lineno="98" refid="_e_b_y_t_e_8h_1a95fae3691448bf07f68f607d1878d3a5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TEMPORARY<sp/>0xC2</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>parity<sp/>bit<sp/>options<sp/>(must<sp/>be<sp/>the<sp/>same<sp/>for<sp/>transmitter<sp/>and<sp/>reveiver)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_e_b_y_t_e_8h_1addb222c37b265b7d36c596938e13065d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PB_8N1<sp/>0b00<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>default</highlight></codeline>
+<codeline lineno="102" refid="_e_b_y_t_e_8h_1ac69b8de7d06123e0503719dfca0a1e98" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PB_8O1<sp/>0b01</highlight></codeline>
+<codeline lineno="103" refid="_e_b_y_t_e_8h_1a22390e9e383fb04ac84cae5654ddeb64" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PB_8E1<sp/>0b11</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//UART<sp/>data<sp/>rates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(can<sp/>be<sp/>different<sp/>for<sp/>transmitter<sp/>and<sp/>reveiver)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="_e_b_y_t_e_8h_1a4abec793844b297686894e46029534ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UDR_1200<sp/>0b000<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>1200<sp/>baud</highlight></codeline>
+<codeline lineno="108" refid="_e_b_y_t_e_8h_1af1dbcd0071760501315c10686cbea93d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_2400<sp/>0b001<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>2400<sp/>baud</highlight></codeline>
+<codeline lineno="109" refid="_e_b_y_t_e_8h_1a5e12b08e891da2af8b82a213d3cda8f9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_4800<sp/>0b010<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>4800<sp/>baud</highlight></codeline>
+<codeline lineno="110" refid="_e_b_y_t_e_8h_1a24e36cc074aed15d8548f21c490ece54" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_9600<sp/>0b011<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>9600<sp/>baud<sp/>default</highlight></codeline>
+<codeline lineno="111" refid="_e_b_y_t_e_8h_1affbcbdea3725e7531acb12c3bfb8ebca" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_19200<sp/>0b100<sp/><sp/><sp/><sp/><sp/>//<sp/>19200<sp/>baud</highlight></codeline>
+<codeline lineno="112" refid="_e_b_y_t_e_8h_1aa142758447cb320e1b743a3877574c03" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_38400<sp/>0b101<sp/><sp/><sp/><sp/><sp/>//<sp/>34800<sp/>baud</highlight></codeline>
+<codeline lineno="113" refid="_e_b_y_t_e_8h_1a1e835b901a76cc1684e97980c0f67af9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_57600<sp/>0b110<sp/><sp/><sp/><sp/><sp/>//<sp/>57600<sp/>baud</highlight></codeline>
+<codeline lineno="114" refid="_e_b_y_t_e_8h_1a3625db700d57ae52f1c9dc8799fcf5b8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>UDR_115200<sp/>0b111<sp/><sp/><sp/><sp/>//<sp/>115200<sp/>baud</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>air<sp/>data<sp/>rates<sp/>(certian<sp/>types<sp/>of<sp/>modules)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(must<sp/>be<sp/>the<sp/>same<sp/>for<sp/>transmitter<sp/>and<sp/>reveiver)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_e_b_y_t_e_8h_1a6a62ba5b464e2d70dc72590279a1e432" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADR_300<sp/>0b000<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>300<sp/>baud</highlight></codeline>
+<codeline lineno="119" refid="_e_b_y_t_e_8h_1a1fb8ed5e99f56117a2d02d1ad2efa17a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_1200<sp/>0b001<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>1200<sp/>baud</highlight></codeline>
+<codeline lineno="120" refid="_e_b_y_t_e_8h_1a951edc1718aff35a9ca87d6c145e1101" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_2400<sp/>0b010<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>2400<sp/>baud</highlight></codeline>
+<codeline lineno="121" refid="_e_b_y_t_e_8h_1a275cb2286aa6e2ea8bac6007775cbfc9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_4800<sp/>0b011<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>4800<sp/>baud</highlight></codeline>
+<codeline lineno="122" refid="_e_b_y_t_e_8h_1ada701dd29dd578b6d6ca9a67ff166f4d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_9600<sp/>0b100<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>9600<sp/>baud</highlight></codeline>
+<codeline lineno="123" refid="_e_b_y_t_e_8h_1a8e748388cd156ce98fda35815c3022e7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_19200<sp/>0b101<sp/><sp/><sp/><sp/><sp/>//<sp/>19200<sp/>baud</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>air<sp/>data<sp/>rates<sp/>(other<sp/>types<sp/>of<sp/>modules)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="_e_b_y_t_e_8h_1a295ef77e0e1dbb85c996ef013542ed47" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADR_1K<sp/>0b000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>1k<sp/>baud</highlight></codeline>
+<codeline lineno="127" refid="_e_b_y_t_e_8h_1aaee34ba3455e4f6c511ccea95c3d3c3d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_2K<sp/>0b001<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>2K<sp/>baud</highlight></codeline>
+<codeline lineno="128" refid="_e_b_y_t_e_8h_1aebcc94db38785687934c6ac42a8d43da" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_5K<sp/>0b010<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>4K<sp/>baud</highlight></codeline>
+<codeline lineno="129" refid="_e_b_y_t_e_8h_1af03c287e02e19da8d47da1b29e26a1d7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_8K<sp/>0b011<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>8K<sp/>baud</highlight></codeline>
+<codeline lineno="130" refid="_e_b_y_t_e_8h_1ac08113912b21cc392cb3af8eed9e276d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_10K<sp/>0b100<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>10K<sp/>baud</highlight></codeline>
+<codeline lineno="131" refid="_e_b_y_t_e_8h_1a151a8a6ec2702f870eccddcef94f4207" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_15K<sp/>0b101<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>15K<sp/>baud</highlight></codeline>
+<codeline lineno="132" refid="_e_b_y_t_e_8h_1a39c343d5170fce950fc8ac9c1616adb1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_20K<sp/>0b110<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>20K<sp/>baud</highlight></codeline>
+<codeline lineno="133" refid="_e_b_y_t_e_8h_1ae4cbb5f0aada10e27d5a76d7c652c94e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADR_25K<sp/>0b111<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>25K<sp/>baud</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>various<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(can<sp/>be<sp/>different<sp/>for<sp/>transmitter<sp/>and<sp/>reveiver)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="_e_b_y_t_e_8h_1a56142fab28e1fff725aa5a0391990132" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPT_FMDISABLE<sp/>0b0<sp/><sp/><sp/>//default</highlight></codeline>
+<codeline lineno="138" refid="_e_b_y_t_e_8h_1ab0783c7cff666cd720d6711e4ac65752" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_FMENABLE<sp/>0b1</highlight></codeline>
+<codeline lineno="139" refid="_e_b_y_t_e_8h_1a583415c31027dae0a4d57a121063fede" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_IOOPENDRAIN<sp/>0b0<sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="_e_b_y_t_e_8h_1abb1cb52548fe8a0c8b1e6396fb3212c8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_IOPUSHPULL<sp/><sp/>0b1</highlight></codeline>
+<codeline lineno="141" refid="_e_b_y_t_e_8h_1a04ee4abd12fc62bc7eb0d48f6203e2c2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP250<sp/><sp/>0b000<sp/></highlight></codeline>
+<codeline lineno="142" refid="_e_b_y_t_e_8h_1af952734d123af09967fcab71f02996c8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP500<sp/><sp/>0b001</highlight></codeline>
+<codeline lineno="143" refid="_e_b_y_t_e_8h_1a2451bf1d530d1185f8420ae2a0569ed9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP750<sp/><sp/>0b010</highlight></codeline>
+<codeline lineno="144" refid="_e_b_y_t_e_8h_1a49bf26efbc7c036ed0b6c900de9361dd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP1000<sp/>0b011</highlight></codeline>
+<codeline lineno="145" refid="_e_b_y_t_e_8h_1a5c88dc3f725ec6e82cc540da628f45f2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP1250<sp/>0b100</highlight></codeline>
+<codeline lineno="146" refid="_e_b_y_t_e_8h_1aa3004d05e0ce1f03d5ed8c13013822d2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP1500<sp/>0b101</highlight></codeline>
+<codeline lineno="147" refid="_e_b_y_t_e_8h_1a1855ca2d526dcd3b7f8c4adfec5e29fe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP1750<sp/>0b110</highlight></codeline>
+<codeline lineno="148" refid="_e_b_y_t_e_8h_1af9830a783948e6ef2c4f723fc9841d69" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_WAKEUP2000<sp/>0b111</highlight></codeline>
+<codeline lineno="149" refid="_e_b_y_t_e_8h_1a5f9f9b86c91460a2216c3b178077caa0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_FECDISABLE<sp/><sp/>0b0</highlight></codeline>
+<codeline lineno="150" refid="_e_b_y_t_e_8h_1ad2813b20f23f53ded45c2a5a2b08f455" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_FECENABLE<sp/>0b1<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//<sp/>transmitter<sp/>output<sp/>power--check<sp/>government<sp/>regulations<sp/>on<sp/>legal<sp/>transmit<sp/>power</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/>refer<sp/>to<sp/>the<sp/>data<sp/>sheet<sp/>as<sp/>not<sp/>all<sp/>modules<sp/>support<sp/>these<sp/>power<sp/>levels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/>constants<sp/>for<sp/>1W<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(can<sp/>be<sp/>different<sp/>for<sp/>transmitter<sp/>and<sp/>reveiver)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP30<sp/>0b00<sp/><sp/><sp/><sp/><sp/>//<sp/>30<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP27<sp/>0b01<sp/><sp/><sp/><sp/><sp/>//<sp/>27<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP24<sp/>0b10<sp/><sp/><sp/><sp/><sp/>//<sp/>24<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP21<sp/>0b11<sp/><sp/><sp/><sp/><sp/>//<sp/>21<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>constants<sp/>or<sp/>500<sp/>mW<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP27<sp/>0b00<sp/><sp/><sp/><sp/><sp/>//<sp/>27<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP24<sp/>0b01<sp/><sp/><sp/><sp/><sp/>//<sp/>24<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP21<sp/>0b10<sp/><sp/><sp/><sp/><sp/>//<sp/>21<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP18<sp/>0b11<sp/><sp/><sp/><sp/><sp/>//<sp/>17<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>OPT_TP17<sp/>0b11<sp/><sp/><sp/><sp/><sp/>//<sp/>17<sp/>db</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>constants<sp/>or<sp/>100<sp/>mW<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="_e_b_y_t_e_8h_1aaaa9c4e85f075f759c010ff5fbd03234" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPT_TP20<sp/>0b00<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>20<sp/>db</highlight></codeline>
+<codeline lineno="170" refid="_e_b_y_t_e_8h_1a9d7500496265c1629eaf792c55ccbde4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_TP17<sp/>0b01<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>17<sp/>db</highlight></codeline>
+<codeline lineno="171" refid="_e_b_y_t_e_8h_1a85c6d2b6f1b92d2b6e57b645954d38b8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_TP14<sp/>0b10<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>14<sp/>db</highlight></codeline>
+<codeline lineno="172" refid="_e_b_y_t_e_8h_1a9be60cceea02afc2fb21d521077e172f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_TP11<sp/>0b11<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>10<sp/>db</highlight></codeline>
+<codeline lineno="173" refid="_e_b_y_t_e_8h_1ab399b7743ca01c1179c86f32d3af1e29" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPT_TP10<sp/>0b11<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>10<sp/>db</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Stream;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="class_e_b_y_t_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_e_b_y_t_e" kindref="compound">EBYTE</ref><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e_1a4d727eb6b6bfb3745c8fc749cd3013f9" kindref="member">EBYTE</ref>(Stream<sp/>*s,<sp/>uint8_t<sp/>PIN_M0<sp/>=<sp/>4,<sp/>uint8_t<sp/>PIN_M1<sp/>=<sp/>5,<sp/>uint8_t<sp/>PIN_AUX<sp/>=<sp/>6);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>code<sp/>to<sp/>initialize<sp/>the<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>method<sp/>reads<sp/>all<sp/>parameters<sp/>from<sp/>the<sp/>module<sp/>and<sp/>stores<sp/>them<sp/>in<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>library<sp/>modifications<sp/>could<sp/>be<sp/>made<sp/>to<sp/>only<sp/>read<sp/>upon<sp/>a<sp/>change<sp/>at<sp/>a<sp/>savings<sp/>of<sp/>30<sp/>or<sp/>so<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>issue<sp/>with<sp/>these<sp/>modules<sp/>are<sp/>some<sp/>parameters<sp/>are<sp/>a<sp/>collection<sp/>of<sp/>several<sp/>options<sp/>AND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ALL<sp/>parameters<sp/>must<sp/>be<sp/>sent<sp/>even<sp/>if<sp/>only<sp/>one<sp/>option<sp/>is<sp/>changed--hence<sp/>get<sp/>all<sp/>parameters<sp/>initially</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>you<sp/>know<sp/>what<sp/>the<sp/>non<sp/>changed<sp/>parameters<sp/>are<sp/>know<sp/>for<sp/>resending<sp/>back</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>methods<sp/>to<sp/>set<sp/>modules<sp/>working<sp/>parameters<sp/>NOTHING<sp/>WILL<sp/>BE<sp/>SAVED<sp/>UNLESS<sp/>SaveParameters()<sp/>is<sp/>called</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ab6b89ad6c7ef6b0cd9f03ebd73f56556" kindref="member">SetMode</ref>(uint8_t<sp/>mode<sp/>=<sp/><ref refid="_e_b_y_t_e_8h_1a199e55c829920c767a3f1f42a6a7c1d8" kindref="member">MODE_NORMAL</ref>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a099110c889fa854fb90a171653f9dff8" kindref="member">SetAddress</ref>(uint16_t<sp/>val<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" kindref="member">SetAddressH</ref>(uint8_t<sp/>val<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" kindref="member">SetAddressL</ref>(uint8_t<sp/>val<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" kindref="member">SetAirDataRate</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" kindref="member">SetUARTBaudRate</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a443d1f6643b71366e0dec3f056e12c45" kindref="member">SetSpeed</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" kindref="member">SetOptions</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" kindref="member">SetChannel</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" kindref="member">SetParityBit</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//functions<sp/>to<sp/>set<sp/>the<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a9684aa12ac0366b5e7157009ffd1e0e1" kindref="member">SetTransmissionMode</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ade4b42fa79c5b958fec06e0a74e7a90d" kindref="member">SetPullupMode</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a794ad2f055c24798a3d8dae74964ecb4" kindref="member">SetWORTIming</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aa8c759325ef8acddaaa35cc246e6a0a9" kindref="member">SetFECMode</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aaee17dee0ef42b18f242e4013e44a548" kindref="member">SetTransmitPower</ref>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1af589e946c750cef704973915e817cb77" kindref="member">GetAux</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" kindref="member">available</ref>();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>methods<sp/>to<sp/>get<sp/>some<sp/>operating<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_e_b_y_t_e_1a2701b94aceed800e1e57c5d62e51f564" kindref="member">GetAddress</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>methods<sp/>to<sp/>get<sp/>module<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a9bb6f8d416d128e3043536588813fa1e" kindref="member">GetModel</ref>();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a1cbc2717761e576b55df078c0feb24ab" kindref="member">GetVersion</ref>();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1aaa628f5dbc8550888d923c399bd7bdde" kindref="member">GetFeatures</ref>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a63722f74c5a73be271e0ff0de82dbab5" kindref="member">GetAddressH</ref>();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a1c282416df68b5a9729aa94264bc81c5" kindref="member">GetAddressL</ref>();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a919f678b72d54104a225c1a89f44f417" kindref="member">GetAirDataRate</ref>();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" kindref="member">GetUARTBaudRate</ref>();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1afca840e33fff6bdab42725aee065dcdd" kindref="member">GetChannel</ref>();</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a73a189a4b1e89848d2e1cceaaf8378d5" kindref="member">GetParityBit</ref>();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a3a327b276c27f4e81031daf21e547d5b" kindref="member">GetTransmissionMode</ref>();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1ad10e32fc59a1e01604a6eae18be11976" kindref="member">GetPullupMode</ref>();</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1aff3e4fd2ca4000d4a732f1f335fa3eee" kindref="member">GetWORTIming</ref>();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a2978cb453904344bd90365bdc6079b67" kindref="member">GetFECMode</ref>();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a0848d00c34fe71c6b59efb852e843c6b" kindref="member">GetTransmitPower</ref>();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1aa9be626fe2910c94443c4744597048aa" kindref="member">GetOptions</ref>();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1af975acecae0b9182071c33727c2ac712" kindref="member">GetSpeed</ref>();</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>methods<sp/>to<sp/>get<sp/>data<sp/>from<sp/>sending<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a314ddeb6fcba2b0d9570c3e9e86d44b7" kindref="member">GetByte</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" kindref="member">GetStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*TheStructure,<sp/>uint16_t<sp/>size_);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>method<sp/>to<sp/>send<sp/>to<sp/>data<sp/>to<sp/>receiving<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a22ecdb9610bb9a8d431bf29b34050fa8" kindref="member">SendByte</ref>(uint8_t<sp/>TheByte);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" kindref="member">SendStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*TheStructure,<sp/>uint16_t<sp/>size_);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mehod<sp/>to<sp/>print<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" kindref="member">PrintParameters</ref>();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parameters<sp/>are<sp/>set<sp/>above<sp/>but<sp/>NOT<sp/>saved,<sp/>here&apos;s<sp/>how<sp/>you<sp/>save<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>notion<sp/>here<sp/>is<sp/>you<sp/>can<sp/>set<sp/>several<sp/>but<sp/>save<sp/>once<sp/>as<sp/>opposed<sp/>to<sp/>saving<sp/>on<sp/>each<sp/>parameter<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>you<sp/>can<sp/>save<sp/>permanently<sp/>(retained<sp/>at<sp/>start<sp/>up,<sp/>or<sp/>temp<sp/>which<sp/>is<sp/>ideal<sp/>for<sp/>dynamically<sp/>changing<sp/>the<sp/>address<sp/>or<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" kindref="member">SaveParameters</ref>(uint8_t<sp/>val<sp/>=<sp/><ref refid="_e_b_y_t_e_8h_1aa772670dfaa589fabd502d5c0402cf18" kindref="member">PERMANENT</ref>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MFG<sp/>is<sp/>not<sp/>clear<sp/>on<sp/>what<sp/>Reset<sp/>does,<sp/>but<sp/>my<sp/>testing<sp/>indicates<sp/>it<sp/>clears<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>I<sp/>use<sp/>this<sp/>when<sp/>needing<sp/>to<sp/>restart<sp/>the<sp/>EBYTE<sp/>after<sp/>programming<sp/>while<sp/>data<sp/>is<sp/>still<sp/>streaming<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>does<sp/>NOT<sp/>return<sp/>the<sp/>ebyte<sp/>back<sp/>to<sp/>factory<sp/>defaults</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>function<sp/>to<sp/>read<sp/>modules<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1af847f5e6ca6ac1cc2b4ee9e0116daf98" kindref="member">ReadParameters</ref>();</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>method<sp/>to<sp/>let<sp/>method<sp/>know<sp/>of<sp/>module<sp/>is<sp/>busy<sp/>doing<sp/>something<sp/>(timeout<sp/>provided<sp/>to<sp/>avoid<sp/>lockups)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a92b185e6e727348155cebbb53fe154ec" kindref="member">CompleteTask</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>timeout<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>utility<sp/>funciton<sp/>to<sp/>build<sp/>the<sp/>&quot;speed<sp/>byte&quot;<sp/>which<sp/>is<sp/>a<sp/>collection<sp/>of<sp/>a<sp/>few<sp/>different<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1aadb4a8f6aea2ace11538f1744ceba885" kindref="member">BuildSpeedByte</ref>();</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>utility<sp/>funciton<sp/>to<sp/>build<sp/>the<sp/>&quot;options<sp/>byte&quot;<sp/>which<sp/>is<sp/>a<sp/>collection<sp/>of<sp/>a<sp/>few<sp/>different<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1a71e9cfed96553f1471f9d7aace31a0e3" kindref="member">BuildOptionByte</ref>();</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1abc308d4d3fe8a7e5e398d2c5cc40e3d2" kindref="member">ReadModelData</ref>();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e_1acd7b6d1b449aa30068cf94c2bd1b94f5" kindref="member">ClearBuffer</ref>();</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>variable<sp/>for<sp/>the<sp/>serial<sp/>stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream*<sp/><sp/><ref refid="class_e_b_y_t_e_1a1e079c6d72690fd9a93969167efafdb9" kindref="member">_s</ref>;</highlight></codeline>
+<codeline lineno="285" refid="class_e_b_y_t_e_1ae3632bb7c19bda3b18e52545b992fbb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream*<sp/><sp/><ref refid="class_e_b_y_t_e_1ae3632bb7c19bda3b18e52545b992fbb5" kindref="member">_TD</ref>;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pin<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_e_b_y_t_e_1a88aa4afb63d370bfdac22af17f8dd812" kindref="member">_M0</ref>;</highlight></codeline>
+<codeline lineno="289" refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_e_b_y_t_e_1a1d78d04ad31e09bcf50fc7078ebf2aca" kindref="member">_M1</ref>;</highlight></codeline>
+<codeline lineno="290" refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_e_b_y_t_e_1afcda160ff84e282d3d90a42fb97886f2" kindref="member">_AUX</ref>;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>variable<sp/>for<sp/>the<sp/>6<sp/>bytes<sp/>that<sp/>are<sp/>sent<sp/>to<sp/>the<sp/>module<sp/>to<sp/>program<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>bytes<sp/>received<sp/>to<sp/>indicate<sp/>modules<sp/>programmed<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a33aafd7bedae2eebc918b72012848add" kindref="member">_Params</ref>[6];</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>indicidual<sp/>variables<sp/>for<sp/>each<sp/>of<sp/>the<sp/>6<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>_Params<sp/>could<sp/>be<sp/>used<sp/>as<sp/>the<sp/>main<sp/>variable<sp/>storage,<sp/>but<sp/>since<sp/>some<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>are<sp/>a<sp/>collection<sp/>of<sp/>several<sp/>options,<sp/>let&apos;s<sp/>just<sp/>make<sp/>storage<sp/>consistent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>also<sp/>Param[1]<sp/>is<sp/>different<sp/>data<sp/>depending<sp/>on<sp/>the<sp/>_Save<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a6445010a4520832ba8f3ce26c7e81ce5" kindref="member">_Save</ref>;</highlight></codeline>
+<codeline lineno="301" refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1afebcce39435f2e34f86d085491312251" kindref="member">_AddressHigh</ref>;</highlight></codeline>
+<codeline lineno="302" refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a24fac524972fb31aac6a77c9f5e327f8" kindref="member">_AddressLow</ref>;</highlight></codeline>
+<codeline lineno="303" refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a712cbd7a43ea5bd5de15f485c2977113" kindref="member">_Speed</ref>;</highlight></codeline>
+<codeline lineno="304" refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1aa6408f0bf593f9106b8e49075801dbf4" kindref="member">_Channel</ref>;</highlight></codeline>
+<codeline lineno="305" refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1abacb8583e94f287367b009e01126726a" kindref="member">_Options</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>individual<sp/>variables<sp/>for<sp/>all<sp/>the<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a1bb06294ac90ed609a68c36de3ef1fdc" kindref="member">_ParityBit</ref>;</highlight></codeline>
+<codeline lineno="310" refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a5d2e442a8c2c5a23753ee4fb6ebe0c4f" kindref="member">_UARTDataRate</ref>;</highlight></codeline>
+<codeline lineno="311" refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1ae47826d536ab3a1432ba70df2ff16702" kindref="member">_AirDataRate</ref>;</highlight></codeline>
+<codeline lineno="312" refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a4be3f78627e32e981b5ad76157f38429" kindref="member">_OptionTrans</ref>;</highlight></codeline>
+<codeline lineno="313" refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1acc71abaae8befee1e3e318bb19122904" kindref="member">_OptionPullup</ref>;</highlight></codeline>
+<codeline lineno="314" refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1ac4de9b721ef45bf55485832f6435b4a1" kindref="member">_OptionWakeup</ref>;</highlight></codeline>
+<codeline lineno="315" refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1ade8afb68e990c5721d212ad664ba3aee" kindref="member">_OptionFEC</ref>;</highlight></codeline>
+<codeline lineno="316" refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a53bc938b6b19d786c2b7da454e4981ac" kindref="member">_OptionPower</ref>;</highlight></codeline>
+<codeline lineno="317" refid="class_e_b_y_t_e_1ab43053f18483b402afd81007bfa56bf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_e_b_y_t_e_1ab43053f18483b402afd81007bfa56bf8" kindref="member">_Address</ref>;</highlight></codeline>
+<codeline lineno="318" refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a47293484a205e2339e2fa88779cf67fb" kindref="member">_Model</ref>;</highlight></codeline>
+<codeline lineno="319" refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1aaccfb27ba78d473ebd26fd40180026fe" kindref="member">_Version</ref>;</highlight></codeline>
+<codeline lineno="320" refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a14e6e89b6334cc44e27d0218a02a26e1" kindref="member">_Features</ref>;</highlight></codeline>
+<codeline lineno="321" refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_e_b_y_t_e_1a07c46289016bce55a0a9329ab0b13840" kindref="member">_buf</ref>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/EBYTE.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_sensor_array" kind="class" prot="public">
+    <compoundname>SensorArray</compoundname>
+    <includes refid="_sensor_array_8h" local="no">SensorArray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sensor" kindref="compound">Sensor</ref> **</type>
+        <definition>Sensor** SensorArray::arr</definition>
+        <argsstring></argsstring>
+        <name>arr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" compoundref="_sensor_array_8cpp" startline="7" endline="24">addSensor</referencedby>
+        <referencedby refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" compoundref="_sensor_array_8cpp" startline="39" endline="46">asciiResultAll</referencedby>
+        <referencedby refid="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" compoundref="_sensor_array_8cpp" startline="26" endline="33">initAll</referencedby>
+        <referencedby refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" compoundref="_sensor_array_8cpp" startline="48" endline="62">jsonResultAll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t SensorArray::arrSize</definition>
+        <argsstring></argsstring>
+        <name>arrSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="14" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" compoundref="_sensor_array_8cpp" startline="7" endline="24">addSensor</referencedby>
+        <referencedby refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" compoundref="_sensor_array_8cpp" startline="39" endline="46">asciiResultAll</referencedby>
+        <referencedby refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" compoundref="_sensor_array_8cpp" startline="48" endline="62">jsonResultAll</referencedby>
+        <referencedby refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" compoundref="_sensor_array_8cpp" startline="35" endline="37">length</referencedby>
+        <referencedby refid="class_sensor_array_1a0acd7cd3df437ed32d0b6859845c9ed3" compoundref="_sensor_array_8cpp" startline="3" endline="5">SensorArray</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SensorArray::addSensor</definition>
+        <argsstring>(Sensor *sensor)</argsstring>
+        <name>addSensor</name>
+        <param>
+          <type><ref refid="class_sensor" kindref="compound">Sensor</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp" bodystart="7" bodyend="24"/>
+        <references refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" compoundref="_sensor_array_8h" startline="13">arr</references>
+        <references refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" compoundref="_sensor_array_8h" startline="14">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SensorArray::initAll</definition>
+        <argsstring>()</argsstring>
+        <name>initAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="16" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp" bodystart="26" bodyend="33"/>
+        <references refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" compoundref="_sensor_array_8h" startline="13">arr</references>
+        <references refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" compoundref="_sensor_array_8cpp" startline="35" endline="37">length</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_array_1a0acd7cd3df437ed32d0b6859845c9ed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SensorArray::SensorArray</definition>
+        <argsstring>()</argsstring>
+        <name>SensorArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp" bodystart="3" bodyend="5"/>
+        <references refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" compoundref="_sensor_array_8h" startline="14">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SensorArray::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp" bodystart="35" bodyend="37"/>
+        <references refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" compoundref="_sensor_array_8h" startline="14">arrSize</references>
+        <referencedby refid="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" compoundref="_sensor_array_8cpp" startline="26" endline="33">initAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String SensorArray::asciiResultAll</definition>
+        <argsstring>()</argsstring>
+        <name>asciiResultAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp" bodystart="39" bodyend="46"/>
+        <references refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" compoundref="_sensor_array_8h" startline="13">arr</references>
+        <references refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" compoundref="_sensor_array_8h" startline="14">arrSize</references>
+        <references refid="class_sensor_1a990933ca2756162944964b4ee310a7f9">Sensor::asciiResult</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>DynamicJsonDocument SensorArray::jsonResultAll</definition>
+        <argsstring>()</argsstring>
+        <name>jsonResultAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp" bodystart="48" bodyend="62"/>
+        <references refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" compoundref="_sensor_array_8h" startline="13">arr</references>
+        <references refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" compoundref="_sensor_array_8h" startline="14">arrSize</references>
+        <references refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" compoundref="_sensor_8h" startline="12">Sensor::name</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="254">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+      <node id="253">
+        <label>SensorArray</label>
+        <link refid="class_sensor_array"/>
+        <childnode refid="254" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h" bodystart="10" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_sensor_array_1a81f8bb663a932c7ec6a14c787eb8c88c" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>addSensor</name></member>
+      <member refid="class_sensor_array_1a259764dd5c31e02806909fcc04907a68" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>arr</name></member>
+      <member refid="class_sensor_array_1ae55eb8e5ffa4556445390ebebe777574" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>arrSize</name></member>
+      <member refid="class_sensor_array_1aca811297c48c4b445e1a4a8239d0ecee" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>asciiResultAll</name></member>
+      <member refid="class_sensor_array_1a2a065a5df1404e1bdbcd569fb2aa3ea9" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>initAll</name></member>
+      <member refid="class_sensor_array_1a3b3e74bc27e6efede9da8e2b22e9e341" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>jsonResultAll</name></member>
+      <member refid="class_sensor_array_1ae7fd41f91978ec09601118bb072d2891" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>length</name></member>
+      <member refid="class_sensor_array_1a0acd7cd3df437ed32d0b6859845c9ed3" prot="public" virt="non-virtual"><scope>SensorArray</scope><name>SensorArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

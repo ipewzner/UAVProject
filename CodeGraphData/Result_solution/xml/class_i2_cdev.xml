@@ -1,0 +1,1671 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_i2_cdev" kind="class" prot="public">
+    <compoundname>I2Cdev</compoundname>
+    <includes refid="_i2_cdev_8h" local="no">I2Cdev.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_i2_cdev_1ae2125796e0948127fc15031650111e82" prot="public" static="yes" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t I2Cdev::readTimeout</definition>
+        <argsstring></argsstring>
+        <name>readTimeout</name>
+        <initializer>= <ref refid="_i2_cdev_8h_1ad9726bb02451bb8f59d3d2729e4cd20e" kindref="member">I2CDEV_DEFAULT_READ_TIMEOUT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default timeout value for read operations. Set this to 0 to disable timeout detection. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="154" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="337" endline="656">MPU6050_9Axis_MotionApps41::dmpInitialize</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6ec9b8da462c8054daf923c3794f29b8" compoundref="_m_p_u6050_8cpp" startline="1835" endline="1840">MPU6050_Base::getAcceleration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a89b74c15a4f64481fd9831faa16f7ec3" compoundref="_m_p_u6050_8cpp" startline="1846" endline="1849">MPU6050_Base::getAccelerationX</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac9aac1ad74674fc79b7ba1566295a46d" compoundref="_m_p_u6050_8cpp" startline="1855" endline="1858">MPU6050_Base::getAccelerationY</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1dddf9124365ee8d7d6ddaedf54e3b60" compoundref="_m_p_u6050_8cpp" startline="1864" endline="1867">MPU6050_Base::getAccelerationZ</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af5d64293afe95a515ac1be53c0f92dc7" compoundref="_m_p_u6050_8cpp" startline="2239" endline="2242">MPU6050_Base::getAccelerometerPowerOnDelay</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a150635ee46ebf4b4a8a4529fe3a98502" compoundref="_m_p_u6050_8cpp" startline="710" endline="713">MPU6050_Base::getAccelFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9964a19a5e7e1e5eb905dcece95d90f0" compoundref="_m_p_u6050_8cpp" startline="314" endline="317">MPU6050_Base::getAccelXSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac729f439b1197e73e9b4d2e72a58e9c0" compoundref="_m_p_u6050_8cpp" startline="256" endline="260">MPU6050_Base::getAccelXSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0076c2df31e70b23a71264785f38a1ec" compoundref="_m_p_u6050_8cpp" startline="329" endline="332">MPU6050_Base::getAccelYSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a975eb5413990322b882b5b24c235e8fd" compoundref="_m_p_u6050_8cpp" startline="266" endline="270">MPU6050_Base::getAccelYSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9a8c683cdba5a8f3c3d0258e5ac3c197" compoundref="_m_p_u6050_8cpp" startline="344" endline="347">MPU6050_Base::getAccelZSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a466616c9b52824a22809cdcfb7aea509" compoundref="_m_p_u6050_8cpp" startline="276" endline="279">MPU6050_Base::getAccelZSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad52eb66dcc93b649efb3efb2bdad2907" compoundref="_m_p_u6050_8cpp" startline="80" endline="83">MPU6050_Base::getAuxVDDIOLevel</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad7040350ce6bea1a01946f518965d971" compoundref="_m_p_u6050_8cpp" startline="1513" endline="1516">MPU6050_Base::getClockOutputEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af5331efc9b24ee8e14ab8e710bf81e64" compoundref="_m_p_u6050_8cpp" startline="2506" endline="2509">MPU6050_Base::getClockSource</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a484615e93874a73b8a6e579bdff6d311" compoundref="_m_p_u6050_8cpp" startline="2824" endline="2827">MPU6050_Base::getDeviceID</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a21ad2c3666b42f2686513f5b3d6dc6db" compoundref="_m_p_u6050_8cpp" startline="418" endline="421">MPU6050_Base::getDHPFMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1dd595fbd87eae82d928f6125f185780" compoundref="_m_p_u6050_8cpp" startline="199" endline="202">MPU6050_Base::getDLPFMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a16895f743dfc37978e2b30e24eb65991" compoundref="_m_p_u6050_8cpp" startline="3260" endline="3263">MPU6050_Base::getDMPConfig1</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af794215bbab4bb0bdb4f48506672df07" compoundref="_m_p_u6050_8cpp" startline="3270" endline="3273">MPU6050_Base::getDMPConfig2</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae7e9932409d3d64c93897a3bca5b74f3" compoundref="_m_p_u6050_8cpp" startline="3033" endline="3036">MPU6050_Base::getDMPEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a47f7e02a056c35226104c6eb4fe6affa" compoundref="_m_p_u6050_8cpp" startline="3015" endline="3018">MPU6050_Base::getDMPInt0Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afcc637b3a18f20ac4ff04d92e1d2f23a" compoundref="_m_p_u6050_8cpp" startline="3011" endline="3014">MPU6050_Base::getDMPInt1Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afe735d3e9ee27822d892abeb4275de65" compoundref="_m_p_u6050_8cpp" startline="3007" endline="3010">MPU6050_Base::getDMPInt2Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2e5eefa24ff4a16bdff81895dd0f163" compoundref="_m_p_u6050_8cpp" startline="3003" endline="3006">MPU6050_Base::getDMPInt3Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a63977a7f2d43832dd381137e6d6a75cd" compoundref="_m_p_u6050_8cpp" startline="2999" endline="3002">MPU6050_Base::getDMPInt4Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a397235e4c99d2c4d4385205bc95aea7b" compoundref="_m_p_u6050_8cpp" startline="2995" endline="2998">MPU6050_Base::getDMPInt5Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a450de30a267445051d4d440738e5765b" compoundref="_m_p_u6050_8cpp" startline="159" endline="162">MPU6050_Base::getExternalFrameSync</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1344417176077bc6b596e4d75ca1b4a9" compoundref="_m_p_u6050_8cpp" startline="2024" endline="2027">MPU6050_Base::getExternalSensorByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a11648581a9f6e6cb7e32ebbd04f1233f" compoundref="_m_p_u6050_8cpp" startline="2042" endline="2045">MPU6050_Base::getExternalSensorDWord</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abeba49738e39e465bcfd992f07aea884" compoundref="_m_p_u6050_8cpp" startline="2033" endline="2036">MPU6050_Base::getExternalSensorWord</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a064e3e722f775e354cebcd9fb17097b2" compoundref="_m_p_u6050_8cpp" startline="2146" endline="2149">MPU6050_Base::getExternalShadowDelayEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa42c59e74fdfd3f55fd7fd3cdd13b0d3" compoundref="_m_p_u6050_8cpp" startline="2737" endline="2740">MPU6050_Base::getFIFOByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac4b73cd8841a5eee523426748a551632" compoundref="_m_p_u6050_8cpp" startline="2741" endline="2747">MPU6050_Base::getFIFOBytes</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abff5ac2dfd585ab7a8f4592caf6b5442" compoundref="_m_p_u6050_8cpp" startline="2705" endline="2708">MPU6050_Base::getFIFOCount</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a58da0f214e6c06e633b0e9acce93346e" compoundref="_m_p_u6050_8cpp" startline="2338" endline="2341">MPU6050_Base::getFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a34a9a58c07cff2bcc7cf3263c6da2ba0" compoundref="_m_p_u6050_8cpp" startline="2278" endline="2281">MPU6050_Base::getFreefallDetectionCounterDecrement</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae53aa26f00f1e985f9e7930d830cf0e8" compoundref="_m_p_u6050_8cpp" startline="481" endline="484">MPU6050_Base::getFreefallDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aca2ab255139d5d2ef6307e7217a9e02b" compoundref="_m_p_u6050_8cpp" startline="449" endline="452">MPU6050_Base::getFreefallDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab975994147e72ab2ee15c968c973d719" compoundref="_m_p_u6050_8cpp" startline="1462" endline="1465">MPU6050_Base::getFSyncInterruptEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa8bcb877ff31311b2d985b40eab983bb" compoundref="_m_p_u6050_8cpp" startline="1443" endline="1446">MPU6050_Base::getFSyncInterruptLevel</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a643813563b76ecea7f5536ff73a23bfb" compoundref="_m_p_u6050_8cpp" startline="372" endline="375">MPU6050_Base::getFullScaleAccelRange</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a461e9146da2e5f90b54e6d84fb373c4c" compoundref="_m_p_u6050_8cpp" startline="234" endline="237">MPU6050_Base::getFullScaleGyroRange</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a71af18fd332324af0671f63bb0a48270" compoundref="_m_p_u6050_8cpp" startline="285" endline="288">MPU6050_Base::getGyroXSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad9adb76187704bed8bfa691c39d5099c" compoundref="_m_p_u6050_8cpp" startline="294" endline="297">MPU6050_Base::getGyroYSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac6e219da2fa79c5f6c48afd3c1347b5c" compoundref="_m_p_u6050_8cpp" startline="303" endline="306">MPU6050_Base::getGyroZSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23f6b6a78865dcd6d84b94e3b2708f00" compoundref="_m_p_u6050_8cpp" startline="1486" endline="1489">MPU6050_Base::getI2CBypassEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab88ee1825b7dcc01901c0ecbf583bc91" compoundref="_m_p_u6050_8cpp" startline="2362" endline="2365">MPU6050_Base::getI2CMasterModeEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6e0b47b54ca1720bfcc4a8d5a1cffaa8" compoundref="_m_p_u6050_8cpp" startline="1657" endline="1660">MPU6050_Base::getIntDataReadyEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a67d40bc7099ec3619db3b4526bdf0d49" compoundref="_m_p_u6050_8cpp" startline="1747" endline="1750">MPU6050_Base::getIntDataReadyStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a381e47064ecdaa9ff94f7bcc48239755" compoundref="_m_p_u6050_8cpp" startline="2985" endline="2988">MPU6050_Base::getIntDMPEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9bc9392c8a9a07b85358d947cb1d72db" compoundref="_m_p_u6050_8cpp" startline="3026" endline="3029">MPU6050_Base::getIntDMPStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a928215df8e265367dd77247aee24a3e1" compoundref="_m_p_u6050_8cpp" startline="1539" endline="1542">MPU6050_Base::getIntEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac57dee1529ce758c983ee8644561dad0" compoundref="_m_p_u6050_8cpp" startline="1386" endline="1389">MPU6050_Base::getInterruptDrive</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a3b39d01c86f96f97a6eb6b5278801224" compoundref="_m_p_u6050_8cpp" startline="1405" endline="1408">MPU6050_Base::getInterruptLatch</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af9e7c20ff60440d9beb05a830b6bb2bb" compoundref="_m_p_u6050_8cpp" startline="1424" endline="1427">MPU6050_Base::getInterruptLatchClear</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1acfd2de7779ce42d43ed61a77257a94b3" compoundref="_m_p_u6050_8cpp" startline="1367" endline="1370">MPU6050_Base::getInterruptMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a170498f44fd63381d44e51e4a1551a1d" compoundref="_m_p_u6050_8cpp" startline="1617" endline="1620">MPU6050_Base::getIntFIFOBufferOverflowEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a48aa51bb3e653f11eb1bc6d5a76921f3" compoundref="_m_p_u6050_8cpp" startline="1724" endline="1727">MPU6050_Base::getIntFIFOBufferOverflowStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6ece9e6261a5bfc45a3dbcb1ac9798c0" compoundref="_m_p_u6050_8cpp" startline="1560" endline="1563">MPU6050_Base::getIntFreefallEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abcbc04ca985b03a79fb53e50058eaeb8" compoundref="_m_p_u6050_8cpp" startline="1691" endline="1694">MPU6050_Base::getIntFreefallStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1e0c579c22f7eaf9d56ef164c8bd2556" compoundref="_m_p_u6050_8cpp" startline="1637" endline="1640">MPU6050_Base::getIntI2CMasterEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9164f8e85c400f666f303a5ca6b05946" compoundref="_m_p_u6050_8cpp" startline="1736" endline="1739">MPU6050_Base::getIntI2CMasterStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1603e574ff44de32573286844e681477" compoundref="_m_p_u6050_8cpp" startline="1579" endline="1582">MPU6050_Base::getIntMotionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6aa99d730360bdf354a8c6708dcf8fe6" compoundref="_m_p_u6050_8cpp" startline="1702" endline="1705">MPU6050_Base::getIntMotionStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af04aa47d7ab7a364da445081a780ff76" compoundref="_m_p_u6050_8cpp" startline="2978" endline="2981">MPU6050_Base::getIntPLLReadyEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8dbc2e4561a21e188660be4df7898f85" compoundref="_m_p_u6050_8cpp" startline="3022" endline="3025">MPU6050_Base::getIntPLLReadyStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aad0e68c98c81b6d37ab6665fbbfab2b4" compoundref="_m_p_u6050_8cpp" startline="1680" endline="1683">MPU6050_Base::getIntStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ade787d55d26ad10a43b6fa9017aef873" compoundref="_m_p_u6050_8cpp" startline="1598" endline="1601">MPU6050_Base::getIntZeroMotionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5ef0c40d83fdd948379ad8ec66687470" compoundref="_m_p_u6050_8cpp" startline="1713" endline="1716">MPU6050_Base::getIntZeroMotionStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae20d15b2908dd2cd760835328c6a8c98" compoundref="_m_p_u6050_8cpp" startline="1299" endline="1302">MPU6050_Base::getLostArbitration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2350ee9f9bfcbd6e15a357b41c68536" compoundref="_m_p_u6050_8cpp" startline="898" endline="901">MPU6050_Base::getMasterClockSpeed</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae081a74b1c19f2646b8b191562325c52" compoundref="_m_p_u6050_8cpp" startline="1790" endline="1798">MPU6050_Base::getMotion6</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4a63b4087bfeeceda6b3e47c1e54f5bd" compoundref="_m_p_u6050_8cpp" startline="2314" endline="2317">MPU6050_Base::getMotionDetectionCounterDecrement</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab5e3570b249244da3ee6527a9080079c" compoundref="_m_p_u6050_8cpp" startline="545" endline="548">MPU6050_Base::getMotionDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a85931700e3ea367262db14f2f7351821" compoundref="_m_p_u6050_8cpp" startline="515" endline="518">MPU6050_Base::getMotionDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a51635729ed217e1d00cfe6e90a5a8a93" compoundref="_m_p_u6050_8cpp" startline="2053" endline="2056">MPU6050_Base::getMotionStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a268b4d2850fc294449b9b904939938f6" compoundref="_m_p_u6050_8cpp" startline="794" endline="797">MPU6050_Base::getMultiMasterEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa8cad4f41afeff461917abd44baa6374" compoundref="_m_p_u6050_8cpp" startline="2845" endline="2848">MPU6050_Base::getOTPBankValid</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad7ee1489ebb68706afe8788b28adffa0" compoundref="_m_p_u6050_8cpp" startline="1276" endline="1279">MPU6050_Base::getPassthroughStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aacc348dc7b93f7c9c312bb2132c03891" compoundref="_m_p_u6050_8cpp" startline="117" endline="120">MPU6050_Base::getRate</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0fcb7070d7226123a6b1a8eb44ace472" compoundref="_m_p_u6050_8cpp" startline="1914" endline="1919">MPU6050_Base::getRotation</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae17bc0281ec927cb7c2dc8174884f12c" compoundref="_m_p_u6050_8cpp" startline="1925" endline="1928">MPU6050_Base::getRotationX</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a873b0e9a0765c437044de9d0841b4775" compoundref="_m_p_u6050_8cpp" startline="1934" endline="1937">MPU6050_Base::getRotationY</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aec4a0cc9cb9227cbff616cd81fe03a07" compoundref="_m_p_u6050_8cpp" startline="1943" endline="1946">MPU6050_Base::getRotationZ</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a436aff5782b4c1cc335606b82129939b" compoundref="_m_p_u6050_8cpp" startline="1260" endline="1263">MPU6050_Base::getSlate4InputByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aff738cbfaa0678d0afe932c39b9ea6a2" compoundref="_m_p_u6050_8cpp" startline="764" endline="767">MPU6050_Base::getSlave0FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abe00a06ccc62b4949da08cf69be6bac6" compoundref="_m_p_u6050_8cpp" startline="1354" endline="1357">MPU6050_Base::getSlave0Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1addc2c6416614d80c040d1d15907c33b3" compoundref="_m_p_u6050_8cpp" startline="746" endline="749">MPU6050_Base::getSlave1FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a58cf85bf8bccd5396f503db7abb7d134" compoundref="_m_p_u6050_8cpp" startline="1343" endline="1346">MPU6050_Base::getSlave1Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a688f856384eb8deb8ae6cb4c9ba4dc32" compoundref="_m_p_u6050_8cpp" startline="728" endline="731">MPU6050_Base::getSlave2FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a703e5ae3f92e51d6fdbf432bf1832f4d" compoundref="_m_p_u6050_8cpp" startline="1332" endline="1335">MPU6050_Base::getSlave2Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad222061f5e93f17c9ec76ca4bdeccf77" compoundref="_m_p_u6050_8cpp" startline="835" endline="838">MPU6050_Base::getSlave3FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ffeb647fa03ead5cf0331617e9caf49" compoundref="_m_p_u6050_8cpp" startline="1321" endline="1324">MPU6050_Base::getSlave3Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4fd536262c1bb6e4493478a72edd3a2e" compoundref="_m_p_u6050_8cpp" startline="1127" endline="1130">MPU6050_Base::getSlave4Address</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad1259bd75d052a91f2e512fd87e7c371" compoundref="_m_p_u6050_8cpp" startline="1173" endline="1176">MPU6050_Base::getSlave4Enabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a50da61398f202cbf05fe5bdc4673d82c" compoundref="_m_p_u6050_8cpp" startline="1194" endline="1197">MPU6050_Base::getSlave4InterruptEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a036d36fffbc2fcb1d768b587c168bd47" compoundref="_m_p_u6050_8cpp" startline="1288" endline="1291">MPU6050_Base::getSlave4IsDone</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a2eb282f172a850855da2779fd66c3292" compoundref="_m_p_u6050_8cpp" startline="1242" endline="1245">MPU6050_Base::getSlave4MasterDelay</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a87d99d20886499f9484ba3e9f0a7082f" compoundref="_m_p_u6050_8cpp" startline="1310" endline="1313">MPU6050_Base::getSlave4Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5a5c3e9453d37e3ffe1bd132ffee1313" compoundref="_m_p_u6050_8cpp" startline="1146" endline="1149">MPU6050_Base::getSlave4Register</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9b68179218893e9ac2da60012f311454" compoundref="_m_p_u6050_8cpp" startline="1215" endline="1218">MPU6050_Base::getSlave4WriteMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a80b775815043814e2d56b4839b586988" compoundref="_m_p_u6050_8cpp" startline="953" endline="957">MPU6050_Base::getSlaveAddress</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad945c2371ded3ca2d30af926cb6d2913" compoundref="_m_p_u6050_8cpp" startline="1100" endline="1104">MPU6050_Base::getSlaveDataLength</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9885b0dc2b4fe2b1bf0fedc96ca0ad7c" compoundref="_m_p_u6050_8cpp" startline="2177" endline="2182">MPU6050_Base::getSlaveDelayEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aae1b3405c4f9ca185fcaced79c474809" compoundref="_m_p_u6050_8cpp" startline="1001" endline="1005">MPU6050_Base::getSlaveEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2acec1122f28b2158f40e1e82ef5a85" compoundref="_m_p_u6050_8cpp" startline="857" endline="860">MPU6050_Base::getSlaveReadWriteTransitionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aad44b9e3b98043db3d45fb98d4e0ef0e" compoundref="_m_p_u6050_8cpp" startline="979" endline="983">MPU6050_Base::getSlaveRegister</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a3656bea0341568d1903a45022bce207b" compoundref="_m_p_u6050_8cpp" startline="1027" endline="1031">MPU6050_Base::getSlaveWordByteSwap</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a15e22b9048761bc921fd04d18ae6a2e9" compoundref="_m_p_u6050_8cpp" startline="1078" endline="1082">MPU6050_Base::getSlaveWordGroupOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8d27530934a11b23acdd61a125cccad6" compoundref="_m_p_u6050_8cpp" startline="1052" endline="1056">MPU6050_Base::getSlaveWriteMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1c72cdb74d7e3e61f691a66fd996a7d7" compoundref="_m_p_u6050_8cpp" startline="2437" endline="2440">MPU6050_Base::getSleepEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aae237c28bb7122acf77e1062c6bd661f" compoundref="_m_p_u6050_8cpp" startline="2587" endline="2590">MPU6050_Base::getStandbyXAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aff9433cc85b07475b67073ff4f4a44a3" compoundref="_m_p_u6050_8cpp" startline="2644" endline="2647">MPU6050_Base::getStandbyXGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac9d9c86666b690a3691fa2d7fcede162" compoundref="_m_p_u6050_8cpp" startline="2606" endline="2609">MPU6050_Base::getStandbyYAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a29611bbea926eba60ef26dbba01b4d32" compoundref="_m_p_u6050_8cpp" startline="2663" endline="2666">MPU6050_Base::getStandbyYGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a07a073f1c721b14faf9d5e6b016a7217" compoundref="_m_p_u6050_8cpp" startline="2625" endline="2628">MPU6050_Base::getStandbyZAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aefe0eaa850df754c502a755aa31d950f" compoundref="_m_p_u6050_8cpp" startline="2682" endline="2685">MPU6050_Base::getStandbyZGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" compoundref="_m_p_u6050_8cpp" startline="1875" endline="1878">MPU6050_Base::getTemperature</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a282584a7bb0dc7f52148ea392857d06e" compoundref="_m_p_u6050_8cpp" startline="637" endline="640">MPU6050_Base::getTempFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abe206c4ce1bd885e303e4496fe9903a1" compoundref="_m_p_u6050_8cpp" startline="2482" endline="2485">MPU6050_Base::getTempSensorEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afd5d5556401f1745db4e6649476b2922" compoundref="_m_p_u6050_8cpp" startline="817" endline="820">MPU6050_Base::getWaitForExternalSensorEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a70b6093c18c33a0bd9360fb8b322e8c2" compoundref="_m_p_u6050_8cpp" startline="2458" endline="2461">MPU6050_Base::getWakeCycleEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0edc058effd88a7529857769d5f80dbd" compoundref="_m_p_u6050_8cpp" startline="2569" endline="2572">MPU6050_Base::getWakeFrequency</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4a3168947eb225142cf9e83c904cb7af" compoundref="_m_p_u6050_8cpp" startline="2912" endline="2916">MPU6050_Base::getXAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a520d9bd072a899ef582ca169107b9a74" compoundref="_m_p_u6050_8cpp" startline="2882" endline="2885">MPU6050_Base::getXFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a58d92f77dd19dc9282b068917360566c" compoundref="_m_p_u6050_8cpp" startline="655" endline="658">MPU6050_Base::getXGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aeabcf4f53941756293f8c2c8a9e03fb0" compoundref="_m_p_u6050_8cpp" startline="2948" endline="2951">MPU6050_Base::getXGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5fa559bbf0d22438398cc1924a5677be" compoundref="_m_p_u6050_8cpp" startline="2852" endline="2855">MPU6050_Base::getXGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab4f0157c7e59b9ac228f9cdf41844ce3" compoundref="_m_p_u6050_8cpp" startline="2062" endline="2065">MPU6050_Base::getXNegMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a96ffc9693bd08bd6861d7ad798f61089" compoundref="_m_p_u6050_8cpp" startline="2071" endline="2074">MPU6050_Base::getXPosMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0ccaf7a622a28c2147f200744c8f3d9f" compoundref="_m_p_u6050_8cpp" startline="2924" endline="2928">MPU6050_Base::getYAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2677616646aa5ed0d7ae347bb8fca3f" compoundref="_m_p_u6050_8cpp" startline="2892" endline="2895">MPU6050_Base::getYFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ea13d07ff700d4fd9cfc0b7bfa97a2f" compoundref="_m_p_u6050_8cpp" startline="673" endline="676">MPU6050_Base::getYGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a82f11a6474f10b1ec9b827d306329e00" compoundref="_m_p_u6050_8cpp" startline="2958" endline="2961">MPU6050_Base::getYGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae6e65bf3ed446d0315795dff852f40c6" compoundref="_m_p_u6050_8cpp" startline="2862" endline="2865">MPU6050_Base::getYGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad81ee06f456cb5e38527506f9bae0f8b" compoundref="_m_p_u6050_8cpp" startline="2080" endline="2083">MPU6050_Base::getYNegMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af36febbcdc6e2a824770bdee5cfc3ceb" compoundref="_m_p_u6050_8cpp" startline="2089" endline="2092">MPU6050_Base::getYPosMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ca50c098e438320f6c54522471dc341" compoundref="_m_p_u6050_8cpp" startline="2936" endline="2940">MPU6050_Base::getZAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aef532b35b7de01a02f21a7511424acd8" compoundref="_m_p_u6050_8cpp" startline="2116" endline="2119">MPU6050_Base::getZeroMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a2d125670ee0ec3e3e6688cbe637972b4" compoundref="_m_p_u6050_8cpp" startline="616" endline="619">MPU6050_Base::getZeroMotionDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1bf7e99ae57a102eddb828172fc492fa" compoundref="_m_p_u6050_8cpp" startline="585" endline="588">MPU6050_Base::getZeroMotionDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aef52f703ff623e05a7e6893192196c0e" compoundref="_m_p_u6050_8cpp" startline="2902" endline="2905">MPU6050_Base::getZFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23bb9d1e7b02d9d15fa402b9c9802ddc" compoundref="_m_p_u6050_8cpp" startline="691" endline="694">MPU6050_Base::getZGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac99f50622a272dc28212b9bb1d36b32d" compoundref="_m_p_u6050_8cpp" startline="2968" endline="2971">MPU6050_Base::getZGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a34a99c1c89a1900a03368e81bad60a89" compoundref="_m_p_u6050_8cpp" startline="2872" endline="2875">MPU6050_Base::getZGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a903756943e159225c5a2e237ddaea49b" compoundref="_m_p_u6050_8cpp" startline="2098" endline="2101">MPU6050_Base::getZNegMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae1118180cb00c34c2020d3b194e2eca5" compoundref="_m_p_u6050_8cpp" startline="2107" endline="2110">MPU6050_Base::getZPosMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aedddb3408760a50cc68a0c19892fe999" compoundref="_m_p_u6050_8cpp" startline="3310" endline="3372">MPU6050_Base::PID</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a54438d0baf4b657bff9fe9c52390dc3c" compoundref="_m_p_u6050_8cpp" startline="3374" endline="3395">MPU6050_Base::PrintActiveOffsets</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1930d8ee4f5e4b5cdfe23f4f267e69db" compoundref="_m_p_u6050_8cpp" startline="3068" endline="3098">MPU6050_Base::readMemoryBlock</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abc0ae36b66fc64df8694bb18019f0114" compoundref="_m_p_u6050_8cpp" startline="3061" endline="3064">MPU6050_Base::readMemoryByte</referencedby>
+        <referencedby refid="class_i2_cdev_1aa534dacc25c8d169a264178f9013904e" compoundref="_i2_cdev_8cpp" startline="484" endline="489">writeBit</referencedby>
+        <referencedby refid="class_i2_cdev_1a880e9cd4b1bea31e4f6b0d05c1e5df49" compoundref="_i2_cdev_8cpp" startline="513" endline="532">writeBits</referencedby>
+        <referencedby refid="class_i2_cdev_1a91e5da2931b3472dd55bc962afac5809" compoundref="_i2_cdev_8cpp" startline="542" endline="561">writeBitsW</referencedby>
+        <referencedby refid="class_i2_cdev_1a267a4d1e7dc660735fd555ed66715bdc" compoundref="_i2_cdev_8cpp" startline="498" endline="503">writeBitW</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a04f4591647809e810002567272628340" compoundref="_m_p_u6050_8cpp" startline="3099" endline="3174">MPU6050_Base::writeMemoryBlock</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>I2Cdev::I2Cdev</definition>
+        <argsstring>()</argsstring>
+        <name>I2Cdev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="134" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="95" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_i2_cdev_1a44d30d687c1f3e2c8e1f5e12f1bff906" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBit</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a single bit from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to read (0-7) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for single bit value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="136" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="106" bodyend="111"/>
+        <references refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" compoundref="_i2_cdev_8cpp" startline="186" endline="188">readByte</references>
+        <referencedby refid="class_m_p_u6050___base_1a150635ee46ebf4b4a8a4529fe3a98502" compoundref="_m_p_u6050_8cpp" startline="710" endline="713">MPU6050_Base::getAccelFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9964a19a5e7e1e5eb905dcece95d90f0" compoundref="_m_p_u6050_8cpp" startline="314" endline="317">MPU6050_Base::getAccelXSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0076c2df31e70b23a71264785f38a1ec" compoundref="_m_p_u6050_8cpp" startline="329" endline="332">MPU6050_Base::getAccelYSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9a8c683cdba5a8f3c3d0258e5ac3c197" compoundref="_m_p_u6050_8cpp" startline="344" endline="347">MPU6050_Base::getAccelZSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad52eb66dcc93b649efb3efb2bdad2907" compoundref="_m_p_u6050_8cpp" startline="80" endline="83">MPU6050_Base::getAuxVDDIOLevel</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad7040350ce6bea1a01946f518965d971" compoundref="_m_p_u6050_8cpp" startline="1513" endline="1516">MPU6050_Base::getClockOutputEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae7e9932409d3d64c93897a3bca5b74f3" compoundref="_m_p_u6050_8cpp" startline="3033" endline="3036">MPU6050_Base::getDMPEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a47f7e02a056c35226104c6eb4fe6affa" compoundref="_m_p_u6050_8cpp" startline="3015" endline="3018">MPU6050_Base::getDMPInt0Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afcc637b3a18f20ac4ff04d92e1d2f23a" compoundref="_m_p_u6050_8cpp" startline="3011" endline="3014">MPU6050_Base::getDMPInt1Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afe735d3e9ee27822d892abeb4275de65" compoundref="_m_p_u6050_8cpp" startline="3007" endline="3010">MPU6050_Base::getDMPInt2Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2e5eefa24ff4a16bdff81895dd0f163" compoundref="_m_p_u6050_8cpp" startline="3003" endline="3006">MPU6050_Base::getDMPInt3Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a63977a7f2d43832dd381137e6d6a75cd" compoundref="_m_p_u6050_8cpp" startline="2999" endline="3002">MPU6050_Base::getDMPInt4Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a397235e4c99d2c4d4385205bc95aea7b" compoundref="_m_p_u6050_8cpp" startline="2995" endline="2998">MPU6050_Base::getDMPInt5Status</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a064e3e722f775e354cebcd9fb17097b2" compoundref="_m_p_u6050_8cpp" startline="2146" endline="2149">MPU6050_Base::getExternalShadowDelayEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a58da0f214e6c06e633b0e9acce93346e" compoundref="_m_p_u6050_8cpp" startline="2338" endline="2341">MPU6050_Base::getFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab975994147e72ab2ee15c968c973d719" compoundref="_m_p_u6050_8cpp" startline="1462" endline="1465">MPU6050_Base::getFSyncInterruptEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa8bcb877ff31311b2d985b40eab983bb" compoundref="_m_p_u6050_8cpp" startline="1443" endline="1446">MPU6050_Base::getFSyncInterruptLevel</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23f6b6a78865dcd6d84b94e3b2708f00" compoundref="_m_p_u6050_8cpp" startline="1486" endline="1489">MPU6050_Base::getI2CBypassEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab88ee1825b7dcc01901c0ecbf583bc91" compoundref="_m_p_u6050_8cpp" startline="2362" endline="2365">MPU6050_Base::getI2CMasterModeEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6e0b47b54ca1720bfcc4a8d5a1cffaa8" compoundref="_m_p_u6050_8cpp" startline="1657" endline="1660">MPU6050_Base::getIntDataReadyEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a67d40bc7099ec3619db3b4526bdf0d49" compoundref="_m_p_u6050_8cpp" startline="1747" endline="1750">MPU6050_Base::getIntDataReadyStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a381e47064ecdaa9ff94f7bcc48239755" compoundref="_m_p_u6050_8cpp" startline="2985" endline="2988">MPU6050_Base::getIntDMPEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9bc9392c8a9a07b85358d947cb1d72db" compoundref="_m_p_u6050_8cpp" startline="3026" endline="3029">MPU6050_Base::getIntDMPStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac57dee1529ce758c983ee8644561dad0" compoundref="_m_p_u6050_8cpp" startline="1386" endline="1389">MPU6050_Base::getInterruptDrive</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a3b39d01c86f96f97a6eb6b5278801224" compoundref="_m_p_u6050_8cpp" startline="1405" endline="1408">MPU6050_Base::getInterruptLatch</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af9e7c20ff60440d9beb05a830b6bb2bb" compoundref="_m_p_u6050_8cpp" startline="1424" endline="1427">MPU6050_Base::getInterruptLatchClear</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1acfd2de7779ce42d43ed61a77257a94b3" compoundref="_m_p_u6050_8cpp" startline="1367" endline="1370">MPU6050_Base::getInterruptMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a170498f44fd63381d44e51e4a1551a1d" compoundref="_m_p_u6050_8cpp" startline="1617" endline="1620">MPU6050_Base::getIntFIFOBufferOverflowEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a48aa51bb3e653f11eb1bc6d5a76921f3" compoundref="_m_p_u6050_8cpp" startline="1724" endline="1727">MPU6050_Base::getIntFIFOBufferOverflowStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6ece9e6261a5bfc45a3dbcb1ac9798c0" compoundref="_m_p_u6050_8cpp" startline="1560" endline="1563">MPU6050_Base::getIntFreefallEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abcbc04ca985b03a79fb53e50058eaeb8" compoundref="_m_p_u6050_8cpp" startline="1691" endline="1694">MPU6050_Base::getIntFreefallStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1e0c579c22f7eaf9d56ef164c8bd2556" compoundref="_m_p_u6050_8cpp" startline="1637" endline="1640">MPU6050_Base::getIntI2CMasterEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9164f8e85c400f666f303a5ca6b05946" compoundref="_m_p_u6050_8cpp" startline="1736" endline="1739">MPU6050_Base::getIntI2CMasterStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1603e574ff44de32573286844e681477" compoundref="_m_p_u6050_8cpp" startline="1579" endline="1582">MPU6050_Base::getIntMotionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6aa99d730360bdf354a8c6708dcf8fe6" compoundref="_m_p_u6050_8cpp" startline="1702" endline="1705">MPU6050_Base::getIntMotionStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af04aa47d7ab7a364da445081a780ff76" compoundref="_m_p_u6050_8cpp" startline="2978" endline="2981">MPU6050_Base::getIntPLLReadyEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8dbc2e4561a21e188660be4df7898f85" compoundref="_m_p_u6050_8cpp" startline="3022" endline="3025">MPU6050_Base::getIntPLLReadyStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ade787d55d26ad10a43b6fa9017aef873" compoundref="_m_p_u6050_8cpp" startline="1598" endline="1601">MPU6050_Base::getIntZeroMotionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5ef0c40d83fdd948379ad8ec66687470" compoundref="_m_p_u6050_8cpp" startline="1713" endline="1716">MPU6050_Base::getIntZeroMotionStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae20d15b2908dd2cd760835328c6a8c98" compoundref="_m_p_u6050_8cpp" startline="1299" endline="1302">MPU6050_Base::getLostArbitration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a268b4d2850fc294449b9b904939938f6" compoundref="_m_p_u6050_8cpp" startline="794" endline="797">MPU6050_Base::getMultiMasterEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa8cad4f41afeff461917abd44baa6374" compoundref="_m_p_u6050_8cpp" startline="2845" endline="2848">MPU6050_Base::getOTPBankValid</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad7ee1489ebb68706afe8788b28adffa0" compoundref="_m_p_u6050_8cpp" startline="1276" endline="1279">MPU6050_Base::getPassthroughStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aff738cbfaa0678d0afe932c39b9ea6a2" compoundref="_m_p_u6050_8cpp" startline="764" endline="767">MPU6050_Base::getSlave0FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abe00a06ccc62b4949da08cf69be6bac6" compoundref="_m_p_u6050_8cpp" startline="1354" endline="1357">MPU6050_Base::getSlave0Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1addc2c6416614d80c040d1d15907c33b3" compoundref="_m_p_u6050_8cpp" startline="746" endline="749">MPU6050_Base::getSlave1FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a58cf85bf8bccd5396f503db7abb7d134" compoundref="_m_p_u6050_8cpp" startline="1343" endline="1346">MPU6050_Base::getSlave1Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a688f856384eb8deb8ae6cb4c9ba4dc32" compoundref="_m_p_u6050_8cpp" startline="728" endline="731">MPU6050_Base::getSlave2FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a703e5ae3f92e51d6fdbf432bf1832f4d" compoundref="_m_p_u6050_8cpp" startline="1332" endline="1335">MPU6050_Base::getSlave2Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad222061f5e93f17c9ec76ca4bdeccf77" compoundref="_m_p_u6050_8cpp" startline="835" endline="838">MPU6050_Base::getSlave3FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ffeb647fa03ead5cf0331617e9caf49" compoundref="_m_p_u6050_8cpp" startline="1321" endline="1324">MPU6050_Base::getSlave3Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad1259bd75d052a91f2e512fd87e7c371" compoundref="_m_p_u6050_8cpp" startline="1173" endline="1176">MPU6050_Base::getSlave4Enabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a50da61398f202cbf05fe5bdc4673d82c" compoundref="_m_p_u6050_8cpp" startline="1194" endline="1197">MPU6050_Base::getSlave4InterruptEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a036d36fffbc2fcb1d768b587c168bd47" compoundref="_m_p_u6050_8cpp" startline="1288" endline="1291">MPU6050_Base::getSlave4IsDone</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a87d99d20886499f9484ba3e9f0a7082f" compoundref="_m_p_u6050_8cpp" startline="1310" endline="1313">MPU6050_Base::getSlave4Nack</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9b68179218893e9ac2da60012f311454" compoundref="_m_p_u6050_8cpp" startline="1215" endline="1218">MPU6050_Base::getSlave4WriteMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9885b0dc2b4fe2b1bf0fedc96ca0ad7c" compoundref="_m_p_u6050_8cpp" startline="2177" endline="2182">MPU6050_Base::getSlaveDelayEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aae1b3405c4f9ca185fcaced79c474809" compoundref="_m_p_u6050_8cpp" startline="1001" endline="1005">MPU6050_Base::getSlaveEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2acec1122f28b2158f40e1e82ef5a85" compoundref="_m_p_u6050_8cpp" startline="857" endline="860">MPU6050_Base::getSlaveReadWriteTransitionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a3656bea0341568d1903a45022bce207b" compoundref="_m_p_u6050_8cpp" startline="1027" endline="1031">MPU6050_Base::getSlaveWordByteSwap</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a15e22b9048761bc921fd04d18ae6a2e9" compoundref="_m_p_u6050_8cpp" startline="1078" endline="1082">MPU6050_Base::getSlaveWordGroupOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8d27530934a11b23acdd61a125cccad6" compoundref="_m_p_u6050_8cpp" startline="1052" endline="1056">MPU6050_Base::getSlaveWriteMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1c72cdb74d7e3e61f691a66fd996a7d7" compoundref="_m_p_u6050_8cpp" startline="2437" endline="2440">MPU6050_Base::getSleepEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aae237c28bb7122acf77e1062c6bd661f" compoundref="_m_p_u6050_8cpp" startline="2587" endline="2590">MPU6050_Base::getStandbyXAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aff9433cc85b07475b67073ff4f4a44a3" compoundref="_m_p_u6050_8cpp" startline="2644" endline="2647">MPU6050_Base::getStandbyXGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac9d9c86666b690a3691fa2d7fcede162" compoundref="_m_p_u6050_8cpp" startline="2606" endline="2609">MPU6050_Base::getStandbyYAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a29611bbea926eba60ef26dbba01b4d32" compoundref="_m_p_u6050_8cpp" startline="2663" endline="2666">MPU6050_Base::getStandbyYGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a07a073f1c721b14faf9d5e6b016a7217" compoundref="_m_p_u6050_8cpp" startline="2625" endline="2628">MPU6050_Base::getStandbyZAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aefe0eaa850df754c502a755aa31d950f" compoundref="_m_p_u6050_8cpp" startline="2682" endline="2685">MPU6050_Base::getStandbyZGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a282584a7bb0dc7f52148ea392857d06e" compoundref="_m_p_u6050_8cpp" startline="637" endline="640">MPU6050_Base::getTempFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abe206c4ce1bd885e303e4496fe9903a1" compoundref="_m_p_u6050_8cpp" startline="2482" endline="2485">MPU6050_Base::getTempSensorEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afd5d5556401f1745db4e6649476b2922" compoundref="_m_p_u6050_8cpp" startline="817" endline="820">MPU6050_Base::getWaitForExternalSensorEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a70b6093c18c33a0bd9360fb8b322e8c2" compoundref="_m_p_u6050_8cpp" startline="2458" endline="2461">MPU6050_Base::getWakeCycleEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a58d92f77dd19dc9282b068917360566c" compoundref="_m_p_u6050_8cpp" startline="655" endline="658">MPU6050_Base::getXGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab4f0157c7e59b9ac228f9cdf41844ce3" compoundref="_m_p_u6050_8cpp" startline="2062" endline="2065">MPU6050_Base::getXNegMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a96ffc9693bd08bd6861d7ad798f61089" compoundref="_m_p_u6050_8cpp" startline="2071" endline="2074">MPU6050_Base::getXPosMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ea13d07ff700d4fd9cfc0b7bfa97a2f" compoundref="_m_p_u6050_8cpp" startline="673" endline="676">MPU6050_Base::getYGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad81ee06f456cb5e38527506f9bae0f8b" compoundref="_m_p_u6050_8cpp" startline="2080" endline="2083">MPU6050_Base::getYNegMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af36febbcdc6e2a824770bdee5cfc3ceb" compoundref="_m_p_u6050_8cpp" startline="2089" endline="2092">MPU6050_Base::getYPosMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aef532b35b7de01a02f21a7511424acd8" compoundref="_m_p_u6050_8cpp" startline="2116" endline="2119">MPU6050_Base::getZeroMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23bb9d1e7b02d9d15fa402b9c9802ddc" compoundref="_m_p_u6050_8cpp" startline="691" endline="694">MPU6050_Base::getZGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a903756943e159225c5a2e237ddaea49b" compoundref="_m_p_u6050_8cpp" startline="2098" endline="2101">MPU6050_Base::getZNegMotionDetected</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae1118180cb00c34c2020d3b194e2eca5" compoundref="_m_p_u6050_8cpp" startline="2107" endline="2110">MPU6050_Base::getZPosMotionDetected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ab4434718c3f7f9559406397ce0e0f66f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBitW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readBitW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a single bit from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to read (0-15) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for single bit value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="137" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="121" bodyend="126"/>
+        <references refid="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" compoundref="_i2_cdev_8cpp" startline="197" endline="199">readWord</references>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ab693271327f12f5aecc21c49561bca5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBits</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readBits</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple bits from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to read (0-7) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to read (not more than 8) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for right-aligned value (i.e. &apos;101&apos; read from any bitStart position will equal 0x05) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="138" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="137" bodyend="151"/>
+        <references refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" compoundref="_i2_cdev_8cpp" startline="186" endline="188">readByte</references>
+        <referencedby refid="class_m_p_u6050___base_1af5d64293afe95a515ac1be53c0f92dc7" compoundref="_m_p_u6050_8cpp" startline="2239" endline="2242">MPU6050_Base::getAccelerometerPowerOnDelay</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af5331efc9b24ee8e14ab8e710bf81e64" compoundref="_m_p_u6050_8cpp" startline="2506" endline="2509">MPU6050_Base::getClockSource</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a484615e93874a73b8a6e579bdff6d311" compoundref="_m_p_u6050_8cpp" startline="2824" endline="2827">MPU6050_Base::getDeviceID</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a21ad2c3666b42f2686513f5b3d6dc6db" compoundref="_m_p_u6050_8cpp" startline="418" endline="421">MPU6050_Base::getDHPFMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1dd595fbd87eae82d928f6125f185780" compoundref="_m_p_u6050_8cpp" startline="199" endline="202">MPU6050_Base::getDLPFMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a450de30a267445051d4d440738e5765b" compoundref="_m_p_u6050_8cpp" startline="159" endline="162">MPU6050_Base::getExternalFrameSync</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a34a9a58c07cff2bcc7cf3263c6da2ba0" compoundref="_m_p_u6050_8cpp" startline="2278" endline="2281">MPU6050_Base::getFreefallDetectionCounterDecrement</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a643813563b76ecea7f5536ff73a23bfb" compoundref="_m_p_u6050_8cpp" startline="372" endline="375">MPU6050_Base::getFullScaleAccelRange</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a461e9146da2e5f90b54e6d84fb373c4c" compoundref="_m_p_u6050_8cpp" startline="234" endline="237">MPU6050_Base::getFullScaleGyroRange</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2350ee9f9bfcbd6e15a357b41c68536" compoundref="_m_p_u6050_8cpp" startline="898" endline="901">MPU6050_Base::getMasterClockSpeed</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4a63b4087bfeeceda6b3e47c1e54f5bd" compoundref="_m_p_u6050_8cpp" startline="2314" endline="2317">MPU6050_Base::getMotionDetectionCounterDecrement</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a2eb282f172a850855da2779fd66c3292" compoundref="_m_p_u6050_8cpp" startline="1242" endline="1245">MPU6050_Base::getSlave4MasterDelay</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad945c2371ded3ca2d30af926cb6d2913" compoundref="_m_p_u6050_8cpp" startline="1100" endline="1104">MPU6050_Base::getSlaveDataLength</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0edc058effd88a7529857769d5f80dbd" compoundref="_m_p_u6050_8cpp" startline="2569" endline="2572">MPU6050_Base::getWakeFrequency</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5fa559bbf0d22438398cc1924a5677be" compoundref="_m_p_u6050_8cpp" startline="2852" endline="2855">MPU6050_Base::getXGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae6e65bf3ed446d0315795dff852f40c6" compoundref="_m_p_u6050_8cpp" startline="2862" endline="2865">MPU6050_Base::getYGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a34a99c1c89a1900a03368e81bad60a89" compoundref="_m_p_u6050_8cpp" startline="2872" endline="2875">MPU6050_Base::getZGyroOffsetTC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a4c174e6406e822654c0629d149dca7f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBitsW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readBitsW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple bits from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to read (0-15) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to read (not more than 16) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for right-aligned value (i.e. &apos;101&apos; read from any bitStart position will equal 0x05) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (1 = success, 0 = failure, -1 = timeout) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="139" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="162" bodyend="177"/>
+        <references refid="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" compoundref="_i2_cdev_8cpp" startline="197" endline="199">readWord</references>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readByte</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read single byte from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for byte value read from device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="140" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="186" bodyend="188"/>
+        <references refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">readBytes</references>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="337" endline="656">MPU6050_9Axis_MotionApps41::dmpInitialize</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac729f439b1197e73e9b4d2e72a58e9c0" compoundref="_m_p_u6050_8cpp" startline="256" endline="260">MPU6050_Base::getAccelXSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a975eb5413990322b882b5b24c235e8fd" compoundref="_m_p_u6050_8cpp" startline="266" endline="270">MPU6050_Base::getAccelYSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a16895f743dfc37978e2b30e24eb65991" compoundref="_m_p_u6050_8cpp" startline="3260" endline="3263">MPU6050_Base::getDMPConfig1</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af794215bbab4bb0bdb4f48506672df07" compoundref="_m_p_u6050_8cpp" startline="3270" endline="3273">MPU6050_Base::getDMPConfig2</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1344417176077bc6b596e4d75ca1b4a9" compoundref="_m_p_u6050_8cpp" startline="2024" endline="2027">MPU6050_Base::getExternalSensorByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa42c59e74fdfd3f55fd7fd3cdd13b0d3" compoundref="_m_p_u6050_8cpp" startline="2737" endline="2740">MPU6050_Base::getFIFOByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae53aa26f00f1e985f9e7930d830cf0e8" compoundref="_m_p_u6050_8cpp" startline="481" endline="484">MPU6050_Base::getFreefallDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aca2ab255139d5d2ef6307e7217a9e02b" compoundref="_m_p_u6050_8cpp" startline="449" endline="452">MPU6050_Base::getFreefallDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a71af18fd332324af0671f63bb0a48270" compoundref="_m_p_u6050_8cpp" startline="285" endline="288">MPU6050_Base::getGyroXSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad9adb76187704bed8bfa691c39d5099c" compoundref="_m_p_u6050_8cpp" startline="294" endline="297">MPU6050_Base::getGyroYSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac6e219da2fa79c5f6c48afd3c1347b5c" compoundref="_m_p_u6050_8cpp" startline="303" endline="306">MPU6050_Base::getGyroZSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a928215df8e265367dd77247aee24a3e1" compoundref="_m_p_u6050_8cpp" startline="1539" endline="1542">MPU6050_Base::getIntEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aad0e68c98c81b6d37ab6665fbbfab2b4" compoundref="_m_p_u6050_8cpp" startline="1680" endline="1683">MPU6050_Base::getIntStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab5e3570b249244da3ee6527a9080079c" compoundref="_m_p_u6050_8cpp" startline="545" endline="548">MPU6050_Base::getMotionDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a85931700e3ea367262db14f2f7351821" compoundref="_m_p_u6050_8cpp" startline="515" endline="518">MPU6050_Base::getMotionDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a51635729ed217e1d00cfe6e90a5a8a93" compoundref="_m_p_u6050_8cpp" startline="2053" endline="2056">MPU6050_Base::getMotionStatus</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aacc348dc7b93f7c9c312bb2132c03891" compoundref="_m_p_u6050_8cpp" startline="117" endline="120">MPU6050_Base::getRate</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a436aff5782b4c1cc335606b82129939b" compoundref="_m_p_u6050_8cpp" startline="1260" endline="1263">MPU6050_Base::getSlate4InputByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4fd536262c1bb6e4493478a72edd3a2e" compoundref="_m_p_u6050_8cpp" startline="1127" endline="1130">MPU6050_Base::getSlave4Address</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5a5c3e9453d37e3ffe1bd132ffee1313" compoundref="_m_p_u6050_8cpp" startline="1146" endline="1149">MPU6050_Base::getSlave4Register</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a80b775815043814e2d56b4839b586988" compoundref="_m_p_u6050_8cpp" startline="953" endline="957">MPU6050_Base::getSlaveAddress</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aad44b9e3b98043db3d45fb98d4e0ef0e" compoundref="_m_p_u6050_8cpp" startline="979" endline="983">MPU6050_Base::getSlaveRegister</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a520d9bd072a899ef582ca169107b9a74" compoundref="_m_p_u6050_8cpp" startline="2882" endline="2885">MPU6050_Base::getXFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2677616646aa5ed0d7ae347bb8fca3f" compoundref="_m_p_u6050_8cpp" startline="2892" endline="2895">MPU6050_Base::getYFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a2d125670ee0ec3e3e6688cbe637972b4" compoundref="_m_p_u6050_8cpp" startline="616" endline="619">MPU6050_Base::getZeroMotionDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1bf7e99ae57a102eddb828172fc492fa" compoundref="_m_p_u6050_8cpp" startline="585" endline="588">MPU6050_Base::getZeroMotionDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aef52f703ff623e05a7e6893192196c0e" compoundref="_m_p_u6050_8cpp" startline="2902" endline="2905">MPU6050_Base::getZFineGain</referencedby>
+        <referencedby refid="class_i2_cdev_1a44d30d687c1f3e2c8e1f5e12f1bff906" compoundref="_i2_cdev_8cpp" startline="106" endline="111">readBit</referencedby>
+        <referencedby refid="class_i2_cdev_1ab693271327f12f5aecc21c49561bca5f" compoundref="_i2_cdev_8cpp" startline="137" endline="151">readBits</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abc0ae36b66fc64df8694bb18019f0114" compoundref="_m_p_u6050_8cpp" startline="3061" endline="3064">MPU6050_Base::readMemoryByte</referencedby>
+        <referencedby refid="class_i2_cdev_1aa534dacc25c8d169a264178f9013904e" compoundref="_i2_cdev_8cpp" startline="484" endline="489">writeBit</referencedby>
+        <referencedby refid="class_i2_cdev_1a880e9cd4b1bea31e4f6b0d05c1e5df49" compoundref="_i2_cdev_8cpp" startline="513" endline="532">writeBits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readWord</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read single word from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container for word value read from device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of read operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="141" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="197" bodyend="199"/>
+        <references refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">readWords</references>
+        <referencedby refid="class_i2_cdev_1a4c174e6406e822654c0629d149dca7f4" compoundref="_i2_cdev_8cpp" startline="162" endline="177">readBitsW</referencedby>
+        <referencedby refid="class_i2_cdev_1ab4434718c3f7f9559406397ce0e0f66f" compoundref="_i2_cdev_8cpp" startline="121" endline="126">readBitW</referencedby>
+        <referencedby refid="class_i2_cdev_1a91e5da2931b3472dd55bc962afac5809" compoundref="_i2_cdev_8cpp" startline="542" endline="561">writeBitsW</referencedby>
+        <referencedby refid="class_i2_cdev_1a267a4d1e7dc660735fd555ed66715bdc" compoundref="_i2_cdev_8cpp" startline="498" endline="503">writeBitW</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readBytes</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple bytes from an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store read data in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes read (-1 indicates failure) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="142" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="209" bodyend="321"/>
+        <references refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" compoundref="_wire_8cpp" startline="249" endline="253">TwoWire::available</references>
+        <references refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">TwoWire::beginTransmission</references>
+        <references refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">TwoWire::endTransmission</references>
+        <references refid="_i2_cdev_8h_1a4d461e424b1ceb74553b1f1db33891a8" compoundref="_i2_cdev_8h" startline="116">I2CDEVLIB_WIRE_BUFFER_LENGTH</references>
+        <references refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" compoundref="_wire_8cpp" startline="255" endline="263">TwoWire::read</references>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">TwoWire::requestFrom</references>
+        <references refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" compoundref="_wire_8cpp" startline="381">Wire</references>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">TwoWire::write</references>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="337" endline="656">MPU6050_9Axis_MotionApps41::dmpInitialize</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6ec9b8da462c8054daf923c3794f29b8" compoundref="_m_p_u6050_8cpp" startline="1835" endline="1840">MPU6050_Base::getAcceleration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a89b74c15a4f64481fd9831faa16f7ec3" compoundref="_m_p_u6050_8cpp" startline="1846" endline="1849">MPU6050_Base::getAccelerationX</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac9aac1ad74674fc79b7ba1566295a46d" compoundref="_m_p_u6050_8cpp" startline="1855" endline="1858">MPU6050_Base::getAccelerationY</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1dddf9124365ee8d7d6ddaedf54e3b60" compoundref="_m_p_u6050_8cpp" startline="1864" endline="1867">MPU6050_Base::getAccelerationZ</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a466616c9b52824a22809cdcfb7aea509" compoundref="_m_p_u6050_8cpp" startline="276" endline="279">MPU6050_Base::getAccelZSelfTestFactoryTrim</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a11648581a9f6e6cb7e32ebbd04f1233f" compoundref="_m_p_u6050_8cpp" startline="2042" endline="2045">MPU6050_Base::getExternalSensorDWord</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abeba49738e39e465bcfd992f07aea884" compoundref="_m_p_u6050_8cpp" startline="2033" endline="2036">MPU6050_Base::getExternalSensorWord</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac4b73cd8841a5eee523426748a551632" compoundref="_m_p_u6050_8cpp" startline="2741" endline="2747">MPU6050_Base::getFIFOBytes</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1abff5ac2dfd585ab7a8f4592caf6b5442" compoundref="_m_p_u6050_8cpp" startline="2705" endline="2708">MPU6050_Base::getFIFOCount</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae081a74b1c19f2646b8b191562325c52" compoundref="_m_p_u6050_8cpp" startline="1790" endline="1798">MPU6050_Base::getMotion6</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0fcb7070d7226123a6b1a8eb44ace472" compoundref="_m_p_u6050_8cpp" startline="1914" endline="1919">MPU6050_Base::getRotation</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae17bc0281ec927cb7c2dc8174884f12c" compoundref="_m_p_u6050_8cpp" startline="1925" endline="1928">MPU6050_Base::getRotationX</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a873b0e9a0765c437044de9d0841b4775" compoundref="_m_p_u6050_8cpp" startline="1934" endline="1937">MPU6050_Base::getRotationY</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aec4a0cc9cb9227cbff616cd81fe03a07" compoundref="_m_p_u6050_8cpp" startline="1943" endline="1946">MPU6050_Base::getRotationZ</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa2848605e984e352fe9bbead63ae9d09" compoundref="_m_p_u6050_8cpp" startline="1875" endline="1878">MPU6050_Base::getTemperature</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4a3168947eb225142cf9e83c904cb7af" compoundref="_m_p_u6050_8cpp" startline="2912" endline="2916">MPU6050_Base::getXAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aeabcf4f53941756293f8c2c8a9e03fb0" compoundref="_m_p_u6050_8cpp" startline="2948" endline="2951">MPU6050_Base::getXGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0ccaf7a622a28c2147f200744c8f3d9f" compoundref="_m_p_u6050_8cpp" startline="2924" endline="2928">MPU6050_Base::getYAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a82f11a6474f10b1ec9b827d306329e00" compoundref="_m_p_u6050_8cpp" startline="2958" endline="2961">MPU6050_Base::getYGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ca50c098e438320f6c54522471dc341" compoundref="_m_p_u6050_8cpp" startline="2936" endline="2940">MPU6050_Base::getZAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac99f50622a272dc28212b9bb1d36b32d" compoundref="_m_p_u6050_8cpp" startline="2968" endline="2971">MPU6050_Base::getZGyroOffset</referencedby>
+        <referencedby refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" compoundref="_i2_cdev_8cpp" startline="186" endline="188">readByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1930d8ee4f5e4b5cdfe23f4f267e69db" compoundref="_m_p_u6050_8cpp" startline="3068" endline="3098">MPU6050_Base::readMemoryBlock</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a04f4591647809e810002567272628340" compoundref="_m_p_u6050_8cpp" startline="3099" endline="3174">MPU6050_Base::writeMemoryBlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t I2Cdev::readWords</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, uint16_t timeout=I2Cdev::readTimeout, void *wireObj=0)</argsstring>
+        <name>readWords</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+          <defval><ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref></defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read multiple words from a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register regAddr to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of words to read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store read data in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional read timeout in milliseconds (0 to disable, leave off to use default class value in <ref refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" kindref="member">I2Cdev::readTimeout</ref>) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of words read (-1 indicates failure) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="143" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="331" bodyend="475"/>
+        <references refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" compoundref="_wire_8cpp" startline="249" endline="253">TwoWire::available</references>
+        <references refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">TwoWire::beginTransmission</references>
+        <references refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">TwoWire::endTransmission</references>
+        <references refid="_i2_cdev_8h_1a4d461e424b1ceb74553b1f1db33891a8" compoundref="_i2_cdev_8h" startline="116">I2CDEVLIB_WIRE_BUFFER_LENGTH</references>
+        <references refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" compoundref="_wire_8cpp" startline="255" endline="263">TwoWire::read</references>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">TwoWire::requestFrom</references>
+        <references refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" compoundref="_wire_8cpp" startline="381">Wire</references>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">TwoWire::write</references>
+        <referencedby refid="class_m_p_u6050___base_1aedddb3408760a50cc68a0c19892fe999" compoundref="_m_p_u6050_8cpp" startline="3310" endline="3372">MPU6050_Base::PID</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a54438d0baf4b657bff9fe9c52390dc3c" compoundref="_m_p_u6050_8cpp" startline="3374" endline="3395">MPU6050_Base::PrintActiveOffsets</referencedby>
+        <referencedby refid="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" compoundref="_i2_cdev_8cpp" startline="197" endline="199">readWord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1aa534dacc25c8d169a264178f9013904e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBit</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint8_t data, void *wireObj=0)</argsstring>
+        <name>writeBit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write a single bit in an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to write (0-7) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New bit value to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="145" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="484" bodyend="489"/>
+        <references refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" compoundref="_i2_cdev_8cpp" startline="186" endline="188">readByte</references>
+        <references refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" compoundref="_i2_cdev_8h" startline="154">readTimeout</references>
+        <references refid="class_i2_cdev_1a7ea9bb95cfb21c7953f1c1cd8eedbb29" compoundref="_i2_cdev_8cpp" startline="569" endline="571">writeByte</references>
+        <referencedby refid="class_m_p_u6050___base_1a6bb19fc65efc973e4b96529b7153d81c" compoundref="_m_p_u6050_8cpp" startline="2423" endline="2425">MPU6050_Base::reset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4c09cdf5f8435e2c9821e1988bc9d7ba" compoundref="_m_p_u6050_8cpp" startline="2210" endline="2212">MPU6050_Base::resetAccelerometerPath</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a69faefa1534ba46d2de83e4ff427ff12" compoundref="_m_p_u6050_8cpp" startline="3040" endline="3042">MPU6050_Base::resetDMP</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a90a4ce81f7ef13a3f0badaa414d64f10" compoundref="_m_p_u6050_8cpp" startline="2388" endline="2390">MPU6050_Base::resetFIFO</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9c64a8800eec919c0ea4e1ba6316af89" compoundref="_m_p_u6050_8cpp" startline="2201" endline="2203">MPU6050_Base::resetGyroscopePath</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8f2f365e03e3a0953a487b65d2054a77" compoundref="_m_p_u6050_8cpp" startline="2397" endline="2399">MPU6050_Base::resetI2CMaster</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a128ce040d90f3ba200496933fdda0eac" compoundref="_m_p_u6050_8cpp" startline="2412" endline="2414">MPU6050_Base::resetSensors</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae3e020015312b27fc389d23cc89407ff" compoundref="_m_p_u6050_8cpp" startline="2219" endline="2221">MPU6050_Base::resetTemperaturePath</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afa2556435fdb2073b4937681adf3e450" compoundref="_m_p_u6050_8cpp" startline="719" endline="721">MPU6050_Base::setAccelFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a11ab02fd99e3b89d63bf05d0838aa937" compoundref="_m_p_u6050_8cpp" startline="322" endline="324">MPU6050_Base::setAccelXSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5ef99a8fe213a167f1bff306144e42cc" compoundref="_m_p_u6050_8cpp" startline="337" endline="339">MPU6050_Base::setAccelYSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa4ad1ea53cdf1b54854d38b1e709a265" compoundref="_m_p_u6050_8cpp" startline="352" endline="354">MPU6050_Base::setAccelZSelfTest</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac4fbb98e39a92a175ba33a0bbf7e5320" compoundref="_m_p_u6050_8cpp" startline="90" endline="92">MPU6050_Base::setAuxVDDIOLevel</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4322aab1419a627cbfa7ab8f5e77075d" compoundref="_m_p_u6050_8cpp" startline="1526" endline="1528">MPU6050_Base::setClockOutputEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a50389f06417a9543aa8996594f034df3" compoundref="_m_p_u6050_8cpp" startline="3037" endline="3039">MPU6050_Base::setDMPEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afe60ececbc797ee4295f71a11e6f929b" compoundref="_m_p_u6050_8cpp" startline="2156" endline="2158">MPU6050_Base::setExternalShadowDelayEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1af552017976a6b77a13a42cf0bad87bbb" compoundref="_m_p_u6050_8cpp" startline="2348" endline="2350">MPU6050_Base::setFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a07377d94ccec30198bd32e408d892aaa" compoundref="_m_p_u6050_8cpp" startline="1472" endline="1474">MPU6050_Base::setFSyncInterruptEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6ce135f54ffac09348f0a34cc063414e" compoundref="_m_p_u6050_8cpp" startline="1453" endline="1455">MPU6050_Base::setFSyncInterruptLevel</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a78a625e871e7f6cab9efe7b4b8253b45" compoundref="_m_p_u6050_8cpp" startline="1501" endline="1503">MPU6050_Base::setI2CBypassEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1cad7275068fac2e4b5d9a14835b60d9" compoundref="_m_p_u6050_8cpp" startline="2372" endline="2374">MPU6050_Base::setI2CMasterModeEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae0185900633130e0a6018d9b5b277c23" compoundref="_m_p_u6050_8cpp" startline="1667" endline="1669">MPU6050_Base::setIntDataReadyEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1adc894aa0829618539f022f19f67f35e6" compoundref="_m_p_u6050_8cpp" startline="2989" endline="2991">MPU6050_Base::setIntDMPEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac071c26927e128f0c8108c26f0dd6ca2" compoundref="_m_p_u6050_8cpp" startline="1396" endline="1398">MPU6050_Base::setInterruptDrive</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8b4d24c2f48703b03df5fdf536630114" compoundref="_m_p_u6050_8cpp" startline="1415" endline="1417">MPU6050_Base::setInterruptLatch</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad58e7b763846f3f1374f677f894c591b" compoundref="_m_p_u6050_8cpp" startline="1434" endline="1436">MPU6050_Base::setInterruptLatchClear</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae60338d86e2b0a0c3f7b88ccb4b8ddd9" compoundref="_m_p_u6050_8cpp" startline="1377" endline="1379">MPU6050_Base::setInterruptMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a85b7fa233105fe44e106ac702735ff30" compoundref="_m_p_u6050_8cpp" startline="1627" endline="1629">MPU6050_Base::setIntFIFOBufferOverflowEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aaf3db292200588a7b53d361c8fdb0d95" compoundref="_m_p_u6050_8cpp" startline="1570" endline="1572">MPU6050_Base::setIntFreefallEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa08825832581c5375314a73a4ccc2a3e" compoundref="_m_p_u6050_8cpp" startline="1647" endline="1649">MPU6050_Base::setIntI2CMasterEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6f841a18476ea8f256e396c35c4bc72a" compoundref="_m_p_u6050_8cpp" startline="1589" endline="1591">MPU6050_Base::setIntMotionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a18bbda2f99af616f14a8ef4f1e8262a5" compoundref="_m_p_u6050_8cpp" startline="2982" endline="2984">MPU6050_Base::setIntPLLReadyEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a031f96ee8e743be4f23cf203d48a8098" compoundref="_m_p_u6050_8cpp" startline="1608" endline="1610">MPU6050_Base::setIntZeroMotionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aabf62641ad552e12f1554e3e34ea9b59" compoundref="_m_p_u6050_8cpp" startline="803" endline="805">MPU6050_Base::setMultiMasterEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac1db5782c0696833d4554b83fe8beb49" compoundref="_m_p_u6050_8cpp" startline="2849" endline="2851">MPU6050_Base::setOTPBankValid</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6a37bb04e52f38dd539bb456b90ed607" compoundref="_m_p_u6050_8cpp" startline="773" endline="775">MPU6050_Base::setSlave0FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae95aedd4d7f38f1b9920ed7f3192a61a" compoundref="_m_p_u6050_8cpp" startline="755" endline="757">MPU6050_Base::setSlave1FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a217b8f731737b612f86dab00a4e1b8ec" compoundref="_m_p_u6050_8cpp" startline="737" endline="739">MPU6050_Base::setSlave2FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae1248aa09e1915d935998cb459305f9c" compoundref="_m_p_u6050_8cpp" startline="844" endline="846">MPU6050_Base::setSlave3FIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab59782e1a8c6754e6bd889cf0197ce5d" compoundref="_m_p_u6050_8cpp" startline="1182" endline="1184">MPU6050_Base::setSlave4Enabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8a4343015c979a09e987dd9f45308f6c" compoundref="_m_p_u6050_8cpp" startline="1203" endline="1205">MPU6050_Base::setSlave4InterruptEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23415c254d9b484e53cef6e1356b63e8" compoundref="_m_p_u6050_8cpp" startline="1224" endline="1226">MPU6050_Base::setSlave4WriteMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a11c74c2512e85aa9e50b779b35aca5ec" compoundref="_m_p_u6050_8cpp" startline="2189" endline="2191">MPU6050_Base::setSlaveDelayEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae68556ce72fd9f25551decd19cddbc2b" compoundref="_m_p_u6050_8cpp" startline="1012" endline="1015">MPU6050_Base::setSlaveEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae4cadc8a948270ed4374ed7dd71c36c8" compoundref="_m_p_u6050_8cpp" startline="866" endline="868">MPU6050_Base::setSlaveReadWriteTransitionEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0759a118dc3cb51e55cf211f53d28d11" compoundref="_m_p_u6050_8cpp" startline="1038" endline="1041">MPU6050_Base::setSlaveWordByteSwap</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aea3beb0cf4c68e6bb38e2020b2073cbd" compoundref="_m_p_u6050_8cpp" startline="1089" endline="1092">MPU6050_Base::setSlaveWordGroupOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4d4e389f4324fd073a1188c2e48c8b55" compoundref="_m_p_u6050_8cpp" startline="1063" endline="1066">MPU6050_Base::setSlaveWriteMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a50329f23a59a73e2c4b32211c2a1da98" compoundref="_m_p_u6050_8cpp" startline="2447" endline="2449">MPU6050_Base::setSleepEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a752aaa71f38e973a75f6e2d563dfa38f" compoundref="_m_p_u6050_8cpp" startline="2597" endline="2599">MPU6050_Base::setStandbyXAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a7faffb72cb1ae115fded0ca9549acc42" compoundref="_m_p_u6050_8cpp" startline="2654" endline="2656">MPU6050_Base::setStandbyXGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a351a986730f039ae3053741bd64a889c" compoundref="_m_p_u6050_8cpp" startline="2616" endline="2618">MPU6050_Base::setStandbyYAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab01ff2c9015f652656d5802848bac45f" compoundref="_m_p_u6050_8cpp" startline="2673" endline="2675">MPU6050_Base::setStandbyYGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ae758ba07bc6568eb6f732e74d18e0d" compoundref="_m_p_u6050_8cpp" startline="2635" endline="2637">MPU6050_Base::setStandbyZAccelEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6afe290d7d42efb1aa9c35763605a515" compoundref="_m_p_u6050_8cpp" startline="2692" endline="2694">MPU6050_Base::setStandbyZGyroEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23c2880f63666cbf5438b8d4e7af748f" compoundref="_m_p_u6050_8cpp" startline="646" endline="648">MPU6050_Base::setTempFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a149ec0399d564298e15908c542768fdd" compoundref="_m_p_u6050_8cpp" startline="2496" endline="2499">MPU6050_Base::setTempSensorEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa212743b4ac5520aeb0e4ef378a43490" compoundref="_m_p_u6050_8cpp" startline="826" endline="828">MPU6050_Base::setWaitForExternalSensorEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a885f90e5898d6ea60f084431899df754" compoundref="_m_p_u6050_8cpp" startline="2468" endline="2470">MPU6050_Base::setWakeCycleEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8d0de79eb95a996a7d7ad521dbc9512d" compoundref="_m_p_u6050_8cpp" startline="664" endline="666">MPU6050_Base::setXGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae3c65d87f7d4b792a59894f9e4d82592" compoundref="_m_p_u6050_8cpp" startline="682" endline="684">MPU6050_Base::setYGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a027a47b586fbae66b01450f93d6e9288" compoundref="_m_p_u6050_8cpp" startline="700" endline="702">MPU6050_Base::setZGyroFIFOEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5a4bdd690bb700bfd99858149cb1a41d" compoundref="_m_p_u6050_8cpp" startline="2379" endline="2381">MPU6050_Base::switchSPIEnabled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a267a4d1e7dc660735fd555ed66715bdc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBitW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitNum, uint16_t data, void *wireObj=0)</argsstring>
+        <name>writeBitW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitNum</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>write a single bit in a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit position to write (0-15) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New bit value to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="146" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="498" bodyend="503"/>
+        <references refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" compoundref="_i2_cdev_8h" startline="154">readTimeout</references>
+        <references refid="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" compoundref="_i2_cdev_8cpp" startline="197" endline="199">readWord</references>
+        <references refid="class_i2_cdev_1a180098f115462ee32b862d4da30311f4" compoundref="_i2_cdev_8cpp" startline="579" endline="581">writeWord</references>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a880e9cd4b1bea31e4f6b0d05c1e5df49" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBits</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint8_t data, void *wireObj=0)</argsstring>
+        <name>writeBits</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple bits in an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to write (0-7) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to write (not more than 8) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-aligned value to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="147" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="513" bodyend="532"/>
+        <references refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" compoundref="_i2_cdev_8cpp" startline="186" endline="188">readByte</references>
+        <references refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" compoundref="_i2_cdev_8h" startline="154">readTimeout</references>
+        <references refid="class_i2_cdev_1a7ea9bb95cfb21c7953f1c1cd8eedbb29" compoundref="_i2_cdev_8cpp" startline="569" endline="571">writeByte</references>
+        <referencedby refid="class_m_p_u6050___base_1a2b6fc26bae0ada7f6974c92729c0e893" compoundref="_m_p_u6050_8cpp" startline="2249" endline="2251">MPU6050_Base::setAccelerometerPowerOnDelay</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a02fc458c263401a22c8737be1c0ef2bb" compoundref="_m_p_u6050_8cpp" startline="2540" endline="2542">MPU6050_Base::setClockSource</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4243ca4a58b4e0177c97c1a1002e1cfc" compoundref="_m_p_u6050_8cpp" startline="2837" endline="2839">MPU6050_Base::setDeviceID</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8117916e5c4af07a9665c7081a761cc6" compoundref="_m_p_u6050_8cpp" startline="428" endline="430">MPU6050_Base::setDHPFMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aa54aa824bd2e7a24ee9908029f05b849" compoundref="_m_p_u6050_8cpp" startline="211" endline="213">MPU6050_Base::setDLPFMode</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ae6b4822ab3b3c0ad6a2a2cf64c33c25f" compoundref="_m_p_u6050_8cpp" startline="168" endline="170">MPU6050_Base::setExternalFrameSync</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a23c342e41fc377e94e79f0e912eabc6a" compoundref="_m_p_u6050_8cpp" startline="2288" endline="2290">MPU6050_Base::setFreefallDetectionCounterDecrement</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a411f9306662e91e716e17419c2bc59d1" compoundref="_m_p_u6050_8cpp" startline="380" endline="382">MPU6050_Base::setFullScaleAccelRange</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a474156fdc22301b8147c0eca1ca2737a" compoundref="_m_p_u6050_8cpp" startline="246" endline="248">MPU6050_Base::setFullScaleGyroRange</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6a36cf96ee8b3d75483233277487a7ce" compoundref="_m_p_u6050_8cpp" startline="906" endline="908">MPU6050_Base::setMasterClockSpeed</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a866399657f6d8a11514324bbadc602aa" compoundref="_m_p_u6050_8cpp" startline="2324" endline="2326">MPU6050_Base::setMotionDetectionCounterDecrement</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1ef550c5ec6b25baca3e268f3321ad83" compoundref="_m_p_u6050_8cpp" startline="1251" endline="1253">MPU6050_Base::setSlave4MasterDelay</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1aed64cfe3e9ebd1053279d8f77853ef04" compoundref="_m_p_u6050_8cpp" startline="1111" endline="1114">MPU6050_Base::setSlaveDataLength</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a36f9271de59968ac6636e415e4cde1bb" compoundref="_m_p_u6050_8cpp" startline="2577" endline="2579">MPU6050_Base::setWakeFrequency</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a75bdfac21c78916b15d6b1742b8d2ef7" compoundref="_m_p_u6050_8cpp" startline="2856" endline="2858">MPU6050_Base::setXGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a90506688c48e079fab832100a8d97d04" compoundref="_m_p_u6050_8cpp" startline="2866" endline="2868">MPU6050_Base::setYGyroOffsetTC</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad68e4d3c1b7ddb308a4514f27cb89921" compoundref="_m_p_u6050_8cpp" startline="2876" endline="2878">MPU6050_Base::setZGyroOffsetTC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a91e5da2931b3472dd55bc962afac5809" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBitsW</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t length, uint16_t data, void *wireObj=0)</argsstring>
+        <name>writeBitsW</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitStart</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple bits in a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register regAddr to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First bit position to write (0-15) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits to write (not more than 16) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-aligned value to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="148" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="542" bodyend="561"/>
+        <references refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" compoundref="_i2_cdev_8h" startline="154">readTimeout</references>
+        <references refid="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" compoundref="_i2_cdev_8cpp" startline="197" endline="199">readWord</references>
+        <references refid="class_i2_cdev_1a180098f115462ee32b862d4da30311f4" compoundref="_i2_cdev_8cpp" startline="579" endline="581">writeWord</references>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a7ea9bb95cfb21c7953f1c1cd8eedbb29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeByte</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t data, void *wireObj=0)</argsstring>
+        <name>writeByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write single byte to an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register address to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New byte value to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="149" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="569" bodyend="571"/>
+        <references refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" compoundref="_i2_cdev_8cpp" startline="590" endline="648">writeBytes</references>
+        <referencedby refid="class_m_p_u6050__9_axis___motion_apps41_1a30ea899d93a5999340053a4730bd365e" compoundref="_m_p_u6050__9_axis___motion_apps41_8cpp" startline="337" endline="656">MPU6050_9Axis_MotionApps41::dmpInitialize</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afe501313698bd6e45869c056753b3034" compoundref="_m_p_u6050_8cpp" startline="3264" endline="3266">MPU6050_Base::setDMPConfig1</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a0d593051500f29b27890782fb9cf02ba" compoundref="_m_p_u6050_8cpp" startline="3274" endline="3276">MPU6050_Base::setDMPConfig2</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab0310c1d8de3175363732fe53afa01c9" compoundref="_m_p_u6050_8cpp" startline="2811" endline="2813">MPU6050_Base::setFIFOByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad0f4da74813e940627ae5e5a47ee10f4" compoundref="_m_p_u6050_8cpp" startline="490" endline="492">MPU6050_Base::setFreefallDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a7cf8652b0d0204b45cc18e0ab31aa8a7" compoundref="_m_p_u6050_8cpp" startline="458" endline="460">MPU6050_Base::setFreefallDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac4bcfc51ad4004d4923202d1f093167c" compoundref="_m_p_u6050_8cpp" startline="1551" endline="1553">MPU6050_Base::setIntEnabled</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a28a48af89336c9dc8ea4242efdcc450f" compoundref="_m_p_u6050_8cpp" startline="3046" endline="3051">MPU6050_Base::setMemoryBank</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a010f2977db5b023fdca05fd7f5533bf1" compoundref="_m_p_u6050_8cpp" startline="3055" endline="3057">MPU6050_Base::setMemoryStartAddress</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad84a5c4a80aaf6127d5d7ad33f0854e0" compoundref="_m_p_u6050_8cpp" startline="554" endline="556">MPU6050_Base::setMotionDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad7cac8dd9d3abef325127a33f085e0bf" compoundref="_m_p_u6050_8cpp" startline="524" endline="526">MPU6050_Base::setMotionDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a9d157266fc4f1ccb2e351de5ad43e5ef" compoundref="_m_p_u6050_8cpp" startline="126" endline="128">MPU6050_Base::setRate</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ac92eab02cdfbbcb71cb7030549e74a16" compoundref="_m_p_u6050_8cpp" startline="1136" endline="1138">MPU6050_Base::setSlave4Address</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a7667427cfa99a48a1150abfa64bf452a" compoundref="_m_p_u6050_8cpp" startline="1164" endline="1166">MPU6050_Base::setSlave4OutputByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a8a9a7e3d17557bfc443f2068c0576f6c" compoundref="_m_p_u6050_8cpp" startline="1155" endline="1157">MPU6050_Base::setSlave4Register</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a39d36bc5f09bc33e57a669e01b6ccaf4" compoundref="_m_p_u6050_8cpp" startline="964" endline="967">MPU6050_Base::setSlaveAddress</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a32de83f4d3531caa5a7200ae68ca7739" compoundref="_m_p_u6050_8cpp" startline="2131" endline="2134">MPU6050_Base::setSlaveOutputByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a6959ab134eec2286e6473f2ac8941065" compoundref="_m_p_u6050_8cpp" startline="990" endline="993">MPU6050_Base::setSlaveRegister</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a26896a1b1d781eca8bf6bab629feeac7" compoundref="_m_p_u6050_8cpp" startline="2886" endline="2888">MPU6050_Base::setXFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a30654931d36ee0326c2f12360bde5012" compoundref="_m_p_u6050_8cpp" startline="2896" endline="2898">MPU6050_Base::setYFineGain</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab795e17ef51683756cf27a1645a62b9a" compoundref="_m_p_u6050_8cpp" startline="625" endline="627">MPU6050_Base::setZeroMotionDetectionDuration</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a4aac435f4c354c904ef8c4fec11deebb" compoundref="_m_p_u6050_8cpp" startline="594" endline="596">MPU6050_Base::setZeroMotionDetectionThreshold</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a822e81809f942f45ca978ca3250217b3" compoundref="_m_p_u6050_8cpp" startline="2906" endline="2908">MPU6050_Base::setZFineGain</referencedby>
+        <referencedby refid="class_i2_cdev_1aa534dacc25c8d169a264178f9013904e" compoundref="_i2_cdev_8cpp" startline="484" endline="489">writeBit</referencedby>
+        <referencedby refid="class_i2_cdev_1a880e9cd4b1bea31e4f6b0d05c1e5df49" compoundref="_i2_cdev_8cpp" startline="513" endline="532">writeBits</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ab9d002775fdd3fa72170d1ec94af8005" compoundref="_m_p_u6050_8cpp" startline="3178" endline="3253">MPU6050_Base::writeDMPConfigurationSet</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a1a05c57dd0eb54be35ee5d5535d4c2be" compoundref="_m_p_u6050_8cpp" startline="3065" endline="3067">MPU6050_Base::writeMemoryByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a180098f115462ee32b862d4da30311f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeWord</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint16_t data, void *wireObj=0)</argsstring>
+        <name>writeWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write single word to a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register address to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New word value to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="150" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="579" bodyend="581"/>
+        <references refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" compoundref="_i2_cdev_8cpp" startline="657" endline="719">writeWords</references>
+        <referencedby refid="class_m_p_u6050___base_1aa74a241aaaecbbbabe5ae6157ce10d75" compoundref="_m_p_u6050_8cpp" startline="2917" endline="2920">MPU6050_Base::setXAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a5aa9f43262708f5edaa1de18daff1526" compoundref="_m_p_u6050_8cpp" startline="2952" endline="2954">MPU6050_Base::setXGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1afb06fd307cfe6db11746e3b458200bfb" compoundref="_m_p_u6050_8cpp" startline="2929" endline="2932">MPU6050_Base::setYAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1ad2be43f6343839b5a07605dac9546499" compoundref="_m_p_u6050_8cpp" startline="2962" endline="2964">MPU6050_Base::setYGyroOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a822a611b1252259113f3dcd9bc40b334" compoundref="_m_p_u6050_8cpp" startline="2941" endline="2944">MPU6050_Base::setZAccelOffset</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a56cb0dfeb269c5601a26f885d7254301" compoundref="_m_p_u6050_8cpp" startline="2972" endline="2974">MPU6050_Base::setZGyroOffset</referencedby>
+        <referencedby refid="class_i2_cdev_1a91e5da2931b3472dd55bc962afac5809" compoundref="_i2_cdev_8cpp" startline="542" endline="561">writeBitsW</referencedby>
+        <referencedby refid="class_i2_cdev_1a267a4d1e7dc660735fd555ed66715bdc" compoundref="_i2_cdev_8cpp" startline="498" endline="503">writeBitW</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeBytes</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, void *wireObj=0)</argsstring>
+        <name>writeBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple bytes to an 8-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register address to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to copy new data from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="151" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="590" bodyend="648"/>
+        <references refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">TwoWire::beginTransmission</references>
+        <references refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">TwoWire::endTransmission</references>
+        <references refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" compoundref="_wire_8cpp" startline="381">Wire</references>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">TwoWire::write</references>
+        <referencedby refid="class_i2_cdev_1a7ea9bb95cfb21c7953f1c1cd8eedbb29" compoundref="_i2_cdev_8cpp" startline="569" endline="571">writeByte</referencedby>
+        <referencedby refid="class_m_p_u6050___base_1a04f4591647809e810002567272628340" compoundref="_m_p_u6050_8cpp" startline="3099" endline="3174">MPU6050_Base::writeMemoryBlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2Cdev::writeWords</definition>
+        <argsstring>(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint16_t *data, void *wireObj=0)</argsstring>
+        <name>writeWords</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>devAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>regAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>wireObj</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write multiple words to a 16-bit device register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>devAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C slave device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>regAddr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First register address to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of words to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to copy new data from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Status of operation (true = success) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="152" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.cpp" bodystart="657" bodyend="719"/>
+        <references refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">TwoWire::beginTransmission</references>
+        <references refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">TwoWire::endTransmission</references>
+        <references refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" compoundref="_wire_8cpp" startline="381">Wire</references>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">TwoWire::write</references>
+        <referencedby refid="class_m_p_u6050___base_1aedddb3408760a50cc68a0c19892fe999" compoundref="_m_p_u6050_8cpp" startline="3310" endline="3372">MPU6050_Base::PID</referencedby>
+        <referencedby refid="class_i2_cdev_1a180098f115462ee32b862d4da30311f4" compoundref="_i2_cdev_8cpp" startline="579" endline="581">writeWord</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" line="132" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev/0.0.0/I2Cdev/I2Cdev.h" bodystart="132" bodyend="155"/>
+    <listofallmembers>
+      <member refid="class_i2_cdev_1a0a466e2323d9f719a1ecc9fa11ac5c84" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>I2Cdev</name></member>
+      <member refid="class_i2_cdev_1a44d30d687c1f3e2c8e1f5e12f1bff906" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBit</name></member>
+      <member refid="class_i2_cdev_1ab693271327f12f5aecc21c49561bca5f" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBits</name></member>
+      <member refid="class_i2_cdev_1a4c174e6406e822654c0629d149dca7f4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBitsW</name></member>
+      <member refid="class_i2_cdev_1ab4434718c3f7f9559406397ce0e0f66f" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBitW</name></member>
+      <member refid="class_i2_cdev_1ab402b057d8eb29d4cce64433d871fc36" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readByte</name></member>
+      <member refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readBytes</name></member>
+      <member refid="class_i2_cdev_1ae2125796e0948127fc15031650111e82" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readTimeout</name></member>
+      <member refid="class_i2_cdev_1a6ab9c201248ba08f1fa04f1ef6370795" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readWord</name></member>
+      <member refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>readWords</name></member>
+      <member refid="class_i2_cdev_1aa534dacc25c8d169a264178f9013904e" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBit</name></member>
+      <member refid="class_i2_cdev_1a880e9cd4b1bea31e4f6b0d05c1e5df49" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBits</name></member>
+      <member refid="class_i2_cdev_1a91e5da2931b3472dd55bc962afac5809" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBitsW</name></member>
+      <member refid="class_i2_cdev_1a267a4d1e7dc660735fd555ed66715bdc" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBitW</name></member>
+      <member refid="class_i2_cdev_1a7ea9bb95cfb21c7953f1c1cd8eedbb29" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeByte</name></member>
+      <member refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeBytes</name></member>
+      <member refid="class_i2_cdev_1a180098f115462ee32b862d4da30311f4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeWord</name></member>
+      <member refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" prot="public" virt="non-virtual"><scope>I2Cdev</scope><name>writeWords</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

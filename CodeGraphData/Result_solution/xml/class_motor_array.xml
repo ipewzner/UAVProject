@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_motor_array" kind="class" prot="public">
+    <compoundname>MotorArray</compoundname>
+    <includes refid="_motor_array_8h" local="no">MotorArray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" prot="public" static="no" mutable="no">
+        <type><ref refid="class_motor" kindref="compound">Motor</ref> **</type>
+        <definition>Motor** MotorArray::arr</definition>
+        <argsstring></argsstring>
+        <name>arr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="10" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_motor_array_1afcf1d19e923ebed6e6fa47551a8d496c" compoundref="_motor_array_8cpp" startline="14" endline="35">addMotor</referencedby>
+        <referencedby refid="class_motor_array_1a816ae99f40be1dca2f7716597e564b30" compoundref="_motor_array_8cpp" startline="37" endline="45">initAll</referencedby>
+        <referencedby refid="class_logic_1a903683e9f77dfe33629fce89d5d20f0a" compoundref="logic_8cpp" startline="40" endline="53">Logic::updateMotors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t MotorArray::arrSize</definition>
+        <argsstring></argsstring>
+        <name>arrSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="11" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_motor_array_1afcf1d19e923ebed6e6fa47551a8d496c" compoundref="_motor_array_8cpp" startline="14" endline="35">addMotor</referencedby>
+        <referencedby refid="class_motor_array_1ac886b2b11b75c5f7f6badccd32e9e424" compoundref="_motor_array_8cpp" startline="48" endline="56">asciiResultAll</referencedby>
+        <referencedby refid="class_motor_array_1ae6a349f2fe1c8710e901d14cd8b124bf" compoundref="_motor_array_8cpp" startline="58" endline="66">jsonResultAll</referencedby>
+        <referencedby refid="class_motor_array_1a6a867a2ce1ca58d583c2361d9783526e" compoundref="_motor_array_8cpp" startline="9" endline="11">length</referencedby>
+        <referencedby refid="class_motor_array_1a8368a0155e79dcf35d7f42a0f890e9a6" compoundref="_motor_array_8cpp" startline="5" endline="7">MotorArray</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_motor_array_1afcf1d19e923ebed6e6fa47551a8d496c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MotorArray::addMotor</definition>
+        <argsstring>(Motor *motor)</argsstring>
+        <name>addMotor</name>
+        <param>
+          <type><ref refid="class_motor" kindref="compound">Motor</ref> *</type>
+          <declname>motor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="12" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp" bodystart="14" bodyend="35"/>
+        <references refid="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" compoundref="_motor_array_8h" startline="10">arr</references>
+        <references refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" compoundref="_motor_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_array_1a816ae99f40be1dca2f7716597e564b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MotorArray::initAll</definition>
+        <argsstring>()</argsstring>
+        <name>initAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp" bodystart="37" bodyend="45"/>
+        <references refid="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" compoundref="_motor_array_8h" startline="10">arr</references>
+        <references refid="class_motor_array_1a6a867a2ce1ca58d583c2361d9783526e" compoundref="_motor_array_8cpp" startline="9" endline="11">length</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_array_1a8368a0155e79dcf35d7f42a0f890e9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MotorArray::MotorArray</definition>
+        <argsstring>()</argsstring>
+        <name>MotorArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="14" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp" bodystart="5" bodyend="7"/>
+        <references refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" compoundref="_motor_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_array_1a6a867a2ce1ca58d583c2361d9783526e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t MotorArray::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp" bodystart="9" bodyend="11"/>
+        <references refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" compoundref="_motor_array_8h" startline="11">arrSize</references>
+        <referencedby refid="class_motor_array_1a816ae99f40be1dca2f7716597e564b30" compoundref="_motor_array_8cpp" startline="37" endline="45">initAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_array_1ac886b2b11b75c5f7f6badccd32e9e424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String MotorArray::asciiResultAll</definition>
+        <argsstring>()</argsstring>
+        <name>asciiResultAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="16" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp" bodystart="48" bodyend="56"/>
+        <references refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" compoundref="_motor_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_array_1ae6a349f2fe1c8710e901d14cd8b124bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>DynamicJsonDocument MotorArray::jsonResultAll</definition>
+        <argsstring>()</argsstring>
+        <name>jsonResultAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp" bodystart="58" bodyend="66"/>
+        <references refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" compoundref="_motor_array_8h" startline="11">arrSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="147">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+      </node>
+      <node id="146">
+        <label>MotorArray</label>
+        <link refid="class_motor_array"/>
+        <childnode refid="147" relation="usage">
+          <edgelabel>arr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" line="8" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_motor_array_1afcf1d19e923ebed6e6fa47551a8d496c" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>addMotor</name></member>
+      <member refid="class_motor_array_1a7c29e92377b38fc2cdefe971b0aff7ac" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>arr</name></member>
+      <member refid="class_motor_array_1a08f024ed86c763f9d035b804748d6b77" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>arrSize</name></member>
+      <member refid="class_motor_array_1ac886b2b11b75c5f7f6badccd32e9e424" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>asciiResultAll</name></member>
+      <member refid="class_motor_array_1a816ae99f40be1dca2f7716597e564b30" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>initAll</name></member>
+      <member refid="class_motor_array_1ae6a349f2fe1c8710e901d14cd8b124bf" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>jsonResultAll</name></member>
+      <member refid="class_motor_array_1a6a867a2ce1ca58d583c2361d9783526e" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>length</name></member>
+      <member refid="class_motor_array_1a8368a0155e79dcf35d7f42a0f890e9a6" prot="public" virt="non-virtual"><scope>MotorArray</scope><name>MotorArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

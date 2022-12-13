@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_e7a7b5cab946bc242b99d28a8e5393c1" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master</compoundname>
+    <innerfile refid="_e_b_y_t_e_8cpp">EBYTE.cpp</innerfile>
+    <innerfile refid="_e_b_y_t_e_8h">EBYTE.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master/5.0/EBYTE-master/"/>
+  </compounddef>
+</doxygen>

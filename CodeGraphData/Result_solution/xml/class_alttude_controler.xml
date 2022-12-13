@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_alttude_controler" kind="class" prot="public">
+    <compoundname>AlttudeControler</compoundname>
+    <basecompoundref refid="class_p_i_d" prot="public" virt="non-virtual">PID</basecompoundref>
+    <includes refid="_alttude_controler_8h" local="no">AlttudeControler.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_alttude_controler_1a593e6eedcaccccc9141815af2e860ed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AlttudeControler::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h" line="15" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>AlttudeControler</label>
+        <link refid="class_alttude_controler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PID</label>
+        <link refid="class_p_i_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AlttudeControler</label>
+        <link refid="class_alttude_controler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PID</label>
+        <link refid="class_p_i_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>Compute</name></member>
+      <member refid="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>GetDirection</name></member>
+      <member refid="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>GetKd</name></member>
+      <member refid="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>GetKi</name></member>
+      <member refid="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>GetKp</name></member>
+      <member refid="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>GetMode</name></member>
+      <member refid="class_alttude_controler_1a593e6eedcaccccc9141815af2e860ed3" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>init</name></member>
+      <member refid="class_p_i_d_1a2204e6bc67a6915a557b9c2f03c2d92d" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>PID</name></member>
+      <member refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>PID</name></member>
+      <member refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>SetControllerDirection</name></member>
+      <member refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>SetMode</name></member>
+      <member refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>SetOutputLimits</name></member>
+      <member refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>SetSampleTime</name></member>
+      <member refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>SetTunings</name></member>
+      <member refid="class_p_i_d_1a3f6cf284c8fe43b1714b5b72758dc229" prot="public" virt="non-virtual"><scope>AlttudeControler</scope><name>SetTunings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

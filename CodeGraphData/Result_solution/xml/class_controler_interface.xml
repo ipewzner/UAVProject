@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_controler_interface" kind="class" prot="public" abstract="yes">
+    <compoundname>ControlerInterface</compoundname>
+    <includes refid="_controler_interface_8h" local="no">ControlerInterface.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controler_interface_1a3628672dc634eaef5c11f028d3ec2f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControlerInterface::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controler_interface_1a1959cd98ab08aae25cd76467c93c426f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControlerInterface::everyLoop</definition>
+        <argsstring>()=0</argsstring>
+        <name>everyLoop</name>
+        <briefdescription>
+<para>For func that need to set in the loop. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controler_interface_1a36e0d9d45e1232c5a8ac29650776ffa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControlerInterface::show</definition>
+        <argsstring>(DynamicJsonDocument)=0</argsstring>
+        <name>show</name>
+        <param>
+          <type>DynamicJsonDocument</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h" line="8" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_controler_interface_1a1959cd98ab08aae25cd76467c93c426f" prot="public" virt="pure-virtual"><scope>ControlerInterface</scope><name>everyLoop</name></member>
+      <member refid="class_controler_interface_1a3628672dc634eaef5c11f028d3ec2f83" prot="public" virt="pure-virtual"><scope>ControlerInterface</scope><name>init</name></member>
+      <member refid="class_controler_interface_1a36e0d9d45e1232c5a8ac29650776ffa7" prot="public" virt="pure-virtual"><scope>ControlerInterface</scope><name>show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

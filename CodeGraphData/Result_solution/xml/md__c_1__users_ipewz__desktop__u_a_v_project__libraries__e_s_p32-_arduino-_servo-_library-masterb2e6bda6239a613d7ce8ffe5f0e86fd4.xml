@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="md__c_1__users_ipewz__desktop__u_a_v_project__libraries__e_s_p32-_arduino-_servo-_library-masterb2e6bda6239a613d7ce8ffe5f0e86fd4" kind="page">
+    <compoundname>md_C:_Users_ipewz_Desktop_UAVProject_Libraries_ESP32-Arduino-Servo-Library-master_1.0.1_ESP32-Arduino-Servo-Library-master_README</compoundname>
+    <title>ESP32-Arduino-Servo-Library [![Build Status](https://travis-ci.org/RoboticsBrno/ESP32-Arduino-Servo-Library.svg?branch=master)](https://travis-ci.org/RoboticsBrno/ESP32-Arduino-Servo-Library)</title>
+    <detaileddescription>
+<para>Generate RC servo signal on a selected pin.</para><para>Base on <ulink url="https://github.com/arduino-libraries/Servo/blob/master/src/stm32f4/ServoTimers.h">servo library for stm32f4 (d2a4a47)</ulink>.</para><para><heading level="2">Interface</heading>
+</para><para>The interface is similar to Arduino/Servo: <ulink url="https://www.arduino.cc/en/Reference/Servo">https://www.arduino.cc/en/Reference/Servo</ulink></para><para>But the function <computeroutput>atach()</computeroutput> is different:</para><para>```c bool attach( int pin, int channel = CHANNEL_NOT_ATTACHED, int minAngle = MIN_ANGLE, int maxAngle = MAX_ANGLE, int minPulseWidth = MIN_PULSE_WIDTH, int maxPulseWidth = MAX_PULSE_WIDTH ); ```</para><para>More information in <ulink url="https://github.com/RoboticsBrno/ESP32-Arduino-Servo-Library/blob/master/src/Servo.h#L73">source code documentation</ulink>.</para><para>Example: <ulink url="examples/04-SimpleServoAngles/04-SimpleServoAngles.ino">04-SimpleServoAngles</ulink></para><para><heading level="2">PlatformIO</heading>
+</para><para>This library is also available at the <ulink url="https://platformio.org">PlatformIO</ulink> as <ulink url="http://platformio.org/lib/show/1739/ServoESP32">ServoESP32</ulink>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

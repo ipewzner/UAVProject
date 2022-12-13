@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_41115704844eaf581f710f790627da4a" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050</compoundname>
+    <innerfile refid="helper__3dmath_8h">helper_3dmath.h</innerfile>
+    <innerfile refid="_m_p_u6050_8cpp">MPU6050.cpp</innerfile>
+    <innerfile refid="_m_p_u6050_8h">MPU6050.h</innerfile>
+    <innerfile refid="_m_p_u6050__6_axis___motion_apps20_8cpp">MPU6050_6Axis_MotionApps20.cpp</innerfile>
+    <innerfile refid="_m_p_u6050__6_axis___motion_apps20_8h">MPU6050_6Axis_MotionApps20.h</innerfile>
+    <innerfile refid="_m_p_u6050__6_axis___motion_apps612_8cpp">MPU6050_6Axis_MotionApps612.cpp</innerfile>
+    <innerfile refid="_m_p_u6050__6_axis___motion_apps612_8h">MPU6050_6Axis_MotionApps612.h</innerfile>
+    <innerfile refid="_m_p_u6050__9_axis___motion_apps41_8cpp">MPU6050_9Axis_MotionApps41.cpp</innerfile>
+    <innerfile refid="_m_p_u6050__9_axis___motion_apps41_8h">MPU6050_9Axis_MotionApps41.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/"/>
+  </compounddef>
+</doxygen>

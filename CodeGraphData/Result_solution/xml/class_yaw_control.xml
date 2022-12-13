@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_yaw_control" kind="class" prot="public">
+    <compoundname>YawControl</compoundname>
+    <includes refid="_yaw_control_8h" local="no">YawControl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_yaw_control_1ad8a416a8b8073558db20d0ff5ef91dca" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* YawControl::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1ad3e681d91fb51c75f11ace973c7a4ad7" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double * YawControl::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a8093b1d32053e8f59c09b78880bedd85" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double * YawControl::setpoint</definition>
+        <argsstring></argsstring>
+        <name>setpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a7b7b9ed6077deec298df2369ed18e3db" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double YawControl::kp</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a880a50394593ea08de868cdf4c59c957" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double YawControl::ki</definition>
+        <argsstring></argsstring>
+        <name>ki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1ab87669046abf039385371758afe430a0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double YawControl::kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a20d1940f72057828b1de69d95cd8f986" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int YawControl::pOn</definition>
+        <argsstring></argsstring>
+        <name>pOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a10ea3f55385cd5147dd40188e7052324" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int YawControl::controllerDirection</definition>
+        <argsstring></argsstring>
+        <name>controllerDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1aa41467693352b1799eb976b169585630" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float YawControl::desireAngle</definition>
+        <argsstring></argsstring>
+        <name>desireAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a8e99d64af1af977635e2002285312d55" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float YawControl::currentAngle</definition>
+        <argsstring></argsstring>
+        <name>currentAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_yaw_control_1a5cb81cb5d393a4e699d8ef3e439f0508" prot="public" static="no" mutable="no">
+        <type><ref refid="class_p_i_d" kindref="compound">PID</ref> *</type>
+        <definition>PID* YawControl::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="33" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_yaw_control_1a9e0187695308163234a9f3b2c99bac44" compoundref="_yaw_control_8cpp" startline="37" endline="39">Compute</referencedby>
+        <referencedby refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" compoundref="_yaw_control_8cpp" startline="7" endline="31">YawControl</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>YawControl::YawControl</definition>
+        <argsstring>(double *input, double *output, double *setpoint, double kp, double ki, double kd, int pOn, int controllerDirection)</argsstring>
+        <name>YawControl</name>
+        <param>
+          <type>double *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>setpoint</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ki</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pOn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>controllerDirection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="21" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.cpp" bodystart="7" bodyend="31"/>
+        <references refid="class_yaw_control_1a8e99d64af1af977635e2002285312d55" compoundref="_yaw_control_8h" startline="19">currentAngle</references>
+        <references refid="class_yaw_control_1aa41467693352b1799eb976b169585630" compoundref="_yaw_control_8h" startline="19">desireAngle</references>
+        <references refid="class_yaw_control_1ad8a416a8b8073558db20d0ff5ef91dca" compoundref="_yaw_control_8h" startline="17">input</references>
+        <references refid="class_yaw_control_1ab87669046abf039385371758afe430a0" compoundref="_yaw_control_8h" startline="17">kd</references>
+        <references refid="class_yaw_control_1a880a50394593ea08de868cdf4c59c957" compoundref="_yaw_control_8h" startline="17">ki</references>
+        <references refid="class_yaw_control_1a7b7b9ed6077deec298df2369ed18e3db" compoundref="_yaw_control_8h" startline="17">kp</references>
+        <references refid="class_yaw_control_1ad3e681d91fb51c75f11ace973c7a4ad7" compoundref="_yaw_control_8h" startline="17">output</references>
+        <references refid="class_yaw_control_1a5cb81cb5d393a4e699d8ef3e439f0508" compoundref="_yaw_control_8h" startline="33">pid</references>
+        <references refid="class_yaw_control_1a20d1940f72057828b1de69d95cd8f986" compoundref="_yaw_control_8h" startline="18">pOn</references>
+        <references refid="class_yaw_control_1a8093b1d32053e8f59c09b78880bedd85" compoundref="_yaw_control_8h" startline="17">setpoint</references>
+      </memberdef>
+      <memberdef kind="function" id="class_yaw_control_1a9e0187695308163234a9f3b2c99bac44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool YawControl::Compute</definition>
+        <argsstring>()</argsstring>
+        <name>Compute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="35" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.cpp" bodystart="37" bodyend="39"/>
+        <references refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" compoundref="_p_i_d__v1_8cpp" startline="58" endline="95">PID::Compute</references>
+        <references refid="class_yaw_control_1a5cb81cb5d393a4e699d8ef3e439f0508" compoundref="_yaw_control_8h" startline="33">pid</references>
+      </memberdef>
+      <memberdef kind="function" id="class_yaw_control_1a8b6a87bf53357f91887956156a6b5d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YawControl::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="37" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="288">
+        <label>PID</label>
+        <link refid="class_p_i_d"/>
+      </node>
+      <node id="287">
+        <label>YawControl</label>
+        <link refid="class_yaw_control"/>
+        <childnode refid="288" relation="usage">
+          <edgelabel>pid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" line="14" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h" bodystart="13" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_yaw_control_1a9e0187695308163234a9f3b2c99bac44" prot="public" virt="non-virtual"><scope>YawControl</scope><name>Compute</name></member>
+      <member refid="class_yaw_control_1a10ea3f55385cd5147dd40188e7052324" prot="public" virt="non-virtual"><scope>YawControl</scope><name>controllerDirection</name></member>
+      <member refid="class_yaw_control_1a8e99d64af1af977635e2002285312d55" prot="public" virt="non-virtual"><scope>YawControl</scope><name>currentAngle</name></member>
+      <member refid="class_yaw_control_1aa41467693352b1799eb976b169585630" prot="public" virt="non-virtual"><scope>YawControl</scope><name>desireAngle</name></member>
+      <member refid="class_yaw_control_1a8b6a87bf53357f91887956156a6b5d8b" prot="public" virt="non-virtual"><scope>YawControl</scope><name>init</name></member>
+      <member refid="class_yaw_control_1ad8a416a8b8073558db20d0ff5ef91dca" prot="public" virt="non-virtual"><scope>YawControl</scope><name>input</name></member>
+      <member refid="class_yaw_control_1ab87669046abf039385371758afe430a0" prot="public" virt="non-virtual"><scope>YawControl</scope><name>kd</name></member>
+      <member refid="class_yaw_control_1a880a50394593ea08de868cdf4c59c957" prot="public" virt="non-virtual"><scope>YawControl</scope><name>ki</name></member>
+      <member refid="class_yaw_control_1a7b7b9ed6077deec298df2369ed18e3db" prot="public" virt="non-virtual"><scope>YawControl</scope><name>kp</name></member>
+      <member refid="class_yaw_control_1ad3e681d91fb51c75f11ace973c7a4ad7" prot="public" virt="non-virtual"><scope>YawControl</scope><name>output</name></member>
+      <member refid="class_yaw_control_1a5cb81cb5d393a4e699d8ef3e439f0508" prot="public" virt="non-virtual"><scope>YawControl</scope><name>pid</name></member>
+      <member refid="class_yaw_control_1a20d1940f72057828b1de69d95cd8f986" prot="public" virt="non-virtual"><scope>YawControl</scope><name>pOn</name></member>
+      <member refid="class_yaw_control_1a8093b1d32053e8f59c09b78880bedd85" prot="public" virt="non-virtual"><scope>YawControl</scope><name>setpoint</name></member>
+      <member refid="class_yaw_control_1a0bb4c21c42f1e3f413ead1fcc51dd673" prot="public" virt="non-virtual"><scope>YawControl</scope><name>YawControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

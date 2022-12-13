@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_e_s_p32-_arduino-_servo-_library-master_21_80_81_2_e_s_p32-_arduino-_servo-_library-master_2_r_e_a_d_m_e_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#<sp/>ESP32-Arduino-Servo-Library<sp/>[![Build<sp/>Status](https://travis-ci.org/RoboticsBrno/ESP32-Arduino-Servo-Library.svg?branch=master)](https://travis-ci.org/RoboticsBrno/ESP32-Arduino-Servo-Library)</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Generate<sp/><ref refid="_config_8h_1a9de40e06982123e40c3c92b5db6d7640" kindref="member">RC</ref><sp/>servo<sp/>signal<sp/>on<sp/>a<sp/>selected<sp/>pin.</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Base<sp/>on<sp/>[servo<sp/>library<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>stm32f4<sp/>(d2a4a47)](https:</highlight><highlight class="comment">//github.com/arduino-libraries/Servo/blob/master/src/stm32f4/ServoTimers.h).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Interface</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">The<sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">is<sp/>similar<sp/>to<sp/>Arduino/Servo:<sp/>https:</highlight><highlight class="comment">//www.arduino.cc/en/Reference/Servo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">But<sp/>the<sp/>function<sp/>`atach()`<sp/>is<sp/>different:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">```c</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">bool<sp/>attach(</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>pin,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>channel<sp/>=<sp/>CHANNEL_NOT_ATTACHED,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>minAngle<sp/>=<sp/>MIN_ANGLE,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>maxAngle<sp/>=<sp/>MAX_ANGLE,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>minPulseWidth<sp/>=<sp/>MIN_PULSE_WIDTH,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>maxPulseWidth<sp/>=<sp/>MAX_PULSE_WIDTH</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">More<sp/>information<sp/>in<sp/>[source<sp/>code<sp/>documentation](https:</highlight><highlight class="comment">//github.com/RoboticsBrno/ESP32-Arduino-Servo-Library/blob/master/src/Servo.h#L73).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">Example:<sp/>[04-SimpleServoAngles](examples/04-SimpleServoAngles/04-SimpleServoAngles.ino)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">##<sp/>PlatformIO</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">This<sp/>library<sp/>is<sp/>also<sp/>available<sp/>at<sp/>the<sp/>[PlatformIO](https:</highlight><highlight class="comment">//platformio.org)<sp/>as<sp/>[ServoESP32](http://platformio.org/lib/show/1739/ServoESP32).</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/README.md"/>
+  </compounddef>
+</doxygen>

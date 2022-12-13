@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_wire_8cpp" kind="file">
+    <compoundname>Wire.cpp</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includes local="yes">esp32-hal-i2c.h</includes>
+    <includes refid="_wire_8h" local="yes">Wire.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <incdepgraph>
+      <node id="309">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="303">
+        <label>stdlib.h</label>
+      </node>
+      <node id="308">
+        <label>esp32-hal.h</label>
+      </node>
+      <node id="310">
+        <label>freertos/queue.h</label>
+      </node>
+      <node id="307">
+        <label>Wire.h</label>
+        <link refid="_wire_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>string.h</label>
+      </node>
+      <node id="306">
+        <label>esp32-hal-i2c.h</label>
+      </node>
+      <node id="312">
+        <label>Arduino.h</label>
+      </node>
+      <node id="302">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp</label>
+        <link refid="Wire.cpp"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>Stream.h</label>
+      </node>
+      <node id="305">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_wire_8cpp_1afd266ef032d8902b20877668d0c64b95" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char ERRORTEXT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ERRORTEXT</name>
+        <initializer>=
+    &quot;OK\0&quot;
+    &quot;DEVICE\0&quot;
+    &quot;ACK\0&quot;
+    &quot;TIMEOUT\0&quot;
+    &quot;BUS\0&quot;
+    &quot;BUSY\0&quot;
+    &quot;MEMORY\0&quot;
+    &quot;CONTINUE\0&quot;
+    &quot;NO_BEGIN\0&quot;
+    &quot;\0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" line="337" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="337" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a15cfa2221f118f881925c3d422d3b909" compoundref="_wire_8cpp" startline="350" endline="368">TwoWire::getErrorText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" prot="public" static="no" mutable="no">
+        <type><ref refid="class_two_wire" kindref="compound">TwoWire</ref></type>
+        <definition>TwoWire Wire</definition>
+        <argsstring></argsstring>
+        <name>Wire</name>
+        <initializer>= <ref refid="class_two_wire" kindref="compound">TwoWire</ref>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" line="381" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="381" bodyend="-1"/>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">MPU::init</referencedby>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+        <referencedby refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" compoundref="_i2_cdev_8cpp" startline="590" endline="648">I2Cdev::writeBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" compoundref="_i2_cdev_8cpp" startline="657" endline="719">I2Cdev::writeWords</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_wire_8cpp_1a7e022c5f80cca7f1e29fc670b9bc40a5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_two_wire" kindref="compound">TwoWire</ref></type>
+        <definition>TwoWire Wire1</definition>
+        <argsstring></argsstring>
+        <name>Wire1</name>
+        <initializer>= <ref refid="class_two_wire" kindref="compound">TwoWire</ref>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" line="382" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>TwoWire.cpp<sp/>-<sp/>TWI/I2C<sp/>library<sp/>for<sp/>Arduino<sp/>&amp;<sp/>Wiring</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>2006<sp/>Nicholas<sp/>Zambetti.<sp/><sp/>All<sp/>right<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>Modified<sp/>2012<sp/>by<sp/>Todd<sp/>Krein<sp/>(todd@krein.org)<sp/>to<sp/>implement<sp/>repeated<sp/>starts</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>Modified<sp/>December<sp/>2014<sp/>by<sp/>Ivan<sp/>Grokhotkov<sp/>(ivan@esp8266.com)<sp/>-<sp/>esp8266<sp/>support</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>Modified<sp/>April<sp/>2015<sp/>by<sp/>Hrsto<sp/>Gochkov<sp/>(ficeto@ficeto.com)<sp/>-<sp/>alternative<sp/>esp8266<sp/>support</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>Modified<sp/>Nov<sp/>2017<sp/>by<sp/>Chuck<sp/>Todd<sp/>(ctodd@cableone.net)<sp/>-<sp/>ESP32<sp/>ISR<sp/>Support</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp32-hal-i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wire_8h" kindref="compound">Wire.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_two_wire_1aece155ae8f00b175902cfa9b07b06c40" refkind="member"><highlight class="normal"><ref refid="class_two_wire_1aece155ae8f00b175902cfa9b07b06c40" kindref="member">TwoWire::TwoWire</ref>(uint8_t<sp/>bus_num)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>:num(bus_num<sp/>&amp;<sp/>1)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>,sda(-1)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>,scl(-1)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>,i2c(NULL)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>,rxIndex(0)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>,rxLength(0)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>,rxQueued(0)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>,txIndex(0)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>,txLength(0)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>,txAddress(0)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>,txQueued(0)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>,transmitting(0)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>,last_error(I2C_ERROR_OK)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>,_timeOutMillis(50)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" refkind="member"><highlight class="normal"><ref refid="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" kindref="member">TwoWire::~TwoWire</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2cRelease(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>=NULL;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" kindref="member">TwoWire::setPins</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sdaPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sclPin)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_e(</highlight><highlight class="stringliteral">&quot;can<sp/>not<sp/>set<sp/>pins<sp/>if<sp/>begin<sp/>was<sp/>already<sp/>called&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref><sp/>=<sp/>sdaPin;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref><sp/>=<sp/>sclPin;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" kindref="member">TwoWire::begin</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sdaPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sclPin,<sp/>uint32_t<sp/>frequency)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sdaPin<sp/>&lt;<sp/>0)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>default<sp/>param<sp/>passed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" kindref="member">num</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>==-1)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sdaPin<sp/>=<sp/>SDA;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//use<sp/>Default<sp/>Pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sdaPin<sp/>=<sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reuse<sp/>prior<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>==-1)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_e(</highlight><highlight class="stringliteral">&quot;no<sp/>Default<sp/>SDA<sp/>Pin<sp/>for<sp/>Second<sp/>Peripheral&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//no<sp/>Default<sp/>pin<sp/>for<sp/>Second<sp/>Peripheral</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sdaPin<sp/>=<sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reuse<sp/>prior<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sclPin<sp/>&lt;<sp/>0)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>default<sp/>param<sp/>passed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" kindref="member">num</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref><sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sclPin<sp/>=<sp/>SCL;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>Default<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sclPin<sp/>=<sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reuse<sp/>prior<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref><sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_e(</highlight><highlight class="stringliteral">&quot;no<sp/>Default<sp/>SCL<sp/>Pin<sp/>for<sp/>Second<sp/>Peripheral&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//no<sp/>Default<sp/>pin<sp/>for<sp/>Second<sp/>Peripheral</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sclPin<sp/>=<sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reuse<sp/>prior<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" kindref="member">sda</ref><sp/>=<sp/>sdaPin;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" kindref="member">scl</ref><sp/>=<sp/>sclPin;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref><sp/>=<sp/>i2cInit(<ref refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" kindref="member">num</ref>,<sp/>sdaPin,<sp/>sclPin,<sp/>frequency);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="class_two_wire_1a92bb9dc18d2dc7f5f06ebf605dededa7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a92bb9dc18d2dc7f5f06ebf605dededa7" kindref="member">TwoWire::setTimeOut</ref>(uint16_t<sp/>timeOutMillis)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" kindref="member">_timeOutMillis</ref><sp/>=<sp/>timeOutMillis;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_two_wire_1a31c5d086052617b8df91f0d6d607b2ae" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_two_wire_1a31c5d086052617b8df91f0d6d607b2ae" kindref="member">TwoWire::getTimeOut</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" kindref="member">_timeOutMillis</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="class_two_wire_1a0ab75123574d32fc130252d073009414" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a0ab75123574d32fc130252d073009414" kindref="member">TwoWire::setClock</ref>(uint32_t<sp/>frequency)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>i2cSetFrequency(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>,<sp/>frequency);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="class_two_wire_1a86f0aedd9e13524b9cf44b1dcfad0d05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a86f0aedd9e13524b9cf44b1dcfad0d05" kindref="member">TwoWire::getClock</ref>()</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i2cGetFrequency(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>stickBreaker<sp/>Nov<sp/>2017<sp/>ISR,<sp/>and<sp/>bigblock<sp/>64k-1</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" refkind="member"><highlight class="normal">i2c_err_t<sp/><ref refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" kindref="member">TwoWire::writeTransmission</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>*buff,<sp/>uint16_t<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>i2cWrite(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>,<sp/>address,<sp/>buff,<sp/>size,<sp/>sendStop,<sp/><ref refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" kindref="member">_timeOutMillis</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" refkind="member"><highlight class="normal">i2c_err_t<sp/><ref refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" kindref="member">TwoWire::readTransmission</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>*buff,<sp/>uint16_t<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop,<sp/>uint32_t<sp/>*readCount)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>i2cRead(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>,<sp/>address,<sp/>buff,<sp/>size,<sp/>sendStop,<sp/><ref refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" kindref="member">_timeOutMillis</ref>,<sp/>readCount);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">TwoWire::beginTransmission</ref>(uint16_t<sp/>address)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" kindref="member">transmitting</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" kindref="member">txAddress</ref><sp/>=<sp/>address;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref><sp/>=<sp/><ref refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" kindref="member">txQueued</ref>;<sp/></highlight><highlight class="comment">//<sp/>allow<sp/>multiple<sp/>beginTransmission(),write(),endTransmission(false)<sp/>until<sp/>endTransmission(true)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref><sp/>=<sp/><ref refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" kindref="member">txQueued</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>I2C_ERROR_OK;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*stickbreaker<sp/>isr</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" kindref="member">TwoWire::endTransmission</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop)<sp/><sp/></highlight><highlight class="comment">//<sp/>Assumes<sp/>Wire.beginTransaction(),<sp/>Wire.write()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" kindref="member">transmitting</ref><sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>txlength<sp/>is<sp/>howmany<sp/>bytes<sp/>in<sp/>txbuffer<sp/>have<sp/>been<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/><ref refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" kindref="member">writeTransmission</ref>(<ref refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" kindref="member">txAddress</ref>,<sp/>&amp;<ref refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" kindref="member">txBuffer</ref>[<ref refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" kindref="member">txQueued</ref>],<sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref><sp/>-<sp/>txQueued,<sp/>sendStop);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>==<sp/>I2C_ERROR_CONTINUE){</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>txQueued<sp/>=<sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>==<sp/>I2C_ERROR_OK){</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref><sp/>=<sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>txQueued<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>SendStop=true<sp/>will<sp/>restart<sp/>all<sp/>Queueing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>I2C_ERROR_NO_BEGIN;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" kindref="member">transmitting</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>==<sp/>I2C_ERROR_CONTINUE)?I2C_ERROR_OK:<ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref>;<sp/></highlight><highlight class="comment">//<sp/>Don&apos;t<sp/>return<sp/>Continue<sp/>for<sp/>compatibility.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>@stickBreaker<sp/>11/2017<sp/>fix<sp/>for<sp/>ReSTART<sp/>timeout,<sp/>ISR</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>size,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendStop)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//use<sp/>internal<sp/>Wire<sp/>rxBuffer,<sp/>multiple<sp/>requestFrom()&apos;s<sp/>may<sp/>be<sp/>pending,<sp/>try<sp/>to<sp/>share<sp/>rxBuffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>cnt<sp/>=<sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref>;<sp/></highlight><highlight class="comment">//<sp/>currently<sp/>queued<sp/>reads,<sp/>next<sp/>available<sp/>position<sp/>in<sp/>rxBuffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cnt<sp/>&lt;<sp/>(<ref refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" kindref="member">I2C_BUFFER_LENGTH</ref>-1)<sp/>&amp;&amp;<sp/>(size<sp/>+<sp/>cnt)<sp/>&lt;=<sp/><ref refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" kindref="member">I2C_BUFFER_LENGTH</ref>)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>any<sp/>room<sp/>left<sp/>in<sp/>rxBuffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref><sp/>+=<sp/>size;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//<sp/>no<sp/>room<sp/>to<sp/>receive<sp/>more!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_e(</highlight><highlight class="stringliteral">&quot;rxBuff<sp/>overflow<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>cnt<sp/>+<sp/>size);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>I2C_ERROR_MEMORY;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cnt;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/><ref refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" kindref="member">readTransmission</ref>(address,<sp/>&amp;<ref refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" kindref="member">rxBuffer</ref>[cnt],<sp/>size,<sp/>sendStop,<sp/>&amp;cnt);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref><sp/>=<sp/>cnt;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>!=<sp/>I2C_ERROR_CONTINUE){<sp/></highlight><highlight class="comment">//<sp/>not<sp/>a<sp/><sp/>buffered<sp/>ReSTART<sp/>operation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>this<sp/>operation<sp/>actually<sp/>moved<sp/>data,<sp/>queuing<sp/>is<sp/>done.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" kindref="member">txQueued</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>SendStop=true<sp/>will<sp/>restart<sp/>all<sp/>Queueing<sp/>or<sp/>error<sp/>condition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>!=<sp/>I2C_ERROR_OK){<sp/></highlight><highlight class="comment">//<sp/>ReSTART<sp/>on<sp/>read<sp/>does<sp/>not<sp/>return<sp/>any<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cnt;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">TwoWire::write</ref>(uint8_t<sp/>data)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" kindref="member">transmitting</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref><sp/>&gt;=<sp/><ref refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" kindref="member">I2C_BUFFER_LENGTH</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>I2C_ERROR_MEMORY;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" kindref="member">txBuffer</ref>[<ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref>]<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref><sp/>=<sp/><ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref><sp/>=<sp/>I2C_ERROR_NO_BEGIN;<sp/></highlight><highlight class="comment">//<sp/>no<sp/>begin,<sp/>not<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="class_two_wire_1a1957b4d5a6a997bdde436e9e40d131a7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">TwoWire::write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>quantity)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>quantity;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" kindref="member">write</ref>(data[i]))<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>quantity;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" kindref="member">TwoWire::available</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref><sp/>-<sp/><ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" kindref="member">TwoWire::read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref><sp/>&lt;<sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" kindref="member">rxBuffer</ref>[<ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref>];</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" kindref="member">TwoWire::peek</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref><sp/>&lt;<sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" kindref="member">rxBuffer</ref>[<ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref>];</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" kindref="member">TwoWire::flush</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" kindref="member">rxIndex</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" kindref="member">rxLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" kindref="member">txIndex</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" kindref="member">txLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" kindref="member">rxQueued</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" kindref="member">txQueued</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>i2cFlush(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>);<sp/></highlight><highlight class="comment">//<sp/>cleanup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="class_two_wire_1a403efa439e6faffcb1bd037324ab089a" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(uint8_t<sp/>address,<sp/>uint8_t<sp/>quantity,<sp/>uint8_t<sp/>sendStop)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(static_cast&lt;uint16_t&gt;(address),<sp/>static_cast&lt;size_t&gt;(quantity),<sp/>static_cast&lt;bool&gt;(sendStop));</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="class_two_wire_1a8de7e701eaf37edbc81368d3025d25ca" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>quantity,<sp/>uint8_t<sp/>sendStop)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(address,<sp/>static_cast&lt;size_t&gt;(quantity),<sp/>static_cast&lt;bool&gt;(sendStop));</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="class_two_wire_1a9171df9efde6e408d1ee46c9eebb1888" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(uint8_t<sp/>address,<sp/>uint8_t<sp/>quantity)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(static_cast&lt;uint16_t&gt;(address),<sp/>static_cast&lt;size_t&gt;(quantity),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="class_two_wire_1a13f8ff2e286edfefedf7e028e1d0fa56" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(uint16_t<sp/>address,<sp/>uint8_t<sp/>quantity)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(address,<sp/>static_cast&lt;size_t&gt;(quantity),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="class_two_wire_1a3236b714103b0f624bd5bb456cc5d053" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity)</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(static_cast&lt;uint16_t&gt;(address),<sp/>static_cast&lt;size_t&gt;(quantity),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="class_two_wire_1a581c98e7b71b36c2347e0c929d151bbd" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">TwoWire::requestFrom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sendStop)</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint8_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" kindref="member">requestFrom</ref>(static_cast&lt;uint16_t&gt;(address),<sp/>static_cast&lt;size_t&gt;(quantity),<sp/>static_cast&lt;bool&gt;(sendStop)));</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="class_two_wire_1a4435b647886cbd3edb91a5353809c339" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">TwoWire::beginTransmission</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>address)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">beginTransmission</ref>(static_cast&lt;uint16_t&gt;(address));</highlight></codeline>
+<codeline lineno="318"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="class_two_wire_1a1876ffdb16fb185c14a75e1251cef5e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">TwoWire::beginTransmission</ref>(uint8_t<sp/>address)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" kindref="member">beginTransmission</ref>(static_cast&lt;uint16_t&gt;(address));</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" kindref="member">TwoWire::endTransmission</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" kindref="member">endTransmission</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>stickbreaker<sp/>Nov2017<sp/>better<sp/>error<sp/>reporting</highlight></codeline>
+<codeline lineno="331"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="class_two_wire_1a748a7a4dbaf85933b0a7391c1aa48a7d" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_two_wire_1a748a7a4dbaf85933b0a7391c1aa48a7d" kindref="member">TwoWire::lastError</ref>()</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint8_t)<ref refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" kindref="member">last_error</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="_wire_8cpp_1afd266ef032d8902b20877668d0c64b95" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_wire_8cpp_1afd266ef032d8902b20877668d0c64b95" kindref="member">ERRORTEXT</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;OK\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DEVICE\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ACK\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TIMEOUT\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BUS\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BUSY\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MEMORY\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CONTINUE\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;NO_BEGIN\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;\0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350" refid="class_two_wire_1a15cfa2221f118f881925c3d422d3b909" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="class_two_wire_1a15cfa2221f118f881925c3d422d3b909" kindref="member">TwoWire::getErrorText</ref>(uint8_t<sp/>err)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>t<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>found<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>message<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;<ref refid="_wire_8cpp_1afd266ef032d8902b20877668d0c64b95" kindref="member">ERRORTEXT</ref>;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!found<sp/>&amp;&amp;<sp/>message[0])<sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>found<sp/>=<sp/>t<sp/>==<sp/>err;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!found)<sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>=<sp/>message<sp/>+<sp/>strlen(message)<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t++;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!found)<sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>message;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="comment">/*stickbreaker<sp/>Dump<sp/>i2c<sp/>Interrupt<sp/>buffer,<sp/>i2c<sp/>isr<sp/>Debugging</highlight></codeline>
+<codeline lineno="371"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="373" refid="class_two_wire_1a6339bf1ac5bfb7488e448ab8ca00959b" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="class_two_wire_1a6339bf1ac5bfb7488e448ab8ca00959b" kindref="member">TwoWire::setDebugFlags</ref>(<sp/>uint32_t<sp/>setBits,<sp/>uint32_t<sp/>resetBits){</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i2cDebug(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>,setBits,resetBits);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="class_two_wire_1ae53caa52b5273b35e69c90836e7fb9b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_two_wire_1ae53caa52b5273b35e69c90836e7fb9b0" kindref="member">TwoWire::busy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((i2cGetStatus(<ref refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" kindref="member">i2c</ref>)<sp/>&amp;<sp/>16<sp/>)==16);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="_wire_8h_1a35bd3de386d23ba02c35f820303db472" refkind="member"><highlight class="normal"><ref refid="class_two_wire" kindref="compound">TwoWire</ref><sp/><ref refid="_wire_8cpp_1a35bd3de386d23ba02c35f820303db472" kindref="member">Wire</ref><sp/>=<sp/><ref refid="class_two_wire" kindref="compound">TwoWire</ref>(0);</highlight></codeline>
+<codeline lineno="382" refid="_wire_8h_1a7e022c5f80cca7f1e29fc670b9bc40a5" refkind="member"><highlight class="normal"><ref refid="class_two_wire" kindref="compound">TwoWire</ref><sp/><ref refid="_wire_8cpp_1a7e022c5f80cca7f1e29fc670b9bc40a5" kindref="member">Wire1</ref><sp/>=<sp/><ref refid="class_two_wire" kindref="compound">TwoWire</ref>(1);</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp"/>
+  </compounddef>
+</doxygen>

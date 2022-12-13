@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespaceanonymous__namespace_02_multi_delegate_8h_03" kind="namespace">
+    <compoundname>anonymous_namespace{MultiDelegate.h}</compoundname>
+    <innerclass refid="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_p" prot="public">anonymous_namespace{MultiDelegate.h}::CallP</innerclass>
+    <innerclass refid="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_p_3_01_delegate_00_01void_00_01_i_s_q_u_e_u_e_00_01_p_8_8_8_4" prot="public">anonymous_namespace{MultiDelegate.h}::CallP&lt; Delegate, void, ISQUEUE, P...&gt;</innerclass>
+    <innerclass refid="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call" prot="public">anonymous_namespace{MultiDelegate.h}::Call</innerclass>
+    <innerclass refid="structanonymous__namespace_02_multi_delegate_8h_03_1_1_call_3_01_delegate_00_01void_00_01_i_s_q_u_e_u_e_01_4" prot="public">anonymous_namespace{MultiDelegate.h}::Call&lt; Delegate, void, ISQUEUE &gt;</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="49" column="1"/>
+  </compounddef>
+</doxygen>

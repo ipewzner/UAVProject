@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_b1b576e53e5172694ad2797ba1b9c0df" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue</compoundname>
+    <innerfile refid="circular__queue_8h">circular_queue.h</innerfile>
+    <innerfile refid="circular__queue__mp_8h">circular_queue_mp.h</innerfile>
+    <innerfile refid="_delegate_8h">Delegate.h</innerfile>
+    <innerfile refid="ghostl_8h">ghostl.h</innerfile>
+    <innerfile refid="_multi_delegate_8h">MultiDelegate.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/"/>
+  </compounddef>
+</doxygen>

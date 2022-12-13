@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_config_8h" kind="file">
+    <compoundname>Config.h</compoundname>
+    <includedby refid="_sensor_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h</includedby>
+    <includedby refid="_config_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.cpp</includedby>
+    <includedby refid="_motor_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h</includedby>
+    <includedby refid="_lora_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</includedby>
+    <invincdepgraph>
+      <node id="641">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp</label>
+        <link refid="_motor_array_8cpp"/>
+      </node>
+      <node id="627">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h</label>
+        <link refid="_b_m_p_8h"/>
+        <childnode refid="628" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+      </node>
+      <node id="628">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.cpp</label>
+        <link refid="_b_m_p_8cpp"/>
+      </node>
+      <node id="632">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp</label>
+        <link refid="_mini_joystick_8cpp"/>
+      </node>
+      <node id="630">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="_sensor_array_8cpp"/>
+      </node>
+      <node id="638">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</label>
+        <link refid="_motor_array_8h"/>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</label>
+        <link refid="_m_p_u_8h"/>
+        <childnode refid="634" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</label>
+        <link refid="_lora_8h"/>
+        <childnode refid="646" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</label>
+        <link refid="_servo_motor_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="629">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="_sensor_array_8h"/>
+        <childnode refid="630" relation="include">
+        </childnode>
+      </node>
+      <node id="625">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h</label>
+        <link refid="Config.h"/>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h</label>
+        <link refid="logic_8h"/>
+        <childnode refid="640" relation="include">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.cpp</label>
+        <link refid="_config_8cpp"/>
+      </node>
+      <node id="631">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h</label>
+        <link refid="_mini_joystick_8h"/>
+        <childnode refid="632" relation="include">
+        </childnode>
+      </node>
+      <node id="637">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+      </node>
+      <node id="626">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="631" relation="include">
+        </childnode>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp</label>
+        <link refid="_servo_motor_8cpp"/>
+      </node>
+      <node id="635">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Sensor.cpp</label>
+        <link refid="_sensor_8cpp"/>
+      </node>
+      <node id="640">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.cpp</label>
+        <link refid="logic_8cpp"/>
+      </node>
+      <node id="634">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp</label>
+        <link refid="_m_p_u_8cpp"/>
+      </node>
+      <node id="646">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp</label>
+        <link refid="_lora_8cpp"/>
+      </node>
+      <node id="642">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.cpp</label>
+        <link refid="_motor_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_config_8h_1a9de40e06982123e40c3c92b5db6d7640" prot="public" static="no">
+        <name>RC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="6" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a586542b79d00e4db7e1d5a667ae83a2b" prot="public" static="no">
+        <name>WIFI_SSID</name>
+        <initializer>&quot;ESP_TEST&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="10" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a8685d8aff7e570048090a3a51afceb07" prot="public" static="no">
+        <name>WIFI_PASSWORD</name>
+        <initializer>&quot;yourPassword&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="11" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a55aa2fc3102fa4558b32e27ef81a476a" prot="public" static="no">
+        <name>WIFI_LOCAL</name>
+        <initializer>&quot;esp32&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="12" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a5ff6e798033f03e74730e99f01936f84" prot="public" static="no">
+        <name>SPACE</name>
+        <initializer>&quot; &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="14" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1ac93b599d4f074c20da9a3638d5f20d90" prot="public" static="no">
+        <name>MPU9250_ADDR</name>
+        <initializer>0x68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="16" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a64daeac0e223512b505ab0caa06ddbd8" prot="public" static="no">
+        <name>BMP280_ADDR</name>
+        <initializer>0x76</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="17" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a8b8af8bedcac87c0d3c68634448b94a7" prot="public" static="no">
+        <name>MSG_BUF_SIZE</name>
+        <initializer>250</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="19" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a2efedfac91899c2fcfb08f135d408a09" prot="public" static="no">
+        <name>LORA_SERIAL_SPEED</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="20" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1aedb6d8b781243f8f99731de9f438b957" prot="public" static="no">
+        <name>ALTITUDE_CONST</name>
+        <initializer>1013.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="21" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_b_m_p_1aaedab5099a4ca77cff236c2efbae2540" compoundref="_b_m_p_8cpp" startline="26" endline="32">BMP::asciiResult</referencedby>
+        <referencedby refid="class_b_m_p_1a40fa5647751168ac452023a2293dc753" compoundref="_b_m_p_8cpp" startline="43" endline="55">BMP::jsonResult</referencedby>
+        <referencedby refid="class_b_m_p_1a573a85bdb673391f0e7bcee1eb90ec01" compoundref="_b_m_p_8cpp" startline="34" endline="41">BMP::toString</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1abc0f5aad9466c1bcd36dcc95b367d1e8" prot="public" static="no">
+        <name>SENSOR_NAME_SIZE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="22" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a81eb3bc9bb00b62574bed7237a9a6d77" prot="public" static="no">
+        <name>ESP_32NEW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="24" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a556519981281d5b0fc6f662435cf565b" prot="public" static="no">
+        <name>MPU_SDA_PIN</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="79" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a94a1a28b9d00e148ca55e875eb56b129" prot="public" static="no">
+        <name>MPU_SCL_PIN</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="80" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a9afa37bcf86fc9a23565f3f352c7eda6" prot="public" static="no">
+        <name>LORA_PIN_M0</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="82" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1ab6facd38b2aa82a1ddc3825a18af20cb" prot="public" static="no">
+        <name>LORA_PIN_M1</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="83" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a41f045795119a6c5f60a26b515450f59" prot="public" static="no">
+        <name>LORA_PIN_RX</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="84" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a474ce21c235275d20dec006753e51fc6" prot="public" static="no">
+        <name>LORA_PIN_TX</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="85" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a3bf58bee974f1f954292855505d471c8" prot="public" static="no">
+        <name>LORA_PIN_AUX</name>
+        <initializer>36</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="86" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a98c7a97e19fc2cfa019bbd2d7e818f58" prot="public" static="no">
+        <name>MOTOR1</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="88" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a9dd61fc755020c90dbfb072e2f0492e8" prot="public" static="no">
+        <name>MOTOR2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="89" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a26cdcf4c88a7cf7c78c69c232b4b54c2" prot="public" static="no">
+        <name>MOTOR3</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="90" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a59f0366f62cecf9073768b26ae642b41" prot="public" static="no">
+        <name>MOTOR4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="91" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1ad08f4906b5a5a9728ec62992bed242e1" prot="public" static="no">
+        <name>MOTOR5</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="92" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a85e3cfe1ab0344b27a74307e9bab8f8d" prot="public" static="no">
+        <name>MINI_JOY_1_X</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="109" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a450cf1cc5c8934b836431f8d51bcdec1" prot="public" static="no">
+        <name>MINI_JOY_1_Y</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="110" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a24f41bc6796ce69979bc427e6595ca4f" prot="public" static="no">
+        <name>MINI_JOY_1_BUTTON</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="111" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a23507d9bb69c877d82d44a48d1232b21" prot="public" static="no">
+        <name>MINI_JOY_2_X</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="112" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a11d7e2f07e14be99db488f1095d1ef37" prot="public" static="no">
+        <name>MINI_JOY_2_Y</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="113" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1aa5b1847c0512a799ba8016c64701c20e" prot="public" static="no">
+        <name>MINI_JOY_2_BUTTON</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" line="114" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Config.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CONFIG_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CONFIG_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_config_8h_1a9de40e06982123e40c3c92b5db6d7640" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RC</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="comment">//#define<sp/>TRANSCEIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>GUI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_config_8h_1a586542b79d00e4db7e1d5a667ae83a2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIFI_SSID<sp/><sp/>&quot;ESP_TEST&quot;</highlight></codeline>
+<codeline lineno="11" refid="_config_8h_1a8685d8aff7e570048090a3a51afceb07" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIFI_PASSWORD<sp/><sp/>&quot;yourPassword&quot;</highlight></codeline>
+<codeline lineno="12" refid="_config_8h_1a55aa2fc3102fa4558b32e27ef81a476a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIFI_LOCAL<sp/>&quot;esp32&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//mDNS<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_config_8h_1a5ff6e798033f03e74730e99f01936f84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPACE<sp/>&quot;<sp/>&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_config_8h_1ac93b599d4f074c20da9a3638d5f20d90" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MPU9250_ADDR<sp/>0x68</highlight></codeline>
+<codeline lineno="17" refid="_config_8h_1a64daeac0e223512b505ab0caa06ddbd8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BMP280_ADDR<sp/>0x76</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_config_8h_1a8b8af8bedcac87c0d3c68634448b94a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG_BUF_SIZE<sp/>250</highlight></codeline>
+<codeline lineno="20" refid="_config_8h_1a2efedfac91899c2fcfb08f135d408a09" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_SERIAL_SPEED<sp/>9600</highlight></codeline>
+<codeline lineno="21" refid="_config_8h_1aedb6d8b781243f8f99731de9f438b957" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ALTITUDE_CONST<sp/>1013.25</highlight></codeline>
+<codeline lineno="22" refid="_config_8h_1abc0f5aad9466c1bcd36dcc95b367d1e8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_NAME_SIZE<sp/>10</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_config_8h_1a81eb3bc9bb00b62574bed7237a9a6d77" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESP_32NEW</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="comment">//#define<sp/>ESP_32<sp/><sp/><sp/><sp/><sp/>//doit<sp/>esp32<sp/>devkit<sp/>v1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ESP_8266</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TTGO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>MEGA<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>MINI<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">#ifdef<sp/>RC</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment">#define<sp/>SERVO1<sp/>1</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">#define<sp/>SERVO2<sp/>2</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">#define<sp/>SERVO3<sp/>3</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">#define<sp/>ESC0<sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">#include<sp/>&lt;Servo.h&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">#endif<sp/>//<sp/>RC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TTGO</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MPU_SDA_PIN<sp/>21</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SCL_PIN<sp/>22</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M0<sp/>12</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M1<sp/>13</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_RX<sp/>2</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_TX<sp/>15</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_AUX<sp/>NULL</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TTGO</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEGA</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M0<sp/>7</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M1<sp/>6</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_RX<sp/>15</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_TX<sp/>14</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_AUX<sp/>NULL</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MEGA</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MINI</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M0<sp/>5</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M1<sp/>4</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_RX<sp/>3</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_TX<sp/>2</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_AUX<sp/>NULL</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MINI</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP_32</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SDA_PIN<sp/>21</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SCL_PIN<sp/>22</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M0<sp/>27</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M1<sp/>26</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_RX<sp/>33</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_TX<sp/>25</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_AUX<sp/>36</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ESP_32</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP_32NEW</highlight></codeline>
+<codeline lineno="79" refid="_config_8h_1a556519981281d5b0fc6f662435cf565b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SDA_PIN<sp/>21</highlight></codeline>
+<codeline lineno="80" refid="_config_8h_1a94a1a28b9d00e148ca55e875eb56b129" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SCL_PIN<sp/>22</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_config_8h_1a9afa37bcf86fc9a23565f3f352c7eda6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M0<sp/>27</highlight></codeline>
+<codeline lineno="83" refid="_config_8h_1ab6facd38b2aa82a1ddc3825a18af20cb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M1<sp/>26</highlight></codeline>
+<codeline lineno="84" refid="_config_8h_1a41f045795119a6c5f60a26b515450f59" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_RX<sp/>33</highlight></codeline>
+<codeline lineno="85" refid="_config_8h_1a474ce21c235275d20dec006753e51fc6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_TX<sp/>25</highlight></codeline>
+<codeline lineno="86" refid="_config_8h_1a3bf58bee974f1f954292855505d471c8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_AUX<sp/>36</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_config_8h_1a98c7a97e19fc2cfa019bbd2d7e818f58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTOR1<sp/>15</highlight></codeline>
+<codeline lineno="89" refid="_config_8h_1a9dd61fc755020c90dbfb072e2f0492e8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MOTOR2<sp/>2</highlight></codeline>
+<codeline lineno="90" refid="_config_8h_1a26cdcf4c88a7cf7c78c69c232b4b54c2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MOTOR3<sp/>0</highlight></codeline>
+<codeline lineno="91" refid="_config_8h_1a59f0366f62cecf9073768b26ae642b41" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MOTOR4<sp/>4</highlight></codeline>
+<codeline lineno="92" refid="_config_8h_1ad08f4906b5a5a9728ec62992bed242e1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MOTOR5<sp/>16</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>GPS_PPS<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>GPS_RX<sp/>18<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>GPS_TX<sp/>19<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ESP_32</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP_8266</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SDA_PIN<sp/>4</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_SCL_PIN<sp/>6</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M0<sp/>10</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_M1<sp/>9</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_RX<sp/>8</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_TX<sp/>11</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LORA_PIN_AUX<sp/>NULL</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ESP_8266</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_config_8h_1a85e3cfe1ab0344b27a74307e9bab8f8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINI_JOY_1_X<sp/><sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="110" refid="_config_8h_1a450cf1cc5c8934b836431f8d51bcdec1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MINI_JOY_1_Y<sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="111" refid="_config_8h_1a24f41bc6796ce69979bc427e6595ca4f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MINI_JOY_1_BUTTON<sp/><sp/><sp/>0//17</highlight></codeline>
+<codeline lineno="112" refid="_config_8h_1a23507d9bb69c877d82d44a48d1232b21" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MINI_JOY_2_X<sp/><sp/><sp/><sp/>4//0</highlight></codeline>
+<codeline lineno="113" refid="_config_8h_1a11d7e2f07e14be99db488f1095d1ef37" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MINI_JOY_2_Y<sp/><sp/><sp/><sp/>16//4</highlight></codeline>
+<codeline lineno="114" refid="_config_8h_1aa5b1847c0512a799ba8016c64701c20e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MINI_JOY_2_BUTTON<sp/><sp/><sp/>17//16</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Config.h"/>
+  </compounddef>
+</doxygen>

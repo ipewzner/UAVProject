@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_controler_array_class" kind="class" prot="public">
+    <compoundname>ControlerArrayClass</compoundname>
+    <includes refid="_controler_array_8h" local="no">ControlerArray.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controler_array_class_1a396a00c5f68376a1e0d2a60fea7c57fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControlerArrayClass::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h" line="13" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerArray.h" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_controler_array_class_1a396a00c5f68376a1e0d2a60fea7c57fd" prot="public" virt="non-virtual"><scope>ControlerArrayClass</scope><name>init</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

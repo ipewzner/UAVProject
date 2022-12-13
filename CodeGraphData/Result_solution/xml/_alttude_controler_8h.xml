@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_alttude_controler_8h" kind="file">
+    <compoundname>AlttudeControler.h</compoundname>
+    <includes local="yes">arduino.h</includes>
+    <includes refid="_p_i_d__v1_8h" local="no">PID_v1.h</includes>
+    <includedby refid="_alttude_controler_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.cpp</includedby>
+    <incdepgraph>
+      <node id="459">
+        <label>PID_v1.h</label>
+        <link refid="_p_i_d__v1_8h"/>
+      </node>
+      <node id="458">
+        <label>arduino.h</label>
+      </node>
+      <node id="457">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h</label>
+        <link refid="AlttudeControler.h"/>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="461">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.cpp</label>
+        <link refid="_alttude_controler_8cpp"/>
+      </node>
+      <node id="460">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h</label>
+        <link refid="AlttudeControler.h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_alttude_controler" prot="public">AlttudeControler</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>AlttudeControler.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ALTTUDECONTROLER_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ALTTUDECONTROLER_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARDUINO)<sp/>&amp;&amp;<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_p_i_d__v1_8h" kindref="compound">PID_v1.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_alttude_controler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_alttude_controler" kindref="compound">AlttudeControler</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d" kindref="compound">PID</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_alttude_controler_1a593e6eedcaccccc9141815af2e860ed3" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h"/>
+  </compounddef>
+</doxygen>

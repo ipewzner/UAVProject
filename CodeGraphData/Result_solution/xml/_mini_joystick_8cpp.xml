@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_mini_joystick_8cpp" kind="file">
+    <compoundname>MiniJoystick.cpp</compoundname>
+    <includes refid="_mini_joystick_8h" local="yes">MiniJoystick.h</includes>
+    <incdepgraph>
+      <node id="746">
+        <label>WString.h</label>
+      </node>
+      <node id="743">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp</label>
+        <link refid="MiniJoystick.cpp"/>
+        <childnode refid="744" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="744">
+        <label>MiniJoystick.h</label>
+        <link refid="_mini_joystick_8h"/>
+        <childnode refid="745" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="745">
+        <label>Sensor.h</label>
+        <link refid="_sensor_8h"/>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_mini_joystick_8cpp_1a1661a49c220c89d058ac809b2ebd9472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int normalize</definition>
+        <argsstring>(int x, int in_min, int in_max, int out_min, int out_max)</argsstring>
+        <name>normalize</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in_min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>in_max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>out_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" line="74" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="74" bodyend="77"/>
+        <referencedby refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" compoundref="_mini_joystick_8cpp" startline="79" endline="90">MiniJoystick::axisValue</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_mini_joystick_8h" kindref="compound">MiniJoystick.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" refkind="member"><highlight class="normal"><ref refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" kindref="member">MiniJoystick::MiniJoystick</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>legX,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>legY,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>button)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/><ref refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref><sp/>=<sp/>legX;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref><sp/>=<sp/>legY;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;button<sp/>=<sp/><ref refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" kindref="member">button</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(button,<sp/>INPUT);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" kindref="member">min</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" kindref="member">min</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" kindref="member">max</ref><sp/>=<sp/>-1000;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" kindref="member">max</ref><sp/>=<sp/>-1000;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" kindref="member">mid</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" kindref="member">mid</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" kindref="member">MiniJoystick::init</ref>(){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\nplaese<sp/>don&apos;t<sp/>tuch<sp/>the<sp/>joystic<sp/>for<sp/>secund&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" kindref="member">mid</ref><sp/>=<sp/>int(analogRead(<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref>));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" kindref="member">mid</ref><sp/>=<sp/>int(analogRead(<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref>));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ToDo:<sp/>fix<sp/>it,<sp/>becuse<sp/>this<sp/>only<sp/>mesure<sp/>onec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\nplaese<sp/>move<sp/>the<sp/>joystic<sp/>up<sp/>and<sp/>down<sp/>for<sp/>clibretion,<sp/>when<sp/>you<sp/>finish<sp/>press<sp/>the<sp/>joystic&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//while<sp/>(buttonUnpushState<sp/>==<sp/>digitalRead(button))<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" kindref="member">updateRange</ref>(&amp;<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(analogRead(<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref>)));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" kindref="member">updateRange</ref>(&amp;<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(analogRead(<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>.<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref>)));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\ndone!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" refkind="member"><highlight class="normal">String<sp/><ref refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" kindref="member">MiniJoystick::asciiResult</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>String(<ref refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" kindref="member">getX</ref>())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>String(<ref refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" kindref="member">getY</ref>())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>String(digitalRead(<ref refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" kindref="member">button</ref>))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" refkind="member"><highlight class="normal">String<sp/><ref refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" kindref="member">MiniJoystick::toString</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\n******************<sp/>MiniJoystick<sp/>*******************&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nx<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" kindref="member">getX</ref>());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\y<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(<ref refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" kindref="member">getY</ref>());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\nbutton<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>String(digitalRead(<ref refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" kindref="member">button</ref>));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n******************<sp/>MiniJoystick<sp/>END<sp/>*******************&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519" refkind="member"><highlight class="normal">DynamicJsonDocument<sp/><ref refid="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519" kindref="member">MiniJoystick::jsonResult</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/>json(1024);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//json.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" kindref="member">getX</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>json[</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" kindref="member">getY</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//json[&quot;botton&quot;]=<sp/>digitalRead(button);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>json.shrinkToFit();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" kindref="member">MiniJoystick::updateRange</ref>(<ref refid="struct_mini_joystick_1_1_axis" kindref="compound">Axis</ref>*<sp/>axis,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input<sp/>&gt;<sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" kindref="member">max</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" kindref="member">max</ref><sp/>=<sp/>input;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input<sp/>&lt;<sp/>axis-&gt;min)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" kindref="member">min</ref><sp/>=<sp/>input;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_mini_joystick_8cpp_1a1661a49c220c89d058ac809b2ebd9472" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_mini_joystick_8cpp_1a1661a49c220c89d058ac809b2ebd9472" kindref="member">normalize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in_min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>in_max,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>out_max)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((in_max<sp/>-<sp/>in_min)<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;<sp/></highlight><highlight class="comment">//don&apos;t<sp/>divide<sp/>in<sp/>0!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(x<sp/>-<sp/>in_min)<sp/>*<sp/>(out_max<sp/>-<sp/>out_min)<sp/>/<sp/>(in_max<sp/>-<sp/>in_min)<sp/>+<sp/>out_min;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" kindref="member">MiniJoystick::axisValue</ref>(<ref refid="struct_mini_joystick_1_1_axis" kindref="compound">Axis</ref>*<sp/>axis)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>int(analogRead(axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" kindref="member">leg</ref>));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" kindref="member">updateRange</ref>(axis,<sp/>result);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>&lt;<sp/>axis-&gt;mid)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="_mini_joystick_8cpp_1a1661a49c220c89d058ac809b2ebd9472" kindref="member">normalize</ref>(result,<sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" kindref="member">min</ref>,<sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" kindref="member">mid</ref>,<sp/>-255,<sp/>0);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="_mini_joystick_8cpp_1a1661a49c220c89d058ac809b2ebd9472" kindref="member">normalize</ref>(result,<sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" kindref="member">mid</ref>,<sp/>axis-&gt;<ref refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" kindref="member">max</ref>,<sp/>0,<sp/>255);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" kindref="member">MiniJoystick::getX</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" kindref="member">axisValue</ref>(&amp;<ref refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/>if(result<sp/><sp/>&lt;<sp/>Xmid)<sp/><sp/>{<sp/><sp/><sp/><sp/><sp/>//0-&gt;127</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>range<sp/>=<sp/>(Xmid<sp/>-<sp/>Xmin);</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/><sp/>-(<sp/>255-<sp/>constrain((result<sp/>/<sp/>(range<sp/>/<sp/>255)),0,255));</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(result<sp/>&gt;<sp/>Xmid)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//127-&gt;254</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>range<sp/>=<sp/>(Xmax-Xmid);</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/><sp/>constrain((result<sp/>-<sp/>Xmid)<sp/>/<sp/>(range<sp/>/<sp/>255),0,255);</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/>else<sp/>return<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" kindref="member">MiniJoystick::getY</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" kindref="member">axisValue</ref>(&amp;<ref refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(result<sp/>&lt;<sp/>Ymid)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/>//0-&gt;127</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>range<sp/>=<sp/>(Ymid<sp/>-<sp/>Ymin);</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/><sp/>-(<sp/>255-<sp/>constrain((result<sp/>/<sp/>(range<sp/>/<sp/>255)),0,255));</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(result<sp/>&gt;<sp/>Ymid)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//127-&gt;254</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>range<sp/>=<sp/>(Ymax<sp/>-<sp/>Ymid);</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/><sp/>constrain((result<sp/>-<sp/>Ymid)<sp/>/<sp/>(range<sp/>/<sp/>255),0,255);</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/>else<sp/>return<sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_mini_joystick_1a6ec15972667accbc99eab22adb91afa8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_mini_joystick_1a6ec15972667accbc99eab22adb91afa8" kindref="member">MiniJoystick::getButton</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0<sp/>==<sp/>analogRead(<ref refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" kindref="member">button</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp"/>
+  </compounddef>
+</doxygen>

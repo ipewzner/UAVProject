@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mini_joystick" kind="class" prot="public">
+    <compoundname>MiniJoystick</compoundname>
+    <basecompoundref refid="class_sensor" prot="public" virt="non-virtual">Sensor</basecompoundref>
+    <includes refid="_mini_joystick_8h" local="no">MiniJoystick.h</includes>
+    <innerclass refid="struct_mini_joystick_1_1_axis" prot="public">MiniJoystick::Axis</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" prot="public" static="no" mutable="no">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t MiniJoystick::button</definition>
+        <argsstring></argsstring>
+        <name>button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="10" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" compoundref="_mini_joystick_8cpp" startline="38" endline="44">asciiResult</referencedby>
+        <referencedby refid="class_mini_joystick_1a6ec15972667accbc99eab22adb91afa8" compoundref="_mini_joystick_8cpp" startline="124" endline="126">getButton</referencedby>
+        <referencedby refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" compoundref="_mini_joystick_8cpp" startline="7" endline="20">MiniJoystick</referencedby>
+        <referencedby refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" compoundref="_mini_joystick_8cpp" startline="46" endline="53">toString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mini_joystick_1afeee223618d517616fd741deb88390d6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_mini_joystick_1_1_axis" kindref="compound">Axis</ref></type>
+        <definition>Axis MiniJoystick::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" compoundref="_mini_joystick_8cpp" startline="92" endline="105">getX</referencedby>
+        <referencedby refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" compoundref="_mini_joystick_8cpp" startline="22" endline="36">init</referencedby>
+        <referencedby refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" compoundref="_mini_joystick_8cpp" startline="7" endline="20">MiniJoystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_mini_joystick_1_1_axis" kindref="compound">Axis</ref></type>
+        <definition>Axis MiniJoystick::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="17" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" compoundref="_mini_joystick_8cpp" startline="107" endline="122">getY</referencedby>
+        <referencedby refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" compoundref="_mini_joystick_8cpp" startline="22" endline="36">init</referencedby>
+        <referencedby refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" compoundref="_mini_joystick_8cpp" startline="7" endline="20">MiniJoystick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mini_joystick_1a0bd27bfeec37658994b433d407619ad0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MiniJoystick::buttonUnpushState</definition>
+        <argsstring></argsstring>
+        <name>buttonUnpushState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="18" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MiniJoystick::MiniJoystick</definition>
+        <argsstring>(char *name, size_t x, size_t y, size_t button)</argsstring>
+        <name>MiniJoystick</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="9" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="7" bodyend="20"/>
+        <references refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" compoundref="_mini_joystick_8h" startline="10">button</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" compoundref="_mini_joystick_8h" startline="13">MiniJoystick::Axis::leg</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::max</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::mid</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::min</references>
+        <references refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" compoundref="_sensor_8h" startline="12">Sensor::name</references>
+        <references refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" compoundref="_mini_joystick_8h" startline="17">x</references>
+        <references refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" compoundref="_mini_joystick_8h" startline="17">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool MiniJoystick::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="class_sensor_1a42681155fbb4e23d371f50a379ebf351">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="19" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="22" bodyend="36"/>
+        <references refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" compoundref="_mini_joystick_8h" startline="13">MiniJoystick::Axis::leg</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::mid</references>
+        <references refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" compoundref="_mini_joystick_8cpp" startline="65" endline="72">updateRange</references>
+        <references refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" compoundref="_mini_joystick_8h" startline="17">x</references>
+        <references refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" compoundref="_mini_joystick_8h" startline="17">y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String MiniJoystick::asciiResult</definition>
+        <argsstring>()</argsstring>
+        <name>asciiResult</name>
+        <reimplements refid="class_sensor_1a990933ca2756162944964b4ee310a7f9">asciiResult</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="20" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="38" bodyend="44"/>
+        <references refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" compoundref="_mini_joystick_8h" startline="10">button</references>
+        <references refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" compoundref="_mini_joystick_8cpp" startline="92" endline="105">getX</references>
+        <references refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" compoundref="_mini_joystick_8cpp" startline="107" endline="122">getY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String MiniJoystick::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_sensor_1a97c1e3f398570ff28aeb5f9234a6fe58">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="21" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="46" bodyend="53"/>
+        <references refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" compoundref="_mini_joystick_8h" startline="10">button</references>
+        <references refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" compoundref="_mini_joystick_8cpp" startline="92" endline="105">getX</references>
+        <references refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" compoundref="_mini_joystick_8cpp" startline="107" endline="122">getY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>DynamicJsonDocument</type>
+        <definition>DynamicJsonDocument MiniJoystick::jsonResult</definition>
+        <argsstring>()</argsstring>
+        <name>jsonResult</name>
+        <reimplements refid="class_sensor_1abe9626a7ffd5294bb75f1b7728e9582d">jsonResult</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="22" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="55" bodyend="63"/>
+        <references refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" compoundref="_mini_joystick_8cpp" startline="92" endline="105">getX</references>
+        <references refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" compoundref="_mini_joystick_8cpp" startline="107" endline="122">getY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MiniJoystick::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="23" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="92" bodyend="105"/>
+        <references refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" compoundref="_mini_joystick_8cpp" startline="79" endline="90">axisValue</references>
+        <references refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" compoundref="_mini_joystick_8h" startline="17">x</references>
+        <referencedby refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" compoundref="_mini_joystick_8cpp" startline="38" endline="44">asciiResult</referencedby>
+        <referencedby refid="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519" compoundref="_mini_joystick_8cpp" startline="55" endline="63">jsonResult</referencedby>
+        <referencedby refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" compoundref="_mini_joystick_8cpp" startline="46" endline="53">toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MiniJoystick::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="24" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="107" bodyend="122"/>
+        <references refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" compoundref="_mini_joystick_8cpp" startline="79" endline="90">axisValue</references>
+        <references refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" compoundref="_mini_joystick_8h" startline="17">y</references>
+        <referencedby refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" compoundref="_mini_joystick_8cpp" startline="38" endline="44">asciiResult</referencedby>
+        <referencedby refid="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519" compoundref="_mini_joystick_8cpp" startline="55" endline="63">jsonResult</referencedby>
+        <referencedby refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" compoundref="_mini_joystick_8cpp" startline="46" endline="53">toString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1a6ec15972667accbc99eab22adb91afa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MiniJoystick::getButton</definition>
+        <argsstring>()</argsstring>
+        <name>getButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="25" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="124" bodyend="126"/>
+        <references refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" compoundref="_mini_joystick_8h" startline="10">button</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MiniJoystick::axisValue</definition>
+        <argsstring>(Axis *axis)</argsstring>
+        <name>axisValue</name>
+        <param>
+          <type><ref refid="struct_mini_joystick_1_1_axis" kindref="compound">Axis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="26" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="79" bodyend="90"/>
+        <references refid="struct_mini_joystick_1_1_axis_1a7a5f51a66c668ec72a003e5c617e1525" compoundref="_mini_joystick_8h" startline="13">MiniJoystick::Axis::leg</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::max</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a38521397c76c7108b267e43aa6d41d0c" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::mid</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::min</references>
+        <references refid="_mini_joystick_8cpp_1a1661a49c220c89d058ac809b2ebd9472" compoundref="_mini_joystick_8cpp" startline="74" endline="77">normalize</references>
+        <references refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" compoundref="_mini_joystick_8cpp" startline="65" endline="72">updateRange</references>
+        <referencedby refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" compoundref="_mini_joystick_8cpp" startline="92" endline="105">getX</referencedby>
+        <referencedby refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" compoundref="_mini_joystick_8cpp" startline="107" endline="122">getY</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MiniJoystick::updateRange</definition>
+        <argsstring>(Axis *axis, int input)</argsstring>
+        <name>updateRange</name>
+        <param>
+          <type><ref refid="struct_mini_joystick_1_1_axis" kindref="compound">Axis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="27" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.cpp" bodystart="65" bodyend="72"/>
+        <references refid="struct_mini_joystick_1_1_axis_1a8a122d58153b8f3cd2138ada435d2264" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::max</references>
+        <references refid="struct_mini_joystick_1_1_axis_1a63da7c5640bea0f63aebc07200b40191" compoundref="_mini_joystick_8h" startline="14">MiniJoystick::Axis::min</references>
+        <referencedby refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" compoundref="_mini_joystick_8cpp" startline="79" endline="90">axisValue</referencedby>
+        <referencedby refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" compoundref="_mini_joystick_8cpp" startline="22" endline="36">init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="138">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+      <node id="137">
+        <label>MiniJoystick</label>
+        <link refid="class_mini_joystick"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="141">
+        <label>MiniJoystick::Axis</label>
+        <link refid="struct_mini_joystick_1_1_axis"/>
+      </node>
+      <node id="140">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+      <node id="139">
+        <label>MiniJoystick</label>
+        <link refid="class_mini_joystick"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+        <childnode refid="141" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" line="7" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_mini_joystick_1ad4e0dc375a4b8793a4347f1878140a1e" prot="public" virt="virtual"><scope>MiniJoystick</scope><name>asciiResult</name></member>
+      <member refid="class_mini_joystick_1ad3364cbe6173f93cad962e0a24d8b3c0" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>axisValue</name></member>
+      <member refid="class_mini_joystick_1a5fc6ba1d90cb8ef8c07d86ed53d0148b" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>button</name></member>
+      <member refid="class_mini_joystick_1a0bd27bfeec37658994b433d407619ad0" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>buttonUnpushState</name></member>
+      <member refid="class_mini_joystick_1a6ec15972667accbc99eab22adb91afa8" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>getButton</name></member>
+      <member refid="class_mini_joystick_1ac6040f4e656cf8dbd9a72b9efe3992d1" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>getX</name></member>
+      <member refid="class_mini_joystick_1aad9da4b945056a91f2dc01c0bbab9600" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>getY</name></member>
+      <member refid="class_mini_joystick_1a3eb5f14e26e100d45f0c1770a1f5efa5" prot="public" virt="virtual"><scope>MiniJoystick</scope><name>init</name></member>
+      <member refid="class_mini_joystick_1a0d29ac7e8d45beaebbfd4a089a356519" prot="public" virt="virtual"><scope>MiniJoystick</scope><name>jsonResult</name></member>
+      <member refid="class_mini_joystick_1abe47e0fbe8652e76eefc4fa87b7f372d" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>MiniJoystick</name></member>
+      <member refid="class_sensor_1a69eda08903e47cdd7b2f8d8d53f20303" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>name</name></member>
+      <member refid="class_mini_joystick_1a497aba8c2c659887f526945b79a51850" prot="public" virt="virtual"><scope>MiniJoystick</scope><name>toString</name></member>
+      <member refid="class_mini_joystick_1a456fbe08c8c3a56f8e08ffb3bca56f42" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>updateRange</name></member>
+      <member refid="class_mini_joystick_1afeee223618d517616fd741deb88390d6" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>x</name></member>
+      <member refid="class_mini_joystick_1af1721579911b980182c23a7abb3afbb0" prot="public" virt="non-virtual"><scope>MiniJoystick</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

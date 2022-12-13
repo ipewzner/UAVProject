@@ -1,0 +1,948 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_8_u_a_v_project_8vsarduino_8h" kind="file">
+    <compoundname>.UAVProject.vsarduino.h</compoundname>
+    <includes local="yes">arduino.h</includes>
+    <includes local="no">pins_arduino.h</includes>
+    <includes local="yes">UAVProject.ino</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h</includes>
+    <includes local="no">C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</includes>
+    <includes local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h</includes>
+    <incdepgraph>
+      <node id="341">
+        <label>pins_arduino.h</label>
+      </node>
+      <node id="350">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/BMP.h</label>
+      </node>
+      <node id="339">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h</label>
+        <link refid=".UAVProject.vsarduino.h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>UAVProject.ino</label>
+      </node>
+      <node id="344">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/YawControl.h</label>
+      </node>
+      <node id="347">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Communication.h</label>
+      </node>
+      <node id="353">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</label>
+      </node>
+      <node id="355">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.h</label>
+      </node>
+      <node id="349">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</label>
+      </node>
+      <node id="348">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</label>
+      </node>
+      <node id="352">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</label>
+      </node>
+      <node id="354">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+      </node>
+      <node id="346">
+        <label>C:/Users/ipewz/Documents/Arduino/libraries/ArduinoJson/src/ArduinoJson.h</label>
+      </node>
+      <node id="345">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h</label>
+      </node>
+      <node id="351">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MiniJoystick.h</label>
+      </node>
+      <node id="340">
+        <label>arduino.h</label>
+      </node>
+      <node id="343">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/AlttudeControler.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1aeaad42b0b2d7493d9b9c60fbee3333b0" prot="public" static="no">
+        <name>__ESP32_esp32__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="16" column="17" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a669f29e692d960f3baaea73e186b09ff" prot="public" static="no">
+        <name>__ESP32_ESP32__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="17" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a8a9f1d9cee9af12585c9b60c8dd6eb85" prot="public" static="no">
+        <name>ESP_PLATFORM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="18" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ae8322fb214ef7a74414e3d7f0465e6d9" prot="public" static="no">
+        <name>HAVE_CONFIG_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="19" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a24bc6227776fb5eae44c0c2d86c2bf23" prot="public" static="no">
+        <name>GCC_NOT_5_2_0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="20" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1aa3b0c977ad8c44d45b15093db61011f2" prot="public" static="no">
+        <name>WITH_POSIX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="21" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a43bafb28b29491ec7f871319b5a3b2f8" prot="public" static="no">
+        <name>F_CPU</name>
+        <initializer>240000000L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="22" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a5deccebbf24e21ddc073c8774179f1b3" prot="public" static="no">
+        <name>ARDUINO</name>
+        <initializer>108019</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="23" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ae7368cfa43f3b4fd3db6658c2446cdc2" prot="public" static="no">
+        <name>ARDUINO_ESP32_DEV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="24" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a003fb7c3e76407849ae52e3d7e3a2242" prot="public" static="no">
+        <name>ARDUINO_ARCH_ESP32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="25" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a14f2b1b49eab3cb4df00458634091d56" prot="public" static="no">
+        <name>ESP32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="26" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a721a72a728883e8d6a511d9cb3f3e556" prot="public" static="no">
+        <name>CORE_DEBUG_LEVEL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="27" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a1b391bc7ed92f79666c4a5d840aa1edd" prot="public" static="no">
+        <name>__cplusplus</name>
+        <initializer>201103L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="28" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1aaf039321959eb68c3bd0d1820810b6d3" prot="public" static="no">
+        <name>_Pragma</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="30" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a1b391bc7ed92f79666c4a5d840aa1edd" prot="public" static="no">
+        <name>__cplusplus</name>
+        <initializer>201103L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="32" column="10" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a8bdd19cad331a646ae8375be00e34cb3" prot="public" static="no">
+        <name>__STDC__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="34" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1af23257c9931a58ed0929ee4bebe4ab3d" prot="public" static="no">
+        <name>__ARM__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="35" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a5144286cd63b294154788dfb0730d9cf" prot="public" static="no">
+        <name>__arm__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="36" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a9f04218fe09e6ee659e045b2f11542ed" prot="public" static="no">
+        <name>__inline__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="37" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a4d66b7593545da17b6f1143e5d1370de" prot="public" static="no">
+        <name>__asm__</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="38" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a586c6a171eb0104d519dc0eda5284ef7" prot="public" static="no">
+        <name>__extension__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="39" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a536d41f7767c0a501c4f9aa625ef0c58" prot="public" static="no">
+        <name>__ATTR_PURE__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="40" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a87f6b1b3880d945610873b9da382e5d4" prot="public" static="no">
+        <name>__ATTR_CONST__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="41" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a64fa3037957156c60db536aad57ae07e" prot="public" static="no">
+        <name>__volatile__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="42" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a1378040bcf22428955c6e3ce9c2053cd" prot="public" static="no">
+        <name>__ASM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="44" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ade2d8d7118f8ff49547f60aa0c3382bb" prot="public" static="no">
+        <name>__INLINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="45" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1aa91ecb5e9664312d1f3d8f13b5ee97fb" prot="public" static="no">
+        <name>__attribute__</name>
+        <param><defname>noinline</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="46" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a5cb439d9f933fde4cf23caa370c030e7" prot="public" static="no">
+        <name>WARNING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="50" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a20ce5d8b1cd2e8181db1121cf8478003" prot="public" static="no">
+        <name>_Lockit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="51" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a6f12a814fd599d65827a2a9097e961c6" prot="public" static="no">
+        <name>__CLR_OR_THIS_CALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="52" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1af8b959ac649579d240cf6954abdb99d6" prot="public" static="no">
+        <name>C4005</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="53" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a6adb57f1047fb4df42de68cb25cd1663" prot="public" static="no">
+        <name>__builtin_clz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="65" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ad4d44421dd5a81a82440eebd7125eba3" prot="public" static="no">
+        <name>__builtin_clzl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="66" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a0ac8142b44be14fadf48c3b4c1ac90db" prot="public" static="no">
+        <name>__builtin_clzll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="67" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1accff7928ccb40e814ea79ee43d9f5022" prot="public" static="no">
+        <name>__builtin_labs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="68" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1afab4ecd5c0381d185c437b4010b1517d" prot="public" static="no">
+        <name>__builtin_va_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="69" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1acdfdd67de0664b690c42bba327cf7da1" prot="public" static="no">
+        <name>__ATOMIC_ACQ_REL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="72" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ab35e271dce6e7e2190d60b5905375419" prot="public" static="no">
+        <name>__CHAR_BIT__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="74" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1aefca15e55d1d74eabc4bf9e139901118" prot="public" static="no">
+        <name>_EXFUN</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="75" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ab8d03bfd9e9120480015fc51dc8b8e65" prot="public" static="no">
+        <name>__SIZE_TYPE__</name>
+        <initializer>unsigned int</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="83" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1ab35e271dce6e7e2190d60b5905375419" prot="public" static="no">
+        <name>__CHAR_BIT__</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="93" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a9df92f524f78471921cf8a272ed3b492" prot="public" static="no">
+        <name>ARDUINOJSON_ENABLE_STD_STREAM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="96" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1aeab54da5ac84f3441a91cb982b2276bc" prot="public" static="no">
+        <name>interrupts</name>
+        <param></param>
+        <initializer>sei()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="101" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_interrupt_lock_1aebcec9ebcbecd6eaf3138ba744d1e556" compoundref="_multi_delegate_8h" startline="40" endline="42">InterruptLock::~InterruptLock</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a8dfd0b70aa3eb3c592d6de11711fce91" prot="public" static="no">
+        <name>noInterrupts</name>
+        <param></param>
+        <initializer>cli()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="102" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_interrupt_lock_1ae64b71d1e4cfcd6ff9fc54e3b2787e77" compoundref="_multi_delegate_8h" startline="37" endline="39">InterruptLock::InterruptLock</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a2e68a86324e5b2587ea50e04c8b0aded" prot="public" static="no">
+        <name>ESP_LOGI</name>
+        <param><defname>tag</defname></param>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="104" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a14c110c5360780defb1aa84ff53933d3" prot="public" static="no">
+        <name>READ_PERI_REG</name>
+        <param><defname>addr</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="107" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_8_u_a_v_project_8vsarduino_8h_1a771037d188a1c185dd90c2019a896d03" prot="public" static="no">
+        <name>WRITE_PERI_REG</name>
+        <param><defname>addr</defname></param>
+        <param><defname>val</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="109" column="9" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a58727061d2155bfb63da1b09d2ce09b3" prot="public" static="no">
+        <type>bool</type>
+        <definition>typedef bool _Bool</definition>
+        <argsstring></argsstring>
+        <name>_Bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="56" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a34df48f2b63f2ded0d9f81bee6bba6a1" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int _read</definition>
+        <argsstring></argsstring>
+        <name>_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="57" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a29cc7ff58c2eeeb0202670c3123cfefa" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int _seek</definition>
+        <argsstring></argsstring>
+        <name>_seek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="58" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1ab3005036dfa231d0bd4b15d08819fc01" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int _write</definition>
+        <argsstring></argsstring>
+        <name>_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="59" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a982082e2f86c07e9fe0bfe664e0d4297" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int _close</definition>
+        <argsstring></argsstring>
+        <name>_close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="60" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1ac59baae9c4a544336507d6e5ee2733a6" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int __cleanup</definition>
+        <argsstring></argsstring>
+        <name>__cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="61" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a21277b5b62107a504d7c11e7c7abaff0" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int __gnuc_va_list</definition>
+        <argsstring></argsstring>
+        <name>__gnuc_va_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="70" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char byte</definition>
+        <argsstring></argsstring>
+        <name>byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="77" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a488c71ffa1ede010c8c0e7b30240c044" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long __INTPTR_TYPE__</definition>
+        <argsstring></argsstring>
+        <name>__INTPTR_TYPE__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="80" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1ad9110dffbcc667349820e986d1c85796" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long __UINTPTR_TYPE__</definition>
+        <argsstring></argsstring>
+        <name>__UINTPTR_TYPE__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="81" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a1fd96cb6adb76870c2caf1484985ed72" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long __PTRDIFF_TYPE__</definition>
+        <argsstring></argsstring>
+        <name>__PTRDIFF_TYPE__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="84" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a2db9e9e421e1e89293d303b1352a79cc" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long pthread_t</definition>
+        <argsstring></argsstring>
+        <name>pthread_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="86" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1aeff8f81b8e3cee1b6f1a9d1090cf12a7" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long pthread_key_t</definition>
+        <argsstring></argsstring>
+        <name>pthread_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="87" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a4be465d5b536b183b4a9a6e56d67eab4" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long pthread_once_t</definition>
+        <argsstring></argsstring>
+        <name>pthread_once_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="88" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1ab94dfc8c9e0371f5df87c4fd3b08e516" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long pthread_mutex_t</definition>
+        <argsstring></argsstring>
+        <name>pthread_mutex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="89" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_8_u_a_v_project_8vsarduino_8h_1a61136405272717e42cb72edcc1aa21c9" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long pthread_cond_t</definition>
+        <argsstring></argsstring>
+        <name>pthread_cond_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="91" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_8_u_a_v_project_8vsarduino_8h_1a6be7d9ce80c86f5178635fa86c2dd5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __cxa_pure_virtual</definition>
+        <argsstring>()</argsstring>
+        <name>__cxa_pure_virtual</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" line="78" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>Editor:<sp/>https://www.visualmicro.com/</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>for<sp/>intellisense<sp/>purpose<sp/>only.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Visual<sp/>micro<sp/>(and<sp/>the<sp/>arduino<sp/>ide)<sp/>ignore<sp/>this<sp/>code<sp/>during<sp/>compilation.<sp/>This<sp/>code<sp/>is<sp/>automatically<sp/>maintained<sp/>by<sp/>visualmicro,<sp/>manual<sp/>changes<sp/>to<sp/>this<sp/>file<sp/>will<sp/>be<sp/>overwritten</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>contents<sp/>of<sp/>the<sp/>_vm<sp/>sub<sp/>folder<sp/>can<sp/>be<sp/>deleted<sp/>prior<sp/>to<sp/>publishing<sp/>a<sp/>project</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>All<sp/>non-arduino<sp/>files<sp/>created<sp/>by<sp/>visual<sp/>micro<sp/>and<sp/>all<sp/>visual<sp/>studio<sp/>project<sp/>or<sp/>solution<sp/>files<sp/>can<sp/>be<sp/>freely<sp/>deleted<sp/>and<sp/>are<sp/>not<sp/>required<sp/>to<sp/>compile<sp/>a<sp/>sketch<sp/>(do<sp/>not<sp/>delete<sp/>your<sp/>own<sp/>code!).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Note:<sp/>debugger<sp/>breakpoints<sp/>are<sp/>stored<sp/>in<sp/>&apos;.sln&apos;<sp/>or<sp/>&apos;.asln&apos;<sp/>files,<sp/>knowledge<sp/>of<sp/>last<sp/>uploaded<sp/>breakpoints<sp/>is<sp/>stored<sp/>in<sp/>the<sp/>upload.vmps.xml<sp/>file.<sp/>Both<sp/>files<sp/>are<sp/>required<sp/>to<sp/>continue<sp/>a<sp/>previous<sp/>debug<sp/>session<sp/>without<sp/>needing<sp/>to<sp/>compile<sp/>and<sp/>upload<sp/>again</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>Hardware:<sp/>DOIT<sp/>ESP32<sp/>DEVKIT<sp/>V1,<sp/>Platform=esp32,<sp/>Package=esp32</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_VMICRO_INTELLISENSE)</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_VSARDUINO_H_</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_VSARDUINO_H_</highlight></codeline>
+<codeline lineno="16" refid="_8_u_a_v_project_8vsarduino_8h_1aeaad42b0b2d7493d9b9c60fbee3333b0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__ESP32_esp32__</highlight></codeline>
+<codeline lineno="17" refid="_8_u_a_v_project_8vsarduino_8h_1a669f29e692d960f3baaea73e186b09ff" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__ESP32_ESP32__</highlight></codeline>
+<codeline lineno="18" refid="_8_u_a_v_project_8vsarduino_8h_1a8a9f1d9cee9af12585c9b60c8dd6eb85" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ESP_PLATFORM</highlight></codeline>
+<codeline lineno="19" refid="_8_u_a_v_project_8vsarduino_8h_1ae8322fb214ef7a74414e3d7f0465e6d9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAVE_CONFIG_H</highlight></codeline>
+<codeline lineno="20" refid="_8_u_a_v_project_8vsarduino_8h_1a24bc6227776fb5eae44c0c2d86c2bf23" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GCC_NOT_5_2_0<sp/>0</highlight></codeline>
+<codeline lineno="21" refid="_8_u_a_v_project_8vsarduino_8h_1aa3b0c977ad8c44d45b15093db61011f2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WITH_POSIX</highlight></codeline>
+<codeline lineno="22" refid="_8_u_a_v_project_8vsarduino_8h_1a43bafb28b29491ec7f871319b5a3b2f8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>F_CPU<sp/>240000000L</highlight></codeline>
+<codeline lineno="23" refid="_8_u_a_v_project_8vsarduino_8h_1a5deccebbf24e21ddc073c8774179f1b3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ARDUINO<sp/>108019</highlight></codeline>
+<codeline lineno="24" refid="_8_u_a_v_project_8vsarduino_8h_1ae7368cfa43f3b4fd3db6658c2446cdc2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ARDUINO_ESP32_DEV</highlight></codeline>
+<codeline lineno="25" refid="_8_u_a_v_project_8vsarduino_8h_1a003fb7c3e76407849ae52e3d7e3a2242" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ARDUINO_ARCH_ESP32</highlight></codeline>
+<codeline lineno="26" refid="_8_u_a_v_project_8vsarduino_8h_1a14f2b1b49eab3cb4df00458634091d56" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ESP32</highlight></codeline>
+<codeline lineno="27" refid="_8_u_a_v_project_8vsarduino_8h_1a721a72a728883e8d6a511d9cb3f3e556" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CORE_DEBUG_LEVEL<sp/>0</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__cplusplus<sp/>201103L</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_8_u_a_v_project_8vsarduino_8h_1aaf039321959eb68c3bd0d1820810b6d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_Pragma(x)</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="32" refid="_8_u_a_v_project_8vsarduino_8h_1a1b391bc7ed92f79666c4a5d840aa1edd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__cplusplus<sp/>201103L</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_8_u_a_v_project_8vsarduino_8h_1a8bdd19cad331a646ae8375be00e34cb3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__STDC__</highlight></codeline>
+<codeline lineno="35" refid="_8_u_a_v_project_8vsarduino_8h_1af23257c9931a58ed0929ee4bebe4ab3d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__ARM__</highlight></codeline>
+<codeline lineno="36" refid="_8_u_a_v_project_8vsarduino_8h_1a5144286cd63b294154788dfb0730d9cf" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__arm__</highlight></codeline>
+<codeline lineno="37" refid="_8_u_a_v_project_8vsarduino_8h_1a9f04218fe09e6ee659e045b2f11542ed" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__inline__</highlight></codeline>
+<codeline lineno="38" refid="_8_u_a_v_project_8vsarduino_8h_1a4d66b7593545da17b6f1143e5d1370de" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__asm__(...)</highlight></codeline>
+<codeline lineno="39" refid="_8_u_a_v_project_8vsarduino_8h_1a586c6a171eb0104d519dc0eda5284ef7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__extension__</highlight></codeline>
+<codeline lineno="40" refid="_8_u_a_v_project_8vsarduino_8h_1a536d41f7767c0a501c4f9aa625ef0c58" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__ATTR_PURE__</highlight></codeline>
+<codeline lineno="41" refid="_8_u_a_v_project_8vsarduino_8h_1a87f6b1b3880d945610873b9da382e5d4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__ATTR_CONST__</highlight></codeline>
+<codeline lineno="42" refid="_8_u_a_v_project_8vsarduino_8h_1a64fa3037957156c60db536aad57ae07e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__volatile__</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_8_u_a_v_project_8vsarduino_8h_1a1378040bcf22428955c6e3ce9c2053cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ASM</highlight></codeline>
+<codeline lineno="45" refid="_8_u_a_v_project_8vsarduino_8h_1ade2d8d7118f8ff49547f60aa0c3382bb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__INLINE</highlight></codeline>
+<codeline lineno="46" refid="_8_u_a_v_project_8vsarduino_8h_1aa91ecb5e9664312d1f3d8f13b5ee97fb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__attribute__(noinline)</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>_STD_BEGIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>EMIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_8_u_a_v_project_8vsarduino_8h_1a5cb439d9f933fde4cf23caa370c030e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WARNING</highlight></codeline>
+<codeline lineno="51" refid="_8_u_a_v_project_8vsarduino_8h_1a20ce5d8b1cd2e8181db1121cf8478003" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_Lockit</highlight></codeline>
+<codeline lineno="52" refid="_8_u_a_v_project_8vsarduino_8h_1a6f12a814fd599d65827a2a9097e961c6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__CLR_OR_THIS_CALL</highlight></codeline>
+<codeline lineno="53" refid="_8_u_a_v_project_8vsarduino_8h_1af8b959ac649579d240cf6954abdb99d6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>C4005</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="comment">//#define<sp/>_NEW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_8_u_a_v_project_8vsarduino_8h_1a58727061d2155bfb63da1b09d2ce09b3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a58727061d2155bfb63da1b09d2ce09b3" kindref="member">_Bool</ref>;</highlight></codeline>
+<codeline lineno="57" refid="_8_u_a_v_project_8vsarduino_8h_1a34df48f2b63f2ded0d9f81bee6bba6a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a34df48f2b63f2ded0d9f81bee6bba6a1" kindref="member">_read</ref>;</highlight></codeline>
+<codeline lineno="58" refid="_8_u_a_v_project_8vsarduino_8h_1a29cc7ff58c2eeeb0202670c3123cfefa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a29cc7ff58c2eeeb0202670c3123cfefa" kindref="member">_seek</ref>;</highlight></codeline>
+<codeline lineno="59" refid="_8_u_a_v_project_8vsarduino_8h_1ab3005036dfa231d0bd4b15d08819fc01" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1ab3005036dfa231d0bd4b15d08819fc01" kindref="member">_write</ref>;</highlight></codeline>
+<codeline lineno="60" refid="_8_u_a_v_project_8vsarduino_8h_1a982082e2f86c07e9fe0bfe664e0d4297" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a982082e2f86c07e9fe0bfe664e0d4297" kindref="member">_close</ref>;</highlight></codeline>
+<codeline lineno="61" refid="_8_u_a_v_project_8vsarduino_8h_1ac59baae9c4a544336507d6e5ee2733a6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1ac59baae9c4a544336507d6e5ee2733a6" kindref="member">__cleanup</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>inline<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_8_u_a_v_project_8vsarduino_8h_1a6adb57f1047fb4df42de68cb25cd1663" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__builtin_clz</highlight></codeline>
+<codeline lineno="66" refid="_8_u_a_v_project_8vsarduino_8h_1ad4d44421dd5a81a82440eebd7125eba3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__builtin_clzl</highlight></codeline>
+<codeline lineno="67" refid="_8_u_a_v_project_8vsarduino_8h_1a0ac8142b44be14fadf48c3b4c1ac90db" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__builtin_clzll</highlight></codeline>
+<codeline lineno="68" refid="_8_u_a_v_project_8vsarduino_8h_1accff7928ccb40e814ea79ee43d9f5022" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__builtin_labs</highlight></codeline>
+<codeline lineno="69" refid="_8_u_a_v_project_8vsarduino_8h_1afab4ecd5c0381d185c437b4010b1517d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__builtin_va_list</highlight></codeline>
+<codeline lineno="70" refid="_8_u_a_v_project_8vsarduino_8h_1a21277b5b62107a504d7c11e7c7abaff0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a21277b5b62107a504d7c11e7c7abaff0" kindref="member">__gnuc_va_list</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_8_u_a_v_project_8vsarduino_8h_1acdfdd67de0664b690c42bba327cf7da1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ATOMIC_ACQ_REL</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CHAR_BIT__</highlight></codeline>
+<codeline lineno="75" refid="_8_u_a_v_project_8vsarduino_8h_1aefca15e55d1d74eabc4bf9e139901118" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_EXFUN()</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref>;</highlight></codeline>
+<codeline lineno="78" refid="_8_u_a_v_project_8vsarduino_8h_1a6be7d9ce80c86f5178635fa86c2dd5e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a6be7d9ce80c86f5178635fa86c2dd5e7" kindref="member">__cxa_pure_virtual</ref>()<sp/>{;}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_8_u_a_v_project_8vsarduino_8h_1a488c71ffa1ede010c8c0e7b30240c044" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a488c71ffa1ede010c8c0e7b30240c044" kindref="member">__INTPTR_TYPE__</ref><sp/>;</highlight></codeline>
+<codeline lineno="81" refid="_8_u_a_v_project_8vsarduino_8h_1ad9110dffbcc667349820e986d1c85796" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1ad9110dffbcc667349820e986d1c85796" kindref="member">__UINTPTR_TYPE__</ref><sp/>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>long<sp/>__SIZE_TYPE__<sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="_8_u_a_v_project_8vsarduino_8h_1ab8d03bfd9e9120480015fc51dc8b8e65" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SIZE_TYPE__<sp/>unsigned<sp/>int</highlight></codeline>
+<codeline lineno="84" refid="_8_u_a_v_project_8vsarduino_8h_1a1fd96cb6adb76870c2caf1484985ed72" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a1fd96cb6adb76870c2caf1484985ed72" kindref="member">__PTRDIFF_TYPE__</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_8_u_a_v_project_8vsarduino_8h_1a2db9e9e421e1e89293d303b1352a79cc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a2db9e9e421e1e89293d303b1352a79cc" kindref="member">pthread_t</ref>;</highlight></codeline>
+<codeline lineno="87" refid="_8_u_a_v_project_8vsarduino_8h_1aeff8f81b8e3cee1b6f1a9d1090cf12a7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1aeff8f81b8e3cee1b6f1a9d1090cf12a7" kindref="member">pthread_key_t</ref>;</highlight></codeline>
+<codeline lineno="88" refid="_8_u_a_v_project_8vsarduino_8h_1a4be465d5b536b183b4a9a6e56d67eab4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a4be465d5b536b183b4a9a6e56d67eab4" kindref="member">pthread_once_t</ref>;</highlight></codeline>
+<codeline lineno="89" refid="_8_u_a_v_project_8vsarduino_8h_1ab94dfc8c9e0371f5df87c4fd3b08e516" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1ab94dfc8c9e0371f5df87c4fd3b08e516" kindref="member">pthread_mutex_t</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1ab94dfc8c9e0371f5df87c4fd3b08e516" kindref="member">pthread_mutex_t</ref>;</highlight></codeline>
+<codeline lineno="91" refid="_8_u_a_v_project_8vsarduino_8h_1a61136405272717e42cb72edcc1aa21c9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a61136405272717e42cb72edcc1aa21c9" kindref="member">pthread_cond_t</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_8_u_a_v_project_8vsarduino_8h_1ab35e271dce6e7e2190d60b5905375419" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CHAR_BIT__<sp/>1</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ensure<sp/>ArduinoJSON<sp/>Lib<sp/>Intellisense<sp/>works<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_8_u_a_v_project_8vsarduino_8h_1a9df92f524f78471921cf8a272ed3b492" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARDUINOJSON_ENABLE_STD_STREAM<sp/>0</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pins_arduino.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_8_u_a_v_project_8vsarduino_8h_1aeab54da5ac84f3441a91cb982b2276bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>interrupts()<sp/>sei()</highlight></codeline>
+<codeline lineno="102" refid="_8_u_a_v_project_8vsarduino_8h_1a8dfd0b70aa3eb3c592d6de11711fce91" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>noInterrupts()<sp/>cli()</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_8_u_a_v_project_8vsarduino_8h_1a2e68a86324e5b2587ea50e04c8b0aded" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESP_LOGI(tag,<sp/>...)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Read<sp/>Value<sp/>from<sp/>Register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="_8_u_a_v_project_8vsarduino_8h_1a14c110c5360780defb1aa84ff53933d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_PERI_REG(addr)</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>Write<sp/>Value<sp/>to<sp/>Register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_8_u_a_v_project_8vsarduino_8h_1a771037d188a1c185dd90c2019a896d03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WRITE_PERI_REG(addr,val)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;UAVProject.ino&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/__vm/.UAVProject.vsarduino.h"/>
+  </compounddef>
+</doxygen>

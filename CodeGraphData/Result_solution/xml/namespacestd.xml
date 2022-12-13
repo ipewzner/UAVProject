@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacestd" kind="namespace">
+    <compoundname>std</compoundname>
+    <innerclass refid="classstd_1_1allocator" prot="public">std::allocator</innerclass>
+    <innerclass refid="classstd_1_1array" prot="public">std::array</innerclass>
+    <innerclass refid="classstd_1_1auto__ptr" prot="public">std::auto_ptr</innerclass>
+    <innerclass refid="classstd_1_1smart__ptr" prot="public">std::smart_ptr</innerclass>
+    <innerclass refid="classstd_1_1unique__ptr" prot="public">std::unique_ptr</innerclass>
+    <innerclass refid="classstd_1_1weak__ptr" prot="public">std::weak_ptr</innerclass>
+    <innerclass refid="classstd_1_1ios__base" prot="public">std::ios_base</innerclass>
+    <innerclass refid="classstd_1_1error__code" prot="public">std::error_code</innerclass>
+    <innerclass refid="classstd_1_1error__category" prot="public">std::error_category</innerclass>
+    <innerclass refid="classstd_1_1system__error" prot="public">std::system_error</innerclass>
+    <innerclass refid="classstd_1_1error__condition" prot="public">std::error_condition</innerclass>
+    <innerclass refid="classstd_1_1thread" prot="public">std::thread</innerclass>
+    <innerclass refid="classstd_1_1basic__ios" prot="public">std::basic_ios</innerclass>
+    <innerclass refid="classstd_1_1basic__istream" prot="public">std::basic_istream</innerclass>
+    <innerclass refid="classstd_1_1basic__ostream" prot="public">std::basic_ostream</innerclass>
+    <innerclass refid="classstd_1_1basic__iostream" prot="public">std::basic_iostream</innerclass>
+    <innerclass refid="classstd_1_1basic__ifstream" prot="public">std::basic_ifstream</innerclass>
+    <innerclass refid="classstd_1_1basic__ofstream" prot="public">std::basic_ofstream</innerclass>
+    <innerclass refid="classstd_1_1basic__fstream" prot="public">std::basic_fstream</innerclass>
+    <innerclass refid="classstd_1_1basic__istringstream" prot="public">std::basic_istringstream</innerclass>
+    <innerclass refid="classstd_1_1basic__ostringstream" prot="public">std::basic_ostringstream</innerclass>
+    <innerclass refid="classstd_1_1basic__stringstream" prot="public">std::basic_stringstream</innerclass>
+    <innerclass refid="classstd_1_1ios" prot="public">std::ios</innerclass>
+    <innerclass refid="classstd_1_1wios" prot="public">std::wios</innerclass>
+    <innerclass refid="classstd_1_1istream" prot="public">std::istream</innerclass>
+    <innerclass refid="classstd_1_1wistream" prot="public">std::wistream</innerclass>
+    <innerclass refid="classstd_1_1ostream" prot="public">std::ostream</innerclass>
+    <innerclass refid="classstd_1_1wostream" prot="public">std::wostream</innerclass>
+    <innerclass refid="classstd_1_1ifstream" prot="public">std::ifstream</innerclass>
+    <innerclass refid="classstd_1_1wifstream" prot="public">std::wifstream</innerclass>
+    <innerclass refid="classstd_1_1ofstream" prot="public">std::ofstream</innerclass>
+    <innerclass refid="classstd_1_1wofstream" prot="public">std::wofstream</innerclass>
+    <innerclass refid="classstd_1_1fstream" prot="public">std::fstream</innerclass>
+    <innerclass refid="classstd_1_1wfstream" prot="public">std::wfstream</innerclass>
+    <innerclass refid="classstd_1_1istringstream" prot="public">std::istringstream</innerclass>
+    <innerclass refid="classstd_1_1wistringstream" prot="public">std::wistringstream</innerclass>
+    <innerclass refid="classstd_1_1ostringstream" prot="public">std::ostringstream</innerclass>
+    <innerclass refid="classstd_1_1wostringstream" prot="public">std::wostringstream</innerclass>
+    <innerclass refid="classstd_1_1stringstream" prot="public">std::stringstream</innerclass>
+    <innerclass refid="classstd_1_1wstringstream" prot="public">std::wstringstream</innerclass>
+    <innerclass refid="classstd_1_1basic__string" prot="public">std::basic_string</innerclass>
+    <innerclass refid="classstd_1_1string" prot="public">std::string</innerclass>
+    <innerclass refid="classstd_1_1wstring" prot="public">std::wstring</innerclass>
+    <innerclass refid="classstd_1_1complex" prot="public">std::complex</innerclass>
+    <innerclass refid="classstd_1_1bitset" prot="public">std::bitset</innerclass>
+    <innerclass refid="classstd_1_1deque" prot="public">std::deque</innerclass>
+    <innerclass refid="classstd_1_1list" prot="public">std::list</innerclass>
+    <innerclass refid="classstd_1_1forward__list" prot="public">std::forward_list</innerclass>
+    <innerclass refid="classstd_1_1map" prot="public">std::map</innerclass>
+    <innerclass refid="classstd_1_1unordered__map" prot="public">std::unordered_map</innerclass>
+    <innerclass refid="classstd_1_1multimap" prot="public">std::multimap</innerclass>
+    <innerclass refid="classstd_1_1unordered__multimap" prot="public">std::unordered_multimap</innerclass>
+    <innerclass refid="classstd_1_1set" prot="public">std::set</innerclass>
+    <innerclass refid="classstd_1_1unordered__set" prot="public">std::unordered_set</innerclass>
+    <innerclass refid="classstd_1_1multiset" prot="public">std::multiset</innerclass>
+    <innerclass refid="classstd_1_1unordered__multiset" prot="public">std::unordered_multiset</innerclass>
+    <innerclass refid="classstd_1_1vector" prot="public">std::vector</innerclass>
+    <innerclass refid="classstd_1_1queue" prot="public">std::queue</innerclass>
+    <innerclass refid="classstd_1_1priority__queue" prot="public">std::priority_queue</innerclass>
+    <innerclass refid="classstd_1_1stack" prot="public">std::stack</innerclass>
+    <innerclass refid="classstd_1_1valarray" prot="public">std::valarray</innerclass>
+    <innerclass refid="classstd_1_1exception" prot="public">std::exception</innerclass>
+    <innerclass refid="classstd_1_1bad__alloc" prot="public">std::bad_alloc</innerclass>
+    <innerclass refid="classstd_1_1bad__cast" prot="public">std::bad_cast</innerclass>
+    <innerclass refid="classstd_1_1bad__typeid" prot="public">std::bad_typeid</innerclass>
+    <innerclass refid="classstd_1_1logic__error" prot="public">std::logic_error</innerclass>
+    <innerclass refid="classstd_1_1runtime__error" prot="public">std::runtime_error</innerclass>
+    <innerclass refid="classstd_1_1bad__exception" prot="public">std::bad_exception</innerclass>
+    <innerclass refid="classstd_1_1domain__error" prot="public">std::domain_error</innerclass>
+    <innerclass refid="classstd_1_1invalid__argument" prot="public">std::invalid_argument</innerclass>
+    <innerclass refid="classstd_1_1length__error" prot="public">std::length_error</innerclass>
+    <innerclass refid="classstd_1_1out__of__range" prot="public">std::out_of_range</innerclass>
+    <innerclass refid="classstd_1_1range__error" prot="public">std::range_error</innerclass>
+    <innerclass refid="classstd_1_1overflow__error" prot="public">std::overflow_error</innerclass>
+    <innerclass refid="classstd_1_1underflow__error" prot="public">std::underflow_error</innerclass>
+    <innerclass refid="classstd_1_1atomic" prot="public">std::atomic</innerclass>
+    <innerclass refid="structstd_1_1identity" prot="public">std::identity</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacestd_1ab4f8c60de95c10793a8e3e27fcb800d9" prot="public" static="no">
+        <name>memory_order</name>
+        <enumvalue id="namespacestd_1ab4f8c60de95c10793a8e3e27fcb800d9a0b64c8ee639be9a1003a33b0f46f26a8" prot="public">
+          <name>memory_order_relaxed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacestd_1ab4f8c60de95c10793a8e3e27fcb800d9a3a421c29d868caf6b2ac9895eb8ddddc" prot="public">
+          <name>memory_order_acquire</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacestd_1ab4f8c60de95c10793a8e3e27fcb800d9a235e521b22d3e6a6ab51207a9aeca64f" prot="public">
+          <name>memory_order_release</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacestd_1ab4f8c60de95c10793a8e3e27fcb800d9aa4d7ca6eba510b1c5388effb406b9f25" prot="public">
+          <name>memory_order_seq_cst</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="34" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="34" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacestd_1a7163c4f13e7624eb78b16bb599a72f98" prot="public" static="no">
+        <type>enum std::memory_order</type>
+        <definition>typedef enum std::memory_order  std::memory_order</definition>
+        <argsstring></argsstring>
+        <name>memory_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1a91fd0ef6c51e73d9daed224956877baf" prot="public" static="no">
+        <type>T *</type>
+        <definition>using std::function = typedef T*</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="79" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1a3b77ddce6fb5d2c9de08f0d112a8337e" prot="public" static="no">
+        <type>decltype(nullptr)</type>
+        <definition>using std::nullptr_t = typedef decltype(nullptr)</definition>
+        <argsstring></argsstring>
+        <name>nullptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="80" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacestd_1a4991d59c09ce15f1ba2e227f8621ba13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void std::atomic_thread_fence</definition>
+        <argsstring>(std::memory_order order) noexcept</argsstring>
+        <name>atomic_thread_fence</name>
+        <param>
+          <type>std::memory_order</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="49" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacestd_1a96795bec17201ceed604c6e283b17900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;&amp;</type>
+        <definition>T&amp;&amp; std::move</definition>
+        <argsstring>(T &amp;t) noexcept</argsstring>
+        <name>move</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="50" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacestd_1a84e3eefd1e797186a070a8d07befda87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;&amp;</type>
+        <definition>T&amp;&amp; std::forward</definition>
+        <argsstring>(typename identity&lt; T &gt;::type &amp;t) noexcept</argsstring>
+        <name>forward</name>
+        <param>
+          <type>typename <ref refid="structstd_1_1identity" kindref="compound">identity</ref>&lt; T &gt;::type &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" line="88" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/ghostl.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>STL namespace. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[STL]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

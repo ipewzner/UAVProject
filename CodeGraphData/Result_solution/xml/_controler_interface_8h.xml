@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_controler_interface_8h" kind="file">
+    <compoundname>ControlerInterface.h</compoundname>
+    <includes local="no">ArduinoJson.h</includes>
+    <includedby refid="_controler_interface_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.cpp</includedby>
+    <incdepgraph>
+      <node id="666">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="665">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h</label>
+        <link refid="ControlerInterface.h"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="668">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.cpp</label>
+        <link refid="_controler_interface_8cpp"/>
+      </node>
+      <node id="667">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h</label>
+        <link refid="ControlerInterface.h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_controler_interface" prot="public">ControlerInterface</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>ControlerInterface.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CONTROLERINTERFACE_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CONTROLERINTERFACE_h</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;ArduinoJson.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_controler_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_controler_interface" kindref="compound">ControlerInterface</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controler_interface_1a3628672dc634eaef5c11f028d3ec2f83" kindref="member">init</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controler_interface_1a1959cd98ab08aae25cd76467c93c426f" kindref="member">everyLoop</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controler_interface_1a36e0d9d45e1232c5a8ac29650776ffa7" kindref="member">show</ref>(DynamicJsonDocument)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ControlerInterface.h"/>
+  </compounddef>
+</doxygen>

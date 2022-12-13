@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_servo_motor_8cpp" kind="file">
+    <compoundname>ServoMotor.cpp</compoundname>
+    <includes refid="_servo_motor_8h" local="yes">ServoMotor.h</includes>
+    <incdepgraph>
+      <node id="896">
+        <label>WString.h</label>
+      </node>
+      <node id="893">
+        <label>Servo_ESP32.h</label>
+        <link refid="_servo___e_s_p32_8h"/>
+        <childnode refid="894" relation="include">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>ServoMotor.h</label>
+        <link refid="_servo_motor_8h"/>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="897">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="895">
+        <label>Motor.h</label>
+        <link refid="_motor_8h"/>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp</label>
+        <link refid="ServoMotor.cpp"/>
+        <childnode refid="892" relation="include">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_servo_motor_8h" kindref="compound">ServoMotor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo_motor_1a1db547ac5c00c261c5944f1d07f75c0f" kindref="member">ServoMotor::init</ref>(){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\nServoMotor.init<sp/>start&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_servo_motor_1ae58e9929ba8bc2d947f5f610a1e88907" kindref="member">servoNum</ref><sp/>=<sp/><ref refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" kindref="member">motorNumber</ref>();<sp/></highlight><highlight class="comment">//motorNumber<sp/>is<sp/>static<sp/>define<sp/>in<sp/>Motor<sp/>class<sp/>needed<sp/>for<sp/>servo<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\nservoNum<sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(<ref refid="class_servo_motor_1ae58e9929ba8bc2d947f5f610a1e88907" kindref="member">servoNum</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" kindref="member">servo</ref>.<ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">attach</ref>(<ref refid="class_servo_motor_1ab440d0c3ab7bbe6b2c9b8b61801ba059" kindref="member">signelPin</ref>,<sp/><ref refid="class_servo_motor_1ae58e9929ba8bc2d947f5f610a1e88907" kindref="member">servoNum</ref>,<sp/><ref refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" kindref="member">min</ref>,<sp/><ref refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" kindref="member">max</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>servo.attach(signelPin);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" refkind="member"><highlight class="normal"><ref refid="class_servo_motor_1aa24b8ceb7a7e62e74041d73f4abc3889" kindref="member">ServoMotor::ServoMotor</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>signelPin,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>max)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;name<sp/>=<sp/><ref refid="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;signelPin<sp/>=<sp/><ref refid="class_servo_motor_1ab440d0c3ab7bbe6b2c9b8b61801ba059" kindref="member">signelPin</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;min<sp/>=<sp/><ref refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" kindref="member">min</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;max<sp/>=<sp/><ref refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" kindref="member">max</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo_motor_1a659c519433e7dbd043b8448a7088d32c" kindref="member">ServoMotor::move</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>deg){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" kindref="member">servo</ref>.<ref refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" kindref="member">write</ref>(constrain(deg,<sp/><ref refid="class_servo_motor_1ac5c4c4f0d41663956814082d0c285b52" kindref="member">min</ref>,<sp/><ref refid="class_servo_motor_1aa58b700faceec4573c3fb77820cd52b4" kindref="member">max</ref>));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(deg<sp/>&lt;<sp/>min)<sp/><sp/><sp/>deg<sp/>==<sp/>min;</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(deg<sp/>&gt;<sp/>max)<sp/><sp/><sp/>deg<sp/>==<sp/>max;</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>servo.write(deg);</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_servo_motor_1a62f250e043340bae6bd8f940ac071424" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo_motor_1a62f250e043340bae6bd8f940ac071424" kindref="member">ServoMotor::get_currentPosition</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_servo_motor_1a650698eb03428ee3fe54a7974f5578bd" kindref="member">servo</ref>.<ref refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp"/>
+  </compounddef>
+</doxygen>

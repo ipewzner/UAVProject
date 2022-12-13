@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_interrupt_lock" kind="class" prot="public">
+    <compoundname>InterruptLock</compoundname>
+    <includes refid="_multi_delegate_8h" local="no">MultiDelegate.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_interrupt_lock_1ae64b71d1e4cfcd6ff9fc54e3b2787e77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterruptLock::InterruptLock</definition>
+        <argsstring>()</argsstring>
+        <name>InterruptLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="37" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="37" bodyend="39"/>
+        <references refid="_8_u_a_v_project_8vsarduino_8h_1a8dfd0b70aa3eb3c592d6de11711fce91" compoundref="_8_u_a_v_project_8vsarduino_8h" startline="102">noInterrupts</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interrupt_lock_1aebcec9ebcbecd6eaf3138ba744d1e556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterruptLock::~InterruptLock</definition>
+        <argsstring>()</argsstring>
+        <name>~InterruptLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="40" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="40" bodyend="42"/>
+        <references refid="_8_u_a_v_project_8vsarduino_8h_1aeab54da5ac84f3441a91cb982b2276bc" compoundref="_8_u_a_v_project_8vsarduino_8h" startline="101">interrupts</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="35" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="35" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_interrupt_lock_1ae64b71d1e4cfcd6ff9fc54e3b2787e77" prot="public" virt="non-virtual"><scope>InterruptLock</scope><name>InterruptLock</name></member>
+      <member refid="class_interrupt_lock_1aebcec9ebcbecd6eaf3138ba744d1e556" prot="public" virt="non-virtual"><scope>InterruptLock</scope><name>~InterruptLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

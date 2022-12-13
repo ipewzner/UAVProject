@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_454acb039d5f54f3a6498a1b5139c5a5" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject</compoundname>
+    <innerdir refid="dir_11adcb6f779ec04428008d4b1a78ee31">C:/Users/ipewz/Desktop/UAVProject/Libraries</innerdir>
+    <innerdir refid="dir_5c642b1316bd2b3035ceaeb042280980">C:/Users/ipewz/Desktop/UAVProject/UAVProject</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/"/>
+  </compounddef>
+</doxygen>

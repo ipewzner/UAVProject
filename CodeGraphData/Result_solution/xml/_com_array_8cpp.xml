@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_com_array_8cpp" kind="file">
+    <compoundname>ComArray.cpp</compoundname>
+    <includes refid="_com_array_8h" local="yes">ComArray.h</includes>
+    <incdepgraph>
+      <node id="599">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp</label>
+        <link refid="ComArray.cpp"/>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>Communication.h</label>
+        <link refid="_communication_8h"/>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>ComArray.h</label>
+        <link refid="_com_array_8h"/>
+        <childnode refid="601" relation="include">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>ArduinoJson.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_com_array_8h" kindref="compound">ComArray.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_com_array_1ae84e9edbe1214088d33a3c5ec3a4c05a" refkind="member"><highlight class="normal"><ref refid="class_com_array_1ae84e9edbe1214088d33a3c5ec3a4c05a" kindref="member">ComArray::ComArray</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1ac4042aadfd3f92a47cdd658cda6d82c0" kindref="member">ComArray::addCom</ref>(<ref refid="class_communication" kindref="compound">Communication</ref>*<sp/>com)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref><sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_communication" kindref="compound">Communication</ref>**<sp/>temp<sp/>=<sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_communication" kindref="compound">Communication</ref><sp/>*<sp/>[<ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref>[i]<sp/>=<sp/>temp[i];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref>[<ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>]<sp/>=<sp/>com;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arrSize++;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_communication" kindref="compound">Communication</ref><sp/>*<sp/>[<ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_com_array_1aea33f37d95b8c0ad7c4a61b9ac16043e" kindref="member">arr</ref>[<ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>]<sp/>=<sp/>com;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>++;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_com_array_1a5e1d11e1518bd727ce5b66103b6b507b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1a5e1d11e1518bd727ce5b66103b6b507b" kindref="member">ComArray::initAll</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" kindref="member">length</ref>();<sp/>i++)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(!arr[i]-&gt;init())<sp/>result<sp/>=<sp/>false;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1a8cdbc56a42463f2bab6f0d6ae504adbe" kindref="member">ComArray::length</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">String<sp/>ComArray::asciiResultAll()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/>&quot;&quot;;</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>arrSize;<sp/>i++)</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>arr[i]-&gt;asciiResult();</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>+=<sp/>&quot;<sp/>&quot;;</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>result;</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_com_array_1a2e2acbbfc685ddb8befcec48639e5780" refkind="member"><highlight class="normal">DynamicJsonDocument<sp/><ref refid="class_com_array_1a2e2acbbfc685ddb8befcec48639e5780" kindref="member">ComArray::jsonResultAll</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>DynamicJsonDocument<sp/>json(1024);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_com_array_1a26eb8aa633b3847c61ad3e2c9485a9bb" kindref="member">arrSize</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//json[arr[i]-&gt;name]<sp/>=<sp/>arr[i]-&gt;jsonResult();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>json.shrinkToFit();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//serializeJson(json,<sp/>Serial);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/ComArray.cpp"/>
+  </compounddef>
+</doxygen>

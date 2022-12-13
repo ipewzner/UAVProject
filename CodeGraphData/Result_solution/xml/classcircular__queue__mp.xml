@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classcircular__queue__mp" kind="class" prot="public">
+    <compoundname>circular_queue_mp</compoundname>
+    <basecompoundref refid="classcircular__queue" prot="protected" virt="non-virtual">circular_queue&lt; T, ForEachArg &gt;</basecompoundref>
+    <includes refid="circular__queue__mp_8h" local="no">circular_queue_mp.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename ForEachArg</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" prot="protected" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex circular_queue_mp&lt; T, ForEachArg &gt;::m_pushMtx</definition>
+        <argsstring></argsstring>
+        <name>m_pushMtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="143" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="143" bodyend="-1"/>
+        <referencedby refid="classcircular__queue__mp_1af12ecc181b998c937fa6b11379da2878" compoundref="circular__queue__mp_8h" startline="64" endline="72">circular_queue_mp&lt; T, ForEachArg &gt;::capacity</referencedby>
+        <referencedby refid="classcircular__queue__mp_1a1bb45a1e07b90b2f4ee531fbcc192bb3" compoundref="circular__queue__mp_8h" startline="82" endline="90">circular_queue_mp&lt; T, ForEachArg &gt;::push</referencedby>
+        <referencedby refid="classcircular__queue__mp_1a55371c8f4d47d1b57a7a17f27fd8f0be" compoundref="circular__queue__mp_8h" startline="115" endline="123">circular_queue_mp&lt; T, ForEachArg &gt;::push_n</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcircular__queue__mp_1ab801cfdc260aaa7dfd673544c93e844b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>circular_queue_mp&lt; T, ForEachArg &gt;::circular_queue_mp</definition>
+        <argsstring>()=default</argsstring>
+        <name>circular_queue_mp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a5e7be99506b1445a35137acda7235782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>circular_queue_mp&lt; T, ForEachArg &gt;::circular_queue_mp</definition>
+        <argsstring>(const size_t capacity)</argsstring>
+        <name>circular_queue_mp</name>
+        <param>
+          <type>const <ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="42" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a6e84144c1d445eeccfa195fd7b7d3c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>circular_queue_mp&lt; T, ForEachArg &gt;::circular_queue_mp</definition>
+        <argsstring>(circular_queue&lt; T, ForEachArg &gt; &amp;&amp;cq)</argsstring>
+        <name>circular_queue_mp</name>
+        <param>
+          <type><ref refid="classcircular__queue" kindref="compound">circular_queue</ref>&lt; T, ForEachArg &gt; &amp;&amp;</type>
+          <declname>cq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="44" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="44" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1af12ecc181b998c937fa6b11379da2878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool circular_queue_mp&lt; T, ForEachArg &gt;::capacity</definition>
+        <argsstring>(const size_t cap)</argsstring>
+        <name>capacity</name>
+        <param>
+          <type>const <ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>cap</declname>
+        </param>
+        <briefdescription>
+<para>Resize the queue. The available elements in the queue are preserved. This is not lock-free, but safe, concurrent producer or consumer access is guarded. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the new capacity could accommodate the present elements in the queue, otherwise nothing is done and false is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="64" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="64" bodyend="72"/>
+        <references refid="classcircular__queue_1a037616d4044ab603b335af80233337ac" compoundref="circular__queue_8h" startline="86" endline="89">circular_queue&lt; T, ForEachArg &gt;::capacity</references>
+        <references refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" compoundref="circular__queue__mp_8h" startline="143">circular_queue_mp&lt; T, ForEachArg &gt;::m_pushMtx</references>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a73116069a8c6750d61026cff5b404258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool IRAM_ATTR</type>
+        <definition>bool IRAM_ATTR circular_queue_mp&lt; T, ForEachArg &gt;::push</definition>
+        <argsstring>()=delete</argsstring>
+        <name>push</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a1bb45a1e07b90b2f4ee531fbcc192bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool IRAM_ATTR</type>
+        <definition>bool IRAM_ATTR circular_queue_mp&lt; T, ForEachArg &gt;::push</definition>
+        <argsstring>(T &amp;&amp;val)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Move the rvalue parameter into the queue, guarded for multiple concurrent producers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the queue accepted the value, false if the queue was full. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="82" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="82" bodyend="90"/>
+        <references refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" compoundref="circular__queue__mp_8h" startline="143">circular_queue_mp&lt; T, ForEachArg &gt;::m_pushMtx</references>
+        <references refid="classcircular__queue_1af5b15190c1f45f7c67b247cf852260c1" compoundref="circular__queue_8h" startline="156" endline="168">circular_queue&lt; T, ForEachArg &gt;::push</references>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1aa6088d52da8e07a40698948a72f01ad3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool IRAM_ATTR</type>
+        <definition>bool IRAM_ATTR circular_queue_mp&lt; T, ForEachArg &gt;::push</definition>
+        <argsstring>(const T &amp;val)</argsstring>
+        <name>push</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Push a copy of the parameter into the queue, guarded for multiple concurrent producers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the queue accepted the value, false if the queue was full. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="98" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="98" bodyend="106"/>
+        <references refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" compoundref="circular__queue__mp_8h" startline="143">circular_queue_mp&lt; T, ForEachArg &gt;::m_pushMtx</references>
+        <references refid="classcircular__queue_1af5b15190c1f45f7c67b247cf852260c1" compoundref="circular__queue_8h" startline="156" endline="168">circular_queue&lt; T, ForEachArg &gt;::push</references>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a55371c8f4d47d1b57a7a17f27fd8f0be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t circular_queue_mp&lt; T, ForEachArg &gt;::push_n</definition>
+        <argsstring>(const T *buffer, size_t size)</argsstring>
+        <name>push_n</name>
+        <param>
+          <type>const T *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Push copies of multiple elements from a buffer into the queue, in order, beginning at buffer&apos;s head. This is guarded for multiple producers, <ref refid="classcircular__queue__mp_1a55371c8f4d47d1b57a7a17f27fd8f0be" kindref="member">push_n()</ref> is atomic. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of elements actually copied into the queue, counted from the buffer head. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="115" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="115" bodyend="123"/>
+        <references refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" compoundref="circular__queue__mp_8h" startline="143">circular_queue_mp&lt; T, ForEachArg &gt;::m_pushMtx</references>
+        <references refid="classcircular__queue_1a08c00615e438bb04e0b5efe853044e43" compoundref="circular__queue_8h" startline="282" endline="305">circular_queue&lt; T, ForEachArg &gt;::push_n</references>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a7c37e00fb91213c56fd931d430f7750d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; circular_queue_mp&lt; T, ForEachArg &gt;::pop_requeue</definition>
+        <argsstring>()</argsstring>
+        <name>pop_requeue</name>
+        <briefdescription>
+<para>Pops the next available element from the queue, requeues it immediately. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A reference to the just requeued element, or the default value of type T if the queue is empty. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="131" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="148" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classcircular__queue__mp_1a6464ac2b7dd8d35adc6464d92a07b9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool circular_queue_mp&lt; T, ForEachArg &gt;::for_each_requeue</definition>
+        <argsstring>(const Delegate&lt; bool(T &amp;), ForEachArg &gt; &amp;fun)</argsstring>
+        <name>for_each_requeue</name>
+        <param>
+          <type>const <ref refid="class_delegate" kindref="compound">Delegate</ref>&lt; bool(T &amp;), ForEachArg &gt; &amp;</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>Iterate over, pop and optionally requeue each available element from the queue, calling back fun with a reference of every single element. Requeuing is dependent on the return boolean of the callback function. If it returns true, the requeue occurs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="139" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="168" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance class for a multi-producer, single-consumer circular queue / ring buffer (FIFO). This implementation is lock-free between producers and consumer for the <ref refid="classcircular__queue_1ab9d0457843bfc5bdcc61dd0eb693170b" kindref="member">available()</ref>, <ref refid="classcircular__queue_1ae07e1052629eee24e6e169c12cb69b86" kindref="member">peek()</ref>, <ref refid="classcircular__queue_1a510912b13f5e9f7837ff3df10eea823b" kindref="member">pop()</ref>, and <ref refid="classcircular__queue__mp_1a73116069a8c6750d61026cff5b404258" kindref="member">push()</ref> type functions, but is guarded to safely allow only a single producer at any instant. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>circular_queue&lt; T, ForEachArg &gt;</label>
+        <link refid="classcircular__queue"/>
+      </node>
+      <node id="27">
+        <label>circular_queue_mp&lt; T, ForEachArg &gt;</label>
+        <link refid="classcircular__queue__mp"/>
+        <childnode refid="28" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="32">
+        <label>T</label>
+      </node>
+      <node id="30">
+        <label>circular_queue&lt; T, ForEachArg &gt;</label>
+        <link refid="classcircular__queue"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>m_buffer</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>m_outPos</edgelabel>
+          <edgelabel>m_inPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>std::unique_ptr&lt; T[]&gt;</label>
+        <childnode refid="32" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>std::atomic&lt; size_t &gt;</label>
+        <link refid="classstd_1_1atomic"/>
+      </node>
+      <node id="29">
+        <label>circular_queue_mp&lt; T, ForEachArg &gt;</label>
+        <link refid="classcircular__queue__mp"/>
+        <childnode refid="30" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" line="39" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/circular_queue_mp.h" bodystart="38" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classcircular__queue_1ab9d0457843bfc5bdcc61dd0eb693170b" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>available</name></member>
+      <member refid="classcircular__queue_1a8e2bf3c05ce90c21485ab0b93d830c08" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>available_for_push</name></member>
+      <member refid="classcircular__queue__mp_1af12ecc181b998c937fa6b11379da2878" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>capacity</name></member>
+      <member refid="classcircular__queue_1a037616d4044ab603b335af80233337ac" prot="protected" virt="non-virtual" ambiguityscope="circular_queue::"><scope>circular_queue_mp</scope><name>capacity</name></member>
+      <member refid="classcircular__queue_1ab4f5704abe6d2fe7fe94b50f39452430" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue</name></member>
+      <member refid="classcircular__queue_1a6bdf11a16a5c6acc0bbd324bf9c72ae4" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue</name></member>
+      <member refid="classcircular__queue_1a996c2963ff26f135a9ef9d39e84f2de5" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue</name></member>
+      <member refid="classcircular__queue_1aec944bbea607bb5134e3ff8da509eeff" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue</name></member>
+      <member refid="classcircular__queue__mp_1ab801cfdc260aaa7dfd673544c93e844b" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue_mp</name></member>
+      <member refid="classcircular__queue__mp_1a5e7be99506b1445a35137acda7235782" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue_mp</name></member>
+      <member refid="classcircular__queue__mp_1a6e84144c1d445eeccfa195fd7b7d3c65" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>circular_queue_mp</name></member>
+      <member refid="classcircular__queue_1a57960e33ab2087003c4112528f83d2e4" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>defaultValue</name></member>
+      <member refid="classcircular__queue_1a961986265ab3694a8d89af177b88ece1" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>flush</name></member>
+      <member refid="classcircular__queue_1a25fdf3ebe3b875c39fcfe4b6a2bb02c9" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>for_each</name></member>
+      <member refid="classcircular__queue__mp_1a6464ac2b7dd8d35adc6464d92a07b9f0" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>for_each_requeue</name></member>
+      <member refid="classcircular__queue_1aea5c8e9cde6ad67d0e77b1c5499d5d96" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>for_each_rev_requeue</name></member>
+      <member refid="classcircular__queue_1a9e73a870fce40fdee7841d09a3cd628f" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>m_buffer</name></member>
+      <member refid="classcircular__queue_1acf31ef42ec94255b2f40f7101c36ada4" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>m_bufSize</name></member>
+      <member refid="classcircular__queue_1ab1863bcdf48683a4a895089f03e2b1ce" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>m_inPos</name></member>
+      <member refid="classcircular__queue_1afc6a18882d66d777b6c865da135d17eb" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>m_outPos</name></member>
+      <member refid="classcircular__queue__mp_1aefea7da83c9cee346e130373ea0913bb" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>m_pushMtx</name></member>
+      <member refid="classcircular__queue_1a569283df73394877677e5d41d1bffb52" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>operator=</name></member>
+      <member refid="classcircular__queue_1ae81f340a8088a11ca41ee730ecf4f6bf" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>operator=</name></member>
+      <member refid="classcircular__queue_1ae07e1052629eee24e6e169c12cb69b86" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>peek</name></member>
+      <member refid="classcircular__queue_1a510912b13f5e9f7837ff3df10eea823b" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>pop</name></member>
+      <member refid="classcircular__queue_1aa2b3b67ab2b368efac7e343aa62d12ab" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>pop_n</name></member>
+      <member refid="classcircular__queue__mp_1a7c37e00fb91213c56fd931d430f7750d" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>pop_requeue</name></member>
+      <member refid="classcircular__queue__mp_1a73116069a8c6750d61026cff5b404258" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>push</name></member>
+      <member refid="classcircular__queue__mp_1a1bb45a1e07b90b2f4ee531fbcc192bb3" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>push</name></member>
+      <member refid="classcircular__queue__mp_1aa6088d52da8e07a40698948a72f01ad3" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>push</name></member>
+      <member refid="classcircular__queue__mp_1a55371c8f4d47d1b57a7a17f27fd8f0be" prot="public" virt="non-virtual"><scope>circular_queue_mp</scope><name>push_n</name></member>
+      <member refid="classcircular__queue_1add28c28f9800b72678261eb6cb7bc21e" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>pushpeek</name></member>
+      <member refid="classcircular__queue_1a37c0a147a61b860f6363f8d1936bfdbd" prot="protected" virt="non-virtual"><scope>circular_queue_mp</scope><name>~circular_queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

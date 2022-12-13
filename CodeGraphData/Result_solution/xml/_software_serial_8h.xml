@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_software_serial_8h" kind="file">
+    <compoundname>SoftwareSerial.h</compoundname>
+    <includes refid="circular__queue_8h" local="yes">circular_queue/circular_queue.h</includes>
+    <includes local="no">Stream.h</includes>
+    <includedby refid="_lora_8h" local="no">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</includedby>
+    <includedby refid="_software_serial_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp</includedby>
+    <incdepgraph>
+      <node id="119">
+        <label>atomic</label>
+      </node>
+      <node id="124">
+        <label>functional</label>
+      </node>
+      <node id="123">
+        <label>esp_attr.h</label>
+      </node>
+      <node id="116">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h</label>
+        <link refid="SoftwareSerial.h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>Arduino.h</label>
+      </node>
+      <node id="125">
+        <label>cstddef</label>
+      </node>
+      <node id="121">
+        <label>algorithm</label>
+      </node>
+      <node id="122">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>Stream.h</label>
+      </node>
+      <node id="120">
+        <label>memory</label>
+      </node>
+      <node id="117">
+        <label>circular_queue/circular_queue.h</label>
+        <link refid="circular__queue_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="127">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h</label>
+        <link refid="SoftwareSerial.h"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</label>
+        <link refid="_lora_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp</label>
+        <link refid="_lora_8cpp"/>
+      </node>
+      <node id="130">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.cpp</label>
+        <link refid="_software_serial_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_software_serial" prot="public">SoftwareSerial</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" prot="public" static="no">
+        <name>SoftwareSerialParity</name>
+        <enumvalue id="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea20e1e178cb34d6c218256e7ec8d52a76" prot="public">
+          <name>SWSERIAL_PARITY_NONE</name>
+          <initializer>= 000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea4279a22b73523fb6a318fe9d5e69da69" prot="public">
+          <name>SWSERIAL_PARITY_EVEN</name>
+          <initializer>= 020</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eaf04d20adcfe86c4595cbef37b654f753" prot="public">
+          <name>SWSERIAL_PARITY_ODD</name>
+          <initializer>= 030</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" prot="public">
+          <name>SWSERIAL_PARITY_MARK</name>
+          <initializer>= 040</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea759e4e69fc87e8a57da062fa33d89d29" prot="public">
+          <name>SWSERIAL_PARITY_SPACE</name>
+          <initializer>= 070</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="30" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" prot="public" static="no">
+        <name>SoftwareSerialConfig</name>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a72f13afca350d6a6afca3c0330adf4af" prot="public">
+          <name>SWSERIAL_5N1</name>
+          <initializer>= SWSERIAL_PARITY_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a4107ed77afb816b768e02ae4c79f16e3" prot="public">
+          <name>SWSERIAL_6N1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aadd33e1cf5d17eba3774cf53e52cb164" prot="public">
+          <name>SWSERIAL_7N1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" prot="public">
+          <name>SWSERIAL_8N1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a38d381956d4353d43d671b3ad203423e" prot="public">
+          <name>SWSERIAL_5E1</name>
+          <initializer>= SWSERIAL_PARITY_EVEN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a47943c9a2b9b0c5bfa037a266ee90d1a" prot="public">
+          <name>SWSERIAL_6E1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aee6e8fe52842efb79b131839c5988bfd" prot="public">
+          <name>SWSERIAL_7E1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5e53674bfe3684d016ccdcbe99e7006d" prot="public">
+          <name>SWSERIAL_8E1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926acbd9d06c3214df49b2a96d26eb465bf2" prot="public">
+          <name>SWSERIAL_5O1</name>
+          <initializer>= SWSERIAL_PARITY_ODD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aa1f430e5875445fd6b345947a95a7345" prot="public">
+          <name>SWSERIAL_6O1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a3b710bb799780980ed52f1aa50466e15" prot="public">
+          <name>SWSERIAL_7O1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a64f45645ae258940544ed086ef72451d" prot="public">
+          <name>SWSERIAL_8O1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1e7d39efebc552d3571afa2f89c02573" prot="public">
+          <name>SWSERIAL_5M1</name>
+          <initializer>= SWSERIAL_PARITY_MARK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926acf1bd5df4760218c1d373742b7b30320" prot="public">
+          <name>SWSERIAL_6M1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926af0f8e3ae9dba3ba9832f269b44507825" prot="public">
+          <name>SWSERIAL_7M1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a7f6e7a13805fef89457491febc5c4539" prot="public">
+          <name>SWSERIAL_8M1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aab7ebd25617275bb696c012ee73f15bd" prot="public">
+          <name>SWSERIAL_5S1</name>
+          <initializer>= SWSERIAL_PARITY_SPACE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5f12fb98f874c018ab571c2cb1ce4f91" prot="public">
+          <name>SWSERIAL_6S1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1ba10dfdb8f8b2bbe9c626abec3e92e9" prot="public">
+          <name>SWSERIAL_7S1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae7e89d2ef85523724c834780bacb7094" prot="public">
+          <name>SWSERIAL_8S1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926adf25b30ee5cc7e372b2441cb8d02b425" prot="public">
+          <name>SWSERIAL_5N2</name>
+          <initializer>= 0200 | SWSERIAL_PARITY_NONE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a4261627f9d1f9fa00300663403e12d67" prot="public">
+          <name>SWSERIAL_6N2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6d721c4773cd1a09bab8811cbd0dc766" prot="public">
+          <name>SWSERIAL_7N2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926afea2c0c91cead5975c8f718eb07e14fc" prot="public">
+          <name>SWSERIAL_8N2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a84882d1483e12910965ae003c3bfcd19" prot="public">
+          <name>SWSERIAL_5E2</name>
+          <initializer>= 0200 | SWSERIAL_PARITY_EVEN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6b95d4a91ea5c235dedef87a1c9cad7a" prot="public">
+          <name>SWSERIAL_6E2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ab30c3a965c3884d9f418191690c022ba" prot="public">
+          <name>SWSERIAL_7E2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a0e7e35ca89279f5fa53ce9ba16d24239" prot="public">
+          <name>SWSERIAL_8E2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a452707bca8c0a0186d8f44ddb9d72ea7" prot="public">
+          <name>SWSERIAL_5O2</name>
+          <initializer>= 0200 | SWSERIAL_PARITY_ODD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a08c74d3d4ce30fa0ac0eb0ef0cfc0ff3" prot="public">
+          <name>SWSERIAL_6O2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6f771d0be78bcdd8c519817fd392c72b" prot="public">
+          <name>SWSERIAL_7O2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a78c2559ecb40bd05d20e3f577003c187" prot="public">
+          <name>SWSERIAL_8O2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926afcc23c5f8ac08d26a139479efdb7ee47" prot="public">
+          <name>SWSERIAL_5M2</name>
+          <initializer>= 0200 | SWSERIAL_PARITY_MARK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a8ccf8e0d29beae10c9a28c1a1c7f9953" prot="public">
+          <name>SWSERIAL_6M2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ac8c9dbe650d0df801101920b0e30d71c" prot="public">
+          <name>SWSERIAL_7M2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5740cf37fdfe4eb9869f96dd2d85f795" prot="public">
+          <name>SWSERIAL_8M2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae5ed21e58bfab7f223d467b25c2c9502" prot="public">
+          <name>SWSERIAL_5S2</name>
+          <initializer>= 0200 | SWSERIAL_PARITY_SPACE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1bcefb8bb0d216e5b6e70a3908d48d19" prot="public">
+          <name>SWSERIAL_6S2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ade79db1a9f731c07f3d2e48e00e361be" prot="public">
+          <name>SWSERIAL_7S2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aff0996a8be344ad84ea4c8246c4e25b2" prot="public">
+          <name>SWSERIAL_8S2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" line="38" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h" bodystart="38" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">SoftwareSerial.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">SoftwareSerial.cpp<sp/>-<sp/>Implementation<sp/>of<sp/>the<sp/>Arduino<sp/>software<sp/>serial<sp/>for<sp/>ESP8266/ESP32.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Copyright<sp/>(c)<sp/>2015-2016<sp/>Peter<sp/>Lerup.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Copyright<sp/>(c)<sp/>2018-2019<sp/>Dirk<sp/>O.<sp/>Kaar.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__SoftwareSerial_h</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__SoftwareSerial_h</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="circular__queue_8h" kindref="compound">circular_queue/circular_queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Stream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref><sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="31" refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea20e1e178cb34d6c218256e7ec8d52a76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea20e1e178cb34d6c218256e7ec8d52a76" kindref="member">SWSERIAL_PARITY_NONE</ref><sp/>=<sp/>000,</highlight></codeline>
+<codeline lineno="32" refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea4279a22b73523fb6a318fe9d5e69da69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea4279a22b73523fb6a318fe9d5e69da69" kindref="member">SWSERIAL_PARITY_EVEN</ref><sp/>=<sp/>020,</highlight></codeline>
+<codeline lineno="33" refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eaf04d20adcfe86c4595cbef37b654f753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eaf04d20adcfe86c4595cbef37b654f753" kindref="member">SWSERIAL_PARITY_ODD</ref><sp/>=<sp/>030,</highlight></codeline>
+<codeline lineno="34" refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" kindref="member">SWSERIAL_PARITY_MARK</ref><sp/>=<sp/>040,</highlight></codeline>
+<codeline lineno="35" refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea759e4e69fc87e8a57da062fa33d89d29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea759e4e69fc87e8a57da062fa33d89d29" kindref="member">SWSERIAL_PARITY_SPACE</ref><sp/>=<sp/>070,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a72f13afca350d6a6afca3c0330adf4af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a72f13afca350d6a6afca3c0330adf4af" kindref="member">SWSERIAL_5N1</ref><sp/>=<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea20e1e178cb34d6c218256e7ec8d52a76" kindref="member">SWSERIAL_PARITY_NONE</ref>,</highlight></codeline>
+<codeline lineno="40" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a4107ed77afb816b768e02ae4c79f16e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a4107ed77afb816b768e02ae4c79f16e3" kindref="member">SWSERIAL_6N1</ref>,</highlight></codeline>
+<codeline lineno="41" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aadd33e1cf5d17eba3774cf53e52cb164" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aadd33e1cf5d17eba3774cf53e52cb164" kindref="member">SWSERIAL_7N1</ref>,</highlight></codeline>
+<codeline lineno="42" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" kindref="member">SWSERIAL_8N1</ref>,</highlight></codeline>
+<codeline lineno="43" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a38d381956d4353d43d671b3ad203423e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a38d381956d4353d43d671b3ad203423e" kindref="member">SWSERIAL_5E1</ref><sp/>=<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea4279a22b73523fb6a318fe9d5e69da69" kindref="member">SWSERIAL_PARITY_EVEN</ref>,</highlight></codeline>
+<codeline lineno="44" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a47943c9a2b9b0c5bfa037a266ee90d1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a47943c9a2b9b0c5bfa037a266ee90d1a" kindref="member">SWSERIAL_6E1</ref>,</highlight></codeline>
+<codeline lineno="45" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aee6e8fe52842efb79b131839c5988bfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aee6e8fe52842efb79b131839c5988bfd" kindref="member">SWSERIAL_7E1</ref>,</highlight></codeline>
+<codeline lineno="46" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5e53674bfe3684d016ccdcbe99e7006d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5e53674bfe3684d016ccdcbe99e7006d" kindref="member">SWSERIAL_8E1</ref>,</highlight></codeline>
+<codeline lineno="47" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926acbd9d06c3214df49b2a96d26eb465bf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926acbd9d06c3214df49b2a96d26eb465bf2" kindref="member">SWSERIAL_5O1</ref><sp/>=<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eaf04d20adcfe86c4595cbef37b654f753" kindref="member">SWSERIAL_PARITY_ODD</ref>,</highlight></codeline>
+<codeline lineno="48" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aa1f430e5875445fd6b345947a95a7345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aa1f430e5875445fd6b345947a95a7345" kindref="member">SWSERIAL_6O1</ref>,</highlight></codeline>
+<codeline lineno="49" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a3b710bb799780980ed52f1aa50466e15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a3b710bb799780980ed52f1aa50466e15" kindref="member">SWSERIAL_7O1</ref>,</highlight></codeline>
+<codeline lineno="50" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a64f45645ae258940544ed086ef72451d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a64f45645ae258940544ed086ef72451d" kindref="member">SWSERIAL_8O1</ref>,</highlight></codeline>
+<codeline lineno="51" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1e7d39efebc552d3571afa2f89c02573" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1e7d39efebc552d3571afa2f89c02573" kindref="member">SWSERIAL_5M1</ref><sp/>=<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" kindref="member">SWSERIAL_PARITY_MARK</ref>,</highlight></codeline>
+<codeline lineno="52" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926acf1bd5df4760218c1d373742b7b30320" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926acf1bd5df4760218c1d373742b7b30320" kindref="member">SWSERIAL_6M1</ref>,</highlight></codeline>
+<codeline lineno="53" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926af0f8e3ae9dba3ba9832f269b44507825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926af0f8e3ae9dba3ba9832f269b44507825" kindref="member">SWSERIAL_7M1</ref>,</highlight></codeline>
+<codeline lineno="54" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a7f6e7a13805fef89457491febc5c4539" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a7f6e7a13805fef89457491febc5c4539" kindref="member">SWSERIAL_8M1</ref>,</highlight></codeline>
+<codeline lineno="55" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aab7ebd25617275bb696c012ee73f15bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aab7ebd25617275bb696c012ee73f15bd" kindref="member">SWSERIAL_5S1</ref><sp/>=<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea759e4e69fc87e8a57da062fa33d89d29" kindref="member">SWSERIAL_PARITY_SPACE</ref>,</highlight></codeline>
+<codeline lineno="56" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5f12fb98f874c018ab571c2cb1ce4f91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5f12fb98f874c018ab571c2cb1ce4f91" kindref="member">SWSERIAL_6S1</ref>,</highlight></codeline>
+<codeline lineno="57" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1ba10dfdb8f8b2bbe9c626abec3e92e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1ba10dfdb8f8b2bbe9c626abec3e92e9" kindref="member">SWSERIAL_7S1</ref>,</highlight></codeline>
+<codeline lineno="58" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae7e89d2ef85523724c834780bacb7094" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae7e89d2ef85523724c834780bacb7094" kindref="member">SWSERIAL_8S1</ref>,</highlight></codeline>
+<codeline lineno="59" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926adf25b30ee5cc7e372b2441cb8d02b425" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926adf25b30ee5cc7e372b2441cb8d02b425" kindref="member">SWSERIAL_5N2</ref><sp/>=<sp/>0200<sp/>|<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea20e1e178cb34d6c218256e7ec8d52a76" kindref="member">SWSERIAL_PARITY_NONE</ref>,</highlight></codeline>
+<codeline lineno="60" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a4261627f9d1f9fa00300663403e12d67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a4261627f9d1f9fa00300663403e12d67" kindref="member">SWSERIAL_6N2</ref>,</highlight></codeline>
+<codeline lineno="61" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6d721c4773cd1a09bab8811cbd0dc766" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6d721c4773cd1a09bab8811cbd0dc766" kindref="member">SWSERIAL_7N2</ref>,</highlight></codeline>
+<codeline lineno="62" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926afea2c0c91cead5975c8f718eb07e14fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926afea2c0c91cead5975c8f718eb07e14fc" kindref="member">SWSERIAL_8N2</ref>,</highlight></codeline>
+<codeline lineno="63" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a84882d1483e12910965ae003c3bfcd19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a84882d1483e12910965ae003c3bfcd19" kindref="member">SWSERIAL_5E2</ref><sp/>=<sp/>0200<sp/>|<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea4279a22b73523fb6a318fe9d5e69da69" kindref="member">SWSERIAL_PARITY_EVEN</ref>,</highlight></codeline>
+<codeline lineno="64" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6b95d4a91ea5c235dedef87a1c9cad7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6b95d4a91ea5c235dedef87a1c9cad7a" kindref="member">SWSERIAL_6E2</ref>,</highlight></codeline>
+<codeline lineno="65" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ab30c3a965c3884d9f418191690c022ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ab30c3a965c3884d9f418191690c022ba" kindref="member">SWSERIAL_7E2</ref>,</highlight></codeline>
+<codeline lineno="66" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a0e7e35ca89279f5fa53ce9ba16d24239" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a0e7e35ca89279f5fa53ce9ba16d24239" kindref="member">SWSERIAL_8E2</ref>,</highlight></codeline>
+<codeline lineno="67" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a452707bca8c0a0186d8f44ddb9d72ea7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a452707bca8c0a0186d8f44ddb9d72ea7" kindref="member">SWSERIAL_5O2</ref><sp/>=<sp/>0200<sp/>|<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eaf04d20adcfe86c4595cbef37b654f753" kindref="member">SWSERIAL_PARITY_ODD</ref>,</highlight></codeline>
+<codeline lineno="68" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a08c74d3d4ce30fa0ac0eb0ef0cfc0ff3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a08c74d3d4ce30fa0ac0eb0ef0cfc0ff3" kindref="member">SWSERIAL_6O2</ref>,</highlight></codeline>
+<codeline lineno="69" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6f771d0be78bcdd8c519817fd392c72b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a6f771d0be78bcdd8c519817fd392c72b" kindref="member">SWSERIAL_7O2</ref>,</highlight></codeline>
+<codeline lineno="70" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a78c2559ecb40bd05d20e3f577003c187" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a78c2559ecb40bd05d20e3f577003c187" kindref="member">SWSERIAL_8O2</ref>,</highlight></codeline>
+<codeline lineno="71" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926afcc23c5f8ac08d26a139479efdb7ee47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926afcc23c5f8ac08d26a139479efdb7ee47" kindref="member">SWSERIAL_5M2</ref><sp/>=<sp/>0200<sp/>|<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127eadb16a335d8588c34dd036b1fa75c51b7" kindref="member">SWSERIAL_PARITY_MARK</ref>,</highlight></codeline>
+<codeline lineno="72" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a8ccf8e0d29beae10c9a28c1a1c7f9953" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a8ccf8e0d29beae10c9a28c1a1c7f9953" kindref="member">SWSERIAL_6M2</ref>,</highlight></codeline>
+<codeline lineno="73" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ac8c9dbe650d0df801101920b0e30d71c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ac8c9dbe650d0df801101920b0e30d71c" kindref="member">SWSERIAL_7M2</ref>,</highlight></codeline>
+<codeline lineno="74" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5740cf37fdfe4eb9869f96dd2d85f795" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a5740cf37fdfe4eb9869f96dd2d85f795" kindref="member">SWSERIAL_8M2</ref>,</highlight></codeline>
+<codeline lineno="75" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae5ed21e58bfab7f223d467b25c2c9502" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ae5ed21e58bfab7f223d467b25c2c9502" kindref="member">SWSERIAL_5S2</ref><sp/>=<sp/>0200<sp/>|<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127ea759e4e69fc87e8a57da062fa33d89d29" kindref="member">SWSERIAL_PARITY_SPACE</ref>,</highlight></codeline>
+<codeline lineno="76" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1bcefb8bb0d216e5b6e70a3908d48d19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a1bcefb8bb0d216e5b6e70a3908d48d19" kindref="member">SWSERIAL_6S2</ref>,</highlight></codeline>
+<codeline lineno="77" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ade79db1a9f731c07f3d2e48e00e361be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926ade79db1a9f731c07f3d2e48e00e361be" kindref="member">SWSERIAL_7S2</ref>,</highlight></codeline>
+<codeline lineno="78" refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aff0996a8be344ad84ea4c8246c4e25b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926aff0996a8be344ad84ea4c8246c4e25b2" kindref="member">SWSERIAL_8S2</ref>,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_software_serial" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Stream<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" kindref="member">SoftwareSerial</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" kindref="member">SoftwareSerial</ref>(int8_t<sp/>rxPin,<sp/>int8_t<sp/>txPin<sp/>=<sp/>-1,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>invert<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_software_serial_1a50915f493f53d62e2fee6676ea0baf0e" kindref="member">SoftwareSerial</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>&amp;<sp/><ref refid="class_software_serial_1abdee11648577391667716e426d6e2024" kindref="member">operator= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1af6b8fff282e09a6cecc5df669ae71ee7" kindref="member">~SoftwareSerial</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" kindref="member">begin</ref>(uint32_t<sp/>baud,<sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref><sp/>config,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>rxPin,<sp/>int8_t<sp/>txPin,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>invert,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufCapacity<sp/>=<sp/>64,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isrBufCapacity<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="110" refid="class_software_serial_1ab3173af7812b41c17d4aa90538ce3cf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ab3173af7812b41c17d4aa90538ce3cf2" kindref="member">begin</ref>(uint32_t<sp/>baud,<sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref><sp/>config,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>rxPin,<sp/>int8_t<sp/>txPin)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" kindref="member">begin</ref>(baud,<sp/>config,<sp/>rxPin,<sp/>txPin,<sp/><ref refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" kindref="member">m_invert</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114" refid="class_software_serial_1af1c320d1f02058b6656ee98a93dc5032" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1af1c320d1f02058b6656ee98a93dc5032" kindref="member">begin</ref>(uint32_t<sp/>baud,<sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref><sp/>config,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>rxPin)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" kindref="member">begin</ref>(baud,<sp/>config,<sp/>rxPin,<sp/><ref refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" kindref="member">m_txPin</ref>,<sp/><ref refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" kindref="member">m_invert</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118" refid="class_software_serial_1a21a9d392987aebad5fd8c0ec0f950d1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a21a9d392987aebad5fd8c0ec0f950d1e" kindref="member">begin</ref>(uint32_t<sp/>baud,<sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926" kindref="member">SoftwareSerialConfig</ref><sp/>config<sp/>=<sp/><ref refid="_software_serial_8h_1a745882d151b2e7009f878e90ca8e1926a71df1c831dafd65c38bb688f345e6b79" kindref="member">SWSERIAL_8N1</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_software_serial_1af32933c57afd661f992aaa4cd2300e3f" kindref="member">begin</ref>(baud,<sp/>config,<sp/><ref refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" kindref="member">m_rxPin</ref>,<sp/><ref refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" kindref="member">m_txPin</ref>,<sp/><ref refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" kindref="member">m_invert</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_software_serial_1ad78e846e05c88a7ad7b7733c5bb652c1" kindref="member">baudRate</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a3fb0b021f92334d824c1b4af0283d763" kindref="member">setTransmitEnablePin</ref>(int8_t<sp/>txEnablePin);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ac5e03ef4dd10fe0fc87bb542bb2180b7" kindref="member">enableIntTx</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a1287e30c4f8970484432156dab15215d" kindref="member">enableRxGPIOPullup</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ac6d4d5dfbe05515bf23766e2c8abfd46" kindref="member">overflow</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" kindref="member">available</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ESP8266)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ab779fe0b59b09a2c8feee691f8ee136f" kindref="member">availableForWrite</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="136" refid="class_software_serial_1ab779fe0b59b09a2c8feee691f8ee136f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ab779fe0b59b09a2c8feee691f8ee136f" kindref="member">availableForWrite</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" kindref="member">m_txValid</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aa2cc17a2eb304cd350f5834450f8bd0a" kindref="member">peek</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" kindref="member">read</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144" refid="class_software_serial_1ab6a650ec8523cd8c06afc167056ac43a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ab6a650ec8523cd8c06afc167056ac43a" kindref="member">readParity</ref>()</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" kindref="member">m_lastReadParity</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149" refid="class_software_serial_1a87e224129a214d0cade7557295f1074e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a87e224129a214d0cade7557295f1074e" kindref="member">parityEven</ref>(uint8_t<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte<sp/>^=<sp/>byte<sp/>&gt;&gt;<sp/>4;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte<sp/>&amp;=<sp/>0xf;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0x6996<sp/>&gt;&gt;<sp/>byte)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155" refid="class_software_serial_1adf8bb5671c79d4a3602f3dc881e3170a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1adf8bb5671c79d4a3602f3dc881e3170a" kindref="member">parityOdd</ref>(uint8_t<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte<sp/>^=<sp/>byte<sp/>&gt;&gt;<sp/>4;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte<sp/>&amp;=<sp/>0xf;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0x9669<sp/>&gt;&gt;<sp/>byte)<sp/>&amp;<sp/>1;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" kindref="member">read</ref>(uint8_t*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ESP8266)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="167" refid="class_software_serial_1a351ced2163ef24a66290ff00d3f0ec36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a351ced2163ef24a66290ff00d3f0ec36" kindref="member">read</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a02e0047c01211c5f642aa9cde120f506" kindref="member">read</ref>(reinterpret_cast&lt;uint8_t*&gt;(buffer),<sp/>size);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" kindref="member">readBytes</ref>(uint8_t*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175" refid="class_software_serial_1a7ea8a4d3b72d40f560877f10310cafb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a7ea8a4d3b72d40f560877f10310cafb0" kindref="member">readBytes</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aa5727b29b83e10f6a75fb21aa16f1c7d" kindref="member">readBytes</ref>(reinterpret_cast&lt;uint8_t*&gt;(buffer),<sp/>size);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ad241830e1431e59513ea15239a31c6ec" kindref="member">flush</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" kindref="member">write</ref>(uint8_t<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" kindref="member">write</ref>(uint8_t<sp/><ref refid="_8_u_a_v_project_8vsarduino_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kindref="member">byte</ref>,<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref><sp/>parity);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182" refid="class_software_serial_1a67b073817dd371ec65394f250673ee88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a67b073817dd371ec65394f250673ee88" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" kindref="member">write</ref>(reinterpret_cast&lt;const<sp/>uint8_t*&gt;(buffer),<sp/>size);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref><sp/>parity);</highlight></codeline>
+<codeline lineno="186" refid="class_software_serial_1a1c233cdb8ee3b989a39c2c9562ba2f46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a1c233cdb8ee3b989a39c2c9562ba2f46" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref><sp/>parity)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a470886f6618ebbde7e486ef532dfef1c" kindref="member">write</ref>(reinterpret_cast&lt;const<sp/>uint8_t*&gt;(buffer),<sp/>size,<sp/>parity);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189" refid="class_software_serial_1a4106ddf2b7f120535e9eb69cd86af6bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>bool()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1<sp/>==<sp/><ref refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" kindref="member">m_rxPin</ref><sp/>||<sp/><ref refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" kindref="member">m_rxValid</ref>)<sp/>&amp;&amp;<sp/>(-1<sp/>==<sp/><ref refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" kindref="member">m_txPin</ref><sp/>||<sp/><ref refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" kindref="member">m_txValid</ref>)<sp/>&amp;&amp;<sp/>!(-1<sp/>==<sp/><ref refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" kindref="member">m_rxPin</ref><sp/>&amp;&amp;<sp/><ref refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" kindref="member">m_oneWire</ref>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" kindref="member">enableRx</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a0f274a9e03e8e8407b386e1c0c5d785f" kindref="member">enableTx</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AVR<sp/>compatibility<sp/>methods.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="class_software_serial_1ad235539ef28939836bd0bde9387eb8fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ad235539ef28939836bd0bde9387eb8fc" kindref="member">listen</ref>()<sp/>{<sp/><ref refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" kindref="member">enableRx</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a9034270f7de617b3cc7d3f38f3a8e0df" kindref="member">end</ref>();</highlight></codeline>
+<codeline lineno="201" refid="class_software_serial_1a7b3fb4a8f57d2b5f2233f841d71ef80f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a7b3fb4a8f57d2b5f2233f841d71ef80f" kindref="member">isListening</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" kindref="member">m_rxEnabled</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="202" refid="class_software_serial_1a1c87a6b43c176c104f28e2c2eec2841e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a1c87a6b43c176c104f28e2c2eec2841e" kindref="member">stopListening</ref>()<sp/>{<sp/><ref refid="class_software_serial_1a1de571b32ec24f287fc1771c5dc13206" kindref="member">enableRx</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a403524f9df5f05696966c8df94a2300f" kindref="member">onReceive</ref>(<ref refid="class_delegate" kindref="compound">Delegate</ref>&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a6ab80cf40722851837fba2822f4bf69d" kindref="member">available</ref>),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&gt;<sp/>handler);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aadf0277fea3c11d03298b13333b06eba" kindref="member">perform_work</ref>();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Print::write;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>sync<sp/>is<sp/>false,<sp/>it&apos;s<sp/>legal<sp/>to<sp/>exceed<sp/>the<sp/>deadline,<sp/>for<sp/>instance,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>enabling<sp/>interrupts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aa674926759b375f43af50b40625284b9" kindref="member">preciseDelay</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sync);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>withStopBit<sp/>is<sp/>set,<sp/>either<sp/>cycle<sp/>contains<sp/>a<sp/>stop<sp/>bit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>dutyCycle<sp/>==<sp/>0,<sp/>the<sp/>level<sp/>is<sp/>not<sp/>forced<sp/>to<sp/>HIGH.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>offCycle<sp/>==<sp/>0,<sp/>the<sp/>level<sp/>remains<sp/>unchanged<sp/>from<sp/>dutyCycle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a66de2648548911db1f32b1d5dc9a6033" kindref="member">writePeriod</ref>(</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>dutyCycle,<sp/>uint32_t<sp/>offCycle,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withStopBit);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a2f4df40ea13d89ac519eaeaf1b55be45" kindref="member">isValidGPIOpin</ref>(int8_t<sp/>pin);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ad908ffa7f2ad1f23d840c659a8c72004" kindref="member">isValidRxGPIOpin</ref>(int8_t<sp/>pin);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aa28371fec8665a898c103eb4f23bf4d8" kindref="member">isValidTxGPIOpin</ref>(int8_t<sp/>pin);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>result<sp/>is<sp/>only<sp/>defined<sp/>for<sp/>a<sp/>valid<sp/>Rx<sp/>GPIO<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ac0f144a493b514e632972cc95d5ce30a" kindref="member">hasRxGPIOPullUp</ref>(int8_t<sp/>pin);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>safely<sp/>set<sp/>the<sp/>pin<sp/>mode<sp/>for<sp/>the<sp/>Rx<sp/>GPIO<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ac238cd1330d260018c92ee88ff793388" kindref="member">setRxGPIOPullUp</ref>();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>m_rxValid<sp/>that<sp/>calling<sp/>is<sp/>safe<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" kindref="member">rxBits</ref>();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a623072eac9e17926d8f40f825703b12d" kindref="member">rxBits</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>isrCycle);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a133928510810889b4eae833991ef886b" kindref="member">rxBitISR</ref>(<ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1abd66e04e2830904e8fe7771da25e7e1d" kindref="member">rxBitSyncISR</ref>(<ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Member<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_software_serial_1a0e7debf800fe99699948f5e29677e127" kindref="member">m_rxPin</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="238" refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_software_serial_1a7431e1db92460b73f5f131570b82eb9e" kindref="member">m_txPin</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="239" refid="class_software_serial_1a62a65ba498a777fa7cf4d3a5dd266acf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_software_serial_1a62a65ba498a777fa7cf4d3a5dd266acf" kindref="member">m_txEnablePin</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="240" refid="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_software_serial_1abac2ff0b6e59f914ff29b018ae5e2503" kindref="member">m_dataBits</ref>;</highlight></codeline>
+<codeline lineno="241" refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a5e160de610c89cafd2f348449c2bc717" kindref="member">m_oneWire</ref>;</highlight></codeline>
+<codeline lineno="242" refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a7f54905fedd809d8dcf4ecb891c20f39" kindref="member">m_rxValid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243" refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a764b3b1d19de097aa7ef5cc0a122ea5c" kindref="member">m_rxEnabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244" refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a1829e0c4b2f1542057647dd0b7cddaa5" kindref="member">m_txValid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245" refid="class_software_serial_1a2bba95a3b99ec6ad7dae75ef67c3bff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a2bba95a3b99ec6ad7dae75ef67c3bff9" kindref="member">m_txEnableValid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246" refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1aa46ced1af836d38c30a548adbee64938" kindref="member">m_invert</ref>;</highlight></codeline>
+<codeline lineno="248" refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_software_serial_1a0334fc601b825bb9ec4191acec0cacef" kindref="member">m_pduBits</ref>;</highlight></codeline>
+<codeline lineno="249" refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a12349e74dbe04646d248e1ffcf4a4ce2" kindref="member">m_intTxEnabled</ref>;</highlight></codeline>
+<codeline lineno="250" refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ab22bb4aca8df42d47d2b272e20df8fe5" kindref="member">m_rxGPIOPullupEnabled</ref>;</highlight></codeline>
+<codeline lineno="251" refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_software_serial_8h_1a4e9cc1b2d947394ec5d207e0b528127e" kindref="member">SoftwareSerialParity</ref><sp/><ref refid="class_software_serial_1a9aaf2c0fe5773182da2f4c1ca1ef41db" kindref="member">m_parityMode</ref>;</highlight></codeline>
+<codeline lineno="252" refid="class_software_serial_1a323f264255634ce1c4e6b334e157757f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_software_serial_1a323f264255634ce1c4e6b334e157757f" kindref="member">m_stopBits</ref>;</highlight></codeline>
+<codeline lineno="253" refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a0d5efb3c45a2488fc25e924a1575deb5" kindref="member">m_lastReadParity</ref>;</highlight></codeline>
+<codeline lineno="254" refid="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1ae85f8b5b8dc4aa5573ce5f07317a6a4f" kindref="member">m_overflow</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255" refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_software_serial_1af3224f037c8e82442a37759e224d9682" kindref="member">m_bitCycles</ref>;</highlight></codeline>
+<codeline lineno="256" refid="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_software_serial_1a7e70bc16ce9aa1a81f92d2797988e96b" kindref="member">m_parityInPos</ref>;</highlight></codeline>
+<codeline lineno="257" refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_software_serial_1a955a750826c5b5d3087694cc3b120564" kindref="member">m_parityOutPos</ref>;</highlight></codeline>
+<codeline lineno="258" refid="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="class_software_serial_1a28dbcdc9ec19d1fcd055489f6d8c7aee" kindref="member">m_rxCurBit</ref>;<sp/></highlight><highlight class="comment">//<sp/>0<sp/>thru<sp/>(m_pduBits<sp/>-<sp/>m_stopBits<sp/>-<sp/>1):<sp/>data/parity<sp/>bits.<sp/>-1:<sp/>start<sp/>bit.<sp/>(m_pduBits<sp/>-<sp/>1):<sp/>stop<sp/>bit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="class_software_serial_1ab9654d8cb91c4f46d281d38c1f6521ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_software_serial_1ab9654d8cb91c4f46d281d38c1f6521ec" kindref="member">m_rxCurByte</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260" refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;circular_queue&lt;uint8_t&gt;<sp/>&gt;<sp/><ref refid="class_software_serial_1ad68e5c980e6d949f98e4aaef33661bd9" kindref="member">m_buffer</ref>;</highlight></codeline>
+<codeline lineno="261" refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;circular_queue&lt;uint8_t&gt;<sp/>&gt;<sp/><ref refid="class_software_serial_1a17bf17ca15b0915c2752be03dba49caa" kindref="member">m_parityBuffer</ref>;</highlight></codeline>
+<codeline lineno="262" refid="class_software_serial_1ac441727d6145bcedfe4c976428bc972a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_software_serial_1ac441727d6145bcedfe4c976428bc972a" kindref="member">m_periodStart</ref>;</highlight></codeline>
+<codeline lineno="263" refid="class_software_serial_1a370797e59a98478f296f5ea382332743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_software_serial_1a370797e59a98478f296f5ea382332743" kindref="member">m_periodDuration</ref>;</highlight></codeline>
+<codeline lineno="264" refid="class_software_serial_1aa4cfb19906a25b1f8cc5400d2d3aa761" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_software_serial_1aa4cfb19906a25b1f8cc5400d2d3aa761" kindref="member">m_savedPS</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>ISR<sp/>stores<sp/>the<sp/>relative<sp/>bit<sp/>times<sp/>in<sp/>the<sp/>buffer.<sp/>The<sp/>inversion<sp/>corrected<sp/>level<sp/>is<sp/>used<sp/>as<sp/>sign<sp/>bit<sp/>(2&apos;s<sp/>complement):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>=<sp/>positive<sp/>including<sp/>0,<sp/>0<sp/>=<sp/>negative.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;circular_queue&lt;uint32_t,<sp/>SoftwareSerial*&gt;<sp/>&gt;<sp/><ref refid="class_software_serial_1a0ce79ee2c7888807c54b3d305c76812a" kindref="member">m_isrBuffer</ref>;</highlight></codeline>
+<codeline lineno="268" refid="class_software_serial_1a93346dd3cdab14198650857ca385a4e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_delegate" kindref="compound">Delegate&lt;void(uint32_t&amp;&amp;), SoftwareSerial*&gt;</ref><sp/><ref refid="class_software_serial_1a93346dd3cdab14198650857ca385a4e7" kindref="member">m_isrBufferForEachDel</ref><sp/>=<sp/>{<sp/>[](<ref refid="class_software_serial" kindref="compound">SoftwareSerial</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>uint32_t&amp;&amp;<sp/>isrCycle)<sp/>{<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">-&gt;rxBits(isrCycle);<sp/>},<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="269" refid="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstd_1_1atomic" kindref="compound">std::atomic&lt;bool&gt;</ref><sp/><ref refid="class_software_serial_1a752d9191924d8ef51cfd8dc3d2118555" kindref="member">m_isrOverflow</ref>;</highlight></codeline>
+<codeline lineno="270" refid="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_software_serial_1a1868f73af366b47b7cf78b0cbc64226f" kindref="member">m_isrLastCycle</ref>;</highlight></codeline>
+<codeline lineno="271" refid="class_software_serial_1a7229b30bcaacc05306bba4659df95582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_software_serial_1a7229b30bcaacc05306bba4659df95582" kindref="member">m_rxCurParity</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272" refid="class_software_serial_1a3729e009ea01d21540e014c34620a5d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_delegate" kindref="compound">Delegate&lt;void(int available), void*&gt;</ref><sp/><ref refid="class_software_serial_1a3729e009ea01d21540e014c34620a5d2" kindref="member">receiveHandler</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__SoftwareSerial_h</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/SoftwareSerial.h"/>
+  </compounddef>
+</doxygen>

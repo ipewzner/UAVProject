@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_servo___e_s_p32_8cpp" kind="file">
+    <compoundname>Servo_ESP32.cpp</compoundname>
+    <includes refid="_servo___e_s_p32_8h" local="no">Servo_ESP32.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>Servo_ESP32.h</label>
+        <link refid="_servo___e_s_p32_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Arduino.h</label>
+      </node>
+      <node id="17">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp</label>
+        <link refid="Servo_ESP32.cpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>Arduino<sp/>srl<sp/>-<sp/>www.arduino.org</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Base<sp/>on<sp/>lib<sp/>for<sp/>stm32f4<sp/>(d2a4a47):<sp/>https://github.com/arduino-libraries/Servo/blob/master/src/stm32f4/ServoTimers.h</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>2017<sp/>Jul<sp/>5:<sp/>Edited<sp/>by<sp/>Jaroslav<sp/>Páral<sp/>(jarekparal)<sp/>-<sp/>paral@robotikabrno.cz</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>Dec<sp/>17,<sp/>2019<sp/>edited<sp/>by<sp/>Ahmad<sp/>Shamshiri<sp/>www.Robojax.com</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_servo___e_s_p32_8h" kindref="compound">Servo_ESP32.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">Servo_ESP32::channel_next_free</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_servo___e_s_p32_1a8edd92713bb6e8fc2ab5ceceb1acf3d6" refkind="member"><highlight class="normal"><ref refid="class_servo___e_s_p32_1a8edd92713bb6e8fc2ab5ceceb1acf3d6" kindref="member">Servo_ESP32::Servo_ESP32</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" kindref="member">_resetFields</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_servo___e_s_p32_1ae1815343314ce0c40ad8154a400c5116" refkind="member"><highlight class="normal"><ref refid="class_servo___e_s_p32_1ae1815343314ce0c40ad8154a400c5116" kindref="member">Servo_ESP32::~Servo_ESP32</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" kindref="member">detach</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a76c004fffb9daac201828125dc8bf003" kindref="member">Servo_ESP32::attach</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>channel,<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minAngle,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxAngle,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minPulseWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxPulseWidth)<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(channel<sp/>==<sp/><ref refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" kindref="member">CHANNEL_NOT_ATTACHED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">channel_next_free</ref><sp/>==<sp/><ref refid="class_servo___e_s_p32_1af3a63fa7097959c009c6ff3582ed4b29" kindref="member">CHANNEL_MAX_NUM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">channel_next_free</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">channel_next_free</ref>++;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref><sp/>=<sp/>channel;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref><sp/>=<sp/>pin;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" kindref="member">_minAngle</ref><sp/>=<sp/>minAngle;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" kindref="member">_maxAngle</ref><sp/>=<sp/>maxAngle;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" kindref="member">_minPulseWidth</ref><sp/>=<sp/>minPulseWidth;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" kindref="member">_maxPulseWidth</ref><sp/>=<sp/>maxPulseWidth;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcSetup(<ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref>,<sp/>50,<sp/>16);<sp/></highlight><highlight class="comment">//<sp/>channel<sp/>X,<sp/>50<sp/>Hz,<sp/>16-bit<sp/>depth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcAttachPin(<ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref>,<sp/><ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ab914fa552c3602e8d0ab1a6dedd4b43c" kindref="member">Servo_ESP32::detach</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!this-&gt;<ref refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" kindref="member">attached</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref><sp/>==<sp/>(<ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">channel_next_free</ref><sp/>-<sp/>1))</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a27e551b0975e39b9e48cf38cb5d20872" kindref="member">channel_next_free</ref>--;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcDetachPin(<ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ab24298b05d6b7c417eadd1a60c0ccc8c" kindref="member">Servo_ESP32::write</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>degrees)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>degrees<sp/>=<sp/>constrain(degrees,<sp/><ref refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" kindref="member">_minAngle</ref>,<sp/><ref refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" kindref="member">_maxAngle</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" kindref="member">writeMicroseconds</ref>(<ref refid="class_servo___e_s_p32_1a3276dcb9671810a2d5f87a07c4815071" kindref="member">_angleToUs</ref>(degrees));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1afde8e7aca9644068faabf72e61c99723" kindref="member">Servo_ESP32::writeMicroseconds</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pulseUs)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" kindref="member">attached</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>pulseUs<sp/>=<sp/>constrain(pulseUs,<sp/><ref refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" kindref="member">_minPulseWidth</ref>,<sp/><ref refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" kindref="member">_maxPulseWidth</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" kindref="member">_pulseWidthDuty</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1a751a1e6555df715845cbf165cf7bd731" kindref="member">_usToDuty</ref>(pulseUs);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcWrite(<ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref>,<sp/><ref refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" kindref="member">_pulseWidthDuty</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1ad7511f7f04d518efe9ac514c24f2b227" kindref="member">Servo_ESP32::read</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a121efe729df30132fe6ba4545d44b94a" kindref="member">_usToAngle</ref>(<ref refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" kindref="member">readMicroseconds</ref>());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aa9ce80bbe2e7d6dc9ddfe9c38c80bb46" kindref="member">Servo_ESP32::readMicroseconds</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!this-&gt;<ref refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" kindref="member">attached</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>duty<sp/>=<sp/>ledcRead(<ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a78e43ccd1ae54898a28cc9d67d8c53df" kindref="member">_dutyToUs</ref>(duty);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1a9edc57387bd6f4f34a5eefea67698d35" kindref="member">Servo_ESP32::attached</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref><sp/>!=<sp/><ref refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" kindref="member">PIN_NOT_ATTACHED</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="class_servo___e_s_p32_1aeb1186e8214acc32a0185d52704bc040" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aeb1186e8214acc32a0185d52704bc040" kindref="member">Servo_ESP32::attachedPin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo___e_s_p32_1af735ba754b8148c02c57b487c1dd8895" kindref="member">Servo_ESP32::_resetFields</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1aba3d6983222fd9951cf3882e983428b5" kindref="member">_pin</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1a3a932c67ba4a4c429b94fa6ce1d70509" kindref="member">PIN_NOT_ATTACHED</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1aef46571ff78ea76ba996f37115298770" kindref="member">_pulseWidthDuty</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1afc65ddfcd0a3cc6b0b11d190fff336fa" kindref="member">_channel</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1a408f28a5e3217d89aaf84c8962246b82" kindref="member">CHANNEL_NOT_ATTACHED</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1af09a43a1a8d232175ea943aa161ea307" kindref="member">_minAngle</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1a845f9e8f07042a8b3610620762fd1f76" kindref="member">MIN_ANGLE</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1ab021d5c29c8cbcecad95ca1ce1acae58" kindref="member">_maxAngle</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1aba9244d6db406b41c59478c7f5aa28db" kindref="member">MAX_ANGLE</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a7efa6ca2ab307967e88a536b16b14d0e" kindref="member">_minPulseWidth</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1ad51c024572f3f8d2ee92e8bff1b2e774" kindref="member">MIN_PULSE_WIDTH</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo___e_s_p32_1a887f3e2f3dcbd0f43e9638767cdcaac6" kindref="member">_maxPulseWidth</ref><sp/>=<sp/><ref refid="class_servo___e_s_p32_1a67cca5b5dff918910ac675e00f799627" kindref="member">MAX_PULSE_WIDTH</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master/1.0.1/ESP32-Arduino-Servo-Library-master/src/Servo_ESP32.cpp"/>
+  </compounddef>
+</doxygen>

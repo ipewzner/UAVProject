@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_lora_8h" kind="file">
+    <compoundname>Lora.h</compoundname>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_communication_8h" local="yes">Communication.h</includes>
+    <includes refid="_software_serial_8h" local="no">SoftwareSerial.h</includes>
+    <includes local="no">ArduinoJson.h</includes>
+    <includes refid="_e_b_y_t_e_8h" local="yes">EBYTE.h</includes>
+    <includedby refid="_lora_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp</includedby>
+    <incdepgraph>
+      <node id="732">
+        <label>atomic</label>
+      </node>
+      <node id="737">
+        <label>functional</label>
+      </node>
+      <node id="736">
+        <label>esp_attr.h</label>
+      </node>
+      <node id="727">
+        <label>Communication.h</label>
+        <link refid="_communication_8h"/>
+        <childnode refid="728" relation="include">
+        </childnode>
+      </node>
+      <node id="729">
+        <label>SoftwareSerial.h</label>
+        <link refid="_software_serial_8h"/>
+        <childnode refid="730" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</label>
+        <link refid="Lora.h"/>
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="727" relation="include">
+        </childnode>
+        <childnode refid="729" relation="include">
+        </childnode>
+        <childnode refid="728" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+      </node>
+      <node id="726">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="728">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="731">
+        <label>Arduino.h</label>
+      </node>
+      <node id="738">
+        <label>cstddef</label>
+      </node>
+      <node id="740">
+        <label>EBYTE.h</label>
+        <link refid="_e_b_y_t_e_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>algorithm</label>
+      </node>
+      <node id="735">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>Stream.h</label>
+      </node>
+      <node id="733">
+        <label>memory</label>
+      </node>
+      <node id="730">
+        <label>circular_queue/circular_queue.h</label>
+        <link refid="circular__queue_8h"/>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="741">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h</label>
+        <link refid="Lora.h"/>
+        <childnode refid="742" relation="include">
+        </childnode>
+      </node>
+      <node id="742">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp</label>
+        <link refid="_lora_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_lora" prot="public">Lora</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Lora.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LORA_h</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_LORA_h</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_communication_8h" kindref="compound">Communication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_software_serial_8h" kindref="compound">SoftwareSerial.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ArduinoJson.h&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_b_y_t_e_8h" kindref="compound">EBYTE.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_lora" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_lora" kindref="compound">Lora</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_communication" kindref="compound">Communication</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//SoftwareSerial*<sp/>loraSerial;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_lora_1a057e93295a92d6dbfbc1be355b4c2aba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HardwareSerial*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_lora_1a057e93295a92d6dbfbc1be355b4c2aba" kindref="member">loraSerial</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_e_b_y_t_e" kindref="compound">EBYTE</ref>*<sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" kindref="member">Lora</ref>(int8_t<sp/>rx,<sp/>int8_t<sp/>tx,<sp/>int8_t<sp/>m0,<sp/>int8_t<sp/>m1,<sp/>int8_t<sp/>aux);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>void<sp/>begin(int<sp/>speed);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a675e5dfa837495b12b38ec49f75609b1" kindref="member">SendStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/>uint16_t);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a97ff403fd6884d2d82f6cdc55c99829f" kindref="member">available</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a2bccb912fc456f6d8f79fac05347e4dd" kindref="member">GetStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/>uint16_t);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a5ecdb3bc91fac48a4c21ec9a05cf8d6f" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a4646d5b39ddc44c0afc84b48ab7af5ec" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif;</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.h"/>
+  </compounddef>
+</doxygen>

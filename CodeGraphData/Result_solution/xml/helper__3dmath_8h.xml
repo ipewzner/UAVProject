@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="helper__3dmath_8h" kind="file">
+    <compoundname>helper_3dmath.h</compoundname>
+    <includedby refid="_m_p_u6050_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050.h</includedby>
+    <invincdepgraph>
+      <node id="164">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps20.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8h"/>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050.h</label>
+        <link refid="_m_p_u6050_8h"/>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.cpp</label>
+        <link refid="_m_p_u6050__9_axis___motion_apps41_8cpp"/>
+      </node>
+      <node id="172">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.cpp</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps612_8cpp"/>
+      </node>
+      <node id="173">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_9Axis_MotionApps41.h</label>
+        <link refid="_m_p_u6050__9_axis___motion_apps41_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.cpp</label>
+        <link refid="_sensor_array_8cpp"/>
+      </node>
+      <node id="165">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.h</label>
+        <link refid="_m_p_u_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/SensorArray.h</label>
+        <link refid="_sensor_array_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MPU.cpp</label>
+        <link refid="_m_p_u_8cpp"/>
+      </node>
+      <node id="162">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h</label>
+        <link refid="helper_3dmath.h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps612.h</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps612_8h"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050_6Axis_MotionApps20.cpp</label>
+        <link refid="_m_p_u6050__6_axis___motion_apps20_8cpp"/>
+      </node>
+      <node id="170">
+        <label>C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/MPU6050.cpp</label>
+        <link refid="_m_p_u6050_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_quaternion" prot="public">Quaternion</innerclass>
+    <innerclass refid="class_vector_int16" prot="public">VectorInt16</innerclass>
+    <innerclass refid="class_vector_float" prot="public">VectorFloat</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>I2C<sp/>device<sp/>class<sp/>(I2Cdev)<sp/>demonstration<sp/>Arduino<sp/>sketch<sp/>for<sp/>MPU6050<sp/>class,<sp/>3D<sp/>math<sp/>helper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>6/5/2012<sp/>by<sp/>Jeff<sp/>Rowberg<sp/>&lt;jeff@rowberg.net&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Updates<sp/>should<sp/>(hopefully)<sp/>always<sp/>be<sp/>available<sp/>at<sp/>https://github.com/jrowberg/i2cdevlib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Changelog:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>2012-06-05<sp/>-<sp/>add<sp/>3D<sp/>math<sp/>helper<sp/>file<sp/>to<sp/>DMP6<sp/>example<sp/>sketch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>============================================</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">I2Cdev<sp/>device<sp/>library<sp/>code<sp/>is<sp/>placed<sp/>under<sp/>the<sp/>MIT<sp/>license</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Copyright<sp/>(c)<sp/>2012<sp/>Jeff<sp/>Rowberg</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">===============================================</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HELPER_3DMATH_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_HELPER_3DMATH_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_quaternion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="38" refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="39" refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="40" refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="class_quaternion_1abcc01358aada56ea5f0db4da18aaf77d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1abcc01358aada56ea5f0db4da18aaf77d" kindref="member">Quaternion</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref><sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="class_quaternion_1ad8158a59767dc3d42ebf0324b82ba95a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1ad8158a59767dc3d42ebf0324b82ba95a" kindref="member">Quaternion</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nw,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ny,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nz)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>=<sp/>nw;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>=<sp/>nx;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>=<sp/>ny;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref><sp/>=<sp/>nz;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_quaternion_1a3ff8405ed92a3ca16de656e6c83b4028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="class_quaternion_1a3ff8405ed92a3ca16de656e6c83b4028" kindref="member">getProduct</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>q)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Quaternion<sp/>multiplication<sp/>is<sp/>defined<sp/>by:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>(Q1<sp/>*<sp/>Q2).w<sp/>=<sp/>(w1w2<sp/>-<sp/>x1x2<sp/>-<sp/>y1y2<sp/>-<sp/>z1z2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>(Q1<sp/>*<sp/>Q2).x<sp/>=<sp/>(w1x2<sp/>+<sp/>x1w2<sp/>+<sp/>y1z2<sp/>-<sp/>z1y2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>(Q1<sp/>*<sp/>Q2).y<sp/>=<sp/>(w1y2<sp/>-<sp/>x1z2<sp/>+<sp/>y1w2<sp/>+<sp/>z1x2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>(Q1<sp/>*<sp/>Q2).z<sp/>=<sp/>(w1z2<sp/>+<sp/>x1y2<sp/>-<sp/>y1x2<sp/>+<sp/>z1w2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1abcc01358aada56ea5f0db4da18aaf77d" kindref="member">Quaternion</ref>(</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>*q.<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>-<sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>*q.<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>-<sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>*q.<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>-<sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>*q.<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>w</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>*q.<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>+<sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>*q.<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>+<sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>*q.<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref><sp/>-<sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>*q.<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>*q.<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>-<sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>*q.<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref><sp/>+<sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>*q.<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>+<sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>*q.<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>*q.<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref><sp/>+<sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>*q.<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>-<sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>*q.<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>+<sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>*q.<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>);<sp/></highlight><highlight class="comment">//<sp/>new<sp/>z</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_quaternion_1a079a5673188a8a7d608e8495de0dd119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="class_quaternion_1a079a5673188a8a7d608e8495de0dd119" kindref="member">getConjugate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1abcc01358aada56ea5f0db4da18aaf77d" kindref="member">Quaternion</ref>(<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>,<sp/>-<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>,<sp/>-<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>,<sp/>-<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="class_quaternion_1a6d0f82bd29fcbe29f784e848ec2eb8f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1a6d0f82bd29fcbe29f784e848ec2eb8f1" kindref="member">getMagnitude</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>*<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>+<sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>*<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>+<sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>*<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>+<sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>*<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="class_quaternion_1a48e6bafb249c895ed25f29dc9170e11e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quaternion_1a48e6bafb249c895ed25f29dc9170e11e" kindref="member">normalize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m<sp/>=<sp/><ref refid="class_quaternion_1a6d0f82bd29fcbe29f784e848ec2eb8f1" kindref="member">getMagnitude</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="class_quaternion_1a61f5f7cb9b248aa259292c3c1960a1f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="class_quaternion_1a61f5f7cb9b248aa259292c3c1960a1f0" kindref="member">getNormalized</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>r(<ref refid="class_quaternion_1aa44a65ab99e36f6ab8771030eed8a7ad" kindref="member">w</ref>,<sp/><ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>,<sp/><ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>,<sp/><ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.<ref refid="class_quaternion_1a48e6bafb249c895ed25f29dc9170e11e" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_vector_int16" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94" refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="95" refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="96" refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_vector_int16_1a314bffb747999af26026f734c43d61a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a314bffb747999af26026f734c43d61a2" kindref="member">VectorInt16</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="class_vector_int16_1acce45f37b3f90df1d5aff6edbf12f02b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1acce45f37b3f90df1d5aff6edbf12f02b" kindref="member">VectorInt16</ref>(int16_t<sp/>nx,<sp/>int16_t<sp/>ny,<sp/>int16_t<sp/>nz)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref><sp/>=<sp/>nx;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref><sp/>=<sp/>ny;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref><sp/>=<sp/>nz;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_vector_int16_1aeb8087ac5732450bc18ac944a16d0694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector_int16_1aeb8087ac5732450bc18ac944a16d0694" kindref="member">getMagnitude</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>*<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref><sp/>+<sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>*<ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref><sp/>+<sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>*<ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_vector_int16_1aefdadb30fbc20b564bbbf0b1a885e349" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_int16_1aefdadb30fbc20b564bbbf0b1a885e349" kindref="member">normalize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m<sp/>=<sp/><ref refid="class_vector_int16_1aeb8087ac5732450bc18ac944a16d0694" kindref="member">getMagnitude</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="class_vector_int16_1a1f2c17ac660f1e90a095f9e7914200c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/><ref refid="class_vector_int16_1a1f2c17ac660f1e90a095f9e7914200c5" kindref="member">getNormalized</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>r(<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>,<sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>,<sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.<ref refid="class_vector_int16_1aefdadb30fbc20b564bbbf0b1a885e349" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="class_vector_int16_1ac7bf149db0a2b66d7683b87ebeb2dfc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_int16_1ac7bf149db0a2b66d7683b87ebeb2dfc5" kindref="member">rotate</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>http://www.cprogramming.com/tutorial/3d/quaternions.html</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/transforms/index.htm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>http://content.gpwiki.org/index.php/OpenGL:Tutorials:Using_Quaternions_to_represent_rotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>^<sp/>or:<sp/>http://webcache.googleusercontent.com/search?q=cache:xgJAp3bDNhQJ:content.gpwiki.org/index.php/OpenGL:Tutorials:Using_Quaternions_to_represent_rotation&amp;hl=en&amp;gl=us&amp;strip=1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>P_out<sp/>=<sp/>q<sp/>*<sp/>P_in<sp/>*<sp/>conj(q)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>P_out<sp/>is<sp/>the<sp/>output<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>q<sp/>is<sp/>the<sp/>orientation<sp/>quaternion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>P_in<sp/>is<sp/>the<sp/>input<sp/>vector<sp/>(a*aReal)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>conj(q)<sp/>is<sp/>the<sp/>conjugate<sp/>of<sp/>the<sp/>orientation<sp/>quaternion<sp/>(q=[w,x,y,z],<sp/>q*=[w,-x,-y,-z])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>p(0,<sp/><ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>,<sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>,<sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quaternion<sp/>multiplication:<sp/>q<sp/>*<sp/>p,<sp/>stored<sp/>back<sp/>in<sp/>p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>q<sp/>-&gt;<sp/>getProduct(p);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quaternion<sp/>multiplication:<sp/>p<sp/>*<sp/>conj(q),<sp/>stored<sp/>back<sp/>in<sp/>p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>p.<ref refid="class_quaternion_1a3ff8405ed92a3ca16de656e6c83b4028" kindref="member">getProduct</ref>(q<sp/>-&gt;<sp/>getConjugate());</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>p<sp/>quaternion<sp/>is<sp/>now<sp/>[0,<sp/>x&apos;,<sp/>y&apos;,<sp/>z&apos;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref><sp/>=<sp/>p.<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref><sp/>=<sp/>p.<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref><sp/>=<sp/>p.<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="class_vector_int16_1a9e1d9f4553b069bf353e807f130a285b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/><ref refid="class_vector_int16_1a9e1d9f4553b069bf353e807f130a285b" kindref="member">getRotated</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_int16" kindref="compound">VectorInt16</ref><sp/>r(<ref refid="class_vector_int16_1a648435b4c99e9da9c95549ac344beaec" kindref="member">x</ref>,<sp/><ref refid="class_vector_int16_1a5d340e1f1bcbc064e5084ca609a6a6a3" kindref="member">y</ref>,<sp/><ref refid="class_vector_int16_1af1b5c4c297bdd32751ab4519480b919f" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.<ref refid="class_vector_int16_1ac7bf149db0a2b66d7683b87ebeb2dfc5" kindref="member">rotate</ref>(q);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="class_vector_float" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="161" refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="162" refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="163" refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a8b54ec5c117ca7101cff478b3cfaa0cc" kindref="member">VectorFloat</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171" refid="class_vector_float_1a3b12ed03e28bded4316275882433e5aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a3b12ed03e28bded4316275882433e5aa" kindref="member">VectorFloat</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ny,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nz)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref><sp/>=<sp/>nx;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref><sp/>=<sp/>ny;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref><sp/>=<sp/>nz;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" kindref="member">getMagnitude</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref>*<ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref><sp/>+<sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref>*<ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref><sp/>+<sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref>*<ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" kindref="member">normalize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m<sp/>=<sp/><ref refid="class_vector_float_1abe0c3954d8da8829a053125df1ce63d5" kindref="member">getMagnitude</ref>();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref><sp/>/=<sp/>m;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188" refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/><ref refid="class_vector_float_1aacb5e7ca59563c47dd066d8b1264ec4b" kindref="member">getNormalized</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/>r(<ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref>,<sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref>,<sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.<ref refid="class_vector_float_1a112eaf8758a6f51b96ed1ccb71700495" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194" refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" kindref="member">rotate</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>p(0,<sp/><ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref>,<sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref>,<sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quaternion<sp/>multiplication:<sp/>q<sp/>*<sp/>p,<sp/>stored<sp/>back<sp/>in<sp/>p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>q<sp/>-&gt;<sp/>getProduct(p);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quaternion<sp/>multiplication:<sp/>p<sp/>*<sp/>conj(q),<sp/>stored<sp/>back<sp/>in<sp/>p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>p.<ref refid="class_quaternion_1a3ff8405ed92a3ca16de656e6c83b4028" kindref="member">getProduct</ref>(q<sp/>-&gt;<sp/>getConjugate());</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>p<sp/>quaternion<sp/>is<sp/>now<sp/>[0,<sp/>x&apos;,<sp/>y&apos;,<sp/>z&apos;]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref><sp/>=<sp/>p.<ref refid="class_quaternion_1a8b80f191a3155cc0158d2b4f4d50b2cb" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref><sp/>=<sp/>p.<ref refid="class_quaternion_1a3bd3f270462944423611f44e19d2511b" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref><sp/>=<sp/>p.<ref refid="class_quaternion_1a625cb732d8ff3083e7852b86b736ab29" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/><ref refid="class_vector_float_1ab4093d50e98baf0d98b437a2b3ee7c2e" kindref="member">getRotated</ref>(<ref refid="class_quaternion" kindref="compound">Quaternion</ref><sp/>*q)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_float" kindref="compound">VectorFloat</ref><sp/>r(<ref refid="class_vector_float_1a2d8e5159f045ca977769d168af75320c" kindref="member">x</ref>,<sp/><ref refid="class_vector_float_1a4affe2a9de97600b3d8df98586679e14" kindref="member">y</ref>,<sp/><ref refid="class_vector_float_1a54b8e4234e3b48e106d090570755f107" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.<ref refid="class_vector_float_1afef0e6d631fb1eb67b6913e90730aa9e" kindref="member">rotate</ref>(q);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_HELPER_3DMATH_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050/0.0.0/MPU6050/helper_3dmath.h"/>
+  </compounddef>
+</doxygen>

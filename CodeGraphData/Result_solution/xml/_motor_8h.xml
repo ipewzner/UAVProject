@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_motor_8h" kind="file">
+    <compoundname>Motor.h</compoundname>
+    <includes local="no">WString.h</includes>
+    <includes local="no">ArduinoJson.h</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includedby refid="_motor_array_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</includedby>
+    <includedby refid="_motor_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.cpp</includedby>
+    <includedby refid="_motor_array_8cpp" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp</includedby>
+    <includedby refid="_servo_motor_8h" local="yes">C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</includedby>
+    <incdepgraph>
+      <node id="764">
+        <label>WString.h</label>
+      </node>
+      <node id="766">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="765">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="763">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h</label>
+        <link refid="Motor.h"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="771">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.cpp</label>
+        <link refid="_motor_array_8cpp"/>
+      </node>
+      <node id="768">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/MotorArray.h</label>
+        <link refid="_motor_array_8h"/>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.h</label>
+        <link refid="_servo_motor_8h"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.h</label>
+        <link refid="logic_8h"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h</label>
+        <link refid="Motor.h"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+      <node id="774">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/ServoMotor.cpp</label>
+        <link refid="_servo_motor_8cpp"/>
+      </node>
+      <node id="770">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/logic.cpp</label>
+        <link refid="logic_8cpp"/>
+      </node>
+      <node id="772">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.cpp</label>
+        <link refid="_motor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_motor" prot="public">Motor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Motor.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WString.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ArduinoJson.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MOTOR_h</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_MOTOR_h</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_motor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_motor" kindref="compound">Motor</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" kindref="member">motorNumber</ref>()<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//needed<sp/>for<sp/>servo<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_motor_1aee6dbc24d292e079eff3feb608e8ca7b" kindref="member">motorNumber</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>motorNumber++;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18" refid="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_motor_1a1ab3924feb55a70ff20a82ca4fdd9a89" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_motor_1ab94ecfd1c8f65ac58655b5ba3f74107d" kindref="member">init</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a90ba8644422d8e273eaa6bb772d25b4f" kindref="member">move</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>String<sp/>asciiResult()<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>DynamicJsonDocument<sp/>jsonResult()<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Motor.h"/>
+  </compounddef>
+</doxygen>

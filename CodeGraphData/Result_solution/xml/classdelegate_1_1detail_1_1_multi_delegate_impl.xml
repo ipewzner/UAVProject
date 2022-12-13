@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classdelegate_1_1detail_1_1_multi_delegate_impl" kind="class" prot="public">
+    <compoundname>delegate::detail::MultiDelegateImpl</compoundname>
+    <basecompoundref refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl" prot="public" virt="non-virtual">delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;</basecompoundref>
+    <derivedcompoundref refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01_r_07_08_00_01_i_s_q_u_e_u_e_00_01f4d0d6c348447e0c221bc72f5d5ee8eb" prot="public" virt="non-virtual">delegate::detail::MultiDelegate&lt; Delegate, R(), ISQUEUE, QUEUE_CAPACITY &gt;</derivedcompoundref>
+    <includes refid="_multi_delegate_8h" local="no">MultiDelegate.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Delegate</declname>
+        <defname>Delegate</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>R</declname>
+        <defname>R</defname>
+        <defval>void</defval>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>ISQUEUE</declname>
+        <defname>ISQUEUE</defname>
+        <defval>false</defval>
+      </param>
+      <param>
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <declname>QUEUE_CAPACITY</declname>
+        <defname>QUEUE_CAPACITY</defname>
+        <defval>32</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdelegate_1_1detail_1_1_multi_delegate_impl_1ab3aff0e0f6284db66880c41f90688f6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>R</type>
+        <definition>R delegate::detail::MultiDelegateImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="410" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="410" bodyend="441"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="219">
+        <label>delegate::detail::MultiDelegateImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate_impl"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl"/>
+      </node>
+      <node id="221">
+        <label>delegate::detail::MultiDelegate&lt; Delegate, R(), ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate_3_01_delegate_00_01_r_07_08_00_01_i_s_q_u_e_u_e_00_01f4d0d6c348447e0c221bc72f5d5ee8eb"/>
+        <childnode refid="219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="222">
+        <label>delegate::detail::MultiDelegateImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate_impl"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>A</label>
+      </node>
+      <node id="223">
+        <label>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl"/>
+        <childnode refid="224" relation="usage">
+          <edgelabel>unused</edgelabel>
+          <edgelabel>last</edgelabel>
+          <edgelabel>first</edgelabel>
+        </childnode>
+      </node>
+      <node id="228">
+        <label>R</label>
+      </node>
+      <node id="224">
+        <label>delegate::detail::MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY, P &gt;::Node_t</label>
+        <link refid="structdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1_node__t"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>mDelegate</edgelabel>
+        </childnode>
+        <childnode refid="224" relation="usage">
+          <edgelabel>mNext</edgelabel>
+        </childnode>
+      </node>
+      <node id="226">
+        <label>delegate::detail::DelegatePImpl&lt; A, R, P...&gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate_p_impl"/>
+        <childnode refid="227" relation="usage">
+          <edgelabel>obj</edgelabel>
+        </childnode>
+        <childnode refid="228" relation="usage">
+          <edgelabel>fnA</edgelabel>
+        </childnode>
+      </node>
+      <node id="225">
+        <label>delegate::detail::Delegate&lt; A, R, P &gt;</label>
+        <link refid="classdelegate_1_1detail_1_1_delegate"/>
+        <childnode refid="226" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" line="406" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main/6.14.1/espsoftwareserial-main/src/circular_queue/MultiDelegate.h" bodystart="405" bodyend="442"/>
+    <listofallmembers>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ae348056e8bf6c5109d5f382bd90040f2" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>add</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56f4055d96ba68b441bf25a6788c2c46" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>add</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a2bc816c53c58a20100e2d1165589306d" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>begin</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a59dbf54afaa01e3a7188dacb977e5dd3" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>end</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1ab1d9378d9fc8c4a0e16cf512640613cf" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>erase</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a7e4adb2ae87c41b872e992f27fe54b76" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>erase</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aa27befbb93e31d60f4388ff1a69c3400" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>first</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a07f9513c257e6296168dea5cfb351fe7" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>get_node_unsafe</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a52286b8915d7936483822b0495ebd37f" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>last</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a9d1ba7e86f2fc8b6691d290f623dfde5" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a9b0b2c13de71a413bc3b79f2ccb4ac08" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a559cff70299bc44b720b623b272f14e6" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a500f1b1c99047f9166de2593daaf1a13" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a2ed3381e6d95e9736b5a186dbeef6e8a" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>MultiDelegatePImpl</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6082b6b777a64009280b5b59667db0e6" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>nodeCount</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1af384f76ebf0f247a8b02d3300a458870" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator bool</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_impl_1ab3aff0e0f6284db66880c41f90688f6f" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator()</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a56caaf82cc287900d79d132bb99e63fd" prot="public" virt="non-virtual" ambiguityscope="MultiDelegatePImpl&lt; Delegate, R, ISQUEUE, QUEUE_CAPACITY &gt;::"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator()</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1aae0d4572f249d0e3ddce77af3af498cb" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator+=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a1dd6b660da18774be7700da4cd25904a" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator+=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a15d654cfdf5dc0068d90e29958308a41" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a60d413a48af3b162ae0092cbc0ef0033" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a060da3076fe955a077b04520e91f7751" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>operator=</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a6830e221ed95f45f4e5142d2e06e6ed8" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>recycle_node_unsafe</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a01922e92bbb12e37fd7096e42e813596" prot="protected" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>unused</name></member>
+      <member refid="classdelegate_1_1detail_1_1_multi_delegate_p_impl_1a61fa2e8a92617c3b6595e17b24e9a38b" prot="public" virt="non-virtual"><scope>delegate::detail::MultiDelegateImpl</scope><name>~MultiDelegatePImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

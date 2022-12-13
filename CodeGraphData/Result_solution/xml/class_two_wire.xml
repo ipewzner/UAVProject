@@ -1,0 +1,1216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_two_wire" kind="class" prot="public">
+    <compoundname>TwoWire</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Stream</basecompoundref>
+    <includes refid="_wire_8h" local="no">Wire.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="41" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" compoundref="_wire_8cpp" startline="72" endline="118">begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" prot="protected" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t TwoWire::sda</definition>
+        <argsstring></argsstring>
+        <name>sda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="42" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" compoundref="_wire_8cpp" startline="72" endline="118">begin</referencedby>
+        <referencedby refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" compoundref="_wire_8cpp" startline="61" endline="70">setPins</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" prot="protected" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t TwoWire::scl</definition>
+        <argsstring></argsstring>
+        <name>scl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="43" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" compoundref="_wire_8cpp" startline="72" endline="118">begin</referencedby>
+        <referencedby refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" compoundref="_wire_8cpp" startline="61" endline="70">setPins</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" prot="protected" static="no" mutable="no">
+        <type>i2c_t *</type>
+        <definition>i2c_t* TwoWire::i2c</definition>
+        <argsstring></argsstring>
+        <name>i2c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="44" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" compoundref="_wire_8cpp" startline="72" endline="118">begin</referencedby>
+        <referencedby refid="class_two_wire_1ae53caa52b5273b35e69c90836e7fb9b0" compoundref="_wire_8cpp" startline="377" endline="379">busy</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1a86f0aedd9e13524b9cf44b1dcfad0d05" compoundref="_wire_8cpp" startline="135" endline="138">getClock</referencedby>
+        <referencedby refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" compoundref="_wire_8cpp" startline="148" endline="152">readTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a0ab75123574d32fc130252d073009414" compoundref="_wire_8cpp" startline="130" endline="133">setClock</referencedby>
+        <referencedby refid="class_two_wire_1a6339bf1ac5bfb7488e448ab8ca00959b" compoundref="_wire_8cpp" startline="373" endline="375">setDebugFlags</referencedby>
+        <referencedby refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" compoundref="_wire_8cpp" startline="61" endline="70">setPins</referencedby>
+        <referencedby refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" compoundref="_wire_8cpp" startline="142" endline="146">writeTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" compoundref="_wire_8cpp" startline="52" endline="59">~TwoWire</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1acab56ee5c26128f85facb3869192f4be" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::rxBuffer[I2C_BUFFER_LENGTH]</definition>
+        <argsstring>[I2C_BUFFER_LENGTH]</argsstring>
+        <name>rxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="46" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" compoundref="_wire_8cpp" startline="265" endline="272">peek</referencedby>
+        <referencedby refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" compoundref="_wire_8cpp" startline="255" endline="263">read</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::rxIndex</definition>
+        <argsstring></argsstring>
+        <name>rxIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="47" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" compoundref="_wire_8cpp" startline="249" endline="253">available</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" compoundref="_wire_8cpp" startline="265" endline="272">peek</referencedby>
+        <referencedby refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" compoundref="_wire_8cpp" startline="255" endline="263">read</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::rxLength</definition>
+        <argsstring></argsstring>
+        <name>rxLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="48" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" compoundref="_wire_8cpp" startline="249" endline="253">available</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" compoundref="_wire_8cpp" startline="265" endline="272">peek</referencedby>
+        <referencedby refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" compoundref="_wire_8cpp" startline="255" endline="263">read</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::rxQueued</definition>
+        <argsstring></argsstring>
+        <name>rxQueued</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="49" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::txBuffer[I2C_BUFFER_LENGTH]</definition>
+        <argsstring>[I2C_BUFFER_LENGTH]</argsstring>
+        <name>txBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="51" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1abbd7cb48038464462b4506af396ac21e" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::txIndex</definition>
+        <argsstring></argsstring>
+        <name>txIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="52" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::txLength</definition>
+        <argsstring></argsstring>
+        <name>txLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="53" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1ad1f75c83fb55299c789b667770df598a" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::txAddress</definition>
+        <argsstring></argsstring>
+        <name>txAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="54" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::txQueued</definition>
+        <argsstring></argsstring>
+        <name>txQueued</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="55" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::transmitting</definition>
+        <argsstring></argsstring>
+        <name>transmitting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="57" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" prot="protected" static="no" mutable="no">
+        <type>i2c_err_t</type>
+        <definition>i2c_err_t TwoWire::last_error</definition>
+        <argsstring></argsstring>
+        <name>last_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="64" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a748a7a4dbaf85933b0a7391c1aa48a7d" compoundref="_wire_8cpp" startline="332" endline="335">lastError</referencedby>
+        <referencedby refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" compoundref="_wire_8cpp" startline="148" endline="152">readTransmission</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+        <referencedby refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</referencedby>
+        <referencedby refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" compoundref="_wire_8cpp" startline="142" endline="146">writeTransmission</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::_timeOutMillis</definition>
+        <argsstring></argsstring>
+        <name>_timeOutMillis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="65" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_two_wire_1a31c5d086052617b8df91f0d6d607b2ae" compoundref="_wire_8cpp" startline="125" endline="128">getTimeOut</referencedby>
+        <referencedby refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" compoundref="_wire_8cpp" startline="148" endline="152">readTransmission</referencedby>
+        <referencedby refid="class_two_wire_1a92bb9dc18d2dc7f5f06ebf605dededa7" compoundref="_wire_8cpp" startline="120" endline="123">setTimeOut</referencedby>
+        <referencedby refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" compoundref="_wire_8cpp" startline="142" endline="146">writeTransmission</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_two_wire_1aece155ae8f00b175902cfa9b07b06c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TwoWire::TwoWire</definition>
+        <argsstring>(uint8_t bus_num)</argsstring>
+        <name>TwoWire</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>bus_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="68" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="35" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TwoWire::~TwoWire</definition>
+        <argsstring>()</argsstring>
+        <name>~TwoWire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="69" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="52" bodyend="59"/>
+        <references refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</references>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TwoWire::setPins</definition>
+        <argsstring>(int sda, int scl)</argsstring>
+        <name>setPins</name>
+        <param>
+          <type>int</type>
+          <declname>sda</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="72" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="61" bodyend="70"/>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+        <references refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" compoundref="_wire_8h" startline="43">scl</references>
+        <references refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" compoundref="_wire_8h" startline="42">sda</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TwoWire::begin</definition>
+        <argsstring>(int sda=-1, int scl=-1, uint32_t frequency=0)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>int</type>
+          <declname>sda</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scl</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>frequency</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="74" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="72" bodyend="118"/>
+        <references refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</references>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+        <references refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" compoundref="_wire_8h" startline="41">num</references>
+        <references refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" compoundref="_wire_8h" startline="43">scl</references>
+        <references refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" compoundref="_wire_8h" startline="42">sda</references>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">MPU::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a0ab75123574d32fc130252d073009414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::setClock</definition>
+        <argsstring>(uint32_t frequency)</argsstring>
+        <name>setClock</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>frequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="77" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="130" bodyend="133"/>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+        <referencedby refid="class_m_p_u_1a6e74ed9afb7dee3249c046882c770b06" compoundref="_m_p_u_8cpp" startline="117" endline="176">MPU::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a86f0aedd9e13524b9cf44b1dcfad0d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::getClock</definition>
+        <argsstring>()</argsstring>
+        <name>getClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="78" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="135" bodyend="138"/>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a92bb9dc18d2dc7f5f06ebf605dededa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::setTimeOut</definition>
+        <argsstring>(uint16_t timeOutMillis)</argsstring>
+        <name>setTimeOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeOutMillis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="80" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="120" bodyend="123"/>
+        <references refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" compoundref="_wire_8h" startline="65">_timeOutMillis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a31c5d086052617b8df91f0d6d607b2ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t TwoWire::getTimeOut</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="81" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="125" bodyend="128"/>
+        <references refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" compoundref="_wire_8h" startline="65">_timeOutMillis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a748a7a4dbaf85933b0a7391c1aa48a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::lastError</definition>
+        <argsstring>()</argsstring>
+        <name>lastError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="83" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="332" bodyend="335"/>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a15cfa2221f118f881925c3d422d3b909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * TwoWire::getErrorText</definition>
+        <argsstring>(uint8_t err)</argsstring>
+        <name>getErrorText</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="84" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="350" bodyend="368"/>
+        <references refid="_wire_8cpp_1afd266ef032d8902b20877668d0c64b95" compoundref="_wire_8cpp" startline="337">ERRORTEXT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>i2c_err_t</type>
+        <definition>i2c_err_t TwoWire::writeTransmission</definition>
+        <argsstring>(uint16_t address, uint8_t *buff, uint16_t size, bool sendStop=true)</argsstring>
+        <name>writeTransmission</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendStop</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="87" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="142" bodyend="146"/>
+        <references refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" compoundref="_wire_8h" startline="65">_timeOutMillis</references>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>i2c_err_t</type>
+        <definition>i2c_err_t TwoWire::readTransmission</definition>
+        <argsstring>(uint16_t address, uint8_t *buff, uint16_t size, bool sendStop=true, uint32_t *readCount=NULL)</argsstring>
+        <name>readTransmission</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendStop</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>readCount</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="88" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="148" bodyend="152"/>
+        <references refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" compoundref="_wire_8h" startline="65">_timeOutMillis</references>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::beginTransmission</definition>
+        <argsstring>(uint16_t address)</argsstring>
+        <name>beginTransmission</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="90" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="154" bodyend="161"/>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+        <references refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" compoundref="_wire_8h" startline="57">transmitting</references>
+        <references refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" compoundref="_wire_8h" startline="54">txAddress</references>
+        <references refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" compoundref="_wire_8h" startline="52">txIndex</references>
+        <references refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" compoundref="_wire_8h" startline="53">txLength</references>
+        <references refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" compoundref="_wire_8h" startline="55">txQueued</references>
+        <referencedby refid="class_two_wire_1a4435b647886cbd3edb91a5353809c339" compoundref="_wire_8cpp" startline="315" endline="318">beginTransmission</referencedby>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+        <referencedby refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" compoundref="_i2_cdev_8cpp" startline="590" endline="648">I2Cdev::writeBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" compoundref="_i2_cdev_8cpp" startline="657" endline="719">I2Cdev::writeWords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a1876ffdb16fb185c14a75e1251cef5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::beginTransmission</definition>
+        <argsstring>(uint8_t address)</argsstring>
+        <name>beginTransmission</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="91" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="320" bodyend="323"/>
+        <references refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a4435b647886cbd3edb91a5353809c339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::beginTransmission</definition>
+        <argsstring>(int address)</argsstring>
+        <name>beginTransmission</name>
+        <param>
+          <type>int</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="92" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="315" bodyend="318"/>
+        <references refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" compoundref="_wire_8cpp" startline="154" endline="161">beginTransmission</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::endTransmission</definition>
+        <argsstring>(bool sendStop)</argsstring>
+        <name>endTransmission</name>
+        <param>
+          <type>bool</type>
+          <declname>sendStop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="94" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="165" bodyend="186"/>
+        <references refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</references>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+        <references refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" compoundref="_wire_8h" startline="47">rxIndex</references>
+        <references refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" compoundref="_wire_8h" startline="48">rxLength</references>
+        <references refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" compoundref="_wire_8h" startline="49">rxQueued</references>
+        <references refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" compoundref="_wire_8h" startline="57">transmitting</references>
+        <references refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" compoundref="_wire_8h" startline="54">txAddress</references>
+        <references refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" compoundref="_wire_8h" startline="51">txBuffer</references>
+        <references refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" compoundref="_wire_8h" startline="52">txIndex</references>
+        <references refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" compoundref="_wire_8h" startline="53">txLength</references>
+        <references refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" compoundref="_wire_8h" startline="55">txQueued</references>
+        <references refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" compoundref="_wire_8cpp" startline="142" endline="146">writeTransmission</references>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+        <referencedby refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" compoundref="_i2_cdev_8cpp" startline="590" endline="648">I2Cdev::writeBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" compoundref="_i2_cdev_8cpp" startline="657" endline="719">I2Cdev::writeWords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::endTransmission</definition>
+        <argsstring>(void)</argsstring>
+        <name>endTransmission</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="95" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="325" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(uint16_t address, uint8_t size, bool sendStop)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendStop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="97" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="190" bodyend="220"/>
+        <references refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" compoundref="_wire_8cpp" startline="274" endline="283">flush</references>
+        <references refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" compoundref="_wire_8h" startline="34">I2C_BUFFER_LENGTH</references>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+        <references refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" compoundref="_wire_8cpp" startline="148" endline="152">readTransmission</references>
+        <references refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" compoundref="_wire_8h" startline="46">rxBuffer</references>
+        <references refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" compoundref="_wire_8h" startline="47">rxIndex</references>
+        <references refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" compoundref="_wire_8h" startline="48">rxLength</references>
+        <references refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" compoundref="_wire_8h" startline="49">rxQueued</references>
+        <references refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" compoundref="_wire_8h" startline="55">txQueued</references>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+        <referencedby refid="class_two_wire_1a403efa439e6faffcb1bd037324ab089a" compoundref="_wire_8cpp" startline="285" endline="288">requestFrom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a8de7e701eaf37edbc81368d3025d25ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(uint16_t address, uint8_t size, uint8_t sendStop)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sendStop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="98" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="290" bodyend="293"/>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a13f8ff2e286edfefedf7e028e1d0fa56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(uint16_t address, uint8_t size)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="99" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="300" bodyend="303"/>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a403efa439e6faffcb1bd037324ab089a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(uint8_t address, uint8_t size, uint8_t sendStop)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sendStop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="100" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="285" bodyend="288"/>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a9171df9efde6e408d1ee46c9eebb1888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(uint8_t address, uint8_t size)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="101" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="295" bodyend="298"/>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a581c98e7b71b36c2347e0c929d151bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(int address, int size, int sendStop)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>int</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sendStop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="102" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="310" bodyend="313"/>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a3236b714103b0f624bd5bb456cc5d053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TwoWire::requestFrom</definition>
+        <argsstring>(int address, int size)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>int</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="103" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="305" bodyend="308"/>
+        <references refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="105" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="222" bodyend="236"/>
+        <references refid="_wire_8h_1aab040ced3ff06bdd71655d55a5f8db14" compoundref="_wire_8h" startline="34">I2C_BUFFER_LENGTH</references>
+        <references refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" compoundref="_wire_8h" startline="64">last_error</references>
+        <references refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" compoundref="_wire_8h" startline="57">transmitting</references>
+        <references refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" compoundref="_wire_8h" startline="51">txBuffer</references>
+        <references refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" compoundref="_wire_8h" startline="52">txIndex</references>
+        <references refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" compoundref="_wire_8h" startline="53">txLength</references>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+        <referencedby refid="class_two_wire_1a1957b4d5a6a997bdde436e9e40d131a7" compoundref="_wire_8cpp" startline="238" endline="247">write</referencedby>
+        <referencedby refid="class_i2_cdev_1a7df708edcc1a31cda2368f9ca7b80d94" compoundref="_i2_cdev_8cpp" startline="590" endline="648">I2Cdev::writeBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1a48163743e9805d31d0a11d91bca5abd4" compoundref="_i2_cdev_8cpp" startline="657" endline="719">I2Cdev::writeWords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a1957b4d5a6a997bdde436e9e40d131a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(const uint8_t *, size_t)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+          <defname>quantity</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="106" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="238" bodyend="247"/>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TwoWire::available</definition>
+        <argsstring>(void)</argsstring>
+        <name>available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="107" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="249" bodyend="253"/>
+        <references refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" compoundref="_wire_8h" startline="47">rxIndex</references>
+        <references refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" compoundref="_wire_8h" startline="48">rxLength</references>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TwoWire::read</definition>
+        <argsstring>(void)</argsstring>
+        <name>read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="108" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="255" bodyend="263"/>
+        <references refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" compoundref="_wire_8h" startline="46">rxBuffer</references>
+        <references refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" compoundref="_wire_8h" startline="47">rxIndex</references>
+        <references refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" compoundref="_wire_8h" startline="48">rxLength</references>
+        <referencedby refid="class_i2_cdev_1adea93065902860f7f6f1b4b122fd5d2e" compoundref="_i2_cdev_8cpp" startline="209" endline="321">I2Cdev::readBytes</referencedby>
+        <referencedby refid="class_i2_cdev_1ad6670e608d67a81377d5103edabf0489" compoundref="_i2_cdev_8cpp" startline="331" endline="475">I2Cdev::readWords</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TwoWire::peek</definition>
+        <argsstring>(void)</argsstring>
+        <name>peek</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="109" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="265" bodyend="272"/>
+        <references refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" compoundref="_wire_8h" startline="46">rxBuffer</references>
+        <references refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" compoundref="_wire_8h" startline="47">rxIndex</references>
+        <references refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" compoundref="_wire_8h" startline="48">rxLength</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::flush</definition>
+        <argsstring>(void)</argsstring>
+        <name>flush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="110" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="274" bodyend="283"/>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+        <references refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" compoundref="_wire_8h" startline="47">rxIndex</references>
+        <references refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" compoundref="_wire_8h" startline="48">rxLength</references>
+        <references refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" compoundref="_wire_8h" startline="49">rxQueued</references>
+        <references refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" compoundref="_wire_8h" startline="52">txIndex</references>
+        <references refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" compoundref="_wire_8h" startline="53">txLength</references>
+        <references refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" compoundref="_wire_8h" startline="55">txQueued</references>
+        <referencedby refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" compoundref="_wire_8cpp" startline="72" endline="118">begin</referencedby>
+        <referencedby refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" compoundref="_wire_8cpp" startline="165" endline="186">endTransmission</referencedby>
+        <referencedby refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" compoundref="_wire_8cpp" startline="190" endline="220">requestFrom</referencedby>
+        <referencedby refid="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" compoundref="_wire_8cpp" startline="52" endline="59">~TwoWire</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a1ba732d94673122f6a73c85a8d04382b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="112" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="112" bodyend="115"/>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a0c9d09ead8fcddf2a84781fe77d3c975" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(unsigned long n)</argsstring>
+        <name>write</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="116" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="116" bodyend="119"/>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a55a9894186458e43852f6fb7c59bb066" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(long n)</argsstring>
+        <name>write</name>
+        <param>
+          <type>long</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="120" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="120" bodyend="123"/>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1afdb917746ee37f72e7452b4782e9527b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(unsigned int n)</argsstring>
+        <name>write</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="124" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="124" bodyend="127"/>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a8ec34b0d2a75e8b2751eb9f4332bd7c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ghostl_8h_1ae69faf5467d10c514074c9d6dc452f44" kindref="member">size_t</ref></type>
+        <definition>size_t TwoWire::write</definition>
+        <argsstring>(int n)</argsstring>
+        <name>write</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="128" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="128" bodyend="131"/>
+        <references refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" compoundref="_wire_8cpp" startline="222" endline="236">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a860d97eb825c6fdca388f2f0577cc34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::onReceive</definition>
+        <argsstring>(void(*)(int))</argsstring>
+        <name>onReceive</name>
+        <param>
+          <type>void(*)(int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a224bf8799dda398fc0db223801852ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::onRequest</definition>
+        <argsstring>(void(*)(void))</argsstring>
+        <name>onRequest</name>
+        <param>
+          <type>void(*)(void)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a6339bf1ac5bfb7488e448ab8ca00959b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t TwoWire::setDebugFlags</definition>
+        <argsstring>(uint32_t setBits, uint32_t resetBits)</argsstring>
+        <name>setDebugFlags</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>setBits</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>resetBits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="136" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="373" bodyend="375"/>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1ae53caa52b5273b35e69c90836e7fb9b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TwoWire::busy</definition>
+        <argsstring>()</argsstring>
+        <name>busy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="137" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.cpp" bodystart="377" bodyend="379"/>
+        <references refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" compoundref="_wire_8h" startline="44">i2c</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="276">
+        <label>TwoWire</label>
+        <link refid="class_two_wire"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>Stream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="278">
+        <label>TwoWire</label>
+        <link refid="class_two_wire"/>
+        <childnode refid="279" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>Stream</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" line="39" column="1" bodyfile="C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire/1.0.1/Wire/src/Wire.h" bodystart="38" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_two_wire_1aa7b986c8772e348f259f4a0f31a7dbf1" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>_timeOutMillis</name></member>
+      <member refid="class_two_wire_1aee57bc52bee06508e231c5fc6bc35ada" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>available</name></member>
+      <member refid="class_two_wire_1afc88eaa7094229ce2c28ad04ccb230e2" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>begin</name></member>
+      <member refid="class_two_wire_1a51bb9a0534ebd54cab41bde3b450e554" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>beginTransmission</name></member>
+      <member refid="class_two_wire_1a1876ffdb16fb185c14a75e1251cef5e4" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>beginTransmission</name></member>
+      <member refid="class_two_wire_1a4435b647886cbd3edb91a5353809c339" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>beginTransmission</name></member>
+      <member refid="class_two_wire_1ae53caa52b5273b35e69c90836e7fb9b0" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>busy</name></member>
+      <member refid="class_two_wire_1a07df20fe103c5bc40d3f8f40aafc50fe" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>endTransmission</name></member>
+      <member refid="class_two_wire_1af80f9a7b85a3a81a035ca94c95bcdc1d" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>endTransmission</name></member>
+      <member refid="class_two_wire_1a4d92ddf6ca349c815de1de15fca06b5e" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>flush</name></member>
+      <member refid="class_two_wire_1a86f0aedd9e13524b9cf44b1dcfad0d05" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>getClock</name></member>
+      <member refid="class_two_wire_1a15cfa2221f118f881925c3d422d3b909" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>getErrorText</name></member>
+      <member refid="class_two_wire_1a31c5d086052617b8df91f0d6d607b2ae" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>getTimeOut</name></member>
+      <member refid="class_two_wire_1adcc38b7eb64933237f9e793a6285b39b" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>i2c</name></member>
+      <member refid="class_two_wire_1a52e5af4a03d5008b4dace3c0632cebbe" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>last_error</name></member>
+      <member refid="class_two_wire_1a748a7a4dbaf85933b0a7391c1aa48a7d" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>lastError</name></member>
+      <member refid="class_two_wire_1af3270d8f87756e4f9f7401c81bb21ae8" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>num</name></member>
+      <member refid="class_two_wire_1a860d97eb825c6fdca388f2f0577cc34a" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>onReceive</name></member>
+      <member refid="class_two_wire_1a224bf8799dda398fc0db223801852ca5" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>onRequest</name></member>
+      <member refid="class_two_wire_1a5bd64cb7bd609e9470a15d96a0991ec8" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>peek</name></member>
+      <member refid="class_two_wire_1aa361b83500d00dfb93bb25b6473b33e9" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>read</name></member>
+      <member refid="class_two_wire_1adbf10905a824e8b5f725f207a5ac4656" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>readTransmission</name></member>
+      <member refid="class_two_wire_1aabbe29699c55f96025b4328929b1d97d" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a8de7e701eaf37edbc81368d3025d25ca" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a13f8ff2e286edfefedf7e028e1d0fa56" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a403efa439e6faffcb1bd037324ab089a" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a9171df9efde6e408d1ee46c9eebb1888" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a581c98e7b71b36c2347e0c929d151bbd" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a3236b714103b0f624bd5bb456cc5d053" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1acab56ee5c26128f85facb3869192f4be" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>rxBuffer</name></member>
+      <member refid="class_two_wire_1acb8c50e3d9b71481c1e1662afcd69804" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>rxIndex</name></member>
+      <member refid="class_two_wire_1a3ddf4d339e0ad6912ce341337764e3f8" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>rxLength</name></member>
+      <member refid="class_two_wire_1a651ae83cf86b51f08d402ec4f09320c4" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>rxQueued</name></member>
+      <member refid="class_two_wire_1adfafe6fcf59064bfaaca5af8a511079e" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>scl</name></member>
+      <member refid="class_two_wire_1a30b1c8b1f8c6dc8cfc624c0503b54dac" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>sda</name></member>
+      <member refid="class_two_wire_1a0ab75123574d32fc130252d073009414" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>setClock</name></member>
+      <member refid="class_two_wire_1a6339bf1ac5bfb7488e448ab8ca00959b" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>setDebugFlags</name></member>
+      <member refid="class_two_wire_1af47888c4eb28879a1a1cf4ab80c2ae97" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>setPins</name></member>
+      <member refid="class_two_wire_1a92bb9dc18d2dc7f5f06ebf605dededa7" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>setTimeOut</name></member>
+      <member refid="class_two_wire_1a0b047026ca5b21287a57cba18bf9df9e" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>transmitting</name></member>
+      <member refid="class_two_wire_1aece155ae8f00b175902cfa9b07b06c40" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>TwoWire</name></member>
+      <member refid="class_two_wire_1ad1f75c83fb55299c789b667770df598a" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>txAddress</name></member>
+      <member refid="class_two_wire_1a401e8ad759c11090853b59a8bc61cbeb" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>txBuffer</name></member>
+      <member refid="class_two_wire_1abbd7cb48038464462b4506af396ac21e" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>txIndex</name></member>
+      <member refid="class_two_wire_1ae1339215d4b69e94f2df156d07a9c300" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>txLength</name></member>
+      <member refid="class_two_wire_1a651bef9615c4e726d9dbe5e6758ec4eb" prot="protected" virt="non-virtual"><scope>TwoWire</scope><name>txQueued</name></member>
+      <member refid="class_two_wire_1a318b7bec156c1f1075a818c0ad3427d7" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1a1957b4d5a6a997bdde436e9e40d131a7" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1a1ba732d94673122f6a73c85a8d04382b" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1a0c9d09ead8fcddf2a84781fe77d3c975" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1a55a9894186458e43852f6fb7c59bb066" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1afdb917746ee37f72e7452b4782e9527b" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1a8ec34b0d2a75e8b2751eb9f4332bd7c3" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>write</name></member>
+      <member refid="class_two_wire_1a23b0121a2d82df8d544c8349f4903257" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>writeTransmission</name></member>
+      <member refid="class_two_wire_1a5b4aec9a037746123d1e4a4e2ec01a96" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>~TwoWire</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

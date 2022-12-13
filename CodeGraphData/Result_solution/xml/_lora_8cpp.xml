@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_lora_8cpp" kind="file">
+    <compoundname>Lora.cpp</compoundname>
+    <includes refid="_lora_8h" local="yes">Lora.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stddef.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdint.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xatomic.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xthreads.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/exception</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/iosfwd</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cstdio</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cstring</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cwchar</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xstddef</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/type_traits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/typeinfo</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/vcruntime_typeinfo.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xmemory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/tuple</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/new</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xutility</includes>
+    <incdepgraph>
+      <node id="695">
+        <label>atomic</label>
+      </node>
+      <node id="713">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cstdio</label>
+      </node>
+      <node id="700">
+        <label>functional</label>
+      </node>
+      <node id="719">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/vcruntime_typeinfo.h</label>
+      </node>
+      <node id="712">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/iosfwd</label>
+      </node>
+      <node id="699">
+        <label>esp_attr.h</label>
+      </node>
+      <node id="723">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xutility</label>
+      </node>
+      <node id="711">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/exception</label>
+      </node>
+      <node id="709">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xthreads.h</label>
+      </node>
+      <node id="716">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xstddef</label>
+      </node>
+      <node id="720">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xmemory</label>
+      </node>
+      <node id="690">
+        <label>Communication.h</label>
+        <link refid="_communication_8h"/>
+        <childnode refid="691" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>SoftwareSerial.h</label>
+        <link refid="_software_serial_8h"/>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+      </node>
+      <node id="717">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/type_traits</label>
+      </node>
+      <node id="715">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cwchar</label>
+      </node>
+      <node id="714">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/cstring</label>
+      </node>
+      <node id="688">
+        <label>Lora.h</label>
+        <link refid="_lora_8h"/>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="704">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals.h</label>
+      </node>
+      <node id="691">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="707">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/string.h</label>
+      </node>
+      <node id="710">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/yvals_core.h</label>
+      </node>
+      <node id="694">
+        <label>Arduino.h</label>
+      </node>
+      <node id="701">
+        <label>cstddef</label>
+      </node>
+      <node id="722">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/new</label>
+      </node>
+      <node id="708">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/xatomic.h</label>
+      </node>
+      <node id="703">
+        <label>EBYTE.h</label>
+        <link refid="_e_b_y_t_e_8h"/>
+        <childnode refid="694" relation="include">
+        </childnode>
+      </node>
+      <node id="687">
+        <label>C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp</label>
+        <link refid="Lora.cpp"/>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="721">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/tuple</label>
+      </node>
+      <node id="697">
+        <label>algorithm</label>
+      </node>
+      <node id="698">
+        <label>Delegate.h</label>
+        <link refid="_delegate_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="701" relation="include">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/stdint.h</label>
+      </node>
+      <node id="702">
+        <label>Stream.h</label>
+      </node>
+      <node id="705">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stddef.h</label>
+      </node>
+      <node id="718">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/include/typeinfo</label>
+      </node>
+      <node id="696">
+        <label>memory</label>
+      </node>
+      <node id="693">
+        <label>circular_queue/circular_queue.h</label>
+        <link refid="circular__queue_8h"/>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lora_8h" kindref="compound">Lora.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//Lora::Lora(int<sp/>TX,<sp/>int<sp/>RX,<sp/>int<sp/>M0,<sp/>int<sp/>M1,<sp/>int<sp/>AUX<sp/>=<sp/>NULL)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" refkind="member"><highlight class="normal"><ref refid="class_lora_1a6627c98a3f25af265a3dd560c6133d99" kindref="member">Lora::Lora</ref>(int8_t<sp/>rx,<sp/>int8_t<sp/>tx,<sp/>int8_t<sp/>m0,<sp/>int8_t<sp/>m1,<sp/>int8_t<sp/>aux)<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pinMode(rx,<sp/>INPUT);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pinMode(aux,<sp/>INPUT);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pinMode(aux,<sp/>INPUT_PULLUP);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pinMode(rx,<sp/>INPUT_PULLDOWN);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loraSerial<sp/>=<sp/>new<sp/>SoftwareSerial(rx,<sp/>tx);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loraSerial-&gt;begin(115200);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a057e93295a92d6dbfbc1be355b4c2aba" kindref="member">loraSerial</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HardwareSerial(1);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a057e93295a92d6dbfbc1be355b4c2aba" kindref="member">loraSerial</ref>-&gt;begin(9600,<sp/>SERIAL_8N1,<sp/>rx,<sp/>tx);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loraSerial-&gt;begin(LORA_SERIAL_SPEED);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_e_b_y_t_e" kindref="compound">EBYTE</ref>(<ref refid="class_lora_1a057e93295a92d6dbfbc1be355b4c2aba" kindref="member">loraSerial</ref>,<sp/>m0,<sp/>m1,<sp/>aux);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//transceiver<sp/>=<sp/>new<sp/>EBYTE(loraSerial,<sp/>LORA_PIN_M0,<sp/>LORA_PIN_M1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//transceiver<sp/>=<sp/>new<sp/>EBYTE(&amp;loraSerial,<sp/>LORA_PIN_M0,<sp/>LORA_PIN_M1,<sp/>LORA_PIN_AUX);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1adc92df3b1f5896ad99e287ed4d19a773" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" kindref="member">PrintParameters</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\ntransceiver-&gt;GetUARTBaudRate()<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(<ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" kindref="member">GetUARTBaudRate</ref>());</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a3553add503bf389998f0be8e01bf54d4" kindref="member">SetUARTBaudRate</ref>(<ref refid="_e_b_y_t_e_8h_1a24e36cc074aed15d8548f21c490ece54" kindref="member">UDR_9600</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//transceiver-&gt;SetUARTBaudRate(UDR_115200);<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a4e861c872c8d0346796b7d3ac5af2e85" kindref="member">SetAirDataRate</ref>(<ref refid="_e_b_y_t_e_8h_1a8e748388cd156ce98fda35815c3022e7" kindref="member">ADR_19200</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" kindref="member">SetParityBit</ref>(0);</highlight><highlight class="comment">//fix<sp/>me!!!!!!!!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1aa4bb7cab46d0ae956b9faa9b2a3c5245" kindref="member">SetAddressH</ref>(4);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a1cdd5bc5c6b6b2703aeb6d3d018e8f7f" kindref="member">SetAddressL</ref>(5);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a6e1facfdb39dc2d837de716e54105e7a" kindref="member">SetChannel</ref>(1);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a42c800637efc3b4060aa9bbad3fd0037" kindref="member">SetOptions</ref>(68);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a2cfe26be485e35e0c83b8fcb352fd77a" kindref="member">SetParityBit</ref>(<ref refid="_e_b_y_t_e_8h_1addb222c37b265b7d36c596938e13065d" kindref="member">PB_8N1</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//transceiver-&gt;SetTransmitPower(OPT_TP10);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a7e867f1ebdbb60e838bd0218854c6ab2" kindref="member">SaveParameters</ref>(<ref refid="_e_b_y_t_e_8h_1aa772670dfaa589fabd502d5c0402cf18" kindref="member">PERMANENT</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\ntransceiver-&gt;GetUARTBaudRate()<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(<ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1ac139fed362e0783dac77ecb215c3192d" kindref="member">GetUARTBaudRate</ref>());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1ad3fc6f0dba8439cb87a85824f185ccd8" kindref="member">PrintParameters</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(100);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loraSerial-&gt;end();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//loraSerial-&gt;begin(LORA_SERIAL_SPEED);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">void<sp/>Lora::begin(int<sp/>speed)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>//loraSerial-&gt;begin(speed);</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;init();</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/>delay(100);</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;PrintParameters();</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;SetUARTBaudRate(UDR_9600);</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;SetAirDataRate(ADR_19200);</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;SetChannel(14);</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;SetOptions(68);</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>//transceiver-&gt;SetTransmitPower(OPT_TP10);</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;SaveParameters(PERMANENT);</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/>delay(100);</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/>loraSerial-&gt;end();</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/>loraSerial-&gt;begin(9600);</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>transceiver-&gt;PrintParameters();</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight></codeline>
+<codeline lineno="64"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_lora_1a675e5dfa837495b12b38ec49f75609b1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a675e5dfa837495b12b38ec49f75609b1" kindref="member">Lora::SendStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Struct,<sp/>uint16_t<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1ad20c23244597200832de54c8065c4a5b" kindref="member">SendStruct</ref>(Struct,<sp/>size);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//transceiver-&gt;flush();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_lora_1a2bccb912fc456f6d8f79fac05347e4dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a2bccb912fc456f6d8f79fac05347e4dd" kindref="member">Lora::GetStruct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Struct,<sp/>uint16_t<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1afc30b3554c3da812b7dc81912a6349a4" kindref="member">GetStruct</ref>(Struct,<sp/>size);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transceiver-&gt;flush();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_lora_1a97ff403fd6884d2d82f6cdc55c99829f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a97ff403fd6884d2d82f6cdc55c99829f" kindref="member">Lora::available</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1a069f5e5c079d67672399a79fdd80136b" kindref="member">available</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_lora_1a5ecdb3bc91fac48a4c21ec9a05cf8d6f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a5ecdb3bc91fac48a4c21ec9a05cf8d6f" kindref="member">Lora::flush</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1ad531e3a6f2f8d9810dd25b8535fb766b" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_lora_1a4646d5b39ddc44c0afc84b48ab7af5ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lora_1a4646d5b39ddc44c0afc84b48ab7af5ec" kindref="member">Lora::reset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_lora_1a4a8d9d0727c00332a21e792b43d5c01c" kindref="member">transceiver</ref>-&gt;<ref refid="class_e_b_y_t_e_1acf246a42fb3af10916a1214d9760af03" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/UAVProject/Lora.cpp"/>
+  </compounddef>
+</doxygen>

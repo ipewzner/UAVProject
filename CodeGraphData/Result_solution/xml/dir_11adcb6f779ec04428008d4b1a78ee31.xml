@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_11adcb6f779ec04428008d4b1a78ee31" kind="dir">
+    <compoundname>C:/Users/ipewz/Desktop/UAVProject/Libraries</compoundname>
+    <innerdir refid="dir_d03805ec503ca2e73d217dd2f0ba1773">C:/Users/ipewz/Desktop/UAVProject/Libraries/EBYTE-master</innerdir>
+    <innerdir refid="dir_764a26623012d344f2ae0b1dfb4e0f63">C:/Users/ipewz/Desktop/UAVProject/Libraries/ESP32-Arduino-Servo-Library-master</innerdir>
+    <innerdir refid="dir_2a57b4b0599980b6bf8bebe7c21d8a3d">C:/Users/ipewz/Desktop/UAVProject/Libraries/espsoftwareserial-main</innerdir>
+    <innerdir refid="dir_10fe05d3832ca43ef17c8e4fc87f26f3">C:/Users/ipewz/Desktop/UAVProject/Libraries/I2Cdev</innerdir>
+    <innerdir refid="dir_1cc21b965aa16692f717b46812274af8">C:/Users/ipewz/Desktop/UAVProject/Libraries/MPU6050</innerdir>
+    <innerdir refid="dir_c863588ef23b824e336a1bb07f8f9b5d">C:/Users/ipewz/Desktop/UAVProject/Libraries/PID</innerdir>
+    <innerdir refid="dir_e711d819aae095c60a48c8b63d8564a7">C:/Users/ipewz/Desktop/UAVProject/Libraries/Wire</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ipewz/Desktop/UAVProject/Libraries/"/>
+  </compounddef>
+</doxygen>
